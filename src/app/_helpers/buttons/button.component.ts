@@ -5,23 +5,34 @@ import { Component, Input, Renderer2 } from '@angular/core';
   styleUrls: ['./button.component.css'],
   template: `
     <ng-container [ngSwitch]="buttonStyle">
-    <!-- Basic Button -->
-    <button *ngSwitchCase="'button1'" class="button button1" (click)="createRipples($event)">{{buttonName}}</button>
-    <!-- Gradient Button -->
-      <button  *ngSwitchCase="'button2'" class="button button2" (click)="createRipples($event)">{{buttonName}}</button>
+      <!-- Basic Button -->
+        <button *ngSwitchCase="'button1'" class="button button1" (click)="createRipples($event)">{{buttonName}}</button>
+      <!-- Gradient Button -->
+        <button  *ngSwitchCase="'button2'" class="button button2" (click)="createRipples($event)">{{buttonName}}</button>
       <!-- Rounded Button -->
-      <button  *ngSwitchCase="'button3'" class="button button3" (click)="createRipples($event)">{{buttonName}}</button>
+        <button  *ngSwitchCase="'button3'" class="button button3" (click)="createRipples($event)">{{buttonName}}</button>
       <!-- Outline Button -->
-      <button  *ngSwitchCase="'button4'" class="button button4" (click)="createRipples($event)">{{buttonName}}</button>
+        <button  *ngSwitchCase="'button4'" class="button button4" (click)="createRipples($event)">{{buttonName}}</button>
       <!-- OutlineButtonImg -->
-      <button  *ngSwitchCase="'OutlineButtonImg'" class="button OutlineButtonImg" (click)="createRipples($event)">
-      <img [src]="iconPath" class="play-btn" height="24px" width="24px" alt="play button" >
-
-      {{buttonName}}</button>
-      <!-- Icon Button -->
-      <button  *ngSwitchCase="'button5'" class="button button5" (click)="createRipples($event)"><i class="fas fa-heart"></i>{{buttonName}}</button>
+        <button  *ngSwitchCase="'OutlineButtonImg'" class="button OutlineButtonImg" (click)="createRipples($event)">
+          <img [src]="iconPath" class="play-btn" height="24px" width="24px" alt="play button" >
+        {{buttonName}}</button>
+        <!-- Icon Button -->
+          <button  *ngSwitchCase="'button5'" class="button button5" (click)="createRipples($event)"><i class="fas fa-heart"></i>{{buttonName}}</button>
       <!-- Animated Button -->
-      <button  *ngSwitchCase="'button6'" class="button button6" (click)="createRipples($event)">{{buttonName}}</button>
+        <button  *ngSwitchCase="'button6'" class="button button6" (click)="createRipples($event)">{{buttonName}}</button>
+      <!-- Hower effect with box-shadow -->
+        <button *ngSwitchCase="'button7'" class="button button7">{{buttonName}}</button>
+      <!-- hower effect two gradient background colors -->
+        <a href="" *ngSwitchCase="'button8'" class="button8">{{buttonName}}</a>
+      <!-- hower effect with two colors colliding -->
+        <button href="" *ngSwitchCase="'button9'" class="button9">{{buttonName}}</button>
+      <!-- border-animation -->
+        <a href="" *ngSwitchCase="'button10'" class="button button10">{{buttonName}}</a>
+      <!-- https://www.geekboots.com/css/button-with-liquid-filling-effect -->
+        <a href="" *ngSwitchCase="'button11'" class="button button11"><span>{{buttonName}}</span></a>
+      <!-- https://www.geekboots.com/css/animated-button-border -->
+        <a href="" *ngSwitchCase="'button12'" class="button12" ><span>{{buttonName}}</span></a>
       <div *ngSwitchDefault>Invalid button style input</div>
     </ng-container>
   `,
