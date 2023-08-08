@@ -1,42 +1,53 @@
-<div class="generic-block section">
-  <div class="generic-block-wrapper">
-    <div class="column-block">
-      <div class="datacard">
-        <div class="title2 section">
-          <h6 class="title--pink">The leader in cloud learning</h6>
-        </div>
-        <div class="title2 section">
-          <h1 class="desk-font-size-3">Create a culture of cloud innovation</h1>
-        </div>
-        <div class="text-1 text section">
-          <p>
-            Accelerate cloud success with hands-on learning at scale. Upskill 10
-            or 10,000 with the most comprehensive and up-to-date learning
-            library.
-          </p>
-        </div>
-        <div class="button-container">
-          <app-button-chooser
-            buttonStyle="button3"
-            buttonName="View plans"
-            (click)="abc()"
-          ></app-button-chooser>
-          <app-button-chooser
-            buttonStyle="OutlineButtonImg"
-            iconPath="../assets/icon-images/play-icon.webp"
-            buttonName="Watch video"
-            (click)="abc()"
-          ></app-button-chooser>
+<div class="generic-block section content">
+  <!-- <div class="generic-block-wrapper"> -->
+  <app-card-wrapper>
+    <div
+      rowcol-flexbox
+      [columnFlexValues]="[7, 6]"
+      [breakpoint]="1025"
+      style="padding: 0 50px"
+    >
+      <div class="column-block">
+        <div class="datacard">
+          <div class="title2 section">
+            <h6 class="title--pink">The leader in cloud learning</h6>
+          </div>
+          <div class="title2 section">
+            <h1 class="desk-font-size-3">
+              Create a culture of cloud innovation
+            </h1>
+          </div>
+          <div class="text-1 text section">
+            <p>
+              Accelerate cloud success with hands-on learning at scale. Upskill
+              10 or 10,000 with the most comprehensive and up-to-date learning
+              library.
+            </p>
+          </div>
+          <div class="button-container">
+            <app-button-chooser
+              buttonStyle="button3"
+              buttonName="View plans"
+              (click)="abc()"
+            ></app-button-chooser>
+            <app-button-chooser
+              buttonStyle="OutlineButtonImg"
+              iconPath="../assets/icon-images/play-icon.webp"
+              buttonName="Watch video"
+              (click)="abc()"
+            ></app-button-chooser>
+          </div>
         </div>
       </div>
+      <div class="column-block">
+        <img
+          src="https://www.pluralsight.com/content/dam/pluralsight2/cloud-guru/cloud-home-hero.webp"
+          style="max-width: 100%"
+        />
+      </div>
     </div>
-    <div class="column-block">
-      <img
-        src="https://www.pluralsight.com/content/dam/pluralsight2/cloud-guru/cloud-home-hero.webp"
-        style="max-width: 100%"
-      />
-    </div>
-  </div>
+  </app-card-wrapper>
+  <!-- </div> -->
 </div>
 
 <router-outlet> </router-outlet>
