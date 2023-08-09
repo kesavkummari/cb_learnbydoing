@@ -12,10 +12,10 @@ import { Component, Input } from '@angular/core';
     .card-wrapper {
       background-color:#1b1834;
       /* border: 1px solid #1b1834; */
-      padding: 16px;
+      padding: 30px 15px;
       border-radius: 20px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin:20px;
+      margin:50px 15px;
     }
     `
   ]
