@@ -7,6 +7,7 @@ export class RowColFlexboxDirective {
 
   @Input() breakpoint: number = 1025;
   @Input() columnFlexValues: number[] = [];
+  @Input() padding: string = '0 15px';
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
 
@@ -22,6 +23,7 @@ export class RowColFlexboxDirective {
   private updateLayout(): void {
     const screenWidth = window.innerWidth;
     const isRowLayout = screenWidth >= this.breakpoint;
+    this.el.nativeElement.style.padding = this.padding;
 
     // Clear previous layout classes
     this.renderer.removeClass(this.el.nativeElement, 'row-layout');
@@ -35,6 +37,8 @@ export class RowColFlexboxDirective {
       this.renderer.addClass(this.el.nativeElement, 'col-layout');
       this.resetColumnFlexValues();
     }
+
+
   }
 
   private applyColumnFlexValues(): void {
