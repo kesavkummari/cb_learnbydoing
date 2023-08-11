@@ -9,25 +9,25 @@
   <ul class="menu-items">
     <li
       class="menu-item"
-      (click)="menuClick('Home')"
       (mouseenter)="showSubMenu('Home')"
-      (mouseleave)="hideSubMenu()"
+      (click)="menuClick('Home')"
+      (mouseleave)="hideSubMenu('Home', $event)"
     >
       <i class="menu-icon fas fa-home"></i>
     </li>
     <li
       class="menu-item"
-      (click)="menuClick('Profile')"
       (mouseenter)="showSubMenu('Profile')"
-      (mouseleave)="hideSubMenu()"
+      (click)="menuClick('Profile')"
+      (mouseleave)="hideSubMenu('Profile', $event)"
     >
       <i class="menu-icon fas fa-user"></i>
     </li>
     <li
       class="menu-item"
-      (click)="menuClick('Settings')"
       (mouseenter)="showSubMenu('Settings')"
-      (mouseleave)="hideSubMenu()"
+      (click)="menuClick('Settings')"
+      (mouseleave)="hideSubMenu('Settings', $event)"
     >
       <i class="menu-icon fas fa-cog"></i>
     </li>
@@ -35,7 +35,12 @@
   </ul>
 </div>
 
-<div class="sub-menu-card" *ngIf="activeSubMenu === 'Home'">
+<div
+  id="Home"
+  class="sub-menu-card"
+  *ngIf="activeSubMenu === 'Home'"
+  (mouseleave)="hideSubMenu('Home', $event, true)"
+>
   <ul class="sub-menu">
     <li class="sub-menu-heading"><b>Home</b></li>
     <li class="sub-menu-item">Sub-Feature 1 for Home</li>
@@ -44,7 +49,12 @@
   </ul>
 </div>
 
-<div class="sub-menu-card" *ngIf="activeSubMenu === 'Profile'">
+<div
+  id="Profile"
+  class="sub-menu-card"
+  *ngIf="activeSubMenu === 'Profile'"
+  (mouseleave)="hideSubMenu('Profile', $event, true)"
+>
   <ul class="sub-menu">
     <li class="sub-menu-heading"><b>Profile</b></li>
     <li class="sub-menu-item">Sub-Feature A for Profile</li>
@@ -53,7 +63,12 @@
   </ul>
 </div>
 
-<div class="sub-menu-card" *ngIf="activeSubMenu === 'Settings'">
+<div
+  id="Settings"
+  class="sub-menu-card"
+  *ngIf="activeSubMenu === 'Settings'"
+  (mouseleave)="hideSubMenu('Settings', $event, true)"
+>
   <ul class="sub-menu">
     <li class="sub-menu-heading"><b>Settings</b></li>
     <li class="sub-menu-item">Sub-Setting 1 for Settings</li>

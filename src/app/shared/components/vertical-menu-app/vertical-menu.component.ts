@@ -31,12 +31,39 @@ export class VerticalMenuComponent2 {
     this.activeSubMenu = menuId;
   }
 
-  hideSubMenu() {
-    if (this.clickedMenu == null || this.expandMenu == false) {
-      this.activeSubMenu = null;
-    } else {
-      this.activeSubMenu = this.clickedMenu;
+  hideSubMenu(subMenuId: string, event: MouseEvent, subMenu?: boolean) {
+    let isHovered: boolean;
+    if (subMenu) {
+      isHovered = false;
     }
+    else
+      isHovered = this.isHovered(subMenuId, event);
+    if (!isHovered) {
+      if (this.clickedMenu == null || this.expandMenu == false) {
+        this.activeSubMenu = null;
+      } else {
+        this.activeSubMenu = this.clickedMenu;
+      }
+    }
+  }
+
+
+  isHovered(subMenuId: string, event: MouseEvent): boolean {
+    const menuElement = document.getElementById(subMenuId);
+    if (menuElement) {
+      const rect = menuElement.getBoundingClientRect();
+      const mouseX = event.clientX;
+      const mouseY = event.clientY;
+      if (
+        mouseX >= rect.left &&
+        mouseX <= rect.right &&
+        mouseY >= rect.top &&
+        mouseY <= rect.bottom
+      ) {
+        return true;
+      }
+    }
+    return false;
   }
 
   // subMenuFeatures: string[] = [];

@@ -7,9 +7,7 @@
   top: 0;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 30px 5px 0;
 }
 
 .menu-header {
@@ -19,6 +17,7 @@
 
 .menu-icon {
   font-size: 24px;
+  width: 30px;
   cursor: pointer;
   color: white; /* Add this line to set icon color */
 }
@@ -33,7 +32,8 @@
 }
 
 .menu-item {
-  padding: 15px;
+  padding: 10px;
+  margin: 10px 0;
   text-align: center;
   transition: background-color 0.3s;
   display: flex;
@@ -47,9 +47,10 @@
 .sub-menu-card {
   position: absolute;
   top: 60px;
-  right: 10px;
+  left: 50px;
   width: 250px;
   background-color: #bebdbd;
+  height: 600px;
   /* display: none; */
 }
 
@@ -72,5 +73,3 @@
 .sub-menu-item:hover {
   background-color: #666;
 }
-
-
