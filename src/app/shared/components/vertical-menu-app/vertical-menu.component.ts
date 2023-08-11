@@ -49,8 +49,9 @@ export class VerticalMenuComponent2 {
 
 
   isHovered(subMenuId: string, event: MouseEvent): boolean {
-    const menuElement = document.getElementById(subMenuId);
-    if (menuElement) {
+    const menuElements = document.getElementsByClassName(subMenuId);
+    for (let i = 0; i < menuElements.length; i++) {
+      const menuElement = menuElements[i] as HTMLElement;
       const rect = menuElement.getBoundingClientRect();
       const mouseX = event.clientX;
       const mouseY = event.clientY;
