@@ -1,0 +1,74 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+/>
+<div class="menu-container">
+  <div class="menu-header">
+    <i class="menu-icon fas fa-bars" (click)="toggleMenu()"></i>
+  </div>
+  <ul class="menu-items">
+    <li
+      class="menu-item"
+      (click)="menuClick('Home')"
+      (mouseenter)="showSubMenu('Home')"
+      (mouseleave)="hideSubMenu()"
+    >
+      <i class="menu-icon fas fa-home"></i>
+    </li>
+    <li
+      class="menu-item"
+      (click)="menuClick('Profile')"
+      (mouseenter)="showSubMenu('Profile')"
+      (mouseleave)="hideSubMenu()"
+    >
+      <i class="menu-icon fas fa-user"></i>
+    </li>
+    <li
+      class="menu-item"
+      (click)="menuClick('Settings')"
+      (mouseenter)="showSubMenu('Settings')"
+      (mouseleave)="hideSubMenu()"
+    >
+      <i class="menu-icon fas fa-cog"></i>
+    </li>
+    <!-- Add more menu items with icons as needed -->
+  </ul>
+</div>
+
+<div class="sub-menu-card" *ngIf="activeSubMenu === 'Home'">
+  <ul class="sub-menu">
+    <li class="sub-menu-heading"><b>Home</b></li>
+    <li class="sub-menu-item">Sub-Feature 1 for Home</li>
+    <li class="sub-menu-item">Sub-Feature 2 for Home</li>
+    <li class="sub-menu-item">Sub-Feature 3 for Home</li>
+  </ul>
+</div>
+
+<div class="sub-menu-card" *ngIf="activeSubMenu === 'Profile'">
+  <ul class="sub-menu">
+    <li class="sub-menu-heading"><b>Profile</b></li>
+    <li class="sub-menu-item">Sub-Feature A for Profile</li>
+    <li class="sub-menu-item">Sub-Feature B for Profile</li>
+    <li class="sub-menu-item">Sub-Feature C for Profile</li>
+  </ul>
+</div>
+
+<div class="sub-menu-card" *ngIf="activeSubMenu === 'Settings'">
+  <ul class="sub-menu">
+    <li class="sub-menu-heading"><b>Settings</b></li>
+    <li class="sub-menu-item">Sub-Setting 1 for Settings</li>
+    <li class="sub-menu-item">Sub-Setting 2 for Settings</li>
+    <li class="sub-menu-item">Sub-Setting 3 for Settings</li>
+  </ul>
+</div>
+
+<!-- <div class="sub-menu-card" *ngIf="activeSubMenu">
+  <ul class="sub-menu">
+    <li class="sub-menu-heading">
+      <b>{{ activeSubMenu }}</b>
+    </li>
+    <li class="sub-menu-item" *ngFor="let subFeature of subMenuFeatures">
+      {{ subFeature }}
+    </li>
+  </ul>
+</div> -->

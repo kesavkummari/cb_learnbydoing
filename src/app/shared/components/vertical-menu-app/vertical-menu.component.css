@@ -1,0 +1,76 @@
+.menu-container {
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu-header {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: white; /* Add this line to set icon color */
+}
+.menu-icon:hover {
+  color: yellow; /* Change icon color on hover if desired */
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:hover {
+  background-color: #444;
+}
+
+.sub-menu-card {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  width: 250px;
+  background-color: #bebdbd;
+  /* display: none; */
+}
+
+.sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-menu-heading {
+  padding: 10px;
+  text-align: center;
+}
+
+.sub-menu-item {
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.sub-menu-item:hover {
+  background-color: #666;
+}
+
+

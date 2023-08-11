@@ -10,6 +10,8 @@ import { CardWrapperComponent } from './shared/components/card-wrapper/card-wrap
 import { ImgBlockDirective } from './shared/directives/boxes/img-block/img-block.directive';
 import { SetChildStyleDirective } from './shared/directives/boxes/set-child-style.directive';
 import { HoverLinkImageComponent } from './shared/components/hover-link-image/hover-link-image.component';
+import { VerticalMenuComponent } from './shared/components/vertical-menu/vertical-menu.component';
+import { VerticalMenuComponent2 } from './shared/components/vertical-menu-app/vertical-menu.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { HoverLinkImageComponent } from './shared/components/hover-link-image/ho
     CardWrapperComponent,
     ImgBlockDirective,
     SetChildStyleDirective,
-    HoverLinkImageComponent
+    HoverLinkImageComponent,
+    VerticalMenuComponent,
+    VerticalMenuComponent2
   ],
   imports: [
     BrowserModule,
