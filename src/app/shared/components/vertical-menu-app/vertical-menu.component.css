@@ -33,7 +33,7 @@
 
 .menu-item {
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px -10px 10px 0;
   text-align: center;
   transition: background-color 0.3s;
   display: flex;
@@ -47,11 +47,13 @@
 .sub-menu-card {
   position: absolute;
   top: 60px;
-  left: 50px;
+  left: 60px;
   width: 250px;
-  background-color: #bebdbd;
+  background-color: rgba(235, 235, 235, 0.2);
   height: 600px;
   /* display: none; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .sub-menu {
@@ -67,9 +69,25 @@
 
 .sub-menu-item {
   padding: 10px;
+  margin: 0 10px;
+  border-radius: 10px;
   transition: background-color 0.3s;
+  cursor: pointer;
 }
 
 .sub-menu-item:hover {
-  background-color: #666;
+  background-color: #f1f1f1;
+}
+
+.aTV {
+  border: 6px solid;
+  box-shadow: -3px 3px 3px 0 rgba(60, 64, 67, 0.15);
+  content: "";
+  height: 0;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 0;
+  border-color: transparent transparent #eef3fc #eef3fc;
+  /* display: none; */
+  left: 64px;
 }
