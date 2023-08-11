@@ -4,7 +4,11 @@
 />
 <div class="menu-container">
   <div class="menu-header">
-    <i class="menu-icon fas fa-bars" (click)="toggleMenu()"></i>
+    <i
+      class="menu-icon fas"
+      [ngClass]="{ 'fa-bars': !expandMenu, 'fa-times': expandMenu }"
+      (click)="toggleMenu()"
+    ></i>
   </div>
   <ul class="menu-items">
     <li
@@ -13,7 +17,10 @@
       (click)="menuClick('Home')"
       (mouseleave)="hideSubMenu('Home', $event)"
     >
-      <i class="menu-icon fas fa-home"></i>
+      <i
+        class="menu-icon fas fa-home"
+        [ngClass]="{ highlighted: clickedMenu === 'Home' }"
+      ></i>
     </li>
     <li
       class="menu-item"
@@ -21,7 +28,10 @@
       (click)="menuClick('Profile')"
       (mouseleave)="hideSubMenu('Profile', $event)"
     >
-      <i class="menu-icon fas fa-user"></i>
+      <i
+        class="menu-icon fas fa-user"
+        [ngClass]="{ highlighted: clickedMenu === 'Profile' }"
+      ></i>
     </li>
     <li
       class="menu-item"
@@ -29,7 +39,10 @@
       (click)="menuClick('Settings')"
       (mouseleave)="hideSubMenu('Settings', $event)"
     >
-      <i class="menu-icon fas fa-cog"></i>
+      <i
+        class="menu-icon fas fa-cog"
+        [ngClass]="{ highlighted: clickedMenu === 'Settings' }"
+      ></i>
     </li>
     <!-- Add more menu items with icons as needed -->
   </ul>
@@ -76,14 +89,3 @@
     <li class="sub-menu-item">Sub-Setting 3 for Settings</li>
   </ul>
 </div>
-
-<!-- <div class="sub-menu-card" *ngIf="activeSubMenu">
-  <ul class="sub-menu">
-    <li class="sub-menu-heading">
-      <b>{{ activeSubMenu }}</b>
-    </li>
-    <li class="sub-menu-item" *ngFor="let subFeature of subMenuFeatures">
-      {{ subFeature }}
-    </li>
-  </ul>
-</div> -->

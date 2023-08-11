@@ -66,27 +66,4 @@ export class VerticalMenuComponent2 {
     }
     return false;
   }
-
-  // subMenuFeatures: string[] = [];
-  // setSubMenuContent(menuId: string | null) {
-  //   if (menuId === 'Home') {
-  //     this.subMenuFeatures = [
-  //       'Sub-Feature 1 for Home',
-  //       'Sub-Feature 2 for Home',
-  //       'Sub-Feature 3 for Home'
-  //     ];
-  //   } else if (menuId === 'Profile') {
-  //     this.subMenuFeatures = [
-  //       'Sub-Feature A for Profile',
-  //       'Sub-Feature B for Profile',
-  //       'Sub-Feature C for Profile'
-  //     ];
-  //   } else if (menuId === 'Settings') {
-  //     this.subMenuFeatures = [
-  //       'Sub-Setting 1 for Settings',
-  //       'Sub-Setting 2 for Settings',
-  //       'Sub-Setting 3 for Settings'
-  //     ];
-  //   }
-  // }
 }

@@ -91,3 +91,12 @@
   /* display: none; */
   left: 64px;
 }
+
+.menu-icon.highlighted {
+  color: yellow;
+  /* Add any other styling you want for the highlighted menu item */
+}
+
+.fa-times::before {
+  content: "\f00d"; /* Unicode for the close icon */
+}
