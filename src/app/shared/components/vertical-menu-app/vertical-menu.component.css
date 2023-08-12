@@ -1,5 +1,6 @@
 .menu-container {
-  height: 100vh;
+  margin-top: 50px;
+  height: 100%;
   background-color: #333;
   color: #fff;
   position: fixed;
@@ -7,7 +8,7 @@
   top: 0;
   overflow-x: hidden;
   transition: 0.5s;
-  padding: 30px 5px 0;
+  padding: 5px 10px 0 0px;
 }
 
 .menu-header {
@@ -47,13 +48,14 @@
 .sub-menu-card {
   position: absolute;
   top: 60px;
-  left: 60px;
+  left: 50px;
   width: 250px;
-  background-color: rgba(235, 235, 235, 0.2);
+  background-color: rgb(246 248 252);
   height: 600px;
   /* display: none; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  z-index: 3;
 }
 
 .sub-menu {
@@ -99,4 +101,36 @@
 
 .fa-times::before {
   content: "\f00d"; /* Unicode for the close icon */
+}
+
+.main-content {
+  margin-top: 60px;
+  margin-left: 70px;
+  transition: margin-left 0.5s;
+  /* ... Other styles ... */
+}
+
+.expanded {
+  margin-left: 331px;
+}
+
+/* .header-bar {
+  height: 50px;
+  color: #000;
+  top: 0;
+  left: 60px;
+  right: 0px;
+} */
+
+.header-bar {
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
