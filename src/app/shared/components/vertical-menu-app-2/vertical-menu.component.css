@@ -140,3 +140,7 @@
 .fa-cog:before {
   content: "\f013";
 }
+
+.highlighted.sub-menu-item {
+  color: red;
+}

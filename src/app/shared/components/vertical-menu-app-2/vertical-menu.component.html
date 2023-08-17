@@ -2,14 +2,16 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 />
+<!-- Inside your HTML template -->
 <div class="menu-container">
   <ul class="menu-items">
     <li
       class="menu-item"
-      *ngFor="let menuItem of menuStructure; let i = index"
-      (mouseenter)="showSubMenu(i)"
-      (click)="menuClick(i)"
-      (mouseleave)="hideSubMenu(i, $event)"
+      *ngFor="let menuItem of menuStructure; let menuIndex = index"
+      [class.highlighted]="menuItem.active"
+      (click)="subMenuItemClick(menuIndex, -1, menuItem.routerLink)"
+      (mouseenter)="showSubMenu(menuIndex)"
+      (mouseleave)="hideSubMenu(menuIndex, $event)"
     >
       <i
         class="menu-icon fas"
@@ -17,19 +19,19 @@
           'fa-home': menuItem.label === 'Home',
           'fa-user': menuItem.label === 'Profile',
           'fa-cog': menuItem.label === 'Settings',
-          highlighted: clickedMenu === i
+          highlighted: clickedMenu === menuIndex
         }"
       ></i>
     </li>
   </ul>
 </div>
 
-<div *ngFor="let menuItem of menuStructure; let i = index">
+<div *ngFor="let menuItem of menuStructure; let menuIndex = index">
   <div
     class="sub-menu-card"
     [ngClass]="menuItem.label"
-    *ngIf="activeSubMenu === i"
-    (mouseleave)="hideSubMenu(i, $event, true)"
+    *ngIf="activeSubMenu === menuIndex"
+    (mouseleave)="hideSubMenu(menuIndex, $event, true)"
   >
     <div
       class="aTV"
@@ -43,7 +45,14 @@
       </li>
       <li
         class="sub-menu-item"
-        *ngFor="let subMenuItem of menuItem.subMenuItems"
+        *ngFor="
+          let subMenuItem of menuItem.subMenuItems;
+          let subMenuIndex = index
+        "
+        [class.highlighted]="subMenuItem.active"
+        (click)="
+          subMenuItemClick(menuIndex, subMenuIndex, subMenuItem.routerLink)
+        "
       >
         {{ subMenuItem.label }}
       </li>

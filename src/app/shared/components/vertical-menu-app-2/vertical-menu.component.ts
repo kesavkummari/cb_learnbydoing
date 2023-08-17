@@ -2,12 +2,17 @@ import { Component, OnInit } from '@angular/core';
 
 interface SubMenuItem {
   label: string;
+  active?: boolean; // New property
+  routerLink?: string; // New property for router link
 }
 
 interface MenuItem {
   label: string;
-  subMenuItems: SubMenuItem[];
+  active?: boolean; // New property
+  subMenuItems?: SubMenuItem[]; // Updated property
+  routerLink?: string; // New property for router link
 }
+
 
 @Component({
   selector: 'app-vertical-menu3',
@@ -21,48 +26,84 @@ export class VerticalMenuComponent3 implements OnInit {
     'Settings': 130
     // Add more menu items and their corresponding offsets as needed
   };
-  menuStructure: MenuItem[] = [
-    {
-      label: 'Home',
-      subMenuItems: [
-        { label: 'Sub-Feature 1 for Home' },
-        { label: 'Sub-Feature 2 for Home' },
-        { label: 'Sub-Feature 3 for Home' }
-      ]
-    },
-    {
-      label: 'Profile',
-      subMenuItems: [
-        { label: 'Sub-Feature A for Profile' },
-        { label: 'Sub-Feature B for Profile' },
-        { label: 'Sub-Feature C for Profile' }
-      ]
-    },
-    {
-      label: 'Settings',
-      subMenuItems: [
-        { label: 'Sub-Setting 1 for Settings' },
-        { label: 'Sub-Setting 2 for Settings' },
-        { label: 'Sub-Setting 3 for Settings' }
-      ]
-    }
-    // Add more menu items with their submenus as needed
-  ];
+  menuStructure: MenuItem[] = [];
 
 
 
   activeSubMenu: number | null = null;
+  activeSubMenuItem: number | null = null;
   clickedMenu: number | null = null;
   expandMenu: boolean = false;
+  initialMenuStructure: MenuItem[] = [];
+
 
   constructor() {
+
     this.clickedMenu = 0; // Index of the "Home" menu item
     // this.activeSubMenu = 0; // Index of the "Home" menu item
+    this.activeSubMenuItem = 0
   }
 
   ngOnInit(): void {
     // ... (other initialization code if needed)
+    this.menuStructure = [
+      {
+        label: 'Home',
+        subMenuItems: [
+          { label: 'Sub-Feature 1 for Home', routerLink: '#' },
+          { label: 'Sub-Feature 2 for Home', routerLink: '#' },
+          { label: 'Sub-Feature 3 for Home', routerLink: '#' }
+        ]
+      },
+      {
+        label: 'Profile',
+        subMenuItems: [
+          { label: 'Sub-Feature A for Profile' },
+          { label: 'Sub-Feature B for Profile' },
+          { label: 'Sub-Feature C for Profile' }
+        ]
+      },
+      {
+        label: 'Settings',
+        subMenuItems: [
+          { label: 'Sub-Setting 1 for Settings' },
+          { label: 'Sub-Setting 2 for Settings' },
+          { label: 'Sub-Setting 3 for Settings' }
+        ]
+      }
+      // Add more menu items with their submenus as needed
+    ];
+    this.initialMenuStructure = this.menuStructure
   }
+
+  // Function to handle submenu item click
+  subMenuItemClick(menuIndex: number, subMenuIndex: number, routerLink?: string) {
+    console.log("submenuitemclick")
+    console.log("menuindex" + menuIndex)
+    console.log("submenuindex" + subMenuIndex)
+
+    this.menuStructure.forEach(menu => {
+      if (menu?.subMenuItems) {
+        menu.subMenuItems.forEach(subMenuItem => {
+          subMenuItem.active = false; // Reset active status for all submenu items
+        });
+      }
+      menu.active = false; // Reset active status for all main menu items
+    });
+
+    const menu = this.menuStructure[menuIndex];
+    if (menu?.subMenuItems) {
+      menu.subMenuItems.forEach((subMenuItem, index) => {
+        subMenuItem.active = index === subMenuIndex;
+      });
+    }
+    menu.active = true;
+    this.clickedMenu = menuIndex;
+    if (routerLink) {
+      // Navigate to the specified router link if provided
+    }
+  }
+
 
   toggleMenu() {
     if (this.activeSubMenu == null) {
