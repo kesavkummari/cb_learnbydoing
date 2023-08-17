@@ -32,15 +32,14 @@ export class VerticalMenuComponent3 implements OnInit {
 
   activeSubMenu: number | null = null;
   activeSubMenuItem: number | null = null;
-  activeMenu: number | null = null;
+  activeMenu: number = 0;
   expandMenu: boolean = false;
   initialMenuStructure: MenuItem[] = [];
+  activeSubMenuIndex: number | null = null;
 
 
   constructor() {
-
     this.activeMenu = 0; // Index of the "Home" menu item
-
   }
 
   ngOnInit(): void {
@@ -49,11 +48,6 @@ export class VerticalMenuComponent3 implements OnInit {
       {
         label: 'Home',
         active: true,
-        subMenuItems: [
-          { label: 'Sub-Feature 1 for Home', routerLink: '#', active: true },
-          { label: 'Sub-Feature 2 for Home', routerLink: '#' },
-          { label: 'Sub-Feature 3 for Home', routerLink: '#' }
-        ]
       },
       {
         label: 'Profile',
@@ -70,7 +64,10 @@ export class VerticalMenuComponent3 implements OnInit {
           { label: 'Sub-Setting 2 for Settings' },
           { label: 'Sub-Setting 3 for Settings' }
         ]
-      }
+      },
+      {
+        label: 'Others',
+      },
       // Add more menu items with their submenus as needed
     ];
     this.initialMenuStructure = this.menuStructure
@@ -95,6 +92,7 @@ export class VerticalMenuComponent3 implements OnInit {
     if (menu?.subMenuItems) {
       menu.subMenuItems.forEach((subMenuItem, index) => {
         subMenuItem.active = index === subMenuIndex;
+        this.activeSubMenuIndex = subMenuIndex;
       });
     }
     menu.active = true;
@@ -107,37 +105,66 @@ export class VerticalMenuComponent3 implements OnInit {
 
 
   toggleMenu() {
-    if (this.activeSubMenu == null) {
-      this.activeSubMenu = this.activeMenu;
-    } else {
-      this.activeSubMenu = null;
+    const menu = this.menuStructure[this.activeMenu];
+    if (menu?.subMenuItems) {
+      {
+        if (this.activeSubMenu == null) {
+          this.activeSubMenu = this.activeMenu;
+        } else {
+          this.activeSubMenu = null;
+        }
+      }
     }
     this.expandMenu = !this.expandMenu;
   }
 
   showSubMenu(index: number) {
-    this.activeSubMenu = index;
+    const menu = this.menuStructure[index];
+    if (menu?.subMenuItems)
+      this.activeSubMenu = index;
   }
 
   menuClick(index: number) {
-    if (this.activeMenu != index) {
+    const menu = this.menuStructure[index];
+    if (!menu?.subMenuItems) {
+      this.menuStructure.forEach(menu => {
+        if (menu?.subMenuItems) {
+          menu.subMenuItems.forEach(subMenuItem => {
+            subMenuItem.active = false; // Reset active status for all submenu items
+          });
+        }
+        menu.active = false; // Reset active status for all main menu items
+      });
+
+      menu.active = true;
       this.activeMenu = index;
+      this.activeSubMenuIndex = null;
+      this.activeSubMenu = null;
     }
-    this.activeSubMenu = index;
   }
 
-  hideSubMenu(index: number, event: MouseEvent, subMenu?: boolean) {
+  hideSubMenu(index: number, event: MouseEvent) {
     let isHovered: boolean;
-    if (subMenu) {
+    const menu = this.menuStructure[index];
+    if (!menu?.subMenuItems) {
       isHovered = false;
     } else {
       isHovered = this.isHovered(index, event);
     }
     if (!isHovered) {
+      console.log("isnotHoverd")
       if (this.activeMenu == null || this.expandMenu == false) {
         this.activeSubMenu = null;
+        console.log("this.activeMenu==> ", this.activeMenu)
       } else {
-        this.activeSubMenu = this.activeMenu;
+        if (this.expandMenu) {
+          if (menu?.subMenuItems) {
+            this.activeSubMenu = this.menuStructure[this.activeMenu]?.subMenuItems ? this.activeMenu : null;
+          } else {
+            if (menu.active)
+              this.activeSubMenu = null;
+          }
+        }
       }
     }
   }

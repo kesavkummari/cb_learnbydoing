@@ -8,8 +8,7 @@
     <li
       class="menu-item"
       *ngFor="let menuItem of menuStructure; let menuIndex = index"
-      [class.highlighted]="menuItem.active"
-      (click)="subMenuItemClick(menuIndex, -1, menuItem.routerLink)"
+      (click)="menuClick(menuIndex)"
       (mouseenter)="showSubMenu(menuIndex)"
       (mouseleave)="hideSubMenu(menuIndex, $event)"
     >
@@ -19,6 +18,7 @@
           'fa-home': menuItem.label === 'Home',
           'fa-user': menuItem.label === 'Profile',
           'fa-cog': menuItem.label === 'Settings',
+          'fa-bullseye': menuItem.label === 'Others',
           highlighted: menuItem.active
         }"
       ></i>
@@ -31,7 +31,7 @@
     class="sub-menu-card"
     [ngClass]="menuItem.label"
     *ngIf="activeSubMenu === menuIndex"
-    (mouseleave)="hideSubMenu(menuIndex, $event, true)"
+    (mouseleave)="hideSubMenu(menuIndex, $event)"
   >
     <div
       class="aTV"
@@ -60,7 +60,10 @@
   </div>
 </div>
 
-<div class="main-content" [ngClass]="{ expanded: expandMenu }">
+<div
+  class="main-content"
+  [ngClass]="{ expanded: expandMenu && activeSubMenuIndex !== null }"
+>
   <h1>
     Main Content Lorem ipsum dolor sit, amet consectetur adipisicing elit.
     Aliquid ab mollitia asperiores sapiente odio tenetur a natus, quia
