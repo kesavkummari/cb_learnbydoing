@@ -32,16 +32,15 @@ export class VerticalMenuComponent3 implements OnInit {
 
   activeSubMenu: number | null = null;
   activeSubMenuItem: number | null = null;
-  clickedMenu: number | null = null;
+  activeMenu: number | null = null;
   expandMenu: boolean = false;
   initialMenuStructure: MenuItem[] = [];
 
 
   constructor() {
 
-    this.clickedMenu = 0; // Index of the "Home" menu item
-    // this.activeSubMenu = 0; // Index of the "Home" menu item
-    this.activeSubMenuItem = 0
+    this.activeMenu = 0; // Index of the "Home" menu item
+
   }
 
   ngOnInit(): void {
@@ -49,8 +48,9 @@ export class VerticalMenuComponent3 implements OnInit {
     this.menuStructure = [
       {
         label: 'Home',
+        active: true,
         subMenuItems: [
-          { label: 'Sub-Feature 1 for Home', routerLink: '#' },
+          { label: 'Sub-Feature 1 for Home', routerLink: '#', active: true },
           { label: 'Sub-Feature 2 for Home', routerLink: '#' },
           { label: 'Sub-Feature 3 for Home', routerLink: '#' }
         ]
@@ -98,7 +98,8 @@ export class VerticalMenuComponent3 implements OnInit {
       });
     }
     menu.active = true;
-    this.clickedMenu = menuIndex;
+    console.log("menuStructure==>", this.menuStructure)
+    this.activeMenu = menuIndex;
     if (routerLink) {
       // Navigate to the specified router link if provided
     }
@@ -107,7 +108,7 @@ export class VerticalMenuComponent3 implements OnInit {
 
   toggleMenu() {
     if (this.activeSubMenu == null) {
-      this.activeSubMenu = this.clickedMenu;
+      this.activeSubMenu = this.activeMenu;
     } else {
       this.activeSubMenu = null;
     }
@@ -119,8 +120,8 @@ export class VerticalMenuComponent3 implements OnInit {
   }
 
   menuClick(index: number) {
-    if (this.clickedMenu != index) {
-      this.clickedMenu = index;
+    if (this.activeMenu != index) {
+      this.activeMenu = index;
     }
     this.activeSubMenu = index;
   }
@@ -133,10 +134,10 @@ export class VerticalMenuComponent3 implements OnInit {
       isHovered = this.isHovered(index, event);
     }
     if (!isHovered) {
-      if (this.clickedMenu == null || this.expandMenu == false) {
+      if (this.activeMenu == null || this.expandMenu == false) {
         this.activeSubMenu = null;
       } else {
-        this.activeSubMenu = this.clickedMenu;
+        this.activeSubMenu = this.activeMenu;
       }
     }
   }
