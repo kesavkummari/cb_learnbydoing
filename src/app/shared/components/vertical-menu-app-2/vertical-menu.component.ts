@@ -13,7 +13,6 @@ interface MenuItem {
   routerLink?: string; // New property for router link
 }
 
-
 @Component({
   selector: 'app-vertical-menu3',
   templateUrl: './vertical-menu.component.html',

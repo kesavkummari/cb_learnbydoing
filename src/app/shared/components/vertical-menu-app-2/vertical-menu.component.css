@@ -97,6 +97,13 @@
   color: yellow;
 }
 
+.menu-icon.highlighted:hover {
+  .showtooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 .fa-times::before {
   content: "\f00d";
 }
