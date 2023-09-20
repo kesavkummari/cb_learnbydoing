@@ -1,9 +1,16 @@
+/* Import Bootstrap CSS*/
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+@import "./bootstrap.min.css";
+@import "./owl.carousel.min.css";
+@import "./animate.min.css";
+@import "./main.css";
 /* You can add global styles to this file, and also import other style files */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  /* font-family: "Arial", sans-serif; */
+  font-family: Poppins, sans-serif;
 }
 
 .generic-section {

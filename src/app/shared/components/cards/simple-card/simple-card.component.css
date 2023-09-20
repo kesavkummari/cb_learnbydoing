@@ -1,4 +1,4 @@
-.cardBody {
+/* .cardBody {
   max-width: 30%;
   padding: 20px;
   border: none;
@@ -32,12 +32,6 @@
   align-items: center;
 }
 
-/* *,
-::after,
-::before {
-  box-sizing: border-box;
-} */
-
 .cards-flex {
   display: flex;
   justify-content: space-between;
@@ -48,4 +42,4 @@
 .card-image,
 .card-title {
   margin-bottom: 15px;
-}
+} */

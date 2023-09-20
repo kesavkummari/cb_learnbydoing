@@ -11,9 +11,13 @@ import { IntroPageComponent } from './Pages/intro-page/intro-page.component';
 import { IntroCardsComponent } from './components/Intro-cards/intro-cards.component';
 import { ProgramsComponent } from './components/programs/programs.component';
 import { TrendingCoursesComponent } from './components/trending-courses/trending-courses.component';
+import { HybridLearningComponent } from './components/hybrid-learning/hybrid-learning.component';
+import { KeyFeaturesComponent } from './components/key-features/key-features.component';
+import { CorporateTrainingComponent } from './components/corporate-training/corporate-training.component';
+import { DigitalLyncComponent } from './components/digital-lync/digital-lync.component';
 
 @NgModule({
-  declarations: [CloudIntroComponent, IntroPageComponent, IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent],
+  declarations: [CloudIntroComponent, IntroPageComponent, IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule],
   providers: [],
 })

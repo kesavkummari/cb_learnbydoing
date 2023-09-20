@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PublicUiModule } from './modules/public-ui/public-ui.modue';
 import { SharedModule } from './shared/shared-mod.module';
+import 'bootstrap';
 
 
 @NgModule({
