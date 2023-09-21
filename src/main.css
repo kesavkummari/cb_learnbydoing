@@ -714,7 +714,7 @@ img {
   left: 100%;
 }
 .question-col {
-  /* background-image: url(../images/enroll_now_banner.jpg); */
+  background-image: url(assets/questions-col/enroll_now_banner.jpg);
   padding: 3rem 0;
 }
 .question-col h2 {

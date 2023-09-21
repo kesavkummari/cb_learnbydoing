@@ -15,9 +15,12 @@ import { HybridLearningComponent } from './components/hybrid-learning/hybrid-lea
 import { KeyFeaturesComponent } from './components/key-features/key-features.component';
 import { CorporateTrainingComponent } from './components/corporate-training/corporate-training.component';
 import { DigitalLyncComponent } from './components/digital-lync/digital-lync.component';
+import { QuestionsColComponent } from './components/questions-col/questions-col.component';
+import { LocationsComponent } from './components/locations/locations.component';
+import { FooterComponent } from './components/footer-col/footer-col.component';
 
 @NgModule({
-  declarations: [CloudIntroComponent, IntroPageComponent, IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent],
+  declarations: [CloudIntroComponent, IntroPageComponent, IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, FooterComponent],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule],
   providers: [],
 })
