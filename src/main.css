@@ -5132,6 +5132,9 @@ body {
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .godigital .mb-5 {
+    width: 100%;
+  }
   .title-4 {
     font-size: 25px;
   }

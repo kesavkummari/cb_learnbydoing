@@ -1,7 +1,13 @@
-/* .cardBody {
+.cardBody {
   max-width: 30%;
   padding: 20px;
   border: none;
+}
+
+@media (max-width: 730px) {
+  .card {
+    width: 100%;
+  }
 }
 
 .shadow-lg {
@@ -23,7 +29,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 250px;
-  max-width: 375px;
+  max-width: 100%;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
@@ -42,4 +48,4 @@
 .card-image,
 .card-title {
   margin-bottom: 15px;
-} */
+}
