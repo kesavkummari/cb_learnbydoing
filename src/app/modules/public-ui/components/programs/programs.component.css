@@ -48,6 +48,9 @@ section {
 .regular-program {
   background-color: white;
 }
+h2 {
+  font-size: 30px;
+}
 
 .intense-program {
   background: linear-gradient(to right, #5cdfe7, #004aad);
@@ -65,7 +68,6 @@ li {
   margin-bottom: 10px;
   margin-top: 10px;
   font-size: 20px;
-  font-weight: lighter;
 }
 
 li.blue1 {
