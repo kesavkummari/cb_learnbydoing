@@ -7689,7 +7689,7 @@ body .menu.viewall a:hover {
   position: absolute;
   left: 0px;
   content: "";
-  /* background-image: url(../images/roundtick.png); */
+  background-image: url(assets/intro/roundtick.png);
 }
 .slidebtns a {
   display: inline-block;
@@ -7779,28 +7779,28 @@ body .menu.viewall a:hover {
   z-index: 3;
   position: absolute;
   top: 5%;
-  right: 30%;
+  right: 25%;
   height: 117px;
 }
 .devopsicon {
   z-index: 3;
   position: absolute;
-  top: 5%;
-  left: 24%;
+  top: 4%;
+  left: 30%;
   height: 117px;
 }
 .uiicon {
   z-index: 3;
   position: absolute;
   top: 43%;
-  left: -9px;
+  left: -16px;
   height: 117px;
 }
 .fullicon {
   z-index: 3;
   position: absolute;
-  right: -30px;
-  top: 40%;
+  right: -86px;
+  top: 45%;
   height: 117px;
 }
 .pythonicon {
@@ -7811,11 +7811,10 @@ body .menu.viewall a:hover {
   height: 88px;
 }
 .reacticon {
-  z-index: 3;
   position: absolute;
-  right: 19%;
-  bottom: 12%;
   height: 88px;
+  left: 61%;
+  top: 82%;
 }
 .herobannerimg > * {
   grid-column: 1;
@@ -8144,9 +8143,9 @@ footer.footerwhite .social_icons ul li {
 }
 .nodeicon {
   position: absolute;
-  height: 93px;
-  left: 18%;
-  top: 73%;
+  height: 88px;
+  left: 19%;
+  top: 81%;
 }
 .powericon {
   position: absolute;
