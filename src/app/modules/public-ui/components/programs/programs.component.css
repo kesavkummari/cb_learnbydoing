@@ -20,7 +20,7 @@ h2 {
 }
 
 main {
-  margin: 50px;
+  margin: 10px;
   display: flex;
   justify-content: space-between;
 
@@ -30,7 +30,7 @@ main {
 section {
   width: 50%;
   padding: 20px;
-  #border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   display: flex;
   flex-direction: column;
   align-items: center;

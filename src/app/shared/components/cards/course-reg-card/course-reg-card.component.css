@@ -61,7 +61,7 @@ a {
   bottom: -15px;
   left: 50%;
   margin-left: -125px;
-  min-width: 250px;
+  width: 250px;
 }
 
 .btn {
