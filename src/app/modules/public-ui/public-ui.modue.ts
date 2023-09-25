@@ -18,9 +18,10 @@ import { DigitalLyncComponent } from './components/digital-lync/digital-lync.com
 import { QuestionsColComponent } from './components/questions-col/questions-col.component';
 import { LocationsComponent } from './components/locations/locations.component';
 import { FooterComponent } from './components/footer-col/footer-col.component';
+import { IntroComponent } from './components/intro-comp/intro-comp.component';
 
 @NgModule({
-  declarations: [CloudIntroComponent, IntroPageComponent, IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, FooterComponent],
+  declarations: [CloudIntroComponent, IntroPageComponent, IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, FooterComponent, IntroComponent],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule],
   providers: [],
 })
