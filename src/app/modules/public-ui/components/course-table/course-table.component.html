@@ -1,66 +1,112 @@
-<!-- table.component.html -->
-<div class="container">
-    <table id="main-table">
-        <thead>
-            <tr>
-                <th (click)="showTable('os')">OS Modules</th>
-                <th (click)="showTable('aws')">AWS</th>
-                <th (click)="showTable('devops')">DevOps</th>
-            </tr>
-        </thead>
-    </table>
-
-    <div id="sub-container">
-        <table class="sub-table" id="os-modules-table">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <link rel="stylesheet" type="text/css" href="./course-table.component.css">
+</head>
+<body>
+    <div class="container">
+        <table id="main-table">
             <thead>
                 <tr>
-                    <th>Modules</th>
+                    <th onclick="showTable('os')">OS Modules</th>
+                    <th onclick="showTable('aws')">AWS</th>
+                    <th onclick="showTable('devops')">DevOps</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr *ngFor="let module of osModules" (click)="showModuleContent(module)">
-                    <td>{{ module }}</td>
-                </tr>
-            </tbody>
         </table>
 
-        <table class="sub-table" id="aws-modules-table">
-            <thead>
-                <tr>
-                    <th>Modules</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let module of awsModules" (click)="showModuleContent(module)">
-                    <td>{{ module }}</td>
-                </tr>
-            </tbody>
-        </table>
+        <div id="sub-container">
+            <table class="sub-table" id="os-modules-table">
+                <thead>
+                    <tr>
+                        <th>Modules</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="showModuleContent(this, 'OS Module 1')">
+                        <td>OS Module 1</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'OS Module 2')">
+                        <td>OS Module 2</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'OS Module 3')">
+                        <td>OS Module 3</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'OS Module 4')">
+                        <td>OS Module 4</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'OS Module 5')">
+                        <td>OS Module 5</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <table class="sub-table" id="devops-modules-table">
-            <thead>
-                <tr>
-                    <th>Modules</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let module of devopsModules" (click)="showModuleContent(module)">
-                    <td>{{ module }}</td>
-                </tr>
-            </tbody>
-        </table>
+            <table class="sub-table" id="aws-modules-table">
+                <thead>
+                    <tr>
+                        <th>Modules</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="showModuleContent(this, 'AWS Module 1')">
+                        <td>AWS Module 1</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'AWS Module 2')">
+                        <td>AWS Module 2</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'AWS Module 3')">
+                        <td>AWS Module 3</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'AWS Module 4')">
+                        <td>AWS Module 4</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'AWS Module 5')">
+                        <td>AWS Module 5</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <table class="sub-table" id="module-content-table">
-            <thead>
-                <tr>
-                    <th>Module Content</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td [class.module-content]="isModuleContentVisible">{{ selectedModuleName }}</td>
-                </tr>
-            </tbody>
-        </table>
+            <table class="sub-table" id="devops-modules-table">
+                <thead>
+                    <tr>
+                        <th>Modules</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="showModuleContent(this, 'DevOps Module 1')">
+                        <td>DevOps Module 1</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'DevOps Module 2')">
+                        <td>DevOps Module 2</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'DevOps Module 3')">
+                        <td>DevOps Module 3</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'DevOps Module 4')">
+                        <td>DevOps Module 4</td>
+                    </tr>
+                    <tr onclick="showModuleContent(this, 'DevOps Module 5')">
+                        <td>DevOps Module 5</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="sub-table" id="module-content-table">
+                <thead>
+                    <tr>
+                        <th>Module Content</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Content for selected module will appear here -->
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
+
+    <script src="./course-table.component.ts"></script>
+</body>
+</html>
