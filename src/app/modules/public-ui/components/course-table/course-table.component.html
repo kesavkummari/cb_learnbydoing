@@ -1,0 +1,66 @@
+<!-- table.component.html -->
+<div class="container">
+    <table id="main-table">
+        <thead>
+            <tr>
+                <th (click)="showTable('os')">OS Modules</th>
+                <th (click)="showTable('aws')">AWS</th>
+                <th (click)="showTable('devops')">DevOps</th>
+            </tr>
+        </thead>
+    </table>
+
+    <div id="sub-container">
+        <table class="sub-table" id="os-modules-table">
+            <thead>
+                <tr>
+                    <th>Modules</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let module of osModules" (click)="showModuleContent(module)">
+                    <td>{{ module }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="sub-table" id="aws-modules-table">
+            <thead>
+                <tr>
+                    <th>Modules</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let module of awsModules" (click)="showModuleContent(module)">
+                    <td>{{ module }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="sub-table" id="devops-modules-table">
+            <thead>
+                <tr>
+                    <th>Modules</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let module of devopsModules" (click)="showModuleContent(module)">
+                    <td>{{ module }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="sub-table" id="module-content-table">
+            <thead>
+                <tr>
+                    <th>Module Content</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td [class.module-content]="isModuleContentVisible">{{ selectedModuleName }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
