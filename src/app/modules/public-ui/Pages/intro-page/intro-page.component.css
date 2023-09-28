@@ -1,46 +1,63 @@
-/* .heading-3 {
-  color: #1554bb;
-  font-size: 40px !important;
-  margin-bottom: 10px !important;
-  text-transform: capitalize;
-  font-weight: 600;
+.main-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 400px auto;
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+  padding: 137px 190px;
 }
 
-.heading-9 {
-  font-weight: 600;
+.text-content {
+  justify-items: center;
 }
 
-.Coorporatetext p {
-  padding: 20px 0;
-  font-weight: 300;
+@media (max-width: 720px) {
+  .main-grid {
+    display: block; /* Change from grid to block */
+    text-align: center; /* Center-align the content */
+  }
+  .text-content {
+    margin-bottom: 1px;
+  }
 }
 
-.mb-18 {
-  margin-bottom: 18px;
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(2, 270px);
+  grid-gap: 5px;
+  justify-items: center;
 }
 
-.primaryButton {
-  background: #f9c420 !important;
-  display: inline-block;
-  cursor: pointer;
-  text-transform: capitalize;
-  letter-spacing: 0.8px;
-  font-size: 16px;
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  width: 300px;
+  opacity: 0; /* Initially hide the images */
+  animation: fadeIn 1s ease-in-out forwards; /* Apply animation */
 }
 
-.primaryButtonText {
-  text-transform: capitalize;
-  border-right: 1px solid #8a7636;
-  padding: 22px 24px 25px 24px;
-  font-size: 16px;
-  display: inline-block;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.iconText {
-  padding: 20px;
+.top-centered {
+  grid-row: 1;
+  grid-column: span 2;
 }
 
-.hvr-icon-up .hvr-icon {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-} */
+/* Remove margin for the DevOps and MLOps images */
+.grid-item:nth-child(2),
+.grid-item:nth-child(3) {
+  margin-top: 0;
+}
