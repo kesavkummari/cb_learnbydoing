@@ -5,8 +5,11 @@
   grid-gap: 10px;
   align-items: center;
   justify-items: center;
-  padding: 200px 50px 100px;
+  padding: 150px 50px 101px;
   justify-content: space-between;
+  background-color: lightskyblue;
+  max-width: 100%;
+  border-radius: 0 123px 0;
 }
 .text-content {
   justify-items: center;
