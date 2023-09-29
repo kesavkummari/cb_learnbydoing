@@ -124,3 +124,7 @@ hr {
   background-color: lightgray;
   border: none;
 }
+.coming-soon {
+  font-size: 14px; /* Set the font size to make it smaller */
+  color: #BFD7ED; /* Change the text color */
+}
