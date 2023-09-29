@@ -18,11 +18,12 @@ import { DigitalLyncComponent } from './components/digital-lync/digital-lync.com
 import { QuestionsColComponent } from './components/questions-col/questions-col.component';
 import { LocationsComponent } from './components/locations/locations.component';
 import { FooterComponent } from './components/footer-col/footer-col.component';
-import { CouseTableComponent } from './components/course-table/course-table.component';
+import { CourseTableComponent } from './components/trending-courses/course-table/course-table.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [CloudIntroComponent, IntroPageComponent, IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, FooterComponent, CouseTableComponent],
-  imports: [RouterModule, PublicUiRoutingModule, SharedModule],
+  declarations: [CloudIntroComponent, IntroPageComponent, IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, FooterComponent, IntroPageComponent, CourseTableComponent],
+  imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule],
   providers: [],
 })
 export class PublicUiModule { }
