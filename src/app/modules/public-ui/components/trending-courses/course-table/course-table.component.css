@@ -2,7 +2,7 @@
   width: 80%;
   margin: 0 auto;
   overflow: auto;
-  border: 0px solid #ddd;
+  border: 0px solid #dddddd;
   padding: 20px;
 }
 .course-heading {
@@ -20,7 +20,7 @@ body {
 }
 
 #main-table th {
-  background-color: #ffffff;
+  background-color: #1792e9;
   padding: 10px;
 }
 
