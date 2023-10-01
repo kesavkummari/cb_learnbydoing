@@ -1,21 +1,20 @@
+<div style="background-color: #f2f5f7;  ">
 <div class="container">
-    <table id="main-table">
+  <table id="main-table">
       <thead>
-        <tr>
-          <th (click)="showModules('os')">OS Modules</th>
-          <th (click)="showModules('aws')">AWS Modules</th>
-          <th (click)="showModules('devops')">DevOps Modules</th>
-        </tr>
-      </thead>
-    </table>
-  
-  
-    <div id="sub-container">
-      <table class="sub-table">
-        <thead>
           <tr>
-            <th>Modules</th>
+              <th class="module-box" (click)="showModules('os')">OS</th>
+              <th class="module-box" (click)="showModules('aws')">AWS</th>
+              <th class="module-box" (click)="showModules('devops')">DevOps</th>
           </tr>
+      </thead>
+  </table>
+
+  
+    <div id="sub-container" >
+      <table class="sub-table" >
+        <thead>
+          
         </thead>
         <tbody>
           <tr *ngFor="let module of activeModules"
@@ -27,7 +26,14 @@
       </table>
   
       <div class="module-content">
-        {{ selectedModuleContent }}
+        <div class="scrollable-content">
+
+        
+        <ul *ngIf="selectedModuleContent && selectedModuleContent.length > 0" >
+          <li *ngFor="let item of selectedModuleContent" style="list-style-type: none;" class="list_item" >{{ item }}</li>
+        </ul>
+      </div>
       </div>
     </div>
   </div>
+</div>

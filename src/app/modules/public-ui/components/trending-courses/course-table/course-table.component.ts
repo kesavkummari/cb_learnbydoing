@@ -7,15 +7,34 @@ import { Component } from '@angular/core';
 })
 export class CourseTableComponent {
   osModules = [
-    { name: 'OS Module 1', content: 'Content for OS Module 1' },
-    { name: 'OS Module 2', content: 'Content for OS Module 2' },
+    { 
+      name: 'OS Module 1', 
+      content: ['Content for OS Module 1', '2', '3' ] } ,
+    { name: 'OS Module 2', content: ['Content for OS Module 2'] },
     { name: 'OS Module 3', content: 'Content for OS Module 3' },
     { name: 'OS Module 4', content: 'Content for OS Module 4' },
     { name: 'OS Module 5', content: 'Content for OS Module 5' }
   ];
 
   awsModules = [
-    { name: 'AWS Services - Compute ', content: 'Content for AWS Module 1' },
+    { name: 'AWS Services - Compute ',
+     content: ['Amazon EC2',
+      'Images',
+      'EBS',
+      'Security Groups',
+      'Snapshots',
+      'Creating Golden Images',
+      'Amazon EC2 Auto Scaling',
+      'EC2 Image Builder',
+      'AWS Elastic Beanstalk','Amazon EC2',
+      'Images',
+      'EBS',
+      'Security Groups',
+      'Snapshots',
+      'Creating Golden Images',
+      'Amazon EC2 Auto Scaling',
+      'EC2 Image Builder',
+      'AWS Elastic Beanstalk'] },
     { name: 'AWS Services - Storage', content: 'Content for AWS Module 2' },
     { name: 'AWS Module 3', content: 'Content for AWS Module 3' },
     { name: 'AWS Module 4', content: 'Content for AWS Module 4' },
@@ -54,5 +73,7 @@ export class CourseTableComponent {
 
   showModuleContent(moduleContent: string) {
     this.selectedModuleContent = moduleContent;
+    
   }
+  
 }

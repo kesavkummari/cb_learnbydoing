@@ -33,6 +33,7 @@ body {
   display: flex;
   width: 100%;
   margin-top: 20px;
+  background-color: #73c5f4;
 }
 
 .sub-table {
@@ -56,6 +57,9 @@ body {
 .module-content {
   background-color: #0074d9;
   color: #fff;
+  width: 50%;
+  text-align: center;
+  
   
 }
 
@@ -64,3 +68,23 @@ body {
   color: #fff;
 }
 
+.module-box {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  width: 20%;
+}
+  .module-box:hover {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+.list_item{
+  padding: 10px;
+}
+.scrollable-content {
+  max-height: 400px; /* Adjust the maximum height as needed */
+  overflow: auto;
+}
