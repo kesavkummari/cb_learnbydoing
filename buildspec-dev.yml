@@ -22,7 +22,7 @@ phases:
       - ls -lrta
       - npm run build_dev
       - ls -ltra dist
-      - cd dist/abc
+      - cd dist/cloudbinary
       - ls -lrta
       - aws s3 sync . s3://cb-cloudbinary-dev/
       - echo Files were uploaded unto s3 bucket
