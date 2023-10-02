@@ -98,7 +98,7 @@ li.white1::before {
   background-color: #2a8ec7;
   color: white;
 }
-
+/*
 li.blue1:first-child::before,
 li.white1:first-child::before {
   content: "1";
@@ -118,6 +118,7 @@ li.blue1:nth-child(7)::before,
 li.white1:nth-child(7)::before {
   content: "4";
 }
+*/
 
 hr {
   height: 1px;
