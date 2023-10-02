@@ -18,18 +18,10 @@ export class CourseTableComponent {
 
   awsModules = [
     { name: 'AWS Services - Compute ',
-     content: ['Amazon EC2',
-      'Images',
-      'EBS',
-      'Security Groups',
-      'Snapshots',
-      'Creating Golden Images',
-      'Amazon EC2 Auto Scaling',
-      'EC2 Image Builder',
-      'AWS Elastic Beanstalk','Amazon EC2',
-      'Images',
-      'EBS',
-      'Security Groups',
+     content: [['Amazon EC2 -' , ' Images',
+     '  EBS',
+     ' Security Groups'],
+     
       'Snapshots',
       'Creating Golden Images',
       'Amazon EC2 Auto Scaling',
