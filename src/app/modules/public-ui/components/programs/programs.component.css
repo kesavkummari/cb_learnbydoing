@@ -119,8 +119,37 @@ li.white1:nth-child(7)::before {
   content: "4";
 }
 
+li.blue1:nth-child(9)::before,
+li.white1:nth-child(9)::before {
+  content: "5";
+}
+
+li.blue1:nth-child(11)::before,
+li.white1:nth-child(11)::before {
+  content: "6";
+}
+
+
 hr {
   height: 1px;
   background-color: lightgray;
   border: none;
+}
+.coming-soon {
+  font-size: 14px; /* Set the font size to make it smaller */
+  color: #BFD7ED; /* Change the text color */
+  height: 32px;
+}
+.coming-soon {
+  font-size: 14px; /* Set the font size to make it smaller */
+  color: #0c0c0c; /* Change the text color */
+  position: relative; /* Add positioning to contain the flag */
+}
+
+.flag {
+  background-color: yellow; /* Set the background color to yellow for the flag */
+  display: inline-block; /* Make the flag a block element */
+  padding: 5px 10px; /* Adjust padding to your preference */
+  border-radius: 5px; /* Add rounded corners to the flag */
+  margin-right: 10px; /* Add some spacing to the right of the flag */
 }

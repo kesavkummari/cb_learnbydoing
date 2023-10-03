@@ -1,0 +1,93 @@
+/* Add or modify styles as needed */
+
+.main-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sub-tabs {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+}
+
+.sub-tab {
+  padding: 10px 20px;
+  color:#387ef7;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px 5px 0 0;
+  width: 26vw;
+  height: 50px;
+  font-size: 21px;
+}
+
+.sub-tab:hover {
+  background-color: #ccc;
+}
+
+.sub-tab.active {
+  background-color: #cae0fe;
+  height: 70px;
+  color:#387ef7;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 200px;
+  width: 80vw;
+  background-color: #cae0fe;
+}
+
+.content h2 {
+  color: #007bff;
+}
+
+.content-columns {
+  display: flex;
+  width: -webkit-fill-available;
+}
+
+.left-column {
+  flex: 1;
+  padding: 0 10px;
+  border-right: 1px solid #ccc;
+  flex-basis: 50%;
+  max-width: 50%;
+  overflow-y: scroll;
+  height: 560px;
+}
+
+.module {
+  padding: 10px 0 0 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  height: 75px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+
+.module:hover {
+  background-color: #f0f0f0;
+}
+
+.module.active-module {
+  background-color: #007bff;
+  color: white;
+}
+
+.right-column {
+  flex: 2;
+  margin: 0 32px 0 57px;
+  background-color: #007bff;
+  padding-left: 47px;
+  padding-top: 21px;
+  border-radius: 10px;
+}

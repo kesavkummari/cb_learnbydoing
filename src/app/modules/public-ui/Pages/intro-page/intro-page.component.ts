@@ -6,3 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['intro-page.component.css']
 })
 export class IntroPageComponent { }
+
+
+const sections = document.querySelectorAll<HTMLElement>('.scroll-triggered');
