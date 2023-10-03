@@ -125,17 +125,21 @@ Compliance</div>
       <div class="content-columns">
         <div class="left-column">
           <h2>DevOps Content - Modules</h2>
-          <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">M1</div>
+          <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">SOftware Development Life Cycle : Agile - Scrum</div>
           <!-- Add modules M2 to M10 here -->
-          <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">M2</div>
-          <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">M3</div>
-          <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">M4</div>
-          <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">M5</div>
-          <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">M6</div>
-          <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">M7</div>
-          <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">M8</div>
-	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">M9</div>
-	  <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">M10</div>
+          <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Version Control System / Source Code Management: Git</div>
+          <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Continuous Integration : Jenkins</div>
+          <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Continuous Static Code Analysis : SonarQube</div>
+          <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Continuous Binary Code Repository using JFrog</div>
+          <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Continuous Configuration Management : Ansible</div>
+          <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Containerisation : Docker</div>
+
+	  <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">Container Orchestration : Kubernates</div>
+	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">Continuous Monitoring : CloudWatch, New Relic & Nagios</div>
+    <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">Creating Machine Images : Packer</div>
+    <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">Continuous Infrastructure As A Code: Terraform</div>
+    <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">Migration Strategies</div>
+    <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Deployment Strategies</div>
         </div>
         <div class="right-column">
           <!-- Content for DevOps modules M1 to M10 here -->
@@ -147,5 +151,37 @@ Compliance</div>
         </div>
       </div>
     </ng-container>
+
+    <ng-container *ngIf="selectedTab === 'mlops'">
+      <div class="content-columns">
+        <div class="left-column">
+          <h2>MLOps Content - Modules</h2>
+          <p>Accelerate model development</p>
+          <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">M1</div>
+          <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">M2</div>
+          <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">M3</div>
+          <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">M4</div>
+          <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">M5</div>
+          <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">M6</div>
+          <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">M7</div>
+          <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">M8</div>
+	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">M9</div>
+	  <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">M10</div>
+        </div>
+        <div class="right-column">
+          <!-- Content for OS modules M1 to M10 here -->
+          <ng-container *ngIf="selectedModule === 'M1'">
+            <h2>Module 1 Content for OS</h2>
+            <p>Content for Module 1 in OS goes here.</p>
+          </ng-container>
+          <!-- Add content for OS modules M2 to M10 here -->
+        </div>
+      </div>
+    </ng-container>
+
+
+
+
+
   </div>
 </div>

@@ -98,7 +98,7 @@ li.white1::before {
   background-color: #2a8ec7;
   color: white;
 }
-/*
+
 li.blue1:first-child::before,
 li.white1:first-child::before {
   content: "1";
@@ -118,7 +118,17 @@ li.blue1:nth-child(7)::before,
 li.white1:nth-child(7)::before {
   content: "4";
 }
-*/
+
+li.blue1:nth-child(9)::before,
+li.white1:nth-child(9)::before {
+  content: "5";
+}
+
+li.blue1:nth-child(11)::before,
+li.white1:nth-child(11)::before {
+  content: "6";
+}
+
 
 hr {
   height: 1px;
@@ -128,6 +138,7 @@ hr {
 .coming-soon {
   font-size: 14px; /* Set the font size to make it smaller */
   color: #BFD7ED; /* Change the text color */
+  height: 32px;
 }
 .coming-soon {
   font-size: 14px; /* Set the font size to make it smaller */
