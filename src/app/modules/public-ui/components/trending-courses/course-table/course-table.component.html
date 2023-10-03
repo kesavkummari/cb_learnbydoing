@@ -1,39 +1,151 @@
-<div style="background-color: #f2f5f7;  ">
-<div class="container">
-  <table id="main-table">
-      <thead>
-          <tr>
-              <th class="module-box" (click)="showModules('os')">OS</th>
-              <th class="module-box" (click)="showModules('aws')">AWS</th>
-              <th class="module-box" (click)="showModules('devops')">DevOps</th>
-          </tr>
-      </thead>
-  </table>
+<div class="main-tab">
+  <div class="sub-tabs">
+    <div class="sub-tab" (click)="selectTab('os')" [class.active]="selectedTab === 'os'">OS Modules</div>
+    <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">AWS Modules</div>
+    <div class="sub-tab" (click)="selectTab('devops')" [class.active]="selectedTab === 'devops'">DevOps </div>
+    <div class="sub-tab" (click)="selectTab('mlops')" [class.active]="selectedTab === 'mlops'" style="margin-right: 0;">MLOps</div>
+  </div>
+  <div class="content">
+    <ng-container *ngIf="selectedTab === 'os'">
+      <div class="content-columns">
+        <div class="left-column">
+          <h2>OS Content - Modules</h2>
+          <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">M1</div>
+          <!-- Add modules M2 to M10 here -->
+          <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">M2</div>
+          <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">M3</div>
+          <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">M4</div>
+          <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">M5</div>
+          <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">M6</div>
+          <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">M7</div>
+          <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">M8</div>
+	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">M9</div>
+	  <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">M10</div>
+        </div>
+        <div class="right-column">
+          <!-- Content for OS modules M1 to M10 here -->
+          <ng-container *ngIf="selectedModule === 'M1'">
+            <h2>Module 1 Content for OS</h2>
+            <p>Content for Module 1 in OS goes here.</p>
+          </ng-container>
+          <!-- Add content for OS modules M2 to M10 here -->
+        </div>
+      </div>
+    </ng-container>
 
+    <ng-container *ngIf="selectedTab === 'aws'">
+      <div class="content-columns">
+        <div class="left-column">
+          <h2>AWS Content - Modules</h2>
+          <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">AWS Services - Compute  </div>
+          <!-- Add modules M2 to M10 here -->
+          <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Storage</div>
+          <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Database</div>
+          <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Networking & Content</div>
+          <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS Services - Containers</div>
+          <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS Services - Application Integration</div>
+          <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS Services - Developer Tools</div>
+          <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS Services - Management &
+Governance</div>
+	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS Services - Serverless</div>
+	  <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS Services - Security, Identity, and
+Compliance</div>
   
-    <div id="sub-container" >
-      <table class="sub-table" >
-        <thead>
+        </div>
+        <div class="right-column">
+          <!-- Content for AWS modules M1 to M10 here -->
           
-        </thead>
-        <tbody>
-          <tr *ngFor="let module of activeModules"
-          (click)="showModuleContent(module.content)"
-        >
-            <td>{{ module.name }}</td>
-          </tr>
-        </tbody>
-      </table>
-  
-      <div class="module-content">
-        <div class="scrollable-content">
+          <ng-container *ngIf="selectedModule === 'M1'">
+            <h2>Module 1 </h2>
+            <ul>
+  <li>Amazon EC2
+    <ul>
+      <li>Images</li>
+      <li>EBS</li>
+      <li>Security Groups</li>
+      <li>Snapshots</li>
+      <li>Creating Golden Images</li>
+    </ul>
+  </li>
+  <li>Amazon EC2 Auto Scaling</li>
+  <li>EC2 Image Builder</li>
+  <li>AWS Elastic Beanstalk</li>
+</ul>
 
-        
-        <ul *ngIf="selectedModuleContent && selectedModuleContent.length > 0" >
-          <li *ngFor="let item of selectedModuleContent" style="list-style-type: none;" class="list_item" >{{ item }}</li>
-        </ul>
+          </ng-container>
+           <ng-container *ngIf="selectedModule === 'M2'">
+            <h2>Module 2</h2>
+            <ul>
+  <li>Amazon S3</li>
+  <li>Amazon Elastic Block Store (Amazon EBS)</li>
+  <li>Amazon Elastic File System (Amazon EFS)</li>
+  <li>Amazon FSx for Windows File Server</li>
+  <li>AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)</li>
+</ul>
+
+          </ng-container>
+           <ng-container *ngIf="selectedModule === 'M3'">
+            <h2>Module 1 Content for AWS</h2>
+            <p>Content for Module 1 in AWS goes here.</p>
+          </ng-container>
+           <ng-container *ngIf="selectedModule === 'M4'">
+            <h2>Module 1 Content for AWS</h2>
+            <p>Content for Module 1 in AWS goes here.</p>
+          </ng-container>
+           <ng-container *ngIf="selectedModule === 'M5'">
+            <h2>Module 1 Content for AWS</h2>
+            <p>Content for Module 1 in AWS goes here.</p>
+          </ng-container>
+           <ng-container *ngIf="selectedModule === 'M6'">
+            <h2>Module 1 Content for AWS</h2>
+            <p>Content for Module 1 in AWS goes here.</p>
+          </ng-container>
+           <ng-container *ngIf="selectedModule === 'M7'">
+            <h2>Module 1 Content for AWS</h2>
+            <p>Content for Module 1 in AWS goes here.</p>
+          </ng-container>
+           <ng-container *ngIf="selectedModule === 'M8'">
+            <h2>Module 1 Content for AWS</h2>
+            <p>Content for Module 1 in AWS goes here.</p>
+          </ng-container>
+           <ng-container *ngIf="selectedModule === 'M9'">
+            <h2>Module 1 Content for AWS</h2>
+            <p>Content for Module 1 in AWS goes here.</p>
+          </ng-container>
+           <ng-container *ngIf="selectedModule === 'M10'">
+            <h2>Module 1 Content for AWS</h2>
+            <p>Content for Module 1 in AWS goes here.</p>
+          </ng-container>
+          <!-- Add content for AWS modules M2 to M10 here -->
+        </div>
       </div>
+    </ng-container>
+
+    <ng-container *ngIf="selectedTab === 'devops'">
+      <div class="content-columns">
+        <div class="left-column">
+          <h2>DevOps Content - Modules</h2>
+          <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">M1</div>
+          <!-- Add modules M2 to M10 here -->
+          <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">M2</div>
+          <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">M3</div>
+          <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">M4</div>
+          <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">M5</div>
+          <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">M6</div>
+          <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">M7</div>
+          <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">M8</div>
+	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">M9</div>
+	  <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">M10</div>
+        </div>
+        <div class="right-column">
+          <!-- Content for DevOps modules M1 to M10 here -->
+          <ng-container *ngIf="selectedModule === 'M1'">
+            <h2>Module 1 Content for DevOps</h2>
+            <p>Content for Module 1 in DevOps goes here.</p>
+          </ng-container>
+          <!-- Add content for DevOps modules M2 to M10 here -->
+        </div>
       </div>
-    </div>
+    </ng-container>
   </div>
 </div>
