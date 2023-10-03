@@ -8,4 +8,3 @@ import { Component } from '@angular/core';
 export class IntroPageComponent { }
 
 
-const sections = document.querySelectorAll<HTMLElement>('.scroll-triggered');
