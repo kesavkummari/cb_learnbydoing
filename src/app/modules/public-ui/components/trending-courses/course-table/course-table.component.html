@@ -38,17 +38,15 @@
         <div class="left-column">
           <h2>AWS Content - Modules</h2>
           <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">AWS Services - Compute  </div>
-          <!-- Add modules M2 to M10 here -->
           <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Storage</div>
           <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Database</div>
           <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Networking & Content</div>
           <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS Services - Containers</div>
           <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS Services - Application Integration</div>
           <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS Services - Developer Tools</div>
-          <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS Services - Management &
-Governance</div>
-	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS Services - Serverless</div>
-	  <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS Services - Security, Identity, and
+          <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS Services - Management & Governance</div>
+	        <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS Services - Serverless</div>
+	        <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS Services - Security, Identity, and
 Compliance</div>
   
         </div>
@@ -59,7 +57,7 @@ Compliance</div>
             <h2>Module 1 </h2>
             <ul>
   <li>Amazon EC2
-    <ul>
+    <ul style="padding-left: 40px;">
       <li>Images</li>
       <li>EBS</li>
       <li>Security Groups</li>
@@ -86,37 +84,99 @@ Compliance</div>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M3'">
             <h2>Module 1 Content for AWS</h2>
-            <p>Content for Module 1 in AWS goes here.</p>
+            <ul>
+              <li>Amazon RDS</li>
+              <li>Amazon DynamoDB</li>
+              <li>AWS Database Migration Service (AWS DMS)</li>
+              <li>Amazon Redshift</li>
+          </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M4'">
             <h2>Module 1 Content for AWS</h2>
-            <p>Content for Module 1 in AWS goes here.</p>
+            <ul>
+              <li>Amazon API Gateway</li>
+              <li>AWS Client VPN</li>
+              <li>Amazon CloudFront</li>
+              <li>Elastic Load Balancing (ELB)</li>
+              <li>AWS PrivateLink</li>
+              <li>Amazon Route 53</li>
+              <li>AWS Site-to-Site VPN</li>
+              <li>AWS Transit Gateway</li>
+              <li>Amazon VPC</li>
+              <li>Amazon VPC Peering</li>
+          </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M5'">
             <h2>Module 1 Content for AWS</h2>
-            <p>Content for Module 1 in AWS goes here.</p>
+            <ul>
+              <li>Amazon Elastic Container Registry (Amazon ECR)</li>
+              <li>Amazon Elastic Container Service (Amazon ECS)</li>
+              <li>Amazon Elastic Kubernetes Service (Amazon EKS)</li>
+          </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M6'">
             <h2>Module 1 Content for AWS</h2>
-            <p>Content for Module 1 in AWS goes here.</p>
+            <ul>
+              <li>Amazon EventBridge (Amazon CloudWatch Events)</li>
+            </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M7'">
             <h2>Module 1 Content for AWS</h2>
-            <p>Content for Module 1 in AWS goes here.</p>
+            <ul>
+              <li>AWS CLI</li>
+              <li>AWS Cloud Development Kit (AWS CDK)</li>
+              <li>AWS CloudShell</li>
+              <li>AWS CodeArtifact</li>
+              <li>AWS CodeBuild</li>
+              <li>AWS CodeCommit</li>
+              <li>AWS CodeDeploy</li>
+              <li>AWS CodePipeline</li>
+              <li>AWS CodeStar</li>
+              <li>End To End Java Project CI/CD Pipeline</li>
+          </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M8'">
             <h2>Module 1 Content for AWS</h2>
-            <p>Content for Module 1 in AWS goes here.</p>
+            <ul>
+              <li>AWS CloudFormation</li>
+              <li>AWS CloudTrail</li>
+              <li>Amazon CloudWatch & Logs</li>
+              <li>AWS Compute Optimiser</li>
+              <li>AWS Health</li>
+              <li>AWS OpsWorks</li>
+              <li>AWS Organisations</li>
+              <li>AWS Systems Manager</li>
+              <li>AWS Trusted Advisor</li>
+          </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M9'">
             <h2>Module 1 Content for AWS</h2>
-            <p>Content for Module 1 in AWS goes here.</p>
+            <ul>
+              <li>AWS Lambda</li>
+              <li>Amazon Simple Email Service (SES)</li>
+              <li>Amazon Simple Notification Service (Amazon SNS)</li>
+              <li>AWS Step Functions</li>
+          </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M10'">
             <h2>Module 1 Content for AWS</h2>
-            <p>Content for Module 1 in AWS goes here.</p>
+            <ul>
+              <li>AWS Certificate Manager (ACM)</li>
+              <li>AWS CloudHSM</li>
+              <li>Amazon Cognito</li>
+              <li>Amazon Detective</li>
+              <li>AWS Directory Service</li>
+              <li>Amazon GuardDuty</li>
+              <li>AWS IAM Identity Center (AWS Single Sign-On)</li>
+              <li>AWS Identity and Access Management (IAM)</li>
+              <li>Amazon Inspector</li>
+              <li>AWS Key Management Service (AWS KMS)</li>
+              <li>AWS Security Token Service (AWS STS)</li>
+              <li>AWS Shield</li>
+              <li>AWS WAF</li>
+          </ul>
           </ng-container>
-          <!-- Add content for AWS modules M2 to M10 here -->
+         
         </div>
       </div>
     </ng-container>
@@ -145,6 +205,190 @@ Compliance</div>
           <!-- Content for DevOps modules M1 to M10 here -->
           <ng-container *ngIf="selectedModule === 'M1'">
             <h2>Module 1 Content for DevOps</h2>
+            <ul>
+              <li>What is Agile?</li>
+              <li>Agile Manifesto (4 Values & 12 Principles)</li>
+              <li>What is Scrum?</li>
+              <li>Agile Scrum Roles</li>
+              <li>Agile Scrum Ceremonies</li>
+              <ul style="padding-left: 40px;">
+                <li>Sprint Planning</li>
+                <li>Daily Standup</li>
+                <li>Sprint Backlog Refinement</li>
+                <li>Sprint Review</li>
+                <li>Sprint Retrospective</li>
+              </ul>
+              
+                <li>Product Backlog Grooming</li>
+                <li>Agile Scrum Artefacts</li>
+                <li>Agile Scrum Board</li>
+                <li>Create a Sprint using Jira/Azure Boards</li>
+                <ul style="padding-left: 40px;">
+                  <li>Create Epic</li>
+                   <li>Create Story</li>
+                  <li>Create a Task</li>
+                </ul>
+                <li> Summary </li>
+          </ul>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M2'">
+            <h2>Module 2 Content for DevOps</h2>
+            <ul>
+              <li>What is Git, AWS CodeCommit, and GitHub?</li>
+              <li>About Version Control Systems and Types</li>
+              <li>Git Workflow</li>
+              <li>Installing Git on Windows & Linux</li>
+              <li>Getting Started with Git Commands</li>
+              <li>Working with Branches</li>
+              <li>Merging Branches</li>
+              <li>Creating and Committing a Pull Request</li>
+              <li>Working with Stash</li>
+              <li>Summary</li>
+          </ul>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M3'">
+            <h2>Module 3 Content for DevOps</h2>
+            <ul>
+              <li>Overview of Continuous Integration</li>
+              <li>Getting Started with Jenkins</li>
+              <li>Jenkins Architecture</li>
+              <li>Download, Installing, and Configuring Jenkins</li>
+              <li>Jenkins Management</li>
+              <li>Installing Jenkins Plugins</li>
+              <li>Creating Jenkins Jobs</li>
+              <li>Creating Jenkins Declarative & Scripted Pipelines</li>
+              <li>End To End Java Project CI/CD Pipeline</li>
+              <li>Summary</li>
+          </ul>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M4'">
+            <h2>Module 4 Content for DevOps</h2>
+            <ul>
+              <li>Getting Started with SonarQube</li>
+              <li>Integrate SonarQube with Pipeline Jenkins & CodeBuild/CodePipeline</li>
+              <li>Integrate SonarQube with GitHub</li>
+              <li>Execute Code Quality using SonarQube</li>
+              <ul style="padding-left: 40px;">
+                <li>Reliability</li>
+                <li>Security</li>
+                <li>Maintainability</li>
+                <li>Security Review</li>
+                <li>Coverage & Duplications</li>
+              </ul>
+              <li>Summary</li>
+          </ul>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M5'">
+            <h2>Module 5 Content for DevOps</h2>
+            <ul>
+              <li>Getting Started with Continuous Binary Code</li>
+              <li>Repository i.e. JFrog</li>
+              <li>JFrog Architecture</li>
+              <li>Download, Installing, and Configuring JFrog</li>
+              <li>Integrate JFrog with VCS/SCM i.e. POM.xml</li>
+              <li>Integrate JFrog with Maven</li>
+              <li>Creating Jenkins Jobs & Publish artifact to JFrog repository</li>
+              <li>Creating Jenkins Pipeline Jobs & Publish artifact to JFrog repository</li>
+              <li>Summary</li>
+          </ul>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M6'">
+            <h2>Module 6 Content for DevOps</h2>
+            <ul>
+              <li>What is Configuration Management?</li>
+              <li>Different Types of Configuration Management</li>
+              <li>Tools for Configuration Management</li>
+              <li>What is Ansible?</li>
+              <li>History of Ansible</li>
+              <li>Important Terms Used in Ansible</li>
+              <li>Ansible Installation in Linux</li>
+              <li>Ansible Ad-hoc Commands</li>
+              <li>Ansible Playbooks</li>
+              <li>Ansible Roles</li>
+              <li>Summary</li>
+          </ul>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M7'">
+            <h2>Module 7 Content for DevOps</h2>
+            <ul>
+              <li>What is a Container?</li>
+              <li>List of Container Vendors</li>
+              <li>Getting Started with Docker</li>
+              <li>Docker Product</li>
+              <li>Docker Architecture</li>
+              <li>Docker Installation</li>
+              <li>Docker Hub</li>
+              <li>Docker Images</li>
+              <li>Docker Networking</li>
+              <li>Docker Compose</li>
+              <li>Summary</li>
+          </ul>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M8'">
+            <h2>Module 8 Content for DevOps</h2>
+            <ul>
+              <li>What is Cluster Orchestration or Container Orchestration?</li>
+              <li>Different Types of Container Orchestration Vendors</li>
+              <li>What is Kubernetes?</li>
+              <li>Kubernetes Cluster Orchestration Architecture</li>
+              <li>Kubernetes Components (Pods, Nodes, Service, Volume & Namespace)</li>
+              <li>Create a 3-Node Cluster & Deploy a Simple Web Server (Nginx):</li>
+              <ul style="padding-left: 20px;">
+                  <li>Creating Cluster</li>
+                  <li>Adding Nodes to Cluster</li>
+                  <li>Create Nginx Deployment</li>
+                  <li>Create Nginx Service</li>
+                  <li>Describe Nginx Deployment</li>
+                  <li>Validate Nginx Deployment</li>
+                  <li>Access Website using Cluster IP and Node IP</li>
+              </ul>
+              <li>Summary</li>
+          </ul>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M9'">
+            <h2>Module 9 Content for DevOps</h2>
+            <ul>
+              <li> Getting Started with Observability</li>
+              <li>What is Observability/Monitoring?</li>
+              <li>Types of Continuous Monitoring:</li>
+              <ul style="padding-left: 20px;">
+                  <li>Application Monitoring</li>
+                  <li>Infrastructure Monitoring</li>
+                  <li>Kubernetes Monitoring</li>
+                  <li>Log Management</li>
+                  <li>Browser Monitoring</li>
+                  <li>Mobile Monitoring</li>
+                  <li>Synthetics Monitoring</li>
+                  <li>Network Monitoring</li>
+                </ul>
+              <li>List of Continuous Monitoring Tools</li>
+              <li>Configure Jobs</li>
+              <ul style="padding-left: 30px;">
+                <li>Ping Monitoring in New Relic</li>
+                <li>Simple Browser Monitoring in New Relic</li>
+                <li>Scripted Monitoring in New Relic</li>
+                <li>Getting Started with APM (Application Performance Monitoring) in New Relic</li>
+                <li>Configure APM in New Relic</li>
+            </ul>
+            <li>Configure Infrastructure in New Relic</li>
+            <li>Creating Dashboard in New Relic</li>
+            <li>Summary</li>
+          </ul>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M10'">
+            <h2>Module 10 Content for DevOps</h2>
+            <p>Content for Module 1 in DevOps goes here.</p>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M11'">
+            <h2>Module 11 Content for DevOps</h2>
+            <p>Content for Module 1 in DevOps goes here.</p>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M12'">
+            <h2>Module 12 Content for DevOps</h2>
+            <p>Content for Module 1 in DevOps goes here.</p>
+          </ng-container>
+          <ng-container *ngIf="selectedModule === 'M13'">
+            <h2>Module 13 Content for DevOps</h2>
             <p>Content for Module 1 in DevOps goes here.</p>
           </ng-container>
           <!-- Add content for DevOps modules M2 to M10 here -->
