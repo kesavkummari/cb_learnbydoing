@@ -6,48 +6,16 @@
     </h5>
   </div>
 
-  <div
-    rowcol-flexbox
-    style="
-      display: flex;
-      justify-content: space-around;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-top: 80px;
-    "
-    [columnFlexValues]="[1, 1, 1]"
+<course-table></course-table>
+
+
+<div class="text-center"> 
+  <a
+    href="#"
+    class="button-course getStartedButton radiusround hvr-icon-up mt-5 shadow-lg wow fadeInUp animated animated"
+    style="visibility: visible"
   >
-    <course-reg-card
-      ImgSrc="assets/trending-courses/aws-banner.jpg"
-      CourseLink="#"
-      CourseLinkName="AWS Course Training"
-      CourseName="AWS"
-    ></course-reg-card>
-
-    <course-reg-card
-      ImgSrc="assets/trending-courses/devops-bnr.jpg"
-      CourseLink="#"
-      CourseLinkName="DevOps Course Training"
-      CourseName="DevOps"
-    ></course-reg-card>
-
-    <course-reg-card
-      ImgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPYEM-77DWpBvAhEpywlRBFppYlTQUbArRg&usqp=CAU"
-      CourseLink="#"
-      CourseLinkName="ML Ops Training"
-      CourseName="ML Ops"
-    ></course-reg-card>
-  </div>
-
-  <div class="text-center">
-    <a
-      href="#"
-      class="button-course getStartedButton radiusround hvr-icon-up mt-5 shadow-lg wow fadeInUp animated animated"
-      style="visibility: visible"
-    >
-      <span>View All Courses</span>
-    </a>
-  </div>
-
-  <course-table></course-table>
+    <span>View All Courses</span>
+  </a>
 </div>
+
