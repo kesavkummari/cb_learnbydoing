@@ -7,4 +7,3 @@ import { Component } from '@angular/core';
 })
 export class ProgramsComponent {
 }
-const sections = document.querySelectorAll('.scroll-triggered');

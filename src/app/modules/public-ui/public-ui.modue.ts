@@ -1,7 +1,7 @@
 // feature-module1.module.ts
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
+import { CommonModule } from '@angular/common';
 
 // Import components, services, guards, etc. from this module
 import { PublicUiRoutingModule } from './public-ui-routing.module';
@@ -19,7 +19,6 @@ import { QuestionsColComponent } from './components/questions-col/questions-col.
 import { LocationsComponent } from './components/locations/locations.component';
 import { FooterComponent } from './components/footer-col/footer-col.component';
 import { CourseTableComponent } from './components/trending-courses/course-table/course-table.component';
-import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [CloudIntroComponent, IntroPageComponent, IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, FooterComponent, IntroPageComponent, CourseTableComponent],

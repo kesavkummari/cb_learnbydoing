@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-const sections = document.querySelectorAll('.scroll-triggered');
 
 @Component({
   selector: 'course-table',
