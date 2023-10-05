@@ -1,0 +1,13 @@
+.trainingprogrambutton{
+    justify-content: left;
+    display: flex;
+}
+@media (max-width: 768px){
+    .trainingprogrambutton{
+        justify-content: center;
+        display: flex;  
+    }
+    .Coorporatetext h2, .Coorporatetext h6, .Coorporatetext p{
+            text-align: center;
+    }
+}
