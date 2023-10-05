@@ -38,6 +38,15 @@
   box-shadow: 0 3px 30px #a2cdeef4;
 }
 
+/* .keycol.keyhome{
+  background-image: url(assets/key-features/kf.svg);
+  width: 100vw;
+  background-size: 100%;
+  max-width: 1257px;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
 /* .heading-1,
 .keycol h5 {
   text-transform: capitalize;
@@ -88,4 +97,3 @@ h6 {
     font-size: 14px;
   }
 } */
-

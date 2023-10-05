@@ -47,6 +47,7 @@
 
 .content h2 {
   color: #030303;
+  font-weight: 600;
   
 }
 
@@ -87,8 +88,9 @@
 .right-column {
   flex: 2;
   margin: 0 32px 0 57px;
-  background-color: #007bff;
+  background-color: #6eacee;
   padding-left: 47px;
   padding-top: 21px;
   border-radius: 10px;
+  color: #fff;
 }
