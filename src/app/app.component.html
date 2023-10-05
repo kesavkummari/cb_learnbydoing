@@ -1,4 +1,59 @@
-<router-outlet> </router-outlet>
+<!-- Main Content -->
+<div class="content">
+  <div class="header" style="padding-left: 30px; height: 40px; position: fixed;" *ngIf="!isScreenSmall">
+    <a href="index.html" class="logo_link">
+      <img
+        src="assets/footer/nobg.png"
+        alt="Logo"
+        class="flogo"
+        style="width: 70px;"
+    />
+    <div>
+      <div style="font-weight: 600;
+      font-size: 23px;margin-bottom: -5px;">Cloud Binary</div>
+      <div style="font-size: 18px;">Learn by Doing</div>
+    </div>
+  </a> 
+    <a href="./src/assets/footer/cloudbinary_white_bg1.png" class="logo"></a>
+    <div class="header-right">
+      <a  href="#awsdevops">AWS DEVOPS</a>
+      <a href="#mlops">MLOPS</a>   
+      <a class="active" href="#contactus">Contact Us</a>
+    </div>
+  </div>
+  <div class="header" style="padding-left: 30px; height: 40px; position: fixed; display:flex" *ngIf="isScreenSmall">
+    <a href="index.html" class="logo_link" style="    display: flex;
+    flex-direction: row;">
+      <img
+        src="assets/footer/nobg.png"
+        alt="Logo"
+        class="flogo"
+        style="width: 70px;"
+    />
+    <div>
+      <div style="font-weight: 600;
+      font-size: 23px;margin-bottom: -5px;">Cloud Binary</div>
+      <div style="font-size: 18px;">Learn by Doing</div>
+    </div>
+  </a> 
+    <div class="header-right">
+      <button (click)="toggleSidenav()">
+        <i class="fa fa-bars"></i> <!-- Font Awesome "bars" icon -->
+      </button>
+    </div>
+  </div>
+  
+  <router-outlet></router-outlet>
+</div>
+
+<!-- Sidenav -->
+<div class="header__backdrop" [class.open]="sidenavOpen"></div>
+<div class="sidenav" [class.open]="sidenavOpen">
+  <!-- Your sidenav content goes here -->
+  <a routerLink="/awsdevops">AWS DEVOPS</a>
+  <a routerLink="/mlops">MLOPS</a>
+  <a routerLink="/contactus">Contact Us</a>
+</div>
 
 <!-- <app-button-chooser
   buttonStyle="button1"

@@ -11,7 +11,7 @@ import 'bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
