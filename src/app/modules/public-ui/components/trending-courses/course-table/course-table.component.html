@@ -10,24 +10,202 @@
       <div class="content-columns">
         <div class="left-column">
           <h2>OS Content - Modules</h2>
-          <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">M1</div>
-          <!-- Add modules M2 to M10 here -->
-          <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">M2</div>
-          <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">M3</div>
-          <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">M4</div>
-          <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">M5</div>
-          <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">M6</div>
-          <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">M7</div>
-          <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">M8</div>
-	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">M9</div>
-	  <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">M10</div>
+          <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with OS</div>
+          <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Linux File System</div>
+          <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Text Editors</div>
+          <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">File permissions</div>
+          <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">User Administration</div>
+          <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Package Management</div>
+          <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Controlling Services & Daemons</div>
+          <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">Process Management</div>
+	        <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">Log Management</div>
+	        <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">Webserver</div>
+          <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">Application Server  </div>
+          <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">Database </div>
+          <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Scripting </div>
         </div>
         <div class="right-column">
           <!-- Content for OS modules M1 to M10 here -->
           <ng-container *ngIf="selectedModule === 'M1'">
-            <h2>Module 1 Content for OS</h2>
-            <p>Content for Module 1 in OS goes here.</p>
+            <h2>Module 1</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul> <li>Unix & Linux History & Distributions </li>
+              <li>Basic & Advanced Commands </li>
+              <li>Run Levels </li>
+              <li>Boot Process </li>
+            </ul>
           </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M2'">
+            <h2>Module 2</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+           <ul>
+            <li>File system Hierarchy</li>
+            <li>  Top level directory</li>
+            <li>  Configuration, home, root directories</li>
+            <li>  Directories and functions</li>
+          </ul>
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M3'">
+            <h2>Module 3</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul><li>GUI vs CLI Text editors</li>
+              <li> Vi/Vim</li>
+              <li>Create, Save, and Delete a file in Vi/Vim</li>
+              <li>Create, Save, and Delete a file in Vi/Vim</li>
+              <li>Operation Modes in Vi/Vim</li>
+              <li>Insert-mode commands</li>
+              <li>Execute mode shortcuts</li></ul>
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M4'">
+            <h2>Module 4</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul><li> File Permission levels</li>
+              <li>Different modes of file permissions</li>
+              <li> Ownership</li></ul>
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M5'">
+            <h2>Module 5</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul> <li>Creating User</li>
+              <li>Creating groups</li>
+              <li>Managing the users and groups</li></ul>
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M6'">
+            <h2>Module 6</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul><li> Distribution and Package Management</li>
+              <li> Package repositories</li>
+              <li>Yum and Apt-get</li></ul>
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M7'">
+            <h2>Module 7</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul><li>Understating Deamons and services </li>
+              <li>Controlling the Deamons</li>
+              <li> Controlling services and Deamon commands</li></ul>
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M8'">
+            <h2>Module 8</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul> <li>Foreground and background process</li>
+             <li> Parent and Child process</li>
+               <li>Deamon and zombie process</li>
+              <li> Process management commands </li></ul>
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M9'">
+            <h2>Module 9</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul><li>Logs directory</li>
+              <li>Syslogs</li>
+                <li>Follow tag</li>
+                  <li>Logs with journalctl </li> </ul>
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M10'">
+            <h2>Module 10</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul><li>Windows IIS </li>
+              <li>Apache2 </li>
+              <li>Nginx</li>
+              <li>Httpd</li> </ul>
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M11'">
+            <h2>Module 11</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul><li>Apache Tomcat </li></ul>
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M12'">
+            <h2>Module 12</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+           <ul><li>RDBMS (MySQL)</li>
+         <li>PostgreSQL</li> </ul>
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M13'">
+            <h2>Module 13</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul> <li>Different types of Shells </li>
+              <li>/bin/bash and switching between shells</li>
+              <li>Basics of Power-shell & Shell </li>
+              <li> Executing shell scripts</li></ul>
+          </ng-container>
+          
+          
           <!-- Add content for OS modules M2 to M10 here -->
         </div>
       </div>
@@ -55,6 +233,12 @@ Compliance</div>
           
           <ng-container *ngIf="selectedModule === 'M1'">
             <h2>Module 1 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
   <li>Amazon EC2
     <ul style="padding-left: 40px;">
@@ -73,6 +257,12 @@ Compliance</div>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M2'">
             <h2>Module 2</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
   <li>Amazon S3</li>
   <li>Amazon Elastic Block Store (Amazon EBS)</li>
@@ -83,7 +273,13 @@ Compliance</div>
 
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M3'">
-            <h2>Module 1 Content for AWS</h2>
+            <h2>Module 3</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>Amazon RDS</li>
               <li>Amazon DynamoDB</li>
@@ -92,7 +288,13 @@ Compliance</div>
           </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M4'">
-            <h2>Module 1 Content for AWS</h2>
+            <h2>Module 4</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>Amazon API Gateway</li>
               <li>AWS Client VPN</li>
@@ -107,7 +309,13 @@ Compliance</div>
           </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M5'">
-            <h2>Module 1 Content for AWS</h2>
+            <h2>Module 5</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>Amazon Elastic Container Registry (Amazon ECR)</li>
               <li>Amazon Elastic Container Service (Amazon ECS)</li>
@@ -115,13 +323,25 @@ Compliance</div>
           </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M6'">
-            <h2>Module 1 Content for AWS</h2>
+            <h2>Module 6</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>Amazon EventBridge (Amazon CloudWatch Events)</li>
             </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M7'">
-            <h2>Module 1 Content for AWS</h2>
+            <h2>Module 7</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>AWS CLI</li>
               <li>AWS Cloud Development Kit (AWS CDK)</li>
@@ -136,7 +356,13 @@ Compliance</div>
           </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M8'">
-            <h2>Module 1 Content for AWS</h2>
+            <h2>Module 8</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>AWS CloudFormation</li>
               <li>AWS CloudTrail</li>
@@ -150,7 +376,13 @@ Compliance</div>
           </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M9'">
-            <h2>Module 1 Content for AWS</h2>
+            <h2>Module 9</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>AWS Lambda</li>
               <li>Amazon Simple Email Service (SES)</li>
@@ -159,7 +391,13 @@ Compliance</div>
           </ul>
           </ng-container>
            <ng-container *ngIf="selectedModule === 'M10'">
-            <h2>Module 1 Content for AWS</h2>
+            <h2>Module 10</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>AWS Certificate Manager (ACM)</li>
               <li>AWS CloudHSM</li>
@@ -204,7 +442,13 @@ Compliance</div>
         <div class="right-column">
           <!-- Content for DevOps modules M1 to M10 here -->
           <ng-container *ngIf="selectedModule === 'M1'">
-            <h2>Module 1 Content for DevOps</h2>
+            <h2>Module 1</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>What is Agile?</li>
               <li>Agile Manifesto (4 Values & 12 Principles)</li>
@@ -232,7 +476,13 @@ Compliance</div>
           </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M2'">
-            <h2>Module 2 Content for DevOps</h2>
+            <h2>Module 2 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>What is Git, AWS CodeCommit, and GitHub?</li>
               <li>About Version Control Systems and Types</li>
@@ -247,7 +497,13 @@ Compliance</div>
           </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M3'">
-            <h2>Module 3 Content for DevOps</h2>
+            <h2>Module 3 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>Overview of Continuous Integration</li>
               <li>Getting Started with Jenkins</li>
@@ -262,7 +518,13 @@ Compliance</div>
           </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M4'">
-            <h2>Module 4 Content for DevOps</h2>
+            <h2>Module 4 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>Getting Started with SonarQube</li>
               <li>Integrate SonarQube with Pipeline Jenkins & CodeBuild/CodePipeline</li>
@@ -279,7 +541,13 @@ Compliance</div>
           </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M5'">
-            <h2>Module 5 Content for DevOps</h2>
+            <h2>Module 5 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>Getting Started with Continuous Binary Code</li>
               <li>Repository i.e. JFrog</li>
@@ -293,7 +561,13 @@ Compliance</div>
           </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M6'">
-            <h2>Module 6 Content for DevOps</h2>
+            <h2>Module 6 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>What is Configuration Management?</li>
               <li>Different Types of Configuration Management</li>
@@ -309,7 +583,13 @@ Compliance</div>
           </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M7'">
-            <h2>Module 7 Content for DevOps</h2>
+            <h2>Module 7 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>What is a Container?</li>
               <li>List of Container Vendors</li>
@@ -325,7 +605,13 @@ Compliance</div>
           </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M8'">
-            <h2>Module 8 Content for DevOps</h2>
+            <h2>Module 8</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li>What is Cluster Orchestration or Container Orchestration?</li>
               <li>Different Types of Container Orchestration Vendors</li>
@@ -346,7 +632,13 @@ Compliance</div>
           </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M9'">
-            <h2>Module 9 Content for DevOps</h2>
+            <h2>Module 9</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
             <ul>
               <li> Getting Started with Observability</li>
               <li>What is Observability/Monitoring?</li>
@@ -376,20 +668,90 @@ Compliance</div>
           </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M10'">
-            <h2>Module 10 Content for DevOps</h2>
-            <p>Content for Module 1 in DevOps goes here.</p>
+            <h2>Module 10 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul>
+              <li>Getting Started with packer</li>
+              <li>Install Packer on Windows & Linux</li>
+              <ul style="padding-left: 20px;">
+              <li>Build an Image</li>
+             <ul style="padding-left: 40px;"> <li>Variables</li>
+              <li>Builders</li>
+              <li>Provisioners</li>
+              <li>Post-Provisioners</li> </ul>
+              <li>Executing Shell Scripts</li>
+              <ul style="padding-left: 40px;"><li>Shell Script</li>
+              <li>PowerShell Script</li> </ul>
+              <li>Executing Ansible PlayBooks</li>
+            </ul>
+            <li>Summary</li>
+          </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M11'">
-            <h2>Module 11 Content for DevOps</h2>
-            <p>Content for Module 1 in DevOps goes here.</p>
+            <h2>Module 11</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul>
+             <li> Getting Started with IaC</li>
+             <li>Different Vendors Of IaC tools?
+              <li>What is Terraform?</li>
+              <li>Core Concepts of Terraform</li>
+              <li>Variables</li>
+              <li>Modules</li>
+              <li>State Files</li>
+              <li>Create Virtual Machines using Terraform</li>
+              <li>Create Create 3 Tier Architecture using</li>
+              <li>Terraform</li>
+              <li>Summary</li>
+
+            </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M12'">
-            <h2>Module 12 Content for DevOps</h2>
-            <p>Content for Module 1 in DevOps goes here.</p>
+            <h2>Module 12 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul>
+                    <li>What is Migration?</li>
+                    <li>Different Types Of Migration Strategies:</li>
+                    <ul style="padding-left: 40px;"> <li>Rehosting, Replatforming,</li>
+                    <li>Repurchasing, Refactoring, Retiring &</li>
+                    <li>Retaining</li> </ul>
+                    <li>Summary</li>
+
+            </ul>
           </ng-container>
           <ng-container *ngIf="selectedModule === 'M13'">
-            <h2>Module 13 Content for DevOps</h2>
-            <p>Content for Module 1 in DevOps goes here.</p>
+            <h2>Module 13 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul>
+              <li> What is Deployment?</li>
+                <li>Different Types of Deployment Strategies:</li>
+           <ul style="padding-left: 40px;">   <li>Recreate Deployment</li>
+              <li>Ramped Deployment</li>
+              <li>Blue/Green Deployment</li>
+              <li>Canary Deployment</li>
+              <li>A/B Testing Deployment</li>
+              <li>Shadow Deployment</li> </ul>
+              <li>Summary</li>
+          </ul>
           </ng-container>
           <!-- Add content for DevOps modules M2 to M10 here -->
         </div>
@@ -400,25 +762,120 @@ Compliance</div>
       <div class="content-columns">
         <div class="left-column">
           <h2>MLOps Content - Modules</h2>
-          <p>Accelerate model development</p>
-          <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">M1</div>
-          <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">M2</div>
-          <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">M3</div>
-          <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">M4</div>
-          <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">M5</div>
-          <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">M6</div>
-          <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">M7</div>
-          <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">M8</div>
-	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">M9</div>
-	  <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">M10</div>
+         
+          <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'"> Introduction to MLOps</div>
+          <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">MLOps Development</div>
+          <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'"> MLOps Deployment</div>
+          <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Model Monitoring and Operations</div>
+          <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'"> Wrap-up</div>
+        
         </div>
         <div class="right-column">
           <!-- Content for OS modules M1 to M10 here -->
           <ng-container *ngIf="selectedModule === 'M1'">
-            <h2>Module 1 Content for OS</h2>
-            <p>Content for Module 1 in OS goes here.</p>
+            <h2>Module 1 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul>
+              <li>Machine learning operations</li>
+              <li>Goals of MLOps</li>
+              <li>Communication</li>
+              <li>From DevOps to MLOps</li>
+              <li>ML workflow</li>
+              <li>Scope</li>
+              <li>MLOps view of ML workflow</li>
+              <li>MLOps cases</li>
+            </ul>
           </ng-container>
-          <!-- Add content for OS modules M2 to M10 here -->
+          
+          <ng-container *ngIf="selectedModule === 'M2'">
+            <h2>Module 2</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul>
+              <li>Intro to build, train, and evaluate machine learning models</li>
+              <li>MLOps security</li>
+              <li>Automating</li>
+              <li>Apache Airflow</li>
+              <li>Kubernetes integration for MLOps</li>
+              <li>Amazon SageMaker for MLOps</li>
+              <li>Lab: Bring your own algorithm to an MLOps pipeline</li>
+              <li>Demonstration: Amazon SageMaker</li>
+              <li>Intro to build, train, and evaluate machine learning models</li>
+              <li>Lab: Code and serve your ML model with AWS CodeBuild</li>
+              <li>Activity: MLOps Action Plan Workbook</li>
+            </ul>
+            
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M3'">
+            <h2>Module 3</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul>
+              <li>Introduction to Deployment Operations</li>
+              <li>Model packaging</li>
+              <li>Inference</li>
+              <li>Lab: Deploy your model to production</li>
+              <li>SageMaker production variants</li>
+              <li>Deployment strategies</li>
+              <li>Deploying to the edge</li>
+              <li>Lab: Conduct A/B testing</li>
+              <li>Activity: MLOps Action Plan Workbook</li>
+            </ul>
+            
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M4'">
+            <h2>Module 4</h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul>
+              <li>Lab: Troubleshoot your pipeline</li>
+              <li>The importance of monitoring</li>
+              <li>Monitoring by design</li>
+              <li>Lab: Monitor your ML model</li>
+              <li>Human-in-the-loop</li>
+              <li>Amazon SageMaker Model Monitor</li>
+              <li>Demonstration: Amazon SageMaker Pipelines, Model Monitor, model registry, and Feature Store</li>
+              <li>Solving the Problem(s)</li>
+              <li>Activity: MLOps Action Plan Workbook</li>
+            </ul>
+            
+          </ng-container>
+          
+          <ng-container *ngIf="selectedModule === 'M5'">
+            <h2>Module 5 </h2>
+            <hr style=" position: unset;
+            border: none;
+            height: 2px;
+            background: black;
+            margin-bottom: 20px;
+            margin-right: inherit;" >
+            <ul>
+              <li>Course review</li>
+              <li>Activity: MLOps Action Plan Workbook</li>
+              <li>Wrap-up</li>
+            </ul>
+            
+          </ng-container>
+
         </div>
       </div>
     </ng-container>
