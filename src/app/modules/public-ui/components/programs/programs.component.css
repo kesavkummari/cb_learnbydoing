@@ -128,6 +128,18 @@ li.blue1:nth-child(11)::before,
 li.white1:nth-child(11)::before {
   content: "6";
 }
+li.blue1:nth-child(13)::before,
+li.white1:nth-child(13)::before {
+  content: "7";
+}
+li.blue1:nth-child(15)::before,
+li.white1:nth-child(15)::before {
+  content: "8";
+}
+li.blue1:nth-child(17)::before,
+li.white1:nth-child(17)::before {
+  content: "9";
+}
 
 
 hr {
