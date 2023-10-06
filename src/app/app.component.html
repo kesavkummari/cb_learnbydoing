@@ -1,7 +1,7 @@
 <!-- Main Content -->
 <div class="content">
-  <div class="header" style="padding-left: 30px; height: 40px; position: fixed;" *ngIf="!isScreenSmall">
-    <a href="index.html" class="logo_link">
+  <div class="header" style=" height: 40px; position: fixed;" *ngIf="!isScreenSmall">
+    <a href="index.html" class="logo_link logo">
       <img
         src="assets/footer/nobg.png"
         alt="Logo"
@@ -14,15 +14,15 @@
       <div style="font-size: 18px;">Learn by Doing</div>
     </div>
   </a> 
-    <a href="./src/assets/footer/cloudbinary_white_bg1.png" class="logo"></a>
+    <!-- <a href="./src/assets/footer/cloudbinary_white_bg1.png" class="logo"></a> -->
     <div class="header-right">
       <a  href="#awsdevops">AWS DEVOPS</a>
       <a href="#mlops">MLOPS</a>   
       <a class="active" href="#contactus">Contact Us</a>
     </div>
   </div>
-  <div class="header" style="padding-left: 30px; height: 40px; position: fixed; display:flex; justify-content: flex-start;" *ngIf="isScreenSmall">
-    <a href="index.html" class="logo_link" style="    display: flex;
+  <div class="header" style=" height: 40px; position: fixed; display:flex; justify-content: space-between;" *ngIf="isScreenSmall">
+    <a href="index.html" class="logo_link logo" style="    display: flex;
     flex-direction: row;">
       <img
         src="assets/footer/nobg.png"

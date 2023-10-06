@@ -1,7 +1,7 @@
 .header {
     overflow: hidden;
     background-color: #ffffff;
-    padding: 20px 30px;
+    padding: 0 25px 0 10px;
     display: flex; /* Add this to use flexbox */
     justify-content: space-between; /* Add this to space items evenly horizontally */
     align-items: center; /* Add this to vertically center items */
@@ -20,6 +20,7 @@
     font-size: 25px;
     font-weight: bold;
     margin-right: 20px; /* Adjust this margin to move the logo right */
+    margin-top: 0px;
   }
   
   .header a:hover {
@@ -38,7 +39,7 @@
   }
   
   .header a:not(.logo) {
-    padding: 11px 20px; /* Add horizontal padding to navigation links */
+    padding: 11px 20px; 
   }
 
   @media screen and (max-width: 500px) {
