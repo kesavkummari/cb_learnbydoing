@@ -6,7 +6,7 @@ import { IntroPageComponent } from './Pages/intro-page/intro-page.component';
 
 const routes: Routes = [
   {
-    path: 'intro',
+    path: '',
     component: IntroPageComponent,
     // Add guards and resolve as needed
   },
