@@ -1,5 +1,6 @@
 /* Add or modify styles as needed */
 
+/* Desktop view */
 .main-tab {
   display: flex;
   flex-direction: column;
@@ -15,7 +16,7 @@
 
 .sub-tab {
   padding: 10px 20px;
-  color:#387ef7;
+  color: #387ef7;
   background-color: #f0f0f0;
   cursor: pointer;
   margin-right: 10px;
@@ -32,7 +33,7 @@
 .sub-tab.active {
   background-color: #cae0fe;
   height: 70px;
-  color:#387ef7;
+  color: #387ef7;
 }
 
 .content {
@@ -48,7 +49,6 @@
 .content h2 {
   color: #030303;
   font-weight: 600;
-  
 }
 
 .content-columns {
@@ -93,4 +93,48 @@
   padding-top: 21px;
   border-radius: 10px;
   color: #fff;
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .main-tab {
+    margin-top: 10px;
+  }
+
+  .sub-tabs {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .sub-tab {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .sub-tab.active {
+    height: 50px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content-columns {
+    flex-direction: column;
+  }
+
+  .left-column {
+    flex: 1;
+    border-right: none;
+    max-width: 100%;
+    overflow-y: scroll;
+    height: auto;
+  }
+
+  .right-column {
+    flex: 2;
+    margin: 10px 0;
+  }
 }
