@@ -10,7 +10,33 @@ padding: 116px; "
   <div class="container">
     <h4 sty>Key Features</h4>
     <hr >
-<img src="assets/key-features/kf/81.jpg" alt="">
+    <div *ngIf="!isScreenSmall" style="display:grid; grid-template-columns: repeat(4,auto);justify-content: center;gap: 20px;align-items: center;">
+      <img src="assets/key-features/kf/kf1.png" alt="" style="max-height:221px"/>
+      <img src="assets/key-features/kf/kf2.png" alt=""style="max-height:221px"/>
+      <div></div>    
+      <div></div>    
+      <div></div>  
+      <img src="assets/key-features/kf/kf3.png" alt=""style="max-height:221px;"/>
+      <img src="assets/key-features/kf/kf4.png" alt=""style="max-height:221px"/>
+      <div></div>    
+      <div></div>   
+      <div></div>   
+      <img src="assets/key-features/kf/kf5.png" alt=""style="max-height:221px"/>
+      <img src="assets/key-features/kf/kf6.png" alt=""style="max-height:221px"/>
+    </div>
+    <div *ngIf="isScreenSmall" style="display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;">
+      <img src="assets/key-features/kf/kf1.png" alt="" style="max-height:221px"/>
+      <img src="assets/key-features/kf/kf2.png" alt=""style="max-height:221px"/>  
+      <img src="assets/key-features/kf/kf3.png" alt=""style="max-height:221px;"/>
+      <img src="assets/key-features/kf/kf4.png" alt=""style="max-height:221px"/>          
+      <img src="assets/key-features/kf/kf5.png" alt=""style="max-height:221px"/>
+      <img src="assets/key-features/kf/kf6.png" alt=""style="max-height:221px"/>
+    </div>
+
+
 <hr>
   </div>
 </div>
