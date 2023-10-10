@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
 .heading-3 {
-  color: #1554bb;
+  color: #38b6ff;
   font-size: 40px !important;
   margin-bottom: 10px !important;
   text-transform: capitalize;
@@ -263,4 +263,16 @@ label:active {
 
 .top-tabs-container label:active {
   color: #dce775;
+}
+
+.getStartedButton:hover {
+  background: #024f75;
+  color: white !important;
+  
+}
+.getStartedButton {
+  
+  background-color: #38b6ff;
+  color: black !important;
+ 
 }

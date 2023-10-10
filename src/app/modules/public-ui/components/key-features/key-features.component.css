@@ -171,7 +171,7 @@ body {
 
 .slider-container {
   overflow: hidden;
-  width: 500px;
+  width: px;
   height: 400px;
   position: relative;
 }
@@ -179,7 +179,7 @@ body {
 .slider {
   display: flex;
   width: 1200px; /* 360px * 3 images */
-  animation: slide 5s linear infinite; /* Adjust animation duration as needed */
+  animation: slide 20s linear infinite; /* Adjust animation duration as needed */
 }
 
 .slide {
@@ -193,17 +193,12 @@ body {
   margin-right: 0;
 }
 
+
 @keyframes slide {
   0% {
-      transform: translateX(0);
-  }
-  33.33% {
-      transform: translateX(-360px);
-  }
-  66.67% {
-      transform: translateX(-720px);
+    transform: translateX(-100%);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(100%);
   }
 }

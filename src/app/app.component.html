@@ -19,9 +19,9 @@
   </a> 
     <!-- <a href="./src/assets/footer/cloudbinary_white_bg1.png" class="logo"></a> -->
     <div class="header-right">
-      <a  href="trending-courses.component.html" >AWS DEVOPS</a>
-      <a href="#mlops">MLOPS</a>   
-      <a class="active" href="#contactus">Contact Us</a>
+      <a  href="#aws" >AWS DEVOPS</a>
+      <a href="#aws">MLOPS</a>   
+      <a class="active" href="#contact">Contact Us</a>
     </div>
   </div>
   <div class="header" style=" height: 40px; position: fixed; display:flex; justify-content: space-between;" *ngIf="isScreenSmall">
@@ -54,9 +54,9 @@
 <div class="header__backdrop" [class.open]="sidenavOpen"></div>
 <div class="sidenav" [class.open]="sidenavOpen">
   <!-- Your sidenav content goes here -->
-  <a routerLink="/awsdevops">AWS DEVOPS</a>
+  <a href="#aws" >AWS DEVOPS</a>
   <a routerLink="/mlops">MLOPS</a>
-  <a routerLink="/contactus">Contact Us</a>
+  <a href="#contact">Contact Us</a>
 </div>
 
 <!-- <app-button-chooser
