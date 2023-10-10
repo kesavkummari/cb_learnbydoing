@@ -266,13 +266,13 @@ label:active {
 }
 
 .getStartedButton:hover {
-  background: #024f75;
+  background: #38b6ff;
   color: white !important;
   
 }
 .getStartedButton {
   
-  background-color: #38b6ff;
+  background-color: #cae0fe;
   color: black !important;
  
 }
