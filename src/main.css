@@ -29,7 +29,7 @@ a {
   outline: 0;
 }
 a {
-  color: #231f20;
+  color: black;
   -webkit-transition: color 0.3s, background-color 0.3s;
   -moz-transition: color 0.3s, background-color 0.3s;
   -o-transition: color 0.3s, background-color 0.3s;
@@ -42,7 +42,8 @@ a {
 a:focus,
 a:hover,
 button:focus {
-  color: #f9c420;
+  color: #fff;
+  
   text-decoration: none;
   outline: 0 !important;
 }
