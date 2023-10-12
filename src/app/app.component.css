@@ -109,12 +109,11 @@
 	height:60px;
 	bottom:40px;
 	right:40px;
-	background-color:#38b6ff;
-	color:#FFF;
+	
 	border-radius:50px;
 	text-align:center;
        font-size:30px;
-	box-shadow: 2px 2px 3px #999;
+	box-shadow: px 2px 3px #999;
   z-index:100;
 }
 
