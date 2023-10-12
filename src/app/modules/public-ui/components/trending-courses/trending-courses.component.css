@@ -78,7 +78,7 @@ a {
   transition: all 0.3s;
 }
 a:hover {
-  color: #B721FF;
+  color: #FF9900;
 }
 
 .tabbed {
@@ -275,4 +275,29 @@ label:active {
   background-color: #38b6ff;
   color: white !important;
  
+}
+
+
+.button-container {
+  display: flex;
+  gap: 40px; /* Adjust the gap as needed */
+  padding-top: 20px;
+}
+
+.button {
+  padding: 15px 35px;
+  background-color: #38b6ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none; /* Remove underlines from anchor tags */
+  display: inline-block; /* Add this to anchor tags to make them behave like buttons */
+  transition: background-color 0.3s, transform 0.3s; /* Add smooth transitions */
+   font-family: 'Quicksand', sans-serif;
+}
+
+.button:hover {
+  background-color: #007bff; /* Change color on hover */
+  transform: scale(1.1); /* Increase button size on hover */
 }
