@@ -88,7 +88,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 
@@ -138,3 +138,62 @@ body {
     transform: scale(1.1); /* Increase button size on hover */
   }
   
+.animated-text{
+  font-size: 28px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.animated-text span{
+  position: relative;
+}
+
+.animated-text span::before{
+  content: "AWS DevOps";
+  color: #FF9900;
+  animation: words 20s infinite;
+}
+
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #ffffff;
+  border-left: 2px solid #FF9900;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%,20%{
+      content: "100% Job Assistance";
+  }
+  21%,40%{
+      content: "9 Real Time Projects";
+  }
+  41%,60%{
+      content: "Quiz On Covered Topics";
+  }
+   61%,80%{
+      content: "Use Case Based Teaching ";
+  }
+  81%,100%{
+      content: "Resume Grooming Session";
+  } 
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+      width: calc(100% + 8px);
+  }
+}
