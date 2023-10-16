@@ -1,15 +1,22 @@
+
+.main-component {
+  background-image: url('src/assets/intro/home.png'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover; /* This will make the image cover the entire element */
+  background-position: center; /* Center the image within the element */
+}
 .main-component{
   display: flex;
   justify-content: center;
-  padding: 0 15px;
+  padding: 40px 15px;
+ 
 }
 .main-grid {
   display: grid;
   /* grid-template-rows: 1fr; */
   grid-template-columns: 1fr 1fr;
   grid-gap: 84px;
-  padding-top: 370px;
-  padding-bottom: 100px;
+  padding-top: 221px;
+  padding-bottom: 113px;
   justify-content: center;
   max-width: 1257px;
 }
@@ -122,8 +129,8 @@ body {
 
   .button {
     padding: 15px 35px;
-    background-color: #38b6ff;
-    color: #fff;
+    background-color: #fff;
+    color: #38b6ff;
     border: none;
     cursor: pointer;
     border-radius: 10px;
@@ -134,8 +141,9 @@ body {
   }
 
   .button:hover {
-    background-color: #007bff; /* Change color on hover */
+    background-color: #002324; /* Change color on hover */
     transform: scale(1.1); /* Increase button size on hover */
+    color: white;
   }
   
 .animated-text{
@@ -150,7 +158,7 @@ body {
 
 .animated-text span::before{
   content: "AWS DevOps";
-  color: #FF9900;
+  color: #fff;
   animation: words 20s infinite;
 }
 
@@ -159,7 +167,7 @@ body {
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  background-color: #ffffff;
+  background: linear-gradient(to right, #6ec6e6, #38b6ff);
   border-left: 2px solid #FF9900;
   right: -8px;
   animation: cursor .8s infinite, typing 20s steps(14) infinite;
