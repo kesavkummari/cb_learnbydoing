@@ -16,7 +16,8 @@
     border-radius: 4px;
   } */
   a{
-    color: #38b6ff;
+    font-weight: 700;
+    color: #010b13;
   }
   .header a.logo {
     font-size: 25px;
@@ -41,7 +42,7 @@
   }
   
   .header a:not(.logo) {
-    padding: 11px 20px; 
+    padding: 23px 20px; 
   }
 
   @media screen and (max-width: 500px) {
