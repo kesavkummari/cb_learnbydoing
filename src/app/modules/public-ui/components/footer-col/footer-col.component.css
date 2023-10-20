@@ -62,7 +62,7 @@
   
   .footer-menu-name {
       color: #fffff2;
-      font-size: 15px;
+      font-size: 22px;
       font-weight: 900;
       letter-spacing: .1em;
       line-height: 18px;
@@ -315,6 +315,7 @@
   ul {
     display: flex;
     flex-direction: column;
+    font-size: medium;
    /* align-items: flex-start; */
     
 }

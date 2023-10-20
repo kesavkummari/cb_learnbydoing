@@ -2,7 +2,8 @@
 .main-component {
   background: url('src/assets/intro/bgg1.svg') no-repeat center center ;
   background-size: cover;
-}
+  
+} 
 
 .main-component{
   display: flex;
