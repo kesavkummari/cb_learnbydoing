@@ -4,7 +4,7 @@
     <div  class="sub-tab" (click)="selectTab('os')" [class.active]="selectedTab === 'os'">   OS [Windows & Linux]</div>
     <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">AWS DOP-C02</div>
     <div class="sub-tab" (click)="selectTab('devops')" [class.active]="selectedTab === 'devops'">DevOps </div>
-   <!----> <div class="sub-tab" (click)="selectTab('mlops')" [class.active]="selectedTab === 'mlops'" style="margin-right: 0;">MLOps &nbsp;<span style="color: #FF9900; font-size: 12px; background-color: #fff;">Coming Soon!📢</span></div>
+   <!----> <div class="sub-tab" (click)="selectTab('mlops')" [class.active]="selectedTab === 'mlops'" style="margin-right: 0;">MLOps </div>
   </div>
   <div class="content">
     <ng-container *ngIf="selectedTab === 'os'">

@@ -16,8 +16,9 @@
 
 .sub-tab {
   padding: 10px 20px;
-  color: #387ef7;
-  background-color: #f0f0f0;
+  font-weight: 600;
+  color: #FF9900;
+  background-color: #28282B;
   cursor: pointer;
   margin-right: 10px;
   border-radius: 5px 5px 0 0;
@@ -27,13 +28,13 @@
 }
 
 .sub-tab:hover {
-  background-color: #ccc;
+  background-color: #343a40;
 }
 
 .sub-tab.active {
-  background-color: #cae0fe;
+  background-color: #353935;
   height: 70px;
-  color: #387ef7;
+  color: #FF9900;
 }
 
 .content {
@@ -43,11 +44,11 @@
   border-radius: 5px;
   min-height: 200px;
   width: 80vw;
-  background-color: #cae0fe;
+  background-color: #353935;
 }
 
 .content h2 {
-  color: #030303;
+  color: #e9ecef;
   font-weight: 600;
 }
 
@@ -73,7 +74,7 @@
   height: 75px;
   border-radius: 10px;
   margin-bottom: 15px;
-  background-color: white;
+  background-color: #e9ecef;
 }
 
 .module:hover {
@@ -81,14 +82,14 @@
 }
 
 .module.active-module {
-  background-color: #007bff;
+  background-color: #3c3f43;
   color: white;
 }
 
 .right-column {
   flex: 2;
   margin: 0 32px 0 57px;
-  background-color: #6eacee;
+  background-color: #3c3f43;
   padding-left: 47px;
   padding-top: 21px;
   border-radius: 10px;

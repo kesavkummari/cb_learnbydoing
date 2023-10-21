@@ -1,9 +1,12 @@
-
+  /*
 .main-component {
+
   background: url('src/assets/intro/bgg1.svg') no-repeat center center ;
-  background-size: cover;
+  background-size: cover; 
+
+  background-image: linear-gradient(97deg, #98cdec 0%, #fff 54%);
   
-} 
+} */
 
 .main-component{
   display: flex;
@@ -16,7 +19,7 @@
   /* grid-template-rows: 1fr; */
   grid-template-columns: 1fr 1fr;
   grid-gap: 84px;
-  padding-top: 221px;
+  padding-top: 100px;
   padding-bottom: 113px;
   justify-content: center;
   max-width: 1257px;
@@ -130,11 +133,11 @@ body {
 
   .button {
     padding: 15px 35px;
-    background-color: #002346;
+    background-color: #38bfff;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 26px;
     text-decoration: none; /* Remove underlines from anchor tags */
     display: inline-block; /* Add this to anchor tags to make them behave like buttons */
     transition: background-color 0.3s, transform 0.3s; /* Add smooth transitions */
