@@ -20,7 +20,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 84px;
   padding-top: 100px;
-  padding-bottom: 113px;
+  padding-bottom: 0px;
   justify-content: center;
   max-width: 1257px;
 }
