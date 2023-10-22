@@ -2,31 +2,34 @@
 .main-component {
 
   background: url('src/assets/intro/bgg1.svg') no-repeat center center ;
-  background-size: cover; 
+  background-size: cover;
 
   background-image: linear-gradient(97deg, #98cdec 0%, #fff 54%);
-  
+
 } */
 
 .main-component{
   display: flex;
   justify-content: center;
-  padding: 105px 15px;
- 
+  margin: 80px 30px;
+
 }
 .main-grid {
   display: grid;
   /* grid-template-rows: 1fr; */
   grid-template-columns: 1fr 1fr;
   grid-gap: 84px;
-  padding-top: 100px;
-  padding-bottom: 0px;
+  /* padding-top: 100px;
+  padding-bottom: 0px; */
   justify-content: center;
   max-width: 1257px;
 }
 
 .text-content {
   justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (max-width: 720px) {
@@ -99,12 +102,12 @@
 
 body {
   margin: 0;
-  
+
 }
 
 
 @media screen and (max-width: 500px) {
-  
+
 
   .image-transition{
     width: 123px;
@@ -132,7 +135,7 @@ body {
   }
 
   .button {
-    padding: 15px 35px;
+    padding: 20px 35px;
     background-color: #38bfff;
     color: white;
     border: none;
@@ -142,6 +145,7 @@ body {
     display: inline-block; /* Add this to anchor tags to make them behave like buttons */
     transition: background-color 0.3s, transform 0.3s; /* Add smooth transitions */
      font-family: 'Quicksand', sans-serif;
+     font-weight: bold;
   }
 
   .button:hover {
@@ -149,11 +153,12 @@ body {
     transform: scale(1.1); /* Increase button size on hover */
     color: white;
   }
-  
+
 .animated-text{
   font-size: 28px;
   font-weight: 600;
   min-width: 280px;
+  padding-bottom: 30px;
 }
 
 .animated-text span{
@@ -166,6 +171,7 @@ body {
       color: orange;
       animation: words 8s infinite;
       font-size: xx-large;
+
 }
 
 .animated-text span::after{
@@ -173,9 +179,9 @@ body {
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
- /* background: linear-gradient(to right, #6ec6e6, #38b6ff); 
+ /* background: linear-gradient(to right, #6ec6e6, #38b6ff);
   border-left: 2px solid #FF9900;
-  right: -8px; 
+  right: -8px;
   animation: cursor .8s infinite, typing 20s steps(14) infinite; */
 }
 
@@ -200,7 +206,7 @@ body {
   }
   81%,100%{
       content: "Resume Grooming Session";
-  } 
+  }
 }
 
 @keyframes typing {
