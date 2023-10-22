@@ -19,9 +19,11 @@ import { QuestionsColComponent } from './components/questions-col/questions-col.
 import { LocationsComponent } from './components/locations/locations.component';
 import { FooterComponent } from './components/footer-col/footer-col.component';
 import { CourseTableComponent } from './components/trending-courses/course-table/course-table.component';
+import { CourseIntenseTableComponent } from './components/trending-courses/course-table-intense/course-table.component';
+
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, FooterComponent,  CourseTableComponent, IntroPageComponent],
+  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, FooterComponent,  CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent ],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule],
   providers: [],
 })

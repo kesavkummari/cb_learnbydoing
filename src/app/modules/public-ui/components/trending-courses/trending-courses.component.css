@@ -2,12 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
 .heading-3 {
-  color: #1554bb;
+   font-size: xxx-large; 
+   
+  color: #343a40;
   font-size: 40px !important;
   margin-bottom: 10px !important;
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
+  text-shadow: 1px 1px 2px black;
+  padding-bottom: 15px;
 }
 .heading-9 {
   font-size: 18px;
@@ -78,7 +82,7 @@ a {
   transition: all 0.3s;
 }
 a:hover {
-  color: #B721FF;
+  
 }
 
 .tabbed {
@@ -264,3 +268,42 @@ label:active {
 .top-tabs-container label:active {
   color: #dce775;
 }
+
+.getStartedButton:hover {
+  background: #38b6ff;
+  color: white !important;
+  
+}
+.getStartedButton {
+  
+  background-color: #38b6ff;
+  color: white !important;
+ 
+}
+
+
+.button-container {
+  display: flex;
+  gap: 40px; /* Adjust the gap as needed */
+  padding-top: 20px;
+}
+
+.button {
+  padding: 15px 35px;
+  background-color: #38b6ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none; /* Remove underlines from anchor tags */
+  display: inline-block; /* Add this to anchor tags to make them behave like buttons */
+  transition: background-color 0.3s, transform 0.3s; /* Add smooth transitions */
+   font-family: 'Quicksand', sans-serif;
+}
+
+.button:hover {
+  background-color: #007bff; /* Change color on hover */
+  transform: scale(1.1); /* Increase button size on hover */
+}
+
+

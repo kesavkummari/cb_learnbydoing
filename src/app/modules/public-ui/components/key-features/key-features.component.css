@@ -157,3 +157,48 @@ h6 {
     font-size: 14px;
   }
 } */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: px;
+  height: 400px;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: 1200px; /* 360px * 3 images */
+  animation: slide 20s linear infinite; /* Adjust animation duration as needed */
+}
+
+.slide {
+  width: 360px;
+  height: 400px;
+  margin-right: 20px; /* Add margin to create a gap between images */
+}
+
+/* Remove margin from the last image to avoid extra space */
+.slide:last-child {
+  margin-right: 0;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

@@ -1,15 +1,26 @@
+  /*
+.main-component {
+
+  background: url('src/assets/intro/bgg1.svg') no-repeat center center ;
+  background-size: cover; 
+
+  background-image: linear-gradient(97deg, #98cdec 0%, #fff 54%);
+  
+} */
+
 .main-component{
   display: flex;
   justify-content: center;
-  padding: 0 15px;
+  padding: 105px 15px;
+ 
 }
 .main-grid {
   display: grid;
   /* grid-template-rows: 1fr; */
   grid-template-columns: 1fr 1fr;
   grid-gap: 84px;
-  padding-top: 370px;
-  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 0px;
   justify-content: center;
   max-width: 1257px;
 }
@@ -88,7 +99,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 
@@ -122,11 +133,11 @@ body {
 
   .button {
     padding: 15px 35px;
-    background-color: #38b6ff;
-    color: #fff;
+    background-color: #38bfff;
+    color: white;
     border: none;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 26px;
     text-decoration: none; /* Remove underlines from anchor tags */
     display: inline-block; /* Add this to anchor tags to make them behave like buttons */
     transition: background-color 0.3s, transform 0.3s; /* Add smooth transitions */
@@ -134,6 +145,69 @@ body {
   }
 
   .button:hover {
-    background-color: #007bff; /* Change color on hover */
+    background-color: #002324; /* Change color on hover */
     transform: scale(1.1); /* Increase button size on hover */
+    color: white;
   }
+  
+.animated-text{
+  font-size: 28px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.animated-text span{
+  position: relative;
+}
+
+.animated-text span::before{
+      /* text-shadow: 1px 1px 2px #002346; */
+      content: "AWS DevOps";
+      color: orange;
+      animation: words 8s infinite;
+      font-size: xx-large;
+}
+
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+ /* background: linear-gradient(to right, #6ec6e6, #38b6ff); 
+  border-left: 2px solid #FF9900;
+  right: -8px; 
+  animation: cursor .8s infinite, typing 20s steps(14) infinite; */
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%,20%{
+      content: "100% Job Assistance";
+  }
+  21%,40%{
+      content: "9 Real Time Projects";
+  }
+  41%,60%{
+      content: "Quiz On Covered Topics";
+  }
+   61%,80%{
+      content: "Use Case Based Teaching ";
+  }
+  81%,100%{
+      content: "Resume Grooming Session";
+  } 
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+      width: calc(100% + 8px);
+  }
+}

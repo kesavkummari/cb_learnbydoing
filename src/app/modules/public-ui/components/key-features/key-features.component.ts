@@ -19,4 +19,7 @@ export class KeyFeaturesComponent {
   toggleSidenav() {
     this.sidenavOpen = !this.sidenavOpen;
   }
+
+
+  
 }

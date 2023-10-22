@@ -29,7 +29,7 @@ a {
   outline: 0;
 }
 a {
-  color: #231f20;
+  color: black;
   -webkit-transition: color 0.3s, background-color 0.3s;
   -moz-transition: color 0.3s, background-color 0.3s;
   -o-transition: color 0.3s, background-color 0.3s;
@@ -42,7 +42,8 @@ a {
 a:focus,
 a:hover,
 button:focus {
-  color: #f9c420;
+  color: #38b6ff;
+  
   text-decoration: none;
   outline: 0 !important;
 }
@@ -1123,7 +1124,7 @@ header.fixed-header {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 .godigital {
-  padding: 80px 0 0;
+  padding: 0px 0 0;
 }
 .cardBody {
   width: 30%;
@@ -5867,7 +5868,7 @@ body {
   margin: 0 30px;
 }
 .firstlearn h2 span {
-  color: #1554bb;
+  color: #38b6ff;
 }
 .or {
   position: absolute;
