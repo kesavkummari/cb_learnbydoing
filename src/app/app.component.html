@@ -2,15 +2,15 @@
 
 <div class="content">
   <div class="header" style=" height: 60px; position: fixed;" *ngIf="!isScreenSmall">
-    <a href="index.html" class="logo_link logo">
+    <a [routerLink]="['']" routerLinkActive="router-link-active"  class="logo_link logo">
       <img
         src="assets/footer/nobg.png"
         alt="Logo"
         class="flogo"
         style="    width: 70px;
         padding-top: 6px; "
-        
-        
+
+
     />
     <div>
       <div style="font-weight: bolder;">CLOUD BINARY <br> <span style="
@@ -21,12 +21,12 @@
 
      <!-- <div style="font-size: 18px;">Learn by Doing</div>-->
     </div>
-  </a> 
+  </a>
     <!-- <a href="./src/assets/footer/cloudbinary_white_bg1.png" class="logo"></a> -->
     <div class="header-right">
     <!--  <a href="#table-container-intense">JOB READY PROGRAM</a> -->
-      <a   href="#aws" >AWS DEVOPS</a>
-      <a href="#aws">MLOPS <span style="color: orange; font-size: 12px;">Coming Soon!📢</span></a>   
+      <a   [routerLink]="['/aws-devops']" routerLinkActive="router-link-active"  >AWS DEVOPS</a>
+      <a href="#aws">MLOPS <span style="color: orange; font-size: 12px;">Coming Soon!📢</span></a>
       <a class="active" href="#contact">CONTACT US</a>
     </div>
   </div>
@@ -43,16 +43,16 @@
       <div style="font-weight: 600;
       font-size: 23px;margin-bottom: -5px;">Cloud Binary</div>
       <!-- <div style="font-size: 18px;">Learn by Doing</div> -->
-      
+
     </div>
-  </a> 
+  </a>
     <div class="header-right">
       <button (click)="toggleSidenav()">
         <i class="fa fa-bars"></i> <!-- Font Awesome "bars" icon -->
       </button>
     </div>
   </div>
-  
+
   <router-outlet></router-outlet>
 </div>
 
@@ -60,7 +60,7 @@
 <div class="header__backdrop" [class.open]="sidenavOpen"></div>
 <div class="sidenav" [class.open]="sidenavOpen">
   <!-- Your sidenav content goes here -->
- 
+
   <a href="#aws" >AWS DEVOPS</a>
   <a routerLink="/mlops">MLOps</a>
   <a href="#contact">Contact Us</a>

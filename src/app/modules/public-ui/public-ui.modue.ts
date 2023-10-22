@@ -20,10 +20,11 @@ import { LocationsComponent } from './components/locations/locations.component';
 import { FooterComponent } from './components/footer-col/footer-col.component';
 import { CourseTableComponent } from './components/trending-courses/course-table/course-table.component';
 import { CourseIntenseTableComponent } from './components/trending-courses/course-table-intense/course-table.component';
+import { AWSDevOpsComponent } from './Pages/aws-devops/aws-devops.component';
 
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, FooterComponent,  CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent ],
+  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, FooterComponent,  CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent ],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule],
   providers: [],
 })

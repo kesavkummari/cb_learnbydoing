@@ -3,14 +3,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { IntroPageComponent } from './Pages/intro-page/intro-page.component';
+import { AWSDevOpsComponent } from './Pages/aws-devops/aws-devops.component';
 
 const routes: Routes = [
+  {path:'aws-devops', component: AWSDevOpsComponent},
   {
     path: '',
     component: IntroPageComponent,
     // Add guards and resolve as needed
   },
-  // More routes can be added here
 ];
 
 @NgModule({
