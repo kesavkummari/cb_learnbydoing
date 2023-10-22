@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { PublicUiModule } from './modules/public-ui/public-ui.modue';
 import { SharedModule } from './shared/shared-mod.module';
 import 'bootstrap';
+import { FooterComponent } from './components/footer-col/footer-col.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
