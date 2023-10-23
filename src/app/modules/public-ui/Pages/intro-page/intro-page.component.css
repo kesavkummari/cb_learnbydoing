@@ -32,18 +32,19 @@
   justify-content: center;
 }
 
-@media (max-width: 720px) {
-  .main-grid {
-    display: block; /* Change from grid to block */
-    text-align: center; /* Center-align the content */
-    padding-top: 80px;
-    padding-bottom: 0;
-    width: -webkit-fill-available;
-  }
-  .text-content {
-    margin: 0 50px 93px;
-  }
+.text-content h2{
+  font-size: 42px;
+  padding-bottom: 30px;
 }
+
+.text-content h2 b{
+  color: #002346;
+  font-size: 65px;
+  font-family: young serif !important;
+  text-shadow: 2px 2px grey;
+}
+
+
 
 .grid-container {
   display: grid;
@@ -64,15 +65,7 @@
   animation: fadeIn 1s ease-in-out forwards; /* Apply animation */
 }
 
-@media screen and (max-width: 900px) {
-  .grid-item {
-    width:200px;
-  }
-  .grid-container{
-    grid-template-rows: repeat(3, 66px);
-    grid-template-columns: repeat(2, 200px);
-  }
-}
+
 
 @keyframes fadeIn {
   0% {
@@ -106,18 +99,7 @@ body {
 }
 
 
-@media screen and (max-width: 500px) {
 
-
-  .image-transition{
-    width: 123px;
-  }
-
-  .grid-container{
-    grid-template-rows: repeat(3, 61px);
-    grid-template-columns: repeat(2, 138px);
-  }
-}
 
 
 
@@ -176,9 +158,9 @@ body {
 
 .animated-text span::after{
   content: "";
-  position: absolute;
+  /* position: absolute;
   width: calc(100% + 8px);
-  height: 100%;
+  height: 100%; */
  /* background: linear-gradient(to right, #6ec6e6, #38b6ff);
   border-left: 2px solid #FF9900;
   right: -8px;
@@ -215,5 +197,58 @@ body {
   }
   5%,20%,25%,40%,45%,60%,65%,80%,85%{
       width: calc(100% + 8px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid-item {
+    width:200px;
+  }
+  .grid-container{
+    grid-template-rows: repeat(3, 66px);
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (max-width: 720px) {
+  .main-grid {
+    display: block; /* Change from grid to block */
+    text-align: center; /* Center-align the content */
+    /* padding-top: 80px; */
+    padding-bottom: 0;
+    width: -webkit-fill-available;
+  }
+  .text-content {
+    margin: 0 10px 50px;
+  }
+  .text-content h2{
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  .text-content h2 b{
+    font-size: 33px;
+  }
+  .main-component{
+    margin: 40px 30px;
+  }
+
+  .animated-text  span::before {
+    font-size: large;
+}
+  .main-component .text-content .button{
+    padding: 10px 17px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+
+  .image-transition{
+    width: 123px;
+  }
+
+  .grid-container{
+    grid-template-rows: repeat(3, 61px);
+    grid-template-columns: repeat(2, 138px);
   }
 }

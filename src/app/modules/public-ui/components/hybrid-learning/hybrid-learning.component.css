@@ -83,3 +83,18 @@
 .firstlearn .col-md-5 img {
   height: 250px;
 }
+
+.hybrid-learning, .hybrid-learning .firstlearn {
+  padding-top: 0;
+}
+.firstlearn h2,.firstlearn .heading span{
+  font-size: xxx-large;
+  color: #343a40;
+  text-shadow: 1px 1px 2px black  !important;
+}
+
+@media screen and (max-width: 768px) {
+  .firstlearn h2,.firstlearn .heading span{
+  font-size: 30px;
+  }
+}

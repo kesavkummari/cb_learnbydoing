@@ -31,7 +31,7 @@
     </div>
   </div>
   <div class="header" style=" height: 40px; position: fixed; display:flex; justify-content: space-between;" *ngIf="isScreenSmall">
-    <a href="index.html" class="logo_link logo" style="    display: flex;
+    <a [routerLink]="['']" routerLinkActive="router-link-active" class="logo_link logo" style="    display: flex;
     flex-direction: row;">
       <img
         src="assets/footer/nobg.png"
@@ -39,17 +39,14 @@
         class="flogo"
         style="width: 70px;"
     />
-    <div>
-      <div style="font-weight: 600;
-      font-size: 23px;margin-bottom: -5px;">Cloud Binary</div>
-      <!-- <div style="font-size: 18px;">Learn by Doing</div> -->
+    <div >
+      <div class="title">Cloud Binary</div>
+      <div class="sub-title">Learn by Doing</div>
 
     </div>
   </a>
     <div class="header-right">
-      <button (click)="toggleSidenav()">
-        <i class="fa fa-bars"></i> <!-- Font Awesome "bars" icon -->
-      </button>
+        <i class="fa fa-bars" (click)="toggleSidenav()"></i>
     </div>
   </div>
 
@@ -63,7 +60,7 @@
 <div class="sidenav" [class.open]="sidenavOpen">
   <!-- Your sidenav content goes here -->
 
-  <a href="#aws" >AWS DEVOPS</a>
+  <a [routerLink]="['/aws-devops']" routerLinkActive="router-link-active" >AWS DEVOPS</a>
   <a routerLink="/mlops">MLOps</a>
   <a href="#contact">Contact Us</a>
 </div>
