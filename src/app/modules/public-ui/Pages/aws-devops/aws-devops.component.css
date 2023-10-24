@@ -1,0 +1,133 @@
+ /* Reset some default styles for better layout */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Left Column Styles */
+.left-column {
+    flex: 2;
+    padding: 20px;
+}
+
+/* Course Name Styles */
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Key Features Styles */
+.feature-container {
+  
+    
+    padding-top: 43px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+}
+
+.feature-icon {
+    font-size: 36px;
+}
+
+/* Right Column Styles */
+.right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Request Callback Styles */
+.form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column {
+        flex: 1;
+    }
+
+    .right-column {
+        flex: 1;
+        margin-top: 20px;
+    }
+
+    .feature-container {
+        flex-direction: column; /* Stack features vertically on mobile */
+    }
+
+    .feature-icon {
+        font-size: 24px; /* Adjust icon size on mobile */
+    }
+}
