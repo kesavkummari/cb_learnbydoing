@@ -150,3 +150,38 @@ input[type="submit"]:hover {
 .awscoursebtn:hover {
     background-color: #38b6ff;
 }
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #212529;
+    color: #fff;
+    padding: 30px 125px;
+  }
+
+
+  .banner div {
+    flex: 1;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .banner div {
+    margin: 10px 0;
+  }
+}
+
+
+
+.banner div:nth-child(2) {
+    border-left: 1px solid #fff; /* Add a white thin line */
+    
+  }
+  .banner div:nth-child(3) {
+    border-left: 1px solid #fff; /* Add a white thin line */
+    padding-top: 0px; /* Add some spacing above the line */
+  }
