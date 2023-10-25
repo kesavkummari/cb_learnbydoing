@@ -183,5 +183,7 @@ input[type="submit"]:hover {
   }
   .banner div:nth-child(3) {
     border-left: 1px solid #fff; /* Add a white thin line */
-    padding-top: 0px; /* Add some spacing above the line */
+    /* Add some spacing above the line */
   }
+
+
