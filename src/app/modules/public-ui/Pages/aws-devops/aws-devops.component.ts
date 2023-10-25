@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './aws-devops.component.html',
   styleUrls: ['./aws-devops.component.css']
 })
-export class AWSDevOpsComponent {}
+export class AWSDevOpsComponent {
+ 
+}

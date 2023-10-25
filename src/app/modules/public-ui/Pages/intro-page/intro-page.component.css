@@ -118,7 +118,7 @@ body {
 
   .button {
     padding: 20px 35px;
-    background-color: #38bfff;
+    background-color:  #002324;
     color: white;
     border: none;
     cursor: pointer;
@@ -131,7 +131,7 @@ body {
   }
 
   .button:hover {
-    background-color: #002324; /* Change color on hover */
+    background-color: #38bfff; /* Change color on hover */
     transform: scale(1.1); /* Increase button size on hover */
     color: white;
   }
