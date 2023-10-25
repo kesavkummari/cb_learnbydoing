@@ -18,7 +18,8 @@
 <br>
 
 <div style="padding-left: 10px;">
-  <a href="#trending-courses" class="awscoursebtn">Course Content</a>
+  <button class="awscoursebtn" (click)="scrollToTrendingCourses()">Course Content</button>
+
 </div>
 
 
@@ -69,5 +70,7 @@
   </div>
 
 
+  <div id="trending-courses">
+    <trending-courses  ></trending-courses>
+</div>
 
-<trending-courses  ></trending-courses>
