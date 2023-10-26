@@ -38,9 +38,9 @@
 }
 
 .text-content h2 b{
-  color: #002346;
+  color: #000;
   font-size: 65px;
-  font-family: young serif !important;
+  font-family: system-ui !important;
   text-shadow: 2px 2px grey;
 }
 
@@ -118,7 +118,7 @@ body {
 
   .button {
     padding: 20px 35px;
-    background-color:  #002324;
+    background-color:  #38b6ff;
     color: white;
     border: none;
     cursor: pointer;
@@ -131,7 +131,7 @@ body {
   }
 
   .button:hover {
-    background-color: #38bfff; /* Change color on hover */
+    background-color: #002324; /* Change color on hover */
     transform: scale(1.1); /* Increase button size on hover */
     color: white;
   }

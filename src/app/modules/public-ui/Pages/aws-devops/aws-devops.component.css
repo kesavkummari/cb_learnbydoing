@@ -96,7 +96,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #333;
+    background-color: #38b6ff;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -105,11 +105,15 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #555;
+    background-color: #333;
 }
 
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: medium; /* Adjust the font size as needed for mobile view */
+    }
+
     .container {
         flex-direction: column;
     }
@@ -124,17 +128,22 @@ input[type="submit"]:hover {
     }
 
     .feature-container {
-        flex-direction: column; /* Stack features vertically on mobile */
+        flex-direction: row; /* Stack features vertically on mobile */
     }
 
     .feature-icon {
         font-size: 24px; /* Adjust icon size on mobile */
     }
+    
+        .feature-icon {
+            width: 50%; /* Set the width to 100% to make the images responsive */
+        }
+    
 }
 
 
 .awscoursebtn {
-    background-color: #002346;
+    background-color: #38b6ff;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -148,7 +157,7 @@ input[type="submit"]:hover {
 }
 
 .awscoursebtn:hover {
-    background-color: #38b6ff;
+    background-color: #002346;
 }
 
 .banner {

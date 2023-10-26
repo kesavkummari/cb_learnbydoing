@@ -17,25 +17,26 @@
 .sub-tab {
   padding: 10px 20px;
   font-weight: 600;
-  color: #FF9900;
-  background-color: #28282B;
+  color: #000;
+  background-color: #fff;
   cursor: pointer;
   margin-right: 10px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 12px 12px 12px 12px;
   width: 26vw;
   height: 50px;
   font-size: 18px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .sub-tab:hover {
-  background-color: #000;
+  background-color: #f2f4f5;
 }
 
 .sub-tab.active {
   /* background-color: #353935; */
-  background-color: #000;
+  background-color: #cae0fe;
   height: 70px;
-  color: #FF9900;
+  color: #000;
 }
 
 .content {
@@ -46,11 +47,12 @@
   min-height: 200px;
   width: 80vw;
   /* background-color: #353935; */
-  background-color: #000;
+  background-color: #cae0fe;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .content h2 {
-  color: #e9ecef;
+  color: black;
   font-weight: 600;
 }
 
@@ -76,7 +78,7 @@
   height: 75px;
   border-radius: 10px;
   margin-bottom: 15px;
-  background-color: #e9ecef;
+  background-color: #fff;
 }
 
 .module:hover {
@@ -84,14 +86,14 @@
 }
 
 .module.active-module {
-  background-color: #3c3f43;
+  background: #387ef7;
   color: white;
 }
 
 .right-column {
   flex: 2;
   margin: 0 32px 0 57px;
-  background-color: #3c3f43;
+  background: #387ef7;
   padding-left: 47px;
   padding-top: 21px;
   border-radius: 10px;

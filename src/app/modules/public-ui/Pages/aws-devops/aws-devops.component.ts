@@ -17,4 +17,12 @@ export class AWSDevOpsComponent implements OnInit {
       trendingCourses.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  formData: any = {}; 
+
+  onSubmit() {
+    console.log(this.formData);
+
+    
+  }
+
 }

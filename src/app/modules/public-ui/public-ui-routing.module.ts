@@ -4,9 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { IntroPageComponent } from './Pages/intro-page/intro-page.component';
 import { AWSDevOpsComponent } from './Pages/aws-devops/aws-devops.component';
+import { MlOpsComponent } from './Pages/mlops/mlops.component';
 
 const routes: Routes = [
   {path:'aws-devops', component: AWSDevOpsComponent},
+  {path:'mlops', component: MlOpsComponent},
   {
     path: '',
     component: IntroPageComponent,

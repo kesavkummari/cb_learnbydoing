@@ -4,13 +4,13 @@
 .heading-3 {
    font-size: xxx-large;
 
-   color: #fff;
+   color: #000;
   font-size: 40px !important;
   margin-bottom: 10px !important;
   text-transform: capitalize;
   font-weight: 600;
   text-align: center;
-  text-shadow: 1px 1px 2px black;
+ /* text-shadow: 1px 1px 2px black; */
   padding-bottom: 15px;
 }
 .heading-9 {
@@ -81,9 +81,7 @@ a {
   color: #21D4FD;
   transition: all 0.3s;
 }
-a:hover {
 
-}
 
 .tabbed {
   overflow-x: hidden; /* so we could easily hide the radio inputs */
@@ -270,13 +268,13 @@ label:active {
 }
 
 .getStartedButton:hover {
-  background: #384247;
+  background: #232525;
   color: white !important;
 
 }
 .getStartedButton {
 
-  background-color: black;
+  background-color: #38b6ff;
   color: white !important;
 
 }
@@ -311,5 +309,5 @@ label:active {
     margin: 30px 0;
     padding: 30px 0;
     max-width: unset;
-    background-color: #3c3f43;
+    background: #e8f2fe;
 }
