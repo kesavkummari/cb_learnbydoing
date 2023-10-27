@@ -17,12 +17,10 @@ export class MlOpsComponent implements OnInit {
       trendingCourses.scrollIntoView({ behavior: 'smooth' });
     }
   }
-  formData: any = {}; 
+
+  formData: any = {};
 
   onSubmit() {
     console.log(this.formData);
-
-    
   }
-
 }
