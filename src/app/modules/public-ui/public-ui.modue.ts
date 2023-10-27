@@ -22,10 +22,11 @@ import { CourseTableComponent } from './components/trending-courses/course-table
 import { CourseIntenseTableComponent } from './components/trending-courses/course-table-intense/course-table.component';
 import { AWSDevOpsComponent } from './Pages/aws-devops/aws-devops.component';
 import {MlOpsComponent} from './Pages/mlops/mlops.component'
-
+import {MlOpsCoursesComponent} from './components/mlops_course/mlops-courses.component'
+import {mlopsCourseTableComponent} from './components/mlops_course/mlops-table/mlopscourse-table.component'
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent ],
+  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent ],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule],
   providers: [],
 })

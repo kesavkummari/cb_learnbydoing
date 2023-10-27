@@ -27,7 +27,7 @@
     <!--  <a href="#table-container-intense">JOB READY PROGRAM</a> -->
       <a   [routerLink]="['/aws-devops']" routerLinkActive="router-link-active"  >AWS DEVOPS</a>
       <a  [routerLink]="['/mlops']" routerLinkActive="router-link-active">MLOPS <span style="color: orange; font-size: 12px;">Coming Soon!📢</span></a>
-      <a class="active" href="#contact">CONTACT US</a>
+      <a class="active" href="https://wa.me/919100073006">CONTACT US</a>
     </div>
   </div>
   <div class="header" style=" height: 40px; position: fixed; display:flex; justify-content: space-between;" *ngIf="isScreenSmall">
@@ -56,14 +56,15 @@
 </div>
 
 <!-- Sidenav -->
-<div class="header__backdrop" [class.open]="sidenavOpen"></div>
+<div class="header__backdrop" [class.open]="sidenavOpen" (click)="closeSidenav()"></div>
 <div class="sidenav" [class.open]="sidenavOpen">
   <!-- Your sidenav content goes here -->
 
-  <a [routerLink]="['/aws-devops']" routerLinkActive="router-link-active" >AWS DEVOPS</a>
-  <a routerLink="/mlops">MLOps</a>
-  <a href="#contact">Contact Us</a>
+  <a [routerLink]="['/aws-devops']" routerLinkActive="router-link-active" (click)="closeSidenav()">AWS DEVOPS</a>
+  <a routerLink="/mlops" (click)="closeSidenav()">MLOps</a>
+  <a href="https://wa.me/919100073006" (click)="closeSidenav()">Contact Us</a>
 </div>
+>
 
 
 

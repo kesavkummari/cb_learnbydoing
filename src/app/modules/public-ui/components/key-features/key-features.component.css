@@ -1,3 +1,22 @@
+ /* Styles for desktop view */
+ .desktop-image {
+  display: block;  /* Display for desktop */
+}
+
+/* Styles for mobile view */
+.mobile-image {
+  display: none;   /* Hide for mobile */
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media screen and (max-width: 768px) {
+  .desktop-image {
+      display: none;  /* Hide for mobile */
+  }
+  .mobile-image {
+      display: block;  /* Display for mobile */
+  }
+}
 
 
 
