@@ -129,6 +129,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); /* Add a box shadow */
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow on hover */
   }
   
   .button:hover {
@@ -136,7 +137,7 @@ body {
     transform: scale(0.9); /* Increase button size on hover */
     color: white;
     box-shadow: none; /* Remove box shadow on hover */
-    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow on hover */
+    
   }
   
 
