@@ -6,7 +6,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['intro-page.component.css']
 })
 export class IntroPageComponent { 
-  
+  public isPopupOpen: boolean = true;
 }
 
 
