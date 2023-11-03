@@ -118,6 +118,11 @@ button[type="submit"]:hover {
     box-shadow: none;
 }
 
+button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
     h1 {

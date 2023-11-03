@@ -1,5 +1,7 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import {  FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'aws-devops',
@@ -24,7 +26,7 @@ export class AWSDevOpsComponent implements OnInit {
 
 
 
-  constructor(private elementRef: ElementRef,private formBuilder: FormBuilder) {}
+  constructor(private elementRef: ElementRef,private snackBar: MatSnackBar) {}
 
   ngOnInit(): void {
   }
@@ -38,8 +40,14 @@ export class AWSDevOpsComponent implements OnInit {
   formData: any = {};
 
   onSubmit() {
-    if(this.registrationForm.valid) {
-    console.log(this.registrationForm.value);
+    if (this.registrationForm.valid) {
+      // Show success message
+      this.snackBar.open('Form submitted successfully!', 'Close', {
+        duration: 5000
+      });
+      console.log(this.registrationForm.value);
+      this.registrationForm.reset();
+
     }
   }
 }
