@@ -13,8 +13,9 @@
   
   
   .footer {
-    background: 
-        #181616;
+    background-image: url(src/assets/footer/Footer.webp);
+    background-size: cover; /* You can adjust this property for image sizing */
+    background-repeat: no-repeat;
         
      /* linear-gradient(90deg, rgba(0, 92, 145, 1) 5%, rgba(56, 182, 255, 1) 89%); */
       color: #fff;
