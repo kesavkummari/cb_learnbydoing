@@ -1,6 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit } from '@angular/core';
 import {  FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { DataService } from '../../services/data.service';
 
 
 @Component({
@@ -26,7 +28,7 @@ export class AWSDevOpsComponent implements OnInit {
 
 
 
-  constructor(private elementRef: ElementRef,private snackBar: MatSnackBar) {}
+  constructor(private elementRef: ElementRef,private snackBar: MatSnackBar,private http: HttpClient, private dataService: DataService) {}
 
   ngOnInit(): void {
   }
@@ -46,6 +48,10 @@ export class AWSDevOpsComponent implements OnInit {
         duration: 5000
       });
       console.log(this.registrationForm.value);
+      // Insert form data into API
+      this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
+        console.log(res);
+      });
       this.registrationForm.reset();
 
     }
