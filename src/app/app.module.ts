@@ -8,6 +8,8 @@ import { PublicUiModule } from './modules/public-ui/public-ui.modue';
 import { SharedModule } from './shared/shared-mod.module';
 import 'bootstrap';
 import { FooterComponent } from './components/footer-col/footer-col.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { FooterComponent } from './components/footer-col/footer-col.component';
     AppRoutingModule,
     CommonModule,
     PublicUiModule,
-    SharedModule
+    SharedModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

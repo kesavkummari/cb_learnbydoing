@@ -38,9 +38,9 @@
 }
 
 .text-content h2 b{
-  color: #002346;
+  color: #000;
   font-size: 65px;
-  font-family: young serif !important;
+  font-family: system-ui !important;
   text-shadow: 2px 2px grey;
 }
 
@@ -118,23 +118,28 @@ body {
 
   .button {
     padding: 20px 35px;
-    background-color: #38bfff;
+    background-color:  #38b6ff;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 26px;
     text-decoration: none; /* Remove underlines from anchor tags */
     display: inline-block; /* Add this to anchor tags to make them behave like buttons */
-    transition: background-color 0.3s, transform 0.3s; /* Add smooth transitions */
-     font-family: 'Quicksand', sans-serif;
-     font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Add smooth transitions */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); /* Add a box shadow */
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow on hover */
   }
-
+  
   .button:hover {
-    background-color: #002324; /* Change color on hover */
-    transform: scale(1.1); /* Increase button size on hover */
+   /* Change color on hover */
+    transform: scale(0.9); /* Increase button size on hover */
     color: white;
+    box-shadow: none; /* Remove box shadow on hover */
+    
   }
+  
 
 .animated-text{
   font-size: 28px;
@@ -175,7 +180,7 @@ body {
 
 @keyframes words {
   0%,20%{
-      content: "100% Job Assistance";
+      content: "100% Placement Assistance";
   }
   21%,40%{
       content: "9 Real Time Projects";

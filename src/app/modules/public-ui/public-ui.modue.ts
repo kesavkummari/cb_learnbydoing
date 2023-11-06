@@ -21,11 +21,22 @@ import { LocationsComponent } from './components/locations/locations.component';
 import { CourseTableComponent } from './components/trending-courses/course-table/course-table.component';
 import { CourseIntenseTableComponent } from './components/trending-courses/course-table-intense/course-table.component';
 import { AWSDevOpsComponent } from './Pages/aws-devops/aws-devops.component';
-
+import {MlOpsComponent} from './Pages/mlops/mlops.component'
+import {MlOpsCoursesComponent} from './components/mlops_course/mlops-courses.component'
+import {mlopsCourseTableComponent} from './components/mlops_course/mlops-table/mlopscourse-table.component'
+import { ImagePopupComponent } from './components/app-image-popup/image-popup.component'
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http';
+import {CourseContentMob} from './components/trending-courses/course-contentmob/course-contentmob'
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent ],
-  imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule],
-  providers: [],
+  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent,CourseContentMob ],
+  imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule,ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
 })
 export class PublicUiModule { }

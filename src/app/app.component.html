@@ -13,7 +13,7 @@
 
     />
     <div>
-      <div style="font-weight: bolder;">CLOUD BINARY <br> <span style="
+      <div style="font-weight: bolder; color: #002346;">CLOUD BINARY <br> <span style="
         font-size: large;
         display: flex;
         justify-content: center;
@@ -26,10 +26,9 @@
     <div class="header-right">
     <!--  <a href="#table-container-intense">JOB READY PROGRAM</a> -->
       <a   [routerLink]="['/aws-devops']" routerLinkActive="router-link-active"  >AWS DEVOPS</a>
-      <a href="#aws">MLOPS <span style="color: orange; font-size: 12px;">Coming Soon!📢</span></a>
-      <!--<a class="active" href="#contact">CONTACT US</a>-->
-      <a class="active" href="https://wa.me/919100073006">CONTACT US</a>
-      
+   <!--<a  [routerLink]="['/mlops']" routerLinkActive="router-link-active">LMS <span style="color: orange; font-size: 12px;"></span></a>-->
+      <a href="https://lms-cloudbinary.teachable.com/">LMS</a>
+      <a class="active" href="https://wa.me/919100073006" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);">CONTACT US</a>
     </div>
   </div>
   <div class="header" style=" height: 40px; position: fixed; display:flex; justify-content: space-between;" *ngIf="isScreenSmall">
@@ -42,9 +41,12 @@
         style="width: 70px;"
     />
     <div >
-      <div class="title">Cloud Binary</div>
-      <div class="sub-title">Learn by Doing</div>
-
+      <div style="font-weight: bolder; color: #002346;">Cloud Binary <br> <span style="
+        font-size: large;
+        display: flex;
+        justify-content: center;
+    ">Learn by Doing</span></div>
+      <!--<div class="sub-title">Learn by Doing</div>-->
     </div>
   </a>
     <div class="header-right">
@@ -58,14 +60,16 @@
 </div>
 
 <!-- Sidenav -->
-<div class="header__backdrop" [class.open]="sidenavOpen"></div>
+<div class="header__backdrop" [class.open]="sidenavOpen" (click)="closeSidenav()"></div>
 <div class="sidenav" [class.open]="sidenavOpen">
   <!-- Your sidenav content goes here -->
 
-  <a [routerLink]="['/aws-devops']" routerLinkActive="router-link-active" >AWS DEVOPS</a>
-  <a routerLink="/mlops">MLOps</a>
-  <a href="#contact">Contact Us</a>
+  <a [routerLink]="['/aws-devops']" routerLinkActive="router-link-active" (click)="closeSidenav()">AWS DEVOPS</a>
+<!--  <a routerLink="/mlops" (click)="closeSidenav()">MLOps</a> -->
+  <a href="https://lms-cloudbinary.teachable.com/">LMS</a>
+  <a href="https://wa.me/919100073006" (click)="closeSidenav()">Contact Us</a>
 </div>
+
 
 
 

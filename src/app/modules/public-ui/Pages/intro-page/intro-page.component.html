@@ -7,6 +7,9 @@
 
 <div style="height: 60px;"></div>
 
+
+
+
 <div class="main-component"   >
 
 
@@ -18,20 +21,25 @@
       }
   </style>
 
-    <h2>Learn <b> AWS DevOps & MLOps</b> By Doing..</h2>
+    <h2>Learn <b> AWS DevOps in 90 Days</b> By Doing..</h2>
     <link href="" rel="stylesheet">
     <p>Certification Oriented With Real Time Training </p>
     <div class="animated-text">
        <span></span>
   </div>
-    <p This is style="color: #000000;">An esteemed platform to upskill your career with market-leading cloud technologies tools</p>
+    <p This is style="color: #000000;">Gain practical experience in AWS DevOps by participating in our internship, where you'll work on real-world projects.</p>
 
+    <!--<p This is style="color: #000000;">By participating in our internship, you can learn AWS DevOps hands-on by working on real-world projects.</p>-->
+
+    
+    
 
 
 
 
     <div class="button-container">
-      <a href="#aws" class="button">View Courses</a>
+<!--      <a [routerLink]="['/aws-devops']" routerLinkActive="router-link-active"  class="button">View Courses</a>-->
+      <a href="https://us02web.zoom.us/webinar/register/WN_X2nGjyL9RvG67sKv70Y-uQ" class="button">Register for a Free Demo</a>
       <a href="https://wa.me/919100073006" class="button">Talk to Mentor</a>
     </div>
 
@@ -90,8 +98,25 @@
 
 <!--<programs></programs> -->
 <hybrid-learning></hybrid-learning>
-<!--  <key-features></key-features>
-<corporate-training id="intense_prog"></corporate-training>-->
+<style>
+  @media (max-width: 768px) {
+    iframe {
+      display: none;
+    }
+    .DevOpsTable{
+      display: none;
+    }
+    
+  }
+</style>
+
+<!--
+  <h2 class="DevOpsTable" style="font-weight: 600; font-size: xxx-large; color: #343a40; text-shadow: 1px 1px 2px black !important; text-align: center;">DevOps Periodic Table</h2>
+<iframe src='https://digital.ai/wp-content/themes/yoko-digitalai-child/periodic-table/self-contained/table.php' style='border:0px #FFFFFF none;' name='Periodic Table of DevOps Tools' scrolling='yes' frameborder='1' marginheight='0px' marginwidth='0px' height='850px' width='100%'></iframe>
+
+-->
+ <key-features></key-features>
+ <!-- <corporate-training id="intense_prog"></corporate-training>-->
 <!--<div class="">
   <img
     src="https://www.digital-lync.com/images/lifeAtDl-background.jpg"
@@ -103,3 +128,6 @@
 <digital-lync></digital-lync>
 <questions-col></questions-col>
 <locations></locations>
+<app-image-popup *ngIf="isPopupOpen"></app-image-popup>
+
+
