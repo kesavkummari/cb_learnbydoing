@@ -57,6 +57,9 @@
     padding: 23px 20px;
   }
   @media screen and (max-width: 768px) {
+  .header{
+    height: 60px !important;
+  }
     .header .title{
       font-weight: 600;
         font-size: 17px;margin-bottom: -5px;
@@ -88,7 +91,7 @@
 
   .sidenav {
     position: fixed;
-    top: 0;
+    top: 20px;
     left: -250px; /* Off-screen by default */
     width: 250px;
     height: 100%;

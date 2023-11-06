@@ -25,9 +25,10 @@ import {MlOpsComponent} from './Pages/mlops/mlops.component'
 import {MlOpsCoursesComponent} from './components/mlops_course/mlops-courses.component'
 import {mlopsCourseTableComponent} from './components/mlops_course/mlops-table/mlopscourse-table.component'
 import { ImagePopupComponent } from './components/app-image-popup/image-popup.component'
+import {CourseContentMob} from './components/trending-courses/course-contentmob/course-contentmob'
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent ],
+  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent, CourseContentMob ],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule],
   providers: [],
 })
