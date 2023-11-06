@@ -36,7 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {CourseContentMob} from './components/trending-courses/course-contentmob/course-contentmob'
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent ],
-  imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule,ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule,CourseContentMob],
+  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent,CourseContentMob ],
+  imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule,ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
 })
 export class PublicUiModule { }
