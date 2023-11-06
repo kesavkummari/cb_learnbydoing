@@ -220,3 +220,30 @@ button[type="submit"]:disabled {
   }
 
 
+/* By default, hide the mobile view */
+.course-contentmob {
+    display: none;
+  }
+  
+  /* Show the desktop view for screens wider than 768px (adjust this value as needed) */
+  @media screen and (min-width: 768px) {
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+  }
+  
+  /* Show the mobile view for screens 768px or narrower */
+  @media screen and (max-width: 768px) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+  }
+  
+  
+  
