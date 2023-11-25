@@ -1,9 +1,7 @@
 <!-- image-popup.component.html -->
-<div *ngIf="isPopupOpen">
-  <div class="image-popup">
-    <div class="popup-content">
-      <button class="close-button" (click)="closePopup()">X</button>
-      <img src="assets/intro/Banner28.png" alt="Popup Image">
-    </div>
+<div *ngIf="isPopupOpen" class="image-popup" (click)="closePopup()">
+  <div class="popup-content" (click)="$event.stopPropagation()">
+    <button class="close-button" (click)="closePopup()">X</button>
+    <img src="assets/intro/Banner28.png" alt="Popup Image">
   </div>
 </div>
