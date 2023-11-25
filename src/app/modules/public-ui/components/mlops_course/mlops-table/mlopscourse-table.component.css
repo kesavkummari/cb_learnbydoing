@@ -148,7 +148,8 @@
 
 
 .default-image {
-  max-width: 70%;
-  height: auto;
-  padding-left: 113px;
+  max-width: 106%;
+  /* height: auto; */
+  padding-right: 127px;
+  padding-top: 54px;
 }
