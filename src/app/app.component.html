@@ -1,0 +1,170 @@
+<head>
+  <meta charset="utf-8">
+  <title>Learn AWS & DevOps in 90 Days by Doing | Cloud Binary</title>
+  <base href="/">
+
+  <!-- Meta Tags for SEO -->
+  <meta name="description" content="Learn AWS & DevOps in 90 Days by Doing with hands-on, certification-oriented training. Gain practical experience through real-world projects. Talk to our mentors for more information.">
+  <meta name="keywords" content="edtech, AWS, DevOps, online learning, hybrid training ,certification, hands-on training, technology, mentorship">
+  <meta name="author" content="Cloud Binary">
+  <meta name="robots" content="index, follow">
+  
+  <!-- OpenGraph meta tags for social media -->
+  <meta property="og:title" content="Learn AWS & DevOps in 90 Days | Your EdTech Platform">
+  <meta property="og:description" content="Hands-on, certification-oriented training in AWS & DevOps. Gain practical experience with real-world projects. Talk to our mentors for more information.">
+  <meta property="og:image" content="https://www.cloudbinary.io/home">
+  <meta property="og:url" content="https://www.cloudbinary.io">
+
+  <!-- Viewport settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Styles and Favicon 
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="path/to/your/styles.css">-->
+
+  <!-- Font -->
+
+</head>
+<!-- Main Content -->
+
+<div class="content">
+  <div class="header" style=" height: 100px; position: fixed;" *ngIf="!isScreenSmall">
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active"  class="logo_link logo">
+      <img
+        src="assets/intro/newlogo.png"
+        alt="Logo"
+        class="flogo"
+        style="    width: 100px;
+        padding-top: 6px; "
+
+
+    />
+    <div> <!--
+      <div style="font-weight: bolder; color: #38b6ff;">CLOUD BINARY <br> <span style="
+        font-size: large;
+        display: flex;
+        justify-content: center;
+    ">Learn by Doing</span></div> -->
+
+     <!-- <div style="font-size: 18px;">Learn by Doing</div>-->
+    </div>
+  </a>
+    <!-- <a href="./src/assets/footer/cloudbinary_white_bg1.png" class="logo"></a> -->
+    <div class="header-right">
+    <!--  <a href="#table-container-intense">JOB READY PROGRAM</a> -->
+    <a   [routerLink]="['/home']" routerLinkActive="router-link-active"  >HOME </a>
+      <a   [routerLink]="['/aws']" routerLinkActive="router-link-active"  >AWS </a>
+   <a  [routerLink]="['/devops']" routerLinkActive="router-link-active">DEVOPS <span style="color: orange; font-size: 12px;"></span></a>
+   <a   [routerLink]="['/blogs']" routerLinkActive="router-link-active"  >BLOGS </a>
+      <a class="active special-hover"  [routerLink]="['/contactus']" routerLinkActive="router-link-active"  style="padding: 9px;">CONTACT US</a>
+    </div>
+  </div>
+  <div class="header" style=" height: 40px; position: fixed; display:flex; justify-content: space-between;" *ngIf="isScreenSmall">
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="logo_link logo" style="    display: flex;
+    flex-direction: row;">
+      <img
+        src="assets/intro/CBMV.png"
+        alt="Logo"
+        class="flogo"
+        style="width: 185px; height: 50px;"
+    />
+    <div > <!--
+      <div style="font-weight: bolder; color: #38b6ff;">Cloud Binary <br> <span style="
+        font-size: large;
+        display: flex;
+        justify-content: center;
+    ">Learn by Doing</span></div> -->
+      <!--<div class="sub-title">Learn by Doing</div>-->
+    </div>
+  </a>
+    <div class="header-right">
+        <i class="fa fa-bars" (click)="toggleSidenav()"></i>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+
+  <footer-col></footer-col>
+</div>
+
+<!-- Sidenav -->
+<div class="header__backdrop" [class.open]="sidenavOpen" (click)="closeSidenav()"></div>
+<div class="sidenav" [class.open]="sidenavOpen">
+  <!-- Your sidenav content goes here -->
+  <a routerLink="/home" (click)="closeSidenav()">Home</a>
+
+  <a [routerLink]="['/aws']" routerLinkActive="router-link-active" (click)="closeSidenav()">AWS</a>
+ <a routerLink="/devops" (click)="closeSidenav()">DevOps</a> 
+ <a routerLink="/blogs" (click)="closeSidenav()">Blogs</a>
+
+  <a [routerLink]="['/contactus']" routerLinkActive="router-link-active" (click)="closeSidenav()">Contact Us</a>
+</div>
+
+
+
+
+<a href="https://wa.me/919100073006" class="floating" target="_blank">
+  <i class=" float-button"></i> <img width="80%" src="assets/icon-images/web.png" alt="">
+  </a>
+<!-- <app-button-chooser
+  buttonStyle="button1"
+  buttonName="Basic Button"
+  (click)="abc()"
+></app-button-chooser>
+
+<app-button-chooser
+  buttonStyle="button2"
+  buttonName="Gradient Button"
+  (click)="abc()"
+></app-button-chooser>
+
+<app-button-chooser
+  buttonStyle="button4"
+  buttonName="Outline Button"
+  (click)="abc()"
+></app-button-chooser>
+
+<app-button-chooser
+  buttonStyle="button5"
+  buttonName="Icon Button"
+  (click)="abc()"
+></app-button-chooser>
+<app-button-chooser
+  buttonStyle="button6"
+  buttonName="Animated Button"
+  (click)="abc()"
+></app-button-chooser>
+<app-button-chooser
+  buttonStyle="button7"
+  buttonName="box-shadow"
+  (click)="abc()"
+></app-button-chooser>
+<app-button-chooser
+  style="margin: 15px"
+  buttonStyle="button9"
+  buttonName="dual-color"
+  (click)="abc()"
+></app-button-chooser>
+<app-button-chooser
+  style="margin: 15px"
+  buttonStyle="button11"
+  buttonName="liquid-filling"
+  (click)="abc()"
+></app-button-chooser>
+<app-button-chooser
+  style="margin: 15px"
+  buttonStyle="button8"
+  buttonName="gradient-colors"
+  (click)="abc()"
+></app-button-chooser>
+<app-button-chooser
+  buttonStyle="button10"
+  buttonName="border-animation"
+  (click)="abc()"
+></app-button-chooser>
+<app-button-chooser
+  style="margin: 10px"
+  buttonStyle="button12"
+  buttonName="border-animation2"
+  (click)="abc()"
+></app-button-chooser> -->

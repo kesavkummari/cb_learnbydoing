@@ -1,0 +1,474 @@
+<style>* { box-sizing: border-box; padding:0; margin:0; }
+
+  body {
+    background:linear-gradient(#dbeaf8, #dbeaf8);
+    color:#222;
+    padding: 20px;
+    font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  }
+  
+  .wrapper {
+     width:1050px;
+    margin:30px auto;
+    position:relative;
+  } 
+  
+  .main:after {
+     clear:both;
+    content:"";
+    display:table;
+  }
+   
+  .main li {
+     width:56px;
+    height:60px;
+    border:1px solid rgba(0,0,0,0.3);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.4);
+    position:relative;
+    font-size:18px;
+    float:left;
+    padding:0 2px;
+    margin:1px;
+    cursor:pointer;
+    padding-top:20px;
+    overflow:hidden;
+    transition:all .2s ease-in;
+    text-shadow:0 1px 0 rgba(255,255,255,0.2);
+  }
+  
+  .main li span {
+    display:block;
+    line-height:1;
+    font-size:5px;
+    color:black; 
+    padding-top:7px;
+  }
+  
+  .main .empty {
+     border:none; 
+    box-shadow:none;
+    cursor:default;
+  }
+  
+  .deactivate {
+     opacity:0.5;
+    -webkit-filter:grayscale(70%);
+    filter:grayscale(70%);
+  }
+  
+  .main li:before,
+  .main li:after {
+     content:attr(data-pos);
+    position:absolute;
+    top:3px;
+    left:3px;
+    color:black;
+    font-size:8px;
+    line-height:1;
+  }
+  
+  .main li:after {
+    content:attr(data-nb);
+    left:auto;
+    right:3px;
+  }
+  
+  .main li:hover {
+     transform:scale(2);
+    z-index:100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  } 
+  
+  .main .empty:hover {
+     box-shadow:none;
+    transform:none;
+  }
+  
+  .type-0 { background:#fff; }
+  .type-1 { background:#dddddd; }
+  .type-2 { background:#a8bffa; }
+  .type-3 { background:#F8B707; }
+  .type-4 { background:#f3f300; }
+  .type-5 { background:#3bd93b; }
+  .type-6 { background:#dd9999; }
+  .type-7 { background:#4CAFFA; }
+  .type-8 { background:#ffaa88; }
+  .type-9 { background:#ddaacc; }
+  
+  .cat-0 { color:#222; }
+  .cat-1 { color:#0000dc; }
+  .cat-2 { color:#b10601; }
+  .cat-3 { color:#555; }
+  
+  .legend {
+     position:absolute;
+    top:0;
+    left:20%;
+    padding:10px;
+    font-size:11px;
+    background:#f1edec;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:15px;
+    box-shadow:
+      inset 0 1px 1px white,
+      inset 0 -5px 3px #dddcdb,
+      0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .legend:after {
+     content:"";
+    display:table;
+    clear:table;
+  }
+  
+  .legend ul { float:left; list-style: none; }
+  
+  .legend .list-2 {
+     margin-left:40px; 
+    width:200px;
+  }
+  
+  .legend .list-1 li { margin:7px 0; }
+  .legend .list-1 li:first-of-type { margin-top: 2px; }
+  
+  .legend .list-1 span {
+     border:1px solid black; 
+    display:inline-block;
+    padding:3px;
+    width:20px;
+    text-align:center;
+    height:20px; 
+    margin-right:5px;
+  }
+  
+  .legend .list-2 li {
+    margin:2px;
+    padding:3px;
+     float:left; 
+    border:1px solid rgba(0,0,0,0.2);
+    width:48%;
+    cursor:pointer;
+  }</style>
+<div class="Periodic-Table">
+  <h2 style="    display: flex;
+  justify-content: space-around;
+  font-size: xx-large;
+  font-weight: 800;">Devops Periodic Table</h2>
+  <div class="wrapper">
+  <ul class="main">
+  
+    <!-- ROW 1 -->
+    
+    <li data-pos="1" data-nb="1.0079" class="type-1 cat-2">J<span>Jira</span></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li data-pos="2" data-nb="4.0026" class="type-2 cat-2">Gi<span>Git</span></li>
+    
+    <!-- ROW 2 -->
+    
+    <li data-pos="3" data-nb="6.941" class="type-3 cat-0">Tp<span>Target Process</span></li>
+    <li data-pos="4" data-nb="9.0122" class="type-4 cat-0">Azp<span>AwsDataPipelines</span></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li class="empty"></li>
+    
+    <li class="empty"></li>
+    <li class="empty"></li>
+    <li data-pos="5" data-nb="10.811" class="type-5 cat-0">Sw<span>ServiceNow</span></li>
+    <li data-pos="6" data-nb="12.011" class="type-5 cat-0">Gh<span>Github</span></li>
+    <li data-pos="7" data-nb="14.007" class="type-5 cat-2">Pv<span>PlainView</span></li>
+    
+    <li data-pos="8" data-nb="15.999" class="type-5 cat-2">Br<span>BroadcomRally</span></li>
+    <li data-pos="9" data-nb="18.998" class="type-5 cat-2">Gls<span>Gitlab SCM</span></li>
+    <li data-pos="10" data-nb="20.180" class="type-2 cat-2">Acp<span>AwsCodePipeline</span></li>
+    
+    <!-- ROW 3 -->
+    
+    <li data-pos="11" data-nb="22.990" class="type-3 cat-0">Mt<span>MicrosoftTeams</span></li>
+    <li data-pos="12" data-nb="24.305" class="type-4 cat-0">Rha<span>Redhat Ansible</span></li>
+    <!-- Add your new tools here -->
+    <li data-pos="13" data-nb="26.982" class="type-7 cat-0">T<span>Terraform</span></li>
+    <li data-pos="14" data-nb="28.086" class="type-5 cat-0">Dk<span>Docker</span></li>
+    <li data-pos="15" data-nb="30.974" class="type-5 cat-0">Rh<span>RedhatOpenshift</span></li>
+    
+    <li data-pos="16" data-nb="32.065" class="type-5 cat-0">Abb<span>AtlassianBitbucket</span></li>
+    <!-- Remove unwanted tools here -->
+    <li data-pos="17" data-nb="35.453" class="type-5 cat-2">Sp<span>Splunk</span></li>
+    <li data-pos="18" data-nb="39.948" class="type-2 cat-2">Ad<span>AppDynamics</span></li>
+    
+    <!-- ROW 4 -->
+    
+    <!-- Continue with the rest of the list as needed --><!-- ROW 3 (continued) -->
+
+<li data-pos="19" data-nb="39.098" class="type-3 cat-0">Kb<span>Kibana</span></li>
+<li data-pos="20" data-nb="40.078" class="type-4 cat-0">Ac<span>AtlassianConfluence</span></li>
+<li data-pos="21" data-nb="44.956" class="type-6 cat-0">Ch<span>Chef</span></li>
+<li data-pos="22" data-nb="47.867" class="type-6 cat-0">Acf<span>AwsCloudFormation</span></li>
+<li data-pos="23" data-nb="50.942" class="type-6 cat-0">Ku<span>Kubernates</span></li>
+
+<li data-pos="24" data-nb="51.996" class="type-6 cat-0">Ak<span>AmazonEKS</span></li>
+<!-- Add new AWS DevOps tools here -->
+<li data-pos="25" data-nb="54.938" class="type-6 cat-0">Cd<span>AwsCodeDeploy</span></li>
+<li data-pos="26" data-nb="55.845" class="type-6 cat-0">Ct<span>AwsCodeArtifact</span></li>
+<li data-pos="27" data-nb="58.933" class="type-6 cat-0">Cm<span>AwsCodeCommit</span></li>
+<li data-pos="28" data-nb="58.693" class="type-6 cat-0">Cl<span>AwsCodePipeline</span></li>
+
+<li data-pos="29" data-nb="63.546" class="type-6 cat-0">Np<span>Npm</span></li>
+<li data-pos="30" data-nb="65.39" class="type-7 cat-0">Ja<span>JFrogArtifactory</span></li>
+<li data-pos="31" data-nb="69.723" class="type-7 cat-0">SO<span>StackOverflow</span></li>
+<li data-pos="32" data-nb="72.64" class="type-7 cat-0">Sl<span>Slack</span></li>
+<li data-pos="33" data-nb="74.922" class="type-5 cat-0">Pu<span>Puppet</span></li>
+<li data-pos="34" data-nb="78.96" class="type-5 cat-0">Azk<span>AKS</span></li>
+<li data-pos="35" data-nb="79.904" class="type-5 cat-1">Ae<span>AmazonECS</span></li>
+<li data-pos="36" data-nb="83.80" class="type-2 cat-2">Qt<span>QuestToad</span></li>
+
+<!-- ROW 5 -->
+
+<li data-pos="37" data-nb="85.468" class="type-3 cat-0">Jn<span>Jenkins</span></li>
+<li data-pos="38" data-nb="87.62" class="type-4 cat-0">Glc<span>GitLab CI</span></li>
+<li data-pos="39" data-nb="88.906" class="type-6 cat-0">Azc<span>AwsDevopsCode</span></li>
+<li data-pos="40" data-nb="91.224" class="type-6 cat-0">Mv<span>Maven</span></li>
+<li data-pos="41" data-nb="92.906" class="type-6 cat-0">Ga<span>Github Actions</span></li>
+
+<li data-pos="42" data-nb="95.94" class="type-6 cat-0">Acb<span>AWSCodeBuild</span></li>
+<li data-pos="43" data-nb="(96)" class="type-6 cat-0">Cf<span>CodeFresh</span></li>
+<li data-pos="44" data-nb="101.07" class="type-6 cat-0">AWS<span>Aws</span></li>
+<li data-pos="45" data-nb="102.91" class="type-6 cat-0">Os<span>Openstack</span></li>
+<li data-pos="46" data-nb="106.42" class="type-6 cat-0">Se<span>Selenium</span></li>
+
+<li data-pos="47" data-nb="107.87" class="type-6 cat-0">Jm<span>JMeter</span></li>
+<li data-pos="48" data-nb="112.41" class="type-7 cat-0">Ap<span>Appium</span></li>
+<li data-pos="49" data-nb="114.82" class="type-7 cat-0">Ju<span>JUnit</span></li>
+<li data-pos="50" data-nb="118.71" class="type-7 cat-0">SI<span>SauceLabs</span></li>
+<li data-pos="51" data-nb="121.76" class="type-7 cat-0">Cf<span>CloudFoundry</span></li>
+
+<!-- ROW 6 -->
+
+<li data-pos="52" data-nb="127.60" class="type-5 cat-0">Gf<span>GoogleFirebase</span></li>
+<li data-pos="53" data-nb="126.90" class="type-5 cat-0">Sn<span>Snort</span></li>
+<li data-pos="54" data-nb="131.29" class="type-2 cat-2">Acd<span>AwsCodeDeploy</span></li>
+
+<!-- ROW 7 -->
+
+<li data-pos="55" data-nb="132.91" class="type-3 cat-0">Tk<span>Tekton</span></li>
+<li data-pos="56" data-nb="137.33" class="type-4 cat-0">Fx<span>Flux</span></li>
+<li data-pos="57-71" class="type-8">Yn<span>Yarn</span></li>
+<li data-pos="72" data-nb="178.49" class="type-6 cat-0">El<span>Elastic ELK Stack</span></li>
+<li data-pos="73" data-nb="180.95" class="type-6 cat-0">Gr<span>Grafana</span></li>
+
+<li data-pos="74" data-nb="183.64" class="type-6 cat-0">Al<span>AWS Lambda</span></li>
+<li data-pos="75" data-nb="186.21" class="type-6 cat-0">He<span>Heroku</span></li>
+<!-- Continue with the rest of the list -->
+<!-- ROW 4 (continued) -->
+
+<li data-pos="25" data-nb="54.938" class="type-6 cat-0">Cd<span>AwsCodeDeploy</span></li>
+<li data-pos="26" data-nb="55.845" class="type-6 cat-0">Ct<span>AwsCodeArtifact</span></li>
+<li data-pos="27" data-nb="58.933" class="type-6 cat-0">Cm<span>AwsCodeCommit</span></li>
+<li data-pos="28" data-nb="58.693" class="type-6 cat-0">Cl<span>AwsCodePipeline</span></li>
+
+<!-- Add more AWS DevOps tools here -->
+
+<li data-pos="29" data-nb="63.546" class="type-6 cat-0">Np<span>Npm</span></li>
+<li data-pos="30" data-nb="65.39" class="type-7 cat-0">Ja<span>JFrogArtifactory</span></li>
+<!-- Continue with the rest of the list -->
+<!-- ROW 8 -->
+
+<li data-pos="76" data-nb="189.99" class="type-6 cat-0">Ct<span>CircleCI</span></li>
+<li data-pos="77" data-nb="192.22" class="type-6 cat-0">Tr<span>Travis CI</span></li>
+<li data-pos="78" data-nb="195.08" class="type-6 cat-0">Bu<span>Buddy</span></li>
+<li data-pos="79" data-nb="197.00" class="type-6 cat-0">Ja<span>Jenkins X</span></li>
+<li data-pos="80" data-nb="200.59" class="type-6 cat-0">Ar<span>Azure DevOps</span></li>
+
+<!-- ROW 9 -->
+
+<li data-pos="81" data-nb="204.38" class="type-5 cat-0">Gh<span>GitLab</span></li>
+<li data-pos="82" data-nb="207.2" class="type-5 cat-0">Bb<span>Bitbucket</span></li>
+<li data-pos="83" data-nb="208.98" class="type-2 cat-2">Gc<span>Google Cloud Build</span></li>
+
+<!-- ROW 10 -->
+
+<li data-pos="84" data-nb="209.99" class="type-3 cat-0">Hu<span>Hudson</span></li>
+<li data-pos="85" data-nb="210.00" class="type-4 cat-0">Azd<span>Azure DevOps</span></li>
+<li data-pos="86" data-nb="222.08" class="type-6 cat-0">Me<span>TeamCity</span></li>
+<li data-pos="87" data-nb="223.04" class="type-6 cat-0">Gc<span>Gocd</span></li>
+<li data-pos="88" data-nb="226.03" class="type-6 cat-0">Jr<span>Jira Align</span></li>
+
+<!-- ROW 11 -->
+
+<li data-pos="89" data-nb="227.98" class="type-5 cat-0">Ma<span>MacStadium</span></li>
+<li data-pos="90" data-nb="232.04" class="type-5 cat-0">As<span>Asana</span></li>
+<li data-pos="91" data-nb="231.04" class="type-2 cat-2">Tm<span>TeamCity</span></li>
+
+<!-- Continue with the rest of the list -->
+
+<!-- ROW X -->
+
+<li data-pos="X" data-nb="Atomic Number" class="type-Y cat-Z">Abbr<span>Tool Name</span></li>
+<!-- ROW 12 -->
+
+<li data-pos="92" data-nb="234.01" class="type-3 cat-0">Nu<span>NuGet</span></li>
+<li data-pos="93" data-nb="237.05" class="type-4 cat-0">Go<span>GoCD</span></li>
+<li data-pos="94" data-nb="238.03" class="type-7 cat-0">Cz<span>CircleCI Orb</span></li>
+<li data-pos="95" data-nb="243.00" class="type-7 cat-0">Gr<span>Git Runner</span></li>
+<li data-pos="96" data-nb="247.00" class="type-7 cat-0">Tu<span>TeamCity Universal Agent</span></li>
+
+<!-- ROW 13 -->
+
+<li data-pos="97" data-nb="251.00" class="type-5 cat-0">Gt<span>Git Tower</span></li>
+<li data-pos="98" data-nb="252.01" class="type-5 cat-0">Tb<span>TeamCity BuildAgent</span></li>
+<li data-pos="99" data-nb="257.00" class="type-2 cat-2">Cbc<span>CircleCI Build Container</span></li>
+
+<!-- ROW 14 -->
+
+<li data-pos="100" data-nb="258.02" class="type-3 cat-0">Ia<span>IBM UrbanCode Deploy</span></li>
+<li data-pos="101" data-nb="259.02" class="type-4 cat-0">Hb<span>HashiCorp Boundary</span></li>
+<li data-pos="102" data-nb="262.11" class="type-6 cat-0">Rl<span>Rundeck</span></li>
+<li data-pos="103" data-nb="267.13" class="type-6 cat-0">Gp<span>GitPod</span></li>
+<li data-pos="104" data-nb="270.13" class="type-6 cat-0">Jk<span>Jenkins Kubernetes Plugin</span></li>
+
+<!-- ROW 15 -->
+
+<li data-pos="105" data-nb="271.16" class="type-5 cat-0">Trg<span>TriggMine</span></li>
+<li data-pos="106" data-nb="270.06" class="type-5 cat-0">Ks<span>Ksonnet</span></li>
+<li data-pos="107" data-nb="270.09" class="type-2 cat-2">Oc<span>Openshift CLI</span></li>
+
+<!-- ROW 16 -->
+
+<li data-pos="108" data-nb="275.04" class="type-3 cat-0">Ha<span>Harness</span></li>
+<li data-pos="109" data-nb="276.16" class="type-4 cat-0">Hj<span>Helidon</span></li>
+<li data-pos="110" data-nb="281.11" class="type-7 cat-0">Dr<span>Drone</span></li>
+<li data-pos="111" data-nb="282.13" class="type-7 cat-0">Tk<span>Task</span></li>
+<li data-pos="112" data-nb="285.13" class="type-7 cat-0">Ab<span>AppBuild</span></li>
+
+<!-- ROW 17 -->
+
+<li data-pos="113" data-nb="286.16" class="type-5 cat-0">Azs<span>Azure Static Web Apps</span></li>
+<li data-pos="114" data-nb="290.08" class="type-5 cat-0">Tj<span>TeamCity Jobs</span></li>
+<li data-pos="115" data-nb="291.06" class="type-5 cat-1">As<span>Amazon SageMaker</span></li>
+
+<!-- Continue with the rest of the list -->
+
+<!-- ROW X -->
+
+<li data-pos="X" data-nb="Atomic Number" class="type-Y cat-Z">Abbr<span>Tool Name</span></li>
+<!-- ROW 18 -->
+
+<li data-pos="116" data-nb="293.04" class="type-3 cat-0">At<span>Ansible Tower</span></li>
+<li data-pos="117" data-nb="294.91" class="type-4 cat-0">Wt<span>WhiteSource</span></li>
+<li data-pos="118" data-nb="298.03" class="type-7 cat-0">Pb<span>Packer Build</span></li>
+<li data-pos="119" data-nb="299.04" class="type-7 cat-0">Ja<span>Jenkins Artifactory Plugin</span></li>
+<li data-pos="120" data-nb="303.03" class="type-7 cat-0">Ghj<span>GitHub Jenkins Integration</span></li>
+
+<!-- ROW 19 -->
+
+<li data-pos="121" data-nb="304.21" class="type-5 cat-0">Sc<span>SonarCloud</span></li>
+<li data-pos="122" data-nb="307.33" class="type-5 cat-0">Spn<span>Spinakker</span></li>
+<li data-pos="123" data-nb="308.06" class="type-2 cat-2">Pb<span>Pulumi</span></li>
+
+<!-- ROW 20 -->
+
+<li data-pos="124" data-nb="309.21" class="type-3 cat-0">Pb<span>Puppet Bolt</span></li>
+<li data-pos="125" data-nb="310.64" class="type-4 cat-0">Tc<span>TeamCity Cloud</span></li>
+<li data-pos="126" data-nb="313.15" class="type-6 cat-0">Tt<span>Terraform Cloud</span></li>
+<li data-pos="127" data-nb="314.18" class="type-6 cat-0">Cr<span>Crowdin</span></li>
+<li data-pos="128" data-nb="318.14" class="type-6 cat-0">Ec<span>Electron</span></li>
+
+<!-- ROW 21 -->
+
+<li data-pos="129" data-nb="319.24" class="type-5 cat-0">Jm<span>Jira Marketplace</span></li>
+<li data-pos="130" data-nb="322.22" class="type-5 cat-0">Rm<span>Redmine</span></li>
+<li data-pos="131" data-nb="327.20" class="type-2 cat-2">Abm<span>Amazon Cloud Map</span></li>
+
+<!-- ROW 22 -->
+
+<li data-pos="132" data-nb="328.10" class="type-3 cat-0">Cn<span>Consul</span></li>
+<li data-pos="133" data-nb="329.21" class="type-4 cat-0">Alm<span>Ansible Lint</span></li>
+<li data-pos="134" data-nb="330.40" class="type-7 cat-0">Sba<span>SonarQube Azure DevOps Extension</span></li>
+<li data-pos="135" data-nb="331.33" class="type-7 cat-0">Asn<span>Azure DevOps SonarQube Extension</span></li>
+<li data-pos="136" data-nb="335.26" class="type-7 cat-0">Crt<span>Crucible</span></li>
+
+<!-- ROW 23 -->
+
+<li data-pos="137" data-nb="336.04" class="type-5 cat-0">Fl<span>Fluentd</span></li>
+<li data-pos="138" data-nb="339.10" class="type-5 cat-0">Fg<span>FogBugz</span></li>
+<li data-pos="139" data-nb="340.36" class="type-5 cat-1">Alx<span>AWS Lambda Extensions</span></li>
+
+<!-- Continue with the rest of the list -->
+
+<!-- ROW X -->
+
+<li data-pos="X" data-nb="Atomic Number" class="type-Y cat-Z">Abbr<span>Tool Name</span></li>
+
+
+<li data-pos="140" data-nb="341.27" class="type-6 cat-0">Osq<span>OpenShift Container Storage</span></li>
+<li data-pos="141" data-nb="344.47" class="type-6 cat-0">Dsr<span>Docker Swarm</span></li>
+  
+  </ul>
+</div>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <h1>Our Vision</h1>
+
+
+  <div class="image-container" >
+    <img style="padding-left: 145px;" src="assets/key-features/vision.svg" alt="Desktop Image" class="desktop-image">
+    
+</div>
+
+<!--
+<div class="keycol keyhome" 
+style="     background-size: 100%;
+background-repeat: no-repeat;
+background-position: center;
+padding: 116px; "
+
+>
+  <div class="container">
+    <h4 sty>Key Features</h4>
+  
+  
+
+<hr>
+
+<div class="slider-container">
+  <div class="slider">
+      <img src="assets/key-features/kf1/3.png" alt="Image 1" class="slide">
+      <img src="assets/key-features/kf1/4.png" alt="Image 2" class="slide">
+      <img src="assets/key-features/kf1/5.png" alt="Image 3" class="slide">
+       <img src="assets/key-features/kf1/6.png" alt="Image 3" class="slide">
+        <img src="assets/key-features/kf1/7.png" alt="Image 3" class="slide">
+         <img src="assets/key-features/kf1/8.png" alt="Image 3" class="slide">
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+-->
