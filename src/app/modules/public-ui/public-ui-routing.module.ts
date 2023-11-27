@@ -8,6 +8,7 @@ import { MlOpsComponent } from './Pages/mlops/mlops.component';
 import { ContactUsComponent } from './components/contactus/contact.component';
 import  { BlogsComponent } from './components/blogs/blog.component'
 
+
 const routes: Routes = [
   {path:'aws', component: AWSDevOpsComponent},
   {path:'devops', component: MlOpsComponent},
