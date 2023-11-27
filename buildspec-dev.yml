@@ -40,6 +40,7 @@ phases:
       - aws cloudfront create-invalidation --distribution-id EREGMURKAWGIL --paths "/*"
       - aws cloudfront create-invalidation --distribution-id EYIAC4E5ZJDGF --paths "/*"
       - aws cloudfront create-invalidation --distribution-id E3H1TFHKV55SB7 --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E34B5O9UHCRA5E --paths "/*"
       - echo "Code has been deployed unto CloudFront `date`"
 artifacts:
   files:
