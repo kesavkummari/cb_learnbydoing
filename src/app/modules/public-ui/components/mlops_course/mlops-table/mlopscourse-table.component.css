@@ -151,10 +151,10 @@
   }
 }
 
-
 .default-image {
-  max-width: 106%;
-  /* height: auto; */
-  padding-right: 127px;
-  padding-top: 54px;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding-left: 0px;
+  display: block;
 }
