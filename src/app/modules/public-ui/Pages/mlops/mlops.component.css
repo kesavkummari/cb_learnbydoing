@@ -195,7 +195,7 @@ button[type="submit"]:disabled {
 .banner {
     display: flex;
     justify-content: space-between;
-    background-color: #212529;
+    background-color: #172342;
     color: #fff;
     padding: 30px 125px;
   }

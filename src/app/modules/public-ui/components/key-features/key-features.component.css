@@ -1,7 +1,4 @@
-.image-container {
-  max-width: 100%;
-  height: auto;
-}
+
  /* Styles for desktop view */
  .desktop-image {
   display: block;  /* Display for desktop */

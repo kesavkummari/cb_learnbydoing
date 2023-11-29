@@ -37,6 +37,11 @@
   background-color: #cae0fe;
   height: 70px;
   color: #000;
+  display: flex;
+  font-size: larger;
+  font-weight: 900;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .content {
