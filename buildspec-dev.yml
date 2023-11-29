@@ -27,6 +27,7 @@ phases:
       - cd dist/cloudbinary
       - ls -lrta
       - aws s3 sync . s3://learnbydoing.cloudbinary.io/
+      - aws s3 sync . s3://lbd.cloudbinary.io/
       - echo Files were uploaded unto s3 bucket
   post_build:
     commands:
@@ -34,6 +35,7 @@ phases:
       - pwd
       - ls -lrta
       - aws cloudfront create-invalidation --distribution-id E34B5O9UHCRA5E --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id EZFFVXQRLMS84 --paths "/*"
       - echo "Code has been deployed unto CloudFront `date`"
 artifacts:
   files:
