@@ -250,10 +250,10 @@ button[type="submit"]:disabled {
   /* Show the mobile view for screens 768px or narrower */
   @media screen and (max-width: 768px) {
     .desktop {
-      display: block;
+      display: none;
     }
     .mobile {
-      display: none;
+      display: block;
     }
     
   }
