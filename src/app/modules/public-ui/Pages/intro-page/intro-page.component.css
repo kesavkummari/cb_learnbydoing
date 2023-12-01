@@ -119,12 +119,13 @@ body {
   @media (max-width: 600px) {
 
   .button-container {
-    display: flex;
-    gap: 21px;
-    padding-top: 20px;
+        /* display: flex; */
+    /* gap: 21px; */
+    /* padding-top: 20px; */
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
   } }
 
   .button {

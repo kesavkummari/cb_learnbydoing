@@ -64,8 +64,8 @@
     <div class="header-right">
     <!--  <a href="#table-container-intense">JOB READY PROGRAM</a> -->
     <a   [routerLink]="['/home']" routerLinkActive="router-link-active"  >HOME </a>
-      <a   [routerLink]="['/aws']" routerLinkActive="router-link-active"  >AWS </a>
-   <a  [routerLink]="['/devops']" routerLinkActive="router-link-active">DEVOPS <span style="color: orange; font-size: 12px;"></span></a>
+   <!--   <a   [routerLink]="['/aws']" routerLinkActive="router-link-active"  >AWS </a> -->
+   <a  [routerLink]="['/aws-devops']" routerLinkActive="router-link-active"> COURSES <span style="color: orange; font-size: 12px;"></span></a>
    <a   [routerLink]="['/blogs']" routerLinkActive="router-link-active"  >BLOGS </a>
       <a class="active special-hover"  [routerLink]="['/contactus']" routerLinkActive="router-link-active"  style="padding: 9px;">CONTACT US</a>
     </div>
@@ -104,8 +104,8 @@
   <!-- Your sidenav content goes here -->
   <a routerLink="/home" (click)="closeSidenav()">Home</a>
 
-  <a [routerLink]="['/aws']" routerLinkActive="router-link-active" (click)="closeSidenav()">AWS</a>
- <a routerLink="/devops" (click)="closeSidenav()">DevOps</a> 
+ <!-- <a [routerLink]="['/aws']" routerLinkActive="router-link-active" (click)="closeSidenav()">AWS</a> -->
+ <a routerLink="/aws-devops" (click)="closeSidenav()">Courses </a> 
  <a routerLink="/blogs" (click)="closeSidenav()">Blogs</a>
 
   <a [routerLink]="['/contactus']" routerLinkActive="router-link-active" (click)="closeSidenav()">Contact Us</a>

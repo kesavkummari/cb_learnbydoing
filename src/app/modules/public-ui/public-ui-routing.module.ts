@@ -11,7 +11,7 @@ import  { BlogsComponent } from './components/blogs/blog.component'
 
 const routes: Routes = [
   {path:'aws', component: AWSDevOpsComponent},
-  {path:'devops', component: MlOpsComponent},
+  {path:'aws-devops', component: MlOpsComponent},
   {path:'blogs', component: BlogsComponent},
   {path:'home', component: IntroPageComponent},
   { path:'contactus', component: ContactUsComponent },
