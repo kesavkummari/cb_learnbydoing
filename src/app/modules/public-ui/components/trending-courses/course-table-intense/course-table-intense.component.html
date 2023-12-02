@@ -434,11 +434,11 @@ Compliance</div>
           <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Containerisation : Docker</div>
 
 	  <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">Container Orchestration : Kubernates</div>
-	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">Continuous Monitoring : CloudWatch, New Relic & Nagios</div>
-    <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">Creating Machine Images : Packer</div>
-    <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">Continuous Infrastructure As A Code: Terraform</div>
-    <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">Migration Strategies</div>
-    <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Deployment Strategies</div>
+	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">Continuous Monitoring : New Relic</div>
+    <!-- <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">Creating Machine Images : Packer</div> -->
+    <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">Continuous Infrastructure As A Code: Terraform</div>
+    <!-- <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">Migration Strategies</div>
+    <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Deployment Strategies</div> -->
         </div>
         <div class="right-column">
           <!-- Content for DevOps modules M1 to M10 here -->
@@ -668,7 +668,7 @@ Compliance</div>
             <li>Summary</li>
           </ul>
           </ng-container>
-          <ng-container *ngIf="selectedModule === 'M10'">
+          <!-- <ng-container *ngIf="selectedModule === 'M10'">
             <h2>Module 10 </h2>
             <hr style=" position: unset;
             border: none;
@@ -692,9 +692,9 @@ Compliance</div>
             </ul>
             <li>Summary</li>
           </ul>
-          </ng-container>
-          <ng-container *ngIf="selectedModule === 'M11'">
-            <h2>Module 11</h2>
+          </ng-container> -->
+          <ng-container *ngIf="selectedModule === 'M10'">
+            <h2>Module 10</h2>
             <hr style=" position: unset;
             border: none;
             height: 2px;
@@ -716,7 +716,7 @@ Compliance</div>
 
             </ul>
           </ng-container>
-          <ng-container *ngIf="selectedModule === 'M12'">
+          <!-- <ng-container *ngIf="selectedModule === 'M12'">
             <h2>Module 12 </h2>
             <hr style=" position: unset;
             border: none;
@@ -757,7 +757,7 @@ Compliance</div>
           <!-- Add content for DevOps modules M2 to M10 here -->
         </div>
       </div>
-    </ng-container>
+    </ng-container> -->
 
     <ng-container *ngIf="selectedTab === 'mlops'">
       <div class="content-columns">

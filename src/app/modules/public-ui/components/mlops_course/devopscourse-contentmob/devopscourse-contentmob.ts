@@ -243,7 +243,7 @@ export class DevOpsCourseContentMob {
           },
           // Module 9
           {
-            title: 'Continuous Monitoring : CloudWatch, New Relic & Nagios',
+            title: 'Continuous Monitoring : New Relic',
             submodules: ['Getting Started with Observability',
                                       'What is Observability/Monitoring?',
                                       'Types of Continuous Monitoring:',
@@ -266,22 +266,22 @@ export class DevOpsCourseContentMob {
                                       'Creating Dashboard in New Relic',
                                       'Summary']
                                               },
-          // Module 10
-          {
-            title: 'Creating Machine Images : Packer',
-            submodules: ['Getting Started with packer',
-                        'Install Packer on Windows & Linux',
-                        'Build an Image',
-                        'Variables',
-                        'Builders',
-                        'Provisioners',
-                        'Post-Provisioners',
-                        'Executing Shell Scripts',
-                        'Shell Script',
-                        'PowerShell Script',
-                        'Executing Ansible PlayBooks',
-                        'Summary']
-          },
+          //Module 10
+          // {
+          //   title: 'Creating Machine Images : Packer',
+          //   submodules: ['Getting Started with packer',
+          //               'Install Packer on Windows & Linux',
+          //               'Build an Image',
+          //               'Variables',
+          //               'Builders',
+          //               'Provisioners',
+          //               'Post-Provisioners',
+          //               'Executing Shell Scripts',
+          //               'Shell Script',
+          //               'PowerShell Script',
+          //               'Executing Ansible PlayBooks',
+          //               'Summary']
+          // },
            {
             title: 'Continuous Infrastructure As A Code: Terraform',
             submodules: ['Getting Started with IaC',
@@ -296,28 +296,28 @@ export class DevOpsCourseContentMob {
                         'Terraform',
                         'Summary']
           },
-           {
-            title: 'Migration Strategies',
-            submodules: ['What is Migration?',
-                    'Different Types Of Migration Strategies:',
-                    'Rehosting, Replatforming',
-                    'Repurchasing, Refactoring, Retiring & Retaining',
-                    'Summary']
-                            },
-           {
-            title: 'Deployment Strategies',
-            submodules: ['What is Deployment?',
-                'Different Types of Deployment Strategies:',
-                'Recreate Deployment',
-                'Ramped Deployment',
-                'Blue/Green Deployment',
-                'Canary Deployment',
-                'A/B Testing Deployment',
-                'Shadow Deployment',
-                'Summary']
-          }
-        ]
-      }
+      //      {
+      //       title: 'Migration Strategies',
+      //       submodules: ['What is Migration?',
+      //               'Different Types Of Migration Strategies:',
+      //               'Rehosting, Replatforming',
+      //               'Repurchasing, Refactoring, Retiring & Retaining',
+      //               'Summary']
+      //                       },
+      //      {
+      //       title: 'Deployment Strategies',
+      //       submodules: ['What is Deployment?',
+      //           'Different Types of Deployment Strategies:',
+      //           'Recreate Deployment',
+      //           'Ramped Deployment',
+      //           'Blue/Green Deployment',
+      //           'Canary Deployment',
+      //           'A/B Testing Deployment',
+      //           'Shadow Deployment',
+      //           'Summary']
+      //     }
+       ]
+       }
     // You can add more courses here if needed
   ];
 
