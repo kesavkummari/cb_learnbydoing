@@ -40,7 +40,7 @@
 }
 
 .text-content h2 b{
-  color: #000;
+  color: #172342;
   /* font-size: 65px; */
   /* font-family: system-ui !important; */
   text-shadow: 2px 2px #fff;
@@ -110,7 +110,7 @@ body {
 
   .button-container {
     display: flex;
-    gap: 21px;
+   /* gap: 21px; */
     padding-top: 20px;
     flex-direction: row;
     flex-wrap: wrap;
