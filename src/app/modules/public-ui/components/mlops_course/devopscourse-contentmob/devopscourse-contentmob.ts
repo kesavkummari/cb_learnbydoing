@@ -13,8 +13,21 @@ export class DevOpsCourseContentMob {
         // Course 2 modules and submodules
         // Module 1
         {
+          title: 'Getting Started',
+          submodules: ['Download, Install, and Configure Prerequisites:',
+                      'Google Chrome',
+                      'Git',
+                      'Visual Studio Code',
+                      'Creating Account with GitLab',
+                      'Creating Account with AWS',
+                      'Login to AWS As Root User',
+                        'Secure AWS Using MFA',
+                        'Getting Started with Windows',
+                        'Getting Started with Unix/Linux/MacOS']
+                              },
+        {
             title: 'OS Modules',
-            submodules: ['Getting Started with OS',
+            submodules: ['OS Basics',
                         'Linux File System',
                         'Text Editors',
                         'File permissions',
@@ -24,9 +37,86 @@ export class DevOpsCourseContentMob {
                           'Process Management',
                           'Log Management',
                           'Webserver',
-                          'Application Server',
                           'Database']
                                 },
+                                
+          {
+  title: 'AWS Services - Compute',
+  submodules: [
+    'Images',
+    'EBS',
+    'Security Groups',
+    'Snapshots',
+    'Creating Golden Images',
+    'Amazon EC2'
+  ]
+},
+{
+  title: 'AWS Services - Storage',
+  submodules: [
+    'Amazon Elastic Block Store (Amazon EBS)',
+    'Amazon Elastic File System (Amazon EFS)',
+    'Amazon S3',
+    
+  ]
+},
+{
+  title: 'AWS Services - Security, Identity, and Compliance',
+  submodules: [
+    'AWS Certificate Manager (ACM)',
+    'AWS Identity and Access Management (IAM)',
+    'AWS IAM Identity Center (AWS Single Sign-On)'
+  ]
+},
+{
+  title: 'AWS Services - Management & Governance',
+  submodules: [
+    'AWS Auto Scaling',
+    'AWS CloudTrail',
+    'Amazon CloudWatch',
+    'AWS Compute Optimizer',
+    'AWS Health Dashboard',
+    'AWS Management Console',
+    'AWS Organizations',
+    'AWS Systems Manager',
+    'AWS Trusted Advisor',
+    'AWS Well-Architected Tool'
+  ]
+},
+{
+  title: 'AWS Services - Developer Tools',
+  submodules: [
+    'AWS CLI',
+    'AWS Cloud Development Kit (AWS CDK)',
+    'AWS CloudShell',
+    'AWS CodeArtifact',
+    'AWS CodeBuild',
+    'AWS CodeCommit',
+    'AWS CodeDeploy',
+    'AWS CodePipeline',
+    'AWS CodeStar',
+    'End To End Java Project CI/CD Pipeline'
+  ]
+},
+
+{
+  title: 'AWS Services - Networking and Content',
+  submodules: [
+    'Amazon CloudFront',
+    'Amazon Route 53',
+    'Amazon VPC',
+    'Amazon VPC Peering'
+  ]
+},
+{
+  title: 'AWS Services - Serverless ',
+  submodules: [
+    'API Gateway',
+    'AWS Lambda',
+    'Amazon SES (Simple Email Service)',
+    'Amazon SNS (Simple Notification Service)'
+  ]
+},
           {
             title: 'Software Development Life Cycle : Agile - Scrum',
             submodules: ['What is Agile?',
@@ -225,96 +315,7 @@ export class DevOpsCourseContentMob {
                 'A/B Testing Deployment',
                 'Shadow Deployment',
                 'Summary']
-          },
-          {
-  title: 'AWS Services - Compute',
-  submodules: [
-    'Images',
-    'EBS',
-    'Security Groups',
-    'Snapshots',
-    'Creating Golden Images',
-    'Amazon EC2'
-  ]
-},
-{
-  title: 'AWS Services - Storage',
-  submodules: [
-    'Amazon Elastic Block Store (Amazon EBS)',
-    'Amazon Elastic File System (Amazon EFS)',
-    'Amazon S3',
-    
-  ]
-},
-{
-  title: 'AWS Services - Security, Identity, and Compliance',
-  submodules: [
-    'AWS Certificate Manager (ACM)',
-    'AWS Identity and Access Management (IAM)',
-    'AWS IAM Identity Center (AWS Single Sign-On)'
-  ]
-},
-{
-  title: 'AWS Services - Management & Governance',
-  submodules: [
-    'AWS Auto Scaling',
-    'AWS CloudTrail',
-    'Amazon CloudWatch',
-    'AWS Compute Optimizer',
-    'AWS Health Dashboard',
-    'AWS Management Console',
-    'AWS Organizations',
-    'AWS Systems Manager',
-    'AWS Trusted Advisor',
-    'AWS Well-Architected Tool'
-  ]
-},
-{
-  title: 'AWS Services - Developer Tools',
-  submodules: [
-    'AWS CLI',
-    'AWS Cloud Development Kit (AWS CDK)',
-    'AWS CloudShell',
-    'AWS CodeArtifact',
-    'AWS CodeBuild',
-    'AWS CodeCommit',
-    'AWS CodeDeploy',
-    'AWS CodePipeline',
-    'AWS CodeStar',
-    'End To End Java Project CI/CD Pipeline'
-  ]
-},
-{
-  title: 'AWS Services - Migration and Transfer',
-  submodules: [
-    'AWS Database Migration Service (AWS DMS)'
-  ]
-},
-{
-  title: 'AWS Services - Database',
-  submodules: [
-    'Amazon RDS',
-    'Amazon DynamoDB'
-  ]
-},
-{
-  title: 'AWS Services - Networking and Content Delivery',
-  submodules: [
-    'Amazon CloudFront',
-    'Amazon Route 53',
-    'Amazon VPC',
-    'Amazon VPC Peering'
-  ]
-},
-{
-  title: 'AWS Services - Serverless API Gateway, AWS Lambda, SES & SNS',
-  submodules: [
-    'API Gateway',
-    'AWS Lambda',
-    'Amazon SES (Simple Email Service)',
-    'Amazon SNS (Simple Notification Service)'
-  ]
-}
+          }
         ]
       }
     // You can add more courses here if needed
