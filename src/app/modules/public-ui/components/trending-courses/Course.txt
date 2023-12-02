@@ -460,7 +460,7 @@ Compliance</div>
           <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Containerisation : Docker</div>
 
 	  <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">Container Orchestration : Kubernates</div>
-	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">Continuous Monitoring : CloudWatch, New Relic & Nagios</div>
+	  <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">Continuous Monitoring : New Relic</div>
     <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">Creating Machine Images : Packer</div>
     <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">Continuous Infrastructure As A Code: Terraform</div>
     <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">Migration Strategies</div>
@@ -673,12 +673,8 @@ Compliance</div>
               <ul style="padding-left: 20px;">
                   <li>Application Monitoring</li>
                   <li>Infrastructure Monitoring</li>
-                  <li>Kubernetes Monitoring</li>
                   <li>Log Management</li>
-                  <li>Browser Monitoring</li>
-                  <li>Mobile Monitoring</li>
                   <li>Synthetics Monitoring</li>
-                  <li>Network Monitoring</li>
                 </ul>
               <li>List of Continuous Monitoring Tools</li>
               <li>Configure Jobs</li>
@@ -686,11 +682,7 @@ Compliance</div>
                 <li>Ping Monitoring in New Relic</li>
                 <li>Simple Browser Monitoring in New Relic</li>
                 <li>Scripted Monitoring in New Relic</li>
-                <li>Getting Started with APM (Application Performance Monitoring) in New Relic</li>
-                <li>Configure APM in New Relic</li>
             </ul>
-            <li>Configure Infrastructure in New Relic</li>
-            <li>Creating Dashboard in New Relic</li>
             <li>Summary</li>
           </ul>
           </ng-container>
