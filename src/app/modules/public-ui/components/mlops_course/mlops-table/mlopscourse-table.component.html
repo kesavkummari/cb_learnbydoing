@@ -420,36 +420,33 @@
           </div>
         </div>
       </ng-container>
-  
-      <ng-container *ngIf="selectedTab === 'devops'">
+  <ng-container *ngIf="selectedTab === 'devops'">
         <div class="content-columns">
           <div class="left-column">
             <h2 style="padding-bottom: 10px;">AWS DevOps Content - Modules</h2>
-            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with OS</div>
-            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Software Development Life Cycle : Agile - Scrum</div>
-            <!-- Add modules M2 to M10 here -->
-            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Version Control System / Source Code Management: Git</div>
-            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Continuous Integration : Jenkins</div>
-            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Continuous Static Code Analysis : SonarQube</div>
-            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Continuous Binary Code Repository using JFrog</div>
-            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Continuous Configuration Management : Ansible</div>
-            <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">Containerisation : Docker</div>
-  
-      <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">Container Orchestration : Kubernates</div>
-      <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">Continuous Monitoring : CloudWatch, New Relic</div>
+            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started</div>
+   	    <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">OS Modules</div>
+	    <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Compute  </div>
+            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Storage</div>
+            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS Services - Database</div>
+            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS Services - Networking & Content</div>
+            <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS Services - Developer Tools</div>
+            <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS Services - Management & Governance</div>
+            <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === '10'">AWS Services - Serverless</div>
+            <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS Services - Security, Identity, and Compliance</div>	
+            <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">Software Development Life Cycle : Agile - Scrum</div>
+            <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Version Control System / Source Code Management: Git</div>
+            <div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">Continuous Integration : Jenkins</div>
+            <div class="module" (click)="selectModule('M15')" [class.active-module]="selectedModule === 'M15'">Continuous Static Code Analysis : SonarQube</div>
+            <div class="module" (click)="selectModule('M16')" [class.active-module]="selectedModule === 'M16'">Continuous Binary Code Repository using JFrog</div>
+            <div class="module" (click)="selectModule('M17')" [class.active-module]="selectedModule === 'M17'">Continuous Configuration Management : Ansible</div>
+            <div class="module" (click)="selectModule('M18')" [class.active-module]="selectedModule === 'M18'">Containerisation : Docker</div>
+	    <div class="module" (click)="selectModule('M19')" [class.active-module]="selectedModule === 'M19'">Container Orchestration : Kubernates</div>
+            <div class="module" (click)="selectModule('M20')" [class.active-module]="selectedModule === 'M20'">Continuous Monitoring : CloudWatch, New Relic</div>
+            <div class="module" (click)="selectModule('M21')" [class.active-module]="selectedModule === 'M21'">Continuous Infrastructure As A Code: Terraform</div>
+         
+            
       
-      <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">Continuous Infrastructure As A Code: Terraform</div>
-      <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">Migration Strategies</div>
-          <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">AWS Services - Compute  </div>
-            <div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">AWS Services - Storage</div>
-            <div class="module" (click)="selectModule('M15')" [class.active-module]="selectedModule === 'M15'">AWS Services - Database</div>
-            <div class="module" (click)="selectModule('M16')" [class.active-module]="selectedModule === 'M16'">AWS Services - Networking & Content</div>
-            <div class="module" (click)="selectModule('M17')" [class.active-module]="selectedModule === 'M17'">AWS Services - Containers</div>
-            <div class="module" (click)="selectModule('M18')" [class.active-module]="selectedModule === 'M18'">AWS Services - Developer Tools</div>
-            <div class="module" (click)="selectModule('M19')" [class.active-module]="selectedModule === 'M19'">AWS Services - Management & Governance</div>
-            <div class="module" (click)="selectModule('M20')" [class.active-module]="selectedModule === '20'">AWS Services - Serverless</div>
-            <div class="module" (click)="selectModule('M21')" [class.active-module]="selectedModule === 'M21'">AWS Services - Security, Identity, and
-  Compliance</div>
     
           </div>
           <div class="right-column" style="font-size: smaller;">
@@ -458,7 +455,7 @@
            
             </ng-container>
             <ng-container *ngIf="selectedModule === 'M1'">
-              <h2>Module 1 Windows & Linux </h2>
+              <h2>Module 1</h2>
               <hr style=" position: unset;
               border: none;
               height: 2px;
@@ -466,14 +463,38 @@
               margin-bottom: 20px;
               margin-right: inherit;" >
                               <ul>
-                                <li>Download, Install, and Configure Prerequisites: 1. Google Chrome, 2. Git & 3. Visual Studio Code</li>
+                                <li>Download, Install, and Configure Prerequisites:
+    <ol>
+        <li>Google Chrome
+        </li>
+        <li>Git
+            
+        </li>
+        <li>Visual Studio Code:
+            
+        </li>
+    </ol>
+</li>
+
                                 <li>Creating Account with GitLab</li>
                                 <li>Creating Account with AWS</li>
                                 <li>Login to AWS As Root User</li>
                                 <li>Secure AWS Using MFA</li>
                                 <li>Getting Started with Windows</li>
                                 <li>Getting Started with Unix/Linux/MacOS</li>
-                                <li>OS Basics</li>
+                               
+                              </ul>
+            </ng-container>
+            <ng-container *ngIf="selectedModule === 'M2'">
+              <h2>Module 2</h2>
+              <hr style=" position: unset;
+              border: none;
+              height: 2px;
+              background: black;
+              margin-bottom: 20px;
+              margin-right: inherit;" >
+              		<ul>
+                 		<li>OS Basics</li>
                                 <li>Boot Process & RunLevels</li>
                                 <li>File System</li>
                                 <li>Text Editors</li>
@@ -483,10 +504,152 @@
                                 <li>Controlling Services & Daemons</li>
                                 <li>Process Management</li>
                                 <li>Log Management</li>
-                              </ul>
+                 	 </ul>
+              
             </ng-container>
-            <ng-container *ngIf="selectedModule === 'M2'">
-              <h2>Module 2</h2>
+        <ng-container *ngIf="selectedModule === 'M3'">
+              <h2>Module 3 </h2>
+              <hr style=" position: unset;
+              border: none;
+              height: 2px;
+              background: black;
+              margin-bottom: 20px;
+              margin-right: inherit;" >
+              <ul>
+    <li>Amazon EC2
+      <ul style="padding-left: 40px;">
+        <li>Images</li>
+        <li>EBS</li>
+        <li>Security Groups</li>
+        <li>Snapshots</li>
+        <li>Creating Golden Images</li>
+      </ul>
+    </li>
+    
+  </ul>
+  
+            </ng-container>
+             <ng-container *ngIf="selectedModule === 'M4'">
+              <h2>Module 4</h2>
+              <hr style=" position: unset;
+              border: none;
+              height: 2px;
+              background: black;
+              margin-bottom: 20px;
+              margin-right: inherit;" >
+              <ul>
+  
+    <li>Amazon Elastic Block Store (Amazon EBS)</li>
+    <li>Amazon Elastic File System (Amazon EFS)</li>
+    <li>Amazon S3</li>
+
+  </ul>
+  
+            </ng-container>
+             <ng-container *ngIf="selectedModule === 'M5'">
+              <h2>Module 5</h2>
+              <hr style=" position: unset;
+              border: none;
+              height: 2px;
+              background: black;
+              margin-bottom: 20px;
+              margin-right: inherit;" >
+              <ul>
+                <li>Amazon RDS</li>
+                <li>Amazon DynamoDB</li>
+                
+            </ul>
+            </ng-container>
+             <ng-container *ngIf="selectedModule === 'M6'">
+              <h2>Module 6</h2>
+              <hr style=" position: unset;
+              border: none;
+              height: 2px;
+              background: black;
+              margin-bottom: 20px;
+              margin-right: inherit;" >
+              <ul>
+                <li>Amazon CloudFront</li>
+                <li>Amazon Route 53</li>
+                <li>Amazon VPC</li>
+                <li>Amazon VPC Peering</li>
+            </ul>
+            </ng-container>
+            
+             <ng-container *ngIf="selectedModule === 'M8'">
+              <h2>Module 8</h2>
+              <hr style=" position: unset;
+              border: none;
+              height: 2px;
+              background: black;
+              margin-bottom: 20px;
+              margin-right: inherit;" >
+              <ul>
+                <li>AWS CLI</li>
+                <li>AWS Cloud Development Kit (AWS CDK)</li>
+                <li>AWS CloudShell</li>
+                <li>AWS CodeArtifact</li>
+                <li>AWS CodeBuild</li>
+                <li>AWS CodeCommit</li>
+                <li>AWS CodeDeploy</li>
+                <li>AWS CodePipeline</li>
+                <li>AWS CodeStar</li>
+                <li>End To End Java Project CI/CD Pipeline</li>
+            </ul>
+            </ng-container>
+             <ng-container *ngIf="selectedModule === 'M9'">
+              <h2>Module 9</h2>
+              <hr style=" position: unset;
+              border: none;
+              height: 2px;
+              background: black;
+              margin-bottom: 20px;
+              margin-right: inherit;" >
+              <ul>
+                <li>AWS Auto Scaling</li>           
+                <li>AWS CloudTrail</li>
+                <li>Amazon CloudWatch </li>
+                <li>AWS Compute Optimiser</li>
+                <li>AWS Health Dashboard</li>
+                <li>AWS Management Console</li>
+                <li>AWS Organisations</li>
+                <li>AWS Systems Manager</li>
+                <li>AWS Trusted Advisor</li>
+                <li>AWS Well-Architected Tool</li>
+            </ul>
+            </ng-container>
+             <ng-container *ngIf="selectedModule === 'M10'">
+              <h2>Module 10</h2>
+              <hr style=" position: unset;
+              border: none;
+              height: 2px;
+              background: black;
+              margin-bottom: 20px;
+              margin-right: inherit;" >
+              <ul>
+                <li>AWS Lambda</li>
+                <li>Amazon Simple Email Service (SES)</li>
+                <li>Amazon Simple Notification Service (Amazon SNS)</li>
+                <li>API Gateway</li>
+            </ul>
+            </ng-container>
+             <ng-container *ngIf="selectedModule === 'M11'">
+              <h2>Module 11</h2>
+              <hr style=" position: unset;
+              border: none;
+              height: 2px;
+              background: black;
+              margin-bottom: 20px;
+              margin-right: inherit;" >
+              <ul>
+                <li>AWS Certificate Manager (ACM)</li>
+                <li>AWS IAM Identity Center (AWS Single Sign-On)</li>
+                <li>AWS Identity and Access Management (IAM)</li>
+                
+            </ul>
+            </ng-container>
+            <ng-container *ngIf="selectedModule === 'M12'">
+              <h2>Module 12</h2>
               <hr style=" position: unset;
               border: none;
               height: 2px;
@@ -519,8 +682,8 @@
                   <li> Summary </li>
             </ul>
             </ng-container>
-            <ng-container *ngIf="selectedModule === 'M3'">
-              <h2>Module 3 </h2>
+            <ng-container *ngIf="selectedModule === 'M13'">
+              <h2>Module 13 </h2>
               <hr style=" position: unset;
               border: none;
               height: 2px;
@@ -540,8 +703,8 @@
                 <li>Summary</li>
             </ul>
             </ng-container>
-            <ng-container *ngIf="selectedModule === 'M4'">
-              <h2>Module 4 </h2>
+            <ng-container *ngIf="selectedModule === 'M14'">
+              <h2>Module 14 </h2>
               <hr style=" position: unset;
               border: none;
               height: 2px;
@@ -561,8 +724,8 @@
                 <li>Summary</li>
             </ul>
             </ng-container>
-            <ng-container *ngIf="selectedModule === 'M5'">
-              <h2>Module 5 </h2>
+            <ng-container *ngIf="selectedModule === 'M15'">
+              <h2>Module 15 </h2>
               <hr style=" position: unset;
               border: none;
               height: 2px;
@@ -584,8 +747,8 @@
                 <li>Summary</li>
             </ul>
             </ng-container>
-            <ng-container *ngIf="selectedModule === 'M6'">
-              <h2>Module 6 </h2>
+            <ng-container *ngIf="selectedModule === 'M16'">
+              <h2>Module 16 </h2>
               <hr style=" position: unset;
               border: none;
               height: 2px;
@@ -604,8 +767,8 @@
                 <li>Summary</li>
             </ul>
             </ng-container>
-            <ng-container *ngIf="selectedModule === 'M7'">
-              <h2>Module 7 </h2>
+            <ng-container *ngIf="selectedModule === 'M17'">
+              <h2>Module 17 </h2>
               <hr style=" position: unset;
               border: none;
               height: 2px;
@@ -626,8 +789,8 @@
                 <li>Summary</li>
             </ul>
             </ng-container>
-            <ng-container *ngIf="selectedModule === 'M8'">
-              <h2>Module 8 </h2>
+            <ng-container *ngIf="selectedModule === 'M18'">
+              <h2>Module 18 </h2>
               <hr style=" position: unset;
               border: none;
               height: 2px;
@@ -648,8 +811,8 @@
                 <li>Summary</li>
             </ul>
             </ng-container>
-            <ng-container *ngIf="selectedModule === 'M9'">
-              <h2>Module 9</h2>
+            <ng-container *ngIf="selectedModule === 'M19'">
+              <h2>Module 19</h2>
               <hr style=" position: unset;
               border: none;
               height: 2px;
@@ -675,8 +838,8 @@
                 <li>Summary</li>
             </ul>
             </ng-container>
-            <ng-container *ngIf="selectedModule === 'M10'">
-              <h2>Module 10</h2>
+            <ng-container *ngIf="selectedModule === 'M20'">
+              <h2>Module 20</h2>
               <hr style=" position: unset;
               border: none;
               height: 2px;
@@ -711,33 +874,9 @@
               <li>Summary</li>
             </ul>
             </ng-container>
-            <ng-container *ngIf="selectedModule === '11'">
-              <h2>Module 10 </h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-                <li>Getting Started with packer</li>
-                <li>Install Packer on Windows & Linux</li>
-                <ul style="padding-left: 20px;">
-                <li>Build an Image</li>
-               <ul style="padding-left: 40px;"> <li>Variables</li>
-                <li>Builders</li>
-                <li>Provisioners</li>
-                <li>Post-Provisioners</li> </ul>
-                <li>Executing Shell Scripts</li>
-                <ul style="padding-left: 40px;"><li>Shell Script</li>
-                <li>PowerShell Script</li> </ul>
-                <li>Executing Ansible PlayBooks</li>
-              </ul>
-              <li>Summary</li>
-            </ul>
-            </ng-container>
-            <ng-container *ngIf="selectedModule === 'M11'">
-              <h2>Module 11</h2>
+      
+            <ng-container *ngIf="selectedModule === 'M21'">
+              <h2>Module 21</h2>
               <hr style=" position: unset;
               border: none;
               height: 2px;
@@ -759,218 +898,12 @@
   
               </ul>
             </ng-container>
-            <ng-container *ngIf="selectedModule === 'M12'">
-              <h2>Module 12 </h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-                      <li>What is Migration?</li>
-                      <li>Different Types Of Migration Strategies:</li>
-                      <ul style="padding-left: 40px;"> <li>Rehosting, Replatforming,</li>
-                      <li>Repurchasing, Refactoring, Retiring &</li>
-                      <li>Retaining</li> </ul>
-                      <li>Summary</li>
-  
-              </ul>
-            </ng-container>
-            <ng-container *ngIf="selectedModule === '14'">
-              <h2>Module 13 </h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-                <li> What is Deployment?</li>
-                  <li>Different Types of Deployment Strategies:</li>
-             <ul style="padding-left: 40px;">   <li>Recreate Deployment</li>
-                <li>Ramped Deployment</li>
-                <li>Blue/Green Deployment</li>
-                <li>Canary Deployment</li>
-                <li>A/B Testing Deployment</li>
-                <li>Shadow Deployment</li> </ul>
-                <li>Summary</li>
-            </ul>
-            </ng-container>
-            <!-- Add content for DevOps modules M2 to M10 here -->
+     
+           
+   
             
              
-            <ng-container *ngIf="selectedModule === 'M13'">
-              <h2>Module 13 </h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-    <li>Amazon EC2
-      <ul style="padding-left: 40px;">
-        <li>Images</li>
-        <li>EBS</li>
-        <li>Security Groups</li>
-        <li>Snapshots</li>
-        <li>Creating Golden Images</li>
-      </ul>
-    </li>
-    <li>Amazon EC2 Auto Scaling</li>
-    <li>EC2 Image Builder</li>
-    <li>AWS Elastic Beanstalk</li>
-  </ul>
-  
-            </ng-container>
-             <ng-container *ngIf="selectedModule === 'M14'">
-              <h2>Module 14</h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-    <li>Amazon S3</li>
-    <li>Amazon Elastic Block Store (Amazon EBS)</li>
-    <li>Amazon Elastic File System (Amazon EFS)</li>
-    <li>Amazon FSx for Windows File Server</li>
-    <li>AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)</li>
-  </ul>
-  
-            </ng-container>
-             <ng-container *ngIf="selectedModule === 'M15'">
-              <h2>Module 15</h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-                <li>Amazon RDS</li>
-                <li>Amazon DynamoDB</li>
-                <li>AWS Database Migration Service (AWS DMS)</li>
-                <li>Amazon Redshift</li>
-            </ul>
-            </ng-container>
-             <ng-container *ngIf="selectedModule === 'M16'">
-              <h2>Module 16</h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-                <li>Amazon API Gateway</li>
-                <li>AWS Client VPN</li>
-                <li>Amazon CloudFront</li>
-                <li>Elastic Load Balancing (ELB)</li>
-                <li>AWS PrivateLink</li>
-                <li>Amazon Route 53</li>
-                <li>AWS Site-to-Site VPN</li>
-                <li>AWS Transit Gateway</li>
-                <li>Amazon VPC</li>
-                <li>Amazon VPC Peering</li>
-            </ul>
-            </ng-container>
-             <ng-container *ngIf="selectedModule === 'M17'">
-              <h2>Module 17</h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-                <li>Amazon Elastic Container Registry (Amazon ECR)</li>
-                <li>Amazon Elastic Container Service (Amazon ECS)</li>
-                <li>Amazon Elastic Kubernetes Service (Amazon EKS)</li>
-            </ul>
-            </ng-container>
-             <ng-container *ngIf="selectedModule === 'M18'">
-              <h2>Module 18</h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-                <li>AWS CLI</li>
-                <li>AWS Cloud Development Kit (AWS CDK)</li>
-                <li>AWS CloudShell</li>
-                <li>AWS CodeArtifact</li>
-                <li>AWS CodeBuild</li>
-                <li>AWS CodeCommit</li>
-                <li>AWS CodeDeploy</li>
-                <li>AWS CodePipeline</li>
-                <li>AWS CodeStar</li>
-                <li>End To End Java Project CI/CD Pipeline</li>
-            </ul>
-            </ng-container>
-             <ng-container *ngIf="selectedModule === 'M19'">
-              <h2>Module 19</h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-                <li>AWS CloudFormation</li>
-                <li>AWS CloudTrail</li>
-                <li>Amazon CloudWatch & Logs</li>
-                <li>AWS Compute Optimiser</li>
-                <li>AWS Health</li>
-                <li>AWS OpsWorks</li>
-                <li>AWS Organisations</li>
-                <li>AWS Systems Manager</li>
-                <li>AWS Trusted Advisor</li>
-            </ul>
-            </ng-container>
-             <ng-container *ngIf="selectedModule === 'M20'">
-              <h2>Module 20</h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-                <li>AWS Lambda</li>
-                <li>Amazon Simple Email Service (SES)</li>
-                <li>Amazon Simple Notification Service (Amazon SNS)</li>
-                <li>AWS Step Functions</li>
-            </ul>
-            </ng-container>
-             <ng-container *ngIf="selectedModule === 'M21'">
-              <h2>Module 21</h2>
-              <hr style=" position: unset;
-              border: none;
-              height: 2px;
-              background: black;
-              margin-bottom: 20px;
-              margin-right: inherit;" >
-              <ul>
-                <li>AWS Certificate Manager (ACM)</li>
-                <li>AWS CloudHSM</li>
-                <li>Amazon Cognito</li>
-                <li>Amazon Detective</li>
-                <li>AWS Directory Service</li>
-                <li>Amazon GuardDuty</li>
-                <li>AWS IAM Identity Center (AWS Single Sign-On)</li>
-                <li>AWS Identity and Access Management (IAM)</li>
-                <li>Amazon Inspector</li>
-                <li>AWS Key Management Service (AWS KMS)</li>
-                <li>AWS Security Token Service (AWS STS)</li>
-                <li>AWS Shield</li>
-                <li>AWS WAF</li>
-            </ul>
-            </ng-container>
+    
            
           </div>
         </div>
