@@ -8,7 +8,9 @@ import { PublicUiModule } from './modules/public-ui/public-ui.modue';
 import { SharedModule } from './shared/shared-mod.module';
 import 'bootstrap';
 import { FooterComponent } from './components/footer-col/footer-col.component';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
@@ -23,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     PublicUiModule,
     SharedModule,
+    FormsModule,
     BrowserAnimationsModule
   ],
   providers: [],

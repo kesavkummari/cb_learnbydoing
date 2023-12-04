@@ -1,5 +1,9 @@
+
+
+
 <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 <div class="pg-footer">
+  
   <footer class="footer">
     <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
       <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
@@ -9,17 +13,26 @@
         <div class="footer-logo">
           <a class="footer-logo-link" href="#" >
             <span class="hidden-link-text">LOGO</span>
-            <img src="assets/footer/logo1.png" style="width: 169px;"  alt="">
+            <img src="assets/footer/footerlogo.svg" style="width: 169px;"  alt="">
           </a>
         </div>
         <div class="footer-menu">
-          <h2 class="footer-menu-name"> We are at</h2> <br>
+          
 <!--
+        <h2 class="footer-menu-name"> Learn About AWS</h2> <br>
           <p style="font-size: 14px;">    WeWork Rajapushpa Summit, SY. 130P & 115/1P, Nanakramguda Rd, Ranga Reddy Dist., Financial District, Manikonda Jagir, Telangana 500032
          </p>
 -->
-<p style="font-size: 14px;">    7-1-619/A/3/A, Plot No 48, 1st Floor, SAP St, Ameerpet, Hyderabad | India.
+
+<p style="font-size: 14px;"> 
+What Is AWS?<br>
+What Is Cloud Computing?<br>
+What Is DevOps?<br>
+What Is a Container?<br>
+What Is a MLOps?<br>
+What is Generative AI?<br>
 </p>
+
 
         </div>
       </div>
@@ -28,13 +41,13 @@
           <h2 class="footer-menu-name"> About Us</h2>
           <ul id="menu-company" class="footer-menu-list">
             <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="https://wa.me/919100073006">Contact</a>
+              <a [routerLink]="['/contactus']" routerLinkActive="router-link-active">Contact</a>
             </li>
             <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
               <a  [routerLink]="['/aws-devops']" routerLinkActive="router-link-active">Courses</a>
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="#">Internships</a>
+              <a href="#">Careers</a>
             </li>
           </ul>
         </div>
@@ -42,10 +55,11 @@
           <h2 class="footer-menu-name"> Legal</h2>
           <ul id="menu-legal" class="footer-menu-list">
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-              <a href="https://www.cloudbinary.io/privacy-policy">Privacy Notice</a>
+              <a href="assets/footer/CloudBinaryPrivacyPolicy.pdf" target="_blank">Privacy Notice</a>
+
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="https://www.cloudbinary.io/privacy-policy">Terms of Use</a>
+              <a href="assets/footer/CloudBinaryPrivacyPolicy.pdf">Terms of Use</a>
             </li>
           </ul>
         </div>
@@ -56,14 +70,15 @@
           <ul id="menu-quick-links" class="footer-menu-list">
             <li class="menu-item menu-item-type-custom menu-item-object-custom">
 
-              <a target="_blank" rel="noopener noreferrer"  [routerLink]="['/aws-devops']" routerLinkActive="router-link-active">Trending Courses</a>
+              <a   [routerLink]="['/aws-devops']" routerLinkActive="router-link-active"  >AWS DEVOPS</a>
+              
             </li>
-            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-              <a target="_blank" rel="noopener noreferrer" [routerLink]="['/aws-devops']" routerLinkActive="router-link-active" >Course Curriculum</a>
-            </li>
+       <!--     <li class="menu-item menu-item-type-custom menu-item-object-custom">
+              <a  [routerLink]="['/devops']" routerLinkActive="router-link-active">DEVOPS <span style="color: orange; font-size: 12px;"></span></a>
+            </li>-->
 
             <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a href="#">Blog</a>
+              <a   [routerLink]="['/blogs']" routerLinkActive="router-link-active"  >BLOGS </a>
             </li>
 
             <li class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -102,11 +117,12 @@
       </div>
     </div>
 
+
+
     <div class="footer-copyright" style="display: flex;">
       <div class="left-content" style="
-        padding-left: 185px;
+        
         font-size: medium;">
-
       </div>
       <div class="footer-copyright-wrapper">
         <div class="right-content">
@@ -116,7 +132,9 @@
         </div>
       </div>
     </div>
-
-
   </footer>
 </div>
+
+
+
+

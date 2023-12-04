@@ -1,7 +1,4 @@
-.image-container {
-  max-width: 100%;
-  height: auto;
-}
+
  /* Styles for desktop view */
  .desktop-image {
   display: block;  /* Display for desktop */
@@ -224,5 +221,10 @@ body {
   }
   100% {
     transform: translateX(100%);
+  }
+}
+@media (max-width: 600px) {
+  .Periodic-Table {
+    display: none;
   }
 }

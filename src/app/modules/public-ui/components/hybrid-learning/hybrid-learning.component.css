@@ -89,7 +89,7 @@
 }
 .firstlearn h2,.firstlearn .heading span{
   font-size: xxx-large;
-  color: #343a40;
+  color: #172342;
   text-shadow: 1px 1px 2px black  !important;
 }
 
@@ -97,4 +97,14 @@
   .firstlearn h2,.firstlearn .heading span{
   font-size: 30px;
   }
+}
+/* styles.css */
+.hybrid-learning p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 589;
+}
+.hybrid-learning h3{
+  color: #172342;
 }

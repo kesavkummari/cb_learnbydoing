@@ -1,23 +1,61 @@
+<head>
+  <meta charset="utf-8">
+  <title>Learn AWS & DevOps in 45 Days by Doing | Cloud Binary</title>
+  <base href="/">
+
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-62NPJ5DP7F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-62NPJ5DP7F');
+</script>
+
+  <!-- Meta Tags for SEO -->
+  <meta name="description" content="Learn AWS & DevOps in 45 Days by Doing with hands-on, certification-oriented training. Gain practical experience through real-world projects. Talk to our mentors for more information.">
+  <meta name="keywords" content="edtech, AWS, DevOps, online learning, hybrid training ,certification, hands-on training, technology, mentorship">
+  <meta name="author" content="Cloud Binary">
+  <meta name="robots" content="index, follow">
+  
+  <!-- OpenGraph meta tags for social media -->
+  <meta property="og:title" content="Learn AWS & DevOps in 45 Days | Your EdTech Platform">
+  <meta property="og:description" content="Hands-on, certification-oriented training in AWS & DevOps. Gain practical experience with real-world projects. Talk to our mentors for more information.">
+  <meta property="og:image" content="https://www.cloudbinary.io/home">
+  <meta property="og:url" content="https://www.cloudbinary.io">
+
+  <!-- Viewport settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Styles and Favicon 
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="path/to/your/styles.css">-->
+
+  <!-- Font -->
+
+</head>
 <!-- Main Content -->
 
 <div class="content">
-  <div class="header" style=" height: 60px; position: fixed;" *ngIf="!isScreenSmall">
-    <a [routerLink]="['']" routerLinkActive="router-link-active"  class="logo_link logo">
+  <div class="header" style=" height: 100px; position: fixed;" *ngIf="!isScreenSmall">
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active"  class="logo_link logo">
       <img
-        src="assets/footer/nobg.png"
-        alt="Logo"
+        src="assets/intro/newlogo.png"
+        alt="Cloud Binary Logo"
         class="flogo"
-        style="    width: 70px;
+        style="    width: 100px;
         padding-top: 6px; "
 
 
     />
-    <div>
-      <div style="font-weight: bolder; color: #002346;">CLOUD BINARY <br> <span style="
+    <div> <!--
+      <div style="font-weight: bolder; color: #38b6ff;">CLOUD BINARY <br> <span style="
         font-size: large;
         display: flex;
         justify-content: center;
-    ">Learn by Doing</span></div>
+    ">Learn by Doing</span></div> -->
 
      <!-- <div style="font-size: 18px;">Learn by Doing</div>-->
     </div>
@@ -25,27 +63,28 @@
     <!-- <a href="./src/assets/footer/cloudbinary_white_bg1.png" class="logo"></a> -->
     <div class="header-right">
     <!--  <a href="#table-container-intense">JOB READY PROGRAM</a> -->
-      <a   [routerLink]="['/aws-devops']" routerLinkActive="router-link-active"  >AWS DEVOPS</a>
-   <!--<a  [routerLink]="['/mlops']" routerLinkActive="router-link-active">LMS <span style="color: orange; font-size: 12px;"></span></a>-->
-      <a href="https://lms-cloudbinary.teachable.com/">LMS</a>
-      <a class="active" href="https://wa.me/919100073006" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);">CONTACT US</a>
+    <a   [routerLink]="['/home']" routerLinkActive="router-link-active"  >HOME </a>
+   <!--   <a   [routerLink]="['/aws']" routerLinkActive="router-link-active"  >AWS </a> -->
+   <a  [routerLink]="['/aws-devops']" routerLinkActive="router-link-active"> COURSES <span style="color: orange; font-size: 12px;"></span></a>
+   <a   [routerLink]="['/blogs']" routerLinkActive="router-link-active"  >BLOGS </a>
+      <a class="active special-hover"  [routerLink]="['/contactus']" routerLinkActive="router-link-active"  style="padding: 9px;">CONTACT US</a>
     </div>
   </div>
   <div class="header" style=" height: 40px; position: fixed; display:flex; justify-content: space-between;" *ngIf="isScreenSmall">
-    <a [routerLink]="['']" routerLinkActive="router-link-active" class="logo_link logo" style="    display: flex;
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="logo_link logo" style="    display: flex;
     flex-direction: row;">
       <img
-        src="assets/footer/nobg.png"
-        alt="Logo"
+        src="assets/intro/CBMV.png"
+        alt="Cloud Binary Logo for Mobile View"
         class="flogo"
-        style="width: 70px;"
+        style="width: 185px; height: 50px;"
     />
-    <div >
-      <div style="font-weight: bolder; color: #002346;">Cloud Binary <br> <span style="
+    <div > <!--
+      <div style="font-weight: bolder; color: #38b6ff;">Cloud Binary <br> <span style="
         font-size: large;
         display: flex;
         justify-content: center;
-    ">Learn by Doing</span></div>
+    ">Learn by Doing</span></div> -->
       <!--<div class="sub-title">Learn by Doing</div>-->
     </div>
   </a>
@@ -63,18 +102,20 @@
 <div class="header__backdrop" [class.open]="sidenavOpen" (click)="closeSidenav()"></div>
 <div class="sidenav" [class.open]="sidenavOpen">
   <!-- Your sidenav content goes here -->
+  <a routerLink="/home" (click)="closeSidenav()">Home</a>
 
-  <a [routerLink]="['/aws-devops']" routerLinkActive="router-link-active" (click)="closeSidenav()">AWS DEVOPS</a>
-<!--  <a routerLink="/mlops" (click)="closeSidenav()">MLOps</a> -->
-  <a href="https://lms-cloudbinary.teachable.com/">LMS</a>
-  <a href="https://wa.me/919100073006" (click)="closeSidenav()">Contact Us</a>
+ <!-- <a [routerLink]="['/aws']" routerLinkActive="router-link-active" (click)="closeSidenav()">AWS</a> -->
+ <a routerLink="/aws-devops" (click)="closeSidenav()">Courses </a> 
+ <a routerLink="/blogs" (click)="closeSidenav()">Blogs</a>
+
+  <a [routerLink]="['/contactus']" routerLinkActive="router-link-active" (click)="closeSidenav()">Contact Us</a>
 </div>
 
 
 
 
 <a href="https://wa.me/919100073006" class="floating" target="_blank">
-  <i class=" float-button"></i> <img width="80%" src="assets/icon-images/web.png" alt="">
+  <i class=" float-button"></i> <img width="80%" src="assets/icon-images/web.png" alt="Cloud Binary Favicon">
   </a>
 <!-- <app-button-chooser
   buttonStyle="button1"

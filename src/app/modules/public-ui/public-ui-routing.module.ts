@@ -3,12 +3,19 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { IntroPageComponent } from './Pages/intro-page/intro-page.component';
-import { AWSDevOpsComponent } from './Pages/aws-devops/aws-devops.component';
+import { AWSDevOpsComponent } from './Pages/aws/aws.component';
 import { MlOpsComponent } from './Pages/mlops/mlops.component';
+import { ContactUsComponent } from './components/contactus/contact.component';
+import  { BlogsComponent } from './components/blogs/blog.component'
+
 
 const routes: Routes = [
-  {path:'aws-devops', component: AWSDevOpsComponent},
-  {path:'mlops', component: MlOpsComponent},
+  {path:'aws', component: AWSDevOpsComponent},
+  {path:'aws-devops', component: MlOpsComponent},
+  {path:'blogs', component: BlogsComponent},
+  {path:'home', component: IntroPageComponent},
+  { path:'contactus', component: ContactUsComponent },
+  
   {
     path: '',
     component: IntroPageComponent,

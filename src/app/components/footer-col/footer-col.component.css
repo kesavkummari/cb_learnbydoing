@@ -303,7 +303,7 @@
         margin-left: auto;
         margin-right: auto;
         max-width: 1441px;
-        padding: 40px 15px 300px;
+        padding: 40px 15px 305px;
         position: relative;
     }
   
@@ -351,7 +351,7 @@ a{
 }
 
 a:hover{
-  color: #38b6ff;
+  color: #172342;
 }
 
 
@@ -402,3 +402,44 @@ a:hover{
 
 
 
+
+
+.footer--subFooter {
+  background-color: #14304d;
+  padding: 20px;
+  color: #333;
+
+}
+
+.courses-list a {
+  color: aliceblue;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.mb-3{
+  color: white;
+}
+.courses-list{color: rgb(36, 40, 44);}
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.courses-list a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

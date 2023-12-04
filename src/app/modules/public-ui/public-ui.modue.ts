@@ -20,7 +20,7 @@ import { LocationsComponent } from './components/locations/locations.component';
 
 import { CourseTableComponent } from './components/trending-courses/course-table/course-table.component';
 import { CourseIntenseTableComponent } from './components/trending-courses/course-table-intense/course-table.component';
-import { AWSDevOpsComponent } from './Pages/aws-devops/aws-devops.component';
+import { AWSDevOpsComponent } from './Pages/aws/aws.component';
 import {MlOpsComponent} from './Pages/mlops/mlops.component'
 import {MlOpsCoursesComponent} from './components/mlops_course/mlops-courses.component'
 import {mlopsCourseTableComponent} from './components/mlops_course/mlops-table/mlopscourse-table.component'
@@ -34,9 +34,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HttpClientModule } from '@angular/common/http';
 import {CourseContentMob} from './components/trending-courses/course-contentmob/course-contentmob'
+import {RegisterFormComponent} from './components/trending-courses/registration-form/register.component'
+import { FormsModule } from '@angular/forms';
+import { DevopsDownloadComponent } from './components/mlops_course/devopsdownload-form/devops.download.component'
+import { DevOpsCourseContentMob } from './components/mlops_course/devopscourse-contentmob/devopscourse-contentmob'
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent,CourseContentMob ],
-  imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule,ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
+  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent, CourseContentMob, RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob ],
+  imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
+  providers: [],
 })
 export class PublicUiModule { }

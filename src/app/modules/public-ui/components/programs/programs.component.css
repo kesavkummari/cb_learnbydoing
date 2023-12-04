@@ -1,5 +1,5 @@
-.container {
-  width: 90%;
+/*.container {
+  width: 100%;
    max-width: 960px; 
   margin: 0 auto 50px;
 }
@@ -10,14 +10,16 @@ header {
 }
 
 h1 {
-  font-family: Arial, sans-serif;
+ 
+
   font-weight: bold;
-  font-size: 24px;
+  font-size: 40px;
+  padding-bottom: 20px;
 }
 
-/* h2 {
+ h2 {
   margin-top: 30px;
-} */
+} 
 
 main {
   margin: 10px;
@@ -53,7 +55,183 @@ h2 {
 }
 
 .intense-program {
-  background: linear-gradient(to right, #38b6ff, #38b6ff);
+  background: linear-gradient(to right, #172342, #172342);
+}
+
+ul {
+  list-style-type: none;
+   padding-top: 40px;
+}
+
+li {
+  padding: 5px 0;
+  position: relative;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+li.blue1 {
+  color: white;
+}
+
+li::before {
+  position: absolute;
+  left: -38px;
+  top: 6px;
+  border-radius: 50%;
+  background-color: #333;
+
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.blue1::before {
+  background-color: #f9f9f9;
+  color: grey;
+}
+li.white1::before {
+  background-color: #172342;
+  color: white;
+}
+
+li.blue1:first-child::before,
+li.white1:first-child::before {
+  content: "1";
+}
+
+li.blue1:nth-child(3)::before,
+li.white1:nth-child(3)::before {
+  content: "2";
+}
+
+li.blue1:nth-child(5)::before,
+li.white1:nth-child(5)::before {
+  content: "3";
+}
+
+li.blue1:nth-child(7)::before,
+li.white1:nth-child(7)::before {
+  content: "4";
+}
+
+li.blue1:nth-child(9)::before,
+li.white1:nth-child(9)::before {
+  content: "5";
+}
+
+li.blue1:nth-child(11)::before,
+li.white1:nth-child(11)::before {
+  content: "6";
+}
+li.blue1:nth-child(13)::before,
+li.white1:nth-child(13)::before {
+  content: "7";
+}
+li.blue1:nth-child(15)::before,
+li.white1:nth-child(15)::before {
+  content: "8";
+}
+li.blue1:nth-child(17)::before,
+li.white1:nth-child(17)::before {
+  content: "9";
+}
+
+
+hr {
+  height: 1px;
+  background-color: lightgray;
+  border: none;
+}
+.coming-soon {
+  font-size: 14px;  Set the font size to make it smaller 
+  color: #BFD7ED;  Change the text color 
+  height: 32px; 
+}
+.coming-soon {
+  font-size: 14px;  Set the font size to make it smaller
+  color: #0c0c0c;  Change the text color 
+  position: relative;  Add positioning to contain the flag 
+}
+*/
+/*
+.flag {
+  background-color: yellow;  Set the background color to yellow for the flag 
+  display: inline-block;
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  margin-right: 10px; 
+} 
+
+ul{
+  margin-bottom:0;
+}*/
+
+
+.container {
+  width: 100%;
+   max-width: 960px; 
+  margin: 0 auto 50px;
+}
+
+header {
+  margin-top: 20px;
+  text-align: center;
+}
+
+h1 {
+ 
+
+  font-weight: bold;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+/* h2 {
+  margin-top: 30px;
+} */
+
+main {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+section {
+  width: 100%;
+  padding: 20px; 
+   border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  main {
+    display: block;
+  }
+
+  section {
+    width: 100%;
+  }
+}
+
+.regular-program {
+  background-color: white;
+}
+h2 {
+  font-size: 30px;
+}
+
+.intense-program {
+  background: linear-gradient(to right, #172342, #172342);
 }
 
 ul {
@@ -95,7 +273,7 @@ li.blue1::before {
   color: grey;
 }
 li.white1::before {
-  background-color: #2a8ec7;
+  background-color: #172342;
   color: white;
 }
 
@@ -169,3 +347,5 @@ hr {
 ul{
   margin-bottom:0;
 }
+
+

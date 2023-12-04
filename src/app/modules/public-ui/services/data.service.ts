@@ -6,6 +6,9 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class DataService {
+  downloadPDF() {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private http: HttpClient) { }
 

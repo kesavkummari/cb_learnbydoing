@@ -3,14 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
     margin: 0;
-    
 }
 
 /* Header Styles */
@@ -48,8 +46,8 @@ h1 {
 
 /* Key Features Styles */
 .feature-container {
-  
-    
+
+
     padding-top: 43px;
     display: flex;
     flex-wrap: nowrap;
@@ -68,7 +66,7 @@ h1 {
 }
 
 /* Request Callback Styles */
-.form {
+/* .form {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -96,52 +94,79 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+*/
 
-input[type="submit"] {
-    background-color: #38b6ff;
+mat-form-field {
+  width: -webkit-fill-available;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+    background-color: #172342;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color .3s,transform .3s,box-shadow .3s;
+   /* text-shadow: 0px 5px 4px rgba(0,0,0,.5); */
+    box-shadow: 0 4px 4px #00000080;
 }
 
-input[type="submit"]:hover {
-    background-color: #555;
+button[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+}
+
+button[type="submit"]:disabled {
+    
+    cursor: not-allowed;
 }
 
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
+ 
+  input[type="submit"] {
+    text-shadow: 0px 2.5px 4px rgba(0,0,0,.5);
+  }
+  h1 {
+    font-size: 39px !important; /* Adjust the font size as needed for mobile view */
+  }
 
-    .left-column {
-        flex: 1;
-    }
-
-    .right-column {
-        flex: 1;
-        margin-top: 20px;
-    }
-
-    .feature-container {
-        flex-direction: column; /* Stack features vertically on mobile */
-    }
-
-    .feature-icon {
-        font-size: 24px; /* Adjust icon size on mobile */
-    }
+  .container {
+    flex-direction: column;
+    padding-top: 10px !important;  /* Remove the padding-top in mobile view */
     
-        .feature-icon {
-            width: 50%; /* Set the width to 100% to make the images responsive */
-        }
+  }
+
+  .left-column {
+    flex: 1;
+  }
+
+  .right-column {
     
+    flex: 1;
+
+  }
+
+  .feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .feature-icon {
+    flex: 0 0 calc(50% - 10px); /* Two images in a row with a 10px gap */
+    margin-bottom: 10px; /* Add some margin for spacing */
+    font-size: 24px; /* Adjust icon size on mobile */
+    width: 100%; /* Set the width to 100% to make the images responsive */
+  }
 }
 
 
+
 .awscoursebtn {
-    background-color: #38b6ff;
+    background-color: #172342;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -151,17 +176,26 @@ input[type="submit"]:hover {
     font-size: 16px;
     margin: 10px 2px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 26px;
+
+    transition: background-color .3s,transform .3s,box-shadow .3s;
+   /* text-shadow: 0px 5px 4px rgba(0,0,0,.5); */
+    box-shadow: 0 4px 4px #00000080;
+
 }
 
 .awscoursebtn:hover {
-    background-color: #002346;
+
+        /* background-color: #002346; */
+        box-shadow: none;
+        transform: scale(.9);
+
 }
 
 .banner {
     display: flex;
     justify-content: space-between;
-    background-color: #212529;
+    background-color: #172342;
     color: #fff;
     padding: 30px 125px;
   }
@@ -176,9 +210,13 @@ input[type="submit"]:hover {
     flex-direction: column;
     padding: 20px;
   }
-  
+
   .banner div {
     margin: 10px 0;
+  }
+  .awscoursebtn{
+    text-shadow: 0px 2.5px 4px rgba(0,0,0,.5);
+
   }
 }
 
@@ -186,7 +224,7 @@ input[type="submit"]:hover {
 
 .banner div:nth-child(2) {
     border-left: 1px solid #fff; /* Add a white thin line */
-    
+
   }
   .banner div:nth-child(3) {
     border-left: 1px solid #fff; /* Add a white thin line */
@@ -194,3 +232,45 @@ input[type="submit"]:hover {
   }
 
 
+/* By default, hide the mobile view */
+.course-contentmob {
+    display: none;
+  }
+  
+  /* Show the desktop view for screens wider than 768px (adjust this value as needed) */
+  @media screen and (min-width: 768px) {
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+  }
+  
+  /* Show the mobile view for screens 768px or narrower */
+  @media screen and (max-width: 768px) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .exp {
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+ /* Add this to your component's CSS file or directly in your component styles */
+
+.form-container {
+  border: 2px solid #ccc; /* Border color and width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle shadow effect */
+  padding: 20px; /* Add padding to create space between the border and form content */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}

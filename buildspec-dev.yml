@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 16
+      nodejs: 18
       #java: corretto11
     commands:
       - echo install phase
@@ -15,6 +15,8 @@ phases:
       # - npm install --location=global @angular/cli@13.3.8
       - npm install --legacy-peer-deps
       # - npm update --force
+      - npm install popper.js --save
+      
   build:
     commands:
       - echo Build Started
@@ -24,14 +26,16 @@ phases:
       - ls -ltra dist
       - cd dist/cloudbinary
       - ls -lrta
-      - aws s3 sync . s3://cb-cloudbinary-dev/
+      - aws s3 sync . s3://learnbydoing.cloudbinary.io/
+      - aws s3 sync . s3://lbd.cloudbinary.io/
       - echo Files were uploaded unto s3 bucket
   post_build:
     commands:
       - echo "post build started `date`"
       - pwd
       - ls -lrta
-      - aws cloudfront create-invalidation --distribution-id ER9MSUZIR7QKJ --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E34B5O9UHCRA5E --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id EZFFVXQRLMS84 --paths "/*"
       - echo "Code has been deployed unto CloudFront `date`"
 artifacts:
   files:
