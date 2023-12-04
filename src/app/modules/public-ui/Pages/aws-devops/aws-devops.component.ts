@@ -3,6 +3,7 @@ import { Component, ElementRef, OnInit } from '@angular/core';
 import {  FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DataService } from '../../services/data.service';
+import { saveAs } from 'file-saver';
 
 
 @Component({
@@ -41,19 +42,28 @@ export class AWSDevOpsComponent implements OnInit {
   }
   formData: any = {};
 
+
   onSubmit() {
     if (this.registrationForm.valid) {
       // Show success message
       this.snackBar.open('Form submitted successfully!', 'Close', {
         duration: 5000
       });
-      console.log(this.registrationForm.value);
+      // this.registrationForm.value);
+      
+      
       // Insert form data into API
       this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
-        console.log(res);
+        // res);
+        // Download the PDF
+        this.http.get('https://8amcloudbinary.s3.amazonaws.com/DevOps_20231110.pdf', { responseType: 'blob' })
+          .subscribe((response: Blob) => {
+            saveAs(response, 'CB DevOps CourseCurriculum.pdf');
+          });
       });
-      this.registrationForm.reset();
 
+      // Reset form
+      this.registrationForm.reset();
     }
   }
 }
