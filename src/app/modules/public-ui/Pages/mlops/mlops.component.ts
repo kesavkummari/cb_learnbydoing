@@ -3,6 +3,7 @@ import {  FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DataService } from '../../services/data.service';
 import { HttpClient } from '@angular/common/http';
+import { saveAs } from 'file-saver';
 @Component({
   selector: 'mlops',
   templateUrl: './mlops.component.html',
@@ -42,14 +43,19 @@ export class MlOpsComponent implements OnInit {
 
   onSubmit() {
     if (this.registrationForm.valid) {
+
       // Show success message
       this.snackBar.open('Form submitted successfully!', 'Close', {
         duration: 5000
       });
-      console.log(this.registrationForm.value);
+      // console.log(this.registrationForm.value);
       // Insert form data into API
       this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
-        console.log(res);
+        // console.log(res);
+        this.http.get('https://8amcloudbinary.s3.amazonaws.com/DevOps_20231110.pdf', { responseType: 'blob' })
+          .subscribe((response: Blob) => {
+            saveAs(response, 'CB DevOps CourseCurriculum.pdf');
+          });
       });
       this.registrationForm.reset();
 

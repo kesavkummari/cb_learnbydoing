@@ -53,14 +53,14 @@ export class AWSDevOpsComponent implements OnInit {
       
       
       // Insert form data into API
-      this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
+      // this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
         // res);
         // Download the PDF
         this.http.get('https://8amcloudbinary.s3.amazonaws.com/DevOps_20231110.pdf', { responseType: 'blob' })
           .subscribe((response: Blob) => {
             saveAs(response, 'CB DevOps CourseCurriculum.pdf');
           });
-      });
+      // });
 
       // Reset form
       this.registrationForm.reset();
