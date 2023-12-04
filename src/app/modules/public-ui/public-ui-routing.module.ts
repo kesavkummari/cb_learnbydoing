@@ -8,6 +8,7 @@ import { MlOpsComponent } from './Pages/mlops/mlops.component';
 import { ContactUsComponent } from './components/contactus/contact.component';
 import  { BlogsComponent } from './components/blogs/blog.component'
 import { Blog1Component } from './components/blogs-pages/blog1/blog1';
+import { Blog2Component } from './components/blogs-pages/blog2/frugalarchitect';
 
 const routes: Routes = [
   {path:'aws', component: AWSDevOpsComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'home', component: IntroPageComponent},
   { path:'contactus', component: ContactUsComponent },
   { path: 'blog1' , component : Blog1Component },
+  { path: 'frugalarchitect' , component : Blog2Component },
   
   {
     path: '',

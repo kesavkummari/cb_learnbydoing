@@ -40,9 +40,10 @@ import { DevopsDownloadComponent } from './components/mlops_course/devopsdownloa
 import { DevOpsCourseContentMob } from './components/mlops_course/devopscourse-contentmob/devopscourse-contentmob'
 import { Blog1Component } from './components/blogs-pages/blog1/blog1';
 import { FAQComponent } from './components/faqs/faq.component';
+import { Blog2Component } from './components/blogs-pages/blog2/frugalarchitect';
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent, CourseContentMob, RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, Blog1Component, FAQComponent ],
+  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent, CourseContentMob, RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, Blog1Component, FAQComponent, Blog2Component ],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
   providers: [],
 })
