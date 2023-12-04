@@ -38,9 +38,11 @@ import {RegisterFormComponent} from './components/trending-courses/registration-
 import { FormsModule } from '@angular/forms';
 import { DevopsDownloadComponent } from './components/mlops_course/devopsdownload-form/devops.download.component'
 import { DevOpsCourseContentMob } from './components/mlops_course/devopscourse-contentmob/devopscourse-contentmob'
+import { Blog1Component } from './components/blogs-pages/blog1/blog1';
+import { FAQComponent } from './components/faqs/faq.component';
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent, CourseContentMob, RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob ],
+  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent, CourseContentMob, RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, Blog1Component, FAQComponent ],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
   providers: [],
 })

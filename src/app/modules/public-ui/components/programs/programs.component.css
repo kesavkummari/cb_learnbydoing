@@ -226,8 +226,18 @@ section {
 .regular-program {
   background-color: white;
 }
+
 h2 {
-  font-size: 30px;
+  font-weight: bolder;
+  font-size: 45px;
+  color: #172342;
+
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+      font-size: 24px; /* Adjust the font size for mobile view */
+  }
 }
 
 .intense-program {

@@ -1,0 +1,49 @@
+/* styles.css (or your component-specific styles file) */
+
+.faq-section {
+    max-width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #333;
+    display: flex;
+    justify-content: space-between; /* Aligns items to the right */
+  }
+  
+  .question-text {
+    flex-grow: 1; /* Allows the text to take up remaining space */
+  }
+  
+  .toggle-icon {
+    margin-left: 10px; /* Add space between text and icon */
+  }
+  
+  .faq-answer {
+    display: none;
+    color: #666;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  .faq-item.active .faq-question .toggle-icon::before {
+    content: "-";
+  }
+  
+  .faq-item:not(.active) .faq-question .toggle-icon::before {
+    content: "+";
+  }
+  
