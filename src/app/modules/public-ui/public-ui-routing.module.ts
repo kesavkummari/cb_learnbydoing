@@ -14,6 +14,7 @@ import { Blog4Component } from './components/blogs-pages/blog4/route53';
 import { Blog5Component } from './components/blogs-pages/blog5/dynamodb';
 import { Blog6Component } from './components/blogs-pages/blog6/s3';
 
+
 const routes: Routes = [
   {path:'aws', component: AWSDevOpsComponent},
   {path:'aws-devops', component: MlOpsComponent},
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'Route-53' , component : Blog4Component },
   { path: 'AWS-DynamoDB' , component : Blog5Component },
   { path: 'Amazon-S3' , component : Blog6Component },
+  
   
   {
     path: '',
