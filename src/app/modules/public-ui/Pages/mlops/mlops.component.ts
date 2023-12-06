@@ -52,7 +52,7 @@ export class MlOpsComponent implements OnInit {
       // Insert form data into API
       this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
         // console.log(res);
-        this.http.get('https://8amcloudbinary.s3.amazonaws.com/DevOps_20231110.pdf', { responseType: 'blob' })
+        this.http.get('https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps.pdf', { responseType: 'blob' })
           .subscribe((response: Blob) => {
             saveAs(response, 'CB DevOps CourseCurriculum.pdf');
           });
