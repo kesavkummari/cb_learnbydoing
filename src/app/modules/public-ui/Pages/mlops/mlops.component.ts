@@ -4,6 +4,10 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { DataService } from '../../services/data.service';
 import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
+import { Router } from '@angular/router';
+
+
+
 @Component({
   selector: 'mlops',
   templateUrl: './mlops.component.html',
@@ -28,7 +32,7 @@ export class MlOpsComponent implements OnInit {
 
 
 
-  constructor(private elementRef: ElementRef,private snackBar: MatSnackBar,private http: HttpClient, private dataService: DataService) {}
+  constructor(private elementRef: ElementRef,private snackBar: MatSnackBar,private http: HttpClient, private dataService: DataService , private router: Router) {}
 
   ngOnInit(): void {
   }
@@ -55,9 +59,10 @@ export class MlOpsComponent implements OnInit {
         this.http.get('https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps.pdf', { responseType: 'blob' })
           .subscribe((response: Blob) => {
             saveAs(response, 'CB DevOps CourseCurriculum.pdf');
-          });
+          }); 
       });
       this.registrationForm.reset();
+      this.router.navigate(['/thank-you']);
 
     }
   }
