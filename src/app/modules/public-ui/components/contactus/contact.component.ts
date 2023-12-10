@@ -46,4 +46,9 @@ export class ContactUsComponent {
       alert('Please fill in all the form fields before submitting.');
     }
   }
+
+  validateEmail(email:string) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  }
 }
