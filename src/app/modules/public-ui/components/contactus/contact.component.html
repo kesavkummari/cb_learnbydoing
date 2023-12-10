@@ -57,14 +57,16 @@
 								<input class="col2 last" type="text" placeholder="LastName" required [(ngModel)]="formData.last_name" name="last_name" />
 							</div>
 							<div class="clearfix">
-								<input  class="col2 first" type="Email" placeholder="Email" required [(ngModel)]="formData.email" name="email" />
-								<input class="col2 last" type="text" placeholder="Contact Number" required [(ngModel)]="formData.phone" name="phone" maxlength="10" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+								<input class="col2 first" type="email" placeholder="Email" required [(ngModel)]="formData.email" name="email" oninput="validateEmail(this)" />
+								<input class="col2 last" type="text" placeholder="Contact Number" required [(ngModel)]="formData.phone" name="phone" minlength="10" maxlength="10"  oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
 							</div>
 							<div class="clearfix">
 								<textarea name="textarea" id="" cols="30" rows="7" placeholder="Your message here..." required [(ngModel)]="formData.user_message" name="user_message">
 								</textarea>
 							</div>
-							<div class="clearfix"><input type="submit" value="Send"></div>
+							<div class="clearfix">
+								<input type="submit" value="Send" [disabled]="form.invalid" [style.background]="form.invalid ? 'grey' : '#172342'" [title]="form.invalid ? 'Please fill in all required fields\nwith valid inputs' : ''">
+							</div>
 						</form>
 					</div>
 					<br>
