@@ -1,0 +1,52 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+      #java: corretto11
+    commands:
+      - echo install phase
+  pre_build:
+    commands:
+      - pwd
+      - ls -lrta
+      - npm install --location=global @angular/cli@latest
+      # - npm install --location=global @angular/cli@13.3.8
+      - npm install --legacy-peer-deps
+      # - npm update --force
+      - npm install popper.js --save
+      
+  build:
+    commands:
+      - echo Build Started
+      - pwd
+      - ls -lrta
+      - npm run build
+      - ls -ltra dist
+      - cd dist/cloudbinary
+      - ls -lrta
+      - aws s3 sync . s3://learnbydoing.cloudbinary.io/
+      - aws s3 sync . s3://lbd.cloudbinary.io/
+      - echo Files were uploaded unto s3 bucket
+  post_build:
+    commands:
+      - echo "post build started `date`"
+      - pwd
+      - ls -lrta
+      - aws cloudfront create-invalidation --distribution-id E34B5O9UHCRA5E --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id EZFFVXQRLMS84 --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id EXWROS3M9YOMU --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E19R550E8221FP --paths "/*"
+      
+      # cloudbinary.io
+      - for CF(cloudbinary.io) --> S3(learnbydoing.cloudbinary.io) --> OAI(E25SWVUTIAGHJH) --> CFD(E34B5O9UHCRA5E)
+      # www.cloudbinary.io
+      - for CF(www.cloudbinary.io) --> S3(lbd.cloudbinary.io) --> OAI(E1EANCVSZXVU9J) --> CFD(EZFFVXQRLMS84)
+      # learnbydoing.cloudbinary.io
+      - for CF(learnbydoing.cloudbinary.io) --> S3(learnbydoing.cloudbinary.io) --> OAI() --> OAI(E25SWVUTIAGHJH) --> CFD(EXWROS3M9YOMU)
+      - echo "Code has been deployed unto CloudFront `date`"
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: yes
