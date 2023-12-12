@@ -21,7 +21,7 @@
               </div>
               <div class="form-input">
                   <label for="mobile" id="mobile-label"></label>
-                  <input type="tel" id="mobile" name="mobile" placeholder="Mobile number" class="form-input-size" required [(ngModel)]="formData.mobile" pattern="[0-9]*" inputmode="numeric" />
+                  <input type="tel" id="mobile" name="mobile" maxlength="10" pattern="[0-9]*" placeholder="Mobile number" class="form-input-size" required [(ngModel)]="formData.phone" inputmode="numeric" />
               </div>
               <div class="form-input">
                   <button type="submit" id="submit">Download</button>

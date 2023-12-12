@@ -48,18 +48,18 @@ export class MlOpsComponent implements OnInit {
   onSubmit() {
     if (this.registrationForm.valid) {
 
-      // Show success message
-      this.snackBar.open('Form submitted successfully!', 'Close', {
-        duration: 5000
-      });
       // console.log(this.registrationForm.value);
       // Insert form data into API
       this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
         // console.log(res);
         this.http.get('https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps.pdf', { responseType: 'blob' })
-          .subscribe((response: Blob) => {
-            saveAs(response, 'CB DevOps CourseCurriculum.pdf');
-          }); 
+        .subscribe((response: Blob) => {
+          saveAs(response, 'CB DevOps CourseCurriculum.pdf');
+          // Show success message
+          this.snackBar.open('Form submitted successfully!', 'Close', {
+            duration: 5000
+          });
+          });
       });
       this.registrationForm.reset();
       this.router.navigate(['/thank-you']);
