@@ -16,6 +16,7 @@ import { Blog6Component } from './components/blogs-pages/blog6/s3';
 import { ThankyouComponent } from './components/thankyou/thankyou.component'
 
 
+
 const routes: Routes = [
   {path:'aws', component: AWSDevOpsComponent},
   {path:'aws-devops', component: MlOpsComponent},
