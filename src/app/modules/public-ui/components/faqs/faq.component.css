@@ -46,4 +46,9 @@
   .faq-item:not(.active) .faq-question .toggle-icon::before {
     content: "+";
   }
+  @media only screen and (max-width: 600px) {
+    h2 {
+        font-size: large !important ; /* Adjust the font size for mobile view */
+    }
+  }
   
