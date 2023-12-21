@@ -42,10 +42,14 @@ import { Blog1Component } from './components/blogs-pages/blog1/blog1';
 import { FAQComponent } from './components/faqs/faq.component';
 import { Blog2Component } from './components/blogs-pages/blog2/frugalarchitect';
 import { ContactUsComponent } from './components/contactus/contact.component';
+import { CertificateComponent } from './components/certificate/certificate.component';
+import { SubHeaderComponent } from './components/subhead/subheader.component';
+import { FeeStructureComponent } from './components/fee-structure/fee.structure.component';
+import { ToolsComponent } from './components/tools/tools.component';
 
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent, CourseContentMob, RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, Blog1Component, FAQComponent, Blog2Component,ContactUsComponent ],
+  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent, CourseContentMob, RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, Blog1Component, FAQComponent, Blog2Component,ContactUsComponent,  CertificateComponent, SubHeaderComponent, FeeStructureComponent , ToolsComponent ],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
   providers: [],
 })
