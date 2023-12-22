@@ -1,12 +1,9 @@
-  /*
-.main-component {
-
-  background: url('src/assets/intro/bgg1.svg') no-repeat center center ;
+  
+.bg {
+  background: url('src/assets/intro/bg.png') no-repeat center center;
   background-size: cover;
+}
 
-  background-image: linear-gradient(97deg, #98cdec 0%, #fff 54%);
-
-} */
 
 .main-component{
 

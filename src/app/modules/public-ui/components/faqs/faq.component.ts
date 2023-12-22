@@ -7,6 +7,7 @@ import { Component, ElementRef, AfterViewInit, Renderer2 } from '@angular/core';
   styleUrls: ['./faq.component.css']
 })
 export class FAQComponent {
+  
     constructor(private renderer: Renderer2, private el: ElementRef) {}
 
     ngAfterViewInit() {

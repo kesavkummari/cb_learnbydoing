@@ -39,7 +39,7 @@ h2 {
 }
 @media only screen and (max-width: 600px) {
   h2 {
-      font-size: large; /* Adjust the font size for mobile view */
+    font-size: 24px; /* Adjust the font size for mobile view */
   }
 }
 
