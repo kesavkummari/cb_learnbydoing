@@ -48,10 +48,18 @@ import { FeeStructureComponent } from './components/fee-structure/fee.structure.
 import { ToolsComponent } from './components/tools/tools.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { BlogComponent } from './components/blog/blog';
+import { VideoComponent } from './components/video-demo/video.component';
 
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , mlopsCourseTableComponent, ImagePopupComponent, CourseContentMob, RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, Blog1Component, FAQComponent, Blog2Component,ContactUsComponent,  CertificateComponent, SubHeaderComponent, FeeStructureComponent , ToolsComponent, TestimonialsComponent, BlogComponent ],
+  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, 
+    IntroPageComponent,CourseIntenseTableComponent,
+    AWSDevOpsComponent, MlOpsComponent, MlOpsCoursesComponent , 
+    mlopsCourseTableComponent, ImagePopupComponent, CourseContentMob, 
+    RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, 
+    Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
+     CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
+     ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent ],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
   providers: [],
 })

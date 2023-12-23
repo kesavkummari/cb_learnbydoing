@@ -55,9 +55,9 @@
 }
 
 .snip1533 h3 {
-  color: #3c3c3c;
+  color: #172342;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 24px;
   margin: 10px 0 5px;
   transition: color 0.3s;
@@ -68,6 +68,7 @@
   margin: 0;
   opacity: 0.5;
   transition: opacity 0.3s;
+  color: #172342;
 }
 
 .snip1533 blockquote {
