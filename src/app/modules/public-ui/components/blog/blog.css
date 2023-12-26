@@ -133,4 +133,7 @@ h5 {
     width: 350px;
     height: 220px;
   }
+  .view-more-blogs {
+    margin-top: -90px;
+  }
 }
