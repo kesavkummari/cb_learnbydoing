@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DataService } from '../../services/data.service';
 import { saveAs } from 'file-saver';
+import { Router } from '@angular/router'; // Import Router
 
 @Component({
   selector: 'contactus',
@@ -16,26 +17,26 @@ export class ContactUsComponent {
   (
     private snackBar: MatSnackBar,
     private http: HttpClient,
-    private dataService: DataService
+    private dataService: DataService,
+    private router: Router // Inject Router
   ) {}
 
   // Function to handle the download and close
   handleDownloadAndClose() {
-    // // Trigger the download by simulating a click on the hidden link
-    // this.pdfDownloadLink.nativeElement.click();
     // Insert form data into API
     this.dataService.submitForm(this.formData).subscribe((res: any) => {
-      // console.log(res);
-      this.http.get('https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps.pdf', { responseType: 'blob' })
+      this.http.get('https://8amcloudbinary.s3.amazonaws.com/CloudBinary_AWS-Certified-DevOps-Engineer-20231223.pdf', { responseType: 'blob' })
       .subscribe((response: Blob) => {
         saveAs(response, 'CB DevOps CourseCurriculum.pdf');
         // Show success message
         this.snackBar.open('Form submitted successfully!', 'Close', {
           duration: 5000
         });
-        });
-    });
 
+        // Navigate to the "/thank-you" page
+        this.router.navigate(['/thank-you']);
+      });
+    });
   }
 
   // Function to handle form submission
