@@ -25,7 +25,7 @@ export class ContactUsComponent {
   handleDownloadAndClose() {
     // Insert form data into API
     this.dataService.submitForm(this.formData).subscribe((res: any) => {
-      this.http.get('https://8amcloudbinary.s3.amazonaws.com/CloudBinary_AWS-Certified-DevOps-Engineer-20231223.pdf', { responseType: 'blob' })
+      this.http.get('https://8amcloudbinary.s3.amazonaws.com/Latest_JobReadyWith6MonthsInternshipProgram_CloudBinary.pdf', { responseType: 'blob' })
       .subscribe((response: Blob) => {
         saveAs(response, 'CB DevOps CourseCurriculum.pdf');
         // Show success message
