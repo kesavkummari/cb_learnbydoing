@@ -424,7 +424,8 @@
         <div class="content-columns">
           <div class="left-column">
             <h2 style="padding-bottom: 10px;">AWS DevOps Content - Modules</h2>
-            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with OS </div>
+<div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with OS </div>
+<div class="module" (click)="selectModule('M0')" [class.active-module]="selectedModule === 'M0'">Shell Scripting </div>
 <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Analytics  </div>
 <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Application Integration</div>
 <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Compute
@@ -496,6 +497,53 @@
           <li>WebServer - Windows IIS, Apache2, Nginx & Httpd</li>
       </ul>
   </ng-container>
+  <ng-container *ngIf="selectedModule === 'M0'">
+    <h2>Module 1: Introduction to Shell Scripting</h2>
+    <hr style="
+        position: unset;
+        border: none;
+        height: 2px;
+        background: black;
+        margin-bottom: 20px;
+        margin-right: inherit;
+    ">
+
+    <ul>
+        <li>What is a Shell Script?</li>
+        <li>Importance and applications of Shell Scripts.</li>
+        <li>Basic Shell commands (ls, cd, mkdir, rm, etc.).</li>
+        <li>Introduction to the Bash shell.</li>
+    </ul>
+
+    <h2>Shell Script Basics:</h2>
+    <ul>
+        <li>Variables in Shell Scripts.</li>
+        <li>Reading user input.</li>
+        <li>Basic Shell operations (arithmetic, string concatenation).</li>
+    </ul>
+
+    <h2>Control Structures and Loops:</h2>
+    <ul>
+        <li>If-else statements.</li>
+        <li>Case statements.</li>
+        <li>For and while loops.</li>
+    </ul>
+
+    <h2>Advanced Concepts:</h2>
+    <ul>
+        <li>Functions in Shell Scripts.</li>
+        <li>Introduction to Shell Script debugging.</li>
+        <li>Basic File I/O in Shell Scripts.</li>
+    </ul>
+
+    <h2>Real-world Applications and Best Practices:</h2>
+    <ul>
+        <li>Overview of real-world applications of Shell Scripts.</li>
+        <li>Best practices in Shell Scripting (commenting, naming conventions).</li>
+        <li>Introduction to script scheduling (cron jobs).</li>
+    </ul>
+</ng-container>
+
   
 
   <ng-container *ngIf="selectedModule === 'M2'">
