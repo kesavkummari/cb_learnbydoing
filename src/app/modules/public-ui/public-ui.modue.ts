@@ -49,6 +49,7 @@ import { ToolsComponent } from './components/tools/tools.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { BlogComponent } from './components/blog/blog';
 import { VideoComponent } from './components/video-demo/video.component';
+import { CompanyComponent } from './components/companies/company.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { VideoComponent } from './components/video-demo/video.component';
     RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, 
     Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
-     ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent ],
+     ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
+     CompanyComponent ],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
   providers: [],
 })
