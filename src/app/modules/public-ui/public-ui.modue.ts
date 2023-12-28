@@ -50,7 +50,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { BlogComponent } from './components/blog/blog';
 import { VideoComponent } from './components/video-demo/video.component';
 import { CompanyComponent } from './components/companies/company.component';
-
+import { BlogStartingComponent } from './components/blogstarting/blogstart';
 
 @NgModule({
   declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, 
@@ -61,7 +61,7 @@ import { CompanyComponent } from './components/companies/company.component';
     Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
-     CompanyComponent ],
+     CompanyComponent, BlogStartingComponent ],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
   providers: [],
 })
