@@ -27,7 +27,7 @@ phases:
       - cd dist/cloudbinary
       - ls -lrta
       - aws s3 sync . s3://learnbydoing.cloudbinary.io/
-      - aws s3 sync . s3://lbd.cloudbinary.io/
+      # - aws s3 sync . s3://lbd.cloudbinary.io/ --removed
       - echo Files were uploaded unto s3 bucket
   post_build:
     commands:
@@ -37,12 +37,12 @@ phases:
       - aws cloudfront create-invalidation --distribution-id E34B5O9UHCRA5E --paths "/*"
       - aws cloudfront create-invalidation --distribution-id EZFFVXQRLMS84 --paths "/*"
       - aws cloudfront create-invalidation --distribution-id EXWROS3M9YOMU --paths "/*"
-      - aws cloudfront create-invalidation --distribution-id E19R550E8221FP --paths "/*"
+      #- aws cloudfront create-invalidation --distribution-id E19R550E8221FP --paths "/*"
       
       # cloudbinary.io
       - for CF(cloudbinary.io) --> S3(learnbydoing.cloudbinary.io) --> OAI(E25SWVUTIAGHJH) --> CFD(E34B5O9UHCRA5E)
       # www.cloudbinary.io
-      - for CF(www.cloudbinary.io) --> S3(lbd.cloudbinary.io) --> OAI(E1EANCVSZXVU9J) --> CFD(EZFFVXQRLMS84)
+      - for CF(www.cloudbinary.io) --> S3(learnbydoing.cloudbinary.io) --> OAI(E25SWVUTIAGHJH) --> CFD(EZFFVXQRLMS84)
       # learnbydoing.cloudbinary.io
       - for CF(learnbydoing.cloudbinary.io) --> S3(learnbydoing.cloudbinary.io) --> OAI() --> OAI(E25SWVUTIAGHJH) --> CFD(EXWROS3M9YOMU)
       - echo "Code has been deployed unto CloudFront `date`"
