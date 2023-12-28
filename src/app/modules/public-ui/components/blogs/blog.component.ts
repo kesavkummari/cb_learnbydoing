@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogsComponent {
-baseurl=window.location.origin;
+baseurl: string;
+constructor() {
+  this.baseurl= window.location.origin;
+}
 }
 

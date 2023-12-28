@@ -6,6 +6,7 @@ import { DataService } from '../../../services/data.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
+import { Router } from '@angular/router'; // Import the Router
 
 @Component({
   selector: 'devopsdownload-form',
@@ -26,7 +27,8 @@ export class DevopsDownloadComponent  {
     private elementRef: ElementRef,
     private snackBar: MatSnackBar,
     private http: HttpClient,
-    private dataService: DataService
+    private dataService: DataService,
+    private router: Router
   ) {}
 
   // Function to handle the download and close
@@ -36,7 +38,7 @@ export class DevopsDownloadComponent  {
     // Insert form data into API
     this.dataService.submitForm(this.formData).subscribe((res: any) => {
       // console.log(res);
-      this.http.get('https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps.pdf', { responseType: 'blob' })
+      this.http.get('https://8amcloudbinary.s3.amazonaws.com/Latest_JobReadyWith6MonthsInternshipProgram_CloudBinary.pdf', { responseType: 'blob' })
       .subscribe((response: Blob) => {
         saveAs(response, 'CB DevOps CourseCurriculum.pdf');
         // Show success message
@@ -45,6 +47,7 @@ export class DevopsDownloadComponent  {
         });
         // Close the form
         this.popupform = false;
+        this.router.navigate(['/thank-you']);
         });
     });
 

@@ -1,12 +1,8 @@
-  /*
-.main-component {
-
-  background: url('src/assets/intro/bgg1.svg') no-repeat center center ;
+  
+.bg {
+  background: url('src/assets/intro/bg.png') no-repeat center center;
   background-size: cover;
-
-  background-image: linear-gradient(97deg, #98cdec 0%, #fff 54%);
-
-} */
+}
 
 
 .main-component{
@@ -34,12 +30,12 @@
   justify-content: center;
 }
 
-.text-content h2{
+.text-content h1{
   font-size: 42px;
   padding-bottom: 30px;
 }
 
-.text-content h2 b{
+.text-content h1 b{
   color: #172342;
   /* font-size: 65px; */
   /* font-family: system-ui !important; */
@@ -192,7 +188,7 @@ body {
 
 @keyframes words {
   0%,20%{
-      content: "100% Placement Assistance";
+      content: "Learn By Doing";
   }
   21%,40%{
       content: "9 Real Time Projects";
@@ -241,11 +237,11 @@ body {
   .text-content {
     margin: 0 10px 50px;
   }
-  .text-content h2{
+  .text-content h1{
     font-size: 30px;
     padding-bottom: 15px;
   }
-  .text-content h2 b{
+  .text-content h1 b{
     font-size: 33px;
   }
   .main-component{
