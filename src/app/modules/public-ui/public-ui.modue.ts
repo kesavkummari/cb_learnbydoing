@@ -51,6 +51,8 @@ import { BlogComponent } from './components/blog/blog';
 import { VideoComponent } from './components/video-demo/video.component';
 import { CompanyComponent } from './components/companies/company.component';
 import { BlogStartingComponent } from './components/blogstarting/blogstart';
+import { BlogsComponent } from './components/blogs/blog.component';
+
 
 @NgModule({
   declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, LocationsComponent, CourseTableComponent, 
@@ -61,7 +63,7 @@ import { BlogStartingComponent } from './components/blogstarting/blogstart';
     Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
-     CompanyComponent, BlogStartingComponent ],
+     CompanyComponent, BlogStartingComponent, BlogsComponent ],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
   providers: [],
 })

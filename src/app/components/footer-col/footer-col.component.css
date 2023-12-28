@@ -443,3 +443,15 @@ justify-content: space-between; }
   margin-right: 10px;
   margin-bottom: 10px;
 }
+.payment-imgs-container {
+  display: flex;
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.payment-imgs-container img {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.row2 {
+  margin-top: 10px; /* Adjust the margin as needed */
+}
