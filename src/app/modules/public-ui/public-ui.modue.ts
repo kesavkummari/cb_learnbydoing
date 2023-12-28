@@ -52,6 +52,7 @@ import { VideoComponent } from './components/video-demo/video.component';
 import { CompanyComponent } from './components/companies/company.component';
 import { BlogStartingComponent } from './components/blogstarting/blogstart';
 import { BlogsComponent } from './components/blogs/blog.component';
+import { AutoScalingComponent } from './components/blogs-pages/all-blogs/Amazon_Auto-Scalling/auto-scaling';
 
 
 @NgModule({
@@ -63,7 +64,7 @@ import { BlogsComponent } from './components/blogs/blog.component';
     Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
-     CompanyComponent, BlogStartingComponent, BlogsComponent ],
+     CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
   providers: [],
 })
