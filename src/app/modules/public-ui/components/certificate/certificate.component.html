@@ -1,25 +1,26 @@
-<div>
-<h2>Get Certified. Get Hired.</h2>
 <div class="certificates-container">
-    <div class="certificate-buttons">
-      <button class="awscoursebtn" (click)="showCertificate('course')">Course Completion</button>
-      <button class="awscoursebtn" (click)="showCertificate('internship')">Internship </button>
-  <!--    <button class="awscoursebtn" (click)="showCertificate('aws')">AWS</button> -->
-    </div>
+    <h2>Get Certified. Get Hired.</h2>
+    <p class="tagline">-- Unlock new opportunities with our certifications. --</p>
+
   
-    <div *ngIf="certificateType === 'course'" class="certificate">
-      <!-- Content for Course Completion Certificate -->
-      <img src="assets/certificates/course_cert.svg" alt="Course Completion Certificate">
-    </div>
+    <div class="certificate-grid">
+      <div class="certificate">
+        <img src="assets/certificates/course_cert.svg" alt="Course Completion Certificate">
+        <p class="certificate-tagline">Course Completion</p>
+        <p class="certificate-description">Earn our Course Completion Certificate and showcase your commitment to continuous learning. This certificate acknowledges your successful completion of our comprehensive course, equipping you with valuable skills for your career journey. </p>
+      </div>
   
-    <div *ngIf="certificateType === 'internship'" class="certificate">
-      <!-- Content for Internship Certificate -->
-      <img src="assets/certificates/intership_cert.svg" alt="Internship Certificate">
-    </div>
-  
-   <!--  <div *ngIf="certificateType === 'aws'" class="certificate">
-      Content for AWS Certificate 
-      <img src="" alt="AWS Certificate">
+      <div class="certificate">
+        <img src="assets/certificates/intership_cert.svg" alt="Internship Certificate">
+        <p class="certificate-tagline">Internship</p>
+        <p class="certificate-description">Celebrate your Internship success with our Internship Certificate. This certificate recognizes your dedication and accomplishments during your internship with us. It highlights the practical experience and skills you've gained, setting you apart in the competitive job market.</p>
+      </div>
+  <!--
+      <div class="certificate">
+        <img src="assets/certificates/aws_cert.svg" alt="AWS Certificate">
+        <p class="certificate-tagline">AWS Certified</p>
+        <p class="certificate-description">Achieve AWS Certification and elevate your expertise in cloud computing. Our AWS Certified Certificate validates your proficiency in Amazon Web Services, demonstrating your capability to design, deploy, and operate highly available and scalable systems on the AWS platform. .</p>
+      </div>
     </div>-->
   </div>
-</div>
+  
