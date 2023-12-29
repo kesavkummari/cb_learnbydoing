@@ -1,90 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #fff;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .left-side {
-            width: 100%; /* Full width on mobile */
-            box-sizing: border-box;
-            padding-right: 20px;
-            margin-bottom: 20px; /* Add space between the content and image on mobile */
-        }
-
-        .right-side {
-            width: 100%; /* Full width on mobile */
-            text-align: center;
-            overflow: hidden; /* Ensure the zoom effect is contained within the div */
-            transition: transform 0.3s ease; /* Add a smooth transition effect */
-        }
-
-        .right-side:hover {
-            transform: scale(1.2); /* Zoom in on hover */
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #555;
-        }
-
-        @media (min-width: 600px) {
-            /* Adjust styles for larger screens if needed */
-            .left-side {
-                width: 60%;
-            }
-
-            .right-side {
-                width: 40%;
-                margin-top: 0; /* Reset margin on larger screens */
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="left-side">
-            <h2>You are now a
-                Certified AWS DevOps
-                Engineer</h2>
-            
-        </div>
-        <div class="right-side">
-            <img src="https://marketplace.canva.com/EAFNlUJs5g4/2/0/1600w/canva-white-simple-certificate-of-appreciation-Fcz7KkZ5YaU.jpg" alt="Sample Certificate">
-        </div>
+<div>
+<h2>Get Certified. Get Hired.</h2>
+<div class="certificates-container">
+    <div class="certificate-buttons">
+      <button class="awscoursebtn" (click)="showCertificate('course')">Course Completion</button>
+      <button class="awscoursebtn" (click)="showCertificate('internship')">Internship </button>
+  <!--    <button class="awscoursebtn" (click)="showCertificate('aws')">AWS</button> -->
     </div>
-</body>
-</html>
+  
+    <div *ngIf="certificateType === 'course'" class="certificate">
+      <!-- Content for Course Completion Certificate -->
+      <img src="assets/certificates/course_cert.svg" alt="Course Completion Certificate">
+    </div>
+  
+    <div *ngIf="certificateType === 'internship'" class="certificate">
+      <!-- Content for Internship Certificate -->
+      <img src="assets/certificates/intership_cert.svg" alt="Internship Certificate">
+    </div>
+  
+   <!--  <div *ngIf="certificateType === 'aws'" class="certificate">
+      Content for AWS Certificate 
+      <img src="" alt="AWS Certificate">
+    </div>-->
+  </div>
+</div>
