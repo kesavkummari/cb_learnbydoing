@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DeveopsdownloadformComponent } from './deveopsdownloadform/deveopsdownloadform.component';
 
 @Component({
   selector: 'mlops_courses',
@@ -6,6 +8,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./mlops-courses.component.css']
 })
 export class MlOpsCoursesComponent {
+  constructor(public dialog: MatDialog) {}
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DeveopsdownloadformComponent, {
+      width: '400px',
+      data: { /* optional data to pass to the dialog component */ },
+      disableClose: true // Prevent closing on backdrop click
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      // Perform any necessary actions after the dialog is closed
+    });
+  }
   toggleTable() {
     const tableContainer = document.getElementById("table-container");
     const tableIntenseContainer = document.getElementById("table-container-intense");

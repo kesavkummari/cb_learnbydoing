@@ -53,6 +53,9 @@ import { CompanyComponent } from './components/companies/company.component';
 import { BlogStartingComponent } from './components/blogstarting/blogstart';
 import { BlogsComponent } from './components/blogs/blog.component';
 import { AutoScalingComponent } from './components/blogs-pages/all-blogs/Amazon_Auto-Scalling/auto-scaling';
+import { DeveopsdownloadformComponent } from './components/mlops_course/deveopsdownloadform/deveopsdownloadform.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card'; // Import MatCardModule
 
 
 @NgModule({
@@ -64,8 +67,9 @@ import { AutoScalingComponent } from './components/blogs-pages/all-blogs/Amazon_
     Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
-     CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent],
-  imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule],
+     CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
+     DeveopsdownloadformComponent],
+  imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule, MatDialogModule, MatCardModule],
   providers: [],
 })
 export class PublicUiModule { }
