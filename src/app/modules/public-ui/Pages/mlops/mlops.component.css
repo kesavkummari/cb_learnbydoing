@@ -130,7 +130,10 @@ button[type="submit"]:disabled {
     text-shadow: 0px 2.5px 4px rgba(0,0,0,.5);
   }
   h1 {
-    font-size: 39px !important; /* Adjust the font size as needed for mobile view */
+    font-size: 29px !important; /* Adjust the font size as needed for mobile view */
+  }
+  h2{
+    font-size: medium;
   }
 
   .container {

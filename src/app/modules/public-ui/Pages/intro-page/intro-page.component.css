@@ -1,8 +1,8 @@
-  
+  /*
 .bg {
   background: url('src/assets/intro/bg.png') no-repeat center center;
   background-size: cover;
-}
+}*/
 
 
 .main-component{
@@ -163,7 +163,7 @@ body {
 .animated-text span::before{
       /* text-shadow: 1px 1px 2px #002346; */
       content: "AWS DevOps";
-      color: orange;
+      color: #f26d85;
       animation: words 8s infinite;
       font-size: xx-large;
 
@@ -238,7 +238,7 @@ body {
     margin: 0 10px 50px;
   }
   .text-content h1{
-    font-size: 30px;
+    font-size: 27px;
     padding-bottom: 15px;
   }
   .text-content h1 b{
