@@ -242,6 +242,10 @@ a {
     color: #fff;
     text-decoration: none;
 }
+.footer-copyright-link:hover {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .footer-copyright {
     display: block !important; /* Change to block to remove flex layout */
