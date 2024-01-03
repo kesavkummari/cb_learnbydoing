@@ -56,6 +56,7 @@ import { AutoScalingComponent } from './components/blogs-pages/all-blogs/Amazon_
 import { DeveopsdownloadformComponent } from './components/mlops_course/deveopsdownloadform/deveopsdownloadform.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card'; // Import MatCardModule
+import { ReviewsColComponent } from './components/reviews/reviews.component';
 
 
 @NgModule({
@@ -68,7 +69,7 @@ import { MatCardModule } from '@angular/material/card'; // Import MatCardModule
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
      CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
-     DeveopsdownloadformComponent],
+     DeveopsdownloadformComponent,ReviewsColComponent],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule, MatDialogModule, MatCardModule],
   providers: [],
 })
