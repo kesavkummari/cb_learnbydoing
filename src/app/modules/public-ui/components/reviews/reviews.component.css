@@ -1,4 +1,4 @@
-
+/*
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 
@@ -102,16 +102,6 @@ figure.snip1157 .author h5 span {
 
 
 
-h2 {
-    margin: 25px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 35px;
-    color: #172342;
-    padding-bottom: 20px;
-}
 
 @media screen and (max-width: 600px) {
     body {
@@ -126,4 +116,16 @@ h2 {
       display: none;
     }
   }
+  */
+
   
+h2 {
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 35px;
+  color: #172342;
+  padding-bottom: 20px;
+}
