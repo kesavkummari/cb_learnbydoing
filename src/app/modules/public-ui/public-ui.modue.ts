@@ -58,6 +58,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card'; // Import MatCardModule
 import { ReviewsColComponent } from './components/reviews/reviews.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { GoogleReviewsColComponent } from './components/reviews/google-reviews/google-reviews';
 
 
 @NgModule({
@@ -70,7 +71,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
      CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
-     DeveopsdownloadformComponent,ReviewsColComponent],
+     DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
 })
