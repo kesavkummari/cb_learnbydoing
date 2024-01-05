@@ -130,4 +130,19 @@ body {
         padding-bottom: 15px;
     }
   }
-  
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust the size of the circle as needed */
+    height: 50px; /* Adjust the size of the circle as needed */
+    border: 2px solid #bfbfbf; /* Adjust the outline color as needed */
+    border-radius: 50%;
+  }
+
+  .circle i {
+    color: #bfbfbf; /* Adjust the icon color as needed */
+  }
+  .circle:hover {
+    transform: scale(1.1); /* Adjust the scale factor for the zoom-out effect */
+  }
