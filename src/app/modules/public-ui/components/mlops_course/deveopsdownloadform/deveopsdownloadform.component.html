@@ -64,8 +64,9 @@
                 <button mat-raised-button type="submit" [disabled]="!registrationForm.valid" (click)="onSubmit()" [matTooltip]="registrationForm.invalid ? 'Please fill all mandatory fields' : 'You\'ll recieve browcher on Submit'">Request Callback</button>
             </div> -->
 
-            <mat-dialog-actions style="display: flex; justify-content: center;">
-                <button mat-raised-button style="margin-bottom: 30px;" type="submit" [disabled]="!registrationForm.valid" (click)="onSubmit()" [matTooltip]="registrationForm.invalid ? 'Please fill all mandatory fields' : 'You\'ll recieve browcher on Submit'">Submit</button>
+            <mat-dialog-actions style="display: flex; justify-content: center; gap: 10px;">
+                <button class="download_button" mat-raised-button style="margin-bottom: 30px;" type="submit" [disabled]="!registrationForm.valid" (click)="onSubmit()" [matTooltip]="registrationForm.invalid ? 'Please fill all mandatory fields' : 'You\'ll recieve browcher on Download'">Download</button>
+                <mat-spinner *ngIf="loading" style="margin-bottom: 30px;" diameter="30" ></mat-spinner>
             </mat-dialog-actions>
             
         </form>
