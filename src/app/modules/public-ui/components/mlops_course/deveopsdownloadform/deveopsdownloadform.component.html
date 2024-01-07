@@ -52,7 +52,7 @@
                             <mat-option value="8+ years">8+ years</mat-option>
                         </mat-select>
                     </mat-form-field>
-                <mat-form-field appearance="fill" style="grid-column: span 2;">
+                <mat-form-field appearance="fill" class="course_interest">
                 <mat-label for="course-interest">Course Interested:</mat-label>
                     <textarea matInput id="course-interest" name="course-interest" rows="2" cols="30" formControlName="courseInterest"></textarea>
                     <mat-icon-button *ngIf="courseInterest.value" matSuffix  aria-label="Clear" (click)="courseInterest.setValue('')">
