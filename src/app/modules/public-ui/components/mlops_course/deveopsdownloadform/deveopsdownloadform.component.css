@@ -1,10 +1,9 @@
 .form-container {
-    border: 2px solid #ccc; /* Border color and width */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle shadow effect */
-    padding: 20px; /* Add padding to create space between the border and form content */
-    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
-    max-width: 400px; /* Adjust the max-width as needed */
-    margin: 0 auto; /* Center the form horizontally */
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 40px 60px;
+    column-gap: 40px;
   }
 .mat-form-field{
     width: 100%;
@@ -12,6 +11,13 @@
 
 button[type="submit"]:disabled {
     cursor: not-allowed;
+    background-color: #dadadac0;
+    color: #00000081;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color .3s,transform .3s,box-shadow .3s;
+    box-shadow: 0 4px 4px #00000080;
 }
 button[type="submit"]:hover {
     transform: scale(1.05);
