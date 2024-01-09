@@ -27,6 +27,7 @@ phases:
       - cd dist/cloudbinary
       - ls -lrta
       - aws s3 sync . s3://learnbydoing.cloudbinary.io/
+      - aws s3 sync . s3://kesavkummari.io/
       # - aws s3 sync . s3://lbd.cloudbinary.io/ --removed
       - echo Files were uploaded unto s3 bucket
   post_build:
