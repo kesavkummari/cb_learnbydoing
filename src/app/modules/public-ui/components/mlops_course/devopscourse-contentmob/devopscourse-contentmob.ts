@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DeveopsdownloadformComponent } from '../deveopsdownloadform/deveopsdownloadform.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'devopscourse-contentmob',
@@ -513,7 +515,7 @@ export class DevOpsCourseContentMob {
   isCourseVisible: boolean[] = new Array(this.courses.length).fill(false);
   isModuleVisible: boolean[][] = [];
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
     this.courses.forEach((course) => {
       this.isModuleVisible.push(new Array(course.modules.length).fill(false));
     });
@@ -525,6 +527,18 @@ export class DevOpsCourseContentMob {
 
   toggleModuleSubmodules(courseNumber: number, moduleNumber: number): void {
     this.isModuleVisible[courseNumber][moduleNumber] = !this.isModuleVisible[courseNumber][moduleNumber];
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DeveopsdownloadformComponent, {
+      data: { /* optional data to pass to the dialog component */ },
+      disableClose: true // Prevent closing on backdrop click
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      // Perform any necessary actions after the dialog is closed
+    });
   }
 
 }

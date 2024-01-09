@@ -1,17 +1,13 @@
 <div style="    display: flex;
     flex-direction: row;
     justify-content: space-between;">
-    <h2>Download Course Content</h2>
+    <h1>Get Skilled</h1>
     <!-- <button (click)="closeDialog()">Close</button> -->
-    <mat-icon class="close-button" (click)="closeDialog()">close</mat-icon>
+    <mat-icon class="close-button" (click)="closeDialog()" matTooltip="close">close</mat-icon>
 </div>
 <div class="form">
-        <form [formGroup]="registrationForm" class="form-container" style="    display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        height: 80vh;
-        overflow-y: auto;">
+        <form [formGroup]="registrationForm" >
+            <div class="form-container">
                 <mat-form-field appearance="fill">
                     <mat-label  for="name">Name:</mat-label>
                     <input matInput type="text" id="name" name="name" [formControl]="name" pattern="[a-zA-Z ]+">
@@ -35,10 +31,7 @@
                         <mat-icon>close</mat-icon>
                     </mat-icon-button>
                 </mat-form-field>
-                <div style="    display: flex;
-                /* gap: 15px; */
-                flex-direction: column;
-                width: 100%;" class="exp">
+                
                     <mat-form-field appearance="fill">
                         <mat-label for="phone">Phone Number:</mat-label>
                         <input matInput type="tel" id="phoneNo" name="phone" [formControl]="phone" maxlength="10" pattern="[0-9]*" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
@@ -59,15 +52,22 @@
                             <mat-option value="8+ years">8+ years</mat-option>
                         </mat-select>
                     </mat-form-field>
-                </div>
-                <mat-form-field appearance="fill">
+                <mat-form-field appearance="fill" class="course_interest">
                 <mat-label for="course-interest">Course Interested:</mat-label>
                     <textarea matInput id="course-interest" name="course-interest" rows="2" cols="30" formControlName="courseInterest"></textarea>
                     <mat-icon-button *ngIf="courseInterest.value" matSuffix  aria-label="Clear" (click)="courseInterest.setValue('')">
                         <mat-icon>close</mat-icon>
                     </mat-icon-button>
                 </mat-form-field>
-            <button style="width: 52%;" mat-raised-button type="submit" [disabled]="!registrationForm.valid" (click)="onSubmit()" [matTooltip]="registrationForm.invalid ? 'Please fill all mandatory fields' : 'You\'ll recieve browcher on Submit'">Request Callback</button>
+            </div>
+            <!-- <div>
+                <button mat-raised-button type="submit" [disabled]="!registrationForm.valid" (click)="onSubmit()" [matTooltip]="registrationForm.invalid ? 'Please fill all mandatory fields' : 'You\'ll recieve browcher on Submit'">Request Callback</button>
+            </div> -->
+
+            <mat-dialog-actions style="display: flex; justify-content: center; gap: 10px;">
+                <button class="download_button" mat-raised-button style="margin-bottom: 30px;" type="submit" [disabled]="!registrationForm.valid" (click)="onSubmit()" [matTooltip]="registrationForm.invalid ? 'Please fill all mandatory fields' : 'You\'ll recieve browcher on Download'">Download</button>
+                <mat-spinner *ngIf="loading" style="margin-bottom: 30px;" diameter="30" ></mat-spinner>
+            </mat-dialog-actions>
             
         </form>
     </div>

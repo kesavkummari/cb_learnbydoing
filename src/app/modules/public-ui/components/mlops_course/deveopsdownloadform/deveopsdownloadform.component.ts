@@ -12,6 +12,7 @@ import * as saveAs from 'file-saver';
   styleUrls: ['./deveopsdownloadform.component.css']
 })
 export class DeveopsdownloadformComponent {
+  loading = false;
 
   // registrationForm!: FormGroup
   name = new FormControl('', [Validators.required]);
@@ -35,6 +36,9 @@ export class DeveopsdownloadformComponent {
   }
 
   onSubmit() {
+    this.loading = true;
+    //disable submit button
+    this.elementRef.nativeElement.querySelector('button').setAttribute('disabled', true);
     if (this.registrationForm.valid) {
 
       // console.log(this.registrationForm.value);
@@ -44,6 +48,7 @@ export class DeveopsdownloadformComponent {
         this.http.get('https://8amcloudbinary.s3.amazonaws.com/Latest_JobReadyWith6MonthsInternshipProgram_CloudBinary.pdf', { responseType: 'blob' })
         .subscribe((response: Blob) => {
           saveAs(response, 'CB DevOps CourseCurriculum.pdf');
+          this.loading = false;
           // Show success message
           this.snackBar.open('Form submitted successfully!', 'Close', {
             duration: 5000
