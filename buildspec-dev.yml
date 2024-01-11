@@ -38,7 +38,7 @@ phases:
       - ls -lrta
       - aws cloudfront create-invalidation --distribution-id E34B5O9UHCRA5E --paths "/*"
       - aws cloudfront create-invalidation --distribution-id EZFFVXQRLMS84 --paths "/*"
-      - aws cloudfront create-invalidation --distribution-id EXWROS3M9YOMU --paths "/*"
+      #- aws cloudfront create-invalidation --distribution-id EXWROS3M9YOMU --paths "/*"
       #- aws cloudfront create-invalidation --distribution-id E19R550E8221FP --paths "/*"
       
       # cloudbinary.io
