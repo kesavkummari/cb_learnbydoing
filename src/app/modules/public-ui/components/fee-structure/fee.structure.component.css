@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1300px !important;
   margin: 20px auto;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -194,4 +194,36 @@ h2{
 .custom-button:hover {
   box-shadow: none;
   transform: scale(.9);
+}
+
+.container1 {
+  text-align: center;
+
+ 
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+.content {
+  margin-top: 10px;
+}
+.radiobtn{
+  display: flex;
+  justify-content: center;
+  align-content: start;
+  gap: 22px;
+  font-weight: 900;
+  font-size: 35px;
+}
+.radio-label {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.radio-label input {
+  width: 20px; /* Adjust the width of the radio button */
+  height: 20px; /* Adjust the height of the radio button */
 }

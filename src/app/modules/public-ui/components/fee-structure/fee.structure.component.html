@@ -7,9 +7,118 @@
 
 </head>
 <body>
+
+  <div class="container1">
+    <form> 
+      <div class="radiobtn" >
+      <label>
+        Select Batch
+      </label>
+      <label>
+        <input  style="    width: 23px;height: 24px;" 
+         type="radio" name="batch" [(ngModel)]="selectedBatch" value="regular"> Regular
+      </label>
+      <label>
+        <input 
+        style="    width: 23px;height: 24px;" 
+        type="radio" name="batch" [(ngModel)]="selectedBatch" value="jobReady"> Job Ready
+      </label> </div>
+      <hr>
+  
+      <div *ngIf="selectedBatch === 'select'" class="content">
+        <p>Please select a batch.</p>
+      </div>
+      <div *ngIf="selectedBatch === 'regular'" class="content">
+        <div class="container">
+          <div class="left-side">
+            <div class="batch-info" style="color: #D0D3D9; font-size: medium;">
+              <i class="fas fa-calendar-alt calendar-icon" style="color: orange;"></i>
+              Next Batch Starts On 22 Jan 2024 Limited Seats Only!!
+            </div>
+            <br>
+            <div class="price price-crossed">₹ 36,999/-</div>
+            <div class="price">₹ 26,000/-</div>
+            <div class="security-deposit">
+              Register Now  and Save your slot
+            </div>
+            <a href="https://wa.me/919100073006" class="enroll-button">Enroll Now</a>
+           
+          </div>
+      
+          <div class="right-side">
+            <div class="perks">
+              <p style="    font-weight: 900;
+              font-size: x-large;
+              margin-bottom: 40px;"></p>
+              <ul style="font-size: medium;">
+                <li><span class="fas fa-check check-icon"></span> Certification-Oriented Training</li>
+                <li><span class="fas fa-check check-icon"></span> Real-Time Training from Certified Trainers</li>
+                <li><span class="fas fa-check check-icon"></span> Comprehensive Learning Approach</li>
+                <li><span class="fas fa-check check-icon"></span> Topic-wise Quiz</li>
+                <li><span class="fas fa-check check-icon"></span> Mock Interviews</li>
+                <li><span class="fas fa-check check-icon"></span> 6+ Projects</li>
+                <li><span class="fas fa-check check-icon"></span> Resume Grooming Session</li>
+                <li><span class="fas fa-check check-icon"></span> Naukri & LinkedIn Account Creation & Optimization</li>
+                <li><span class="fas fa-check check-icon"></span> Placement Assistance</li>
+                <li><span class="fas fa-check check-icon"></span> Recruitment and Hiring Details Shared</li>
+              </ul>
+              <div class="custom-button-div">
+      <button class="custom-button" (click)="openDialog()">Download Course Content</button>
+      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="selectedBatch === 'jobReady'" class="content">
+        <div class="container">
+          <div class="left-side">
+            <div class="batch-info" style="color: #D0D3D9; font-size: medium;">
+              <i class="fas fa-calendar-alt calendar-icon" style="color: orange;"></i>
+              Next Batch Starts On 22 Jan 2024 Limited Seats Only!!
+            </div>
+            <br>
+            <div class="price price-crossed">₹ 69,999/-</div>
+            <div class="price">₹ 49,999/-</div>
+            <div class="security-deposit">
+              Register Now  and Save your slot
+            </div>
+            <a href="https://wa.me/919100073006" class="enroll-button">Enroll Now</a>
+           
+          </div>
+      
+          <div class="right-side">
+            <div class="perks">
+              <p style="    font-weight: 900;
+              font-size: x-large;
+              margin-bottom: 40px;"></p>
+              <ul style="font-size: medium;">
+                <li><span class="fas fa-check check-icon"></span> Certification-Oriented Training</li>
+                <li><span class="fas fa-check check-icon"></span> Real-Time Training from Certified Trainers</li>
+                <li><span class="fas fa-check check-icon"></span> Free 6 Months Internship with Offer Letter & Internship Certificate</li>
+                <li><span class="fas fa-check check-icon"></span> Free AWS Cloud Practitioner Certification (Exam Code - CLF-C02) </li>
+                <li><span class="fas fa-check check-icon"></span> Comprehensive Learning Approach</li>
+                <li><span class="fas fa-check check-icon"></span> Topic-wise Quiz</li>
+                <li><span class="fas fa-check check-icon"></span> Mock Interviews</li>
+                <li><span class="fas fa-check check-icon"></span> 9+ Projects</li>
+                <li><span class="fas fa-check check-icon"></span> Resume Grooming Session</li>
+                <li><span class="fas fa-check check-icon"></span> Naukri & LinkedIn Account Creation & Optimization</li>
+                <li><span class="fas fa-check check-icon"></span> Placement Assistance</li>
+                <li><span class="fas fa-check check-icon"></span> Recruitment and Hiring Details Shared</li>
+              </ul>
+              <div class="custom-button-div">
+      <button class="custom-button" (click)="openDialog()">Download Course Content</button>
+      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  
   
   <div style="visibility: visible; background: url('assets/hybrid-learning/bg3.png') center center / cover no-repeat;">
-  <h2 >Perks Of The Program </h2>
+ <!-- <h2 >Perks Of The Program </h2>
   <div class="container">
     <div class="left-side">
       <div class="batch-info" style="color: #D0D3D9; font-size: medium;">
@@ -50,6 +159,7 @@
 </div>
       </div>
     </div>
-  </div> </div>
+   </div> -->
+ </div>
 </body>
 </html>
