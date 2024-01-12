@@ -227,3 +227,13 @@ form {
   width: 20px; /* Adjust the width of the radio button */
   height: 20px; /* Adjust the height of the radio button */
 }
+@media (max-width: 767px) {
+  /* Media query for screens smaller than 767px (adjust as needed) */
+  .radio-label input {
+    width: none !important;  /* Reset width for mobile */
+    height: none !important; /* Reset height for mobile */
+  }
+  .radiobtn{
+    font-size: medium;
+  }
+}
