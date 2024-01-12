@@ -9,12 +9,10 @@
 <body>
 
   <div class="container1">
+<h5 style="font-weight: 900; font-size: larger;">Select Batch</h5>
     <form> 
       <div class="radiobtn" >
-      <label>
-        Select Batch
-      </label>
-      <label>
+          <label>
         <input  style="    width: 23px;height: 24px;" 
          type="radio" name="batch" [(ngModel)]="selectedBatch" value="regular"> Regular
       </label>
@@ -25,10 +23,9 @@
       </label> </div>
       <hr>
   
-      <div *ngIf="selectedBatch === 'select'" class="content">
-        <p>Please select a batch.</p>
-      </div>
       <div *ngIf="selectedBatch === 'regular'" class="content">
+
+        
         <div class="container">
           <div class="left-side">
             <div class="batch-info" style="color: #D0D3D9; font-size: medium;">
@@ -44,7 +41,7 @@
             <a href="https://wa.me/919100073006" class="enroll-button">Enroll Now</a>
            
           </div>
-      
+      <!--
           <div class="right-side">
             <div class="perks">
               <p style="    font-weight: 900;
@@ -66,7 +63,7 @@
       <button class="custom-button" (click)="openDialog()">Download Course Content</button>
       </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div *ngIf="selectedBatch === 'jobReady'" class="content">
@@ -85,7 +82,7 @@
             <a href="https://wa.me/919100073006" class="enroll-button">Enroll Now</a>
            
           </div>
-      
+      <!--
           <div class="right-side">
             <div class="perks">
               <p style="    font-weight: 900;
@@ -109,7 +106,7 @@
       <button class="custom-button" (click)="openDialog()">Download Course Content</button>
       </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </form>
