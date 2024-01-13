@@ -150,6 +150,18 @@ li.blue1:nth-child(21)::before,
 li.white1:nth-child(21)::before {
   content: "11";
 }
+li.blue1:nth-child(23)::before,
+li.white1:nth-child(23)::before {
+  content: "12";
+}
+li.blue1:nth-child(25)::before,
+li.white1:nth-child(25)::before {
+  content: "13";
+}
+li.blue1:nth-child(27)::before,
+li.white1:nth-child(27)::before {
+  content: "14";
+}
 
 
 hr {
