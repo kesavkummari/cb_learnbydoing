@@ -60,6 +60,7 @@ import { ReviewsColComponent } from './components/reviews/reviews.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { GoogleReviewsColComponent } from './components/reviews/google-reviews/google-reviews';
 import { RegularAWSCourseContent } from './components/mlops_course/regularawsmobilecc/regularaws';
+import { RegulardownloadformComponent } from './components/mlops_course/regularCCdownload/regularcontent';
 
 
 @NgModule({
@@ -72,7 +73,7 @@ import { RegularAWSCourseContent } from './components/mlops_course/regularawsmob
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
      CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
-     DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, RegularAWSCourseContent],
+     DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, RegularAWSCourseContent, RegulardownloadformComponent],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
 })

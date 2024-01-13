@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DeveopsdownloadformComponent } from '../deveopsdownloadform/deveopsdownloadform.component';
 import { MatDialog } from '@angular/material/dialog';
+import { RegulardownloadformComponent } from '../regularCCdownload/regularcontent';
 
 @Component({
   selector: 'regularawsmobilecc',
@@ -418,7 +419,7 @@ export class RegularAWSCourseContent {
   }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(DeveopsdownloadformComponent, {
+    const dialogRef = this.dialog.open(RegulardownloadformComponent, {
       data: { /* optional data to pass to the dialog component */ },
       disableClose: true // Prevent closing on backdrop click
     });
