@@ -6,6 +6,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { DataService } from '../../../services/data.service';
 import { Router } from '@angular/router';
 import * as saveAs from 'file-saver';
+
 @Component({
   selector: 'app-deveopsdownloadform',
   templateUrl: './deveopsdownloadform.component.html',
@@ -14,7 +15,6 @@ import * as saveAs from 'file-saver';
 export class DeveopsdownloadformComponent {
   loading = false;
 
-  // registrationForm!: FormGroup
   name = new FormControl('', [Validators.required]);
   email = new FormControl('', [Validators.required, Validators.email]);
   phone = new FormControl('', [Validators.required, Validators.pattern('[0-9]{10}')]);
@@ -29,7 +29,14 @@ export class DeveopsdownloadformComponent {
     courseInterest: this.courseInterest,
   });
 
-  constructor(public dialogRef: MatDialogRef<DeveopsdownloadformComponent>,private elementRef: ElementRef,private snackBar: MatSnackBar,private http: HttpClient, private dataService: DataService , private router: Router) { }
+  constructor(
+    public dialogRef: MatDialogRef<DeveopsdownloadformComponent>,
+    private elementRef: ElementRef,
+    private snackBar: MatSnackBar,
+    private http: HttpClient,
+    private dataService: DataService,
+    private router: Router
+  ) {}
 
   closeDialog(): void {
     this.dialogRef.close();
@@ -37,28 +44,40 @@ export class DeveopsdownloadformComponent {
 
   onSubmit() {
     this.loading = true;
-    //disable submit button
+    // disable submit button
     this.elementRef.nativeElement.querySelector('button').setAttribute('disabled', true);
-    if (this.registrationForm.valid) {
 
-      // console.log(this.registrationForm.value);
+    if (this.registrationForm.valid) {
       // Insert form data into API
       this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
         console.log(res);
-        this.http.get('https://8amcloudbinary.s3.amazonaws.com/Latest_JobReadyWith6MonthsInternshipProgram_CloudBinary.pdf', { responseType: 'blob' })
-        .subscribe((response: Blob) => {
-          saveAs(response, 'CB DevOps CourseCurriculum.pdf');
-          this.loading = false;
-          // Show success message
-          this.snackBar.open('Form submitted successfully!', 'Close', {
-            duration: 5000
-          });
-          });
-        this.dialogRef.close();
-        this.router.navigate(['/thank-you']);
-      });
 
+        // Download the first PDF
+        this.http
+          .get('https://8amcloudbinary.s3.amazonaws.com/Latest_JobReadyWith6MonthsInternshipProgram_CloudBinary.pdf', {
+            responseType: 'blob'
+          })
+          .subscribe((response: Blob) => {
+            saveAs(response, 'CB DevOps CourseCurriculum.pdf');
+
+            // Download the second PDF
+            this.http
+              .get('https://8amcloudbinary.s3.amazonaws.com/Latest_Regular_CloudBinary.pdf', { responseType: 'blob' })
+              .subscribe((secondResponse: Blob) => {
+                saveAs(secondResponse, 'CB Regular Course.pdf');
+
+                // Reset loading state and show success message
+                this.loading = false;
+                this.snackBar.open('Form submitted successfully!', 'Close', {
+                  duration: 5000
+                });
+
+                // Close the dialog and navigate to the thank-you page
+                this.dialogRef.close();
+                this.router.navigate(['/thank-you']);
+              });
+          });
+      });
     }
   }
-
 }
