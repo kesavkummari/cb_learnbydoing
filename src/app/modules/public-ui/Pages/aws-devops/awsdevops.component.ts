@@ -1,16 +1,20 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit } from '@angular/core';
 import {  FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DataService } from '../../services/data.service';
+import { HttpClient } from '@angular/common/http';
+import { saveAs } from 'file-saver';
+import { Router } from '@angular/router';
+
 
 
 @Component({
-  selector: 'aws',
-  templateUrl: './aws.component.html',
-  styleUrls: ['./aws.component.css']
+  selector: 'aws-devops',
+  templateUrl: './awsdevops.component.html',
+  styleUrls: ['./awsdevops.component.css']
 })
-export class AWSDevOpsComponent implements OnInit {
+export class AwsDevopsComponent implements OnInit {
+
   // registrationForm!: FormGroup
   name = new FormControl('', [Validators.required]);
   email = new FormControl('', [Validators.required, Validators.email]);
@@ -28,7 +32,7 @@ export class AWSDevOpsComponent implements OnInit {
 
 
 
-  constructor(private elementRef: ElementRef,private snackBar: MatSnackBar,private http: HttpClient, private dataService: DataService) {}
+  constructor(private elementRef: ElementRef,private snackBar: MatSnackBar,private http: HttpClient, private dataService: DataService , private router: Router) {}
 
   ngOnInit(): void {
   }
@@ -43,17 +47,24 @@ export class AWSDevOpsComponent implements OnInit {
 
   onSubmit() {
     if (this.registrationForm.valid) {
-      // Show success message
-      this.snackBar.open('Form submitted successfully!', 'Close', {
-        duration: 5000
-      });
-      console.log(this.registrationForm.value);
+
+      // console.log(this.registrationForm.value);
       // Insert form data into API
       this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
         console.log(res);
+        // this.http.get('https://8amcloudbinary.s3.amazonaws.com/Latest_JobReadyWith6MonthsInternshipProgram_CloudBinary.pdf', { responseType: 'blob' })
+        // .subscribe((response: Blob) => {
+        //   saveAs(response, 'CB DevOps CourseCurriculum.pdf');
+        //   // Show success message
+        //   this.snackBar.open('Form submitted successfully!', 'Close', {
+        //     duration: 5000
+        //   });
+        //   });
+        this.registrationForm.reset();
+        this.router.navigate(['/thank-you']);
       });
-      this.registrationForm.reset();
 
     }
   }
+ 
 }

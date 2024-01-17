@@ -55,6 +55,9 @@
   @media only screen and (max-width: 600px) {
     .certificate-grid {
       grid-template-columns: 1fr;
+
+      margin-left: 0px;
+      margin-right: 0px;
     }
   }
   h2 {

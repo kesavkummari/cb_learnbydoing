@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'mlops-table',
-  templateUrl: './mlopscourse-table.component.html',
-  styleUrls: ['./mlopscourse-table.component.css']
+  templateUrl: './awsdevops-table.component.html',
+  styleUrls: ['./awsdevops-table.component.css']
 })
-export class mlopsCourseTableComponent {
+export class AwsDevOpsCourseTableComponent {
  
 
   selectedTab: string = 'devops'; // Default selected tab

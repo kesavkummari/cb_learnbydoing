@@ -3,48 +3,47 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { IntroPageComponent } from './Pages/intro-page/intro-page.component';
-import { AWSDevOpsComponent } from './Pages/aws/aws.component';
-import { MlOpsComponent } from './Pages/mlops/mlops.component';
+import { AwsDevopsComponent } from './Pages/aws-devops/awsdevops.component';
 import { ContactUsComponent } from './components/contactus/contact.component';
-import { BlogsComponent } from './components/blogs/blog.component'
-import { Blog1Component } from './components/blogs-pages/blog1/blog1';
-import { Blog2Component } from './components/blogs-pages/blog2/frugalarchitect';
-import { Blog3Component } from './components/blogs-pages/blog3/ec2';
-import { Blog4Component } from './components/blogs-pages/blog4/route53';
-import { Blog5Component } from './components/blogs-pages/blog5/dynamodb';
-import { Blog6Component } from './components/blogs-pages/blog6/s3';
+import { BlogsComponent } from './components/blogs-component/blogs/blog.component'
+import { Blog1Component } from './components/blogs-component/blogs-pages/blog1/blog1';
+import { Blog2Component } from './components/blogs-component/blogs-pages/blog2/frugalarchitect';
+import { Blog3Component } from './components/blogs-component/blogs-pages/blog3/ec2';
+import { Blog4Component } from './components/blogs-component/blogs-pages/blog4/route53';
+import { Blog5Component } from './components/blogs-component/blogs-pages/blog5/dynamodb';
+import { Blog6Component } from './components/blogs-component/blogs-pages/blog6/s3';
 import { ThankyouComponent } from './components/thankyou/thankyou.component';
-import { AutoScalingComponent } from './components/blogs-pages/all-blogs/Amazon_Auto-Scalling/auto-scaling';
-import { BedrockComponent } from './components/blogs-pages/all-blogs/Amazon_Bedrock/bedrock';
-import { CertificateManagerComponent } from './components/blogs-pages/all-blogs/Amazon_Certificate-Manager/certificate-manager';
-import { CloudFrontComponent } from './components/blogs-pages/all-blogs/Amazon_CloudFront/cloudfront';
-import { CloudWatchComponent } from './components/blogs-pages/all-blogs/Amazon_CloudWatch_Logs/cloudwatch';
-import { CodeCommitComponent } from './components/blogs-pages/all-blogs/Amazon_CodeCommit/cc';
-import { CodeWhisperComponent } from './components/blogs-pages/all-blogs/Amazon_CodeWhisperer/codewhisper';
-import { ElasticLoadBalancingComponent } from './components/blogs-pages/all-blogs/Amazon_Elastic-load-Balancing/elb';
-import { IAMGroupComponent } from './components/blogs-pages/all-blogs/Amazon_IAm-Group/iamgroup';
-import { IAMIdentityComponent } from './components/blogs-pages/all-blogs/Amazon_IAM-Identity/iamidentities';
-import { IAMRoleComponent } from './components/blogs-pages/all-blogs/Amazon_IAM-Role/iamrole';
-import { IAMUserComponent } from './components/blogs-pages/all-blogs/Amazon_IAM-User/iamuser';
-import { AWSLambdaComponent } from './components/blogs-pages/all-blogs/Amazon_Lamda/awslambda';
-import { AWSRDSComponent } from './components/blogs-pages/all-blogs/Amazon_RDS/awsrds';
-import { Route53Component } from './components/blogs-pages/all-blogs/Amazon_Route53/route53';
-import { SimpleNotificationComponent } from './components/blogs-pages/all-blogs/Amazon_Simple-notification-service(SNS)/simplenotificationservice';
-import { StepFunctionComponent } from './components/blogs-pages/all-blogs/Amazon_step-Function/stepfunction';
-import { GatewayComponent } from './components/blogs-pages/all-blogs/Amazon_Transit-Gateway/gateway';
-import { VPCComponent } from './components/blogs-pages/all-blogs/Amazon_Virtual-private-cloud(vpc)/vpc';
-import { VPCPeeringComponent } from './components/blogs-pages/all-blogs/Amazon_VPC-Peering/vpcpeering';
-import { VPNComponent } from './components/blogs-pages/all-blogs/Amazon_VPN/vpn';
-import { XRAYComponent } from './components/blogs-pages/all-blogs/Amazon_X-Ray/xray';
-import { CodeDeployComponent } from './components/blogs-pages/all-blogs/AWS_CodeDeploy/codedeploy';
-import { SageMakerComponent } from './components/blogs-pages/all-blogs/AWS_SageMaker/sagemaker';
-import { RDSMYSQLComponent } from './components/blogs-pages/all-blogs/RDS_MYSQL/rdsmysql';
-import { RoutingComponent } from './components/blogs-pages/all-blogs/Routing_polices/routing';
-import { ServerlessComponent } from './components/blogs-pages/all-blogs/serverless_website/serverless';
+import { AutoScalingComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_Auto-Scalling/auto-scaling';
+import { BedrockComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_Bedrock/bedrock';
+import { CertificateManagerComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_Certificate-Manager/certificate-manager';
+import { CloudFrontComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_CloudFront/cloudfront';
+import { CloudWatchComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_CloudWatch_Logs/cloudwatch';
+import { CodeCommitComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_CodeCommit/cc';
+import { CodeWhisperComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_CodeWhisperer/codewhisper';
+import { ElasticLoadBalancingComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_Elastic-load-Balancing/elb';
+import { IAMGroupComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_IAm-Group/iamgroup';
+import { IAMIdentityComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_IAM-Identity/iamidentities';
+import { IAMRoleComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_IAM-Role/iamrole';
+import { IAMUserComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_IAM-User/iamuser';
+import { AWSLambdaComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_Lamda/awslambda';
+import { AWSRDSComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_RDS/awsrds';
+import { Route53Component } from './components/blogs-component/blogs-pages/all-blogs/Amazon_Route53/route53';
+import { SimpleNotificationComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_Simple-notification-service(SNS)/simplenotificationservice';
+import { StepFunctionComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_step-Function/stepfunction';
+import { GatewayComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_Transit-Gateway/gateway';
+import { VPCComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_Virtual-private-cloud(vpc)/vpc';
+import { VPCPeeringComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_VPC-Peering/vpcpeering';
+import { VPNComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_VPN/vpn';
+import { XRAYComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_X-Ray/xray';
+import { CodeDeployComponent } from './components/blogs-component/blogs-pages/all-blogs/AWS_CodeDeploy/codedeploy';
+import { SageMakerComponent } from './components/blogs-component/blogs-pages/all-blogs/AWS_SageMaker/sagemaker';
+import { RDSMYSQLComponent } from './components/blogs-component/blogs-pages/all-blogs/RDS_MYSQL/rdsmysql';
+import { RoutingComponent } from './components/blogs-component/blogs-pages/all-blogs/Routing_polices/routing';
+import { ServerlessComponent } from './components/blogs-component/blogs-pages/all-blogs/serverless_website/serverless';
   
 const routes: Routes = [
-  {path:'aws', component: AWSDevOpsComponent},
-  {path:'aws-devops', component: MlOpsComponent},
+ 
+  {path:'aws-devops', component: AwsDevopsComponent},
   {path:'blogs', component: BlogsComponent},
   {path:'home', component: IntroPageComponent},
   { path:'contactus', component: ContactUsComponent },

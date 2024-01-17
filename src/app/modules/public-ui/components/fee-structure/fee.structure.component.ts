@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DeveopsdownloadformComponent } from '../mlops_course/deveopsdownloadform/deveopsdownloadform.component';
+import { DeveopsdownloadformComponent } from '../course-content-component/aws-devops-course/deveopsdownloadform/deveopsdownloadform.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
