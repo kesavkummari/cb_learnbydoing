@@ -32,7 +32,7 @@ export class DevopsDownloadComponent {
     this.dataService.submitForm(this.formData).subscribe((res: any) => {
       // Download the first PDF
       this.http
-        .get('https://8amcloudbinary.s3.amazonaws.com/Latest_JobReadyWith6MonthsInternshipProgram_CloudBinary.pdf', {
+        .get('https://8amcloudbinary.s3.amazonaws.com/20240124_Latest_Regular_CloudBinary.pdf', {
           responseType: 'blob'
         })
         .subscribe((response: Blob) => {
@@ -41,7 +41,7 @@ export class DevopsDownloadComponent {
 
       // Download the second PDF
       this.http
-        .get('https://8amcloudbinary.s3.amazonaws.com/Latest_Regular_CloudBinary.pdf', { responseType: 'blob' })
+        .get('https://8amcloudbinary.s3.amazonaws.com/20240124_Latest_Regular_CloudBinary.pdf', { responseType: 'blob' })
         .subscribe((response: Blob) => {
           saveAs(response, 'Additional_CloudBinary.pdf');
         });

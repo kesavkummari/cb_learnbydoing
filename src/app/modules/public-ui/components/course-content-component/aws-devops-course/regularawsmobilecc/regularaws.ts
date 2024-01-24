@@ -183,7 +183,6 @@ export class RegularAWSCourseContent {
     'Amazon Inspector',
     'AWS Key Management Service (AWS KMS)', 
     'Amazon Macie', 'AWS Network Firewall',
-     'AWS Resource Access Manager (AWS RAM)',
       'AWS Secrets Manager', 'AWS Security Hub', 
       'AWS Security Token Service (AWS STS)',
        'AWS Shield', 'AWS Single Sign-On',

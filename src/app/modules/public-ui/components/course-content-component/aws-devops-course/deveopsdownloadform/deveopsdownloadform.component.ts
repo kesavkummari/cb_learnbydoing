@@ -54,7 +54,7 @@ export class DeveopsdownloadformComponent {
 
         // Download the first PDF
         this.http
-          .get('https://8amcloudbinary.s3.amazonaws.com/Latest_JobReadyWith6MonthsInternshipProgram_CloudBinary.pdf', {
+          .get('https://8amcloudbinary.s3.amazonaws.com/20240124_Latest_Regular_CloudBinary.pdf', {
             responseType: 'blob'
           })
           .subscribe((response: Blob) => {
@@ -62,7 +62,7 @@ export class DeveopsdownloadformComponent {
 
             // Download the second PDF
             this.http
-              .get('https://8amcloudbinary.s3.amazonaws.com/Latest_Regular_CloudBinary.pdf', { responseType: 'blob' })
+              .get('https://8amcloudbinary.s3.amazonaws.com/20240124_Latest_Regular_CloudBinary.pdf', { responseType: 'blob' })
               .subscribe((secondResponse: Blob) => {
                 saveAs(secondResponse, 'CB Regular Course.pdf');
 
