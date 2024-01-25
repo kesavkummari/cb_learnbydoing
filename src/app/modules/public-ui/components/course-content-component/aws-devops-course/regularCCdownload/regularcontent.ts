@@ -45,7 +45,7 @@ export class RegulardownloadformComponent {
       // Insert form data into API
       this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
         console.log(res);
-        this.http.get('https://8amcloudbinary.s3.amazonaws.com/20240124_Latest_Regular_CloudBinary.pdf', { responseType: 'blob' })
+        this.http.get('https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps_Regular_CloudBinary_20240125.pdf', { responseType: 'blob' })
         .subscribe((response: Blob) => {
           saveAs(response, 'CB DevOps CourseCurriculum.pdf');
           this.loading = false;
