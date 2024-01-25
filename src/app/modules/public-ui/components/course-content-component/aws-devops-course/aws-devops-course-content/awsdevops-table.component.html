@@ -218,7 +218,7 @@
           <div class="left-column">
             <h2>AWS Content - Modules</h2>
             <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with OS </div>
-            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Analytics  </div>
+            <!-- <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Analytics  </div> -->
             <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Application Integration</div>
             <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Compute </div>
             <!-- <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS Services -Containers </div> -->
@@ -354,7 +354,7 @@
   ">
 
   <ul>
-      <li>Amazon AppFlow</li>
+      <!-- <li>Amazon AppFlow</li> -->
       <li>Amazon EventBridge (Amazon CloudWatch Events)</li>
   </ul>
 </ng-container>
@@ -374,7 +374,7 @@
       <li>AWS App Runner</li>
       <li>Amazon EC2</li>
       <li>Amazon EC2 Auto Scaling</li>
-      <li>EC2 Image Builder</li>
+      <!-- <li>EC2 Image Builder</li> -->
       <li>AWS Elastic Beanstalk</li>
       <li>AWS Serverless Application Repository</li>
   </ul>
@@ -472,11 +472,11 @@
   <li>AWS CodeBuild</li>
   <li>AWS CodeCommit</li>
   <li>AWS CodeDeploy</li>
-  <li>Amazon CodeGuru</li>
+  <!-- <li>Amazon CodeGuru</li> -->
   <li>AWS CodePipeline</li>
   <li>AWS CodeStar</li>
   <li>AWS Command Line Interface (AWS CLI)</li>
-  <li>AWS Fault Injection Simulator</li>
+  <!-- <li>AWS Fault Injection Simulator</li> -->
   <li>AWS SDKs and Tools</li>
   <li>AWS X-Ray</li>
 </ul>
@@ -496,21 +496,21 @@
 
   <ul>
       <li>AWS Auto Scaling</li>
-      <li>AWS CloudFormation</li>
+      <!-- <li>AWS CloudFormation</li> -->
       <li>AWS CloudTrail</li>
       <li>Amazon CloudWatch</li>
       <li>Amazon CloudWatch Logs</li>
       <li>AWS Compute Optimizer</li>
-      <li>AWS Config</li>
-      <li>AWS Control Tower</li>
+      <!-- <li>AWS Config</li>
+      <li>AWS Control Tower</li> -->
       <li>AWS Health</li>
-      <li>AWS License Manager</li>
-      <li>AWS OpsWorks</li>
+      <!-- <li>AWS License Manager</li>
+      <li>AWS OpsWorks</li> -->
       <li>AWS Organizations</li>
       <li>AWS Personal Health Dashboard</li>
-      <li>AWS Proton</li>
+      <!-- <li>AWS Proton</li>
       <li>AWS Resilience Hub</li>
-      <li>AWS Service Catalog</li>
+      <li>AWS Service Catalog</li> -->
       <li>AWS Systems Manager</li>
       <li>AWS Trusted Advisor</li>
   </ul>
@@ -528,7 +528,7 @@
   ">
 
   <ul>
-      <li>Amazon API Gateway</li>
+      <!-- <li>Amazon API Gateway</li> -->
       <li>AWS Client VPN</li>
       <li>Amazon CloudFront</li>
       <li>Elastic Load Balancing (ELB)</li>
@@ -553,21 +553,21 @@
 
   <ul>
       <li>AWS Certificate Manager (ACM)</li>
-      <li>AWS CloudHSM</li>
+      <!-- <li>AWS CloudHSM</li>
       <li>Amazon Cognito</li>
       <li>Amazon Detective</li>
       <li>AWS Directory Service</li>
-      <li>Amazon GuardDuty</li>
+      <li>Amazon GuardDuty</li> -->
       <li>AWS Identity and Access Management (IAM)</li>
       <li>AWS Single Sign-On</li>
-      <li>Amazon Inspector</li>
+      <!-- <li>Amazon Inspector</li> -->
       <li>AWS Key Management Service (AWS KMS)</li>
-      <li>Amazon Macie</li>
+      <!-- <li>Amazon Macie</li> -->
       <li>AWS Secrets Manager</li>
-      <li>AWS Security Hub</li>
+      <!-- <li>AWS Security Hub</li> -->
       <li>AWS Security Token Service (AWS STS)</li>
-      <li>AWS Shield</li>
-      <li>AWS WAF</li>
+      <!-- <li>AWS Shield</li>
+      <li>AWS WAF</li> -->
   </ul>
 </ng-container>
        
@@ -584,10 +584,12 @@
 
   <ul>
       <li>AWS Lambda</li>
+      <li>Amazon API Gateway</li>
+      <li>AWS Step Functions</li>
       <li>Amazon Simple Email Service (SES)</li>
       <li>Amazon Simple Notification Service (Amazon SNS)</li>
-      <li>Amazon Simple Queue Service (Amazon SQS)</li>
-      <li>AWS Step Functions</li>
+      <!-- <li>Amazon Simple Queue Service (Amazon SQS)</li> -->
+
   </ul>
 </ng-container>
         
@@ -970,8 +972,15 @@
           <div class="left-column">
             <h2 style="padding-bottom: 10px;">AWS DevOps Content - Modules</h2>
 <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with OS </div>
-<!-- <div class="module" (click)="selectModule('M0')" [class.active-module]="selectedModule === 'M0'">Shell Scripting </div> -->
-<div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Analytics  </div>
+<div class="module" (click)="selectModule('M0')" [class.active-module]="selectedModule === 'M0'">Shell Scripting </div>
+<div class="module" (click)="selectModule('M26')" [class.active-module]="selectedModule === 'M26'">Python Basics: Introduction</div>
+<div class="module" (click)="selectModule('M27')" [class.active-module]="selectedModule === 'M27'">Python: Functions</div>
+<div class="module" (click)="selectModule('M28')" [class.active-module]="selectedModule === 'M28'">Python: Object & Class</div>
+<div class="module" (click)="selectModule('M29')" [class.active-module]="selectedModule === 'M29'">Python: Data Types</div>
+<div class="module" (click)="selectModule('M30')" [class.active-module]="selectedModule === 'M30'">Python: Flow Control</div>
+<div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
+<div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div>
+<!-- <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Analytics</div> -->
 <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Application Integration</div>
 <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Compute
 </div>
@@ -999,13 +1008,7 @@
 <div class="module" (click)="selectModule('M23')" [class.active-module]="selectedModule === 'M23'">Continuous Monitoring: New Relic & Nagios</div>
 <div class="module" (click)="selectModule('M24')" [class.active-module]="selectedModule === 'M24'">Migration Strategies</div>
 <div class="module" (click)="selectModule('M25')" [class.active-module]="selectedModule === 'M25'">Deployment Strategies</div>
-<!-- <div class="module" (click)="selectModule('M26')" [class.active-module]="selectedModule === 'M26'">Python Basics: Introduction</div>
-<div class="module" (click)="selectModule('M27')" [class.active-module]="selectedModule === 'M27'">Python: Functions</div>
-<div class="module" (click)="selectModule('M28')" [class.active-module]="selectedModule === 'M28'">Python: Object & Class</div>
-<div class="module" (click)="selectModule('M29')" [class.active-module]="selectedModule === 'M29'">Python: Data Types</div>
-<div class="module" (click)="selectModule('M30')" [class.active-module]="selectedModule === 'M30'">Python: Flow Control</div>
-<div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
-<div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div> -->
+
 </div>
 
          
@@ -1121,7 +1124,7 @@
   ">
 
   <ul>
-      <li>Amazon AppFlow</li>
+      <!-- <li>Amazon AppFlow</li> -->
       <li>Amazon EventBridge (Amazon CloudWatch Events)</li>
   </ul>
 </ng-container>
@@ -1140,7 +1143,7 @@
   <ul>
       <li>Amazon EC2</li>
       <li>Amazon EC2 Auto Scaling</li>
-      <li>EC2 Image Builder</li>
+      <!-- <li>EC2 Image Builder</li> -->
       <li>AWS Elastic Beanstalk</li>
   </ul>
 </ng-container>
@@ -1219,7 +1222,7 @@
   <li>AWS CodeBuild</li>
   <li>AWS CodeCommit</li>
   <li>AWS CodeDeploy</li>
-  <li>Amazon CodeGuru</li>
+  <!-- <li>Amazon CodeGuru</li> -->
   <li>AWS CodePipeline</li>
   <li>AWS CodeStar</li>
   <li>AWS Command Line Interface (AWS CLI)</li>
@@ -1242,16 +1245,16 @@
 
   <ul>
       <li>AWS Auto Scaling</li>
-      <li>AWS CloudFormation</li>
+      <!-- <li>AWS CloudFormation</li> -->
       <li>AWS CloudTrail</li>
       <li>Amazon CloudWatch</li>
       <li>Amazon CloudWatch Logs</li>
       <li>AWS Compute Optimizer</li>
-      <li>AWS Config</li>
-      <li>AWS Control Tower</li>
+      <!-- <li>AWS Config</li>
+      <li>AWS Control Tower</li> -->
       <li>AWS Health</li>
-      <li>AWS License Manager</li>
-      <li>AWS OpsWorks</li>
+      <!-- <li>AWS License Manager</li>
+      <li>AWS OpsWorks</li> -->
       <li>AWS Organizations</li>
       <li>AWS Personal Health Dashboard</li>
       <li>AWS Systems Manager</li>
@@ -1271,7 +1274,7 @@
   ">
 
   <ul>
-      <li>Amazon API Gateway</li>
+      <!-- <li>Amazon API Gateway</li> -->
       <li>Amazon CloudFront</li>
       <li>Elastic Load Balancing (ELB)</li>
       <li>Amazon Route 53</li>
@@ -1292,17 +1295,17 @@
 
   <ul>
       <li>AWS Certificate Manager (ACM)</li>
-      <li>Amazon Detective</li>
-      <li>Amazon GuardDuty</li>
+      <!-- <li>Amazon Detective</li>
+      <li>Amazon GuardDuty</li> -->
       <li>AWS Identity and Access Management (IAM)</li>
       <li>AWS Single Sign-On</li>
-      <li>Amazon Inspector</li>
+      <!-- <li>Amazon Inspector</li> -->
       <li>AWS Key Management Service (AWS KMS)</li>
-      <li>Amazon Macie</li>
+      <!-- <li>Amazon Macie</li> -->
       <li>AWS Secrets Manager</li>
       <li>AWS Security Token Service (AWS STS)</li>
-      <li>AWS Shield</li>
-      <li>AWS WAF</li>
+      <!-- <li>AWS Shield</li>
+      <li>AWS WAF</li> -->
   </ul>
 </ng-container>
        
@@ -1319,10 +1322,12 @@
 
   <ul>
       <li>AWS Lambda</li>
+      <li>Amazon API Gateway</li>
+      <li>AWS Step Functions</li>
       <li>Amazon Simple Email Service (SES)</li>
       <li>Amazon Simple Notification Service (Amazon SNS)</li>
-      <li>Amazon Simple Queue Service (Amazon SQS)</li>
-      <li>AWS Step Functions</li>
+      <!-- <li>Amazon Simple Queue Service (Amazon SQS)</li> -->
+
   </ul>
 </ng-container>
         
