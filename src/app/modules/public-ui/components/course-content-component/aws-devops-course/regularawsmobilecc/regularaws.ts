@@ -33,22 +33,139 @@ export class RegularAWSCourseContent {
    'Log Management',
    'Web Servers - Windows IIS, Apache2, Nginx & Httpd']
                               },
+                              {
+                                title: 'Shell Scripting',
+                                submodules: ['What is a Shell Script?',
+                          'Importance and applications of Shell Scripts.',
+                          'Basic Shell commands (ls, cd, mkdir, rm, etc.).',
+                          'Introduction to the Bash shell.',
+                          'Shell Script Basics:',
+                          '  - Variables in Shell Scripts.',
+                          '  - Reading user input.',
+                          '  - Basic Shell operations (arithmetic, string concatenation).',
+                          'Control Structures and Loops:',
+                          '  - If-else statements.',
+                          '  - Case statements.',
+                          '  - For and while loops.',
+                          'Advanced Concepts:',
+                          '  - Functions in Shell Scripts.',
+                          '  - Introduction to Shell Script debugging.',
+                          '  - Basic File I/O in Shell Scripts.',
+                          'Real-world Applications and Best Practices:',
+                          '  - Overview of real-world applications of Shell Scripts.',
+                          '  - Best practices in Shell Scripting (commenting, naming conventions).',
+                          '  - Introduction to script scheduling (cron jobs).']
+                                                    },
+
+                              {
+                                title: 'Python Basics',
+                        submodules: [
+                            'Introduction',
+                            'Getting Started',
+                            'Keywords and Identifiers',
+                            'Statements & Comments',
+                            'Python Variables',
+                            'Python Datatypes',
+                            'Python Type Conversion',
+                            'Python I/O and import',
+                            'Python Operators',
+                            'Python Namespace',
+                            'Summary'
+                        ]
+                    },
+                    {
+                        'title': 'Python Functions',
+                        'submodules': [
+                            'Python Functions',
+                            'Function Argument',
+                            'Python Recursion',
+                            'Anonymous Function',
+                            'Global, Local and Nonlocal',
+                            'Python Global Keyword',
+                            'Python Modules',
+                            'Python Package',
+                            'Summary'
+                        ]
+                    },
+                    {
+                        'title': 'Python Object & Class',
+                        'submodules': [
+                            'Python OOP',
+                            'Python Class',
+                            'Summary'
+                        ]
+                    },
+                    {
+                        'title': 'Python Data Types',
+                        'submodules': [
+                            'Python Numbers',
+                            'Python List',
+                            'Python Tuple',
+                            'Python String',
+                            'Python Set',
+                            'Python Dictionary',
+                            'Summary'
+                        ]
+                    },
+                    {
+                        'title': 'Python Flow Control',
+                        'submodules': [
+                            'Python if...else',
+                            'Python for Loop',
+                            'Python while Loop',
+                            'Python break and continue',
+                            'Python Pass',
+                            'Summary'
+                        ]
+                    },
+                    {
+                        'title': 'Python File Handling',
+                        'submodules': [
+                            'Python File Operation',
+                            'Python Directory',
+                            'Python Exception',
+                            'Python Exception Handling',
+                            'Python User-defined Exception',
+                            'Summary'
+                        ]
+                    },
+                    {
+                        'title': 'Python Modules',
+                        'submodules': [
+                            'os',
+                            'sys',
+                            're',
+                            'datetime',
+                            'aws boto3',
+                            'mysql & mysql-connector',
+                            'Summary'
+                        ]
+                    },
+                    {
+                    'title': 'Examples',
+                        'submodules': [
+                          'Creating EC2 resource using Boto3 with Python',
+                          'Creating S3 resource using Boto3 with Python',
+                          'Creating RDS resource using Boto3 with Python'
+                            
+                        ]
+                    },
                                 
-          {
-  title: 'AWS Services - Analytics',
-  submodules: [
-    'Amazon Athena',
-    'Amazon EMR (Elastic MapReduce)',
-    'Amazon Kinesis Data Firehose',
-    'Amazon Kinesis Data Streams',
-    'Amazon OpenSearch Service',
-    'Amazon QuickSight'
-  ]
-},
+//           {
+//   title: 'AWS Services - Analytics',
+//   submodules: [
+//     'Amazon Athena',
+//     'Amazon EMR (Elastic MapReduce)',
+//     'Amazon Kinesis Data Firehose',
+//     'Amazon Kinesis Data Streams',
+//     'Amazon OpenSearch Service',
+//     'Amazon QuickSight'
+//   ]
+// },
 {
   title: 'AWS Services - Application Integration',
   submodules: [
-    'Amazon AppFlow',
+    // 'Amazon AppFlow',
     'Amazon EventBridge (Amazon CloudWatch Events)',
     
     
@@ -57,37 +174,37 @@ export class RegularAWSCourseContent {
 {
   title: 'AWS Services - Compute',
   submodules: [
-    'AWS App Runner',
+    // 'AWS App Runner',
     'Amazon EC2',
     'Amazon EC2 Auto Scaling',
-    'EC2 Image Builder',
+    // 'EC2 Image Builder',
     'AWS Elastic Beanstalk',
-    'AWS Serverless Application Repository'
+    // 'AWS Serverless Application Repository'
   ]
 },
-{
-  title: 'AWS Services -Containers',
-  submodules: [
-    'AWS App2Containe',
-    'AWS Copilot',
-    'Amazon Elastic Container Registry (Amazon ECR)',
-    'Amazon Elastic Container Service (Amazon ECS)',
-    'Amazon Elastic Kubernetes Service (Amazon EKS)',
-    'Amazon EKS Distro',
-    'AWS Fargate',
-    'Red Hat OpenShift Service on AWS (ROSA)'
-  ]
-},
+// {
+//   title: 'AWS Services -Containers',
+//   submodules: [
+//     'AWS App2Containe',
+//     'AWS Copilot',
+//     'Amazon Elastic Container Registry (Amazon ECR)',
+//     'Amazon Elastic Container Service (Amazon ECS)',
+//     'Amazon Elastic Kubernetes Service (Amazon EKS)',
+//     'Amazon EKS Distro',
+//     'AWS Fargate',
+//     'Red Hat OpenShift Service on AWS (ROSA)'
+//   ]
+// },
 {
   title: 'AWS Services - Database',
   submodules: [
-    'Amazon Aurora',
-    'Amazon Aurora Serverless v2',
+    // 'Amazon Aurora',
+    // 'Amazon Aurora Serverless v2',
     'AWS Database Migration Service (AWS DMS)',
-    'Amazon DocumentDB (with MongoDB compatibility)',
+    // 'Amazon DocumentDB (with MongoDB compatibility)',
     'Amazon DynamoDB',
-    'Amazon ElastiCache',
-    'Amazon MemoryDB for Redis',
+    // 'Amazon ElastiCache',
+    // 'Amazon MemoryDB for Redis',
     'Amazon RDS',
     'Amazon Redshift'
   ]
@@ -95,16 +212,16 @@ export class RegularAWSCourseContent {
 {
   title: 'AWS Services - Storage',
   submodules: [
-    'AWS Backup',
+    // 'AWS Backup',
     'Amazon Elastic Block Store (Amazon EBS)',
-    'AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)',
+    // 'AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)',
     'Amazon Elastic File System (Amazon EFS)',
-    'Amazon FSx for Lustre',
-    'Amazon FSx for NetApp ONTAP',
-    'Amazon FSx for OpenZFS',
-    'Amazon S3',
-    'Amazon S3 Glacier',
-    'AWS Storage Gateway'
+    // 'Amazon FSx for Lustre',
+    // 'Amazon FSx for NetApp ONTAP',
+    // 'Amazon FSx for OpenZFS',
+    'Amazon S3'
+    // 'Amazon S3 Glacier',
+    // 'AWS Storage Gateway'
   ]
 },
 {
@@ -119,7 +236,7 @@ export class RegularAWSCourseContent {
     'AWS CodeDeploy',
     'AWS CodePipeline',
     'AWS CodeStar',
-    'AWS Fault Injection Simulator',
+    // 'AWS Fault Injection Simulator',
     'AWS SDKs and Tools',
     'AWS X-Ray'
     
@@ -131,25 +248,25 @@ export class RegularAWSCourseContent {
   title: 'AWS Services - Management & Governance',
   submodules: [
     'AWS Auto Scaling',
-    'AWS CloudFormation',
+    // 'AWS CloudFormation',
     'AWS CloudTrail',
     'Amazon CloudWatch',
     'Amazon CloudWatch Logs',
     'AWS Compute Optimizer',
-    'AWS Config',
-    'AWS Control Tower',
-    'AWS Health Dashboard',
-    'AWS License Manager',
-    'Amazon Managed Grafana',
-    'Amazon Managed Service for Prometheus',
-    'AWS OpsWorks',
+    // 'AWS Config',
+    // 'AWS Control Tower',
+    'AWS Health',
+    // 'AWS License Manager',
+    // 'Amazon Managed Grafana',
+    // 'Amazon Managed Service for Prometheus',
+    // 'AWS OpsWorks',
     'AWS Organizations',
     'AWS Personal Health Dashboard',
     'AWS Systems Manager',
-    'AWS Trusted Advisor',
-    'AWS Proton',
-    'AWS Resilience Hub',
-    'AWS Service Catalog'
+    'AWS Trusted Advisor'
+    // 'AWS Proton',
+    // 'AWS Resilience Hub',
+    // 'AWS Service Catalog'
     
     
   ]
@@ -159,13 +276,13 @@ export class RegularAWSCourseContent {
 {
   title: 'AWS Services - Networking and Content Delivery',
   submodules: [
-    'Amazon API Gateway',
-    'AWS Client VPN',
+    // 'Amazon API Gateway',
+    // 'AWS Client VPN',
     'Amazon CloudFront',
     'Elastic Load Balancing (ELB)',
-    'AWS PrivateLink',
+    // 'AWS PrivateLink',
     'Amazon Route 53',
-    'AWS Site-to-Site VPN',
+    // 'AWS Site-to-Site VPN',
     'Amazon VPC',
     'Amazon VPC Peering'
   ]
@@ -174,28 +291,31 @@ export class RegularAWSCourseContent {
   title: 'AWS Services - Security, Identity, and Compliance ',
   submodules: [
     'AWS Certificate Manager (ACM)',
-    'AWS CloudHSM',
-    'Amazon Cognito',
-    'Amazon Detective',
-    'AWS Directory Service',
-    'Amazon GuardDuty', 
+    // 'AWS CloudHSM',
+    // 'Amazon Cognito',
+    // 'Amazon Detective',
+    // 'AWS Directory Service',
+    // 'Amazon GuardDuty', 
     'AWS Identity and Access Management (IAM)', 
-    'Amazon Inspector',
+    'AWS Single Sign-On',
+    // 'Amazon Inspector',
     'AWS Key Management Service (AWS KMS)', 
-    'Amazon Macie', 'AWS Network Firewall',
-      'AWS Secrets Manager', 'AWS Security Hub', 
-      'AWS Security Token Service (AWS STS)',
-       'AWS Shield', 'AWS Single Sign-On',
-       'AWS WAF'
+    // 'Amazon Macie', 'AWS Network Firewall',
+      'AWS Secrets Manager', 
+    // 'AWS Security Hub', 
+      'AWS Security Token Service (AWS STS)'
+      //  'AWS Shield', 
+      //  'AWS WAF'
   ]
 },
           {
             title: 'AWS Services - Serverless',
             submodules: ['AWS Lambda',
-'AWS Serverless Application Model (AWS SAM)',
+            'Amazon API Gateway',
+// 'AWS Serverless Application Model (AWS SAM)',
 'Amazon Simple Email Service (SES)',
 'Amazon Simple Notification Service (Amazon SNS)',
-'Amazon Simple Queue Service (Amazon SQS)',
+// 'Amazon Simple Queue Service (Amazon SQS)',
 'AWS Step Functions']
           },
            {
@@ -355,7 +475,7 @@ export class RegularAWSCourseContent {
           },
           // Module 9
           {
-            title: 'Continuous Monitoring : New Relic & Nagios',
+            title: 'Continuous Monitoring : New Relic',
             submodules: ['Getting Started with Observability',
                                       'What is Observability/Monitoring?',
                                       'Types of Continuous Monitoring:',
@@ -373,27 +493,26 @@ export class RegularAWSCourseContent {
       
           
          
-           {
-             title: 'Migration Strategies',
-             submodules: ['What is Migration?',
-                     'Different Types Of Migration Strategies:',
-                    'Rehosting, Replatforming',
-                    'Repurchasing, Refactoring, Retiring & Retaining',
-                    'Summary']
-                             },
-            {
-            title: 'Deployment Strategies',
-             submodules: ['What is Deployment?',
-                 'Different Types of Deployment Strategies:',
-                 'Recreate Deployment',
-                'Ramped Deployment',
-                'Blue/Green Deployment',
-                 'Canary Deployment',
-                 'A/B Testing Deployment',
-                 'Shadow Deployment',
-                 'Summary']
-           },
-  
+          //  {
+          //    title: 'Migration Strategies',
+          //    submodules: ['What is Migration?',
+          //            'Different Types Of Migration Strategies:',
+          //           'Rehosting, Replatforming',
+          //           'Repurchasing, Refactoring, Retiring & Retaining',
+          //           'Summary']
+          //                    },
+          //   {
+          //   title: 'Deployment Strategies',
+          //    submodules: ['What is Deployment?',
+          //        'Different Types of Deployment Strategies:',
+          //        'Recreate Deployment',
+          //       'Ramped Deployment',
+          //       'Blue/Green Deployment',
+          //        'Canary Deployment',
+          //        'A/B Testing Deployment',
+          //        'Shadow Deployment',
+          //        'Summary']
+          //  },
 
        ]
        }
