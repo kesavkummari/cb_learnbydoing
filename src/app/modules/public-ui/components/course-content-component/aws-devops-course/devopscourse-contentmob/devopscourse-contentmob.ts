@@ -11,7 +11,7 @@ export class DevOpsCourseContentMob {
 
   courses = [
     {
-      title: 'AWS DEVOPS JOB READY',
+      title: 'AWS DEVOPS',
       modules: [
         // Course 2 modules and submodules
         // Module 1
@@ -32,29 +32,6 @@ export class DevOpsCourseContentMob {
    'Log Management',
    'Web Servers - Windows IIS, Apache2, Nginx & Httpd']
                               },
-        {
-            title: 'Shell Scripting',
-            submodules: ['What is a Shell Script?',
-      'Importance and applications of Shell Scripts.',
-      'Basic Shell commands (ls, cd, mkdir, rm, etc.).',
-      'Introduction to the Bash shell.',
-      'Shell Script Basics:',
-      '  - Variables in Shell Scripts.',
-      '  - Reading user input.',
-      '  - Basic Shell operations (arithmetic, string concatenation).',
-      'Control Structures and Loops:',
-      '  - If-else statements.',
-      '  - Case statements.',
-      '  - For and while loops.',
-      'Advanced Concepts:',
-      '  - Functions in Shell Scripts.',
-      '  - Introduction to Shell Script debugging.',
-      '  - Basic File I/O in Shell Scripts.',
-      'Real-world Applications and Best Practices:',
-      '  - Overview of real-world applications of Shell Scripts.',
-      '  - Best practices in Shell Scripting (commenting, naming conventions).',
-      '  - Introduction to script scheduling (cron jobs).']
-                                },
                                 
           {
   title: 'AWS Services - Analytics',

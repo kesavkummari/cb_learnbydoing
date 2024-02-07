@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<!-- 
+   <!--
   <div class="container1">
 <h5 style="font-weight: 900; font-size: larger;">Grab Your Course</h5>
     <form> 
@@ -20,8 +20,7 @@
         <input 
         style="    width: 23px;height: 24px;" 
         type="radio" name="batch" [(ngModel)]="selectedBatch" value="jobReady"> AWS DevOps Job Ready
-      </label> 
-    </div>
+      </label> </div>
       <hr>
   
       <div *ngIf="selectedBatch === 'regular'" class="content">
@@ -43,8 +42,31 @@
             <a href="https://wa.me/919100073006" class="enroll-button">Enroll Now</a>
            
           </div>
-
-        </div>
+   
+          <div class="right-side">
+            <div class="perks">
+              <p style="    font-weight: 900;
+              font-size: x-large;
+              margin-bottom: 40px;"></p>
+              <ul style="font-size: medium;">
+                <li><span class="fas fa-check check-icon"></span> Certification-Oriented Training</li>
+                <li><span class="fas fa-check check-icon"></span> Real-Time Training from Certified Trainers</li>
+                <li><span class="fas fa-check check-icon"></span> Comprehensive Learning Approach</li>
+                <li><span class="fas fa-check check-icon"></span> Topic-wise Quiz</li>
+                <li><span class="fas fa-check check-icon"></span> Mock Interviews</li>
+                <li><span class="fas fa-check check-icon"></span> 6+ Projects</li>
+                <li><span class="fas fa-check check-icon"></span> Only Online</li>
+                <li><span class="fas fa-check check-icon"></span> Resume Grooming Session</li>
+                <li><span class="fas fa-check check-icon"></span> Naukri & LinkedIn Account Creation & Optimization</li>
+                <li><span class="fas fa-check check-icon"></span> Placement Assistance</li>
+                <li><span class="fas fa-check check-icon"></span> Recruitment and Hiring Details Shared</li>
+              </ul>
+              <div class="custom-button-div">
+      <button class="custom-button" (click)="openDialog()">Download Course Content</button>
+      </div>
+            </div>
+          </div> -->
+   <!--     </div>
       </div>
       <div *ngIf="selectedBatch === 'jobReady'" class="content">
         <div class="container">
@@ -63,14 +85,76 @@
             <a href="https://wa.me/919100073006" class="enroll-button">Enroll Now</a>
            
           </div>
-
+      
+          <div class="right-side">
+            <div class="perks">
+              <p style="    font-weight: 900;
+              font-size: x-large;
+              margin-bottom: 40px;"></p>
+              <ul style="font-size: medium;">
+                <li><span class="fas fa-check check-icon"></span> Certification-Oriented Training</li>
+                <li><span class="fas fa-check check-icon"></span> Real-Time Training from Certified Trainers</li>
+                <li><span class="fas fa-check check-icon"></span> Free 6 Months Internship with Offer Letter & Internship Certificate</li>
+                <li><span class="fas fa-check check-icon"></span> Free AWS Cloud Practitioner Certification (Exam Code - CLF-C02) </li>
+                <li><span class="fas fa-check check-icon"></span> Comprehensive Learning Approach</li>
+                <li><span class="fas fa-check check-icon"></span> Topic-wise Quiz</li>
+                <li><span class="fas fa-check check-icon"></span> Mock Interviews</li>
+                <li><span class="fas fa-check check-icon"></span> 9+ Projects</li>
+                <li><span class="fas fa-check check-icon"></span> Classroom & Online</li>
+                <li><span class="fas fa-check check-icon"></span> Resume Grooming Session</li>
+                <li><span class="fas fa-check check-icon"></span> Naukri & LinkedIn Account Creation & Optimization</li>
+                <li><span class="fas fa-check check-icon"></span> Placement Assistance</li>
+                <li><span class="fas fa-check check-icon"></span> Recruitment and Hiring Details Shared</li>
+              </ul>
+              <div class="custom-button-div">
+      <button class="custom-button" (click)="openDialog()">Download Course Content</button>
+      </div>
+            </div>
+          </div> 
         </div>
       </div>
     </form>
-  </div>
-
+  </div> -->
+  
+  
+  
   <div style="visibility: visible; background: url('assets/hybrid-learning/bg3.png') center center / cover no-repeat;">
- 
- </div> -->
+  <h2 >Unveiling Fee Details </h2>
+  <div class="container">
+    <div class="left-side">
+      <div class="batch-info" style="color: #D0D3D9; font-size: medium;">
+        <h5 style="color: white;">AWS DevOps - Shell & Python Scripting</h5>
+        <i class="fas fa-calendar-alt calendar-icon" style="color: orange;"></i>
+        Next Batch Starts On 13th Feb 2024 Limited Seats Only!!
+      </div>
+      <br>
+      <div class="price price-crossed">₹ 29,999/-</div>
+      <div class="price">₹ 24999/-</div>
+      <div class="security-deposit">
+        Register Now  and Save your slot
+      </div>
+      <a href="https://wa.me/919100073006" class="enroll-button">Enroll Now</a>
+     
+    </div>
+
+    <div class="right-side">
+      
+      <div class="batch-info" style="color: #D0D3D9; font-size: medium;">
+        <h5>AWS DevOps Regular</h5>
+        <i class="fas fa-calendar-alt calendar-icon" style="color: orange;"></i>
+        <span style="color: black;">  Next Batch Starts On 13th Feb 2024 Limited Seats Only!! </span>
+      </div>
+      <br>
+      <div class="price price-crossed" style="color: red;">₹ 25,999/-</div>
+      <div class="price">₹ 18,999/-</div>
+      <div class="security-deposit">
+        Register Now  and Save your slot
+      </div>
+      <a href="https://wa.me/919100073006" class="enroll-button">Enroll Now</a>
+       
+      </div>
+    </div>
+   </div> 
+
 </body>
 </html>

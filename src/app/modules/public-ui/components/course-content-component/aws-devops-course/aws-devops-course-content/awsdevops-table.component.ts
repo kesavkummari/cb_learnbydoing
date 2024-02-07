@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AwsDevOpsCourseTableComponent {
  
 
-  selectedTab: string = 'devops'; // Default selected tab
+  selectedTab: string = 'aws'; // Default selected tab
   selectedModule: string | null = null; // Default selected module is null
   showRightColumn: boolean = true; // Initialize to true to show the right column by default
   isModuleSelected: boolean = false; // Initialize to false since module content should be hidden by default
