@@ -18,7 +18,7 @@
   padding: 10px 20px;
   font-weight: 600;
   color: #000;
-  background-color: #fff;
+  background-color: #a2ddfe;
   cursor: pointer;
   margin-right: 10px;
   border-radius: 12px 12px 12px 12px;
@@ -29,12 +29,12 @@
 }
 
 .sub-tab:hover {
-  background-color: #f2f4f5;
+  background-color: #a8d6f0;
 }
 
 .sub-tab.active {
   /* background-color: #353935; */
-  background-color: #cae0fe;
+  background-color: #fff;
   height: 70px;
   color: #000;
   display: flex;
@@ -52,7 +52,7 @@
   min-height: 200px;
   width: 80vw;
   /* background-color: #353935; */
-  background-color: #cae0fe;
+  background-color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -83,7 +83,7 @@
   height: 75px;
   border-radius: 10px;
   margin-bottom: 15px;
-  background-color: #fff;
+  background-color: #e9ecef;
 }
 
 .module:hover {
@@ -91,14 +91,14 @@
 }
 
 .module.active-module {
-  background: #387ef7;
-  color: white;
+  background: linear-gradient(to right, #a8d6f0, #fff);
+  color: black;
 }
 
 .right-column {
   flex: 2;
   margin: 0 32px 0 57px;
-  background: aliceblue;
+  background: aliceblue; /* linear-gradient(to right, #fff, #a8d6f0); */
   padding-left: 47px;
   padding-top: 21px;
   border-radius: 10px;
@@ -151,9 +151,8 @@
   }
 }
 
-
 .default-image {
-  max-width: 95%;
+  max-width: 100%;
   width: 100%;
   height: auto;
   padding-left: 0px;
