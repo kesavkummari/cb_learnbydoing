@@ -59,10 +59,15 @@ import { GoogleReviewsColComponent } from './components/reviews/google-reviews/g
 import { RegularAWSCourseContent } from './components/course-content-component/aws-devops-course/regularawsmobilecc/regularaws';
 import { RegulardownloadformComponent } from './components/course-content-component/aws-devops-course/regularCCdownload/regularcontent';
 import { DevopsDownloadComponent } from './components/course-content-component/aws-devops-course/devopsdownload-form/devops.download.component';
+import { JobReadyComponent } from './Pages/job-ready/jobready.component';
+import { RegularFeeStructureComponent } from './components/fee-structure/regular-fee/fee.structure.component';
+import { JobReadyFeeComponent } from './components/fee-structure/job-ready-fee/job.ready.component';
 
 
 @NgModule({
-  declarations: [CloudIntroComponent,  IntroCardsComponent, ProgramsComponent, 
+  declarations: [CloudIntroComponent, 
+    JobReadyComponent, IntroCardsComponent, ProgramsComponent, RegularFeeStructureComponent,
+    JobReadyFeeComponent,
     TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, 
     CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, 
      CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,

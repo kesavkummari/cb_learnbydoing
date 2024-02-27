@@ -40,10 +40,12 @@ import { SageMakerComponent } from './components/blogs-component/blogs-pages/all
 import { RDSMYSQLComponent } from './components/blogs-component/blogs-pages/all-blogs/RDS_MYSQL/rdsmysql';
 import { RoutingComponent } from './components/blogs-component/blogs-pages/all-blogs/Routing_polices/routing';
 import { ServerlessComponent } from './components/blogs-component/blogs-pages/all-blogs/serverless_website/serverless';
+import { JobReadyComponent } from './Pages/job-ready/jobready.component';
   
 const routes: Routes = [
  
   {path:'aws-devops', component: AwsDevopsComponent},
+  {path:'aws-devops-job-ready-with-internship', component: JobReadyComponent},
   {path:'blogs', component: BlogsComponent},
   {path:'home', component: IntroPageComponent},
   { path:'contactus', component: ContactUsComponent },

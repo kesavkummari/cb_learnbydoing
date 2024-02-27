@@ -74,12 +74,15 @@
 
     <a   href="" >HOME </a>
 
-   <!--   <a   [routerLink]="['/aws']" routerLinkActive="router-link-active"  >AWS </a> -->
-   <a  [routerLink]="['/aws-devops']" routerLinkActive="router-link-active"> COURSES <span style="color: orange; font-size: 12px;"></span></a>
+   <a   [routerLink]="['/aws-devops-job-ready-with-internship']" routerLinkActive="router-link-active"  >JOB READY </a>
+   <a  [routerLink]="['/aws-devops']" routerLinkActive="router-link-active"> AWS DEVOPS<span style="color: orange; font-size: 12px;"></span></a>
    <a   [routerLink]="['/blogs']" routerLinkActive="router-link-active"  >BLOGS </a>
       <a class="active special-hover"  [routerLink]="['/contactus']" routerLinkActive="router-link-active"  style="padding: 9px;">CONTACT US</a>
+      
     </div>
   </div>
+
+  
   <div class="header" style=" height: 40px; position: fixed; display:flex; justify-content: space-between;" *ngIf="isScreenSmall">
     <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="logo_link logo" style="    display: flex;
     flex-direction: row;">
