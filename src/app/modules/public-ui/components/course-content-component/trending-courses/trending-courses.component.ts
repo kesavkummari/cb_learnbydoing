@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DeveopsdownloadformComponent } from '../aws-devops-course/deveopsdownloadform/deveopsdownloadform.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'trending-courses',
@@ -6,6 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./trending-courses.component.css']
 })
 export class TrendingCoursesComponent {
+  constructor(public dialog: MatDialog) {}
+  openDialog(): void {
+    const dialogRef = this.dialog.open(DeveopsdownloadformComponent, {
+      data: { /* optional data to pass to the dialog component */ },
+      disableClose: true // Prevent closing on backdrop click
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      // Perform any necessary actions after the dialog is closed
+    });
+  }
   toggleTable() {
     const tableContainer = document.getElementById("table-container");
     const tableIntenseContainer = document.getElementById("table-container-intense");
