@@ -223,25 +223,30 @@
             <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Compute </div>
             <!-- <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS Services -Containers </div> -->
             <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS Services - Database   </div>
-            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS Services - Storage             </div>
+            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS Services - Storage    </div>
             <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS Services - Developer Tools</div>
+            <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS Services - Serverless</div>
             <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS Services - Management and Governance</div>
             <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS Services - Networking and Content Delivery</div>
             <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS Services - Security, Identity, and Compliance</div>
-            <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS Services - Serverless</div>
+
             <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Software Development Life Cycle: Agile - Scrum</div>
+            <div class="module" (click)="selectModule('M26')" [class.active-module]="selectedModule === 'M26'">Build Tool: Apache Maven & Python Pip</div>
+            <div class="module" (click)="selectModule('M27')" [class.active-module]="selectedModule === 'M27'">Application Servers - Apache Tomcat</div>
             <div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">Version Control System / Source Code Management: Git</div>
             <div class="module" (click)="selectModule('M15')" [class.active-module]="selectedModule === 'M15'">Continuous Integration using Jenkins</div>
             <div class="module" (click)="selectModule('M16')" [class.active-module]="selectedModule === 'M16'">Continuous Static Code Analysis: SonarQube</div>
             <div class="module" (click)="selectModule('M17')" [class.active-module]="selectedModule === 'M17'">Continuous Binary Code Repository using JFrog</div>
             <div class="module" (click)="selectModule('M18')" [class.active-module]="selectedModule === 'M18'">Continuous Infrastructure As A Code: Terraform</div>
             <div class="module" (click)="selectModule('M19')" [class.active-module]="selectedModule === 'M19'">Creating Machine Images: Packer</div>
-            <div class="module" (click)="selectModule('M20')" [class.active-module]="selectedModule === 'M20'">Continuous Configuration Management: Ansible</div>
-            <div class="module" (click)="selectModule('M21')" [class.active-module]="selectedModule === 'M21'">Containerisation: Docker</div>
+
+
             <div class="module" (click)="selectModule('M22')" [class.active-module]="selectedModule === 'M22'">Container Orchestration: Kubernetes</div>
             <div class="module" (click)="selectModule('M23')" [class.active-module]="selectedModule === 'M23'">Continuous Monitoring: New Relic & Nagios</div>
-            <div class="module" (click)="selectModule('M24')" [class.active-module]="selectedModule === 'M24'">Migration Strategies</div>
-            <div class="module" (click)="selectModule('M25')" [class.active-module]="selectedModule === 'M25'">Deployment Strategies</div>
+            <div class="module" (click)="selectModule('M21')" [class.active-module]="selectedModule === 'M21'">Containerisation: Docker</div>
+            <div class="module" (click)="selectModule('M20')" [class.active-module]="selectedModule === 'M20'">Continuous Configuration Management: Ansible</div>
+          <!--  <div class="module" (click)="selectModule('M24')" [class.active-module]="selectedModule === 'M24'">Migration Strategies</div>
+            <div class="module" (click)="selectModule('M25')" [class.active-module]="selectedModule === 'M25'">Deployment Strategies</div> -->
     
           </div>
           <div class="right-column">
@@ -276,6 +281,7 @@
           <li>Process Management</li>
           <li>Log Management</li>
           <li>WebServer - Windows IIS, Apache2, Nginx & Httpd</li>
+          <li>Database Servers - MySQL, Mariadb & PostgreSQL</li>
       </ul>
   </ng-container>
   <ng-container *ngIf="selectedModule === 'M0'">
@@ -374,12 +380,13 @@
   ">
 
   <ul>
-      <li>AWS App Runner</li>
+     
       <li>Amazon EC2</li>
       <li>Amazon EC2 Auto Scaling</li>
-      <!-- <li>EC2 Image Builder</li> -->
       <li>AWS Elastic Beanstalk</li>
-      <li>AWS Serverless Application Repository</li>
+      <!-- <li>EC2 Image Builder</li> 
+      <li>AWS App Runner</li>
+      <li>AWS Serverless Application Repository</li>-->
   </ul>
 </ng-container>
 
@@ -418,15 +425,19 @@
   ">
 
   <ul>
+    <li>AWS Database Migration Service (AWS DMS)</li>
+    <li>Amazon DynamoDB</li>
+    <li>Amazon RDS</li>
+    <li>Amazon Redshift</li>
+    <!--
       <li>Amazon Aurora</li>
       <li>Amazon Aurora Serverless v2</li>
-      <li>AWS Database Migration Service (AWS DMS)</li>
+      
       <li>Amazon DocumentDB (with MongoDB compatibility)</li>
-      <li>Amazon DynamoDB</li>
+     
       <li>Amazon ElastiCache</li>
-      <li>Amazon MemoryDB for Redis</li>
-      <li>Amazon RDS</li>
-      <li>Amazon Redshift</li>
+      <li>Amazon MemoryDB for Redis</li> -->
+    
   </ul>
 </ng-container>
         
@@ -443,17 +454,21 @@
   ">
 
   <ul>
+    <li>Amazon Elastic Block Store (Amazon EBS)</li>
+    <li>Amazon Elastic File System (Amazon EFS)</li>
+    <li>Amazon S3</li>
+    <!--
       <li>AWS Backup</li>
-      <li>Amazon Elastic Block Store (Amazon EBS)</li>
+    
       <li>AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)</li>
-      <li>Amazon Elastic File System (Amazon EFS)</li>
+      
       <li>Amazon FSx for Lustre</li>
       <li>Amazon FSx for NetApp ONTAP</li>
       <li>Amazon FSx for OpenZFS</li>
       <li>Amazon FSx for Windows File Server</li>
-      <li>Amazon S3</li>
+      
       <li>Amazon S3 Glacier</li>
-      <li>AWS Storage Gateway</li>
+      <li>AWS Storage Gateway</li> -->
   </ul>
 </ng-container>
        
@@ -479,9 +494,10 @@
   <li>AWS CodePipeline</li>
   <li>AWS CodeStar</li>
   <li>AWS Command Line Interface (AWS CLI)</li>
-  <!-- <li>AWS Fault Injection Simulator</li> -->
+  <!-- <li>AWS Fault Injection Simulator</li>
+  <li>AWS X-Ray</li> -->
   <li>AWS SDKs and Tools</li>
-  <li>AWS X-Ray</li>
+  
 </ul>
 </ng-container>
         
@@ -531,15 +547,19 @@
   ">
 
   <ul>
-      <!-- <li>Amazon API Gateway</li> -->
-      <li>AWS Client VPN</li>
+      <!-- <li>Amazon API Gateway</li> 
+      <li>AWS Client VPN</li> -->
       <li>Amazon CloudFront</li>
-      <li>Elastic Load Balancing (ELB)</li>
-      <li>AWS PrivateLink</li>
       <li>Amazon Route 53</li>
+      <li>Amazon VPC</li>
+      <li>Amazon VPC Peering</li>
+      <li>Elastic Load Balancing (ELB)</li>
+      <!--
+      <li>AWS PrivateLink</li>
+      
       <li>AWS Site-to-Site VPN</li>
       <li>AWS Transit Gateway</li>
-      <li>Amazon VPC</li>
+      <li>Amazon VPC</li> -->
   </ul>
 </ng-container>
           
@@ -635,7 +655,7 @@
 </ng-container>
        
 <ng-container *ngIf="selectedModule === 'M14'">
-  <h2>Getting Started with Version Control and Source Code Management (VCS/SCM)</h2>
+  <h2>Version Control(VCS) / Source Code Management(SCM) - GIT</h2>
   <hr style="
       position: unset;
       border: none;
@@ -656,8 +676,7 @@
       <li>Merging Branches</li>
       <li>Creating and Committing a Pull Request</li>
       <li>Working with Stash</li>
-      <li>Summary</li>
-  </ul>
+       </ul>
 </ng-container>
        
 <ng-container *ngIf="selectedModule === 'M15'">
@@ -685,7 +704,7 @@
 </ng-container>
          
 <ng-container *ngIf="selectedModule === 'M16'">
-  <h2>Getting Started with SonarQube</h2>
+  <h2>Continuous Static Code Analysis: SonarQube</h2>
   <hr style="
       position: unset;
       border: none;
@@ -712,7 +731,7 @@
 </ng-container>
          
 <ng-container *ngIf="selectedModule === 'M17'">
-  <h2>Getting Started with Continuous Binary Code Repository (JFrog)</h2>
+  <h2>Continuous Binary Code Repository using JFrog</h2>
   <hr style="
       position: unset;
       border: none;
@@ -723,8 +742,7 @@
   ">
 
   <ul>
-      <li>Getting Started with Continuous Binary Code Repository i.e. JFrog</li>
-      <li>JFrog Architecture</li>
+      <li>Getting Started with JFrog</li>
       <li>Download, Installing, and Configuring JFrog</li>
       <li>Integrate JFrog with VCS/SCM i.e. POM.xml</li>
       <li>Integrate JFrog with Maven</li>
@@ -735,7 +753,7 @@
 </ng-container>
        
 <ng-container *ngIf="selectedModule === 'M18'">
-  <h2>Getting Started with Infrastructure as Code (IaC) using Terraform</h2>
+  <h2>Continuous Infrastructure As A Code:Terraform</h2>
   <hr style="
       position: unset;
       border: none;
@@ -762,7 +780,7 @@
 </ng-container>
        
 <ng-container *ngIf="selectedModule === 'M19'">
-  <h2>Getting Started with Packer</h2>
+  <h2>Creating Machine Images : Packer</h2>
   <hr style="
       position: unset;
       border: none;
@@ -812,7 +830,7 @@
   </ul>
 </ng-container>
 <ng-container *ngIf="selectedModule === 'M21'">
-  <h2>Getting Started with Containers and Docker</h2>
+  <h2>Containerisation: Docker</h2>
   <hr style="
       position: unset;
       border: none;
@@ -838,7 +856,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M22'">
-  <h2>Getting Started with Cluster Orchestration and Kubernetes</h2>
+  <h2>Container Orchestration : Kubernetes</h2>
   <hr style="
       position: unset;
       border: none;
@@ -876,7 +894,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M23'">
-  <h2>Getting Started with Observability</h2>
+  <h2>Continuous Monitoring : New Relic</h2>
   <hr style="
       position: unset;
       border: none;
@@ -963,6 +981,52 @@
           <li>A/B testing</li>
           <li>Shadow</li>
       </ul>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M26'">
+  <h2>Build Tool: Apache Maven & Python Pip</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Overview of Build Tools : Maven, Gradle, Ant, Pip</li>
+      <li>Getting Started with Build Tools i.e. Maven</li>
+      <li>Maven Plugins & Repository</li>
+      <li>Understanding the pom.xml & Settings.xml files</li>
+      <li>Build Java Code using Maven Lifecycles</li>
+      <li>Jfrog Integration with pom.xml</li>
+      <li>SonarQube Integration with pom.xml</li>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M27'">
+  <h2>Application Servers - Apache Tomcat</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Overview of Application Servers</li>
+      <li>Getting Started with Apache Tomcat</li>
+      <li>Download, Installing and Configuring Apache Tomcat</li>
+      <li>Enable Tomcat Pages Globally</li>
+      <li>Configure Roles, Users, & Password in Apache Tomcat</li>
+      <li>Deploy Code in Apache Tomcat using GUI</li>
+      <li>Deploy Code in Apache Tomcat using Jenkins Pipeline</li>
       <li>Summary</li>
   </ul>
 </ng-container>
