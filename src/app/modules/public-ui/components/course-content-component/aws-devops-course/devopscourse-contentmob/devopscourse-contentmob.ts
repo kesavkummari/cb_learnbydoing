@@ -30,86 +30,48 @@ export class DevOpsCourseContentMob {
    'Controlling Services & Daemons',
    'Process Management',
    'Log Management',
-   'Web Servers - Windows IIS, Apache2, Nginx & Httpd']
+   'Web Servers - Windows IIS, Apache2, Nginx & Httpd',
+   'Database Servers - MySQL, Mariadb & PostgreSQL']
                               },
                                 
-          {
-  title: 'AWS Services - Analytics',
-  submodules: [
-    'Amazon Athena',
-    'Amazon EMR (Elastic MapReduce)',
-    'Amazon Kinesis Data Firehose',
-    'Amazon Kinesis Data Streams',
-    'Amazon OpenSearch Service',
-    'Amazon QuickSight'
-  ]
-},
 {
   title: 'AWS Services - Application Integration',
   submodules: [
-    'Amazon AppFlow',
-    'Amazon EventBridge (Amazon CloudWatch Events)',
-    
-    
+    'Amazon EventBridge (Amazon CloudWatch Events)' 
   ]
 },
 {
   title: 'AWS Services - Compute',
   submodules: [
-    'AWS App Runner',
     'Amazon EC2',
     'Amazon EC2 Auto Scaling',
-    'EC2 Image Builder',
-    'AWS Elastic Beanstalk',
-    'AWS Serverless Application Repository'
+    'AWS Elastic Beanstalk'
   ]
 },
-{
-  title: 'AWS Services -Containers',
-  submodules: [
-    'AWS App2Containe',
-    'AWS Copilot',
-    'Amazon Elastic Container Registry (Amazon ECR)',
-    'Amazon Elastic Container Service (Amazon ECS)',
-    'Amazon Elastic Kubernetes Service (Amazon EKS)',
-    'Amazon EKS Distro',
-    'AWS Fargate',
-    'Red Hat OpenShift Service on AWS (ROSA)'
-  ]
-},
+
 {
   title: 'AWS Services - Database',
   submodules: [
-    'Amazon Aurora',
-    'Amazon Aurora Serverless v2',
     'AWS Database Migration Service (AWS DMS)',
-    'Amazon DocumentDB (with MongoDB compatibility)',
     'Amazon DynamoDB',
-    'Amazon ElastiCache',
-    'Amazon MemoryDB for Redis',
     'Amazon RDS',
     'Amazon Redshift'
   ]
 },
+
 {
   title: 'AWS Services - Storage',
   submodules: [
-    'AWS Backup',
+
     'Amazon Elastic Block Store (Amazon EBS)',
-    'AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)',
     'Amazon Elastic File System (Amazon EFS)',
-    'Amazon FSx for Lustre',
-    'Amazon FSx for NetApp ONTAP',
-    'Amazon FSx for OpenZFS',
-    'Amazon S3',
-    'Amazon S3 Glacier',
-    'AWS Storage Gateway'
+    'Amazon S3'
   ]
 },
+
 {
   title: 'AWS Services - Developer Tools',
   submodules: [
-    'AWS CLI',
     'AWS Cloud Development Kit (AWS CDK)',
     'AWS CloudShell',
     'AWS CodeArtifact',
@@ -118,85 +80,60 @@ export class DevOpsCourseContentMob {
     'AWS CodeDeploy',
     'AWS CodePipeline',
     'AWS CodeStar',
-    'AWS Fault Injection Simulator',
-    'AWS SDKs and Tools',
-    'AWS X-Ray'
-    
-
+    'AWS Command Line Interface (AWS CLI)',
+    'AWS SDKs and Tools'
   ]
 },
 
-{
+          {
+            title: 'AWS Services - Serverless',
+            submodules: ['AWS Lambda',
+'Amazon API Gateway',
+'AWS Step Functions',
+'Amazon Simple Email Service (SES)',
+'Amazon Simple Notification Service (Amazon SNS)'
+]
+          },
+
+          {
   title: 'AWS Services - Management & Governance',
   submodules: [
     'AWS Auto Scaling',
-    'AWS CloudFormation',
     'AWS CloudTrail',
     'Amazon CloudWatch',
     'Amazon CloudWatch Logs',
     'AWS Compute Optimizer',
-    'AWS Config',
-    'AWS Control Tower',
-    'AWS Health Dashboard',
-    'AWS License Manager',
-    'Amazon Managed Grafana',
-    'Amazon Managed Service for Prometheus',
-    'AWS OpsWorks',
+    'AWS Health',
     'AWS Organizations',
     'AWS Personal Health Dashboard',
     'AWS Systems Manager',
-    'AWS Trusted Advisor',
-    'AWS Proton',
-    'AWS Resilience Hub',
-    'AWS Service Catalog'
-    
-    
+    'AWS Trusted Advisor'   
   ]
 },
-
 
 {
   title: 'AWS Services - Networking and Content Delivery',
   submodules: [
-    'Amazon API Gateway',
-    'AWS Client VPN',
     'Amazon CloudFront',
-    'Elastic Load Balancing (ELB)',
-    'AWS PrivateLink',
     'Amazon Route 53',
-    'AWS Site-to-Site VPN',
     'Amazon VPC',
-    'Amazon VPC Peering'
+    'Amazon VPC Peering',
+    'Elastic Load Balancing (ELB)'
   ]
 },
+
 {
   title: 'AWS Services - Security, Identity, and Compliance ',
   submodules: [
-    'AWS Certificate Manager (ACM)',
-    'AWS CloudHSM',
-    'Amazon Cognito',
-    'Amazon Detective',
-    'AWS Directory Service',
-    'Amazon GuardDuty', 
+    'AWS Certificate Manager (ACM)', 
     'AWS Identity and Access Management (IAM)', 
-    'Amazon Inspector',
-    'AWS Key Management Service (AWS KMS)', 
-    'Amazon Macie', 'AWS Network Firewall',
-      'AWS Secrets Manager', 'AWS Security Hub', 
-      'AWS Security Token Service (AWS STS)',
-       'AWS Shield', 'AWS Single Sign-On',
-       'AWS WAF'
+    'AWS Single Sign-On',
+    'AWS Key Management Service (AWS KMS)',
+    'AWS Secrets Manager',
+    'AWS Security Token Service (AWS STS)'
+
   ]
 },
-          {
-            title: 'AWS Services - Serverless',
-            submodules: ['AWS Lambda',
-'AWS Serverless Application Model (AWS SAM)',
-'Amazon Simple Email Service (SES)',
-'Amazon Simple Notification Service (Amazon SNS)',
-'Amazon Simple Queue Service (Amazon SQS)',
-'AWS Step Functions']
-          },
            {
             title: 'Software Development Life Cycle : Agile - Scrum',
             submodules: ['Getting Started with SDLC',
@@ -219,6 +156,34 @@ export class DevOpsCourseContentMob {
  '- Create a Task',
 'Summary']
           },
+
+          {
+  title: 'Build Tool: Apache Maven & Python Pip',
+  submodules: [
+'Overview of Build Tools : Maven, Gradle, Ant, Pip',
+'Getting Started with Build Tools i.e. Maven',
+'Maven Lifecycles & Phases',
+'Maven Plugins & Repository',
+'Understanding the pom.xml & Settings.xml files',
+'Build Java Code using Maven Lifecycles',
+'Jfrog Integration with pom.xml',
+'SonarQube Integration with pom.xml',
+'Summary']
+},
+
+          {
+  title: 'Application Servers - Apache Tomcat',
+  submodules: [
+'Overview of Application Servers',
+'Getting Started with Apache Tomcat',
+'Download, Installing and Configuring Apache Tomcat',
+'Enable Tomcat Pages Globally',
+'Configure Roles, Users, & Password in Apache Tomcat',
+'Deploy Code in Apache Tomcat using GUI',
+'Deploy Code in Apache Tomcat using Jenkins Pipeline',
+'Summary']
+},
+
           // Module 2
           {
             title: 'Version Control System / Source Code Management: Git',
@@ -226,13 +191,12 @@ export class DevOpsCourseContentMob {
   'What is Git, AWS CodeCommit and GitHub?',
   'About Version Control System and types',
   'Git Workflow',
-  'Installing Git on Windows & Linux',
+  'Installing on Windows & Linux',
   'Getting Started with Git Commands',
   'Working with Branches',
   'Merging Branches',
   'Creating and Committing a Pull Request',
-  'Working with Stash',
-  'Summary']
+  'Working with Stash']
           },
           // Module 3
           {
@@ -244,8 +208,7 @@ export class DevOpsCourseContentMob {
                           'Jenkins Management',
                           'Installing Jenkins Plugins',
                           'Creating Jenkins Jobs',
-                          'Creating Jenkins Declarative & Scripted Pipelines',
-                          'End To End Java Project CI/CD Pipeline',
+                          'Creating Jenkins Pipeline Jobs',
                           'Summary']
           },
           // Module 4
@@ -265,9 +228,7 @@ export class DevOpsCourseContentMob {
           // Module 5
           {
             title: 'Continuous Binary Code Repository using JFrog',
-            submodules: ['Getting Started with Continuous Binary Code',
-                      'Repository i.e. JFrog',
-                      'JFrog Architecture',
+            submodules: ['Getting Started',
                       'Download, Installing, and Configuring JFrog',
                       'Integrate JFrog with VCS/SCM i.e. POM.xml',
                       'Integrate JFrog with Maven',
@@ -322,7 +283,8 @@ export class DevOpsCourseContentMob {
           // Module 7
           {
             title: 'Containerisation : Docker',
-            submodules: ['What is a Container? ',
+            submodules: ['Getting Started with Containers',
+                      'What is a Container? ',
                       'List of Container Vendors',
                       'Getting Started with Docker',
                       'Docker Product',
@@ -354,14 +316,19 @@ export class DevOpsCourseContentMob {
           },
           // Module 9
           {
-            title: 'Continuous Monitoring : New Relic & Nagios',
+            title: 'Continuous Monitoring : New Relic',
             submodules: ['Getting Started with Observability',
                                       'What is Observability/Monitoring?',
                                       'Types of Continuous Monitoring:',
                                       'Application Monitoring',
                                       'Infrastructure Monitoring',
+                                      'Kubernetes Monitoring',
                                       'Log Management',
+                                      'Errors inbox',
+                                      'Browser Monitoring',
+                                      'Mobile Monitoring',
                                       'Synthetics Monitoring',
+                                      'Network Monitoring',
                                       'List of Continuous Monitoring Tools',
                                       'Configure Jobs',
                                       'Ping Monitoring in New Relic',
@@ -369,29 +336,6 @@ export class DevOpsCourseContentMob {
                                       'Scripted Monitoring in New Relic',
                                       'Summary']
                                               },
-      
-          
-         
-           {
-             title: 'Migration Strategies',
-             submodules: ['What is Migration?',
-                     'Different Types Of Migration Strategies:',
-                    'Rehosting, Replatforming',
-                    'Repurchasing, Refactoring, Retiring & Retaining',
-                    'Summary']
-                             },
-            {
-            title: 'Deployment Strategies',
-             submodules: ['What is Deployment?',
-                 'Different Types of Deployment Strategies:',
-                 'Recreate Deployment',
-                'Ramped Deployment',
-                'Blue/Green Deployment',
-                 'Canary Deployment',
-                 'A/B Testing Deployment',
-                 'Shadow Deployment',
-                 'Summary']
-           },
 
        ]
        }
