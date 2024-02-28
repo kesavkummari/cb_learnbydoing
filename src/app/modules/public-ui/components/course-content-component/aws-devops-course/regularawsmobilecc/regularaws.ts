@@ -578,7 +578,7 @@ export class RegularAWSCourseContent {
   }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(RegulardownloadformComponent, {
+    const dialogRef = this.dialog.open(DeveopsdownloadformComponent, {
       data: { /* optional data to pass to the dialog component */ },
       disableClose: true // Prevent closing on backdrop click
     });
