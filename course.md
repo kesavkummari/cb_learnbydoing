@@ -1,0 +1,55 @@
+
+Thank you so much for reaching out to us for skilling on AWS DevOps.
+
+Here are the details of our AWS DevOps Programs:
+
+1. AWS DevOps Regular
+- Fee: 17,999/-
+- Duration: 2 Months
+- OS Module
+- AWS
+- DevOps 
+- Topic-wise Quiz
+- Mock Interviews
+- 6+ Projects
+- Only Online
+- Resume Grooming Session
+- Naukri & LinkedIn Account Creation & Optimization
+- Placement Assistance
+- Recruitment and Hiring Details Shared
+- Daily 1 Hours Session
+
+
+2. AWS DevOps (Job Ready Program)
+- Fee: 49,999/-
+- Duration: 4 Months
+- OS Module
+- Shell Scripting
+- Python
+- AWS
+- DevOps 
+- Free 6 Months Internship
+- Free AWS Cloud Practitioner Certification Exam Voucher
+- Topic-wise Quiz
+- Mock Interviews
+- 9+ Projects
+- Resume Grooming Session
+- Naukri & LinkedIn Account Creation & Optimisation
+- Placement Assistance
+- Recruitment and Hiring Details Shared
+- Daily 1 Hours Session
+
+DAY-1 Session Zoom Link: When: Feb 29, 2024 09:30 AM IST 
+https://us02web.zoom.us/meeting/register/tZAtdeGtpjMtE9zZUNSUtBB7dhN86fGBREF6 
+
+AWS DevOps CI/CD Pipeline Demo Video:
+https://drive.google.com/file/d/11BQriAM6QnPzwUOjhtCmW-gUtL8EVgfb/view?usp=sharing
+
+Cloud Binary Website:
+https://www.cloudbinary.io/
+
+Trainer Website:
+https://kesavkummari.com/
+
+Cloud Binary Contact Numbers:
+Mobile: +91 9100073006 | +91 6309872424 | +91 9392743006 | +91 9392753006
