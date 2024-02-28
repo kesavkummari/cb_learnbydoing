@@ -46,38 +46,41 @@ export class DeveopsdownloadformComponent {
     this.loading = true;
     // disable submit button
     this.elementRef.nativeElement.querySelector('button').setAttribute('disabled', true);
-
+  
     if (this.registrationForm.valid) {
       // Insert form data into API
       this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
         console.log(res);
-
-        // Download the first PDF
-        this.http
-          .get('https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps_Regular_CloudBinary_20240125.pdf', {
-            responseType: 'blob'
-          })
-          .subscribe((response: Blob) => {
-            saveAs(response, 'CB DevOps CourseCurriculum.pdf');
-
-            // Download the second PDF
-            this.http
-              .get('https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps_Regular_CloudBinary_20240125.pdf', { responseType: 'blob' })
-              .subscribe((secondResponse: Blob) => {
-                saveAs(secondResponse, 'CB Regular Course.pdf');
-
-                // Reset loading state and show success message
-                this.loading = false;
-                this.snackBar.open('Form submitted successfully!', 'Close', {
-                  duration: 5000
-                });
-
-                // Close the dialog and navigate to the thank-you page
-                this.dialogRef.close();
-                this.router.navigate(['/thank-you']);
-              });
+  
+        // Get the selected course interest
+        const selectedCourseInterest = this.registrationForm.get('courseInterest')?.value;
+  
+        // Define the default URL for cases where selectedCourseInterest is not 'Job Ready' or 'Regular'
+        let pdfUrl: string = '';
+  
+        // Assign URLs based on the course interest
+        if (selectedCourseInterest === 'Job Ready') {
+          pdfUrl = 'https://8amcloudbinary.s3.amazonaws.com/Job_Ready_With_Internship_Program_CloudBinary_20240228.pdf'; // Replace with the actual URL for Job Ready PDF
+        } else if (selectedCourseInterest === 'Regular') {
+          pdfUrl = 'https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps_Regular_20240225_20240228.pdf'; // Replace with the actual URL for Regular PDF
+        }
+  
+        // Download the selected PDF
+        this.http.get(pdfUrl, { responseType: 'blob' }).subscribe((response: Blob) => {
+          const fileName = selectedCourseInterest === 'Job Ready' ? 'JobReadyCourse.pdf' : 'RegularCourse.pdf';
+          saveAs(response, fileName);
+  
+          // Reset loading state and show success message
+          this.loading = false;
+          this.snackBar.open('Form submitted successfully!', 'Close', {
+            duration: 5000
           });
+  
+          // Close the dialog and navigate to the thank-you page
+          this.dialogRef.close();
+          this.router.navigate(['/thank-you']);
+        });
       });
     }
   }
-}
+}  
