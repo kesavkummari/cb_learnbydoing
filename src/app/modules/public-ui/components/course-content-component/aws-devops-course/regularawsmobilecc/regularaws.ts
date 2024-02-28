@@ -31,7 +31,9 @@ export class RegularAWSCourseContent {
    'Controlling Services & Daemons',
    'Process Management',
    'Log Management',
-   'Web Servers - Windows IIS, Apache2, Nginx & Httpd']
+   'Web Servers - Windows IIS, Apache2, Nginx & Httpd',
+   'Database Servers - MySQL, Mariadb & PostgreSQL'
+   ]
                               },
                               {
                                 title: 'Shell Scripting',
@@ -151,21 +153,21 @@ export class RegularAWSCourseContent {
                         ]
                     },
                                 
-//           {
-//   title: 'AWS Services - Analytics',
-//   submodules: [
-//     'Amazon Athena',
-//     'Amazon EMR (Elastic MapReduce)',
-//     'Amazon Kinesis Data Firehose',
-//     'Amazon Kinesis Data Streams',
-//     'Amazon OpenSearch Service',
-//     'Amazon QuickSight'
-//   ]
-// },
+           {
+   title: 'AWS Services - Analytics',
+   submodules: [
+     'Amazon Athena',
+     'Amazon EMR (Elastic MapReduce)',
+     'Amazon Kinesis Data Firehose',
+     'Amazon Kinesis Data Streams',
+     'Amazon OpenSearch Service',
+     'Amazon QuickSight'
+   ]
+ },
 {
   title: 'AWS Services - Application Integration',
   submodules: [
-    // 'Amazon AppFlow',
+    'Amazon AppFlow',
     'Amazon EventBridge (Amazon CloudWatch Events)',
     
     
@@ -174,37 +176,37 @@ export class RegularAWSCourseContent {
 {
   title: 'AWS Services - Compute',
   submodules: [
-    // 'AWS App Runner',
+     'AWS App Runner',
     'Amazon EC2',
     'Amazon EC2 Auto Scaling',
-    // 'EC2 Image Builder',
+    'EC2 Image Builder',
     'AWS Elastic Beanstalk',
-    // 'AWS Serverless Application Repository'
+    'AWS Serverless Application Repository'
   ]
 },
-// {
-//   title: 'AWS Services -Containers',
-//   submodules: [
-//     'AWS App2Containe',
-//     'AWS Copilot',
-//     'Amazon Elastic Container Registry (Amazon ECR)',
-//     'Amazon Elastic Container Service (Amazon ECS)',
-//     'Amazon Elastic Kubernetes Service (Amazon EKS)',
-//     'Amazon EKS Distro',
-//     'AWS Fargate',
-//     'Red Hat OpenShift Service on AWS (ROSA)'
-//   ]
-// },
+  {
+   title: 'AWS Services -Containers',
+   submodules: [
+     'AWS App2Containe',
+     'AWS Copilot',
+     'Amazon Elastic Container Registry (Amazon ECR)',
+     'Amazon Elastic Container Service (Amazon ECS)',
+     'Amazon Elastic Kubernetes Service (Amazon EKS)',
+     'Amazon EKS Distro',
+     'AWS Fargate',
+     'Red Hat OpenShift Service on AWS (ROSA)'
+   ]
+ },
 {
   title: 'AWS Services - Database',
   submodules: [
-    // 'Amazon Aurora',
-    // 'Amazon Aurora Serverless v2',
+    'Amazon Aurora',
+    'Amazon Aurora Serverless v2',
     'AWS Database Migration Service (AWS DMS)',
-    // 'Amazon DocumentDB (with MongoDB compatibility)',
+    'Amazon DocumentDB (with MongoDB compatibility)',
     'Amazon DynamoDB',
-    // 'Amazon ElastiCache',
-    // 'Amazon MemoryDB for Redis',
+    'Amazon ElastiCache',
+    'Amazon MemoryDB for Redis',
     'Amazon RDS',
     'Amazon Redshift'
   ]
@@ -212,31 +214,33 @@ export class RegularAWSCourseContent {
 {
   title: 'AWS Services - Storage',
   submodules: [
-    // 'AWS Backup',
+    'AWS Backup',
     'Amazon Elastic Block Store (Amazon EBS)',
-    // 'AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)',
+    'AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)',
     'Amazon Elastic File System (Amazon EFS)',
-    // 'Amazon FSx for Lustre',
-    // 'Amazon FSx for NetApp ONTAP',
-    // 'Amazon FSx for OpenZFS',
-    'Amazon S3'
-    // 'Amazon S3 Glacier',
-    // 'AWS Storage Gateway'
+    'Amazon FSx for Lustre',
+    'Amazon FSx for NetApp ONTAP',
+    'Amazon FSx for OpenZFS',
+    'Amazon S3',
+    'Amazon FSx for Windows File Server',
+    'Amazon S3 Glacier',
+    'AWS Storage Gateway'
   ]
 },
 {
   title: 'AWS Services - Developer Tools',
   submodules: [
-    'AWS CLI',
     'AWS Cloud Development Kit (AWS CDK)',
     'AWS CloudShell',
     'AWS CodeArtifact',
     'AWS CodeBuild',
     'AWS CodeCommit',
     'AWS CodeDeploy',
+    'Amazon CodeGuru',
     'AWS CodePipeline',
     'AWS CodeStar',
-    // 'AWS Fault Injection Simulator',
+    'AWS Command Line Interface (AWS CLI)',
+    'AWS Fault Injection Simulator',
     'AWS SDKs and Tools',
     'AWS X-Ray'
     
@@ -248,25 +252,25 @@ export class RegularAWSCourseContent {
   title: 'AWS Services - Management & Governance',
   submodules: [
     'AWS Auto Scaling',
-    // 'AWS CloudFormation',
+    'AWS CloudFormation',
     'AWS CloudTrail',
     'Amazon CloudWatch',
     'Amazon CloudWatch Logs',
     'AWS Compute Optimizer',
-    // 'AWS Config',
-    // 'AWS Control Tower',
+    'AWS Config',
+    'AWS Control Tower',
     'AWS Health',
-    // 'AWS License Manager',
-    // 'Amazon Managed Grafana',
-    // 'Amazon Managed Service for Prometheus',
-    // 'AWS OpsWorks',
+    'AWS License Manager',
+    'Amazon Managed Grafana',
+    'Amazon Managed Service for Prometheus',
+    'AWS OpsWorks',
     'AWS Organizations',
     'AWS Personal Health Dashboard',
+    'AWS Proton',
+    'AWS Resilience Hub',
+    'AWS Service Catalog',
     'AWS Systems Manager',
     'AWS Trusted Advisor'
-    // 'AWS Proton',
-    // 'AWS Resilience Hub',
-    // 'AWS Service Catalog'
     
     
   ]
@@ -276,46 +280,47 @@ export class RegularAWSCourseContent {
 {
   title: 'AWS Services - Networking and Content Delivery',
   submodules: [
-    // 'Amazon API Gateway',
-    // 'AWS Client VPN',
+    'Amazon API Gateway',
+    'AWS Client VPN',
     'Amazon CloudFront',
     'Elastic Load Balancing (ELB)',
-    // 'AWS PrivateLink',
+    'AWS PrivateLink',
     'Amazon Route 53',
-    // 'AWS Site-to-Site VPN',
-    'Amazon VPC',
-    'Amazon VPC Peering'
+    'AWS Site-to-Site VPN',
+    'AWS Transit Gateway',
+    'Amazon VPC'
   ]
 },
 {
   title: 'AWS Services - Security, Identity, and Compliance ',
   submodules: [
     'AWS Certificate Manager (ACM)',
-    // 'AWS CloudHSM',
-    // 'Amazon Cognito',
-    // 'Amazon Detective',
-    // 'AWS Directory Service',
-    // 'Amazon GuardDuty', 
-    'AWS Identity and Access Management (IAM)', 
+    'AWS CloudHSM',
+    'Amazon Cognito',
+    'Amazon Detective',
+    'AWS Directory Service',
+    'Amazon GuardDuty', 
+    'AWS Identity and Access Management (IAM)',
+    'Amazon Inspector',
+    'AWS Key Management Service (AWS KMS)',  
+    'Amazon Macie', 
+    'AWS Network Firewall',
+    'AWS Resource Access Manager (AWS RAM)',
+    'AWS Secrets Manager', 
+    'AWS Security Hub', 
+    'AWS Security Token Service (AWS STS)',
+    'AWS Shield', 
     'AWS Single Sign-On',
-    // 'Amazon Inspector',
-    'AWS Key Management Service (AWS KMS)', 
-    // 'Amazon Macie', 'AWS Network Firewall',
-      'AWS Secrets Manager', 
-    // 'AWS Security Hub', 
-      'AWS Security Token Service (AWS STS)'
-      //  'AWS Shield', 
-      //  'AWS WAF'
+    'AWS WAF'
   ]
 },
           {
             title: 'AWS Services - Serverless',
             submodules: ['AWS Lambda',
-            'Amazon API Gateway',
-// 'AWS Serverless Application Model (AWS SAM)',
+'AWS Serverless Application Model (AWS SAM)',
 'Amazon Simple Email Service (SES)',
 'Amazon Simple Notification Service (Amazon SNS)',
-// 'Amazon Simple Queue Service (Amazon SQS)',
+'Amazon Simple Queue Service (Amazon SQS)',
 'AWS Step Functions']
           },
            {
@@ -340,7 +345,21 @@ export class RegularAWSCourseContent {
  '- Create a Task',
 'Summary']
           },
-          // Module 2
+
+{
+            title: ' Build Tool: Apache Maven & Python Pip',
+            submodules: ['Overview of Build Tools : Maven, Gradle, Ant,Pip',
+  'Getting Started with Build Tools i.e. Maven',
+  'Maven Lifecycles & Phases',
+  'Maven Plugins & Repository',
+  'Understanding the pom.xml & Settings.xml files',
+  'Build Java Code using Maven Lifecycles',
+  'Working with Branches',
+  'Jfrog Integration with pom.xml',
+  'SonarQube Integration with pom.xml',
+  'Summary']
+          },
+       
           {
             title: 'Version Control System / Source Code Management: Git',
             submodules: ['Getting Started with VCS/SCM',
@@ -370,6 +389,17 @@ export class RegularAWSCourseContent {
                           'Summary']
           },
           // Module 4
+    {
+            title: 'Application Servers - Apache Tomcat',
+            submodules: ['Overview of Application Servers',
+                          'Getting Started with Apache Tomcat',
+                          'Download, Installing and Configuring Apache Tomcat',
+                          'Enable Tomcat Pages Globally',
+                          'Configure Roles, Users, & Password in Apache Tomcat',
+                          'Deploy Code in Apache Tomcat using GUI',
+                          'Deploy Code in Apache Tomcat using Jenkins Pipeline',
+                          'Summary']
+          },
           {
             title: 'Continuous Static Code Analysis : SonarQube',
             submodules: ['Getting Started with SonarQube',
@@ -481,41 +511,52 @@ export class RegularAWSCourseContent {
                                       'Types of Continuous Monitoring:',
                                       'Application Monitoring',
                                       'Infrastructure Monitoring',
+                                      'Kubernetes Monitoring',
                                       'Log Management',
+                                      'Errors inbox',
                                       'Synthetics Monitoring',
+                                      'Browser Monitoring',
+                                      'Mobile Monitoring',
+                                      'Network Monitoring',
                                       'List of Continuous Monitoring Tools',
                                       'Configure Jobs',
                                       'Ping Monitoring in New Relic',
                                       'Simple Browser Monitoring in New Relic',
                                       'Scripted Monitoring in New Relic',
+                                      'Getting Started with APM in NewRelic',
+                                      'Configure APM in NewRelic',
+                                      'Configure Infrastructure in NewRelic',
+                                      'Creating Dashboard in NewRelic',
                                       'Summary']
                                               },
-      
-          
-         
-          //  {
-          //    title: 'Migration Strategies',
-          //    submodules: ['What is Migration?',
-          //            'Different Types Of Migration Strategies:',
-          //           'Rehosting, Replatforming',
-          //           'Repurchasing, Refactoring, Retiring & Retaining',
-          //           'Summary']
-          //                    },
-          //   {
-          //   title: 'Deployment Strategies',
-          //    submodules: ['What is Deployment?',
-          //        'Different Types of Deployment Strategies:',
-          //        'Recreate Deployment',
-          //       'Ramped Deployment',
-          //       'Blue/Green Deployment',
-          //        'Canary Deployment',
-          //        'A/B Testing Deployment',
-          //        'Shadow Deployment',
-          //        'Summary']
-          //  },
+           {
+              title: 'Migration Strategies',
+              submodules: ['What is Migration?',
+                      'Different Types Of Migration Strategies:',
+                     'Rehosting', 
+                     'Replatforming',
+                     'Repurchasing', 
+                     'Refactoring', 
+                     'Retiring', 
+                     'Retaining',
+                     'Summary']
+                              },
+             {
+             title: 'Deployment Strategies',
+              submodules: ['What is Deployment?',
+                  'Different Types of Deployment Strategies:',
+                  'Recreate Deployment',
+                 'Ramped Deployment',
+                 'Blue/Green Deployment',
+                  'Canary Deployment',
+                  'A/B Testing Deployment',
+                 'Shadow Deployment',
+                  'Summary']
+            },
 
        ]
        }
+
     // You can add more courses here if needed
   ];
 
