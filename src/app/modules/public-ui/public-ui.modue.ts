@@ -62,6 +62,7 @@ import { DevopsDownloadComponent } from './components/course-content-component/a
 import { JobReadyComponent } from './Pages/job-ready/jobready.component';
 import { RegularFeeStructureComponent } from './components/fee-structure/regular-fee/fee.structure.component';
 import { JobReadyFeeComponent } from './components/fee-structure/job-ready-fee/job.ready.component';
+import { HomePageNewComponent } from './components/home-page-new/page1';
 
 
 @NgModule({
@@ -78,7 +79,8 @@ import { JobReadyFeeComponent } from './components/fee-structure/job-ready-fee/j
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
      CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
-     DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, RegularAWSCourseContent, RegulardownloadformComponent],
+     DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, 
+     RegularAWSCourseContent, RegulardownloadformComponent,HomePageNewComponent],
   imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
 })

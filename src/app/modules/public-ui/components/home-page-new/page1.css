@@ -1,0 +1,154 @@
+
+/* Style for the main container */
+.container-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 20px;
+}
+
+/* Style for each individual container */
+.container {
+    flex: 1;
+    padding: 20px;
+   
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #172342;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #172342;
+}
+/* Additional styles for the form in Container 3 */
+/* Additional styles for the form in Container 3 */
+.container form {
+width: 100%;
+max-width: 400px;
+border: 2px solid #ccc;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+/* height: 58vh; */
+align-items: stretch;
+}
+h2{
+    font-weight: 900;
+    font-size: xx-large;
+}
+h6{
+    font-weight: 700;
+    font-size: larger;
+}
+/* Style for form labels */
+.container form label {
+font-weight: bold;
+text-align: left !important; /* Align labels to the left side */
+margin-bottom: 5px;
+display: block; /* Ensure labels are on a new line */
+}
+
+/* Style for form inputs */
+.container form input,
+.container form select {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+/* Style for form submit button */
+
+
+.button-container {
+display: flex;
+/* gap: 21px; */
+padding-top: 20px;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+@media (max-width: 600px) {
+.samplespace{
+height: 55px !important;
+}
+.button{
+padding: 6px 35px !important;
+}
+
+.button-container {
+/* display: flex; */
+/* gap: 21px; */
+/* padding-top: 20px; */
+flex-direction: row;
+display: flex;
+flex-wrap: nowrap;
+/* justify-content: center; */
+} }
+
+.button {
+padding: 20px 35px;
+background-color:  #172342;
+color: white;
+border: none;
+cursor: pointer;
+border-radius: 26px;
+text-decoration: none; /* Remove underlines from anchor tags */
+display: inline-block; /* Add this to anchor tags to make them behave like buttons */
+transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Add smooth transitions */
+font-family: 'Quicksand', sans-serif;
+font-weight: bold;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); /* Add a box shadow */
+/* text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow on hover */
+}
+
+.button:hover {
+/* Change color on hover */
+transform: scale(0.9); /* Increase button size on hover */
+color: white;
+box-shadow: none; /* Remove box shadow on hover */
+
+}
+
+@media (max-width: 600px) {
+    .container-row {
+        display: contents; /* Set display to contents for mobile view */
+    }
+
+    /* You can add additional styles for labels and inputs if needed */
+}
+#phone {
+    padding: 10px !important; /* Set padding to none */
+}
