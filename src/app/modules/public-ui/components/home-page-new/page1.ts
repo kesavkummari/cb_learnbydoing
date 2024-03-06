@@ -23,7 +23,8 @@ export class HomePageNewComponent {
 const phone = this.myForm!.get('phone')!.value;
 
 
-    const message = `Hi, I have visited your website and I am excited to know about AWS & DevOps Course Details. Could you please help me?\nName: ${name}\nPhone: ${phone}`;
+    const message = `Hi, I have visited your website and I am excited to know about AWS & DevOps Course Details.`;
+    // const message = `Hi, I have visited your website and I am excited to know about AWS & DevOps Course Details. Could you please help me?\nName: ${name}\nPhone: ${phone}`;
     const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
 
     window.location.href = whatsappURL;
