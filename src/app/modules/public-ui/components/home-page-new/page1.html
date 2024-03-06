@@ -37,31 +37,31 @@ background: url('assets/hybrid-learning/bg3.png') center center / cover no-repea
               </div>
         </div>
 
-        <!-- Container 3 with Form -->
         <div class="container">
-          <div>
-            <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-                <div>
-                <h2>
-                    Just One Step Away!</h2>
-                    <h6>Register Us!</h6>  </div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+            <div>
+                <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                    <div>
+                        <h2>Just One Step Away!</h2>
+                        <h6>Register Us!</h6>
+                    </div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" formControlName="name" required>
 
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" required>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" formControlName="phone" required>
 
-                <label for="option">Looking for</label>
-                <select id="option" name="option">
-                    <option value="option1">AWS DevOps - Regular</option>
-                    <option value="option2">Job Ready</option>
-                    <option value="option3">Other</option>
-                </select>
+                    <label for="option">Looking for</label>
+                    <select id="option" formControlName="option">
+                        <option value="AWS- DevOps Regular">AWS DevOps - Regular</option>
+                        <option value="AWS- DevOps Job Ready">Job Ready</option>
+                        <option value="Other">Other</option>
+                    </select>
 
-              
-<div >
-                <button style="align-items: center;" type="submit">Submit</button> </div>
-            </form></div>
+                    <div>
+                        <button style="align-items: center;" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
     </div>
