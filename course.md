@@ -39,8 +39,8 @@ Here are the details of our AWS DevOps Programs:
 - Recruitment and Hiring Details Shared
 - Daily 1 Hours Session
 
-DAY-1 Session Zoom Link: When: March 7th & 8th, 2024 10:30 AM IST 
-https://us02web.zoom.us/meeting/register/tZ0pdOiopjwqE9MpQD-hcmdPNXj-L5Ph2Qxp 
+DAY-1 Session Zoom Link: When: March 11th, 2024 10:30 AM IST 
+https://us02web.zoom.us/meeting/register/tZ0ldO2srz4tG9SJmI3Okf2rHLAtlfG99a6X
 
 AWS DevOps CI/CD Pipeline Demo Video:
 https://drive.google.com/file/d/11BQriAM6QnPzwUOjhtCmW-gUtL8EVgfb/view?usp=sharing
