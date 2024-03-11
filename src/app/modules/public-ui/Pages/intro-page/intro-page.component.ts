@@ -5,20 +5,15 @@ import { Component, HostListener } from '@angular/core';
   templateUrl: './intro-page.component.html',
   styleUrls: ['intro-page.component.css']
 })
-export class IntroPageComponent { 
-  public isPopupOpen: boolean = false; // Start with popup closed initially
+export class IntroPageComponent {
+  public isPopupOpen: boolean = true; // Start with popup open initially
+  private hasScrolled: boolean = false;
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event): void {
-    // You can adjust the scroll position at which you want to open the popup
-    const scrollPosition = window.scrollY;
-    const triggerScrollPosition = 200; // Adjust this value as needed
-
-    // Check if the scroll position is beyond the trigger point
-    if (scrollPosition > triggerScrollPosition) {
-      this.isPopupOpen = true;
-    } else {
-      this.isPopupOpen = false;
+    if (!this.hasScrolled) {
+      this.hasScrolled = true; // Mark that the user has scrolled once
+      this.isPopupOpen = false; // Close the popup after the first scroll
     }
   }
 }
