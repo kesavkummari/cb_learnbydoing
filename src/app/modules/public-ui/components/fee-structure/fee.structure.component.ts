@@ -8,7 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls:['./fee.structure.component.css']
 })
 export class FeeStructureComponent {
-  selectedBatch: string = 'jobReady';
+  selectedBatch: string = 'regular';
   constructor(public dialog: MatDialog) { }
   openDialog(): void {
     const dialogRef = this.dialog.open(DeveopsdownloadformComponent, {

@@ -1,6 +1,7 @@
 
 /* Style for the main container */
 .container-row {
+    margin-top: 55px !important;
     display: flex;
     justify-content: space-around;
     align-items: stretch;
