@@ -82,9 +82,10 @@ background-color: orange;
 color: #fff;
 text-align: center;
 text-decoration: none;
-border-radius: 8px;
+border-radius: 30px;
 cursor: pointer;
 transition: background-color 0.3s ease;
+font-weight: 800;
 }
 
 .enroll-button:hover {
