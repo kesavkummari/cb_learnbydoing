@@ -19,6 +19,24 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-WDC9D8TC');</script>  -->
   <!-- End Google Tag Manager -->
+
+  <style>
+    .info-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .info-item {
+        width: 30%;
+        margin: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+</style>
+
   </head>
 <!-- Google Tag Manager (noscript) 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDC9D8TC"
@@ -43,9 +61,26 @@
 </div>
 <br>
 
-<div style="padding-left: 10px;">
-  <button class="awscoursebtn" (click)="scrollToTrendingCourses()">Course Content</button>
+<div class="info-container">
+  <div class="info-item" id="google_review">
+      <h2>Google Reviews</h2>
+      <p>4.7 out of 5 stars</p>
+  </div>
+
+  <div class="info-item" id="total_students">
+      <h2>Total Students Enrolled</h2>
+      <p>630+</p>
+  </div>
+
+  <div class="info-item" id="course_duration">
+      <h2>Course Duration</h2>
+      <p>2 months</p>
+  </div>
 </div>
+
+<!-- <div style="padding-left: 10px;">
+  <button class="awscoursebtn" (click)="scrollToTrendingCourses()">Course Content</button>
+</div> -->
     </div>
 
   
