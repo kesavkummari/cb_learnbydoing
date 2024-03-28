@@ -277,3 +277,50 @@ button[type="submit"]:disabled {
   padding: 20px; /* Add padding to create space between the border and form content */
   border-radius: 8px; /* Optional: Add border-radius for rounded corners */
 }
+
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* Add relative positioning */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+/* Add a border to the right side of the first two items */
+.info-item:nth-child(-n+2)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -5px; /* Adjust this value to control the border thickness */
+  height: 100%;
+  width: 1px;
+  background-color: #ccc;
+}
+
+/* Adjust margin to create space between items */
+.info-item:not(:last-child) {
+  margin-right: 20px; /* Increase margin-right to create space between items */
+}
+
+/* Set the size of the images */
+.info-item img {
+  width: 64px; /* Increase the width to make the icons larger */
+  height: 64px; /* Increase the height to make the icons larger */
+  margin-right: 10px; /* Add some space between the image and text */
+}
+
+/* Style the heading */
+.info-item h2 {
+  margin: 0; /* Reset margin */
+  font-weight: 700;
+}
