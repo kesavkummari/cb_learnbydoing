@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Event Bridge</title>
+
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Light Grey Color */
+        }
+        
+                header {
+                    max-width: 1500px;
+                    color: #fff;
+                    padding: 20px;
+                    background-color: #6495ED;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    text-align: center; /* Center content horizontally */
+                }
+        
+                section {
+                    max-width: 1150px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background-color: #ffffff;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(23, 18, 93, 0.1);
+                }
+        
+                h2 {
+            color: #050505;
+        
+            font-size: 1.0em;
+            margin-bottom: 10px;
+        
+        }
+        
+        code {
+                    display: block;
+                    background-color: #f4f4f4;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                }
+        
+                .or {
+                    font-weight: bold;
+                    margin: 0 10px; /* Adjusted margin */
+                }
+        
+                pre {
+                    font-family: 'Arial', monospace;
+                    background-color: #f8f8f8;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    overflow-x: auto;
+                }
+        
+                p {
+                    color: #0e0e0e;
+                }
+        
+                ol {
+                    color: #111010;
+                    padding-left: 20px;
+                }
+        
+                a {
+                    color: #0066cc;
+                    text-decoration: none;
+                }
+        
+                th {
+                    background-color: #f2f2f2;
+                }
+        
+                dl {
+          margin-bottom: 20px;
+        }
+        
+        dt {
+          font-weight: bold;
+        }
+        
+        dd {
+          margin-left: 20px;
+        }
+        
+                    .lb-h1 {
+                        /* Add styles for the h1 element */
+                        text-align: center; /* Center-align the heading */
+                    }
+        
+                    .center-image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh; /* Optional: Adjust the height as needed */
+                }
+        
+        
+                body {
+                                        font-family: Arial, sans-serif;
+                                        margin: 20px;
+                                    }
+                            
+                                    li {
+                                        margin-bottom: 10px;
+                                    }
+                            
+                                    .free-tier {
+                                        background-color: #f0f8ff;
+                                        padding: 10px;
+                                        border-radius: 5px;
+                                    }       
+            </style>
+        
+</head>
+<body>
+
+    <div class="lb-transition-wrapper lb-transition-fade-in lb-active" data-lb-comp="transition-wrapper" data-lb-comp-registered="true">
+        <div class="lb-none-pad lb-grid lb-row lb-row-max-large lb-snap" style="display: flex; align-items: center;">
+            <div class="lb-col lb-tiny-24 lb-mid-24">
+                <div class="lb-bg-left-top-cover lb-border-p lb-small-pad lb-box" style="padding-left: 180px; padding-right: 180px; padding-bottom: 0px; background-image: url('https://s3.cn-north-1.amazonaws.com.cn/aws-dam-prod/tmt/template/GSRC_Tutorials_Congratulations.08882b89ba8adfe231cdb223e7ccfb462038399f.png'); background-color: #ffffff;">
+                    <h1 id="Congratulations.21" class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-xlarge-align-center lb-txt-none lb-txt-white lb-h1 lb-title">Using AWS Lambda with Event Bridge</h1>
+                    <div class="lb-grid lb-row lb-row-max-large lb-snap" style="padding-top: 0px; margin-top: 0px;">
+                        <div class="lb-col lb-tiny-24 lb-mid-6">
+                        </div>
+                        <div class="lb-col lb-tiny-24 lb-mid-12" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-txt-16 lb-rtxt" style="color: #0d0d0d; margin-top: 0px;">
+                                <p style="color: #0d0d0d; font-weight: bold;">
+                                    "AWS Lambda with EventBridge enables serverless event-driven computing, triggering Lambda functions in response to events within your AWS environment."                                </p>
+                            </div>
+                        </div>
+                        <div class="lb-col lb-tiny-24 lb-mid-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <p>EventBridge is a serverless service that uses events to connect application components together, making it easier for you to build scalable event-driven applications. Event-driven architecture is a style of building loosely-coupled software systems that work together by emitting and responding to events. Event-driven architecture can help you boost agility and build reliable, scalable applications.</p>
+        <p>Use EventBridge to route events from sources such as home-grown applications, AWS services, and third-party software to consumer applications across your organization. EventBridge provides simple and consistent ways to ingest, filter, transform, and deliver events so you can build applications quickly.</p>
+        <p>EventBridge (CloudWatch Events) invokes your function asynchronously with an event document that wraps the event from its source. The following example shows an event that originated from a database snapshot in Amazon Relational Database Service.</p>
+    </section>
+<section>
+        <h2>Example EventBridge (CloudWatch Events) event</h2>
+     <pre>
+    <code>
+            {
+                "version": "0",
+                "id": "fe8d3c65-xmpl-c5c3-2c87-81584709a377",
+                "detail-type": "RDS DB Instance Event",
+                "source": "aws.rds",
+                "account": "123456789012",
+                "time": "2020-04-28T07:20:20Z",
+                "region": "us-east-2",
+                "resources": [
+                    "arn:aws:rds:us-east-2:123456789012:db:rdz6xmpliljlb1"
+                ],
+                "detail": {
+                    "EventCategories": [
+                        "backup"
+                    ],
+                    "SourceType": "DB_INSTANCE",
+                    "SourceArn": "arn:aws:rds:us-east-2:123456789012:db:rdz6xmpliljlb1",
+                    "Date": "2020-04-28T07:20:20.112Z",
+                    "Message": "Finished DB Instance backup",
+                    "SourceIdentifier": "rdz6xmpliljlb1"
+                }
+            }
+            
+        </code>
+        </pre>
+        <p>You can also create a Lambda function and direct AWS Lambda to invoke it on a regular schedule. You can specify a fixed rate (for example, invoke a Lambda function every hour or 15 minutes), or you can specify a Cron expression.</p>
+   
+        <h2>Example EventBridge (CloudWatch Events) message event</h2>
+<pre>
+    <code>
+    {
+        "version": "0",
+        "account": "123456789012",
+        "region": "us-east-2",
+        "detail": {},
+        "detail-type": "Scheduled Event",
+        "source": "aws.events",
+        "time": "2019-03-01T01:23:45Z",
+        "id": "cdc73f9d-aea9-11e3-9d5a-835b769c0d9c",
+        "resources": [
+          "arn:aws:events:us-east-2:123456789012:rule/my-schedule"
+        ]
+      }
+    </code>
+      </pre>
+    </section>
+
+<section>
+      <h2>To configure EventBridge (CloudWatch Events) to invoke your function</h2>
+      <p>1.Open the Functions page of the Lambda console.</p>
+      <p>2.Choose a function</p>
+      <p>3.Under Function overview, choose Add trigger.</p>
+      <p>4.Set the trigger type to EventBridge (CloudWatch Events).</p>
+      <p>5.For Rule, choose Create a new rule.</p>
+      <p>6.Configure the remaining options and choose Add.</p>
+      <p>Each AWS account can have up to 100 unique event sources of the EventBridge (CloudWatch Events)- Schedule source type. Each of these can be the event source for up to five Lambda functions. That is, you can have up to 500 Lambda functions that can be executing on a schedule in your AWS account.</p>
+    </section>
+    <section>
+    <h2>Using AWS Lambda with scheduled events</h2>
+<p>Create a Lambda function using the Schedule a periodic check of any URL blueprint. You configure the Lambda function to run every minute. Note that if the function returns an error, Lambda logs error metrics to Amazon CloudWatch.</p>
+  <p>Configure a CloudWatch alarm on the Errors metric of your Lambda function to post a message to your Amazon SNS topic when AWS Lambda emits error metrics to CloudWatch. You subscribe to the Amazon SNS topics to get email notification. In this tutorial, you do the following to set this up:</p>  
+      <li>Create an Amazon SNS topic.</li>
+      <li>Subscribe to the topic so you can get email notifications when a new message is posted to the topic.</li>
+      <li>In Amazon CloudWatch, set an alarm on the Errors metric of your Lambda function to publish a message to your SNS topic when errors occur.</li>
+    
+      <h2>Prerequisites</h2>
+      <p>This tutorial assumes that you have some knowledge of basic Lambda operations and the Lambda console. If you haven't already, follow the instructions in Create a Lambda function with the console to create your first Lambda function.</p>
+    </section>
+    <section>
+      <h2>Create a Lambda function</h2>
+<p>1.Sign in to the AWS Management Console and open the AWS Lambda console at, click <a href="https://console.aws.amazon.com/lambda/" target="_blank">here</a>.</p>
+<p>2. Choose Create function.</p>
+<p>3. Choose Use a blueprint.</p>
+<p>4. Open the Select blueprint dropdown list and choose the Schedule a periodic check of any URL blueprint.</p>
+<p>5. Configure the following settings.</p>
+<li>Function name – lambda-canary.</p>
+    <li>Execution role – Create a new role from AWS policy templates.</li>
+    <li>Role name – lambda-eventbridge-role.</li>
+    <li>Policy templates – Simple microservice permissions.</li>
+    <li>Rule – Create a new rule.</li>
+    <li>Rule name – CheckWebsiteScheduledEvent.</li>
+    <li>Rule description – CheckWebsiteScheduledEvent trigger.</li>
+    <li>Rule type – Schedule expression.</li>
+    <li>Schedule expression – rate(1 minute).</li>
+    <li>Environment variables</li>
+    <li>site – https://docs.aws.amazon.com/lambda/latest/dg/welcome.html</li>
+    <li>expected – What is AWS Lambda?</li>
+    <li>Choose Create function.</li>
+<p>EventBridge (CloudWatch Events) emits an event every minute, based on the schedule expression. The event triggers the Lambda function, which verifies that the expected string appears in the specified page. For more information on expressions schedules, see Schedule expressions using rate or cron.</p>
+</section>
+<section>
+    <h2>Test the Lambda function</h2>
+    <p>Test the function with a sample event provided by the Lambda console.</p>
+    <p>1. Open the Functions page of the Lambda console.</p>
+    <p>2. Choose the lambda-canary function.</p>
+    <p>3. Choose Test.</p>
+    <p>4. Create a new event using the CloudWatch event template (cloudwatch-scheduled-event).</p>
+    <p>5. Choose Create event.</p>
+    <p>6. Choose Invoke.</p>
+<p>The output from the function execution is shown at the top of the page.</p>
+</section>
+
+<section>
+    <h2>Create an Amazon SNS topic and subscribe to it</h2>
+<p>Create an Amazon Simple Notification Service (Amazon SNS) topic to receive notifications when the canary function returns an error.</p>
+<p>To create a topic</p>
+<p>1. Open the Amazon SNS console.</p>
+<p>2. Switch to the AWS Region where you created the Lambda function.</p>
+<p>3. Choose Topics, and then choose Create topic.</p>
+<p>4. Create a topic with the following settings.</p>
+<li>Type – Standard.</li>
+<li>Name – lambda-canary-notifications.</li>
+<li>Display name – Canary.</li>
+<p>5. Choose Create topic.</p>
+<p>6. On the lambda-canary-notifications topic page, choose Create subscription.</p>
+<p>7. Create a subscription with the following settings.</p>
+<li>Protocol – Email.</li>
+<li>Endpoint – Your email address.</li>
+<p>8. Choose Create subscription.</p>
+<p>Amazon SNS sends an email from Canary <no-reply@sns.amazonaws.com>, reflecting the friendly name of the topic. Use the link in the email to confirm your address.</p>
+
+</section>
+<section>
+    <h2>Configure an alarm</h2>
+<p>Configure an alarm in Amazon CloudWatch that monitors the Lambda function and sends a notification when it fails.</p>
+<p>To create an alarm</p>
+    <p>1. Open the CloudWatch console.</p>
+<p>2. Switch to the AWS Region where you created the Lambda function.</p>
+<p>3. Choose All alarms.</p>
+<p>4. Choose Create alarm.</p>
+<p>5. On the Specify metric and conditions page, choose Select metric.</p>
+<p>6. In the Metrics search box, enter lambda-canary Errors.</p>
+<p>7. Choose Lambda > By Function 1 Name.</p>
+<p>8. Select the lambda-canary Errors metric.</p>
+<p>9. On the Specify metric and conditions page, in the Statistic drop-down menu, choose Sum.</p>
+<p>10. Set the threshold to Greater/Equal than 1.</p>
+<p>11. On the Configure actions page, add a notification with the following settings:</p>
+<li>Alarm state trigger – In alarm</li>
+<li>Send notification to... – lambda-canary-notifications</li>
+<p>12. On the Add name and description page, enter the following:</p>
+<li>Name – lambda-canary-alarm</li>
+<li>Description – Lambda canary alarm</li>
+<p>13. Choose Create alarm.</p>
+
+
+</section>
+<section>
+    <h2>Test Alarm Setup</h2>
+    <p>1. Open the Functions page of the Lambda console.</p>
+    <p>2. Choose the lambda-canary function.</p>
+    <p>3. Scroll down and under Environment variables, choose Edit.</p>
+    <p>4. Set expected to 404.</p>
+    <p>5. Choose Save.</p>
+</section>
+
+<section>
+   <h2> Clean up your resources</h2>
+
+    <p>You can now delete the resources that you created for this tutorial, unless you want to retain them. By deleting AWS resources that you're no longer using, you prevent unnecessary charges to your AWS account.</p>
+    <h3>To delete the Lambda function</h3>
+    <p>1. Open the Functions page of the Lambda console.</p>
+    <p>2. Select the function that you created.</p>
+    <p>3. Choose Actions, Delete.</p>
+    <p>4. Type "delete" in the text input field and choose Delete.</p>
+
+    <h3>To delete the CloudWatch alarm</h3>
+    <p>1. Open the All alarms page of the CloudWatch console.</p>
+    <p>2. Select the alarm you created.</p>
+    <p>3. Choose Actions, Delete.</p>
+    <p>4. Choose Delete.</p>
+
+    <h3>To delete the Amazon SNS subscription</h3>
+    <p>1. Open the Subscriptions page of the Amazon SNS console.</p>
+    <p>2. Select the subscription you created.</p>
+    <p>3. Choose Delete, Delete.</p>
+
+    <h3>To delete the Amazon SNS topic</h3>
+    <p>1. Open the Topics page of the Amazon SNS console.</p>
+    <p>2. Select the topic you created.</p>
+    <p>3. Enter "delete me" in the text input field.</p>
+    <p>4. Choose Delete.</p>
+</section>
+
+<div class="lb-transition-wrapper lb-transition-fade-in lb-active" data-lb-comp="transition-wrapper" data-lb-comp-registered="true">
+    <div class="lb-none-pad lb-grid lb-row lb-row-max-large lb-snap" style="display: flex; align-items: center;">
+        <div class="lb-col lb-tiny-24 lb-mid-24">
+            <div class="lb-bg-left-top-cover lb-border-p lb-small-pad lb-box" style="padding-left: 20px; padding-bottom: 0px; background-image: url('https://s3.cn-north-1.amazonaws.com.cn/aws-dam-prod/tmt/template/GSRC_Tutorials_Congratulations.08882b89ba8adfe231cdb223e7ccfb462038399f.png');">
+                <h1 id="Congratulations.21" class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-xlarge-align-center lb-txt-none lb-txt-white lb-h1 lb-title"> Congratulations!</h1>
+                <div class="lb-grid lb-row lb-row-max-large lb-snap" style="padding-top: 0px; margin-top: 0px;">
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                    <div class="lb-col lb-tiny-24 lb-mid-12" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-txt-16 lb-rtxt" style="color: #FFFFFF; margin-top: 0px;">
+                            <p style="color: #FFFFFF;">
+                                "Congratulations on adopting Amazon EventBridge! 🎉 Elevate your event-driven architecture, fostering scalability and efficiency. May your journey be filled with continued success and innovation as you harness the power of event-driven computing. 👏🚀         
+                            </p>                   
+                        </div>                    
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

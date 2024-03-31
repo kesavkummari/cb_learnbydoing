@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a web server and an Amazon RDS DB instance</title>
+
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        header {
+            max-width: 1500px;
+            color: #fff;
+            padding: 20px;
+            background-color: #6495ED;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center content horizontally */
+        }
+
+        section {
+            max-width: 1150px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #050505;
+
+        }
+        pre {
+            font-family: 'Arial', monospace;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+
+        p {
+            color: #0e0e0e;
+        }
+
+        ol {
+            color: #111010;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        .steps {
+            margin-bottom: 20px;
+        }
+        .step {
+            margin-bottom: 10px;
+        }
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul ul {
+    margin-left: 20px;
+  }
+        body {
+                                font-family: Arial, sans-serif;
+                                margin: 20px;
+                            }
+                    
+                            li {
+                                margin-bottom: 10px;
+                            }
+                    
+                            .free-tier {
+                                background-color: #f0f8ff;
+                                padding: 10px;
+                                border-radius: 5px;
+                            }       
+    </style>
+
+
+</head>
+<body>
+    
+  <header>
+    <h1 id="Deploy_Docker_Containers" class="lb-txt-none lb-txt-white lb-none-v-margin lb-h1 lb-title" style="margin-top: 10px; margin-bottom: 5px;">Create a web server and an Amazon RDS DB instance</h1>   
+  </header>
+
+
+<h2 style="text-align: center;">The following diagram shows the configuration when the tutorial is complete.</h2>
+
+<img src="Web Server and Amazon RDS Tutorial.png" alt="Web Server and Amazon RDS Tutorial.png" width="800" height="600" style="display: block; margin-left: auto; margin-right: auto;">
+
+<section>
+    <h1>STEPS TO CREATE</h1>
+    <ul>
+        <li>To launch an EC2 instance</li>
+        <li>Create an Amazon RDS DB instance</li>
+        <li>Install a web server on your EC2 instance</li>
+    </ul>
+</section>
+
+<section>
+<div class="container">
+    <h1>To launch an EC2 instance</h1>
+    <ol>
+        <li>
+            <p>Sign in to the AWS Management Console and open the Amazon EC2 console at <a href="https://console.aws.amazon.com/ec2/">https://console.aws.amazon.com/ec2/</a>.</p>
+        </li>
+        <li>
+            <p>In the upper-right corner of the AWS Management Console, choose the AWS Region where you want to create the EC2 instance.</p>
+        </li>
+        <li>
+            <p>Choose EC2 Dashboard, and then choose Launch instance.</p>
+            <img src="step1-3.png" alt="step1-3.png" width="800" height="600" style="display: block; margin-left: auto; margin-right: auto;">
+        </li>
+        <li>
+            <p>Choose the following settings in the Launch an instance page:</p>
+            <ul>
+                <p>a. Under Name and tags, for Name, enter tutorial-ec2-instance-web-server.</p>
+                <p>b. Under Application and OS Images (Amazon Machine Image), choose Amazon Linux, and then choose the Amazon Linux 2023 AMI. Keep the defaults for the other choices.</p>
+                <img src="step1-4b.png" alt="step1-4b.png" width="800" height="600" style="display: block; margin-left: auto; margin-right: auto;">
+
+                <p>c. Under Instance type, choose t2.micro.</li>
+                <p>d. Under Key pair (login), choose a Key pair name to use an existing key pair. To create a new key pair for the Amazon EC2 instance, choose Create new key pair and then use the Create key pair window to create it.</p>
+                <p>e. Under Network settings, set these values and keep the other values as their defaults:</p>
+                    <ul>
+                        <li>
+                            <p>For Allow SSH traffic from, Choose the source of SSH connections to the EC2 instance.</p>
+                            <p>You can choose <em>My IP</em> if the displayed IP address is correct for SSH connections.</p>
+                            <p>Otherwise, you can determine the IP address to use to connect to EC2 instances in your VPC using Secure Shell (SSH). To determine your public IP address, in a different browser window or tab, you can use the service at <a href="https://checkip.amazonaws.com">https://checkip.amazonaws.com</a>. An example of an IP address is 203.0.113.25/32.</p>
+                            <p>In many cases, you might connect through an internet service provider (ISP) or from behind your firewall without a static IP address. If so, make sure to determine the range of IP addresses used by client computers.</p>
+                            <p><strong>Warning:</strong> If you use 0.0.0.0/0 for SSH access, you make it possible for all IP addresses to access your public instances using SSH. This approach is acceptable for a short time in a test environment, but it's unsafe for production environments. In production, authorize only a specific IP address or range of addresses to access your instances using SSH.</p>
+                        </li>
+                    </ul>
+                </li>
+                <ul>
+                    <li>
+                        <p>Turn on Allow HTTPs traffic from the internet.</p>
+                     </li>
+                </ul>
+            </li>
+            <ul>
+                <li>
+                    <p>Turn on Allow HTTP traffic from the internet.</p>
+                 </li>
+            </ul>
+        </li>
+        <img src="step1-4e.png" alt="step1-4e.png" width="750" height="550" style="display: block; margin-left: auto; margin-right: auto;">
+
+<p>f. Leave the default values for the remaining sections.</p>
+
+
+                <p>g. Review a summary of your instance configuration in the Summary panel, and when you're ready, choose Launch instance.</p>
+            </ul>
+        </li>
+        <li>
+            <p>On the Launch Status page, note the identifier for your new EC2 instance (e.g., i-1234567890abcdef0).</p>
+            <img src="step1-5.png" alt="step1-5.png" width="670" height="400" style="display: block; margin-left: auto; margin-right: auto;">
+
+        </li>
+
+        <li>
+            <p>Choose the EC2 instance identifier to open the list of EC2 instances, and then select your EC2 instance.</p>
+        </li>
+        <li>
+            <p>In the Details tab, note the following values, which you need when you connect using SSH:</p>
+            <ul>
+                <p>a. In Instance summary, note the value for Public IPv4 DNS.</p>
+                <img src="step1-7a.png" alt="step1-7a.png" width="900" height="250" style="display: block; margin-left: auto; margin-right: auto;">
+
+                <p>b. In Instance details, note the value for Key pair name.</p>
+                <img src="step1-7b.png" alt="step1-7b.png" width="900" height="250" style="display: block; margin-left: auto; margin-right: auto;">
+
+            </ul>
+        </li>
+        <li>
+            <p>Wait until the Instance state for your instance is Running before continuing.</p>
+        </li>
+        <li>
+            <p>Complete Create an Amazon RDS DB instance.</p>
+        </li>
+    </ol>
+</div>
+</section>
+
+<section>
+<div class="container">
+    <h1>Create an Amazon RDS DB Instance</h1>
+    
+    <h2>To create a PostgreSQL DB instance</h2>
+    <ol>
+        <li>
+            <p>Sign in to the AWS Management Console and open the Amazon RDS console at <a href="https://console.aws.amazon.com/rds/">https://console.aws.amazon.com/rds/</a>.</p>
+        </li>
+        <li>
+            <p>In the upper-right corner of the AWS Management Console, check the AWS Region. It should be the same as the one where you created your EC2 instance.</p>
+        </li>
+        <li>
+            <p>In the navigation pane, choose Databases.</p>
+        </li>
+        <li>
+            <p>Choose Create database.</p>
+        </li>
+        <li>
+            <p>On the Create database page, choose Standard create.</p>
+        </li>
+        <li>
+            <p>For Engine options, choose PostgreSQL.</p>
+            <img src="step2-6.png" alt="step2-6.png" width="750" height="650" style="display: block; margin-left: auto; margin-right: auto;">
+        </li>
+        <li>
+            <p>For Templates, choose Free tier.</p>
+            <img src="step2-7.png" alt="step2-7.png" width="800" height="250" style="display: block; margin-left: auto; margin-right: auto;">
+        </li>
+        <li>
+            <p>In the Availability and durability section, keep the defaults.</p>
+        </li>
+        <li>
+            <p>In the Settings section, set these values:</p>
+            <ul>
+                <li>DB instance identifier – Type tutorial-db-instance.</li>
+                <li>Master username – Type tutorial_user.</li>
+                <li>Auto generate a password – Leave the option turned off.</li>
+                <li>Master password – Type a password.</li>
+                <li>Confirm password – Retype the password.</li>
+            </ul>
+            <img src="step2-9.png" alt="step2-9.png" width="900" height="650" style="display: block; margin-left: auto; margin-right: auto;">
+        </li>
+        <li>
+            <p>In the Instance configuration section, set these values:</p>
+            <ul>
+                <li>Burstable classes (includes t classes)</li>
+                <li>db.t3.micro</li>
+            </ul>
+            <img src="step2-10.png" alt="step2-10.png" width="650" height="300" style="display: block; margin-left: auto; margin-right: auto;">
+        </li>
+        <li>
+            <p>In the Storage section, keep the defaults.</p>
+        </li>
+        <li>
+            <p>In the Connectivity section, set these values and keep the other values as their defaults:</p>
+            <ul>
+                <li>For Compute resource, choose Connect to an EC2 compute resource.</li>
+                <li>For EC2 instance, choose the EC2 instance you created previously, such as tutorial-ec2-instance-web-server.</li>
+            </ul>
+            <img src="step2-12.png" alt="step2-12.png" width="850" height="600" style="display: block; margin-left: auto; margin-right: auto;">
+        </li>
+        <li>
+            <p>In the Database authentication section, make sure Password authentication is selected.</p>
+        </li>
+        <li>
+            <p>Open the Additional configuration section, and enter sample for Initial database name. Keep the default settings for the other options.</p>
+        </li>
+        <li>
+            <p>To create your PostgreSQL DB instance, choose Create database.Your new DB instance appears in the Databases list with the status Creating.</p>
+        </li>
+        <li>
+            <p>Wait for the Status of your new DB instance to show as Available. Then choose the DB instance name to show its details.</p>
+        </li>
+        <li>
+            <p>In the Connectivity & security section, view the Endpoint and Port of the DB instance.</p>
+            <img src="step2-17.png" alt="step2-17.png" width="700" height="600" style="display: block; margin-left: auto; margin-right: auto;">
+
+            <p>Note the endpoint and port for your DB instance. You use this information to connect your web server to your DB instance.</p>
+        </li>
+        <li>
+            <p>Complete Install a web server on your EC2 instance.</p>
+        </li>
+    </ol>
+</div>
+</section>
+
+<section>
+<div class="container">
+    <h1>Install a Web Server on Your EC2 Instance</h1>
+    Install a web server on the EC2 instance you created in Launch an EC2 instance. The web server connects to the Amazon RDS DB instance that you created in Create an Amazon RDS DB instance.
+    <h2>Install an Apache web server with PHP and MariaDB</h2>
+    <p>Connect to your EC2 instance and install the web server.</p>
+
+    <h3>To connect to your EC2 instance and install the Apache web server with PHP</h3>
+    <ol>
+        <li>
+            <p>Connect to the EC2 instance that you created earlier by following the steps in Connect to your Linux instance in the Amazon EC2 User Guide for Linux Instances.</p>
+           <p>We recommend that you connect to your EC2 instance using SSH. If the SSH client utility is installed on Windows, Linux, or Mac, you can connect to the instance using the following command format:</p>
+            <pre>ssh -i location_of_pem_file ec2-user@ec2-instance-public-dns-name</pre>
+            <p>For example, assume that <code>ec2-database-connect-key-pair.pem</code> is stored in <code>/dir1</code> on Linux, and the public IPv4 DNS for your EC2 instance is <code>ec2-12-345-678-90.compute-1.amazonaws.com</code>. Your SSH command would look as follows:</p>
+            <pre>ssh -i /dir1/ec2-database-connect-key-pair.pem ec2-user@ec2-12-345-678-90.compute-1.amazonaws.com</pre>
+        </li>
+        <li>
+            <p>Get the latest bug fixes and security updates by updating the software on your EC2 instance. To do this, use the following command.</p>
+            <p>Note: The <code>-y</code> option installs the updates without asking for confirmation. To examine updates before installing, omit this option.</p>
+            <pre>sudo dnf update -y</pre>
+        </li>
+        <li>
+            <p>After the updates complete, install the Apache web server, PostgreSQL software using the following commands. This command installs multiple software packages and related dependencies at the same time.</p>
+            <pre>sudo dnf install -y httpd php php-pgsql postgresql15</pre>
+            <p>If you receive an error, your instance probably wasn't launched with an Amazon Linux 2023 AMI. You might be using the Amazon Linux 2 AMI instead. You can view your version of Amazon Linux using the following command.</p>
+            <pre>cat /etc/system-release</pre>
+        </li>
+        <li>
+            <p>Start the web server with the following command:</p>
+            <pre>sudo systemctl start httpd</pre>
+            
+            <p>You can test that your web server is properly installed and started. To do this, enter the public Domain Name System (DNS) name of your EC2 instance in the address bar of a web browser, for example: <code>http://ec2-42-8-168-21.us-west-1.compute.amazonaws.com</code>. If your web server is running, then you see the Apache test page.</p>
+            
+            <p>If you don't see the Apache test page, check your inbound rules for the VPC security group that you created in Tutorial: Create a VPC for use with a DB instance (IPv4 only). Make sure that your inbound rules include one allowing HTTP (port 80) access for the IP address to connect to the web server.</p>
+            
+            <p><strong>Note:</strong> The Apache test page appears only when there is no content in the document root directory, <code>/var/www/html</code>. After you add content to the document root directory, your content appears at the public DNS address of your EC2 instance. Before this point, it appears on the Apache test page.</p>
+            </li>
+            <li>
+            <p>Configure the Web Server to Start with Each System Boot</p>
+            <p>Configure the web server to start with each system boot using the following command:</p>
+            <pre>sudo systemctl enable httpd</pre>
+        </li>
+    </div>
+    </ol>
+    <p>To allow <code>ec2-user</code> to manage files in the default root directory for your Apache web server, modify the ownership and permissions of the <code>/var/www</code> directory. There are many ways to accomplish this task. In this tutorial, you add <code>ec2-user</code> to the <code>apache</code> group, to give the <code>apache</code> group ownership of the <code>/var/www</code> directory and assign write permissions to the group.</p>
+</body>
+</div>
+
+
+<h3>To set file permissions for the Apache web server</h3>
+<ol>
+    <li>
+        <p>Add the <code>ec2-user</code> user to the <code>apache</code> group.</p>
+        <pre>sudo usermod -a -G apache ec2-user</pre>
+    </li>
+    <li> 
+        <p>Log out to refresh your permissions and include the new <code>apache</code> group.</p>
+        <pre>exit</pre>
+    </li>
+
+        <li>
+        <p>Log back in again and verify that the <code>apache</code> group exists with the <code>groups</code> command.</p>
+        <pre>groups</pre>
+        <p>Your output looks similar to the following:</p>
+        <pre>ec2-user adm wheel apache systemd-journal</pre>
+    </li>
+
+        <li>
+        <p>Change the group ownership of the <code>/var/www</code> directory and its contents to the <code>apache</code> group.</p>
+        <pre>sudo chown -R ec2-user:apache /var/www</pre>
+    </li>
+        
+        <li>
+        <p>Change the directory permissions of <code>/var/www</code> and its subdirectories to add group write permissions and set the group ID on subdirectories created in the future.</p>
+        <pre>sudo chmod 2775 /var/www
+find /var/www -type d -exec sudo chmod 2775 {} \;</pre>
+    </li>
+        
+        <li>
+
+        <p>Recursively change the permissions for files in the <code>/var/www</code> directory and its subdirectories to add group write permissions.</p>
+        <pre>find /var/www -type f -exec sudo chmod 0664 {} \;</pre>
+    </li>
+</ol>  
+        <p>Now, <code>ec2-user</code> (and any future members of the <code>apache</code> group) can add, delete, and edit files in the Apache document root. This makes it possible for you to add content, such as a static website or a PHP application.</p>
+
+        <div class="container">
+            <h2>Connect Your Apache Web Server to Your DB Instance</h2>
+            
+            <h2>To Add Content to Apache Web Server Connecting to DB Instance:</h2>
+            <ol>
+                <li>
+                    <p>While still connected to your EC2 instance, change the directory to <code>/var/www</code> and create a new subdirectory named <code>inc</code>.</p>
+                    <pre>cd /var/www 
+mkdir inc 
+cd inc</pre>
+
+                </li>
+                <li>
+                    <p>Create a new file in the <code>inc</code> directory named <code>dbinfo.inc</code>, and then edit the file by calling nano (or the editor of your choice).</p>
+                    <pre>>dbinfo.inc
+nano dbinfo.inc</pre>
+                </li>
+                <li>
+                    <p>Add the following contents to the <code>dbinfo.inc</code> file. Replace <code>db_instance_endpoint</code> with your DB instance endpoint, without the port, for your DB instance.</p>
+                    <p><strong>Note:</strong> We recommend placing the user name and password information in a folder that isn't part of the document root for your web server. Doing this reduces the possibility of your security information being exposed.</p>
+                    <pre>
+&lt;?php
+define('DB_SERVER', 'db_instance_endpoint');
+define('DB_USERNAME', 'tutorial_user');
+define('DB_PASSWORD', 'master password');
+define('DB_DATABASE', 'sample');
+?&gt;
+                    </pre>
+                </li>
+                <li>
+                    <p>Save and close the <code>dbinfo.inc</code> file. If you are using nano, save and close the file by using Ctrl+S and Ctrl+X.</p>
+                </li>
+                <li>
+                    <p>Change the directory to <code>/var/www/html</code>.</p>
+                    <pre>cd /var/www/html</pre>
+                </li>
+
+                <li>
+                    <p>Create a new file in the <code>html</code> directory named <code>SamplePage.php</code>, and then edit the file by calling nano (or the editor of your choice).</p>
+                    <pre>>SamplePage.php
+nano SamplePage.php</pre>
+                </li>
+                <li>
+                    <p>Add the following contents to the <code>SamplePage.php</code> file:</p>
+                
+                <pre style="margin: 0; line-height: 0.4;">
+                    <style>ul{list-style:none;padding:0;margin:0;}ul ul{margin-left:20px;}</style>
+                    <ul>
+                        <li>&lt;?php include "../inc/dbinfo.inc"; ?&gt;</li>
+                        <li>&lt;html&gt;</li>
+                        <li>&lt;body&gt;</li>
+                        <li>&lt;h1&gt;Sample page&lt;/h1&gt;</li>
+                        <li>&lt;?php</li>
+                        <ul>
+                            <li>/* Connect to PostgreSQL and select the database. */</li>
+                            <li>$constring = "host=" . DB_SERVER . " dbname=" . DB_DATABASE . " user=" . DB_USERNAME . " password=" . DB_PASSWORD ;</li>
+                            <li>$connection = pg_connect($constring);</li>
+                            <li>if (!$connection){</li>
+                            <ul>
+                                <li>echo "Failed to connect to PostgreSQL";</li>
+                                <li>exit;</li>
+                            </ul>
+                            <li>}</li>
+                            <li>/* Ensure that the EMPLOYEES table exists. */</li>
+                            <li>VerifyEmployeesTable($connection, DB_DATABASE);</li>
+                            <li>/* If input fields are populated, add a row to the EMPLOYEES table. */</li>
+                            <li>$employee_name = htmlentities($_POST['NAME']);</li>
+                            <li>$employee_address = htmlentities($_POST['ADDRESS']);</li>
+                            <li>if (strlen($employee_name) || strlen($employee_address)) {</li>
+                            <ul>
+                                <li>AddEmployee($connection, $employee_name, $employee_address);</li>
+                            </ul>
+                            <li>}</li>
+                        </ul>
+                        <li>?&gt;</li>
+                        <li>&lt;!-- Input form --&gt;</li>
+                        <li>&lt;form action="&lt;?PHP echo $_SERVER['SCRIPT_NAME'] ?&gt;" method="POST"&gt;</li>
+                        <ul>
+                            <li>&lt;table border="0"&gt;</li>
+                            <li>&lt;tr&gt;</li>
+                            <ul>
+                                <li>&lt;td&gt;NAME&lt;/td&gt;</li>
+                                <li>&lt;td&gt;ADDRESS&lt;/td&gt;</li>
+                            </ul>
+                            <li>&lt;/tr&gt;</li>
+                            <li>&lt;tr&gt;</li>
+                            <ul>
+                                <li>&lt;td&gt;</li>
+                                <ul>
+                                    <li>&lt;input type="text" name="NAME" maxlength="45" size="30" /&gt;</li>
+                                </ul>
+                                <li>&lt;/td&gt;</li>
+                                <li>&lt;td&gt;</li>
+                                <ul>
+                                    <li>&lt;input type="text" name="ADDRESS" maxlength="90" size="60" /&gt;</li>
+                                </ul>
+                                <li>&lt;/td&gt;</li>
+                                <li>&lt;td&gt;</li>
+                                <ul>
+                                    <li>&lt;input type="submit" value="Add Data" /&gt;</li>
+                                </ul>
+                                <li>&lt;/td&gt;</li>
+                            </ul>
+                            <li>&lt;/tr&gt;</li>
+                            <li>&lt;/table&gt;</li>
+                        </ul>
+                        <li>&lt;/form&gt;</li>
+                        <li>&lt;!-- Display table data. --&gt;</li>
+                        <li>&lt;table border="1" cellpadding="2" cellspacing="2"&gt;</li>
+                        <ul>
+                            <li>&lt;tr&gt;</li>
+                            <ul>
+                                <li>&lt;td&gt;ID&lt;/td&gt;</li>
+                                <li>&lt;td&gt;NAME&lt;/td&gt;</li>
+                                <li>&lt;td&gt;ADDRESS&lt;/td&gt;</li>
+                            </ul>
+                            <li>&lt;/tr&gt;</li>
+                            <li>&lt;?php</li>
+                            <ul>
+                                <li>$result = pg_query($connection, "SELECT * FROM EMPLOYEES");</li>
+                                <li>while($query_data = pg_fetch_row($result)) {</li>
+                                <ul>
+                                    <li>echo "&lt;tr&gt;";</li>
+                                    <li>echo "&lt;td&gt;", $query_data[0], "&lt;/td&gt;",</li>
+                                    <li>"&lt;td&gt;", $query_data[1], "&lt;/td&gt;",</li>
+                                    <li>"&lt;td&gt;", $query_data[2], "&lt;/td&gt;";</li>
+                                    <li>echo "&lt;/tr&gt;";</li>
+                                </ul>
+                                <li>}</li>
+                            </ul>
+                            <li>?&gt;</li>
+                        </ul>
+                        <li>&lt;/table&gt;</li>
+                        <li>&lt;!-- Clean up. --&gt;</li>
+                        <li>&lt;?php</li>
+                        <ul>
+                            <li>pg_free_result($result);</li>
+                            <li>pg_close($connection);</li>
+                        </ul>
+                        <li>?&gt;</li>
+                        <li>&lt;/body&gt;</li>
+                        <li>&lt;/html&gt;</li>
+                        <li>&lt;?php</li>
+                        <ul>
+                            <li>/* Add an employee to the table. */</li>
+                            <li>function AddEmployee($connection, $name, $address) {</li>
+                            <ul>
+                                <li>$n = pg_escape_string($name);</li>
+                                <li>$a = pg_escape_string($address);</li>
+                                <li>echo "Forming Query";</li>
+                                <li>$query = "INSERT INTO EMPLOYEES (NAME, ADDRESS) VALUES ('$n', '$a');";</li>
+                                <li>if(!pg_query($connection, $query)) echo("&lt;p&gt;Error adding employee data.&lt;/p&gt;");</li>
+                            </ul>
+                            <li>}</li>
+                            <li>/* Check whether the table exists and, if not, create it. */</li>
+                            <li>function VerifyEmployeesTable($connection, $dbName) {</li>
+                            <ul>
+                                <li>if(!TableExists("EMPLOYEES", $connection, $dbName))</li>
+                                <li>{</li>
+                                <ul>
+                                    <li>$query = "CREATE TABLE EMPLOYEES (</li>
+                                    <ul>
+                                        <li>ID serial PRIMARY KEY,</li>
+                                        <li>NAME VARCHAR(45),</li>
+                                        <li>ADDRESS VARCHAR(90)</li>
+                                    </ul>
+                                    <li>)";</li>
+                                </ul>
+                                <li>if(!pg_query($connection, $query)) echo("<p>Error creating table.</p>"); 
+                                <li>}</li>
+                                <li>}</li>
+                              <li>/* Check for the existence of a table. */</li>
+                             <li>function TableExists($tableName, $connection, $dbName) {</li>
+                                <li>$t = strtolower(pg_escape_string($tableName)); //table name is case sensitive</li>
+                                <li>$d = pg_escape_string($dbName); //schema is 'public' instead of 'sample' db name so not using that</li>
+                              
+                            <li>$query = "SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_NAME = '$t';";</li>
+                        <li> $checktable = pg_query($connection, $query);</li>
+                              
+                                <li></li>if (pg_num_rows($checktable) >0) return true;</li>
+
+                            <li>return false;</li>
+                            </ul>
+                            <li>}</li>
+                            <li>?&gt;</li>
+                        </ul>
+                    </ul>
+                 </pre>
+                   </li>
+
+                   <li>
+                    <p>Save and close the SamplePage.php file.</p>
+                </li>
+                <li>
+                    <p>Save and close the SamplePage.php file.</p>
+                </li>
+                <p>Verify that your web server successfully connects to your DB instance by opening a web browser and browsing to <code>http://EC2 instance endpoint/SamplePage.php</code>, for example: <code>http://ec2-12-345-67-890.us-west-2.compute.amazonaws.com/SamplePage.php</code>s</p>
+                <p>You can use <code>SamplePage.php</code> to add data to your DB instance. The data that you add is then displayed on the page. To verify that the data was inserted into the table, install MySQL client on the Amazon EC2 instance. Then connect to the DB instance and query the table.</p>
+            </li>
+            </ol>
+        </div>
+</section>
+<div class="lb-transition-wrapper lb-transition-fade-in lb-active" data-lb-comp="transition-wrapper" data-lb-comp-registered="true">
+    <div class="lb-none-pad lb-grid lb-row lb-row-max-large lb-snap" style="display: flex; align-items: center;">
+        <div class="lb-col lb-tiny-24 lb-mid-24">
+            <div class="lb-bg-left-top-cover lb-border-p lb-small-pad lb-box" style="padding-left: 20px; padding-bottom: 0px; background-image: url('https://s3.cn-north-1.amazonaws.com.cn/aws-dam-prod/tmt/template/GSRC_Tutorials_Congratulations.08882b89ba8adfe231cdb223e7ccfb462038399f.png');">
+                <h1 id="Congratulations.21" class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-xlarge-align-center lb-txt-none lb-txt-white lb-h1 lb-title"> Congratulations!</h1>
+                <div class="lb-grid lb-row lb-row-max-large lb-snap" style="padding-top: 0px; margin-top: 0px;">
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                    <div class="lb-col lb-tiny-24 lb-mid-12" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-txt-16 lb-rtxt" style="color: #FFFFFF; margin-top: 0px;">
+                            <p style="color: #FFFFFF;">Congratulations on completing the Web Server and Amazon RDS Tutorial! You've successfully set up your web server, connected it to an Amazon RDS instance, tested your setup, and learned how to clean up after yourself when you're done. Keep up the great work, and feel free to explore more advanced topics as you continue your journey in web development and cloud computing                        </div>
+                    </div>                    
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

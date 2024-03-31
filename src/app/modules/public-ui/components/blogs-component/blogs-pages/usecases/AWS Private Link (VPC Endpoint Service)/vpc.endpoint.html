@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Private Link (VPC Endpoint Service)</title>
+
+
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light Grey Color */
+}
+
+        header {
+            max-width: 1500px;
+            color: #fff;
+            padding: 20px;
+            background-color: #6495ED;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center content horizontally */
+        }
+
+        section {
+            max-width: 1150px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(23, 18, 93, 0.1);
+        }
+
+        h2 {
+    color: #050505;
+
+    font-size: 1.0em;
+    margin-bottom: 10px;
+
+}
+
+code {
+            display: block;
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .or {
+            font-weight: bold;
+            margin: 0 10px; /* Adjusted margin */
+        }
+
+        pre {
+            font-family: 'Arial', monospace;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+
+        p {
+            color: #0e0e0e;
+        }
+
+        ol {
+            color: #111010;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+  
+
+            .lb-h1 {
+                /* Add styles for the h1 element */
+                text-align: center; /* Center-align the heading */
+            }
+
+            .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Optional: Adjust the height as needed */
+        }
+
+
+        body {
+                                font-family: Arial, sans-serif;
+                                margin: 20px;
+                            }
+                    
+                            li {
+                                margin-bottom: 10px;
+                            }
+                    
+                            .free-tier {
+                                background-color: #f0f8ff;
+                                padding: 10px;
+                                border-radius: 5px;
+                            }       
+    </style>
+
+
+</head>
+<body>
+
+<div class="lb-transition-wrapper lb-transition-fade-in lb-active" data-lb-comp="transition-wrapper" data-lb-comp-registered="true">
+    <div class="lb-none-pad lb-grid lb-row lb-row-max-large lb-snap" style="display: flex; align-items: center;">
+        <div class="lb-col lb-tiny-24 lb-mid-24">
+            <div class="lb-bg-left-top-cover lb-border-p lb-small-pad lb-box" style="padding-left: 180px; padding-right: 180px; padding-bottom: 0px; background-image: url('https://s3.cn-north-1.amazonaws.com.cn/aws-dam-prod/tmt/template/GSRC_Tutorials_Congratulations.08882b89ba8adfe231cdb223e7ccfb462038399f.png'); background-color: #ffffff;">
+                <h1 id="Congratulations.21" class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-xlarge-align-center lb-txt-none lb-txt-white lb-h1 lb-title">AWS Private Link (VPC Endpoint Service)</h1>
+                <div class="lb-grid lb-row lb-row-max-large lb-snap" style="padding-top: 0px; margin-top: 0px;">
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                    <div class="lb-col lb-tiny-24 lb-mid-12" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-txt-16 lb-rtxt" style="color: #0d0d0d; margin-top: 0px;">
+                            <p style="color: #0d0d0d; font-weight: bold;">
+                                AWS Private Link ensures secure and direct access to AWS services from your VPC, enhancing data privacy and network security.                        </div>
+                    </div>
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <section>
+    <h2>
+        AWS Private Link allows secure, private connections to AWS services from within your Virtual Private Cloud (VPC) without traversing the internet. It enhances security by leveraging VPC endpoints, ensuring data privacy and reducing exposure to potential threats. This service enables seamless integration with AWS resources while maintaining a closed network environment.</h2>
+    </section>
+
+    <div class="center-image">
+        <img src="AWS-PRIVATE-LINK.png" alt="AWS-PRIVATE-LINK.png" width="1200" height="625">
+    </div>
+
+<section>
+    <h1 style="text-align: center;">Here we Divide Steps into Four Parts</h1>
+    <ol>
+        <li><b>Creating Provider VPC</b></li>
+        <li><b>Creating Consumer VPC</b></li>
+        <li><b>Creating Target Group, Network Load Balancer (NLB), AWS Private Link (VPC Endpoint Service)</b></li>
+        <li><b>Creating VPC Endpoint</b></li>
+    </ol>
+</section>
+
+<h1 style="text-align: center;">Here’s a simplified tutorial</h1>
+
+<!-- /STEP-1 -->
+
+<h1 style="text-align: center;">Step-1</h1>
+
+<section>
+
+    <img src="provider-vpc.png" alt="provider-vpc.png" width="420" height="400">
+
+    <h1>Creating Provider VPC</h1>
+    <ol>
+        <li>Click on "Create VPC" and follow the wizard.</li>
+        <li>Specify a name for your VPC, define the IP address range (CIDR block).</li>
+        <li>Click on "Create VPC".</li>
+    </ol>
+
+    <h1>Creating public Subnets</h1>
+    <ol>
+        <li>Create the first public subnet:</li>
+        <ul>
+            <li>Specify a name.</li>
+            <li>Select the availability zone.</li>
+            <li>Enter the CIDR block for the subnet within the VPC CIDR range.</li>
+        </ul>
+        <li>Repeat the process to create the second public subnet in a different availability zone.</li>
+    </ol>
+
+    <h1>Creating Private Subnets</h1>
+    <ol>
+        <li>Create the first Private subnet:</li>
+        <ul>
+            <li>Specify a name.</li>
+            <li>Select the availability zone.</li>
+            <li>Enter the CIDR block for the subnet within the VPC CIDR range.</li>
+        </ul>
+        <li>Repeat the process to create the second Private subnet in a different availability zone.</li>
+    </ol>
+
+    <h1>Creating Route Tables</h1>
+    <ol>
+        <li>Create Route Table for Public Subnets (provider-public)</li>
+        <ul>
+            <li>Click the "Create Route Table" button.</li>
+            <li>Provide a name for the route table, "provider-public-routetable".</li>
+            <li>Choose the Provider Subnets(public subnets)</li>
+            <li>Click on the "Create" button.</li>
+        </ul>
+        <li>Follow the same steps as above but provide a different name, "provider-private-routetable".</li>
+    </ol>
+
+    <h1>Associate Public Subnets with "provider-public-routetable" Route Table:</h1>
+    <ol>
+        <li>Associate Public Subnets with "provider-public-routetable" Route Table:</li>
+        <ul>
+            <li>Click on the "provider-public-routetable".</li>
+            <li>Click the "Edit association" button.</li>
+            <li>Choose the public subnets.</li>
+            <li>Click on the "Save" button.</li>
+        </ul>
+        <li>Follow the same steps as above, for "provider-private-routetable".</li>
+    </ol>
+
+    <h1>Create an Internet Gateway:</h1>
+    <ol>
+        <li>Click the "<b>Create Internet Gateway</b>" button.</li>
+        <li>Provide a name for the Internet Gateway.</li>
+        <li>Click on the "<b>Create Internet Gateway</b>" button.</li>
+    </ol>
+
+    <h1>Attach the Internet Gateway to Provider VPC:</h1>
+    <ol>
+        <li>In the Internet Gateways section, select the Provider Internet Gateway.</li>
+        <li>Choose the "<b>Actions</b>" button, and then select "<b>Attach to VPC</b>."</li>
+        <li>From the dropdown menu, select the Provider VPC to which you want to attach the Internet Gateway.</li>
+        <li>Click on the "<b>Attach Internet Gateway</b>" button.</li>
+    </ol>
+
+    <h1>Adding Route to Internet Gateway to Route Table:</h1>
+    <ol>
+        <li>Select the "provider-public-routetable" route table from the list.</li>
+        <li>Click on the "Routes" tab.</li>
+        <li>Click the "Edit routes" button.</li>
+        <li>Add a route with the destination as 0.0.0.0/0 and the target as the Internet Gateway attached to the Provider VPC.</li>
+        <li>Click on the "Save routes" button.</li>
+    </ol>
+
+    <code>
+        <p><strong>NOTE:</strong> Internet access is provided only to public subnets. For private subnets, a NAT gateway is created to enable outbound internet traffic.</p>
+    </code>
+
+    <h2>Create NAT Gateway Using Public Subnet:</h2>
+    <ol>
+        <li>Click the "Create NAT Gateway" button.</li>
+        <li>Choose the public subnet for which you want to create the NAT gateway.</li>
+        <li>Allocate an Elastic IP (EIP) address or choose an existing one to associate with the NAT gateway.</li>
+        <li>Click on the "Create NAT Gateway" button.</li>
+        <li>Wait for the NAT gateway to be created and become available.</li>
+        <li>Update the route table ("provider-private-routetable") of your private subnets to route outbound traffic (`0.0.0.0/0`) through the newly created NAT gateway.</li>
+    </ol>
+
+    <h1>Launch EC2 Instances in public Subnets</h1>
+    <ol>
+        <li>Click on "Instances" in the left navigation pane.</li>
+        <li>Click "Launch Instance."</li>
+        <li>Give a name for the EC2 instance.</li>
+        <li>Choose an Amazon Machine Image (AMI) based on your application requirements.</li>
+        <li>Select an instance type based on your needs.</li>
+        <li>Choose an existing key pair or create a new one.</li>
+        <li>Select your VPC(Provider VPC) in the "Network" dropdown.</li>
+        <li>Choose one of the public subnets you created.</li>
+        <li>Either select an existing security group or create a new one.</li>
+        <li>Ensure the security group allows inbound traffic on the ports your application needs (e.g., HTTP on port 80).</li>
+        <li>Optionally, you can configure other details like IAM role, user data, etc.</li>
+        <li>Click "Launch instance"</li>
+    </ol>
+
+    <h1>Launch EC2 Instances in private Subnets</h1>
+    <ol>
+        <li>Click on "Instances" in the left navigation pane.</li>
+        <li>Click "Launch Instance."</li>
+        <li>Give a name for the EC2 instance.</li>
+        <li>Choose an Amazon Machine Image (AMI) based on your application requirements.</li>
+        <li>Select an instance type based on your needs.</li>
+        <li>Choose an existing key pair or create a new one.</li>
+        <li>Select your VPC(Provider VPC) in the "Network" dropdown.</li>
+        <li>Choose one of the private subnets you created</li>
+        <li>Either select an existing security group or create a new one.</li>
+        <li>Ensure the security group allows inbound traffic on the ports your application needs (e.g., HTTP on port 80).</li>
+        <li>Optionally, you can configure other details like IAM role, user data, etc.</li>
+        <li>Click "Launch instance"</li>
+    </ol>
+            
+                <div>
+                    <h2>Install Apache on server: Amazon Linux</h2>
+                    <code>
+                        sudo yum update -y<br>
+                        sudo yum install httpd -y<br>
+                        sudo service httpd start<br>
+                    </code>
+                </div>
+    
+(OR)
+                <div>
+                    <h2>Install Apache on server: Ubuntu</h2>
+                    <code>
+                        sudo apt-get update<br>
+                        sudo apt-get install apache2 -y<br>
+                        sudo service apache2 start<br>
+                        sudo systemctl enable apache2<br>
+                    </code>
+                </div>
+
+    <h2>Add sample(to check) index.html to /var/www/html on server</h2>
+</section>
+
+
+<!-- /STEP-2 -->
+
+<h1 style="text-align: center;">Step-2</h1>
+
+
+<section>
+
+    <img src="consumer-vpc.png" alt="consumer-vpc.png" width="420" height="400">
+    <h1>Creating Consumer VPC</h1>
+    <ol>
+        <li>Click on "Create VPC" and follow the wizard.</li>
+        <li>Specify a name for your VPC, define the IP address range (CIDR block).</li>
+        <li>Click on "Create VPC".</li>
+    </ol>
+
+    <h1>Creating Public Subnets</h1>
+    <ol>
+        <li>Create the first public subnet:</li>
+        <ul>
+            <li>Specify a name.</li>
+            <li>Select the availability zone.</li>
+            <li>Enter the CIDR block for the subnet within the VPC CIDR range.</li>
+        </ul>
+        <li>Repeat the process to create the second public subnet in a different availability zone.</li>
+    </ol>
+
+    <h1>Creating Private Subnets</h1>
+    <ol>
+        <li>Create the first Private subnet:</li>
+        <ul>
+            <li>Specify a name.</li>
+            <li>Select the availability zone.</li>
+            <li>Enter the CIDR block for the subnet within the VPC CIDR range.</li>
+        </ul>
+        <li>Repeat the process to create the second Private subnet in a different availability zone.</li>
+    </ol>
+
+    <h1>Creating Route Tables</h1>
+    <ol>
+        <li>Create Route Table for Public Subnets (consumer-public-routetable)</li>
+        <ul>
+            <li>Click the "Create Route Table" button.</li>
+            <li>Provide a name for the route table, "consumer-public-routetable".</li>
+            <li>Choose the Consumer subnets(public subnets)</li>
+            <li>Click on the "Create" button.</li>
+        </ul>
+        <li>Follow the same steps as above but provide a different name, "consumer-private-routetable".</li>
+    </ol>
+
+    <h1>Associate Public Subnets with "consumer-public-routetable" Route Table:</h1>
+    <ol>
+        <li>Associate Public Subnets with "consumer-public-routetable" Route Table:</li>
+        <ul>
+            <li>Click on the "consumer-public-routetable".</li>
+            <li>Click the "Edit association" button.</li>
+            <li>Choose the public subnets.</li>
+            <li>Click on the "Save" button.</li>
+        </ul>
+        <li>Follow the same steps as above, for "consumer-private-routetable".</li>
+    </ol>
+
+    <h1>Create an Internet Gateway:</h1>
+    <ol>
+        <li>Click the "<b>Create Internet Gateway</b>" button.</li>
+        <li>Provide a name for the Internet Gateway.</li>
+        <li>Click on the "<b>Create Internet Gateway</b>" button.</li>
+    </ol>
+
+    <h1>Attach the Internet Gateway to Consumer VPC:</h1>
+    <ol>
+        <li>In the Internet Gateways section, select the consumer Internet Gateway.</li>
+        <li>Choose the "<b>Actions</b>" button, and then select "<b>Attach to VPC</b>."</li>
+        <li>From the dropdown menu, select the consumer VPC to which you want to attach the Internet Gateway.</li>
+        <li>Click on the "<b>Attach Internet Gateway</b>" button.</li>
+    </ol>
+
+    <h1>Adding Route to Internet Gateway to Route Table:</h1>
+    <ol>
+        <li>Select the "consumer-public-routetable" route table from the list.</li>
+        <li>Click on the "Routes" tab.</li>
+        <li>Click the "Edit routes" button.</li>
+        <li>Add a route with the destination as 0.0.0.0/0 and the target as the Internet Gateway attached to the Consumer VPC.</li>
+        <li>Click on the "Save routes" button.</li>
+    </ol>
+
+    <code>
+        <p><strong>NOTE:</strong> Internet access is provided only to public subnets in the Consumer VPC. Private subnets in the Consumer VPC do not have direct internet access. </p>
+    </code>
+
+    <h1>Launch EC2 Instances in public Subnets</h1>
+    <ol>
+        <li>Click on "Instances" in the left navigation pane.</li>
+        <li>Click "Launch Instance."</li>
+        <li>Give a name for the EC2 instance.</li>
+        <li>Choose an Amazon Machine Image (AMI) based on your application requirements.</li>
+        <li>Select an instance type based on your needs.</li>
+        <li>Choose an existing key pair or create a new one.</li>
+        <li>Select your VPC(ConsumerVPC) in the "Network" dropdown.</li>
+        <li>Choose one of the public subnets you created.</li>
+        <li>Either select an existing security group or create a new one.</li>
+        <li>Ensure the security group allows inbound traffic on the ports your application needs (e.g., HTTP on port 80).</li>
+        <li>Optionally, you can configure other details like IAM role, user data, etc.</li>
+        <li>Click "Launch instance"</li>
+    </ol>
+
+    <h1>Launch EC2 Instances in private Subnets</h1>
+    <ol>
+        <li>Click on "Instances" in the left navigation pane.</li>
+        <li>Click "Launch Instance."</li>
+        <li>Give a name for the EC2 instance.</li>
+        <li>Choose an Amazon Machine Image (AMI) based on your application requirements.</li>
+        <li>Select an instance type based on your needs.</li>
+        <li>Choose an existing key pair or create a new one.</li>
+        <li>Select your VPC(Consumer VPC) in the "Network" dropdown.</li>
+        <li>Choose one of the private subnets you created</li>
+        <li>Either select an existing security group or create a new one.</li>
+        <li>Ensure the security group allows inbound traffic on the ports your application needs (e.g., HTTP on port 80).</li>
+        <li>Optionally, you can configure other details like IAM role, user data, etc.</li>
+        <li>Click "Launch instance"</li>
+    </ol>
+
+</section>
+
+<!-- /STEP-3 -->
+
+<h1 style="text-align: center;">Step-3</h1>
+
+<section>
+
+    <img src="Targetgroup.png" alt="Targetgroup.png" width="420" height="400">
+
+    <h1>Create Target Group Using Provider-Private-EC2 Instance</h1>
+    <ol>
+        <li>Navigate to the EC2 Dashboard in the AWS Management Console.</li>
+        <li>Under "Load Balancing" in the left navigation pane, select "Target Groups."</li>
+        <li>Click the "Create Target Group" button.</li>
+        <li>Choose "instance" as the target type.</li>
+        <li>Specify a name for the target group, e.g., "ProviderPrivateTargetGroup."</li>
+        <li>Under "Protocol," select the appropriate protocol (Select TCP, Because we are using Network Load Balancer).</li>
+        <li>Choose the Provider VPC from the "VPC" dropdown menu.</li>
+        <li>Specify the port for the target instances.</li>
+        <li>Under "Health checks," configure the health check settings based on your application requirements.</li>
+        <li>Click on the "Next" button.</li>
+        <li>Select EC2 instance (which is only provider private ec2 instances)</li>
+        <li>Click Include as Pending</li>
+        <li>Create Target Group</li>
+    </ol>
+
+    <h1>Create Network Load Balancer Using Target Group(ProviderPrivateTargetGroup)</h1>
+    <ol>
+        <li>Under "Load Balancing" in the left navigation pane, select "Load Balancers."</li>
+        <li>Click the "Create Load Balancer" button.</li>
+        <li>Choose "Network Load Balancer" as the load balancer type.</li>
+        <li>Specify a name for the load balancer, e.g., "ProviderPrivateNLB."</li>
+        <li>Choose the Provider VPC from the "VPC" dropdown menu.</li>
+        <li>For "Availability Zones," select the provider-private subnet(s) where your EC2 instances reside.</li>
+        <li>Under "Configure Security Settings," choose a security group that allows traffic to the NLB(Allow HTTP and ssh).</li>
+        <li>Under "Configure Routing," select "Existing target group" and choose the "ProviderPrivateTargetGroup" created earlier.</li>
+        <li>Review the settings and click on the "Create" button.</li>
+        <li>Wait for the NLB to be created and become active.</li>
+    </ol>
+
+    <h1>Create AWS PrivateLink for Network Load Balancer</h1>
+    <ol>
+        <li>Navigate to the VPC Dashboard in the AWS Management Console.</li>
+        <li>Under "Endpoint Services" in the left navigation pane, select "Endpoint Services."</li>
+        <li>Click the "Create Endpoint Service" button.</li>
+        <li>Specify a name for the endpoint service, e.g., "NLB-PrivateLink-Service."</li>
+        <li>Load Balancer type : Network Load Balancer</li>
+        <li>Select the Network Load Balancer (NLB) you created earlier.</li>
+        <li>Under "Additional Settings" Supported IP address Type : Select IPV4</li>
+        <li>Click on the "Create" button.</li>
+    </ol>
+
+</section>
+
+                                        
+<!-- /STEP-4 -->
+
+<h1 style="text-align: center;">Step-4</h1>
+
+<section>
+
+<h1>Create VPC Endpoint for NLB using AWS PrivateLink</h1>
+<ol>
+    <li>Navigate to the VPC Dashboard in the AWS Management Console.</li>
+    <li>Under "Endpoint Services" in the left navigation pane, select "Endpoints."</li>
+    <li>Click the "Create Endpoint" button.</li>
+    <li>Choose the "Other Endpoint services" </li>
+    <li>Under "Service Name," Provide Service name of AWS Private Link(Endpoint Service) and Verify Service.</li>
+    <li>Choose the consumer VPC from the "VPC" dropdown menu.</li>
+    <li>Select Private subnet.</li>
+    <li>Configure other settings such as security groups and policies based on your requirements(Allow HTTP and ssh).</li>
+    <li>Click on the "Create endpoint" button.</li>
+    <li>Wait for the endpoint to be created and become available.</li>
+</ol>
+
+<h1>Accepting Connections for AWS PrivateLink Endpoint Service</h1>   
+    <ol>
+        <li>Under "Endpoint Services" in the left navigation pane, select "Endpoint Services."</li>
+        <li>Choose the "NLB-PrivateLink-Service" from the list.</li>
+        <li>Click on the "Connections" tab.</li>
+        <li>Click the "Accept" button for any pending connections from your VPC endpoints.</li>
+    </ol>
+<p><b>Once connections are accepted, your VPC endpoints can securely communicate with the Network Load Balancer (NLB) through the AWS PrivateLink.</b></p>
+</section>
+
+<section>
+    <h1>Verification</h1>
+    
+    <p>Now, establish a connection from your Consumer EC2 public instance to the Consumer EC2 private instance. Then, connect to the Consumer EC2 private instance.</p>
+
+    <p>Verify the output by using the DNS name of the VPC endpoint.</p>
+</section>
+
+
+
+   
+
+
+
+
+
+
+
+
+  <div class="lb-transition-wrapper lb-transition-fade-in lb-active" data-lb-comp="transition-wrapper" data-lb-comp-registered="true">
+    <div class="lb-none-pad lb-grid lb-row lb-row-max-large lb-snap" style="display: flex; align-items: center;">
+        <div class="lb-col lb-tiny-24 lb-mid-24">
+            <div class="lb-bg-left-top-cover lb-border-p lb-small-pad lb-box" style="padding-left: 20px; padding-bottom: 0px; background-image: url('https://s3.cn-north-1.amazonaws.com.cn/aws-dam-prod/tmt/template/GSRC_Tutorials_Congratulations.08882b89ba8adfe231cdb223e7ccfb462038399f.png');">
+                <h1 id="Congratulations.21" class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-xlarge-align-center lb-txt-none lb-txt-white lb-h1 lb-title"> Congratulations!</h1>
+                <div class="lb-grid lb-row lb-row-max-large lb-snap" style="padding-top: 0px; margin-top: 0px;">
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                    <div class="lb-col lb-tiny-24 lb-mid-12" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-txt-16 lb-rtxt" style="color: #FFFFFF; margin-top: 0px;">
+                            <p style="color: #FFFFFF;">
+                            Congratulations on Setting Up Your AWS Application Load Balancer (ALB)! 🎉 This achievement marks a milestone in improving your application's reliability and scalability. Wishing you continued success as you navigate the world of cloud infrastructure. Well done! 👏🚀</div>                    
+                    </div>                    
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -10,7 +10,7 @@ import 'bootstrap';
 import { FooterComponent } from './components/footer-col/footer-col.component';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 
@@ -28,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PublicUiModule,
     SharedModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

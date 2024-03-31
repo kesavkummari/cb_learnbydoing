@@ -63,6 +63,7 @@ import { JobReadyComponent } from './Pages/job-ready/jobready.component';
 import { RegularFeeStructureComponent } from './components/fee-structure/regular-fee/fee.structure.component';
 import { JobReadyFeeComponent } from './components/fee-structure/job-ready-fee/job.ready.component';
 import { HomePageNewComponent } from './components/home-page-new/page1';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 @NgModule({
@@ -81,7 +82,7 @@ import { HomePageNewComponent } from './components/home-page-new/page1';
      CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
      DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, 
      RegularAWSCourseContent, RegulardownloadformComponent,HomePageNewComponent],
-  imports: [RouterModule, PublicUiRoutingModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
+  imports: [RouterModule, PublicUiRoutingModule,MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
 })
 export class PublicUiModule { }

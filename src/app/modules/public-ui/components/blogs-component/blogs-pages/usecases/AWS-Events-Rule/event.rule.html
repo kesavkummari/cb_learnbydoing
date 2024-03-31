@@ -1,0 +1,741 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Events Rule</title>
+
+
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light Grey Color */
+}
+
+        header {
+            max-width: 1500px;
+            color: #fff;
+            padding: 20px;
+            background-color: #6495ED;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center content horizontally */
+        }
+
+        section {
+            max-width: 1150px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(23, 18, 93, 0.1);
+        }
+
+        h2 {
+    color: #050505;
+
+    font-size: 1.0em;
+    margin-bottom: 10px;
+
+}
+
+code {
+            display: block;
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .or {
+            font-weight: bold;
+            margin: 0 10px; /* Adjusted margin */
+        }
+
+        pre {
+            font-family: 'Arial', monospace;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+
+        p {
+            color: #0e0e0e;
+        }
+
+        ol {
+            color: #111010;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        dl {
+  margin-bottom: 20px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 20px;
+}
+
+            .lb-h1 {
+                /* Add styles for the h1 element */
+                text-align: center; /* Center-align the heading */
+            }
+
+            .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Optional: Adjust the height as needed */
+        }
+
+
+        body {
+                                font-family: Arial, sans-serif;
+                                margin: 20px;
+                            }
+                    
+                            li {
+                                margin-bottom: 10px;
+                            }
+                    
+                            .free-tier {
+                                background-color: #f0f8ff;
+                                padding: 10px;
+                                border-radius: 5px;
+                            }       
+    </style>
+
+
+</head>
+<body>
+
+<div class="lb-transition-wrapper lb-transition-fade-in lb-active" data-lb-comp="transition-wrapper" data-lb-comp-registered="true">
+    <div class="lb-none-pad lb-grid lb-row lb-row-max-large lb-snap" style="display: flex; align-items: center;">
+        <div class="lb-col lb-tiny-24 lb-mid-24">
+            <div class="lb-bg-left-top-cover lb-border-p lb-small-pad lb-box" style="padding-left: 180px; padding-right: 180px; padding-bottom: 0px; background-image: url('https://s3.cn-north-1.amazonaws.com.cn/aws-dam-prod/tmt/template/GSRC_Tutorials_Congratulations.08882b89ba8adfe231cdb223e7ccfb462038399f.png'); background-color: #ffffff;">
+                <h1 id="Congratulations.21" class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-xlarge-align-center lb-txt-none lb-txt-white lb-h1 lb-title">AWS Events Rule</h1>
+                <div class="lb-grid lb-row lb-row-max-large lb-snap" style="padding-top: 0px; margin-top: 0px;">
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                    <div class="lb-col lb-tiny-24 lb-mid-12" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-txt-16 lb-rtxt" style="color: #0d0d0d; margin-top: 0px;">
+                            <p style="color: #0d0d0d; font-weight: bold;">
+                                AWS Events Rule is a CloudFormation resource defining conditions for event triggers within AWS, enabling event-driven workflows and automation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+    <p>Creates or updates the specified rule. Rules are enabled by default, or based on the value of the state. You can disable a rule using DisableRule.                            </p>
+    <p>A single rule watches for events from a single event bus. Events generated by AWS services go to your account's default event bus. Events generated by SaaS partner services or applications go to the matching partner event bus. If you have custom applications or services, you can specify whether their events go to your default event bus or a custom event bus that you have created. For more information, see CreateEventBus.</p>
+    <p>If you are updating an existing rule, the rule is replaced with what you specify in this PutRule command. If you omit arguments in PutRule, the old values for those arguments are not kept. Instead, they are replaced with null values.</p>
+    <p>When you create or update a rule, incoming events might not immediately start matching to new or updated rules. Allow a short period of time for changes to take effect.</p>
+    <p>A rule must contain at least an EventPattern or ScheduleExpression. Rules with EventPatterns are triggered when a matching event is observed. Rules with ScheduleExpressions self-trigger based on the given schedule. A rule can have both an EventPattern and a ScheduleExpression, in which case the rule triggers on matching events as well as on a schedule.</p>
+    <p>Most services in AWS treat : or / as the same character in Amazon Resource Names (ARNs). However, EventBridge uses an exact match in event patterns and rules. Be sure to use the correct ARN characters when creating event patterns so that they match the ARN syntax in the event you want to match.</p>
+    <p>In EventBridge, it is possible to create rules that lead to infinite loops, where a rule is fired repeatedly. For example, a rule might detect that ACLs have changed on an S3 bucket, and trigger software to change them to the desired state. If the rule is not written carefully, the subsequent change to the ACLs fires the rule again, creating an infinite loop.</p>
+    <p>To prevent this, write the rules so that the triggered actions do not re-fire the same rule. For example, your rule could fire only if ACLs are found to be in a bad state, instead of after any change.</p>
+    <p>An infinite loop can quickly cause higher than expected charges. We recommend that you use budgeting, which alerts you when charges exceed your specified limit. For more information, see Managing Your Costs with Budgets.</p>
+    <p><strong>Note:</strong> As an aid to help you jumpstart developing CloudFormation templates, the EventBridge console enables you to create templates from the existing rules in your account. For more information, see Generating CloudFormation templates from an EventBridge rule in the Amazon EventBridge User Guide.</p>
+
+    <h3>Syntax</h3>
+    <p>To declare this entity in your AWS CloudFormation template, use the following syntax:</p>
+
+    <h1>JSON</h1>
+    <pre>
+        <code>
+            {
+                "Type" : "AWS::Events::Rule",
+                "Properties" : {
+                    "Description" : String,
+                    "EventBusName" : String,
+                    "EventPattern" : Json,
+                    "Name" : String,
+                    "RoleArn" : String,
+                    "ScheduleExpression" : String,
+                    "State" : String,
+                    "Targets" : [ Target, ... ]
+                  }
+              }
+              
+        </code>
+    </pre>
+
+
+    <h1>YAML</h1>
+    <pre>
+        <code>
+            Type: AWS::Events::Rule
+            Properties:
+              Description: String
+              EventBusName: String
+              EventPattern: Json
+              Name: String
+              RoleArn: String
+              ScheduleExpression: String
+              State: String
+              Targets: 
+                - Target
+            
+        </code>
+    </pre>
+
+      <h1>Properties</h1>
+      <h2>Description</h2>
+      <p>The description of the rule.</p>
+      <ul>
+        <li><strong>Required:</strong> No</li>
+        <li><strong>Type:</strong> String</li>
+        <li><strong>Maximum:</strong> 512</li>
+        <li><strong>Update requires:</strong> No interruption</li>
+      </ul>
+    
+      <h2>EventBusName</h2>
+      <p>The name or ARN of the event bus associated with the rule. If you omit this, the default event bus is used.</p>
+      <ul>
+        <li><strong>Required:</strong> No</li>
+        <li><strong>Type:</strong> String</li>
+        <li><strong>Pattern:</strong> [/\.\-_A-Za-z0-9]+</li>
+        <li><strong>Minimum:</strong> 1</li>
+        <li><strong>Maximum:</strong> 256</li>
+        <li><strong>Update requires:</strong> Some interruptions</li>
+      </ul>
+    
+      <h2>EventPattern</h2>
+      <p>The event pattern of the rule. For more information, see Events and Event Patterns in the Amazon EventBridge User Guide.</p>
+      <ul>
+        <li><strong>Required:</strong> Conditional</li>
+        <li><strong>Type:</strong> Json</li>
+        <li><strong>Maximum:</strong> 4096</li>
+        <li><strong>Update requires:</strong> No interruption</li>
+      </ul>
+    
+      <h2>Name</h2>
+      <p>The name of the rule.</p>
+      <ul>
+        <li><strong>Required:</strong> No</li>
+        <li><strong>Type:</strong> String</li>
+        <li><strong>Pattern:</strong> [\.\-_A-Za-z0-9]+</li>
+        <li><strong>Minimum:</strong> 1</li>
+        <li><strong>Maximum:</strong> 64</li>
+        <li><strong>Update requires:</strong> Replacement</li>
+      </ul>
+    
+      <h2>RoleArn</h2>
+      <p>The Amazon Resource Name (ARN) of the role that is used for target invocation.</p>
+      <p>If you're setting an event bus in another account as the target and that account granted permission to your account through an organization instead of directly by the account ID, you must specify a RoleArn with proper permissions in the Target structure, instead of here in this parameter.</p>
+      <ul>
+        <li><strong>Required:</strong> No</li>
+        <li><strong>Type:</strong> String</li>
+        <li><strong>Minimum:</strong> 1</li>
+        <li><strong>Maximum:</strong> 1600</li>
+        <li><strong>Update requires:</strong> No interruption</li>
+      </ul>
+    
+      <h2>ScheduleExpression</h2>
+      <p>The scheduling expression. For example, "cron(0 20 * * ? *)", "rate(5 minutes)". For more information, see Creating an Amazon EventBridge rule that runs on a schedule.</p>
+      <ul>
+        <li><strong>Required:</strong> Conditional</li>
+        <li><strong>Type:</strong> String</li>
+        <li><strong>Maximum:</strong> 256</li>
+        <li><strong>Update requires:</strong> No interruption</li>
+      </ul>
+    
+      <h2>State</h2>
+      <p>The state of the rule.</p>
+      <ul>
+        <li><strong>Valid values include:</strong>
+          <ul>
+            <li>DISABLED: The rule is disabled. EventBridge does not match any events against the rule.</li>
+            <li>ENABLED: The rule is enabled. EventBridge matches events against the rule, except for AWS management events delivered through CloudTrail.</li>
+            <li>ENABLED_WITH_ALL_CLOUDTRAIL_MANAGEMENT_EVENTS: The rule is enabled for all events, including AWS management events delivered through CloudTrail.</li>
+          </ul>
+        </li>
+        <li><strong>Required:</strong> No</li>
+        <li><strong>Type:</strong> String</li>
+        <li><strong>Allowed values:</strong> DISABLED | ENABLED | ENABLED_WITH_ALL_CLOUDTRAIL_MANAGEMENT_EVENTS</li>
+        <li><strong>Update requires:</strong> No interruption</li>
+      </ul>
+    
+      <!-- Targets Property -->
+      <h2>Targets</h2>
+      <p>Adds the specified targets to the specified rule, or updates the targets if they are already associated with the rule.</p>
+      <p>Targets are the resources that are invoked when a rule is triggered.</p>
+      <p>The maximum number of entries per request is 10.</p>
+      <p><strong>Note:</strong> Each rule can have up to five (5) targets associated with it at one time.</p>
+      <p>For a list of services you can configure as targets for events, see EventBridge targets in the Amazon EventBridge User Guide.</p>
+      <p>Creating rules with built-in targets is supported only in the AWS Management Console. The built-in targets are:</p>
+      <ul>
+        <li>Amazon EBS CreateSnapshot API call</li>
+        <li>Amazon EC2 RebootInstances API call</li>
+        <li>Amazon EC2 StopInstances API call</li>
+        <li>Amazon EC2 TerminateInstances API call</li>
+      </ul>
+      <p>For some target types, PutTargets provides target-specific parameters. If the target is a Kinesis data stream, you can optionally specify which shard the event goes to by using the KinesisParameters argument. To invoke a command on multiple EC2 instances with one rule, you can use the RunCommandParameters field.</p>
+      <p>To be able to make API calls against the resources that you own, Amazon EventBridge needs the appropriate permissions:</p>
+      <ul>
+        <li>For AWS Lambda and Amazon SNS resources, EventBridge relies on resource-based policies.</li>
+        <li>For EC2 instances, Kinesis Data Streams, AWS Step Functions state machines and API Gateway APIs, EventBridge relies on IAM roles that you specify in the RoleARN argument in PutTargets.</li>
+      </ul>
+
+
+        <h1>Create a cross-Region rule</h1>
+        <h1>JSON</h1>
+        <pre>
+            <code>
+    {
+         "Resources": {
+            "EventRuleRegion1": {
+               "Type": "AWS::Events::Rule",
+               "Properties": {
+                  "Description": "Routes to us-east-1 event bus",
+                  "EventBusName": "MyBusName",
+                  "State": "ENABLED",
+                  "EventPattern": {
+                     "source": [
+                         "MyTestApp"
+                     ],
+                     "detail": [
+                         "MyTestAppDetail"
+                     ]
+                  },
+                  "Targets": [
+                     {
+                         "Arn": "arn:aws:events:us-east-1:123456789012:event-bus/CrossRegionDestinationBus",
+                         "Id": " CrossRegionDestinationBus",
+                         "RoleArn": {
+                            "Fn::GetAtt": [
+                               "EventBridgeIAMrole",
+                               "Arn"
+                            ]
+                         }
+                     }
+                 ]
+            }
+         },
+         "EventBridgeIAMrole": {
+            "Type": "AWS::IAM::Role",
+            "Properties": {
+               "AssumeRolePolicyDocument": {
+                  "Version": "2012-10-17",
+                  "Statement": [
+                     {
+                        "Effect": "Allow",
+                        "Principal": {
+                           "Service": {
+                              "Fn::Sub": "events.amazonaws.com"
+                           }
+                        },
+                        "Action": "sts:AssumeRole"
+                     }
+                  ]
+            },
+            "Path": "/",
+            "Policies": [
+               {
+                  "PolicyName": "PutEventsDestinationBus",
+                  "PolicyDocument": {
+                     "Version": "2012-10-17",
+                     "Statement": [
+                        {
+                           "Effect": "Allow",
+                           "Action": [
+                              "events:PutEvents"
+                           ],
+                           "Resource": [
+                              "arn:aws:events:us-east-1:123456789012:event-bus/CrossRegionDestinationBus"
+                           ]
+                        }
+                     ]
+                  }
+               }
+            ]
+         }
+      }
+    }
+</code>
+</pre>
+
+<h1>YAML</h1>
+<pre><code>
+Resources:
+  EventRuleRegion1:
+    Type: 'AWS::Events::Rule'
+    Properties:
+      Description: Routes to us-east-1 event bus
+      EventBusName: MyBusName
+      State: ENABLED
+      EventPattern:
+        source:
+          - MyTestApp
+        detail:
+          - MyTestAppDetail
+      Targets:
+        - Arn: >-
+            arn:aws:events:us-east-1:123456789012:event-bus/CrossRegionDestinationBus
+          Id: ' CrossRegionDestinationBus'
+          RoleArn: !GetAtt 
+            - EventBridgeIAMrole
+            - Arn
+  EventBridgeIAMrole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: !Sub events.amazonaws.com
+            Action: 'sts:AssumeRole'
+      Path: /
+      Policies:
+        - PolicyName: PutEventsDestinationBus
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - 'events:PutEvents'
+                Resource:
+                  - >-
+                    arn:aws:events:us-east-1:123456789012:event-bus/CrossRegionDestinationBus
+</code></pre>
+
+      
+        <h1>Create a rule that includes a dead-letter queue for a target</h1>
+
+<p>
+    The following example demonstrates how to send all EC2 events to an SQS queue, and include a dead-letter queue and retry policy settings for the target of the rule.
+</p>
+
+<h1>JSON</h1>
+<pre>
+    <code>
+    {
+         "MyNewEventsRule": {
+            "Type": "AWS::Events::Rule",
+            "Properties": {
+               "Description": "Test Events Rule",
+               "Name": "mynewabc",
+               "EventPattern": {
+                  "source": [
+                     "aws.ec2"
+                  ]
+               },
+               "State": "ENABLED",
+               "Targets": [
+                  {
+                     "Arn": "arn:aws:sqs:us-west-2:081035103721:demoSQS",
+                     "Id": "Id1234",
+                     "RetryPolicy": {
+                        "MaximumRetryAttempts": 4,
+                        "MaximumEventAgeInSeconds": 400
+                     },
+                     "DeadLetterConfig": {
+                        "Arn": "arn:aws:sqs:us-west-2:081035103721:demoDLQ"
+                     }
+                  }
+               ]
+            }
+         }
+      }
+    </code>
+</pre>
+
+<h1>YAML</h1>
+
+<pre>
+    <code>
+MyNewEventsRule:
+  Type: 'AWS::Events::Rule'
+  Properties:
+    Description: Test Events Rule
+    Name: mynewabc
+    EventPattern:
+      source:
+        - aws.ec2
+    State: ENABLED
+    Targets:
+      - Arn: 'arn:aws:sqs:us-west-2:081035103721:demoSQS'
+        Id: Id1234
+        RetryPolicy:
+          MaximumRetryAttempts: 4
+          MaximumEventAgeInSeconds: 400
+        DeadLetterConfig:
+          Arn: 'arn:aws:sqs:us-west-2:081035103721:demoDLQ'
+    </code>
+</pre>
+
+  <h1>Regularly invoke Lambda function</h1>
+  <p>The following example creates a rule that invokes the specified Lambda function every 10 minutes. The PermissionForEventsToInvokeLambda resource grants EventBridge permission to invoke the associated function.</p>
+  <h1>JSON</h1>
+  <pre>
+    <code>
+"ScheduledRule": {
+  "Type": "AWS::Events::Rule",
+  "Properties": {
+    "Description": "ScheduledRule",
+    "ScheduleExpression": "rate(10 minutes)",
+    "State": "ENABLED",
+    "Targets": [{
+      "Arn": { "Fn::GetAtt": ["LambdaFunction", "Arn"] },
+      "Id": "TargetFunctionV1"
+    }]
+  }
+},
+"PermissionForEventsToInvokeLambda": {
+  "Type": "AWS::Lambda::Permission",
+  "Properties": {
+    "FunctionName": { "Ref": "LambdaFunction" },
+    "Action": "lambda:InvokeFunction",
+    "Principal": "events.amazonaws.com",
+    "SourceArn": { "Fn::GetAtt": ["ScheduledRule", "Arn"] }
+  }
+}
+</code>
+</pre>
+
+<h1>YAML</h1>
+
+<pre>
+    <code>
+ScheduledRule: 
+  Type: AWS::Events::Rule
+  Properties: 
+    Description: "ScheduledRule"
+    ScheduleExpression: "rate(10 minutes)"
+    State: "ENABLED"
+    Targets: 
+      - 
+        Arn: 
+          Fn::GetAtt: 
+            - "LambdaFunction"
+            - "Arn"
+        Id: "TargetFunctionV1"
+PermissionForEventsToInvokeLambda: 
+  Type: AWS::Lambda::Permission
+  Properties: 
+    FunctionName: !Ref "LambdaFunction"
+    Action: "lambda:InvokeFunction"
+    Principal: "events.amazonaws.com"
+    SourceArn: 
+      Fn::GetAtt: 
+        - "ScheduledRule"
+        - "Arn"
+    </code>
+</pre>
+
+  <h1>Invoke Lambda Function in Response to an Event</h1>
+  <p>The following example creates a rule that invokes the specified Lambda function when any EC2 instance's state changes to stopping.</p>
+  <h1>JSON</h1>
+  <pre>
+<code>
+"EventRule": {
+  "Type": "AWS::Events::Rule",
+  "Properties": {
+    "Description": "EventRule",
+    "EventPattern": {
+      "source": [
+        "aws.ec2"
+      ],
+      "detail-type": [
+        "EC2 Instance State-change Notification"
+      ],
+      "detail": {
+        "state": [
+          "stopping"
+        ]
+      }
+    },
+    "State": "ENABLED",
+    "Targets": [{
+      "Arn": { "Fn::GetAtt": ["LambdaFunction", "Arn"] },
+      "Id": "TargetFunctionV1"
+    }]
+  }
+},
+"PermissionForEventsToInvokeLambda": {
+  "Type": "AWS::Lambda::Permission",
+  "Properties": {
+    "FunctionName": { "Ref": "LambdaFunction" },
+    "Action": "lambda:InvokeFunction",
+    "Principal": "events.amazonaws.com",
+    "SourceArn": { "Fn::GetAtt": ["EventRule", "Arn"] }
+  }
+}
+</code>
+</pre>
+
+<h1>YAML</h1>
+
+<pre>
+    <code>
+EventRule: 
+  Type: AWS::Events::Rule
+  Properties: 
+    Description: "EventRule"
+    EventPattern: 
+      source: 
+        - "aws.ec2"
+      detail-type: 
+        - "EC2 Instance State-change Notification"
+      detail: 
+        state: 
+          - "stopping"
+    State: "ENABLED"
+    Targets: 
+      - 
+        Arn: 
+          Fn::GetAtt: 
+            - "LambdaFunction"
+            - "Arn"
+        Id: "TargetFunctionV1"
+PermissionForEventsToInvokeLambda: 
+  Type: AWS::Lambda::Permission
+  Properties: 
+    FunctionName: 
+      Ref: "LambdaFunction"
+    Action: "lambda:InvokeFunction"
+    Principal: "events.amazonaws.com"
+    SourceArn: 
+      Fn::GetAtt: 
+        - "EventRule"
+        - "Arn"
+    </code>
+</pre>
+
+  <h1>Notify a Topic in Response to a Log Entry</h1>
+  <p>The following example creates a rule that notifies an Amazon Simple Notification Service topic if an AWS CloudTrail log entry contains a call by the root user. The EventTopicPolicy resource grants Amazon EventBridge permission to notify the associated Amazon SNS topic.</p>
+  <h1>JSON</h1>
+  <pre>
+<code>
+"OpsEventRule": {
+  "Type": "AWS::Events::Rule",
+  "Properties": {
+    "Description": "EventRule",
+    "EventPattern": {
+      "detail-type": [ "AWS API Call via CloudTrail" ],
+      "detail": { 
+        "userIdentity": { 
+          "type": [ "Root" ]
+        }
+      }
+    },
+    "State": "ENABLED",
+    "Targets": [
+      {
+        "Arn": { "Ref": "MySNSTopic" },
+        "Id": "OpsTopic"
+      }
+    ]
+  }
+},
+"EventTopicPolicy": {
+  "Type": "AWS::SNS::TopicPolicy",
+  "Properties": {
+    "PolicyDocument": {
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": { "Service": "events.amazonaws.com" },
+          "Action": "sns:Publish",
+          "Resource": "*"
+        }
+      ]
+    },
+    "Topics": [ { "Ref": "MySNSTopic" } ]
+  }
+}
+</code>
+</pre>
+
+<h1>YAML</h1>
+
+<pre>
+    <code>
+OpsEventRule: 
+  Type: AWS::Events::Rule
+  Properties: 
+    Description: "EventRule"
+    EventPattern: 
+      detail-type: 
+        - "AWS API Call via CloudTrail"
+      detail: 
+        userIdentity: 
+          type: 
+            - "Root"
+    State: "ENABLED"
+    Targets: 
+      - 
+        Arn: 
+          Ref: "MySNSTopic"
+        Id: "OpsTopic"
+EventTopicPolicy:
+  Type: 'AWS::SNS::TopicPolicy'
+  Properties:
+    PolicyDocument:
+      Statement:
+        - Effect: Allow
+          Principal:
+            Service: events.amazonaws.com
+          Action: 'sns:Publish'
+          Resource: '*'
+    Topics:
+      - !Ref MySNSTopic
+    </code>
+</pre>
+   
+</section>
+
+  <div class="lb-transition-wrapper lb-transition-fade-in lb-active" data-lb-comp="transition-wrapper" data-lb-comp-registered="true">
+    <div class="lb-none-pad lb-grid lb-row lb-row-max-large lb-snap" style="display: flex; align-items: center;">
+        <div class="lb-col lb-tiny-24 lb-mid-24">
+            <div class="lb-bg-left-top-cover lb-border-p lb-small-pad lb-box" style="padding-left: 20px; padding-bottom: 0px; background-image: url('https://s3.cn-north-1.amazonaws.com.cn/aws-dam-prod/tmt/template/GSRC_Tutorials_Congratulations.08882b89ba8adfe231cdb223e7ccfb462038399f.png');">
+                <h1 id="Congratulations.21" class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-xlarge-align-center lb-txt-none lb-txt-white lb-h1 lb-title"> Congratulations!</h1>
+                <div class="lb-grid lb-row lb-row-max-large lb-snap" style="padding-top: 0px; margin-top: 0px;">
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                    <div class="lb-col lb-tiny-24 lb-mid-12" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-txt-16 lb-rtxt" style="color: #FFFFFF; margin-top: 0px;">
+                            <p style="color: #FFFFFF;">
+                                Congratulations on successfully setting up your AWS Events Rule! 🎉 This accomplishment signifies a crucial advancement in orchestrating and managing your cloud infrastructure effectively. By leveraging AWS Events Rules, you're enhancing the reliability and efficiency of your application's workflows. Wishing you continued success as you explore the dynamic realm of cloud infrastructure. Well done on reaching this milestone! 👏🚀                    </div>                    
+                    <div class="lb-col lb-tiny-24 lb-mid-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        code {
+            display: block;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            white-space: pre-wrap;
+        }
+        body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light Grey Color */
+}
+
+        header {
+            max-width: 1500px;
+            color: #fff;
+            padding: 20px;
+            background-color: #6495ED;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center content horizontally */
+        }
+
+        section {
+            max-width: 1150px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(23, 18, 93, 0.1);
+        }
+
+        h2 {
+    color: #050505;
+
+    font-size: 1.0em;
+    margin-bottom: 10px;
+
+}
+
+        p {
+            color: #0e0e0e;
+        }
+
+        ol {
+            color: #111010;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+  
+
+            .lb-h1 {
+                /* Add styles for the h1 element */
+                text-align: center; /* Center-align the heading */
+            }
+
+            .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Optional: Adjust the height as needed */
+        }
+
+
+        body {
+                                font-family: Arial, sans-serif;
+                                margin: 20px;
+                            }
+                    
+                            li {
+                                margin-bottom: 10px;
+                            }
+                    
+
+                                    
+            </style>
+    <title>AWS IAM - Allow Specific Region Access</title>
+</head>
+<body>
+
+    <div class="lb-transition-wrapper lb-transition-fade-in lb-active" data-lb-comp="transition-wrapper" data-lb-comp-registered="true">
+        <div class="lb-none-pad lb-grid lb-row lb-row-max-large lb-snap" style="display: flex; align-items: center;">
+            <div class="lb-col lb-tiny-24 lb-mid-24">
+                <div class="lb-bg-left-top-cover lb-border-p lb-small-pad lb-box" style="padding-left: 180px; padding-right: 180px; padding-bottom: 0px; background-image: url('https://s3.cn-north-1.amazonaws.com.cn/aws-dam-prod/tmt/template/GSRC_Tutorials_Congratulations.08882b89ba8adfe231cdb223e7ccfb462038399f.png'); background-color: #ffffff;">
+                    <h1 id="Congratulations.21" class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-xlarge-align-center lb-txt-none lb-txt-white lb-h1 lb-title"> AWS IAM - Allow Specific Region Access</h1>
+                    <div class="lb-grid lb-row lb-row-max-large lb-snap" style="padding-top: 0px; margin-top: 0px;">
+                        <div class="lb-col lb-tiny-24 lb-mid-6">
+                        </div>
+                        <div class="lb-col lb-tiny-24 lb-mid-12" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-txt-16 lb-rtxt" style="color: #0d0d0d; margin-top: 0px;">
+                                <p style="color: #0d0d0d; font-weight: bold;">
+                                    IAM grants precise AWS access control. Set region-specific permissions using policies, ensuring secure resource interaction within designated areas for enhanced security and compliance                                </p>
+                            </div>
+                        </div>
+                        <div class="lb-col lb-tiny-24 lb-mid-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h2> AWS Identity and Access Management (IAM) allows you to control access to AWS services and resources. In the context of specific region access, IAM enables you to define fine-grained permissions for users, groups, or roles while considering the geographical scope. By using IAM policies with conditions such as "aws:RequestedRegion," you can restrict or allow access to AWS resources based on the specified region. This level of control enhances security, compliance, and governance, ensuring that users only interact with resources in designated regions.</h2>
+    </section>
+
+   
+
+    <section id="createIAMUser">
+        <h2>Step 1: Create IAM User</h2>
+        <ol>
+            <li>Open the IAM Console and Navigate to "Users".</li>
+            <img src="IAM-Dashboard.png" alt="IAM-Dashboard.png" width="750" height="475">
+            <li>Click "Create user."</li>
+            <img src="create-user.png" alt="create-user.png" width="750" height="475">
+            <li>Enter a username and choose "Provide User access to Management console".</li>
+            <img src="user-name.png" alt="user-name.png" width="750" height="475">
+            <li>Choose a console password (Select AutoGenerated or Custom Password).</li>
+            <img src="Auto-generated-password.png" alt="Auto-generated-password.png" width="750" height="475">
+            <li>Click "Next."</li>
+            <img src="step-1-next.png" alt="step-1-next.png" width="750" height="475">
+            <li>Skip the permissions step (do not attach any policies).</li>
+            <img src="skip-permisions.png" alt="skip-permisions.png" width="750" height="475">
+            <li>Review and create the user.</li>
+            <img src="review-user.png" alt="review-user.png" width="750" height="475">
+        </ol>
+        <li>Save the IAM User Credentials (or) Using Credentials Login to IAM User.</li>
+        <p><strong>Note:</strong> This will create an IAM user without any attached policies, meaning the user has no permissions by default.</p>
+    </section>
+
+    <section id="createCustomPolicy">
+        <h2>Step 2: Create a Custom IAM Policy for IAM User</h2>
+        <ol>
+            <li>Open the AWS Management Console and navigate to the IAM service (In Root User).</li>
+            <li>In the left navigation pane, click on "Policies."</li>
+            <img src="click-on-policies.png" alt="click-on-policies.png" width="750" height="475">
+            <li>Click on the "Create policy" button.</li>
+            <img src="create-policies.png" alt="create-policies.png" width="750" height="475">
+            <li>Choose the "JSON" tab and paste the JSON policy document:</li>
+            <img src="select-json.png" alt="select-json.png" width="750" height="475">
+            <code>
+            {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Action": [
+                            "ec2:*",
+                            "rds:*",
+                            "s3:*"
+                        ],
+                        "Resource": "*",
+                        "Condition": 
+                        {
+                            "StringEquals": 
+                            {
+                                "aws:RequestedRegion": "us-east-1"
+                            }
+                        }
+                    }
+                ]
+            }
+            </code>
+
+            <p><strong>Note:</strong> The provided IAM policy JSON document grants specific permissions for the actions related to EC2, RDS, and S3 services, but only in the "us-east-1" region.</p>
+
+            <h1 style="text-align: center;">(OR)</h1>
+
+
+
+        <code>
+            {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Action": [
+                            "*"
+                        ],
+                        "Resource": "*",
+                        "Condition": 
+                        {
+                            "StringEquals": 
+                            {
+                                "aws:RequestedRegion": "us-east-1"
+                                
+                            }
+                        }
+                    }
+                ]
+            }
+        </code>
+
+        <p><strong>Note:</strong> IAM Policies for Only NV-Region For All Services</p>
+
+            <li>Click "Next."</li>
+            <img src="step-2-next.png" alt="step-2-next.png" width="750" height="475">
+            <li>Name the policy and provide a description, Optionally.</li>
+            <img src="name-policies.png" alt="name-policies.png" width="750" height="475">
+            <li>Click "Create policy."</li>
+            <img src="craete-policy.png" alt="craete-policy.png" width="750" height="475">
+        </ol>
+    </section>
+
+    <section id="attachPolicyToUser">
+        <h2>Step 3: Attach the Policy to the IAM User</h2>
+        <ol>
+            <li>In the IAM console, click on "Users" in the left navigation pane.</li>
+            <img src="click-Users.png" alt="click-Users.png" width="750" height="475">
+            <li>Select the IAM user to which you Created.</li>
+            <img src="select-user-created.png" alt="select-user-created.png" width="750" height="475">
+            <li>Click on the "Permissions" tab.</li>
+            <li>Click on "Add permission".</li>
+            <img src="add-permissions.png" alt="add-permissions.png" width="750" height="475">
+            <li>Click on "Attach policies directly."</li>
+            <img src="attach-policies.png" alt="attach-policies.png" width="750" height="475">
+            <li>Search for Policy which you created with name and select the custom policy you created.</li>
+            <img src="select-policy-created.png" alt="select-policy-created.png" width="750" height="475">
+            <li>Click "Next".</li>
+            <img src="step-3-next.png" alt="step-3-next.png" width="750" height="475">
+            <li>Review and Click "Add permission".</li>
+            <img src="step-3-add-permissions.png" alt="step-3-add-permissions.png" width="750" height="475">
+        </ol>
+    </section>
+
+    <section id="testAccess">
+        <h2>Step 5: Test Access</h2>
+        <ol>
+            <li>Sign in to the AWS Management Console using the IAM user's credentials.</li>
+            <li>Attempt to perform actions in the specified regions (e.g., create an EC2 instance) to ensure that access is allowed only in the allowed regions.</li>
+        </ol>
+    </section>
+
+    <div class="lb-transition-wrapper lb-transition-fade-in lb-active" data-lb-comp="transition-wrapper" data-lb-comp-registered="true">
+        <div class="lb-none-pad lb-grid lb-row lb-row-max-large lb-snap" style="display: flex; align-items: center;">
+            <div class="lb-col lb-tiny-24 lb-mid-24">
+                <div class="lb-bg-left-top-cover lb-border-p lb-small-pad lb-box" style="padding-left: 20px; padding-bottom: 0px; background-image: url('https://s3.cn-north-1.amazonaws.com.cn/aws-dam-prod/tmt/template/GSRC_Tutorials_Congratulations.08882b89ba8adfe231cdb223e7ccfb462038399f.png');">
+                    <h1 id="Congratulations.21" class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-xlarge-align-center lb-txt-none lb-txt-white lb-h1 lb-title"> Congratulations!</h1>
+                    <div class="lb-grid lb-row lb-row-max-large lb-snap" style="padding-top: 0px; margin-top: 0px;">
+                        <div class="lb-col lb-tiny-24 lb-mid-6">
+                        </div>
+                        <div class="lb-col lb-tiny-24 lb-mid-12" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div class="lb-tiny-align-center lb-small-align-center lb-mid-align-center lb-large-align-center lb-txt-16 lb-rtxt" style="color: #FFFFFF; margin-top: 0px;">
+                                <p style="color: #FFFFFF;">
+                                    Congratulations on configuring AWS IAM for specific region access! 🎉 This milestone enhances security and control over AWS resources. Wishing you ongoing success in your cloud journey. Well done! 👏🚀                        </div>                    
+                        <div class="lb-col lb-tiny-24 lb-mid-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
