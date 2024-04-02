@@ -41,6 +41,10 @@ import { RDSMYSQLComponent } from './components/blogs-component/blogs-pages/all-
 import { RoutingComponent } from './components/blogs-component/blogs-pages/all-blogs/Routing_polices/routing';
 import { ServerlessComponent } from './components/blogs-component/blogs-pages/all-blogs/serverless_website/serverless';
 import { JobReadyComponent } from './Pages/job-ready/jobready.component';
+import { SETTINGNLBCompoent } from './components/blogs-component/blogs-pages/use-cases/Setting-Up-Network-Load-Balancer/setting.nlb';
+import { SETTINGALBCompoent } from './components/blogs-component/blogs-pages/use-cases/Setting-Up-Application-Load-Balancer/setting.alb';
+import { DISASTERRECOVERYCompoent } from './components/blogs-component/blogs-pages/use-cases/Implementing-a-disaster-recovery-strategy-with-Amazon-RDS/disaster.recovery';
+import { DOCKERCONTAINERSCompoent } from './components/blogs-component/blogs-pages/use-cases/Deploy-Docker-Containers-on-Amazon-Deploy-Docker-Containers/docker.containers';
   
 const routes: Routes = [
  
@@ -83,6 +87,10 @@ const routes: Routes = [
   { path: 'RDS-MYSQL' , component : RDSMYSQLComponent },
   { path: 'Routing-Policies-in-Amazon-Route53' , component : RoutingComponent },
   { path: 'AWS-Serverless' , component : ServerlessComponent },
+  { path: 'Setting-Up-Network-Load-Balancer' , component : SETTINGNLBCompoent },
+  { path: 'Setting-Up-Application-Load-Balancer' , component : SETTINGALBCompoent },
+  { path: 'Implementing-a-disaster-recovery-strategy-with-Amazon-RDS' , component : DISASTERRECOVERYCompoent },
+  { path: 'Deploy-Docker-Containers-on-Amazon-Deploy-Docker-Containers' , component : DOCKERCONTAINERSCompoent },
   
   
   
