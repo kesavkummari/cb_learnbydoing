@@ -45,6 +45,8 @@ import { SETTINGNLBCompoent } from './components/blogs-component/blogs-pages/use
 import { SETTINGALBCompoent } from './components/blogs-component/blogs-pages/use-cases/Setting-Up-Application-Load-Balancer/setting.alb';
 import { DISASTERRECOVERYCompoent } from './components/blogs-component/blogs-pages/use-cases/Implementing-a-disaster-recovery-strategy-with-Amazon-RDS/disaster.recovery';
 import { DOCKERCONTAINERSCompoent } from './components/blogs-component/blogs-pages/use-cases/Deploy-Docker-Containers-on-Amazon-Deploy-Docker-Containers/docker.containers';
+import { SINGLESIGNONCompoent } from './components/blogs-component/blogs-pages/use-cases/aws-single-sign-on/single.signon';
+import { WAFALBCompoent } from './components/blogs-component/blogs-pages/use-cases/aws-web-waf-on-alb/waf.alb';
   
 const routes: Routes = [
  
@@ -91,6 +93,8 @@ const routes: Routes = [
   { path: 'Setting-Up-Application-Load-Balancer' , component : SETTINGALBCompoent },
   { path: 'Implementing-a-disaster-recovery-strategy-with-Amazon-RDS' , component : DISASTERRECOVERYCompoent },
   { path: 'Deploy-Docker-Containers-on-Amazon-Deploy-Docker-Containers' , component : DOCKERCONTAINERSCompoent },
+  { path: 'aws-single-sign-on' , component : SINGLESIGNONCompoent },
+  { path: 'aws-web-waf-on-alb' , component : WAFALBCompoent },
   
   
   
