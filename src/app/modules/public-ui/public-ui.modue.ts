@@ -64,6 +64,8 @@ import { RegularFeeStructureComponent } from './components/fee-structure/regular
 import { JobReadyFeeComponent } from './components/fee-structure/job-ready-fee/job.ready.component';
 import { HomePageNewComponent } from './components/home-page-new/page1';
 import { MatTabsModule } from '@angular/material/tabs';
+import { LandingPageComponent } from './Pages/landing_page/landingpage';
+import { WeOfferComponent } from './components/we-offer/we.offer';
 
 
 @NgModule({
@@ -77,7 +79,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     AwsDevOpsCourseTableComponent, ImagePopupComponent, CourseContentMob, 
     RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, 
     Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
-     CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
+     CertificateComponent, SubHeaderComponent, FeeStructureComponent , LandingPageComponent, WeOfferComponent,
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
      CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
      DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, 
