@@ -1,0 +1,1 @@
+This branch contains, aws and devops course content and now we are chaning the content to aws and devops as seperate course.
