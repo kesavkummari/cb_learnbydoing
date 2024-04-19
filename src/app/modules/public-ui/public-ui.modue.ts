@@ -66,6 +66,7 @@ import { HomePageNewComponent } from './components/home-page-new/page1';
 import { MatTabsModule } from '@angular/material/tabs';
 import { LandingPageComponent } from './Pages/landing_page/landingpage';
 import { WeOfferComponent } from './components/we-offer/we.offer';
+import { RolesComponent } from './components/roles/roles';
 
 
 @NgModule({
@@ -79,7 +80,7 @@ import { WeOfferComponent } from './components/we-offer/we.offer';
     AwsDevOpsCourseTableComponent, ImagePopupComponent, CourseContentMob, 
     RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, 
     Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
-     CertificateComponent, SubHeaderComponent, FeeStructureComponent , LandingPageComponent, WeOfferComponent,
+     CertificateComponent, SubHeaderComponent, FeeStructureComponent , LandingPageComponent, WeOfferComponent,RolesComponent,
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
      CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
      DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, 
