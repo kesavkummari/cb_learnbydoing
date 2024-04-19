@@ -11,129 +11,129 @@ export class DevOpsCourseContentMob {
 
   courses = [
     {
-      title: 'AWS DEVOPS',
+      title: 'DEVOPS',
       modules: [
         // Course 2 modules and submodules
         // Module 1
-        {
-          title: 'Getting Started with OS',
-          submodules: [ 'Unix & Linux History & Distributions',
-   'Basic & Advanced Commands',
-   'Run Levels',
-   'Boot Process',
-   'File System',
-   'File & Directory Management',
-   'Text Editors',
-   'Permissions',
-   'User & Group Management',
-   'Package Management',
-   'Controlling Services & Daemons',
-   'Process Management',
-   'Log Management',
-   'Web Servers - Windows IIS, Apache2, Nginx & Httpd',
-   'Database Servers - MySQL, Mariadb & PostgreSQL']
-                              },
+//         {
+//           title: 'Getting Started with OS',
+//           submodules: [ 'Unix & Linux History & Distributions',
+//    'Basic & Advanced Commands',
+//    'Run Levels',
+//    'Boot Process',
+//    'File System',
+//    'File & Directory Management',
+//    'Text Editors',
+//    'Permissions',
+//    'User & Group Management',
+//    'Package Management',
+//    'Controlling Services & Daemons',
+//    'Process Management',
+//    'Log Management',
+//    'Web Servers - Windows IIS, Apache2, Nginx & Httpd',
+//    'Database Servers - MySQL, Mariadb & PostgreSQL']
+//                               },
                                 
-{
-  title: 'AWS Services - Application Integration',
-  submodules: [
-    'Amazon EventBridge (Amazon CloudWatch Events)' 
-  ]
-},
-{
-  title: 'AWS Services - Compute',
-  submodules: [
-    'Amazon EC2',
-    'Amazon EC2 Auto Scaling',
-    'AWS Elastic Beanstalk'
-  ]
-},
+// {
+//   title: 'AWS Services - Application Integration',
+//   submodules: [
+//     'Amazon EventBridge (Amazon CloudWatch Events)' 
+//   ]
+// },
+// {
+//   title: 'AWS Services - Compute',
+//   submodules: [
+//     'Amazon EC2',
+//     'Amazon EC2 Auto Scaling',
+//     'AWS Elastic Beanstalk'
+//   ]
+// },
 
-{
-  title: 'AWS Services - Database',
-  submodules: [
-    'AWS Database Migration Service (AWS DMS)',
-    'Amazon DynamoDB',
-    'Amazon RDS',
-    'Amazon Redshift'
-  ]
-},
+// {
+//   title: 'AWS Services - Database',
+//   submodules: [
+//     'AWS Database Migration Service (AWS DMS)',
+//     'Amazon DynamoDB',
+//     'Amazon RDS',
+//     'Amazon Redshift'
+//   ]
+// },
 
-{
-  title: 'AWS Services - Storage',
-  submodules: [
+// {
+//   title: 'AWS Services - Storage',
+//   submodules: [
 
-    'Amazon Elastic Block Store (Amazon EBS)',
-    'Amazon Elastic File System (Amazon EFS)',
-    'Amazon S3'
-  ]
-},
+//     'Amazon Elastic Block Store (Amazon EBS)',
+//     'Amazon Elastic File System (Amazon EFS)',
+//     'Amazon S3'
+//   ]
+// },
 
-{
-  title: 'AWS Services - Developer Tools',
-  submodules: [
-    'AWS Cloud Development Kit (AWS CDK)',
-    'AWS CloudShell',
-    'AWS CodeArtifact',
-    'AWS CodeBuild',
-    'AWS CodeCommit',
-    'AWS CodeDeploy',
-    'AWS CodePipeline',
-    'AWS CodeStar',
-    'AWS Command Line Interface (AWS CLI)',
-    'AWS SDKs and Tools'
-  ]
-},
+// {
+//   title: 'AWS Services - Developer Tools',
+//   submodules: [
+//     'AWS Cloud Development Kit (AWS CDK)',
+//     'AWS CloudShell',
+//     'AWS CodeArtifact',
+//     'AWS CodeBuild',
+//     'AWS CodeCommit',
+//     'AWS CodeDeploy',
+//     'AWS CodePipeline',
+//     'AWS CodeStar',
+//     'AWS Command Line Interface (AWS CLI)',
+//     'AWS SDKs and Tools'
+//   ]
+// },
 
-          {
-            title: 'AWS Services - Serverless',
-            submodules: ['AWS Lambda',
-'Amazon API Gateway',
-'AWS Step Functions',
-'Amazon Simple Email Service (SES)',
-'Amazon Simple Notification Service (Amazon SNS)'
-]
-          },
+//           {
+//             title: 'AWS Services - Serverless',
+//             submodules: ['AWS Lambda',
+// 'Amazon API Gateway',
+// 'AWS Step Functions',
+// 'Amazon Simple Email Service (SES)',
+// 'Amazon Simple Notification Service (Amazon SNS)'
+// ]
+//           },
 
-          {
-  title: 'AWS Services - Management & Governance',
-  submodules: [
-    'AWS Auto Scaling',
-    'AWS CloudTrail',
-    'Amazon CloudWatch',
-    'Amazon CloudWatch Logs',
-    'AWS Compute Optimizer',
-    'AWS Health',
-    'AWS Organizations',
-    'AWS Personal Health Dashboard',
-    'AWS Systems Manager',
-    'AWS Trusted Advisor'   
-  ]
-},
+//           {
+//   title: 'AWS Services - Management & Governance',
+//   submodules: [
+//     'AWS Auto Scaling',
+//     'AWS CloudTrail',
+//     'Amazon CloudWatch',
+//     'Amazon CloudWatch Logs',
+//     'AWS Compute Optimizer',
+//     'AWS Health',
+//     'AWS Organizations',
+//     'AWS Personal Health Dashboard',
+//     'AWS Systems Manager',
+//     'AWS Trusted Advisor'   
+//   ]
+// },
 
-{
-  title: 'AWS Services - Networking and Content Delivery',
-  submodules: [
-    'Amazon CloudFront',
-    'Amazon Route 53',
-    'Amazon VPC',
-    'Amazon VPC Peering',
-    'Elastic Load Balancing (ELB)'
-  ]
-},
+// {
+//   title: 'AWS Services - Networking and Content Delivery',
+//   submodules: [
+//     'Amazon CloudFront',
+//     'Amazon Route 53',
+//     'Amazon VPC',
+//     'Amazon VPC Peering',
+//     'Elastic Load Balancing (ELB)'
+//   ]
+// },
 
-{
-  title: 'AWS Services - Security, Identity, and Compliance ',
-  submodules: [
-    'AWS Certificate Manager (ACM)', 
-    'AWS Identity and Access Management (IAM)', 
-    'AWS Single Sign-On',
-    'AWS Key Management Service (AWS KMS)',
-    'AWS Secrets Manager',
-    'AWS Security Token Service (AWS STS)'
+// {
+//   title: 'AWS Services - Security, Identity, and Compliance ',
+//   submodules: [
+//     'AWS Certificate Manager (ACM)', 
+//     'AWS Identity and Access Management (IAM)', 
+//     'AWS Single Sign-On',
+//     'AWS Key Management Service (AWS KMS)',
+//     'AWS Secrets Manager',
+//     'AWS Security Token Service (AWS STS)'
 
-  ]
-},
+//   ]
+// },
            {
             title: 'Software Development Life Cycle : Agile - Scrum',
             submodules: ['Getting Started with SDLC',

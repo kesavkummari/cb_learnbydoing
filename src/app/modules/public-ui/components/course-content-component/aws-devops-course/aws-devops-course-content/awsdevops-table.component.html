@@ -2,7 +2,7 @@
   <div class="main-tab">
     <div class="sub-tabs">
     <!--   <div  class="sub-tab" (click)="selectTab('os')" [class.active]="selectedTab === 'os'">   OS [Windows & Linux]</div> -->
-     <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">AWS DevOps</div>   
+     <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">DevOps</div>   
       <!-- <div class="sub-tab" style="color: #421740;" (click)="selectTab('devops')" [class.active]="selectedTab === 'devops'">AWS DevOps - Shell & Python Scripting </div>
      <div class="sub-tab" (click)="selectTab('mlops')" [class.active]="selectedTab === 'mlops'" >MLOps </div> 
     <div class="sub-tab" (click)="selectTab('python')" [class.active]="selectedTab === 'python'" style="margin-right: 0;">Python </div> -->
@@ -216,19 +216,19 @@
       <ng-container *ngIf="selectedTab === 'aws'">
         <div class="content-columns">
           <div class="left-column">
-            <h2>AWS Content - Modules</h2>
+            <h2>DevOps Content - Modules</h2>
             <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with OS </div>
             <!-- <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Analytics  </div> -->
-            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Application Integration</div>
-            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Compute </div>
+            <!-- <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Application Integration</div>
+            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Compute </div> -->
             <!-- <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS Services -Containers </div> -->
-            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS Services - Database   </div>
+            <!-- <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS Services - Database   </div>
             <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS Services - Storage    </div>
             <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS Services - Developer Tools</div>
             <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS Services - Serverless</div>
             <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS Services - Management and Governance</div>
             <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS Services - Networking and Content Delivery</div>
-            <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS Services - Security, Identity, and Compliance</div>
+            <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS Services - Security, Identity, and Compliance</div> -->
 
             <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Software Development Life Cycle: Agile - Scrum</div>
             <div class="module" (click)="selectModule('M26')" [class.active-module]="selectedModule === 'M26'">Build Tool: Apache Maven & Python Pip</div>
@@ -239,8 +239,6 @@
             <div class="module" (click)="selectModule('M17')" [class.active-module]="selectedModule === 'M17'">Continuous Binary Code Repository using JFrog</div>
             <div class="module" (click)="selectModule('M18')" [class.active-module]="selectedModule === 'M18'">Continuous Infrastructure As A Code: Terraform</div>
             <div class="module" (click)="selectModule('M19')" [class.active-module]="selectedModule === 'M19'">Creating Machine Images: Packer</div>
-
-
             <div class="module" (click)="selectModule('M22')" [class.active-module]="selectedModule === 'M22'">Container Orchestration: Kubernetes</div>
             <div class="module" (click)="selectModule('M23')" [class.active-module]="selectedModule === 'M23'">Continuous Monitoring: New Relic & Nagios</div>
             <div class="module" (click)="selectModule('M21')" [class.active-module]="selectedModule === 'M21'">Containerisation: Docker</div>
@@ -284,7 +282,7 @@
           <li>Database Servers - MySQL, Mariadb & PostgreSQL</li>
       </ul>
   </ng-container>
-  <ng-container *ngIf="selectedModule === 'M0'">
+  <!-- <ng-container *ngIf="selectedModule === 'M0'">
     <h2> Introduction to Shell Scripting</h2>
     <hr style="
         position: unset;
@@ -331,7 +329,7 @@
     </ul>
 </ng-container>
 
-  
+   -->
 
   <ng-container *ngIf="selectedModule === 'M2'">
     <h2>AWS Analytics Services</h2>
@@ -1037,16 +1035,16 @@
   <ng-container *ngIf="selectedTab === 'devops'">
         <div class="content-columns">
           <div class="left-column">
-            <h2 style="padding-bottom: 10px;">AWS DevOps Content - Modules</h2>
+            <h2 style="padding-bottom: 10px;">AWS Content - Modules</h2>
 <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with OS </div>
-<div class="module" (click)="selectModule('M0')" [class.active-module]="selectedModule === 'M0'">Shell Scripting </div>
+<!-- <div class="module" (click)="selectModule('M0')" [class.active-module]="selectedModule === 'M0'">Shell Scripting </div>
 <div class="module" (click)="selectModule('M26')" [class.active-module]="selectedModule === 'M26'">Python Basics: Introduction</div>
 <div class="module" (click)="selectModule('M27')" [class.active-module]="selectedModule === 'M27'">Python: Functions</div>
 <div class="module" (click)="selectModule('M28')" [class.active-module]="selectedModule === 'M28'">Python: Object & Class</div>
 <div class="module" (click)="selectModule('M29')" [class.active-module]="selectedModule === 'M29'">Python: Data Types</div>
 <div class="module" (click)="selectModule('M30')" [class.active-module]="selectedModule === 'M30'">Python: Flow Control</div>
 <div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
-<div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div>
+<div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div> -->
 <!-- <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Analytics</div> -->
 <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Application Integration</div>
 <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Compute</div>
@@ -1060,7 +1058,7 @@
 <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS Services - Security, Identity, and Compliance</div>
 <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS Services - Serverless</div>
 <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Software Development Life Cycle: Agile - Scrum</div>
-<div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">Version Control System / Source Code Management: Git</div>
+<!-- <div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">Version Control System / Source Code Management: Git</div>
 <div class="module" (click)="selectModule('M15')" [class.active-module]="selectedModule === 'M15'">Continuous Integration using Jenkins</div>
 <div class="module" (click)="selectModule('M16')" [class.active-module]="selectedModule === 'M16'">Continuous Static Code Analysis: SonarQube</div>
 <div class="module" (click)="selectModule('M17')" [class.active-module]="selectedModule === 'M17'">Continuous Binary Code Repository using JFrog</div>
@@ -1069,7 +1067,7 @@
 <div class="module" (click)="selectModule('M20')" [class.active-module]="selectedModule === 'M20'">Continuous Configuration Management: Ansible</div>
 <div class="module" (click)="selectModule('M21')" [class.active-module]="selectedModule === 'M21'">Containerisation: Docker</div>
 <div class="module" (click)="selectModule('M22')" [class.active-module]="selectedModule === 'M22'">Container Orchestration: Kubernetes</div>
-<div class="module" (click)="selectModule('M23')" [class.active-module]="selectedModule === 'M23'">Continuous Monitoring: New Relic</div>
+<div class="module" (click)="selectModule('M23')" [class.active-module]="selectedModule === 'M23'">Continuous Monitoring: New Relic</div> -->
 <!-- <div class="module" (click)="selectModule('M24')" [class.active-module]="selectedModule === 'M24'">Migration Strategies</div>
 <div class="module" (click)="selectModule('M25')" [class.active-module]="selectedModule === 'M25'">Deployment Strategies</div> -->
 
