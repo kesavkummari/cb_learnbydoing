@@ -60,9 +60,9 @@ export class DeveopsdownloadformComponent {
   
         // Assign URLs based on the course interest
         if (selectedCourseInterest === 'Job Ready') {
-          pdfUrl = 'https://8amcloudbinary.s3.amazonaws.com/Job_Ready_With_Internship_Program_CloudBinary_20240228.pdf'; // Replace with the actual URL for Job Ready PDF
+          pdfUrl = 'https://8amcloudbinary.s3.amazonaws.com/AWS_Cloud_Engineer_20240418.pdf'; // Replace with the actual URL for Job Ready PDF
         } else if (selectedCourseInterest === 'Regular') {
-          pdfUrl = 'https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps_Regular_20240225_20240228.pdf'; // Replace with the actual URL for Regular PDF
+          pdfUrl = 'https://8amcloudbinary.s3.amazonaws.com/DevOps_Engineer_20240418.pdf'; // Replace with the actual URL for Regular PDF
         }
   
         // Download the selected PDF

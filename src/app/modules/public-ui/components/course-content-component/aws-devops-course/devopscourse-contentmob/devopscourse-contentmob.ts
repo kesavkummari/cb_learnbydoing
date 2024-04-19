@@ -15,24 +15,23 @@ export class DevOpsCourseContentMob {
       modules: [
         // Course 2 modules and submodules
         // Module 1
-//         {
-//           title: 'Getting Started with OS',
-//           submodules: [ 'Unix & Linux History & Distributions',
-//    'Basic & Advanced Commands',
-//    'Run Levels',
-//    'Boot Process',
-//    'File System',
-//    'File & Directory Management',
-//    'Text Editors',
-//    'Permissions',
-//    'User & Group Management',
-//    'Package Management',
-//    'Controlling Services & Daemons',
-//    'Process Management',
-//    'Log Management',
-//    'Web Servers - Windows IIS, Apache2, Nginx & Httpd',
-//    'Database Servers - MySQL, Mariadb & PostgreSQL']
-//                               },
+       {           title: 'Getting Started with OS',
+        submodules: [ 'Unix & Linux History & Distributions',
+   'Basic & Advanced Commands',
+    'Run Levels',
+   'Boot Process',
+    'File System',
+    'File & Directory Management',
+    'Text Editors',
+    'Permissions',
+    'User & Group Management',
+    'Package Management',
+    'Controlling Services & Daemons',
+    'Process Management',
+    'Log Management',
+    'Web Servers - Windows IIS, Apache2, Nginx & Httpd',
+    'Database Servers - MySQL, Mariadb & PostgreSQL']
+                               },
                                 
 // {
 //   title: 'AWS Services - Application Integration',

@@ -259,7 +259,8 @@ ul {
 .style-1 {
   position: relative;
   padding: 0.1em 1em;
-  background: linear-gradient(135deg, rgba(255,0,0,.2), rgba(0,0,255,.2));
+ /* background: linear-gradient(135deg, rgba(255,0,0,.2), rgba(0,0,255,.2)); */
+  background: linear-gradient(135deg, rgb(175 51 67), rgba(0, 0, 255, .2));
   border: none;
   border-radius: 10px;
   font-size: 2em;

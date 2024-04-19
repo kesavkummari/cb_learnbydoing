@@ -10,17 +10,19 @@
    
   <div class="container1" style="margin-top: 20px;">
 <h5 style="font-weight: 900; font-size: larger;">Grab Your Course</h5>
+
     <form> 
       <div class="radiobtn" >
+        <label>
+          <input 
+          style="    width: 23px;height: 24px;" 
+          type="radio" name="batch" [(ngModel)]="selectedBatch" value="jobReady"> AWS
+        </label>
           <label>
         <input  style="    width: 23px;height: 24px;" 
          type="radio" name="batch" [(ngModel)]="selectedBatch" value="regular"> DevOps
       </label>
-      <label>
-        <input 
-        style="    width: 23px;height: 24px;" 
-        type="radio" name="batch" [(ngModel)]="selectedBatch" value="jobReady"> AWS
-      </label> </div>
+       </div>
       <hr>
   
       <div *ngIf="selectedBatch === 'regular'" class="content">

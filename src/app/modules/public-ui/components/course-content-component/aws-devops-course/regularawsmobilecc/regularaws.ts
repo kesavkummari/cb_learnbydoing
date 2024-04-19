@@ -314,15 +314,15 @@ export class RegularAWSCourseContent {
     'AWS WAF'
   ]
 },
-//           {
-//             title: 'AWS Services - Serverless',
-//             submodules: ['AWS Lambda',
-// 'AWS Serverless Application Model (AWS SAM)',
-// 'Amazon Simple Email Service (SES)',
-// 'Amazon Simple Notification Service (Amazon SNS)',
-// 'Amazon Simple Queue Service (Amazon SQS)',
-// 'AWS Step Functions']
-//           },
+          {
+            title: 'AWS Services - Serverless',
+            submodules: ['AWS Lambda',
+ 'AWS Serverless Application Model (AWS SAM)',
+ 'Amazon Simple Email Service (SES)',
+ 'Amazon Simple Notification Service (Amazon SNS)',
+ 'Amazon Simple Queue Service (Amazon SQS)',
+ 'AWS Step Functions']
+          },
 //            {
 //             title: 'Software Development Life Cycle : Agile - Scrum',
 //             submodules: ['Getting Started with SDLC',
