@@ -67,7 +67,7 @@ export class DeveopsdownloadformComponent {
   
         // Download the selected PDF
         this.http.get(pdfUrl, { responseType: 'blob' }).subscribe((response: Blob) => {
-          const fileName = selectedCourseInterest === 'Job Ready' ? 'JobReadyCourse.pdf' : 'RegularCourse.pdf';
+          const fileName = selectedCourseInterest === 'Job Ready' ? 'AWS.pdf' : 'DEVOPS.pdf';
           saveAs(response, fileName);
   
           // Reset loading state and show success message

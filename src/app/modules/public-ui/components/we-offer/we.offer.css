@@ -278,3 +278,6 @@ ul {
   padding: 0.2em 1em;
   color: #ffffff;
 }
+.item{
+  border-radius: 20px;
+}

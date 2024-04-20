@@ -51,8 +51,8 @@ import { LandingPageComponent } from './Pages/landing_page/landingpage';
   
 const routes: Routes = [
  
-  {path:'aws-devops', component: AwsDevopsComponent},
-  {path:'aws-devops-job-ready-with-internship', component: JobReadyComponent},
+  {path:'devops', component: AwsDevopsComponent},
+  {path:'aws', component: JobReadyComponent},
   {path:'blogs', component: BlogsComponent},
   {path:'home', component: IntroPageComponent},
   { path:'contactus', component: ContactUsComponent },
@@ -96,7 +96,7 @@ const routes: Routes = [
   { path: 'Deploy-Docker-Containers-on-Amazon-Deploy-Docker-Containers' , component : DOCKERCONTAINERSCompoent },
   { path: 'aws-single-sign-on' , component : SINGLESIGNONCompoent },
   { path: 'aws-web-waf-on-alb' , component : WAFALBCompoent },
-  { path: 'cloud-binary-learn-by-doing' , component : LandingPageComponent },
+  { path: 'webinar' , component : LandingPageComponent },
   
   
   
