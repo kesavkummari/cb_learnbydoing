@@ -92,7 +92,10 @@ html {
   .pricing-img {
     margin-bottom: 25px;
     max-width: 100%;
+    width: 200px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
   }
+  
   
   .pricing-header {
     color: #888;
@@ -102,7 +105,7 @@ html {
   
   .pricing-features {
      list-style-type: none;
-    color: #016FF9;
+    color: #172342;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 50px 0 25px;
@@ -142,15 +145,16 @@ html {
     background-color: #e1f1ff;
   }
   
+  /*
   .pricing-button.is-featured {
     background-color: #48aaff;
     color: #fff;
-  }
+  } 
   
   .pricing-button.is-featured:hover,
   .pricing-button.is-featured:active {
     background-color: #269aff;
-  }
+  }*/
   .original-price {
     text-decoration: line-through; /* to strike through the original price */
     color: #888; /* optional: adjust the color to your preference */
