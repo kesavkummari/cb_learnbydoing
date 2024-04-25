@@ -71,6 +71,7 @@ import { LandingPriceComponent } from './components/we-offer/price/landing.price
 import { LandingVideosComponent } from './components/we-offer/landing-videos/landing-videos';
 import { LandingReviewsComponent } from './components/we-offer/landing-reviews/landing-reviews';
 import { LandingBannerComponent } from './components/we-offer/landing-banner/landing-banner';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.policy';
 
 
 @NgModule({
@@ -87,7 +88,7 @@ import { LandingBannerComponent } from './components/we-offer/landing-banner/lan
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , LandingPageComponent, WeOfferComponent,RolesComponent,LandingPriceComponent,
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent, LandingVideosComponent,
      CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent, LandingReviewsComponent,
-     DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, LandingBannerComponent,
+     DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, LandingBannerComponent,PrivacyPolicyComponent,
      RegularAWSCourseContent, RegulardownloadformComponent,HomePageNewComponent],
   imports: [RouterModule, PublicUiRoutingModule,MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
