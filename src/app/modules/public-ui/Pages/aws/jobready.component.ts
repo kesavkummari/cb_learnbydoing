@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'job-ready',
+  selector: 'aws',
   templateUrl: './jobready.component.html',
   styleUrls: ['./jobready.component.css']
 })

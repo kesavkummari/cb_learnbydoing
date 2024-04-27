@@ -18,7 +18,7 @@ import { DigitalLyncComponent } from './components/digital-lync/digital-lync.com
 import { QuestionsColComponent } from './components/questions-col/questions-col.component';
 import { CourseTableComponent } from './components/course-content-component/trending-courses/course-table/course-table.component';
 import { CourseIntenseTableComponent } from './components/course-content-component/trending-courses/course-table-intense/course-table.component';
-import {AwsDevopsComponent} from './Pages/aws-devops/awsdevops.component'
+import {AwsDevopsComponent} from './Pages/devops/awsdevops.component'
 import {MlOpsCoursesComponent} from './components/course-content-component/aws-devops-course/mlops-courses.component'
 import {AwsDevOpsCourseTableComponent} from './components/course-content-component/aws-devops-course/aws-devops-course-content/awsdevops-table.component'
 import { ImagePopupComponent } from './components/app-image-popup/image-popup.component'
@@ -59,19 +59,22 @@ import { GoogleReviewsColComponent } from './components/reviews/google-reviews/g
 import { RegularAWSCourseContent } from './components/course-content-component/aws-devops-course/regularawsmobilecc/regularaws';
 import { RegulardownloadformComponent } from './components/course-content-component/aws-devops-course/regularCCdownload/regularcontent';
 import { DevopsDownloadComponent } from './components/course-content-component/aws-devops-course/devopsdownload-form/devops.download.component';
-import { JobReadyComponent } from './Pages/job-ready/jobready.component';
+import { JobReadyComponent } from './Pages/aws/jobready.component';
 import { RegularFeeStructureComponent } from './components/fee-structure/regular-fee/fee.structure.component';
 import { JobReadyFeeComponent } from './components/fee-structure/job-ready-fee/job.ready.component';
 import { HomePageNewComponent } from './components/home-page-new/page1';
 import { MatTabsModule } from '@angular/material/tabs';
-import { LandingPageComponent } from './Pages/landing_page/landingpage';
+
 import { WeOfferComponent } from './components/we-offer/we.offer';
-import { RolesComponent } from './components/roles/roles';
+
 import { LandingPriceComponent } from './components/we-offer/price/landing.price';
 import { LandingVideosComponent } from './components/we-offer/landing-videos/landing-videos';
 import { LandingReviewsComponent } from './components/we-offer/landing-reviews/landing-reviews';
 import { LandingBannerComponent } from './components/we-offer/landing-banner/landing-banner';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.policy';
+import { MlOpsComponent } from './Pages/mlops/mlops.component';
+import { LandingPageComponent } from './Pages/aws-webinar/landingpage';
+import { RolesComponent } from './components/we-offer/roles/roles';
 
 
 @NgModule({
@@ -84,7 +87,7 @@ import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.poli
     AwsDevopsComponent, MlOpsCoursesComponent , 
     AwsDevOpsCourseTableComponent, ImagePopupComponent, CourseContentMob, 
     RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, 
-    Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
+    Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, MlOpsComponent,
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , LandingPageComponent, WeOfferComponent,RolesComponent,LandingPriceComponent,
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent, LandingVideosComponent,
      CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent, LandingReviewsComponent,

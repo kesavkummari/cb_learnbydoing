@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { IntroPageComponent } from './Pages/intro-page/intro-page.component';
-import { AwsDevopsComponent } from './Pages/aws-devops/awsdevops.component';
+import { AwsDevopsComponent } from './Pages/devops/awsdevops.component';
 import { ContactUsComponent } from './components/contactus/contact.component';
 import { BlogsComponent } from './components/blogs-component/blogs/blog.component'
 import { Blog1Component } from './components/blogs-component/blogs-pages/blog1/blog1';
@@ -40,15 +40,17 @@ import { SageMakerComponent } from './components/blogs-component/blogs-pages/all
 import { RDSMYSQLComponent } from './components/blogs-component/blogs-pages/all-blogs/RDS_MYSQL/rdsmysql';
 import { RoutingComponent } from './components/blogs-component/blogs-pages/all-blogs/Routing_polices/routing';
 import { ServerlessComponent } from './components/blogs-component/blogs-pages/all-blogs/serverless_website/serverless';
-import { JobReadyComponent } from './Pages/job-ready/jobready.component';
+import { JobReadyComponent } from './Pages/aws/jobready.component';
 import { SETTINGNLBCompoent } from './components/blogs-component/blogs-pages/use-cases/Setting-Up-Network-Load-Balancer/setting.nlb';
 import { SETTINGALBCompoent } from './components/blogs-component/blogs-pages/use-cases/Setting-Up-Application-Load-Balancer/setting.alb';
 import { DISASTERRECOVERYCompoent } from './components/blogs-component/blogs-pages/use-cases/Implementing-a-disaster-recovery-strategy-with-Amazon-RDS/disaster.recovery';
 import { DOCKERCONTAINERSCompoent } from './components/blogs-component/blogs-pages/use-cases/Deploy-Docker-Containers-on-Amazon-Deploy-Docker-Containers/docker.containers';
 import { SINGLESIGNONCompoent } from './components/blogs-component/blogs-pages/use-cases/aws-single-sign-on/single.signon';
 import { WAFALBCompoent } from './components/blogs-component/blogs-pages/use-cases/aws-web-waf-on-alb/waf.alb';
-import { LandingPageComponent } from './Pages/landing_page/landingpage';
+
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.policy';
+import { MlOpsComponent } from './Pages/mlops/mlops.component';
+import { LandingPageComponent } from './Pages/aws-webinar/landingpage';
   
 const routes: Routes = [
  
@@ -99,6 +101,7 @@ const routes: Routes = [
   { path: 'aws-web-waf-on-alb' , component : WAFALBCompoent },
   { path: 'webinar' , component : LandingPageComponent },
   { path: 'privacy-policy' , component : PrivacyPolicyComponent },
+  { path: 'mlops' , component : MlOpsComponent },
   
   
   
