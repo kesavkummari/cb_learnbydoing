@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { IntroPageComponent } from './Pages/intro-page/intro-page.component';
-import { AwsDevopsComponent } from './Pages/devops/awsdevops.component';
+import {  DevopsComponent } from './Pages/devops/devops.component';
 import { ContactUsComponent } from './components/contactus/contact.component';
 import { BlogsComponent } from './components/blogs-component/blogs/blog.component'
 import { Blog1Component } from './components/blogs-component/blogs-pages/blog1/blog1';
@@ -40,7 +40,7 @@ import { SageMakerComponent } from './components/blogs-component/blogs-pages/all
 import { RDSMYSQLComponent } from './components/blogs-component/blogs-pages/all-blogs/RDS_MYSQL/rdsmysql';
 import { RoutingComponent } from './components/blogs-component/blogs-pages/all-blogs/Routing_polices/routing';
 import { ServerlessComponent } from './components/blogs-component/blogs-pages/all-blogs/serverless_website/serverless';
-import { JobReadyComponent } from './Pages/aws/jobready.component';
+import { AwsComponent } from './Pages/aws/aws.component';
 import { SETTINGNLBCompoent } from './components/blogs-component/blogs-pages/use-cases/Setting-Up-Network-Load-Balancer/setting.nlb';
 import { SETTINGALBCompoent } from './components/blogs-component/blogs-pages/use-cases/Setting-Up-Application-Load-Balancer/setting.alb';
 import { DISASTERRECOVERYCompoent } from './components/blogs-component/blogs-pages/use-cases/Implementing-a-disaster-recovery-strategy-with-Amazon-RDS/disaster.recovery';
@@ -50,12 +50,12 @@ import { WAFALBCompoent } from './components/blogs-component/blogs-pages/use-cas
 
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.policy';
 import { MlOpsComponent } from './Pages/mlops/mlops.component';
-import { LandingPageComponent } from './Pages/aws-webinar/landingpage';
+import { LandingPageComponent } from './Pages/webinar/aws-webinar/landingpage';
   
 const routes: Routes = [
  
-  {path:'devops', component: AwsDevopsComponent},
-  {path:'aws', component: JobReadyComponent},
+  {path:'devops', component: DevopsComponent},
+  {path:'aws', component: AwsComponent},
   {path:'blogs', component: BlogsComponent},
   {path:'home', component: IntroPageComponent},
   { path:'contactus', component: ContactUsComponent },
