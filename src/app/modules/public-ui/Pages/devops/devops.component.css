@@ -373,3 +373,56 @@ button[type="submit"]:disabled {
   }
 }
 
+
+.tick-mark {
+  background-image: url('https://www.digital-lync.com/images/tick-mark-blu.jpg');
+  background-repeat: no-repeat;
+  background-size: 20px; /* Fixed size for the tick mark image */
+  background-position: left center; /* Position the tick mark on the left */
+  padding-left: 40px; /* Increase padding for more spacing */
+  list-style-type: none;
+  margin-bottom: 10px; /* Add margin between list items */
+  line-height: 1.5; /* Ensure consistent spacing */
+}
+
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+  .tick-mark {
+    padding-left: 30px; /* Adjust padding for smaller screens */
+  }
+}
+
+.fullnode.salcebrdr {
+  border: none !important;
+  position: relative;
+  list-style-type: none; /* Removes default list styling */
+  padding-left: 20px; /* Indent content */
+}
+
+.fullnode.salcebrdr div {
+  position: relative; /* Ensure pseudo-element is positioned relative to this */
+  /* margin-bottom: 10px;  Add space between items */
+}
+
+.fullnode.salcebrdr div:before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #01ac61;
+  border-radius: 50%;
+  left: -16px; /* Adjust position */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.fullnode.salcebrdr div:not(:last-child):after {
+     content: "";
+  position: absolute;
+  left: -14px;
+  top: 100%;
+  transform: translateY(-50%);
+  height: calc(100% - -12px);
+  border-left: 2px solid #01ac61;
+}
