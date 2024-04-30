@@ -51,9 +51,13 @@ import { WAFALBCompoent } from './components/blogs-component/blogs-pages/use-cas
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.policy';
 import { MlOpsComponent } from './Pages/mlops/mlops.component';
 import { LandingPageComponent } from './Pages/webinar/aws-webinar/landingpage';
+import { AllCoursesComponent } from './components/all-courses/all.courses';
+import { JobReadyComponent } from './components/all-courses/job-ready/job.ready';
+
   
 const routes: Routes = [
  
+  
   {path:'devops', component: DevopsComponent},
   {path:'aws', component: AwsComponent},
   {path:'blogs', component: BlogsComponent},
@@ -102,6 +106,8 @@ const routes: Routes = [
   { path: 'webinar' , component : LandingPageComponent },
   { path: 'privacy-policy' , component : PrivacyPolicyComponent },
   { path: 'mlops' , component : MlOpsComponent },
+  { path: 'all-courses' , component : AllCoursesComponent },
+  { path: 'job-ready' , component : JobReadyComponent },
   
   
   

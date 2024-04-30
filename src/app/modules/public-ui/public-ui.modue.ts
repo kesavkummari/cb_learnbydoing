@@ -76,12 +76,16 @@ import { MlOpsComponent } from './Pages/mlops/mlops.component';
 import { LandingPageComponent } from './Pages/webinar/aws-webinar/landingpage';
 import { RolesComponent } from './components/we-offer/roles/roles';
 import { AwsComponent } from './Pages/aws/aws.component';
+import { AllCoursesComponent } from './components/all-courses/all.courses';
+import { JobReadyComponent } from './components/all-courses/job-ready/job.ready';
+import { JobReadyCCComponent } from './components/all-courses/job-ready/jobready-cc/jobready.cc';
+
 
 
 @NgModule({
-  declarations: [CloudIntroComponent, 
-    AwsComponent, IntroCardsComponent, ProgramsComponent, RegularFeeStructureComponent,
-    JobReadyFeeComponent,
+  declarations: [CloudIntroComponent,  JobReadyComponent,
+    AwsComponent, IntroCardsComponent, ProgramsComponent, RegularFeeStructureComponent, JobReadyCCComponent,
+    JobReadyFeeComponent,AllCoursesComponent,
     TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, 
     CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, 
      CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,
