@@ -1,4 +1,8 @@
 <!-- First Course -->
+
+<hr>
+<h3 class="heading-3 wow fadeInUp animated animated" style="padding: 10px; background: steelblue; color: white;"> Course Content </h3>
+<hr>
 <div class="course" *ngFor="let course of courses; let i = index">
   <h1 class="course-title" (click)="toggleCourseModules(i)">
     {{ course.title }}
@@ -24,7 +28,8 @@
   </div>
 </div>
 
-
+<!--
 <div style="display: flex; justify-content: space-around; padding: 0px;">
   <button class="custom-button" (click)="openDialog()">Download Course Content</button>
 </div>
+-->
