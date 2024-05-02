@@ -48,6 +48,7 @@ import { DOCKERCONTAINERSCompoent } from './components/blogs-component/blogs-pag
 import { SINGLESIGNONCompoent } from './components/blogs-component/blogs-pages/use-cases/aws-single-sign-on/single.signon';
 import { WAFALBCompoent } from './components/blogs-component/blogs-pages/use-cases/aws-web-waf-on-alb/waf.alb';
 import { LandingPageComponent } from './Pages/webinar/aws-webinar/landingpage';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.policy';
   
 const routes: Routes = [
  
@@ -97,6 +98,7 @@ const routes: Routes = [
   { path: 'aws-single-sign-on' , component : SINGLESIGNONCompoent },
   { path: 'aws-web-waf-on-alb' , component : WAFALBCompoent },
   { path: 'webinar' , component : LandingPageComponent },
+  { path: 'privacy-policy' , component : PrivacyPolicyComponent },
   
   
   

@@ -169,4 +169,7 @@ html {
   .discounted-price {
     color: #4CAF50; /* optional: adjust the color to your preference */
   }
-  
+  h2{
+    font-size: xx-large;
+    color: black !important;
+  }

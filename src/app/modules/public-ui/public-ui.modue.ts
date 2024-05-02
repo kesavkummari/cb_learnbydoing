@@ -71,6 +71,7 @@ import { LandingReviewsComponent } from './components/we-offer/landing-reviews/l
 import { LandingVideosComponent } from './components/we-offer/landing-videos/landing-videos';
 import { LandingPriceComponent } from './components/we-offer/price/landing.price';
 import { RolesComponent } from './components/we-offer/roles/roles';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.policy';
 
 
 @NgModule({
@@ -84,7 +85,7 @@ import { RolesComponent } from './components/we-offer/roles/roles';
     AwsDevOpsCourseTableComponent, ImagePopupComponent, CourseContentMob, 
     RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, 
     Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
-     CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
+     CertificateComponent, SubHeaderComponent, FeeStructureComponent , PrivacyPolicyComponent,
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,LandingPageComponent,WeOfferComponent,LandingBannerComponent,LandingReviewsComponent,LandingVideosComponent,LandingPriceComponent,RolesComponent,
      CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
      DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, 
