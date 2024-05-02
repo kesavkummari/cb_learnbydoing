@@ -84,6 +84,26 @@
       font-size: larger;
       font-weight: 600
     }
+    @media (max-width: 768px) {
+  .video_col {
+    margin: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .video_col .position-relative {
+    margin-bottom: 20px; /* Add space between videos */
+  }
+
+  .video_col .position-relative video {
+    width: 100%; /* Make video width 100% of container */
+    height: auto; /* Allow height to adjust proportionally */
+  }
+
+  .video_col .position-relative h3 {
+    font-size: medium; /* Adjust heading size for smaller screens */
+    margin-top: 10px; /* Adjust margin top for smaller screens */
+  }
+}
+
   </style>
 </head>
 

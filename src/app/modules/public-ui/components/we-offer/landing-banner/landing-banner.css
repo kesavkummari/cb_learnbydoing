@@ -1,0 +1,97 @@
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+   
+}
+
+.text{
+    padding:40px;
+    }
+
+.text h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding:10px;
+}
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container .banner {
+    background: linear-gradient(-55deg, #2c3e50 29%, #34495e 29.1%, #212f3c 68%, #2c3e50 68.1%);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Adjusted box shadow for better visibility on dark background */
+    overflow: hidden;
+    color: white; /* Adjusted text color for better visibility on dark background */
+}
+
+.banner-container .banner .shoe img,
+.banner-container .banner .women img {
+    width: 100%; /* Set images to fill their containers */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; /* Limit maximum width */
+    max-height: 250px; /* Limit maximum height */
+}
+
+
+.banner-container .banner .shoe img,
+.banner-container .banner .women img {
+    width: 80%;
+}
+
+.banner-container .banner .content{
+    flex: 1 1 250px;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.banner-container .banner .content span{
+    color: #eee;
+    font-size: 25px;
+}
+
+.banner-container .banner .content h3{
+    color: #fff;
+    font-size: 40px;
+}
+
+.banner-container .banner .content p{
+    color: #eee;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.banner-container .banner .content .btn{
+    display: block;
+    height: 50px;
+    width: 160px;
+    line-height: 40px;
+    background: #fff;
+    color: #172342;
+    margin: 5px auto;
+    text-decoration: none;
+}
+
+@media (max-width:768px){
+    .banner-container .banner .women{
+        display: none;
+    }
+}
+
+
+.banner-container .banner .shoe {
+    flex: 0 1 250px;
+    padding: 15px 0 15px 15px; /* Adjusted padding */
+    text-align: center;
+}
