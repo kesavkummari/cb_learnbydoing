@@ -64,6 +64,13 @@ import { RegularFeeStructureComponent } from './components/fee-structure/regular
 import { JobReadyFeeComponent } from './components/fee-structure/job-ready-fee/job.ready.component';
 import { HomePageNewComponent } from './components/home-page-new/page1';
 import { MatTabsModule } from '@angular/material/tabs';
+import { LandingPageComponent } from './Pages/webinar/aws-webinar/landingpage';
+import { WeOfferComponent } from './components/we-offer/we.offer';
+import { LandingBannerComponent } from './components/we-offer/landing-banner/landing-banner';
+import { LandingReviewsComponent } from './components/we-offer/landing-reviews/landing-reviews';
+import { LandingVideosComponent } from './components/we-offer/landing-videos/landing-videos';
+import { LandingPriceComponent } from './components/we-offer/price/landing.price';
+import { RolesComponent } from './components/we-offer/roles/roles';
 
 
 @NgModule({
@@ -78,7 +85,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, 
     Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , 
-     ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,
+     ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,LandingPageComponent,WeOfferComponent,LandingBannerComponent,LandingReviewsComponent,LandingVideosComponent,LandingPriceComponent,RolesComponent,
      CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
      DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, 
      RegularAWSCourseContent, RegulardownloadformComponent,HomePageNewComponent],
