@@ -72,12 +72,14 @@ import { LandingVideosComponent } from './components/we-offer/landing-videos/lan
 import { LandingPriceComponent } from './components/we-offer/price/landing.price';
 import { RolesComponent } from './components/we-offer/roles/roles';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.policy';
+import { TNCComponent } from './components/terms_and_conditions/t_n_c';
+import { CancellationRefundComponent } from './components/cancellation_and_refundpolicy/cancellation_and_refundpolicy';
 
 
 @NgModule({
   declarations: [CloudIntroComponent, 
     JobReadyComponent, IntroCardsComponent, ProgramsComponent, RegularFeeStructureComponent,
-    JobReadyFeeComponent,
+    JobReadyFeeComponent,TNCComponent,CancellationRefundComponent,
     TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, 
     CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, 
      CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,

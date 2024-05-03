@@ -49,6 +49,8 @@ import { SINGLESIGNONCompoent } from './components/blogs-component/blogs-pages/u
 import { WAFALBCompoent } from './components/blogs-component/blogs-pages/use-cases/aws-web-waf-on-alb/waf.alb';
 import { LandingPageComponent } from './Pages/webinar/aws-webinar/landingpage';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.policy';
+import { TNCComponent } from './components/terms_and_conditions/t_n_c';
+import { CancellationRefundComponent } from './components/cancellation_and_refundpolicy/cancellation_and_refundpolicy';
   
 const routes: Routes = [
  
@@ -99,6 +101,8 @@ const routes: Routes = [
   { path: 'aws-web-waf-on-alb' , component : WAFALBCompoent },
   { path: 'webinar' , component : LandingPageComponent },
   { path: 'privacy-policy' , component : PrivacyPolicyComponent },
+  { path: 'terms-and-conditions' , component : TNCComponent },
+  { path: 'cancellation-refund-policy' , component : CancellationRefundComponent },
   
   
   
