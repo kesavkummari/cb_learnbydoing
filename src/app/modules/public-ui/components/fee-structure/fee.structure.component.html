@@ -7,30 +7,30 @@
 
 </head>
 <body>
-   
+
   <div class="container1" style="margin-top: 20px;">
 <h5 style="font-weight: 900; font-size: larger;">Grab Your Course</h5>
-    <form> 
+    <form>
       <div class="radiobtn" >
           <label>
-        <input  style="    width: 23px;height: 24px;" 
+        <input  style="    width: 23px;height: 24px;"
          type="radio" name="batch" [(ngModel)]="selectedBatch" value="regular"> AWS DevOps Regular
       </label>
       <label>
-        <input 
-        style="    width: 23px;height: 24px;" 
+        <input
+        style="    width: 23px;height: 24px;"
         type="radio" name="batch" [(ngModel)]="selectedBatch" value="jobReady"> AWS DevOps Job Ready
       </label> </div>
       <hr>
-  
+
       <div *ngIf="selectedBatch === 'regular'" class="content">
 
-        
+
         <div class="container">
           <div class="left-side">
             <div class="batch-info" style="color: #D0D3D9; font-size: medium;">
               <i class="fas fa-calendar-alt calendar-icon" style="color: orange;"></i>
-              Next Batch Starts On May 8th 2024 Limited Seats Only!!
+              Next Batch Starts On May 16th 2024 Limited Seats Only!!
             </div>
             <br>
             <!-- <div class="price price-crossed">₹ 17,999/-</div> -->
@@ -42,9 +42,9 @@
             </div>
             <a href="https://wa.me/919100073006" class="enroll-button">Enroll Now</a>
             <!-- <a href="https://razorpay.com/payment-link/plink_NqcOG10BpDQwk8" class="enroll-button">Pay Now</a> -->
-           
+
           </div>
-   
+
           <div class="right-side">
             <div class="perks">
               <p style="    font-weight: 900;
@@ -69,7 +69,7 @@
       <button class="custom-button" (click)="openDialog()">Download Course Content</button>
       </div>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
       <div *ngIf="selectedBatch === 'jobReady'" class="content">
@@ -77,7 +77,7 @@
           <div class="left-side">
             <div class="batch-info" style="color: #D0D3D9; font-size: medium;">
               <i class="fas fa-calendar-alt calendar-icon" style="color: orange;"></i>
-              Next Batch Starts On May 8th 2024 Limited Seats Only!!
+              Next Batch Starts On May 16th 2024 Limited Seats Only!!
             </div>
             <br>
             <!-- <div class="price price-crossed">₹ 69,999/-</div> -->
@@ -89,7 +89,7 @@
             <a href="https://wa.me/919100073006" class="enroll-button">Enroll Now</a>
             <!-- <a href="https://razorpay.com/payment-link/plink_NqcYHA6Lcon5W2" class="enroll-button">Pay Now</a> -->
           </div>
-      
+
           <div class="right-side">
             <div class="perks">
               <p style="    font-weight: 900;
@@ -117,13 +117,13 @@
       <button class="custom-button" (click)="openDialog()">Download Course Content</button>
       </div>
             </div>
-          </div> 
+          </div>
         </div>
       </div>
     </form>
-  </div> 
-  
-  
+  </div>
+
+
   <!--
   <div style="visibility: visible; background: url('assets/hybrid-learning/bg3.png') center center / cover no-repeat;">
     <h2 >Course Fee Details </h2>
@@ -142,13 +142,13 @@
         Register Now  and Save your slot
       </div> -->
       <!-- <a href="https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps_With_ShellScripting_Python_20240225.pdf" class="enroll-button">Download Course Content</a>
-      
+
       <a href="https://wa.me/919100073006" class="enroll-button">Block Your Seat</a>-->
       <!-- <a href="" class="grab-now-link" style="color: red">Download Course Content</a>
     </div>
 
     <div class="right-side">
-      
+
       <div class="batch-info" style="color: #D0D3D9; font-size: medium;">
         <h5>AWS DevOps Regular</h5>
         <i class="fas fa-calendar-alt calendar-icon" style="color: orange;"></i>
@@ -161,7 +161,7 @@
         Register Now  and Save your slot
       </div> -->
       <!-- <a href="https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps_Regular_20240225.pdf" class="enroll-button">Download Course Content</a>
-        
+
       <a href="https://wa.me/919100073006" class="enroll-button">Block Your Seat</a>
       <a href="https://8amcloudbinary.s3.amazonaws.com/AWS_DevOps_Regular_20240225.pdf" class="grab-now-link" style="color: red">Download Course Content</a>
 
