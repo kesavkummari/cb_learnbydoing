@@ -1,12 +1,10 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
-import {  FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DataService } from '../../services/data.service';
 import { HttpClient } from '@angular/common/http';
 import { saveAs } from 'file-saver';
 import { Router } from '@angular/router';
-
-
 
 @Component({
   selector: 'aws-devops',
@@ -15,7 +13,6 @@ import { Router } from '@angular/router';
 })
 export class AwsDevopsComponent implements OnInit {
 
-  // registrationForm!: FormGroup
   name = new FormControl('', [Validators.required]);
   email = new FormControl('', [Validators.required, Validators.email]);
   phone = new FormControl('', [Validators.required, Validators.pattern('[0-9]{10}')]);
@@ -30,12 +27,16 @@ export class AwsDevopsComponent implements OnInit {
     courseInterest: this.courseInterest,
   });
 
+  constructor(
+    private elementRef: ElementRef,
+    private snackBar: MatSnackBar,
+    private http: HttpClient,
+    private dataService: DataService,
+    private router: Router
+  ) {}
 
+  ngOnInit(): void {}
 
-  constructor(private elementRef: ElementRef,private snackBar: MatSnackBar,private http: HttpClient, private dataService: DataService , private router: Router) {}
-
-  ngOnInit(): void {
-  }
   scrollToTrendingCourses() {
     const trendingCourses = this.elementRef.nativeElement.querySelector('#trending-courses');
 
@@ -43,28 +44,30 @@ export class AwsDevopsComponent implements OnInit {
       trendingCourses.scrollIntoView({ behavior: 'smooth' });
     }
   }
-  formData: any = {};
 
   onSubmit() {
     if (this.registrationForm.valid) {
-
-      // console.log(this.registrationForm.value);
-      // Insert form data into API
       this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
         console.log(res);
-        // this.http.get('https://8amcloudbinary.s3.amazonaws.com/Latest_JobReadyWith6MonthsInternshipProgram_CloudBinary.pdf', { responseType: 'blob' })
-        // .subscribe((response: Blob) => {
-        //   saveAs(response, 'CB DevOps CourseCurriculum.pdf');
-        //   // Show success message
-        //   this.snackBar.open('Form submitted successfully!', 'Close', {
-        //     duration: 5000
-        //   });
-        //   });
-        this.registrationForm.reset();
-        this.router.navigate(['/thank-you']);
-      });
 
+        // Reset the form
+        this.registrationForm.reset();
+
+        // Show success message
+        this.snackBar.open('Form submitted successfully!', 'Close', {
+          duration: 5000
+        });
+
+        // Navigate to the "/thank-you" page
+        this.router.navigate(['/thank-you']);
+
+        // Construct the WhatsApp message
+        const message = `Hi, I'm interested in your AWS & DevOps course. Can you provide me with more details?\nName: ${this.registrationForm.value.name}\nPhone: ${this.registrationForm.value.phone}`;
+        const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
+
+        // Redirect to WhatsApp
+        window.open(whatsappURL, '_blank');
+      });
     }
   }
- 
 }

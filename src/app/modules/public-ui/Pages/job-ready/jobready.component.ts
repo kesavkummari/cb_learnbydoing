@@ -62,6 +62,11 @@ export class JobReadyComponent implements OnInit {
         //   });
         this.registrationForm.reset();
         this.router.navigate(['/thank-you']);
+        const message = `Hi, I'm interested in your AWS & DevOps course. Can you provide me with more details?\nName: ${this.registrationForm.value.name}\nPhone: ${this.registrationForm.value.phone}`;
+        const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
+
+        // Redirect to WhatsApp
+        window.open(whatsappURL, '_blank');
       });
 
     }
