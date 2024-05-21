@@ -14,8 +14,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./jobready.component.css']
 })
 export class JobReadyComponent implements OnInit {
+  isLoading = false;
 
-  // registrationForm!: FormGroup
   name = new FormControl('', [Validators.required]);
   email = new FormControl('', [Validators.required, Validators.email]);
   phone = new FormControl('', [Validators.required, Validators.pattern('[0-9]{10}')]);
@@ -30,46 +30,39 @@ export class JobReadyComponent implements OnInit {
     courseInterest: this.courseInterest,
   });
 
+  constructor(private elementRef: ElementRef, private snackBar: MatSnackBar, private http: HttpClient, private dataService: DataService, private router: Router) {}
 
+  ngOnInit(): void {}
 
-  constructor(private elementRef: ElementRef,private snackBar: MatSnackBar,private http: HttpClient, private dataService: DataService , private router: Router) {}
-
-  ngOnInit(): void {
-  }
   scrollToTrendingCourses() {
     const trendingCourses = this.elementRef.nativeElement.querySelector('#trending-courses');
-
     if (trendingCourses) {
       trendingCourses.scrollIntoView({ behavior: 'smooth' });
     }
   }
-  formData: any = {};
 
   onSubmit() {
     if (this.registrationForm.valid) {
+      this.isLoading = true; // Start loading
+      this.dataService.submitForm(this.registrationForm.value).subscribe(
+        (res: any) => {
+          console.log(res);
+          this.registrationForm.reset();
+          this.router.navigate(['/thank-you']);
+          const message = `Hi, I'm interested in your AWS & DevOps course. Can you provide me with more details?\nName: ${this.registrationForm.value.name}\nPhone: ${this.registrationForm.value.phone}`;
+          const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
 
-      // console.log(this.registrationForm.value);
-      // Insert form data into API
-      this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
-        console.log(res);
-        // this.http.get('https://8amcloudbinary.s3.amazonaws.com/Latest_JobReadyWith6MonthsInternshipProgram_CloudBinary.pdf', { responseType: 'blob' })
-        // .subscribe((response: Blob) => {
-        //   saveAs(response, 'CB DevOps CourseCurriculum.pdf');
-        //   // Show success message
-        //   this.snackBar.open('Form submitted successfully!', 'Close', {
-        //     duration: 5000
-        //   });
-        //   });
-        this.registrationForm.reset();
-        this.router.navigate(['/thank-you']);
-        const message = `Hi, I'm interested in your AWS & DevOps course. Can you provide me with more details?\nName: ${this.registrationForm.value.name}\nPhone: ${this.registrationForm.value.phone}`;
-        const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
-
-        // Redirect to WhatsApp
-        window.open(whatsappURL, '_blank');
-      });
-
+          window.open(whatsappURL, '_blank');
+          this.isLoading = false; // Stop loading
+        },
+        (error: any) => {
+          console.error('Error submitting form:', error);
+          this.snackBar.open('Failed to submit the form. Please try again.', 'Close', {
+            duration: 5000,
+          });
+          this.isLoading = false; // Stop loading on error
+        }
+      );
     }
   }
- 
 }

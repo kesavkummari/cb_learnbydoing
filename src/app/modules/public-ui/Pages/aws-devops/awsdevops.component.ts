@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./awsdevops.component.css']
 })
 export class AwsDevopsComponent implements OnInit {
+  isLoading = false;
 
   name = new FormControl('', [Validators.required]);
   email = new FormControl('', [Validators.required, Validators.email]);
@@ -27,19 +28,12 @@ export class AwsDevopsComponent implements OnInit {
     courseInterest: this.courseInterest,
   });
 
-  constructor(
-    private elementRef: ElementRef,
-    private snackBar: MatSnackBar,
-    private http: HttpClient,
-    private dataService: DataService,
-    private router: Router
-  ) {}
+  constructor(private elementRef: ElementRef, private snackBar: MatSnackBar, private http: HttpClient, private dataService: DataService, private router: Router) {}
 
   ngOnInit(): void {}
 
   scrollToTrendingCourses() {
     const trendingCourses = this.elementRef.nativeElement.querySelector('#trending-courses');
-
     if (trendingCourses) {
       trendingCourses.scrollIntoView({ behavior: 'smooth' });
     }
@@ -47,27 +41,26 @@ export class AwsDevopsComponent implements OnInit {
 
   onSubmit() {
     if (this.registrationForm.valid) {
-      this.dataService.submitForm(this.registrationForm.value).subscribe((res: any) => {
-        console.log(res);
+      this.isLoading = true; // Start loading
+      this.dataService.submitForm(this.registrationForm.value).subscribe(
+        (res: any) => {
+          console.log(res);
+          this.registrationForm.reset();
+          this.router.navigate(['/thank-you']);
+          const message = `Hi, I'm interested in your AWS & DevOps course. Can you provide me with more details?\nName: ${this.registrationForm.value.name}\nPhone: ${this.registrationForm.value.phone}`;
+          const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
 
-        // Reset the form
-        this.registrationForm.reset();
-
-        // Show success message
-        this.snackBar.open('Form submitted successfully!', 'Close', {
-          duration: 5000
-        });
-
-        // Navigate to the "/thank-you" page
-        this.router.navigate(['/thank-you']);
-
-        // Construct the WhatsApp message
-        const message = `Hi, I'm interested in your AWS & DevOps course. Can you provide me with more details?\nName: ${this.registrationForm.value.name}\nPhone: ${this.registrationForm.value.phone}`;
-        const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
-
-        // Redirect to WhatsApp
-        window.open(whatsappURL, '_blank');
-      });
+          window.open(whatsappURL, '_blank');
+          this.isLoading = false; // Stop loading
+        },
+        (error: any) => {
+          console.error('Error submitting form:', error);
+          this.snackBar.open('Failed to submit the form. Please try again.', 'Close', {
+            duration: 5000,
+          });
+          this.isLoading = false; // Stop loading on error
+        }
+      );
     }
   }
 }
