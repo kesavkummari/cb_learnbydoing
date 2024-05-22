@@ -10,6 +10,7 @@ import { DataService } from '../../services/data.service';
 })
 export class ContactUsComponent {
   formData: { first_name: string, last_name: string, email: string, phone: string, user_message: string } = { first_name: '', last_name: '', email: '', phone: '', user_message: '' };
+  isLoading = false; // Loading state for spinner
 
   constructor(
     private snackBar: MatSnackBar,
@@ -35,13 +36,16 @@ export class ContactUsComponent {
         this.resetForm();
 
         // Redirect to WhatsApp
-        window.open(whatsappURL, '_blank');
+        window.location.href = whatsappURL;
       },
       error: (err) => {
         console.error('Error submitting the form', err);
         this.snackBar.open('Failed to submit the form. Please try again.', 'Close', {
           duration: 5000
         });
+      },
+      complete: () => {
+        this.isLoading = false; // Stop loading spinner
       }
     });
   }
@@ -49,10 +53,8 @@ export class ContactUsComponent {
   // Function to handle form submission
   handleSubmitForm() {
     if (this.formData.first_name && this.formData.last_name && this.formData.email && this.formData.phone && this.formData.user_message) {
-      // Show loading message
-      this.snackBar.open('Submitting...', '', {
-        duration: 3000
-      });
+      // Start loading spinner
+      this.isLoading = true;
 
       this.handleFormSubmissionResetAndRedirect(); // Submit the form, reset, and redirect to WhatsApp
     } else {
@@ -63,10 +65,5 @@ export class ContactUsComponent {
   // Function to reset the form
   resetForm() {
     this.formData = { first_name: '', last_name: '', email: '', phone: '', user_message: '' };
-  }
-
-  validateEmail(email: string) {
-    var re = /\S+@\S+\.\S+/;
-    return re.test(email);
   }
 }

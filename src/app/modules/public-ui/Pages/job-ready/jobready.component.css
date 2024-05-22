@@ -455,3 +455,21 @@ button[type="submit"]:disabled {
   height: calc(100% - -12px);
   border-left: 2px solid #01ac61;
 }
+
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optionally, apply additional styling if you want more control over the spinner's appearance */
+.mat-progress-spinner circle {
+  stroke-width: 2px; /* Adjust the stroke width if needed */
+}

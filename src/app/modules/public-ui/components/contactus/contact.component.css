@@ -181,3 +181,36 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     padding-top: 112px;
     height: 0;
 }
+
+/* Adjust the CSS to position the spinner to the right of the submit button */
+
+.loading-spinner {
+    display: inline-block;
+    margin-left: 10px; /* Adjust spacing between the button and spinner */
+}
+
+.sec2contactform button[type="submit"] {
+    padding: 15px 40px;
+    color: #fff;
+    border: 0;
+    background: #172342;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 7px 0;
+    cursor: pointer;
+    position: relative; /* Position the button relatively */
+}
+
+.sec2contactform button[type="submit"] span {
+    position: relative; /* Position the button text relatively */
+    z-index: 1; /* Ensure button text is on top */
+}
+
+.sec2contactform button[type="submit"]:hover {
+    background-color: #0c1628;
+}
+
+.sec2contactform button[type="submit"]:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
