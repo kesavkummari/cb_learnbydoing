@@ -47,10 +47,12 @@ export class AwsDevopsComponent implements OnInit {
           console.log(res);
           this.registrationForm.reset();
           this.router.navigate(['/thank-you']);
-          const message = `Hi, I'm interested in your AWS & DevOps course. Can you provide me with more details?\nName: ${this.registrationForm.value.name}\nPhone: ${this.registrationForm.value.phone}`;
+          const message = `Hi, I'm interested in your AWS & DevOps course. Can you provide me with more details?\n`;
           const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
-
-          window.open(whatsappURL, '_blank');
+  
+          // Redirect directly to WhatsApp API endpoint
+          window.location.href = whatsappURL;
+  
           this.isLoading = false; // Stop loading
         },
         (error: any) => {
@@ -63,4 +65,5 @@ export class AwsDevopsComponent implements OnInit {
       );
     }
   }
+  
 }
