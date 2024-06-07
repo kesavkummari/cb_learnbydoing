@@ -4,7 +4,7 @@ Thank you so much for reaching out to us for skilling on AWS DevOps.
 Here are the details of our AWS DevOps Programs:
 
 1. AWS DevOps Regular
-- Fee: 17,999/-
+- Fee: 46,000/-
 - Duration: 2 Months
 - OS Module
 - AWS
@@ -64,7 +64,7 @@ Thank you so much for reaching out to us for skilling on AWS DevOps.
 Here are the details of our AWS DevOps Programs:
 
 1. AWS DevOps Regular
-- Fee: 17,999/-
+- Fee: 46,000/-
 - Duration: 2 Months
 - OS Module
 - AWS
