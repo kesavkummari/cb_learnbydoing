@@ -217,20 +217,14 @@
         <div class="content-columns">
           <div class="left-column">
             <h2>AWS Content - Modules</h2>
-            <div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">Getting Started with Windows & Linux</div>
-            <div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">Cloud Computing with AWS </div>
-            <div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">DevOps & CD/CD Pipelines </div>
-            <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Python For Data Science & MLOps</div>
-            <div class="module" (click)="selectModule('M05')" [class.active-module]="selectedModule === 'M05'">Docker & Kubernetes</div>
-            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Introduction to MLOps </div>
-            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Initial MLOps: Experimentation Environments in SageMaker Studio</div>
-            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Repeatable MLOps: Repositories</div>
-            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Repeatable MLOps: Orchestration</div>
-            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Repeatable MLOps: Orchestration (continued)</div>
-            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Reliable MLOps: Scaling and Testing </div>
-            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Reliable MLOps: Scaling and Testing (continued)</div>
-            <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">Reliable MLOps: Monitoring</div>
-<!--             
+            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with Windows & Linux </div>
+            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Analytics  </div>
+            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Application Integration</div>
+            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Compute </div>
+            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS Services -Containers </div>
+            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS Services - Database   </div>
+            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS Services - Storage    </div>
+            <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS Services - Developer Tools</div>
             <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS Services - Serverless</div>
             <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS Services - Management and Governance</div>
             <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS Services - Networking and Content Delivery</div>
@@ -256,7 +250,7 @@
             <div class="module" (click)="selectModule('M29')" [class.active-module]="selectedModule === 'M29'">Python: Data Types</div>
             <div class="module" (click)="selectModule('M30')" [class.active-module]="selectedModule === 'M30'">Python: Flow Control</div>
             <div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
-            <div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div> -->
+            <div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div>
     
           </div>
           <div class="right-column">
@@ -264,104 +258,9 @@
             <ng-container *ngIf="isModuleSelected; else defaultContent">
               <!-- Display image by default -->     
             </ng-container>
-
-            <ng-container *ngIf="selectedModule === 'M01'">
-              <h2>  Getting Started with Windows & Linux</h2>
-              <hr style="
-                  position: unset;
-                  border: none;
-                  height: 2px;
-                  background: black;
-                  margin-bottom: 20px;
-                  margin-right: inherit;
-              ">
-          
-              <ul>
-                  <li>Windows</li>
-                  <li>Linux & Unix Distributions</li>
-              </ul>
-            </ng-container>            
-
-            <ng-container *ngIf="selectedModule === 'M02'">
-              <h2>  Cloud Computing with AWS</h2>
-              <hr style="
-                  position: unset;
-                  border: none;
-                  height: 2px;
-                  background: black;
-                  margin-bottom: 20px;
-                  margin-right: inherit;
-              ">
-          
-              <ul>
-                  <li>Machine Learning Services : 1. SageMaker Studio, 2. SageMaker Pipelines, 3. SageMaker Ground Truth, 4. SageMaker Model Monitor, 5. SageMaker Feature Store & 6. SageMaker Debugger  </li>
-                  <br>
-                  <li>Data Processing and Storage : 1. S3, 2. Redshift, 3. RDS, 4. Glue & 5. Athena </li>
-                  <br>
-                  <li>Compute Services : 1. EC2, 2. Lambda, 3. ECS, 4. EKS</li>
-                  <br>
-                  <li>Analytics and Monitoring : 1. CloudWatch, 2. CloudTrail, 3. Kinesis, 4. Glue DataBrew   </li>
-                  <br>
-                  <li>Security and Identity : 1. IAM, 2. KMS, 3. Secrets Manager</li>
-                  <br>
-                  <li>Machine Learning Specific Services: 1. Comprehend, 2. Rekognition, 3. Lex, 4. Polly, 5. Translate & 6. Transcribe</li>
-              </ul>
-            </ng-container>     
-
-            <ng-container *ngIf="selectedModule === 'M03'">
-              <h2>  DevOps & CD/CD Pipelines</h2>
-              <hr style="
-                  position: unset;
-                  border: none;
-                  height: 2px;
-                  background: black;
-                  margin-bottom: 20px;
-                  margin-right: inherit;">
-          
-              <ul>
-                  <li>CodeCommit</li>
-                  <li>CodeBuild</li>
-                  <li>CodeDeploy</li>
-                  <li>CodePipeline</li>
-                  <li>CloudFormation</li>
-              </ul>
-            </ng-container>     
-
-            <ng-container *ngIf="selectedModule === 'M04'">
-              <h2>  Python For Data Science & MLOps</h2>
-              <hr style="
-                  position: unset;
-                  border: none;
-                  height: 2px;
-                  background: black;
-                  margin-bottom: 20px;
-                  margin-right: inherit;
-              ">
-          
-              <ul>
-                  <li>Python For Data Science</li>
-                  <li>Python For MLOps</li>
-              </ul>
-            </ng-container>     
-
-            <ng-container *ngIf="selectedModule === 'M05'">
-              <h2>  Docker & Kubernetes</h2>
-              <hr style="
-                  position: unset;
-                  border: none;
-                  height: 2px;
-                  background: black;
-                  margin-bottom: 20px;
-                  margin-right: inherit;
-              ">
-          
-              <ul>
-                  <li>Docker</li>
-                  <li>Kubernetes</li>
-              </ul>
-            </ng-container>     
+                   
     <ng-container *ngIf="selectedModule === 'M1'">
-      <h2>  Introduction to MLOps</h2>
+      <h2> Unix & Linux Fundamentals</h2>
       <hr style="
           position: unset;
           border: none;
@@ -372,14 +271,23 @@
       ">
   
       <ul>
-          <li>Processes</li>
-          <li>People</li>
-          <li>Technology</li>
-          <li>Security and governance</li>
-          <li>MLOps maturity model</li>
+          <li>Unix & Linux History & Distributions</li>
+          <li>Basic & Advanced Commands</li>
+          <li>Run Levels</li>
+          <li>Boot Process</li>
+          <li>File System</li>
+          <li>File & Directory Management</li>
+          <li>Text Editors</li>
+          <li>Permissions</li>
+          <li>User & Group Management</li>
+          <li>Package Management</li>
+          <li>Controlling Services & Daemons</li>
+          <li>Process Management</li>
+          <li>Log Management</li>
+          <li>WebServer - Windows IIS, Apache2, Nginx & Httpd</li>
+          <li>Database Servers - MySQL, Mariadb & PostgreSQL</li>
       </ul>
-    </ng-container>
-
+  </ng-container>
   <ng-container *ngIf="selectedModule === 'M0'">
     <h2> Introduction to Shell Scripting</h2>
     <hr style="
@@ -430,7 +338,7 @@
   
 
   <ng-container *ngIf="selectedModule === 'M2'">
-    <h2>Initial MLOps: Experimentation Environments in SageMaker Studio</h2>
+    <h2>AWS Analytics Services</h2>
     <hr style="
         position: unset;
         border: none;
@@ -441,16 +349,14 @@
     ">
 
     <ul>
-        <li>Bringing MLOps to experimentation</li>
-        <li>Setting up the ML experimentation environment</li>
-        <li>Demonstration: Creating and Updating a Lifecycle Configuration for SageMaker Studio</li>
-        <li>Hands-On Lab: Provisioning a SageMaker Studio Environment with the AWS Service Catalog</li>
-        <li>Workbook: Initial MLOps</li> 
+        <li>Amazon Athena</li>
+        <li>Amazon OpenSearch Service</li>
+        <li>Amazon QuickSight</li>
     </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
-  <h2>Repeatable MLOps: Repositories</h2>
+  <h2>AWS Application Integration</h2>
   <hr style="
       position: unset;
       border: none;
@@ -461,14 +367,13 @@
   ">
 
   <ul>
-    <li>Managing data for MLOps</li>
-    <li>Version control of ML models</li>
-    <li>Code repositories in ML</li>
+      <!-- <li>Amazon AppFlow</li> -->
+      <li>Amazon EventBridge (Amazon CloudWatch Events)</li>
   </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
-  <h2>Repeatable MLOps: Orchestration</h2>
+  <h2>AWS Compute Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -479,13 +384,18 @@
   ">
 
   <ul>
-      <li>ML pipelines</li>
-      <li>Demonstration: Using SageMaker Pipelines to Orchestrate Model Building Pipelines</li>
+     
+      <li>Amazon EC2</li>
+      <li>Amazon EC2 Auto Scaling</li>
+      <li>AWS Elastic Beanstalk</li>
+      <!-- <li>EC2 Image Builder</li> 
+      <li>AWS App Runner</li>
+      <li>AWS Serverless Application Repository</li>-->
   </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M5'">
-  <h2>Repeatable MLOps: Orchestration (continued)</h2>
+  <h2>Module 5: AWS Container Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -496,20 +406,19 @@
   ">
 
   <ul>
-      <li>End-to-end orchestration with AWS Step Functions</li>
-      <li>Hands-On Lab: Automating a Workflow with Step Functions</li>
-      <li>End-to-end orchestration with SageMaker Projects</li>
-      <li>Demonstration: Standardizing an End-to-End ML Pipeline with SageMaker Projects</li>
-      <li>Using third-party tools for repeatability</li>
-      <li>Demonstration: Exploring Human-in-the-Loop During Inference</li>
-      <li>Governance and security</li>
-      <li>Demonstration: Exploring Security Best Practices for SageMaker</li>
-      <li>Workbook: Repeatable MLOps</li>
+      <li>AWS App2Container</li>
+      <li>AWS Copilot</li>
+      <li>Amazon Elastic Container Registry (Amazon ECR)</li>
+      <li>Amazon Elastic Container Service (Amazon ECS)</li>
+      <li>Amazon Elastic Kubernetes Service (Amazon EKS)</li>
+      <li>Amazon EKS Distro</li>
+      <li>AWS Fargate</li>
+      <li>Red Hat OpenShift Service on AWS (ROSA)</li>
   </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M6'">
-  <h2>Reliable MLOps: Scaling and Testing</h2>
+  <h2>AWS Database Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -520,16 +429,25 @@
   ">
 
   <ul>
-    <li>Scaling and multi-account strategies</li>
-    <li>Testing and traffic-shifting</li>
-    <li>Demonstration: Using SageMaker Inference Recommender</li>
-    <li>Hands-On Lab: Testing Model Variants</li>
+    <li>AWS Database Migration Service (AWS DMS)</li>
+    <li>Amazon DynamoDB</li>
+    <li>Amazon RDS</li>
+    <li>Amazon Redshift</li>
+    <!--
+      <li>Amazon Aurora</li>
+      <li>Amazon Aurora Serverless v2</li>
+      
+      <li>Amazon DocumentDB (with MongoDB compatibility)</li>
+     
+      <li>Amazon ElastiCache</li>
+      <li>Amazon MemoryDB for Redis</li> -->
+    
   </ul>
 </ng-container>
         
             
 <ng-container *ngIf="selectedModule === 'M7'">
-  <h2>Reliable MLOps: Scaling and Testing (continued)</h2>
+  <h2>AWS Storage Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -540,13 +458,26 @@
   ">
 
   <ul>
-    <li>Hands-On Lab: Shifting Traffic</li>
-    <li>Workbook: Multi-account strategies</li>
+    <li>Amazon Elastic Block Store (Amazon EBS)</li>
+    <li>Amazon Elastic File System (Amazon EFS)</li>
+    <li>Amazon S3</li>
+    <!--
+      <li>AWS Backup</li>
+    
+      <li>AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)</li>
+      
+      <li>Amazon FSx for Lustre</li>
+      <li>Amazon FSx for NetApp ONTAP</li>
+      <li>Amazon FSx for OpenZFS</li>
+      <li>Amazon FSx for Windows File Server</li>
+      
+      <li>Amazon S3 Glacier</li>
+      <li>AWS Storage Gateway</li> -->
   </ul>
 </ng-container>
        
 <ng-container *ngIf="selectedModule === 'M8'">
-  <h2>Reliable MLOps: Monitoring</h2>
+  <h2>Developer Tools</h2>
   <hr style="
       position: unset;
       border: none;
@@ -557,12 +488,19 @@
   ">
 
 <ul>
-  <li>The importance of monitoring in ML</li>
-  <li>Hands-On Lab: Monitoring a Model for Data Drift</li>
-  <li>Operations considerations for model monitoring</li>
-  <li>Remediating problems identified by monitoring ML solutions</li>
-  <li>Workbook: Reliable MLOps</li>
-  <li>Hands-On Lab: Building and Troubleshooting an ML Pipeline</li>
+  <li>AWS Cloud Development Kit (AWS CDK)</li>
+  <li>AWS CloudShell</li>
+  <li>AWS CodeArtifact</li>
+  <li>AWS CodeBuild</li>
+  <li>AWS CodeCommit</li>
+  <li>AWS CodeDeploy</li>
+  <!-- <li>Amazon CodeGuru</li> -->
+  <li>AWS CodePipeline</li>
+  <li>AWS CodeStar</li>
+  <li>AWS Command Line Interface (AWS CLI)</li>
+  <!-- <li>AWS Fault Injection Simulator</li>
+  <li>AWS X-Ray</li> -->
+  <li>AWS SDKs and Tools</li>
   
 </ul>
 </ng-container>

@@ -3,11 +3,12 @@
     <div class="sub-tabs">
     <!--   <div  class="sub-tab" (click)="selectTab('os')" [class.active]="selectedTab === 'os'">   OS [Windows & Linux]</div>
      <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">AWS DevOps</div>     -->
-      <div class="sub-tab" style="color: #421740;" (click)="selectTab('devops')" [class.active]="selectedTab === 'devops'">Job Ready Program </div>
+      <div class="sub-tab" style="color: #421740;" (click)="selectTab('devops')" [class.active]="selectedTab === 'devops'">AWS DevSecOps </div>
     <!--  <div class="sub-tab" (click)="selectTab('mlops')" [class.active]="selectedTab === 'mlops'" >MLOps </div> 
     <div class="sub-tab" (click)="selectTab('python')" [class.active]="selectedTab === 'python'" style="margin-right: 0;">Python </div> -->
     </div>
     <div class="content">
+      
       <ng-container *ngIf="selectedTab === 'os'">
         <div class="content-columns">
           <div class="left-column">
@@ -970,7 +971,8 @@
           </div>
         </div>
       </ng-container>
-  <ng-container *ngIf="selectedTab === 'devops'">
+      
+      <ng-container *ngIf="selectedTab === 'devops'">
         <div class="content-columns">
           <div class="left-column">
             <h2 style="padding-bottom: 10px;">AWS DevOps Content - Modules</h2>
@@ -2095,6 +2097,7 @@
           </div>
         </div>
       </ng-container>
+      
       <ng-template #defaultContent>
         <!-- Display default image when no module is selected -->
         <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1'" src="assets/DevopsT.svg" alt=" DevOps Course Default Image" />
