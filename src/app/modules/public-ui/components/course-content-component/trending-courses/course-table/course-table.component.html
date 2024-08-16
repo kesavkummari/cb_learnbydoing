@@ -3,7 +3,7 @@
     <div class="sub-tabs">
     <!--   <div  class="sub-tab" (click)="selectTab('os')" [class.active]="selectedTab === 'os'">   OS [Windows & Linux]</div>
      <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">AWS DevOps</div>     -->
-      <div class="sub-tab" style="color: #421740;" (click)="selectTab('devops')" [class.active]="selectedTab === 'devops'">AWS DevSecOps - AiOps - FinOps & MLOps </div>
+      <div class="sub-tab" style="color: #421740;" (click)="selectTab('devops')" [class.active]="selectedTab === 'devops'">AWS DevSecOps - Ai/FinOps & MLOps</div>
     <!--  <div class="sub-tab" (click)="selectTab('mlops')" [class.active]="selectedTab === 'mlops'" >MLOps </div> 
     <div class="sub-tab" (click)="selectTab('python')" [class.active]="selectedTab === 'python'" style="margin-right: 0;">Python </div> -->
     </div>
@@ -326,7 +326,83 @@
     </ul>
 </ng-container>
 
+
+<ng-container *ngIf="selectedModule === 'M01'">
+  <h2>Introduction to DevSecOps</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Understanding DevOps and the need for security</li>
+      <li>DevSecOps principles and practices</li>
+      <li>Basic Shell commands (ls, cd, mkdir, rm, etc.).</li>
+      <li>Benefits of integrating security into DevOps</li>
+  </ul>
+
+  <h2>Security Culture and Collaboration</h2>
+  <ul>
+      <li>Building a security-focused culture</li>
+      <li>Collaboration between development, operations, and security teams</li>
+      <li>Security champions and roles</li>
+  </ul>
+
+  <h2>Threat Modeling and Risk Assessment</h2>
+  <ul>
+      <li>Identifying and prioritizing risks</li>
+      <li>Conducting threat modeling exercises</li>
+      <li>Tools and methodologies for threat modeling</li>
+  </ul>
+
+  <h2>Secure Coding Practices</h2>
+  <ul>
+      <li>Common vulnerabilities and how to avoid them</li>
+      <li>Secure coding standards and guidelines</li>
+      <li>Static Application Security Testing (SAST)</li>
+  </ul>
+  <h2>Continuous Security Testing</h2>
+  <ul>
+      <li>Integrating security testing in CI/CD pipelines</li>
+      <li>Dynamic Application Security Testing (DAST)</li>
+      <li>Security scanning tools and automation</li>
+  </ul>
   
+  <h2>Infrastructure as Code (IaC) and Security</h2>
+  <ul>
+      <li>Securing IaC templates and configurations</li>
+      <li>Policy-as-code for automated compliance checks</li>
+      <li>Container security best practices</li>
+  </ul>
+  <h2>Security Monitoring and Incident Response</h2>
+  <ul>
+      <li>Setting up security monitoring and alerting</li>
+      <li>Incident response planning and execution</li>
+      <li>Post-incident analysis and improvement</li>
+  </ul>
+  <h2>Compliance and Governance</h2>
+  <ul>
+      <li>Understanding regulatory requirements</li>
+      <li>Implementing compliance checks in the DevSecOps process</li>
+      <li>Auditing and reporting</li>
+  </ul>
+  <h2>Case Studies and Best Practices</h2>
+  <ul>
+      <li>Real-world examples of DevSecOps implementation</li>
+      <li>Lessons learned and common pitfalls</li>
+      <li>Continuous improvement in DevSecOps practices</li>
+  </ul>
+  <h2>Hands-on Labs and Exercises</h2>
+  <ul>
+      <li>Practical labs on setting up DevSecOps pipelines</li>
+      <li>Simulated threat scenarios and incident response</li>
+      <li>Continuous learning and upskilling resources</li>
+  </ul>
+</ng-container>
 
   <ng-container *ngIf="selectedModule === 'M2'">
     <h2>AWS Analytics Services</h2>
@@ -975,7 +1051,7 @@
       <ng-container *ngIf="selectedTab === 'devops'">
         <div class="content-columns">
           <div class="left-column">
-            <h2 style="padding-bottom: 10px;">AWS DevOps Content - Modules</h2>
+            <h2 style="padding-bottom: 10px;">Course Content</h2>
 <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with OS </div>
 <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Analytics</div>
 <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Application Integration</div>
@@ -1013,6 +1089,10 @@
 <div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
 <div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div>
 <div class="module" (click)="selectModule('M0')" [class.active-module]="selectedModule === 'M0'">Shell Scripting </div>
+<div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">DevSecOps </div>
+<div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">AiOps </div>
+<div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">MLOps </div>
+<div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">FinOps </div>
 
 </div>
 
