@@ -12,7 +12,7 @@ export class RegularAWSCourseContent {
 
   courses = [
     {
-      title: 'Mastering Cloud Engineering & Operations Program',
+      title: 'Full-Stack Cloud & DevOps',
       modules: [
         // Course 2 modules and submodules
         // Module 1
