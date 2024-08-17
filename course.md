@@ -1,9 +1,9 @@
 
-Thank you so much for reaching out to us for skilling on AWS DevOps.
+Thank you so much for reaching out to us for skilling on AWS AiOps.
 
-Here are the details of our AWS DevOps Programs:
+Here are the details of our AWS AiOps Programs:
 
-1. AWS DevOps Regular
+1. AWS AiOps Regular
 - Fee: 46,000/-
 - Duration: 2 Months
 - OS Module
@@ -20,7 +20,7 @@ Here are the details of our AWS DevOps Programs:
 - Daily 1 Hours Session
 
 
-2. AWS DevOps (Job Ready Program)
+2. AWS AiOps (Job Ready Program)
 - Fee: 49,999/-
 - Duration: 4 Months
 - OS Module
@@ -42,7 +42,7 @@ Here are the details of our AWS DevOps Programs:
 DAY-1 Session Zoom Link: When: March 11th, 2024 10:30 AM IST 
 https://us02web.zoom.us/meeting/register/tZUqde6orTsvHNweocZjUSb6QcvegEVyfRDD/tZ0ldO2srz4tG9SJmI3Okf2rHLAtlfG99a6X
 
-AWS DevOps CI/CD Pipeline Demo Video:
+AWS AiOps CI/CD Pipeline Demo Video:
 https://drive.google.com/file/d/11BQriAM6QnPzwUOjhtCmW-gUtL8EVgfb/view?usp=sharing
 
 Cloud Binary Website:
@@ -59,11 +59,11 @@ Mobile: +91 9100073006 | +91 6309872424 | +91 9392743006 | +91 9392753006
 
 
 
-Thank you so much for reaching out to us for skilling on AWS DevOps.
+Thank you so much for reaching out to us for skilling on AWS AiOps.
 
-Here are the details of our AWS DevOps Programs:
+Here are the details of our AWS AiOps Programs:
 
-1. AWS DevOps Regular
+1. AWS AiOps Regular
 - Fee: 46,000/-
 - Duration: 2 Months
 - OS Module
@@ -80,7 +80,7 @@ Here are the details of our AWS DevOps Programs:
 - Daily 1 Hours Session
 
 
-2. AWS DevOps (Job Ready Program)
+2. AWS AiOps (Job Ready Program)
 - Fee: 49,999/-
 - Duration: 4 Months
 - OS Module

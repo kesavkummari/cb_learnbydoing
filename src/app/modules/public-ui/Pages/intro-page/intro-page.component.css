@@ -169,7 +169,7 @@ body {
 
 .animated-text span::before{
       /* text-shadow: 1px 1px 2px #002346; */
-      content: "AWS DevOps";
+      content: "AWS AiOps";
       color: #ff725e;
       animation: words 8s infinite;
       font-size: xx-large;
