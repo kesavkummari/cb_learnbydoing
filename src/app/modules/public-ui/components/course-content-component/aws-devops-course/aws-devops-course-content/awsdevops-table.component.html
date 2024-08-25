@@ -216,12 +216,12 @@
       <ng-container *ngIf="selectedTab === 'aws'">
         <div class="content-columns">
           <div class="left-column">
-            <h2>AWS Content - Modules</h2>
+            <h2>AWS MLOps Content - Modules</h2>
             <div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">Getting Started with Windows & Linux</div>
             <div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">Cloud Computing with AWS </div>
             <div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">DevOps & CD/CD Pipelines </div>
             <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Python For Data Science & MLOps</div>
-            <div class="module" (click)="selectModule('M05')" [class.active-module]="selectedModule === 'M05'">Docker & Kubernetes</div>
+            <!-- <div class="module" (click)="selectModule('M05')" [class.active-module]="selectedModule === 'M05'">Docker & Kubernetes</div> -->
             <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Introduction to MLOps </div>
             <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Initial MLOps: Experimentation Environments in SageMaker Studio</div>
             <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Repeatable MLOps: Repositories</div>
@@ -294,22 +294,22 @@
               ">
           
               <ul>
-                  <li>Machine Learning Services : 1. SageMaker Studio, 2. SageMaker Pipelines, 3. SageMaker Ground Truth, 4. SageMaker Model Monitor, 5. SageMaker Feature Store & 6. SageMaker Debugger  </li>
+                  <li>Machine Learning Services : SageMaker Studio, SageMaker Pipelines, SageMaker Ground Truth, SageMaker Model Monitor, SageMaker Feature Store & SageMaker Debugger  </li>
                   <br>
-                  <li>Data Processing and Storage : 1. S3, 2. Redshift, 3. RDS, 4. Glue & 5. Athena </li>
+                  <li>Data Processing and Storage : S3, Redshift, RDS, Glue & Athena </li>
                   <br>
-                  <li>Compute Services : 1. EC2, 2. Lambda, 3. ECS, 4. EKS</li>
+                  <li>Compute Services : EC2, Lambda, ECS, EKS</li>
                   <br>
-                  <li>Analytics and Monitoring : 1. CloudWatch, 2. CloudTrail, 3. Kinesis, 4. Glue DataBrew   </li>
+                  <li>Analytics and Monitoring : CloudWatch, CloudTrail, Kinesis, Glue DataBrew   </li>
                   <br>
-                  <li>Security and Identity : 1. IAM, 2. KMS, 3. Secrets Manager</li>
+                  <li>Security and Identity : IAM, KMS, Secrets Manager</li>
                   <br>
-                  <li>Machine Learning Specific Services: 1. Comprehend, 2. Rekognition, 3. Lex, 4. Polly, 5. Translate & 6. Transcribe</li>
+                  <li>Machine Learning Specific Services: Comprehend, Rekognition, Lex, Polly, Translate & Transcribe</li>
               </ul>
             </ng-container>     
 
             <ng-container *ngIf="selectedModule === 'M03'">
-              <h2>  DevOps & CD/CD Pipelines</h2>
+              <h2>  AWS DevOps & CD/CD Pipelines</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -319,11 +319,17 @@
                   margin-right: inherit;">
           
               <ul>
+                  <li>Git, GitHub/GitLab</li>
+                  <li>Jenkins</li>
+                  <li>Ansible</li>
+                  <li>Docker</li>
+                  <li>Kubernetes</li>
                   <li>CodeCommit</li>
                   <li>CodeBuild</li>
                   <li>CodeDeploy</li>
                   <li>CodePipeline</li>
                   <li>CloudFormation</li>
+                  <li>Terraform</li>
               </ul>
             </ng-container>     
 
@@ -339,11 +345,20 @@
               ">
           
               <ul>
-                  <li>Python For Data Science</li>
+                  <li>Python For Data Science - Numpy - Pandas - Matplotlib</li>
                   <li>Python For MLOps</li>
+                  <li>Build MLApps using FastAPI</li>
+                  <li>Build MLApps using Streamit</li>
+                  <li>Build MLApps using Flask</li>
+                  <!-- <li>Packaging the ML Models</li>
+                  <li>MLPackage Building</li>
+                  <li>Mlflow & Whylogs</li>
+                  <li>Post-Productionalizing ML Models</li>
+                  <li>Continuous Monitoring Prometheus</li>
+                  <li>Monitoring and Debugging of ML System</li> -->
               </ul>
             </ng-container>     
-
+<!-- 
             <ng-container *ngIf="selectedModule === 'M05'">
               <h2>  Docker & Kubernetes</h2>
               <hr style="
@@ -359,7 +374,7 @@
                   <li>Docker</li>
                   <li>Kubernetes</li>
               </ul>
-            </ng-container>     
+            </ng-container>      -->
     <ng-container *ngIf="selectedModule === 'M1'">
       <h2>  Introduction to MLOps</h2>
       <hr style="
