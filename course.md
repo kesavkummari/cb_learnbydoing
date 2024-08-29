@@ -40,7 +40,7 @@ Here are the details of our AWS DevOps Programs:
 - Daily 1 Hours Session
 
 DAY-1 Session Zoom Link: When: March 11th, 2024 10:30 AM IST 
-https://us02web.zoom.us/meeting/register/tZ0vdOCprzwtGNHNDkmGPPxJjNQR3cysGpOZ/tZ0ldO2srz4tG9SJmI3Okf2rHLAtlfG99a6X
+https://us02web.zoom.us/meeting/register/tZwvdO6opjsoG9WBOuT5BSFlfgsVmuuJI7hP/tZ0ldO2srz4tG9SJmI3Okf2rHLAtlfG99a6X
 
 AWS DevOps CI/CD Pipeline Demo Video:
 https://drive.google.com/file/d/11BQriAM6QnPzwUOjhtCmW-gUtL8EVgfb/view?usp=sharing
@@ -105,7 +105,7 @@ DAY-1 Session Video:
 https://8amcloudbinary.s3.amazonaws.com/B17/DAY-1_GitLab_And_AWS_Account_Creation.mp4
 
 DAY-2 Session Zoom Link: When: Mar 7th & 8th, 2024 10:30 AM IST 
-https://us02web.zoom.us/meeting/register/tZ0vdOCprzwtGNHNDkmGPPxJjNQR3cysGpOZ/tZ0pdOiopjwqE9MpQD-hcmdPNXj-L5Ph2Qxp
+https://us02web.zoom.us/meeting/register/tZwvdO6opjsoG9WBOuT5BSFlfgsVmuuJI7hP/tZ0pdOiopjwqE9MpQD-hcmdPNXj-L5Ph2Qxp
 
 Cloud Binary Website:
 https://www.cloudbinary.io/
