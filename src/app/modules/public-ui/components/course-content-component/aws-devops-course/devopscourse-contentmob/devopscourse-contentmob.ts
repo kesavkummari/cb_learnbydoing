@@ -11,7 +11,7 @@ export class DevOpsCourseContentMob {
 
   courses = [
     {
-      title: 'AWS MLOps',
+      title: 'FinOps',
       modules: [
         // Course 2 modules and submodules
         // Module 1

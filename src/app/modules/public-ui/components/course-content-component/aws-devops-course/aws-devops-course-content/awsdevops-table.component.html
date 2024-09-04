@@ -2,7 +2,7 @@
   <div class="main-tab">
     <div class="sub-tabs">
     <!--   <div  class="sub-tab" (click)="selectTab('os')" [class.active]="selectedTab === 'os'">   OS [Windows & Linux]</div> -->
-     <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">AWS MLOps</div>   
+     <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">FinOps</div>   
       <!-- <div class="sub-tab" style="color: #421740;" (click)="selectTab('devops')" [class.active]="selectedTab === 'devops'">AWS DevOps - Shell & Python Scripting </div>
      <div class="sub-tab" (click)="selectTab('mlops')" [class.active]="selectedTab === 'mlops'" >MLOps </div> 
     <div class="sub-tab" (click)="selectTab('python')" [class.active]="selectedTab === 'python'" style="margin-right: 0;">Python </div> -->
@@ -216,47 +216,19 @@
       <ng-container *ngIf="selectedTab === 'aws'">
         <div class="content-columns">
           <div class="left-column">
-            <h2>AWS MLOps Content - Modules</h2>
-            <div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">Getting Started with Windows & Linux</div>
-            <div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">Cloud Computing with AWS </div>
-            <div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">DevOps & CD/CD Pipelines </div>
-            <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Python For Data Science & MLOps</div>
+            <h2>FinOps Content - Modules</h2>
+            <div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">Module 1 : Introduction to FinOps</div>
+            <div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">Module 2 : Cloud Computing Platforms </div>
+            <div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">Module 3 : FinOps Tools and Platforms </div>
+            <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Module 4 : FinOps Roles and Responsibilities</div>
             <!-- <div class="module" (click)="selectModule('M05')" [class.active-module]="selectedModule === 'M05'">Docker & Kubernetes</div> -->
-            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Introduction to MLOps </div>
-            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Initial MLOps: Experimentation Environments in SageMaker Studio</div>
-            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Repeatable MLOps: Repositories</div>
-            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Repeatable MLOps: Orchestration</div>
-            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Repeatable MLOps: Orchestration (continued)</div>
-            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Reliable MLOps: Scaling and Testing </div>
-            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Reliable MLOps: Scaling and Testing (continued)</div>
-            <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">Reliable MLOps: Monitoring</div>
-<!--             
-            <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS Services - Serverless</div>
-            <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS Services - Management and Governance</div>
-            <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS Services - Networking and Content Delivery</div>
-            <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS Services - Security, Identity, and Compliance</div>
-            <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Software Development Life Cycle: Agile - Scrum</div>
-            <div class="module" (click)="selectModule('M26')" [class.active-module]="selectedModule === 'M26'">Build Tool: Apache Maven & Python Pip</div>
-            <div class="module" (click)="selectModule('M27')" [class.active-module]="selectedModule === 'M27'">Application Servers - Apache Tomcat</div>
-            <div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">Version Control System / Source Code Management: Git</div>
-            <div class="module" (click)="selectModule('M15')" [class.active-module]="selectedModule === 'M15'">Continuous Integration using Jenkins</div>
-            <div class="module" (click)="selectModule('M16')" [class.active-module]="selectedModule === 'M16'">Continuous Static Code Analysis: SonarQube</div>
-            <div class="module" (click)="selectModule('M17')" [class.active-module]="selectedModule === 'M17'">Continuous Binary Code Repository using JFrog</div>
-            <div class="module" (click)="selectModule('M18')" [class.active-module]="selectedModule === 'M18'">Continuous Infrastructure As A Code: Terraform</div>
-            <div class="module" (click)="selectModule('M19')" [class.active-module]="selectedModule === 'M19'">Creating Machine Images: Packer</div>
-            <div class="module" (click)="selectModule('M22')" [class.active-module]="selectedModule === 'M22'">Container Orchestration: Kubernetes</div>
-            <div class="module" (click)="selectModule('M23')" [class.active-module]="selectedModule === 'M23'">Continuous Monitoring: New Relic & Nagios</div>
-            <div class="module" (click)="selectModule('M21')" [class.active-module]="selectedModule === 'M21'">Containerisation: Docker</div>
-            <div class="module" (click)="selectModule('M20')" [class.active-module]="selectedModule === 'M20'">Continuous Configuration Management: Ansible</div>
-            <div class="module" (click)="selectModule('M24')" [class.active-module]="selectedModule === 'M24'">Migration Strategies</div>
-            <div class="module" (click)="selectModule('M25')" [class.active-module]="selectedModule === 'M25'">Deployment Strategies</div>
-            <div class="module" (click)="selectModule('M26')" [class.active-module]="selectedModule === 'M26'">Python Basics: Introduction</div>
-            <div class="module" (click)="selectModule('M27')" [class.active-module]="selectedModule === 'M27'">Python: Functions</div>
-            <div class="module" (click)="selectModule('M28')" [class.active-module]="selectedModule === 'M28'">Python: Object & Class</div>
-            <div class="module" (click)="selectModule('M29')" [class.active-module]="selectedModule === 'M29'">Python: Data Types</div>
-            <div class="module" (click)="selectModule('M30')" [class.active-module]="selectedModule === 'M30'">Python: Flow Control</div>
-            <div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
-            <div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div> -->
+            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Module 5: Practical FinOps</div>
+            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Module 6: Collaboration and Communication</div>
+            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Module 7: Advanced FinOps Strategies</div>
+            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Module 8: Certification Preparation</div>
+            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Job Opportunities in FinOps</div>
+            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Certifications & Cost Details </div>
+   
     
           </div>
           <div class="right-column">
@@ -266,7 +238,7 @@
             </ng-container>
 
             <ng-container *ngIf="selectedModule === 'M01'">
-              <h2>  Getting Started with Windows & Linux</h2>
+              <h2>  Module 1: Introduction to FinOps</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -277,13 +249,14 @@
               ">
           
               <ul>
-                  <li>Windows</li>
-                  <li>Linux & Unix Distributions</li>
+                  <li>Overview of FinOps and its importance in cloud cost management.</li>
+                  <li>Understanding the FinOps framework and lifecycle</li>
+                  <li>Key concepts: <br> 1. Cloud financial management, <br>2. Cost visibility, and  <br> 3. Optimization strategies.</li>
               </ul>
             </ng-container>            
 
             <ng-container *ngIf="selectedModule === 'M02'">
-              <h2>  Cloud Computing with AWS</h2>
+              <h2>  Module 2: Cloud Computing Platforms</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -294,22 +267,18 @@
               ">
           
               <ul>
-                  <li>Machine Learning Services : SageMaker Studio, SageMaker Pipelines, SageMaker Ground Truth, SageMaker Model Monitor, SageMaker Feature Store & SageMaker Debugger  </li>
+                  <li>Detailed exploration of cloud platforms</li>
                   <br>
-                  <li>Data Processing and Storage : S3, Redshift, RDS, Glue & Athena </li>
+                  <li>AWS: Core services, cost management tools, and best practices </li>
                   <br>
-                  <li>Compute Services : EC2, Lambda, ECS, EKS</li>
+                  <li>Azure: Key services, cost control features, and optimization techniques</li>
                   <br>
-                  <li>Analytics and Monitoring : CloudWatch, CloudTrail, Kinesis, Glue DataBrew   </li>
-                  <br>
-                  <li>Security and Identity : IAM, KMS, Secrets Manager</li>
-                  <br>
-                  <li>Machine Learning Specific Services: Comprehend, Rekognition, Lex, Polly, Translate & Transcribe</li>
+                  <li>GCP: Service overview, pricing models, and cost-saving strategies</li>
               </ul>
             </ng-container>     
 
             <ng-container *ngIf="selectedModule === 'M03'">
-              <h2>  AWS DevOps & CD/CD Pipelines</h2>
+              <h2>  Module 3: FinOps Tools and Platforms</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -319,22 +288,35 @@
                   margin-right: inherit;">
           
               <ul>
-                  <li>Git, GitHub/GitLab</li>
-                  <li>Jenkins</li>
-                  <li>Ansible</li>
-                  <li>Docker</li>
-                  <li>Kubernetes</li>
-                  <li>CodeCommit</li>
-                  <li>CodeBuild</li>
-                  <li>CodeDeploy</li>
-                  <li>CodePipeline</li>
-                  <li>CloudFormation</li>
-                  <li>Terraform</li>
+                <li> Cloud Cost Management Tools:
+	<br> •	Flexera
+	<br> •	CloudHealth
+	<br> •	IBM Apptio
+	<br> •	ParkMyCloud
+	<br> •	Turbonomic</li> <br> 
+  <li> Business Intelligence Tools:
+    <br> •	Power BI
+    <br> •	Tableau</li>
+    <br> 
+  <li> AWS-Specific Cost Management Tools:
+    <br>     •	AWS Trusted Advisor
+    <br>     •	AWS Compute Optimizer
+    <br>     •	AWS Storage Lens
+    <br>     •	S3 Lifecycle Management
+    <br>     •	AWS Storage Gateway
+    <br>     •	CloudWatch Metrics
+    <br>•	AWS Spot Instance Advisor
+    <br>•	EC2 Auto Scaling Groups with Spot Instances
+    <br>•	AWS Global Accelerator
+    <br>•	AWS Cost Explorer
+    <br>•	AWS Cost and Usage Report
+    <br>•	AWS Budgets</li>
+
               </ul>
             </ng-container>     
 
             <ng-container *ngIf="selectedModule === 'M04'">
-              <h2>  Python For Data Science & MLOps</h2>
+              <h2>  Module 4: FinOps Roles and Responsibilities</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -345,17 +327,21 @@
               ">
           
               <ul>
-                  <li>Python For Data Science - Numpy - Pandas - Matplotlib</li>
-                  <li>Python For MLOps</li>
-                  <li>Build MLApps using FastAPI</li>
-                  <li>Build MLApps using Streamit</li>
-                  <li>Build MLApps using Flask</li>
-                  <!-- <li>Packaging the ML Models</li>
-                  <li>MLPackage Building</li>
-                  <li>Mlflow & Whylogs</li>
-                  <li>Post-Productionalizing ML Models</li>
-                  <li>Continuous Monitoring Prometheus</li>
-                  <li>Monitoring and Debugging of ML System</li> -->
+                  <li>Roles in FinOps:
+                    <br>•	FinOps Certified Practitioner
+                    <br>•	FinOps Certified Engineer
+                    <br>•	FinOps Certified Professional
+                    <br>•	FinOps Certified FOCUS Analyst
+                  </li><br>
+                  <li>Key Responsibilities:
+                    <br>•	Cloud Cost Management and Optimization
+                    <br>•	Budgeting and Forecasting
+                    <br>•	Financial Reporting and Analysis
+                    <br>•	Collaboration with Cross-Functional Teams
+                    <br>•	Governance and Compliance
+                    <br>•	Tooling and Automation
+                    <br>•	Strategic Advisory
+                  </li>
               </ul>
             </ng-container>     
 <!-- 
@@ -376,7 +362,7 @@
               </ul>
             </ng-container>      -->
     <ng-container *ngIf="selectedModule === 'M1'">
-      <h2>  Introduction to MLOps</h2>
+      <h2>  Module 5: Practical FinOps</h2>
       <hr style="
           position: unset;
           border: none;
@@ -387,11 +373,9 @@
       ">
   
       <ul>
-          <li>Processes</li>
-          <li>People</li>
-          <li>Technology</li>
-          <li>Security and governance</li>
-          <li>MLOps maturity model</li>
+          <li>Hands-on labs using AWS, Azure, and GCP</li>
+          <li>Case studies on cost optimization</li>
+          <li>Implementing tagging strategies and cost allocation</li>
       </ul>
     </ng-container>
 
@@ -445,7 +429,7 @@
   
 
   <ng-container *ngIf="selectedModule === 'M2'">
-    <h2>Initial MLOps: Experimentation Environments in SageMaker Studio</h2>
+    <h2>Module 6: Collaboration and Communication</h2>
     <hr style="
         position: unset;
         border: none;
@@ -456,16 +440,15 @@
     ">
 
     <ul>
-        <li>Bringing MLOps to experimentation</li>
-        <li>Setting up the ML experimentation environment</li>
-        <li>Demonstration: Creating and Updating a Lifecycle Configuration for SageMaker Studio</li>
-        <li>Hands-On Lab: Provisioning a SageMaker Studio Environment with the AWS Service Catalog</li>
-        <li>Workbook: Initial MLOps</li> 
+        <li>Engaging with key stakeholders:
+          <br>•	CIO, CFO, Product Owners
+          <br>•	Solution Architects, Cloud Engineers
+          <br>•	Effective communication of FinOps insights and recommendations.</li> 
     </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
-  <h2>Repeatable MLOps: Repositories</h2>
+  <h2>Module 7: Advanced FinOps Strategies</h2>
   <hr style="
       position: unset;
       border: none;
@@ -474,16 +457,15 @@
       margin-bottom: 20px;
       margin-right: inherit;
   ">
-
   <ul>
-    <li>Managing data for MLOps</li>
-    <li>Version control of ML models</li>
-    <li>Code repositories in ML</li>
+    <li>Defining KPIs and success criteria for cloud cost optimization.</li>
+    <li>Continuous improvement in cloud cost management.</li>
+    <li>Advanced budgeting techniques and variance analysis.</li>
   </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
-  <h2>Repeatable MLOps: Orchestration</h2>
+  <h2>Module 8: Certification Preparation</h2>
   <hr style="
       position: unset;
       border: none;
@@ -494,13 +476,14 @@
   ">
 
   <ul>
-      <li>ML pipelines</li>
-      <li>Demonstration: Using SageMaker Pipelines to Orchestrate Model Building Pipelines</li>
+      <li>Exam preparation for FinOps certifications</li>
+      <li>Practice tests and mock exams</li>
+      <li>Tips and strategies for passing FinOps certification exams</li>
   </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M5'">
-  <h2>Repeatable MLOps: Orchestration (continued)</h2>
+  <h2>Job Opportunities in FinOps</h2>
   <hr style="
       position: unset;
       border: none;
@@ -511,20 +494,29 @@
   ">
 
   <ul>
-      <li>End-to-end orchestration with AWS Step Functions</li>
-      <li>Hands-On Lab: Automating a Workflow with Step Functions</li>
-      <li>End-to-end orchestration with SageMaker Projects</li>
-      <li>Demonstration: Standardizing an End-to-End ML Pipeline with SageMaker Projects</li>
-      <li>Using third-party tools for repeatability</li>
-      <li>Demonstration: Exploring Human-in-the-Loop During Inference</li>
-      <li>Governance and security</li>
-      <li>Demonstration: Exploring Security Best Practices for SageMaker</li>
-      <li>Workbook: Repeatable MLOps</li>
+      <li>Job Roles:
+        <br>	1.	FinOps Certified Practitioner
+        <br>  2.	FinOps Certified Engineer
+        <br>  3.	FinOps Certified Professional
+        <br>  4.	FinOps Certified FOCUS Analyst
+      </li><br>
+      <li>Job Description:<br>
+        <br>•	Analyze and interpret cloud cost data to provide insights and recommendations.
+        <br>•	Collaborate with cross-functional teams to enforce cost allocation and tagging standards.
+        <br>•	Monitor budgets, spend, and adherence, and report regularly to stakeholders.
+        <br>•	Define and track cloud cost optimization KPIs and success criteria.
+        <br>•	Work closely with finance teams on chargeback and optimization data.
+        <br>•	Evaluate and propose strategies for continuous cost optimization.
+        <br>•	Conduct variance analysis to identify further cost-saving opportunities.
+        <br>•	Provide training on cost optimization best practices.
+        <br>•	Collaborate with vendors and use third-party tools for enhanced optimization.
+      </li>
+
   </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M6'">
-  <h2>Reliable MLOps: Scaling and Testing</h2>
+  <h2>Certifications & Cost Details</h2>
   <hr style="
       position: unset;
       border: none;
@@ -535,10 +527,10 @@
   ">
 
   <ul>
-    <li>Scaling and multi-account strategies</li>
-    <li>Testing and traffic-shifting</li>
-    <li>Demonstration: Using SageMaker Inference Recommender</li>
-    <li>Hands-On Lab: Testing Model Variants</li>
+    <li>FinOps Certified Practitioner - Exam Cost: 300 USD </li><br>
+    <li>FinOps Certified Engineer - Exam Cost: 699 USD </li><br>
+    <li>FinOps Certified Professional - Exam Cost: 1,999 USD</li><br>
+    <li>FinOps Certified FOCUS Analyst - Exam Cost: 400 USD</li>
   </ul>
 </ng-container>
         
@@ -2129,7 +2121,7 @@
       </ng-container>
       <ng-template #defaultContent>
         <!-- Display default image when no module is selected -->
-        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1'" src="assets/DevopsT.svg" alt=" DevOps Course Default Image" />
+        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1'" src="assets/hybrid-learning/finnnops.webp" alt=" DevOps Course Default Image" />
       </ng-template>
   
   
