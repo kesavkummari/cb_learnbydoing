@@ -66,7 +66,7 @@ import { HomePageNewComponent } from './components/home-page-new/page1';
 import { MatTabsModule } from '@angular/material/tabs';
 import { LandingPageComponent } from './Pages/webinar/aws-webinar/landingpage';
 import { WeOfferComponent } from './components/we-offer/we.offer';
-import { LandingBannerComponent } from './components/we-offer/landing-banner/landing-banner';
+import { LandingBannerComponent } from './components/we-offer/landing-banner-home/landing-banner';
 import { LandingReviewsComponent } from './components/we-offer/landing-reviews/landing-reviews';
 import { LandingVideosComponent } from './components/we-offer/landing-videos/landing-videos';
 import { LandingPriceComponent } from './components/we-offer/price/landing.price';
@@ -75,7 +75,8 @@ import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.poli
 import { TNCComponent } from './components/terms_and_conditions/t_n_c';
 import { CancellationRefundComponent } from './components/cancellation_and_refundpolicy/cancellation_and_refundpolicy';
 import { UpcomingComponent } from './components/upcoming/upcoming';
-import { LandingBanner2Component } from './components/we-offer/landing-banner2/landing-banner2';
+import { LandingBanner2Component } from './components/we-offer/landing-banner2-finops/landing-banner2';
+import { LandingBanner3Component } from './components/we-offer/landing-banner3-awsdevops/landing-banner3';
 
 
 @NgModule({
@@ -89,7 +90,7 @@ import { LandingBanner2Component } from './components/we-offer/landing-banner2/l
     AwsDevOpsCourseTableComponent, ImagePopupComponent, CourseContentMob,
     RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, UpcomingComponent,
     Blog1Component, FAQComponent, Blog2Component, ContactUsComponent,
-    CertificateComponent, SubHeaderComponent, FeeStructureComponent, PrivacyPolicyComponent,LandingBanner2Component,
+    CertificateComponent, SubHeaderComponent, FeeStructureComponent, PrivacyPolicyComponent,LandingBanner2Component,LandingBanner3Component,
     ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent, LandingPageComponent, WeOfferComponent, LandingBannerComponent, LandingReviewsComponent, LandingVideosComponent, LandingPriceComponent, RolesComponent,
     CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
     DeveopsdownloadformComponent, ReviewsColComponent, GoogleReviewsColComponent,
