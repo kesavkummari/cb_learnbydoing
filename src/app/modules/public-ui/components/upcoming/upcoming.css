@@ -41,8 +41,8 @@
   }
   
   .col-md-3 {
-    flex: 0 0 23%; /* 23% width for PC view with some space in between */
-    max-width: 23%;
+    flex: 1 0 23%; /* 23% width for PC view with some space in between */
+    max-width: 25%;
     margin-bottom: 20px;
   }
   
