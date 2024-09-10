@@ -74,6 +74,7 @@ import { RolesComponent } from './components/we-offer/roles/roles';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.policy';
 import { TNCComponent } from './components/terms_and_conditions/t_n_c';
 import { CancellationRefundComponent } from './components/cancellation_and_refundpolicy/cancellation_and_refundpolicy';
+import { UpcomingComponent } from './components/upcoming/upcoming';
 
 
 @NgModule({
@@ -85,7 +86,7 @@ import { CancellationRefundComponent } from './components/cancellation_and_refun
      CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,
     AwsDevopsComponent, MlOpsCoursesComponent , 
     AwsDevOpsCourseTableComponent, ImagePopupComponent, CourseContentMob, 
-    RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, 
+    RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, UpcomingComponent,
     Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
      CertificateComponent, SubHeaderComponent, FeeStructureComponent , PrivacyPolicyComponent,
      ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,LandingPageComponent,WeOfferComponent,LandingBannerComponent,LandingReviewsComponent,LandingVideosComponent,LandingPriceComponent,RolesComponent,
