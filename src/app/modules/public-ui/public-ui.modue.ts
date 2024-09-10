@@ -18,9 +18,9 @@ import { DigitalLyncComponent } from './components/digital-lync/digital-lync.com
 import { QuestionsColComponent } from './components/questions-col/questions-col.component';
 import { CourseTableComponent } from './components/course-content-component/trending-courses/course-table/course-table.component';
 import { CourseIntenseTableComponent } from './components/course-content-component/trending-courses/course-table-intense/course-table.component';
-import {AwsDevopsComponent} from './Pages/aws-devops/awsdevops.component'
-import {MlOpsCoursesComponent} from './components/course-content-component/aws-devops-course/mlops-courses.component'
-import {AwsDevOpsCourseTableComponent} from './components/course-content-component/aws-devops-course/aws-devops-course-content/awsdevops-table.component'
+import { AwsDevopsComponent } from './Pages/aws-devops/awsdevops.component'
+import { MlOpsCoursesComponent } from './components/course-content-component/aws-devops-course/mlops-courses.component'
+import { AwsDevOpsCourseTableComponent } from './components/course-content-component/aws-devops-course/aws-devops-course-content/awsdevops-table.component'
 import { ImagePopupComponent } from './components/app-image-popup/image-popup.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -30,8 +30,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HttpClientModule } from '@angular/common/http';
-import {CourseContentMob} from './components/course-content-component/trending-courses/course-contentmob/course-contentmob'
-import {RegisterFormComponent} from './components/course-content-component/trending-courses/registration-form/register.component'
+import { CourseContentMob } from './components/course-content-component/trending-courses/course-contentmob/course-contentmob'
+import { RegisterFormComponent } from './components/course-content-component/trending-courses/registration-form/register.component'
 import { FormsModule } from '@angular/forms';
 
 import { DevOpsCourseContentMob } from './components/course-content-component/aws-devops-course/devopscourse-contentmob/devopscourse-contentmob'
@@ -54,7 +54,7 @@ import { DeveopsdownloadformComponent } from './components/course-content-compon
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card'; // Import MatCardModule
 import { ReviewsColComponent } from './components/reviews/reviews.component';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { GoogleReviewsColComponent } from './components/reviews/google-reviews/google-reviews';
 import { RegularAWSCourseContent } from './components/course-content-component/aws-devops-course/regularawsmobilecc/regularaws';
 import { RegulardownloadformComponent } from './components/course-content-component/aws-devops-course/regularCCdownload/regularcontent';
@@ -75,25 +75,26 @@ import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.poli
 import { TNCComponent } from './components/terms_and_conditions/t_n_c';
 import { CancellationRefundComponent } from './components/cancellation_and_refundpolicy/cancellation_and_refundpolicy';
 import { UpcomingComponent } from './components/upcoming/upcoming';
+import { LandingBanner2Component } from './components/we-offer/landing-banner2/landing-banner2';
 
 
 @NgModule({
-  declarations: [CloudIntroComponent, 
+  declarations: [CloudIntroComponent,
     JobReadyComponent, IntroCardsComponent, ProgramsComponent, RegularFeeStructureComponent,
-    JobReadyFeeComponent,TNCComponent,CancellationRefundComponent,
-    TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent, 
-    CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent, 
-     CourseTableComponent, IntroPageComponent,CourseIntenseTableComponent,
-    AwsDevopsComponent, MlOpsCoursesComponent , 
-    AwsDevOpsCourseTableComponent, ImagePopupComponent, CourseContentMob, 
+    JobReadyFeeComponent, TNCComponent, CancellationRefundComponent,
+    TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent,
+    CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent,
+    CourseTableComponent, IntroPageComponent, CourseIntenseTableComponent,
+    AwsDevopsComponent, MlOpsCoursesComponent,
+    AwsDevOpsCourseTableComponent, ImagePopupComponent, CourseContentMob,
     RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, UpcomingComponent,
-    Blog1Component, FAQComponent, Blog2Component,ContactUsComponent, 
-     CertificateComponent, SubHeaderComponent, FeeStructureComponent , PrivacyPolicyComponent,
-     ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent,LandingPageComponent,WeOfferComponent,LandingBannerComponent,LandingReviewsComponent,LandingVideosComponent,LandingPriceComponent,RolesComponent,
-     CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
-     DeveopsdownloadformComponent,ReviewsColComponent, GoogleReviewsColComponent, 
-     RegularAWSCourseContent, RegulardownloadformComponent,HomePageNewComponent],
-  imports: [RouterModule, PublicUiRoutingModule,MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule,MatFormFieldModule,MatInputModule, MatSelectModule,MatTooltipModule,MatIconModule,MatSnackBarModule,HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
+    Blog1Component, FAQComponent, Blog2Component, ContactUsComponent,
+    CertificateComponent, SubHeaderComponent, FeeStructureComponent, PrivacyPolicyComponent,LandingBanner2Component,
+    ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent, LandingPageComponent, WeOfferComponent, LandingBannerComponent, LandingReviewsComponent, LandingVideosComponent, LandingPriceComponent, RolesComponent,
+    CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
+    DeveopsdownloadformComponent, ReviewsColComponent, GoogleReviewsColComponent,
+    RegularAWSCourseContent, RegulardownloadformComponent, HomePageNewComponent],
+  imports: [RouterModule, PublicUiRoutingModule, MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTooltipModule, MatIconModule, MatSnackBarModule, HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
 })
 export class PublicUiModule { }
