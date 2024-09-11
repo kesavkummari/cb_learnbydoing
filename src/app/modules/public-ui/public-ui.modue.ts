@@ -77,6 +77,8 @@ import { CancellationRefundComponent } from './components/cancellation_and_refun
 import { UpcomingComponent } from './components/upcoming/upcoming';
 import { LandingBanner2Component } from './components/we-offer/landing-banner2-finops/landing-banner2';
 import { LandingBanner3Component } from './components/we-offer/landing-banner3-awsdevops/landing-banner3';
+import { FeeEMIMain } from './components/fee-emi-popup/fee-emi-main/fee-emi-main';
+import { FeeEMIComponent } from './components/fee-emi-popup/fee.emi.component';
 
 
 @NgModule({
@@ -89,7 +91,7 @@ import { LandingBanner3Component } from './components/we-offer/landing-banner3-a
     AwsDevopsComponent, MlOpsCoursesComponent,
     AwsDevOpsCourseTableComponent, ImagePopupComponent, CourseContentMob,
     RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, UpcomingComponent,
-    Blog1Component, FAQComponent, Blog2Component, ContactUsComponent,
+    Blog1Component, FAQComponent, Blog2Component, ContactUsComponent,FeeEMIMain,FeeEMIComponent,
     CertificateComponent, SubHeaderComponent, FeeStructureComponent, PrivacyPolicyComponent,LandingBanner2Component,LandingBanner3Component,
     ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent, LandingPageComponent, WeOfferComponent, LandingBannerComponent, LandingReviewsComponent, LandingVideosComponent, LandingPriceComponent, RolesComponent,
     CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
