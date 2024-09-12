@@ -144,3 +144,8 @@
 .mat-dialog-container{
     padding: 0px !important;
 }
+.cc{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
