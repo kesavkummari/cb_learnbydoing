@@ -32,15 +32,15 @@ phases:
       # List the contents of the bucket
       - aws s3 ls s3://www.cloudbinary.io
       # Remove Bucket Content
-      - aws s3 rm s3://www.cloudbinary.io/ --recursive --region ap-south-2
+      - aws s3 rm s3://www.cloudbinary/ --recursive --region ap-south-2
       # Upload the code to s3 bucket
-      - aws s3 sync . s3://www.cloudbinary.io/ --region ap-south-2
+      - aws s3 sync . s3://www.cloudbinary/ --region ap-south-2
   post_build:
     commands:
       - echo "post build started `date`"
       - pwd
       - ls -lrta
-      - aws cloudfront create-invalidation --distribution-id EUVCGVP5X6WMV --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E1IMUS5PXLF5F9 --paths "/*"
       #- aws cloudfront create-invalidation --distribution-id E34B5O9UHCRA5E --paths "/*"
       #- aws cloudfront create-invalidation --distribution-id EXWROS3M9YOMU --paths "/*"
       #- aws cloudfront create-invalidation --distribution-id E19R550E8221FP --paths "/*"
