@@ -77,8 +77,11 @@ import { CancellationRefundComponent } from './components/cancellation_and_refun
 import { UpcomingComponent } from './components/upcoming/upcoming';
 import { LandingBanner2Component } from './components/we-offer/landing-banner2-finops/landing-banner2';
 import { LandingBanner3Component } from './components/we-offer/landing-banner3-awsdevops/landing-banner3';
-import { FeeEMIMain } from './components/fee-emi-popup/fee-emi-main/fee-emi-main';
-import { FeeEMIComponent } from './components/fee-emi-popup/fee.emi.component';
+
+import { FeeEMIFinOpsComponent } from './components/fee-emi-popup-finOps/fee.emi.component';
+import { FeeEMIfinOpsMain } from './components/fee-emi-popup-finOps/fee-emi-main-finOps/fee-emi-main';
+import { FeeEMIAWSComponent } from './components/fee-emi-popup-aws/fee.emi.component';
+import { FeeEMIAWSMain } from './components/fee-emi-popup-aws/fee-emi-main-aws/fee-emi-main';
 
 
 @NgModule({
@@ -91,11 +94,12 @@ import { FeeEMIComponent } from './components/fee-emi-popup/fee.emi.component';
     AwsDevopsComponent, MlOpsCoursesComponent,
     AwsDevOpsCourseTableComponent, ImagePopupComponent, CourseContentMob,
     RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, UpcomingComponent,
-    Blog1Component, FAQComponent, Blog2Component, ContactUsComponent,FeeEMIMain,FeeEMIComponent,
-    CertificateComponent, SubHeaderComponent, FeeStructureComponent, PrivacyPolicyComponent,LandingBanner2Component,LandingBanner3Component,
+    Blog1Component, FAQComponent, Blog2Component, ContactUsComponent, 
+    CertificateComponent, SubHeaderComponent, FeeStructureComponent, PrivacyPolicyComponent, LandingBanner2Component, LandingBanner3Component,
     ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent, LandingPageComponent, WeOfferComponent, LandingBannerComponent, LandingReviewsComponent, LandingVideosComponent, LandingPriceComponent, RolesComponent,
     CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
     DeveopsdownloadformComponent, ReviewsColComponent, GoogleReviewsColComponent,
+    FeeEMIAWSComponent,FeeEMIAWSMain ,FeeEMIfinOpsMain, FeeEMIFinOpsComponent,
     RegularAWSCourseContent, RegulardownloadformComponent, HomePageNewComponent],
   imports: [RouterModule, PublicUiRoutingModule, MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTooltipModule, MatIconModule, MatSnackBarModule, HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
