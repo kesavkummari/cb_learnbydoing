@@ -1,3 +1,20 @@
+<style>
+  .highlight-button {
+      background-color: #38b6ff; /* Button color */
+      color: white; 
+      border: none; 
+      padding: 10px 20px; 
+      cursor: pointer; 
+      border-radius: 5px; /* Optional: Rounded corners */
+      box-shadow: 0 0 10px 2px yellow; /* Yellow highlight */
+      transition: box-shadow 0.3s ease; /* Smooth transition */
+  }
+
+  .highlight-button:hover {
+      box-shadow: 0 0 15px 4px yellow; /* Slightly larger highlight on hover */
+  }
+</style>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <!-- component-b.component.html -->
 
@@ -12,7 +29,7 @@
     <div class="sr-modal__body">
       <div class="emi-options-modal">
         <div class="emi-options-modal__description">
-          You can find both no-cost EMI &amp; standard interest EMI from our NBFC partners. See below a summary of their best plans (more details available at the time of payment)
+          You can find both no-cost EMI & standard interest EMI from our NBFC partners.
         </div>
         <div class="emi-options-modal__table zoom-scholarship">
           <div class="col-list">
@@ -58,7 +75,11 @@
             </div>
           </div>
           <div class="sub-title">
-            Delivered via our EMI partners - Liquiloans, Eduvanz, EarlySalary, Avanse &amp; Credit Fair<br> You can also choose to avail EMI options from your credit card providers.
+            Delivered via our EMI partners <br> You can also choose to avail EMI options from your credit card providers. Pay Using 
+            <a href="https://rzp.io/i/Z6BmNeovKi" target="_blank">
+              <button class="highlight-button">Razorpay</button>
+          </a>
+            
           </div>
         </div>
         <div class="emi-options-modal__table median-scholarship hidden">
@@ -74,7 +95,7 @@
           </div>
           <div class="col-list">
             <div class="col-list__field">No Cost Emi</div>
-            <div class="col-list__field">₹24,999</div>  2083
+            <div class="col-list__field">₹24,999</div>
             <div class="col-list__field">₹0</div>
             <div class="col-list__field">₹24,999</div>
             <div class="col-list__field">₹24,999</div>
@@ -109,7 +130,11 @@
             </div>
           </div>
           <div class="sub-title">
-            Delivered via our EMI partners - Liquiloans, Eduvanz, EarlySalary, Avanse &amp; Credit Fair<br> You can also choose to avail EMI options from your credit card providers.
+            Delivered via our EMI partners <br> You can also choose to avail EMI options from your credit card providers. Pay Using 
+            <a href="https://rzp.io/i/Z6BmNeovKi" target="_blank">
+              <button class="highlight-button">Razorpay</button>
+          </a>
+
           </div>
         </div>
       </div>

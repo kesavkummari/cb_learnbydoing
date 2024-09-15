@@ -7,7 +7,7 @@ import { saveAs } from 'file-saver';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'aws-devops',
+  selector: 'finops',
   templateUrl: './awsdevops.component.html',
   styleUrls: ['./awsdevops.component.css']
 })
