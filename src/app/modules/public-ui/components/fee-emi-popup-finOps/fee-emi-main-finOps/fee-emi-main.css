@@ -79,7 +79,7 @@
     background-color: #5a6268;
   }
   
- /* Hide the component on screens smaller than 768px */
+ /* Hide the component on screens smaller than 768px 
 .hide-on-mobile {
   display: none;
 }
@@ -89,3 +89,4 @@
     display: block;
   }
 }
+*/
