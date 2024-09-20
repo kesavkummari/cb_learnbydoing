@@ -147,6 +147,8 @@ export class DevOpsCourseContentMob {
     'FinOps Certified Professional - Exam Cost: 1,999 USD',
     'FinOps Certified FOCUS Analyst - Exam Cost: 400 USD'
 
+
+
   ]
 },
 //            {
