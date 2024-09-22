@@ -220,12 +220,15 @@
             <div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">Module 1 : Introduction to FinOps</div>
             <div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">Module 2 : Cloud Computing Platforms </div>
             <div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">Module 3 : FinOps Tools and Platforms </div>
-            <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Module 4 : FinOps Roles and Responsibilities</div>
+            <div class="module" (click)="selectModule('M330')" [class.active-module]="selectedModule === 'M330'">Module 4 : AWS-Specific Cost Management Tools </div>
+            <div class="module" (click)="selectModule('M331')" [class.active-module]="selectedModule === 'M331'">Module 5 : AZURE-Specific Cost Management Tools </div>
+            <div class="module" (click)="selectModule('M332')" [class.active-module]="selectedModule === 'M332'">Module 6 : GCP-Specific Cost Management Tools </div>
+            <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Module 7 : FinOps Roles and Responsibilities</div>
             <!-- <div class="module" (click)="selectModule('M05')" [class.active-module]="selectedModule === 'M05'">Docker & Kubernetes</div> -->
-            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Module 5: Practical FinOps</div>
-            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Module 6: Collaboration and Communication</div>
-            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Module 7: Advanced FinOps Strategies</div>
-            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Module 8: Certification Preparation</div>
+            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Module 8: Practical FinOps</div>
+            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Module 9: Collaboration and Communication</div>
+            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Module 10: Advanced FinOps Strategies</div>
+            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Module 11: Certification Preparation</div>
             <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Job Opportunities in FinOps</div>
             <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Certifications & Cost Details </div>
    
@@ -298,25 +301,248 @@
     <br> •	Power BI
     <br> •	Tableau</li>
     <br> 
-  <li> AWS-Specific Cost Management Tools:
-    <br>     •	AWS Trusted Advisor
-    <br>     •	AWS Compute Optimizer
-    <br>     •	AWS Storage Lens
-    <br>     •	S3 Lifecycle Management
-    <br>     •	AWS Storage Gateway
-    <br>     •	CloudWatch Metrics
-    <br>•	AWS Spot Instance Advisor
-    <br>•	EC2 Auto Scaling Groups with Spot Instances
-    <br>•	AWS Global Accelerator
-    <br>•	AWS Cost Explorer
-    <br>•	AWS Cost and Usage Report
-    <br>•	AWS Budgets</li>
-
-              </ul>
+  
+  </ul>
             </ng-container>     
 
+          
+
+            <ng-container *ngIf="selectedModule === 'M330'">
+              <h2>  Module 4: AWS-Specific Cost Management Tools</h2>
+              <hr style="
+                  position: unset;
+                  border: none;
+                  height: 2px;
+                  background: black;
+                  margin-bottom: 20px;
+                  margin-right: inherit;">
+          
+              <ul>
+                <h3>AWS</h3>
+                <ul>
+                  <li>Cost Management Dashboard
+                    <ul>
+                      <li>1.1 AWS Cost Explorer</li>
+                    </ul>
+                  </li>
+                  <li>Budgeting
+                    <ul>
+                      <li>2.1 AWS Budgets</li>
+                    </ul>
+                  </li>
+                  <li>Resource Optimization
+                    <ul>
+                      <li>3.1 AWS Compute Optimizer</li>
+                    </ul>
+                  </li>
+                  <li>Storage Management
+                    <ul>
+                      <li>4.1 AWS Storage Lens, S3 Lifecycle Management, AWS Storage Gateway</li>
+                    </ul>
+                  </li>
+                  <li>Spot Instance/Preemptible VMs
+                    <ul>
+                      <li>5.1 AWS Spot Instance Advisor</li>
+                    </ul>
+                  </li>
+                  <li>Instance Auto Scaling
+                    <ul>
+                      <li>6.1 EC2 Auto Scaling Groups with Spot Instances</li>
+                    </ul>
+                  </li>
+                  <li>Network Optimization
+                    <ul>
+                      <li>7.1 AWS Global Accelerator</li>
+                    </ul>
+                  </li>
+                  <li>Cost Tracking
+                    <ul>
+                      <li>8.1 AWS Cost and Usage Report</li>
+                    </ul>
+                  </li>
+                  <li>Alerts for Cost
+                    <ul>
+                      <li>9.1 AWS Budgets</li>
+                    </ul>
+                  </li>
+                  <li>Resource Monitoring and Metrics
+                    <ul>
+                      <li>10.1 CloudWatch Metrics</li>
+                    </ul>
+                  </li>
+                  <li>Advisor for Best Practices
+                    <ul>
+                      <li>11.1 AWS Trusted Advisor</li>
+                    </ul>
+                  </li>
+                  <li>Storage Gateway
+                    <ul>
+                      <li>12.1 AWS Storage Gateway</li>
+                    </ul>
+                  </li>
+                </ul>  
+  </ul>
+            </ng-container>   
+
+
+            <ng-container *ngIf="selectedModule === 'M331'">
+              <h2>  Module 5: AZURE-Specific Cost Management Tools</h2>
+              <hr style="
+                  position: unset;
+                  border: none;
+                  height: 2px;
+                  background: black;
+                  margin-bottom: 20px;
+                  margin-right: inherit;">
+          
+              <ul>
+                <h3>Azure</h3>
+                <ul>
+                  <li>Cost Management Dashboard
+                    <ul>
+                      <li>1.1 Azure Cost Management + Billing</li>
+                    </ul>
+                  </li>
+                  <li>Budgeting
+                    <ul>
+                      <li>2.1 Azure Budgets</li>
+                    </ul>
+                  </li>
+                  <li>Resource Optimization
+                    <ul>
+                      <li>3.1 Azure Advisor</li>
+                    </ul>
+                  </li>
+                  <li>Storage Management
+                    <ul>
+                      <li>4.1 Azure Blob Storage Lifecycle Management, Azure Files Lifecycle Policies, Azure Storage Account</li>
+                    </ul>
+                  </li>
+                  <li>Spot Instance/Preemptible VMs
+                    <ul>
+                      <li>5.1 Azure Spot VMs</li>
+                    </ul>
+                  </li>
+                  <li>Instance Auto Scaling
+                    <ul>
+                      <li>6.1 Azure Virtual Machine Scale Sets</li>
+                    </ul>
+                  </li>
+                  <li>Network Optimization
+                    <ul>
+                      <li>7.1 Azure Traffic Manager, Azure Front Door</li>
+                    </ul>
+                  </li>
+                  <li>Cost Tracking
+                    <ul>
+                      <li>8.1 Azure Cost Analysis, Azure Usage Report</li>
+                    </ul>
+                  </li>
+                  <li>Alerts for Cost
+                    <ul>
+                      <li>9.1 Azure Cost Alerts</li>
+                    </ul>
+                  </li>
+                  <li>Resource Monitoring and Metrics
+                    <ul>
+                      <li>10.1 Azure Monitor</li>
+                    </ul>
+                  </li>
+                  <li>Advisor for Best Practices
+                    <ul>
+                      <li>11.1 Azure Advisor</li>
+                    </ul>
+                  </li>
+                  <li>Storage Gateway
+                    <ul>
+                      <li>12.1 Azure File Sync, Azure Blob Fuse</li>
+                    </ul>
+                  </li>
+                </ul>
+  
+  </ul>
+            </ng-container>   
+
+
+            <ng-container *ngIf="selectedModule === 'M332'">
+              <h2>  Module 6: GCP-Specific Cost Management Tools</h2>
+              <hr style="
+                  position: unset;
+                  border: none;
+                  height: 2px;
+                  background: black;
+                  margin-bottom: 20px;
+                  margin-right: inherit;">
+          
+              <ul>
+  <h3>GCP</h3>
+  <ul>
+    <li>Cost Management Dashboard
+      <ul>
+        <li>1.1 Google Cloud Billing Reports</li>
+      </ul>
+    </li>
+    <li>Budgeting
+      <ul>
+        <li>2.1 Google Cloud Budgets</li>
+      </ul>
+    </li>
+    <li>Resource Optimization
+      <ul>
+        <li>3.1 Google Cloud Recommender</li>
+      </ul>
+    </li>
+    <li>Storage Management
+      <ul>
+        <li>4.1 Google Cloud Storage Lifecycle Management</li>
+      </ul>
+    </li>
+    <li>Spot Instance/Preemptible VMs
+      <ul>
+        <li>5.1 Google Preemptible VMs</li>
+      </ul>
+    </li>
+    <li>Instance Auto Scaling
+      <ul>
+        <li>6.1 Google Cloud Instance Groups with Autoscaling</li>
+      </ul>
+    </li>
+    <li>Network Optimization
+      <ul>
+        <li>7.1 Google Cloud Global Load Balancing</li>
+      </ul>
+    </li>
+    <li>Cost Tracking
+      <ul>
+        <li>8.1 Google Cloud Billing Export, Cost Tables in BigQuery</li>
+      </ul>
+    </li>
+    <li>Alerts for Cost
+      <ul>
+        <li>9.1 Google Cloud Billing Alerts</li>
+      </ul>
+    </li>
+    <li>Resource Monitoring and Metrics
+      <ul>
+        <li>10.1 Google Cloud Monitoring (formerly Stackdriver)</li>
+      </ul>
+    </li>
+    <li>Advisor for Best Practices
+      <ul>
+        <li>11.1 Google Cloud Operations Suite</li>
+      </ul>
+    </li>
+    <li>Storage Gateway
+      <ul>
+        <li>12.1 Google Cloud Filestore, Google Transfer Appliance</li>
+      </ul>
+    </li>
+  </ul>
+  
+  </ul>
+            </ng-container>   
             <ng-container *ngIf="selectedModule === 'M04'">
-              <h2>  Module 4: FinOps Roles and Responsibilities</h2>
+              <h2>  Module 7: FinOps Roles and Responsibilities</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -362,7 +588,7 @@
               </ul>
             </ng-container>      -->
     <ng-container *ngIf="selectedModule === 'M1'">
-      <h2>  Module 5: Practical FinOps</h2>
+      <h2>  Module 8: Practical FinOps</h2>
       <hr style="
           position: unset;
           border: none;
@@ -429,7 +655,7 @@
   
 
   <ng-container *ngIf="selectedModule === 'M2'">
-    <h2>Module 6: Collaboration and Communication</h2>
+    <h2>Module 9: Collaboration and Communication</h2>
     <hr style="
         position: unset;
         border: none;
@@ -448,7 +674,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
-  <h2>Module 7: Advanced FinOps Strategies</h2>
+  <h2>Module 10: Advanced FinOps Strategies</h2>
   <hr style="
       position: unset;
       border: none;
@@ -465,7 +691,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
-  <h2>Module 8: Certification Preparation</h2>
+  <h2>Module 11: Certification Preparation</h2>
   <hr style="
       position: unset;
       border: none;
@@ -516,7 +742,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M6'">
-  <h2>Cloud FinOps Tools:</h2>
+  <h2>Certifications & Cost Details:</h2>
   <hr style="
       position: unset;
       border: none;
@@ -527,13 +753,21 @@
   ">
 
   <ul>
-    <li>3rd Party Cloud FinOps Tools: 1. Flexera 2. CloudHealth 3. IBM Apptio 4. ParkMyCloud 5. Turbonomic </li><br>
+    <!-- <li>3rd Party Cloud FinOps Tools: 1. Flexera 2. CloudHealth 3. IBM Apptio 4. ParkMyCloud 5. Turbonomic </li><br>
     <li>Business Intelligence Tools: 1. Power BI & 2. Tableau</li><br>
     <li>Cloud Native Cost Optimisation Tools : AWS, AZURE & GCP</li><br>
     <li>AWS Certified Cloud Practitioner</li><br>
     <li>Microsoft Certified: Azure Fundamentals</li><br>
-    <li>GCP Certified: Cloud Digital Leader</li><br>
+    <li>GCP Certified: Cloud Digital Leader</li><br> -->
+
+    <li>FinOps Certified Practitioner - Exam Cost: 300 USD</li><br>
+    <li>FinOps Certified Engineer - Exam Cost: 699 USD</li><br>
+    <li>FinOps Certified Professional - Exam Cost: 1,999 USD</li><br>
+    <li>FinOps Certified FOCUS Analyst - Exam Cost: 400 USD</li>
+<br>
+
   </ul>
+  
 </ng-container>
         
             
