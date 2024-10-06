@@ -28,9 +28,9 @@ phases:
       - ls -lrta
       - echo Files were uploaded unto s3 bucket
       # Get the size of the bucket
-      - aws s3 ls s3://www.cloudbinary.io --recursive --human-readable --summarize --region ap-south-2
+      - aws s3 ls s3://www.cloudbinary --recursive --human-readable --summarize --region ap-south-2
       # List the contents of the bucket
-      - aws s3 ls s3://www.cloudbinary.io
+      - aws s3 ls s3://www.cloudbinary
       # Remove Bucket Content
       - aws s3 rm s3://www.cloudbinary/ --recursive --region ap-south-2
       # Upload the code to s3 bucket
