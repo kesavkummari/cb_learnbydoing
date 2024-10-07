@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'home-page-new',
@@ -10,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class HomePageNewComponent {
   myForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private http: HttpClient) {
+  constructor(private fb: FormBuilder) {
     this.myForm = this.fb.group({
       name: ['', Validators.required],
       phone: ['', Validators.required],
@@ -24,28 +23,15 @@ export class HomePageNewComponent {
       const phone = this.myForm.get('phone')!.value;
       const option = this.myForm.get('option')!.value;
 
-      const formData = {
-        name: name,
-        mobile: phone,
-        looking_for: option
-      };
+      const message = `Hi, I have visited your website and I am excited to know about ${option} Course Details. Could you please help me?\nName: ${name}\nPhone: ${phone}\nLooking for: ${option}`;
+      const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
 
-      this.http.post('https://irt3364303.execute-api.us-east-1.amazonaws.com/dev_portal/OneStepAway_Form', formData)
-        .subscribe(response => {
-          console.log('Form data submitted successfully', response);
+      window.location.href = whatsappURL;
 
-          const message = `Hi, I have visited your website and I am excited to know about AWS & DevOps Course Details. Could you please help me?\nName: ${name}\nPhone: ${phone}`;
-          const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
-
-          window.location.href = whatsappURL;
-
-          this.myForm.reset();
-        }, error => {
-          console.error('Error submitting form data', error);
-        });
+      this.myForm.reset(); // Reset the form after submission
     } else {
       console.error('Form is not valid. Please check the fields.');
-      
+
       Object.keys(this.myForm.controls).forEach(key => {
         const control = this.myForm.get(key)!;
         console.log(`Control '${key}':`);

@@ -1,7 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'contactus',
@@ -13,41 +11,25 @@ export class ContactUsComponent {
   isLoading = false; // Loading state for spinner
 
   constructor(
-    private snackBar: MatSnackBar,
-    private http: HttpClient,
-    private dataService: DataService
+    private snackBar: MatSnackBar
   ) { }
 
   // Function to handle the form submission, reset, and redirect to WhatsApp
   handleFormSubmissionResetAndRedirect() {
-    // Insert form data into API
-    this.dataService.submitForm(this.formData).subscribe({
-      next: () => {
-        // Show success message
-        this.snackBar.open('Form submitted successfully!', 'Close', {
-          duration: 5000
-        });
+    // Construct the WhatsApp message
+    const message = `Hi, I have visited your website and I am excited to know about Course Details. Could you please help me?\nName: ${this.formData.first_name} ${this.formData.last_name}\nPhone: ${this.formData.phone}\nMessage: ${this.formData.user_message}`;
+    const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
 
-        // Construct the WhatsApp message
-        const message = `Hi, I have visited your website and I am excited to know about AWS & DevOps Course Details. Could you please help me?\nName: ${this.formData.first_name} ${this.formData.last_name}\nPhone: ${this.formData.phone}`;
-        const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
-
-        // Reset the form
-        this.resetForm();
-
-        // Redirect to WhatsApp
-        window.location.href = whatsappURL;
-      },
-      error: (err) => {
-        console.error('Error submitting the form', err);
-        this.snackBar.open('Failed to submit the form. Please try again.', 'Close', {
-          duration: 5000
-        });
-      },
-      complete: () => {
-        this.isLoading = false; // Stop loading spinner
-      }
+    // Show success message
+    this.snackBar.open('Redirecting to WhatsApp...', 'Close', {
+      duration: 5000
     });
+
+    // Reset the form
+    this.resetForm();
+
+    // Redirect to WhatsApp
+    window.location.href = whatsappURL;
   }
 
   // Function to handle form submission
@@ -65,5 +47,6 @@ export class ContactUsComponent {
   // Function to reset the form
   resetForm() {
     this.formData = { first_name: '', last_name: '', email: '', phone: '', user_message: '' };
+    this.isLoading = false; // Stop loading spinner
   }
 }
