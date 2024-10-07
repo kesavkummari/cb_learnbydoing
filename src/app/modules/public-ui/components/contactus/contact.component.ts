@@ -17,8 +17,10 @@ export class ContactUsComponent {
   // Function to handle the form submission, reset, and redirect to WhatsApp
   handleFormSubmissionResetAndRedirect() {
     // Construct the WhatsApp message
-    const message = `Hi, I have visited your website and I am excited to know about Course Details. Could you please help me?\nName: ${this.formData.first_name} ${this.formData.last_name}\nPhone: ${this.formData.phone}\nMessage: ${this.formData.user_message}`;
-    const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
+    const message = `Hi, I have visited your website and I am excited to know about AWS & DevOps Course Details. Could you please help me?\nName: ${this.formData.first_name} ${this.formData.last_name}\nPhone: ${this.formData.phone}\nMessage: ${this.formData.user_message}`;
+    
+    // WhatsApp URL for web and app compatibility
+    const whatsappURL = `https://wa.me/919100073006?text=${encodeURIComponent(message)}`;
 
     // Show success message
     this.snackBar.open('Redirecting to WhatsApp...', 'Close', {
@@ -28,7 +30,7 @@ export class ContactUsComponent {
     // Reset the form
     this.resetForm();
 
-    // Redirect to WhatsApp
+    // Redirect to WhatsApp (both web and app will work)
     window.location.href = whatsappURL;
   }
 
