@@ -218,17 +218,17 @@
           <div class="left-column">
             <h2>AWS Content - Modules</h2>
             <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with Windows & Linux </div>
-            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Analytics  </div>
-            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Application Integration</div>
-            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Compute </div>
-            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS Services -Containers </div>
-            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS Services - Database   </div>
-            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS Services - Storage    </div>
-            <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS Services - Developer Tools</div>
-            <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS Services - Serverless</div>
-            <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS Services - Management and Governance</div>
-            <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS Services - Networking and Content Delivery</div>
-            <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS Services - Security, Identity, and Compliance</div>
+            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS, Azure & GCP - Analytics  </div>
+            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS, Azure & GCP - Application Integration</div>
+            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS, Azure & GCP - Compute </div>
+            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS, Azure & GCP -Containers </div>
+            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS, Azure & GCP - Database   </div>
+            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS, Azure & GCP - Storage    </div>
+            <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS, Azure & GCP - Developer Tools</div>
+            <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS, Azure & GCP - Serverless</div>
+            <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS, Azure & GCP - Management and Governance</div>
+            <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS, Azure & GCP - Networking and Content Delivery</div>
+            <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS, Azure & GCP - Security, Identity, and Compliance</div>
             <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Software Development Life Cycle: Agile - Scrum</div>
             <div class="module" (click)="selectModule('M26')" [class.active-module]="selectedModule === 'M26'">Build Tool: Apache Maven & Python Pip</div>
             <div class="module" (click)="selectModule('M27')" [class.active-module]="selectedModule === 'M27'">Application Servers - Apache Tomcat</div>
@@ -373,7 +373,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
-  <h2>AWS Compute Services</h2>
+  <h2>AWS, Azure & GCP Compute Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -395,7 +395,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M5'">
-  <h2>Module 5: AWS Container Services</h2>
+  <h2>Module 5: AWS, Azure & GCP Container Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -418,7 +418,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M6'">
-  <h2>AWS Database Services</h2>
+  <h2>AWS, Azure & GCP Database Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -429,7 +429,7 @@
   ">
 
   <ul>
-    <li>AWS Database Migration Service (AWS DMS)</li>
+    <li>AWS, Azure & GCP Database Migration Service (AWS DMS)</li>
     <li>Amazon DynamoDB</li>
     <li>Amazon RDS</li>
     <li>Amazon Redshift</li>
@@ -447,7 +447,7 @@
         
             
 <ng-container *ngIf="selectedModule === 'M7'">
-  <h2>AWS Storage Services</h2>
+  <h2>AWS, Azure & GCP Storage Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -477,7 +477,7 @@
 </ng-container>
        
 <ng-container *ngIf="selectedModule === 'M8'">
-  <h2>Developer Tools</h2>
+  <h2>AWS, Azure & GCP Developer Tools</h2>
   <hr style="
       position: unset;
       border: none;
@@ -507,7 +507,7 @@
         
             
 <ng-container *ngIf="selectedModule === 'M9'">
-  <h2>AWS Services - Management and Governance</h2>
+  <h2>AWS, Azure & GCP - Management and Governance</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1051,18 +1051,18 @@
 <div class="module" (click)="selectModule('M30')" [class.active-module]="selectedModule === 'M30'">Python: Flow Control</div>
 <div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
 <div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div>
-<!-- <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS Services - Analytics</div> -->
-<div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS Services - Application Integration</div>
-<div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS Services - Compute</div>
-<!-- <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS Services -Containers
+<!-- <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS, Azure & GCP - Analytics</div> -->
+<div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS, Azure & GCP - Application Integration</div>
+<div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS, Azure & GCP - Compute</div>
+<!-- <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS, Azure & GCP -Containers
 </div> -->
-<div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS Services - Database</div>
-<div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS Services - Storage</div>
-<div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS Services - Developer Tools</div>
-<div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS Services - Management and Governance</div>
-<div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS Services - Networking and Content Delivery</div>
-<div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS Services - Security, Identity, and Compliance</div>
-<div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS Services - Serverless</div>
+<div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS, Azure & GCP - Database</div>
+<div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS, Azure & GCP - Storage</div>
+<div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS, Azure & GCP - Developer Tools</div>
+<div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS, Azure & GCP - Management and Governance</div>
+<div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS, Azure & GCP - Networking and Content Delivery</div>
+<div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS, Azure & GCP - Security, Identity, and Compliance</div>
+<div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS, Azure & GCP - Serverless</div>
 <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Software Development Life Cycle: Agile - Scrum</div>
 <div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">Version Control System / Source Code Management: Git</div>
 <div class="module" (click)="selectModule('M15')" [class.active-module]="selectedModule === 'M15'">Continuous Integration using Jenkins</div>
@@ -1163,7 +1163,7 @@
   
 
   <ng-container *ngIf="selectedModule === 'M2'">
-    <h2>AWS Analytics Services</h2>
+    <h2>AWS, Azure & GCP Analytics Services</h2>
     <hr style="
         position: unset;
         border: none;
@@ -1181,7 +1181,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
-  <h2>AWS Application Integration</h2>
+  <h2>AWS, Azure & GCP Application Integration</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1198,7 +1198,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
-  <h2>AWS Compute Services</h2>
+  <h2>AWS, Azure & GCP Compute Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1217,7 +1217,7 @@
 </ng-container>
 
 <!-- <ng-container *ngIf="selectedModule === 'M5'">
-  <h2>Module 5: AWS Container Services</h2>
+  <h2>Module 5: AWS, Azure & GCP Container Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1235,7 +1235,7 @@
 </ng-container> -->
 
 <ng-container *ngIf="selectedModule === 'M6'">
-  <h2>AWS Database Services</h2>
+  <h2>AWS, Azure & GCP Database Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1255,7 +1255,7 @@
         
             
 <ng-container *ngIf="selectedModule === 'M7'">
-  <h2>AWS Storage Services</h2>
+  <h2>AWS, Azure & GCP Storage Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1273,7 +1273,7 @@
 </ng-container>
        
 <ng-container *ngIf="selectedModule === 'M8'">
-  <h2>Developer Tools</h2>
+  <h2>AWS, Azure & GCP Developer Tools</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1301,7 +1301,7 @@
         
             
 <ng-container *ngIf="selectedModule === 'M9'">
-  <h2>AWS Services - Management and Governance</h2>
+  <h2>AWS, Azure & GCP - Management and Governance</h2>
   <hr style="
       position: unset;
       border: none;

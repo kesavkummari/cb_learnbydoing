@@ -28,7 +28,7 @@ export class CourseContentMob {
                           'Database']
                                 },
          {
-            title: 'AWS Services - Compute',
+            title: 'AWS, Azure & GCP - Compute',
             submodules: ['Amazon EC2',
                         'Images',
                         'EBS',
@@ -41,7 +41,7 @@ export class CourseContentMob {
                                 },
           // Module 2
           {
-            title: 'AWS Services - Storage',
+            title: 'AWS, Azure & GCP - Storage',
               submodules: ['Amazon S3',
                 'Amazon Elastic Block Store (Amazon EBS)',
                 'Amazon Elastic File System (Amazon EFS)',
@@ -50,7 +50,7 @@ export class CourseContentMob {
                         },
           // Module 3
           {
-            title: ' AWS Services - Database',
+            title: ' AWS, Azure & GCP - Database',
             submodules: ['Amazon RDS',
                             'Amazon DynamoDB',
                             'AWS Database Migration Service (AWS DMS)',
@@ -58,7 +58,7 @@ export class CourseContentMob {
                                     },
           // Module 4
           {
-            title: 'AWS Services - Networking & Content',
+            title: 'AWS, Azure & GCP - Networking & Content',
             submodules: ['Amazon API Gateway',
                           'AWS Client VPN',
                           'Amazon CloudFront',
@@ -72,19 +72,19 @@ export class CourseContentMob {
                                   },
           // Module 5
           {
-            title: 'AWS Services - Containers',
+            title: 'AWS, Azure & GCP - Containers',
             submodules: ['Amazon Elastic Container Registry (Amazon ECR)',
                     'Amazon Elastic Container Service (Amazon ECS)',
                     'Amazon Elastic Kubernetes Service (Amazon EKS)']
                             },
           // Module 6
           {
-            title: 'AWS Services - Application Integration',
+            title: 'AWS, Azure & GCP - Application Integration',
             submodules: ['Amazon EventBridge (Amazon CloudWatch Events)']
           },
           // Module 7
           {
-            title: 'AWS Services - Developer Tools',
+            title: 'AWS, Azure & GCP - Developer Tools',
             submodules: ['AWS CLI',
                             'AWS Cloud Development Kit (AWS CDK)',
                             'AWS CloudShell',
@@ -98,7 +98,7 @@ export class CourseContentMob {
                                     },
           // Module 8
           {
-            title: 'AWS Services - Management and Governance',
+            title: 'AWS, Azure & GCP - Management and Governance',
             submodules: ['AWS CloudFormation',
                         'AWS CloudTrail',
                         'Amazon CloudWatch & Logs',
@@ -111,7 +111,7 @@ export class CourseContentMob {
                                 },
           // Module 9
           {
-            title: 'AWS Services - Serverless',
+            title: 'AWS, Azure & GCP - Serverless',
             submodules: ['AWS Lambda',
                     'Amazon Simple Email Service (SES)',
                     'Amazon Simple Notification Service (Amazon SNS)',
@@ -119,7 +119,7 @@ export class CourseContentMob {
                             },
           // Module 10
           {
-            title: 'AWS Services - Security, Identity, and Compliance',
+            title: 'AWS, Azure & GCP - Security, Identity, and Compliance',
             submodules: ['AWS Certificate Manager (ACM)',
                               'AWS CloudHSM',
                               'Amazon Cognito',
