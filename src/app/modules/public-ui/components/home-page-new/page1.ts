@@ -24,7 +24,8 @@ export class HomePageNewComponent {
       const option = this.myForm.get('option')!.value;
 
       const message = `Hi, I have visited your website and I am excited to know about ${option} Course Details. Could you please help me?\nName: ${name}\nPhone: ${phone}\nLooking for: ${option}`;
-      const whatsappURL = `https://wa.me/919100073006?text=${encodeURIComponent(message)}`;
+      const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
+
 
 
       window.location.href = whatsappURL;

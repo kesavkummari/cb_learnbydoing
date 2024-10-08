@@ -1,12 +1,7 @@
 import { Component, ElementRef, OnInit } from '@angular/core';
-import {  FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { DataService } from '../../services/data.service';
-import { HttpClient } from '@angular/common/http';
-import { saveAs } from 'file-saver';
 import { Router } from '@angular/router';
-
-
 
 @Component({
   selector: 'job-ready',
@@ -30,7 +25,7 @@ export class JobReadyComponent implements OnInit {
     courseInterest: this.courseInterest,
   });
 
-  constructor(private elementRef: ElementRef, private snackBar: MatSnackBar, private http: HttpClient, private dataService: DataService, private router: Router) {}
+  constructor(private elementRef: ElementRef, private snackBar: MatSnackBar, private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -44,28 +39,18 @@ export class JobReadyComponent implements OnInit {
   onSubmit() {
     if (this.registrationForm.valid) {
       this.isLoading = true; // Start loading
-      this.dataService.submitForm(this.registrationForm.value).subscribe(
-        (res: any) => {
-          console.log(res);
-          this.registrationForm.reset();
-          this.router.navigate(['/thank-you']);
-          const message = `Hi, I'm interested in your AWS & DevOps course. Can you provide me with more details?\n`;
-          const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
+      
+      // Clear the form after submission
+      this.registrationForm.reset();
+      this.router.navigate(['/thank-you']);
+      
+      const message = `Hi, I'm interested in your AWS & DevOps course. Can you provide me with more details?\n`;
+      const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
   
-          // Redirect directly to WhatsApp API endpoint
-          window.location.href = whatsappURL;
+      // Redirect directly to WhatsApp API endpoint
+      window.location.href = whatsappURL;
   
-          this.isLoading = false; // Stop loading
-        },
-        (error: any) => {
-          console.error('Error submitting form:', error);
-          this.snackBar.open('Failed to submit the form. Please try again.', 'Close', {
-            duration: 5000,
-          });
-          this.isLoading = false; // Stop loading on error
-        }
-      );
+      this.isLoading = false; // Stop loading
     }
   }
-  
 }
