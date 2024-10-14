@@ -1177,6 +1177,7 @@
         <li>Amazon Athena</li>
         <li>Amazon OpenSearch Service</li>
         <li>Amazon QuickSight</li>
+
     </ul>
 </ng-container>
 
