@@ -373,7 +373,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
-  <h2>AWS, Azure & GCP Compute Services</h2>
+  <h2>AWS, Azure & GCP - Compute</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1163,7 +1163,7 @@
   
 
   <ng-container *ngIf="selectedModule === 'M2'">
-    <h2>AWS, Azure & GCP Analytics Services</h2>
+    <h2>AWS, Azure & GCP - AnalyticsServices</h2>
     <hr style="
         position: unset;
         border: none;
@@ -1182,7 +1182,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
-  <h2>AWS, Azure & GCP Application Integration</h2>
+  <h2>AWS, Azure & GCP - Application Integration</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1199,7 +1199,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
-  <h2>AWS, Azure & GCP Compute Services</h2>
+  <h2>AWS, Azure & GCP - Compute</h2>
   <hr style="
       position: unset;
       border: none;
