@@ -40,6 +40,7 @@ phases:
       - echo "post build started `date`"
       - pwd
       - ls -lrta
+      - echo "Kesav"
       - aws cloudfront create-invalidation --distribution-id E1IMUS5PXLF5F9 --paths "/*"
       #- aws cloudfront create-invalidation --distribution-id E34B5O9UHCRA5E --paths "/*"
       #- aws cloudfront create-invalidation --distribution-id EXWROS3M9YOMU --paths "/*"
