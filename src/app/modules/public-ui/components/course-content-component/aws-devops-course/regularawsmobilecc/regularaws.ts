@@ -154,7 +154,7 @@ export class RegularAWSCourseContent {
                     },
                                 
            {
-   title: 'AWS, Azure & GCP Analytics',
+   title: 'Analytics',
    submodules: [
      'Amazon Athena',
      'Amazon EMR (Elastic MapReduce)',
@@ -165,7 +165,7 @@ export class RegularAWSCourseContent {
    ]
  },
 {
-  title: 'AWS, Azure & GCP - Application Integration',
+  title: 'Application Integration',
   submodules: [
     'Amazon AppFlow',
     'Amazon EventBridge (Amazon CloudWatch Events)',
@@ -174,7 +174,7 @@ export class RegularAWSCourseContent {
   ]
 },
 {
-  title: 'AWS, Azure & GCP - Compute',
+  title: 'Compute',
   submodules: [
      'AWS App Runner',
     'Amazon EC2',
@@ -185,7 +185,7 @@ export class RegularAWSCourseContent {
   ]
 },
   {
-   title: 'AWS, Azure & GCP - Containers',
+   title: 'Containers',
    submodules: [
      'AWS App2Containe',
      'AWS Copilot',
@@ -198,7 +198,7 @@ export class RegularAWSCourseContent {
    ]
  },
 {
-  title: 'AWS, Azure & GCP - Database',
+  title: 'Database',
   submodules: [
     'Amazon Aurora',
     'Amazon Aurora Serverless v2',
@@ -212,7 +212,7 @@ export class RegularAWSCourseContent {
   ]
 },
 {
-  title: 'AWS, Azure & GCP - Storage',
+  title: 'Storage',
   submodules: [
     'AWS Backup',
     'Amazon Elastic Block Store (Amazon EBS)',
@@ -228,7 +228,7 @@ export class RegularAWSCourseContent {
   ]
 },
 {
-  title: 'AWS, Azure & GCP - Developer Tools',
+  title: 'Developer Tools',
   submodules: [
     'AWS Cloud Development Kit (AWS CDK)',
     'AWS CloudShell',
@@ -249,7 +249,7 @@ export class RegularAWSCourseContent {
 },
 
 {
-  title: 'AWS, Azure & GCP - Management & Governance',
+  title: 'Management & Governance',
   submodules: [
     'AWS Auto Scaling',
     'AWS CloudFormation',
@@ -278,7 +278,7 @@ export class RegularAWSCourseContent {
 
 
 {
-  title: 'AWS, Azure & GCP - Networking and Content Delivery',
+  title: 'Networking and Content Delivery',
   submodules: [
     'Amazon API Gateway',
     'AWS Client VPN',
@@ -292,7 +292,7 @@ export class RegularAWSCourseContent {
   ]
 },
 {
-  title: 'AWS, Azure & GCP - Security, Identity, and Compliance ',
+  title: 'Security, Identity, and Compliance ',
   submodules: [
     'AWS Certificate Manager (ACM)',
     'AWS CloudHSM',
@@ -315,7 +315,7 @@ export class RegularAWSCourseContent {
   ]
 },
           {
-            title: 'AWS, Azure & GCP - Serverless',
+            title: 'Serverless',
             submodules: ['AWS Lambda',
 'AWS Serverless Application Model (AWS SAM)',
 'Amazon Simple Email Service (SES)',

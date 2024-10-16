@@ -373,7 +373,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
-  <h2>AWS, Azure & GCP - Compute</h2>
+  <h2>Compute</h2>
   <hr style="
       position: unset;
       border: none;
@@ -395,7 +395,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M5'">
-  <h2>Module 5: AWS, Azure & GCP Container Services</h2>
+  <h2>Module 5:  Container Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -418,7 +418,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M6'">
-  <h2>AWS, Azure & GCP Database Services</h2>
+  <h2> Database Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -429,7 +429,7 @@
   ">
 
   <ul>
-    <li>AWS, Azure & GCP Database Migration Service (AWS DMS)</li>
+    <li> Database Migration Service (AWS DMS)</li>
     <li>Amazon DynamoDB</li>
     <li>Amazon RDS</li>
     <li>Amazon Redshift</li>
@@ -447,7 +447,7 @@
         
             
 <ng-container *ngIf="selectedModule === 'M7'">
-  <h2>AWS, Azure & GCP Storage Services</h2>
+  <h2> Storage Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -477,7 +477,7 @@
 </ng-container>
        
 <ng-container *ngIf="selectedModule === 'M8'">
-  <h2>AWS, Azure & GCP Developer Tools</h2>
+  <h2> Developer Tools</h2>
   <hr style="
       position: unset;
       border: none;
@@ -507,7 +507,7 @@
         
             
 <ng-container *ngIf="selectedModule === 'M9'">
-  <h2>AWS, Azure & GCP - Management and Governance</h2>
+  <h2>Management and Governance</h2>
   <hr style="
       position: unset;
       border: none;
@@ -540,7 +540,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M10'">
-  <h2>AWS Networking Services</h2>
+  <h2>Networking</h2>
   <hr style="
       position: unset;
       border: none;
@@ -568,7 +568,7 @@
 </ng-container>
           
 <ng-container *ngIf="selectedModule === 'M11'">
-  <h2>AWS Security Services</h2>
+  <h2>Security</h2>
   <hr style="
       position: unset;
       border: none;
@@ -599,7 +599,7 @@
 </ng-container>
        
 <ng-container *ngIf="selectedModule === 'M12'">
-  <h2>AWS Serverless Services</h2>
+  <h2>Serverless</h2>
   <hr style="
       position: unset;
       border: none;
