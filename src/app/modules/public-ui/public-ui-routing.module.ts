@@ -54,7 +54,7 @@ import { CancellationRefundComponent } from './components/cancellation_and_refun
   
 const routes: Routes = [
  
-  {path:'finops', component: AwsDevopsComponent},
+  {path:'cloud', component: AwsDevopsComponent},
   {path:'awsdevops', component: JobReadyComponent},
   {path:'blogs', component: BlogsComponent},
   {path:'home', component: IntroPageComponent},

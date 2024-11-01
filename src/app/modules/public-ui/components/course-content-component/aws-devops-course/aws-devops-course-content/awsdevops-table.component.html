@@ -2,7 +2,7 @@
   <div class="main-tab">
     <div class="sub-tabs">
     <!--   <div  class="sub-tab" (click)="selectTab('os')" [class.active]="selectedTab === 'os'">   OS [Windows & Linux]</div> -->
-     <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">FinOps</div>   
+     <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">Cloud Engineer on Multi-Cloud</div>   
       <!-- <div class="sub-tab" style="color: #421740;" (click)="selectTab('devops')" [class.active]="selectedTab === 'devops'">AWS DevOps - Shell & Python Scripting </div>
      <div class="sub-tab" (click)="selectTab('mlops')" [class.active]="selectedTab === 'mlops'" >MLOps </div> 
     <div class="sub-tab" (click)="selectTab('python')" [class.active]="selectedTab === 'python'" style="margin-right: 0;">Python </div> -->
@@ -216,20 +216,20 @@
       <ng-container *ngIf="selectedTab === 'aws'">
         <div class="content-columns">
           <div class="left-column">
-            <h2>FinOps Content - Modules</h2>
-            <div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">Module 1 : Introduction to FinOps</div>
-            <div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">Module 2 : Cloud Computing Platforms </div>
-            <div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">Module 3 : FinOps Tools and Platforms </div>
-            <div class="module" (click)="selectModule('M330')" [class.active-module]="selectedModule === 'M330'">Module 4 : AWS-Specific Cost Management Tools </div>
-            <div class="module" (click)="selectModule('M331')" [class.active-module]="selectedModule === 'M331'">Module 5 : AZURE-Specific Cost Management Tools </div>
-            <div class="module" (click)="selectModule('M332')" [class.active-module]="selectedModule === 'M332'">Module 6 : GCP-Specific Cost Management Tools </div>
-            <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Module 7 : FinOps Roles and Responsibilities</div>
+            <h2>Cloud Content - Modules</h2>
+            <div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">Module 1 : Analytics</div>
+            <div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">Module 2 : Application Integration </div>
+            <div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">Module 3 : Compute </div>
+            <div class="module" (click)="selectModule('M330')" [class.active-module]="selectedModule === 'M330'">Module 4 : Containers </div>
+            <div class="module" (click)="selectModule('M331')" [class.active-module]="selectedModule === 'M331'">Module 5 : Database </div>
+            <div class="module" (click)="selectModule('M332')" [class.active-module]="selectedModule === 'M332'">Module 6 : Developer Tools </div>
+            <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Module 7 : Management & Governance</div>
             <!-- <div class="module" (click)="selectModule('M05')" [class.active-module]="selectedModule === 'M05'">Docker & Kubernetes</div> -->
-            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Module 8: Practical FinOps</div>
-            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Module 9: Collaboration and Communication</div>
-            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Module 10: Advanced FinOps Strategies</div>
-            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Module 11: Certification Preparation</div>
-            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Job Opportunities in FinOps</div>
+            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Module 8: Migration & Transfer</div>
+            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Module 9: Networking & Content Delivery</div>
+            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Module 10: Security, Identity, & Compliance</div>
+            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Module 11: Storage</div>
+            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Job Opportunities</div>
             <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Certifications & Cost Details </div>
    
     
@@ -241,7 +241,7 @@
             </ng-container>
 
             <ng-container *ngIf="selectedModule === 'M01'">
-              <h2>  Module 1: Introduction to FinOps</h2>
+              <h2>  Module 1: Analytics</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -251,15 +251,15 @@
                   margin-right: inherit;
               ">
           
-              <ul>
+              <!-- <ul>
                   <li>Overview of FinOps and its importance in cloud cost management.</li>
                   <li>Understanding the FinOps framework and lifecycle</li>
                   <li>Key concepts: <br> 1. Cloud financial management, <br>2. Cost visibility, and  <br> 3. Optimization strategies.</li>
-              </ul>
+              </ul> -->
             </ng-container>            
 
             <ng-container *ngIf="selectedModule === 'M02'">
-              <h2>  Module 2: Cloud Computing Platforms</h2>
+              <h2>  Module 2: Application Integration</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -269,7 +269,7 @@
                   margin-right: inherit;
               ">
           
-              <ul>
+              <!-- <ul>
                   <li>Detailed exploration of cloud platforms</li>
                   <br>
                   <li>AWS: Core services, cost management tools, and best practices </li>
@@ -277,11 +277,11 @@
                   <li>Azure: Key services, cost control features, and optimization techniques</li>
                   <br>
                   <li>GCP: Service overview, pricing models, and cost-saving strategies</li>
-              </ul>
+              </ul> -->
             </ng-container>     
 
             <ng-container *ngIf="selectedModule === 'M03'">
-              <h2>  Module 3: FinOps Tools and Platforms</h2>
+              <h2>  Module 3: Compute</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -291,7 +291,7 @@
                   margin-right: inherit;">
           
               <ul>
-                <li> Cloud Cost Management Tools:
+                <!-- <li> Cloud Cost Management Tools:
 	<br> •	Flexera
 	<br> •	CloudHealth
 	<br> •	IBM Apptio
@@ -300,7 +300,7 @@
   <li> Business Intelligence Tools:
     <br> •	Power BI
     <br> •	Tableau</li>
-    <br> 
+    <br>  -->
   
   </ul>
             </ng-container>     
@@ -308,7 +308,7 @@
           
 
             <ng-container *ngIf="selectedModule === 'M330'">
-              <h2>  Module 4: AWS-Specific Cost Management Tools</h2>
+              <h2>  Module 4: Containers</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -318,7 +318,7 @@
                   margin-right: inherit;">
           
               <ul>
-                <h3>AWS</h3>
+                <!-- <h3>AWS</h3>
                 <ul>
                   <li>Cost Management Dashboard
                     <ul>
@@ -380,13 +380,13 @@
                       <li>12.1 AWS Storage Gateway</li>
                     </ul>
                   </li>
-                </ul>  
+                </ul>   -->
   </ul>
             </ng-container>   
 
 
             <ng-container *ngIf="selectedModule === 'M331'">
-              <h2>  Module 5: AZURE-Specific Cost Management Tools</h2>
+              <h2>  Module 5: Database</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -396,7 +396,7 @@
                   margin-right: inherit;">
           
               <ul>
-                <h3>Azure</h3>
+                <!-- <h3>Azure</h3>
                 <ul>
                   <li>Cost Management Dashboard
                     <ul>
@@ -458,14 +458,14 @@
                       <li>12.1 Azure File Sync, Azure Blob Fuse</li>
                     </ul>
                   </li>
-                </ul>
+                </ul> -->
   
   </ul>
             </ng-container>   
 
 
             <ng-container *ngIf="selectedModule === 'M332'">
-              <h2>  Module 6: GCP-Specific Cost Management Tools</h2>
+              <h2>  Module 6: Developer Tools</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -475,7 +475,7 @@
                   margin-right: inherit;">
           
               <ul>
-  <h3>GCP</h3>
+  <!-- <h3>GCP</h3>
   <ul>
     <li>Cost Management Dashboard
       <ul>
@@ -537,12 +537,12 @@
         <li>12.1 Google Cloud Filestore, Google Transfer Appliance</li>
       </ul>
     </li>
-  </ul>
+  </ul> -->
   
   </ul>
             </ng-container>   
             <ng-container *ngIf="selectedModule === 'M04'">
-              <h2>  Module 7: FinOps Roles and Responsibilities</h2>
+              <h2>  Module 7: Management & Governance</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -553,7 +553,7 @@
               ">
           
               <ul>
-                  <li>Roles in FinOps:
+                  <!-- <li>Roles in FinOps:
                     <br>•	FinOps Certified Practitioner
                     <br>•	FinOps Certified Engineer
                     <br>•	FinOps Certified Professional
@@ -567,7 +567,7 @@
                     <br>•	Governance and Compliance
                     <br>•	Tooling and Automation
                     <br>•	Strategic Advisory
-                  </li>
+                  </li> -->
               </ul>
             </ng-container>     
 <!-- 
@@ -588,7 +588,7 @@
               </ul>
             </ng-container>      -->
     <ng-container *ngIf="selectedModule === 'M1'">
-      <h2>  Module 8: Practical FinOps</h2>
+      <h2>  Module 8: Migration & Transfer</h2>
       <hr style="
           position: unset;
           border: none;
@@ -598,11 +598,11 @@
           margin-right: inherit;
       ">
   
-      <ul>
+      <!-- <ul>
           <li>Hands-on labs using AWS, Azure, and GCP</li>
           <li>Case studies on cost optimization</li>
           <li>Implementing tagging strategies and cost allocation</li>
-      </ul>
+      </ul> -->
     </ng-container>
 
   <ng-container *ngIf="selectedModule === 'M0'">
@@ -655,7 +655,7 @@
   
 
   <ng-container *ngIf="selectedModule === 'M2'">
-    <h2>Module 9: Collaboration and Communication</h2>
+    <h2>Module 9: Networking & Content Delivery</h2>
     <hr style="
         position: unset;
         border: none;
@@ -665,16 +665,16 @@
         margin-right: inherit;
     ">
 
-    <ul>
+    <!-- <ul>
         <li>Engaging with key stakeholders:
           <br>•	CIO, CFO, Product Owners
           <br>•	Solution Architects, Cloud Engineers
           <br>•	Effective communication of FinOps insights and recommendations.</li> 
-    </ul>
+    </ul> -->
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
-  <h2>Module 10: Advanced FinOps Strategies</h2>
+  <h2>Module 10: Security, Identity, & Compliance</h2>
   <hr style="
       position: unset;
       border: none;
@@ -683,15 +683,15 @@
       margin-bottom: 20px;
       margin-right: inherit;
   ">
-  <ul>
+  <!-- <ul>
     <li>Defining KPIs and success criteria for cloud cost optimization.</li>
     <li>Continuous improvement in cloud cost management.</li>
     <li>Advanced budgeting techniques and variance analysis.</li>
-  </ul>
+  </ul> -->
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
-  <h2>Module 11: Certification Preparation</h2>
+  <h2>Module 11: Storage</h2>
   <hr style="
       position: unset;
       border: none;
@@ -700,16 +700,16 @@
       margin-bottom: 20px;
       margin-right: inherit;
   ">
-
+<!-- 
   <ul>
       <li>Exam preparation for FinOps certifications</li>
       <li>Practice tests and mock exams</li>
       <li>Tips and strategies for passing FinOps certification exams</li>
-  </ul>
+  </ul> -->
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M5'">
-  <h2>Job Opportunities in FinOps</h2>
+  <h2>Job Opportunities</h2>
   <hr style="
       position: unset;
       border: none;
@@ -721,22 +721,16 @@
 
   <ul>
       <li>Job Roles:
-        <br>	1.	FinOps Certified Practitioner
-        <br>  2.	FinOps Certified Engineer
-        <br>  3.	FinOps Certified Professional
-        <br>  4.	FinOps Certified FOCUS Analyst
+        <br>	1.	Cloud Solutions Architect
+        <br>  2.	Cloud Infrastructure Engineer
+        <br>  3.	Cloud Security Engineer
+        <br>  4.	Cloud Network Engineer
+        <br> 5. Cloud Automation Engineer
+        <br> 6. Cloud Support Engineer
+        <br> 7. Cloud Data Engineer
+        <br> 8. Cloud Migration Engineer
+        <br> 9. FinOps Engineer
       </li><br>
-      <li>Job Description:<br>
-        <br>•	Analyze and interpret cloud cost data to provide insights and recommendations.
-        <br>•	Collaborate with cross-functional teams to enforce cost allocation and tagging standards.
-        <br>•	Monitor budgets, spend, and adherence, and report regularly to stakeholders.
-        <br>•	Define and track cloud cost optimization KPIs and success criteria.
-        <br>•	Work closely with finance teams on chargeback and optimization data.
-        <br>•	Evaluate and propose strategies for continuous cost optimization.
-        <br>•	Conduct variance analysis to identify further cost-saving opportunities.
-        <br>•	Provide training on cost optimization best practices.
-        <br>•	Collaborate with vendors and use third-party tools for enhanced optimization.
-      </li>
 
   </ul>
 </ng-container>
@@ -760,10 +754,9 @@
     <li>Microsoft Certified: Azure Fundamentals</li><br>
     <li>GCP Certified: Cloud Digital Leader</li><br> -->
 
-    <li>FinOps Certified Practitioner - Exam Cost: 300 USD</li><br>
-    <li>FinOps Certified Engineer - Exam Cost: 699 USD</li><br>
-    <li>FinOps Certified Professional - Exam Cost: 1,999 USD</li><br>
-    <li>FinOps Certified FOCUS Analyst - Exam Cost: 400 USD</li>
+    <li>AWS Certified Cloud Practitioner - Exam Cost: 100 USD</li><br>
+    <li>GCP Cloud Digital Leader - Exam Cost: 99 USD</li><br>
+    <li>Microsoft Azure AZ-900 - Exam Cost: 99 USD</li><br>
 <br>
 
   </ul>
@@ -2387,7 +2380,7 @@
       </ng-container>
       <ng-template #defaultContent>
         <!-- Display default image when no module is selected -->
-        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1'" src="assets/hybrid-learning/finnnops.webp" alt=" DevOps Course Default Image" />
+        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1'" src="assets/hybrid-learning/aws-azure-google-1.png" alt=" DevOps Course Default Image" />
       </ng-template>
   
   

@@ -4,7 +4,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'finops',
+  selector: 'cloud',
   templateUrl: './awsdevops.component.html',
   styleUrls: ['./awsdevops.component.css']
 })
