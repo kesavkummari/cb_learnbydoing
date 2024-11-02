@@ -11,144 +11,132 @@ export class DevOpsCourseContentMob {
 
   courses = [
     {
-      title: 'Cloud',
+      title: 'Cloud Engineer on Multi-Cloud',
       modules: [
         // Course 2 modules and submodules
         // Module 1
         {
-          title: 'Module 1: Introduction to FinOps',
-          submodules: [ 'Overview of FinOps and its importance in cloud cost management',
-'Understanding the FinOps framework and lifecycle',
-'Key concepts:',
-'1. Cloud financial management',
-'2. Cost visibility, and',
-'3. Optimization strategies.',
-   'Linux & Unix Distributions',]
-                              },
+          title: 'Module 1 : Analytics',
+          submodules: [ 
+            'AWS: Amazon EMR, AWS Glue, Amazon Kinesis, Amazon QuickSight, AWS Lake Formation',
+'AZURE: Azure Synapse Analytics, Azure HDInsight, Azure Databricks, Power BI',
+'GCP: BigQuery, Cloud Dataflow, Cloud Dataproc, Cloud Datalab'
+]
+},
                                 
 {
-  title: 'Module 2: Cloud Computing Platforms',
+  title: 'Module 2 : Application Integration',
   submodules: [
-    'Detailed exploration of cloud platforms',
-    'AWS: Core services, cost management tools, and best practices',
-    'Azure: Key services, cost control features, and optimization techniques',
-    'GCP: Service overview, pricing models, and cost-saving strategies',
+    'AWS: Amazon SQS, Amazon SNS, Amazon MQ, AWS Step Functions, Amazon EventBridge',
+    'AZURE: Azure Service Bus, Event Grid, Logic Apps, API Management',
+    'GCP: Pub/Sub, Cloud Tasks, Cloud Endpoints, Cloud Scheduler'
   ]
 },
 {
-  title: 'Module 3: FinOps Tools and Platforms',
+  title: 'Module 3 : Compute',
   submodules: [
-    'Cloud Cost Management Tools:',
-'Flexera',
-'CloudHealth',
-'IBM Apptio',
-'ParkMyCloud',
-'Turbonomic',
-    'Business Intelligence Tools:',
-    'Power BI',
-    'Tableau',
-    'AWS-Specific Cost Management Tools:',
-'AWS Trusted Advisor',
-'AWS Compute Optimizer',
-'AWS Storage Lens',
-'S3 Lifecycle Management',
-'AWS Storage Gateway',
-'CloudWatch Metrics',
-'AWS Spot Instance Advisor',
-'EC2 Auto Scaling Groups with Spot Instances',
-'AWS Global Accelerator',
-'AWS Cost Explorer',
-'AWS Cost and Usage Report',
-'AWS Budgets',
+    'AWS: EC2, Lambda, Elastic Beanstalk, AWS Fargate',
+'AZURE: Azure Virtual Machines, Azure Functions, Azure App Service, Azure Batch',
+'GCP: Compute Engine, Cloud Functions, App Engine, GKE Autopilot'
   ]
 },
 
 {
-  title: 'Module 4: FinOps Roles and Responsibilities',
+  title: 'Module 4 : Containers',
   submodules: [
-    'Roles in FinOps:',
-'FinOps Certified Practitioner',
-'FinOps Certified Engineer',
-'FinOps Certified Professional',
-'FinOps Certified FOCUS Analyst',
-    'Key Responsibilities:',
-'Cloud Cost Management and Optimization',
-'Budgeting and Forecasting',
-'Financial Reporting and Analysis',
-'Collaboration with Cross-Functional Teams',
-'Governance and Compliance',
-'Tooling and Automation',
-'Strategic Advisory',
+    'AWS: Amazon EKS, Amazon ECS, AWS Fargate',
+'AZURE: Azure Kubernetes Service (AKS), Azure Container Instances, Azure Red Hat OpenShift',
+'GCP: Google Kubernetes Engine (GKE), Cloud Run, Artifact Registry',
   ]
 },
 
 {
-  title: 'Module 5: Practical FinOps',
+  title: 'Module 5 : Database',
   submodules: [
-    'Hands-on labs using AWS, Azure, and GCP',
-'Case studies on cost optimization',
-'Implementing tagging strategies and cost allocation',
+    'AWS: Amazon RDS, Amazon DynamoDB, Amazon Aurora, Amazon Redshift',
+'AZURE: Azure SQL Database, Cosmos DB, Azure Database for MySQL/PostgreSQL',
+'GCP: Cloud SQL, Firestore, Cloud Spanner, Bigtable',
   ]
 },
 
 {
-  title: 'Module 6: Collaboration and Communication',
+  title: 'Module 6 : Developer Tools',
   submodules: [
-    'Engaging with key stakeholders:',
-    'CIO, CFO, Product Owners',
-    'Effective communication of FinOps insights and recommendations.'
+    'AWS: AWS CodeCommit, CodeBuild, CodeDeploy, CodePipeline, Cloud9',
+    'AZURE: Azure DevOps, Visual Studio App Center, GitHub Actions',
+    'GCP: Cloud Build, Cloud Source Repositories, Artifact Registry'
   ]
 },
 
           {
-            title: 'Module 7: Advanced FinOps Strategies',
+            title: 'Module 7 : Management & Governance',
             submodules: [
-'Defining KPIs and success criteria for cloud cost optimization.',
-'Continuous improvement in cloud cost management.',
-'Advanced budgeting techniques and variance analysis.'
+'AWS: CloudWatch, CloudTrail, AWS Config, AWS Systems Manager, AWS Trusted Advisor',
+'AZURE: Azure Monitor, Azure Policy, Azure Automation, Azure Cost Management',
+'GCP: Cloud Monitoring, Cloud Logging, Resource Manager, Cloud Console'
 ]
           },
 
           {
-  title: 'Module 8: Certification Preparation',
+  title: 'Module 8: Migration & Transfer',
   submodules: [
-    'Exam preparation for FinOps certifications',
-    'Practice tests and mock exams',
-    'Tips and strategies for passing FinOps certification exams' 
+    'AWS: AWS DMS, AWS Snowball, AWS Transfer Family',
+    'AZURE: Azure Migrate, Azure Site Recovery, Data Box',
+    'GCP: Transfer Appliance, Migrate for Compute Engine, BigQuery Data Transfer Service' 
   ]
 },
 
 {
-  title: 'Job Opportunities in FinOps',
+  title: 'Module 9: Networking & Content Delivery',
   submodules: [
-    'Job Roles:',
-'FinOps Certified Practitioner',
-'FinOps Certified Engineer',
-'FinOps Certified Professional',
-'FinOps Certified FOCUS Analyst',
-    'Job Description:',
-'Analyze and interpret cloud cost data to provide insights and recommendations.',
-'Collaborate with cross-functional teams to enforce cost allocation and tagging standards.',
-'Monitor budgets, spend, and adherence, and report regularly to stakeholders.',
-'Define and track cloud cost optimization KPIs and success criteria.',
-'Work closely with finance teams on chargeback and optimization data.',
-'Evaluate and propose strategies for continuous cost optimization.',
-'Conduct variance analysis to identify further cost-saving opportunities.',
-'Provide training on cost optimization best practices.',
-'Collaborate with vendors and use third-party tools for enhanced optimization.',
+'AWS: Amazon VPC, Amazon CloudFront, Elastic Load Balancing (ELB), Route 53',
+'AZURE: Azure Virtual Network, Azure Front Door, Azure Load Balancer, Traffic Manager',
+'Virtual Private Cloud (VPC), Cloud CDN, Cloud Load Balancing, Cloud DNS'
   ]
 },
 
+{
+  title: 'Module 10: Security, Identity, & Compliance',
+  submodules: [
+    'AWS: AWS IAM, AWS KMS, AWS Shield, AWS WAF, AWS Secrets Manager', 
+    'AZURE: Azure Active Directory, Azure Security Center, Azure Key Vault, Azure DDoS Protection', 
+    'GCP: Cloud IAM, Cloud KMS, Cloud Armor, Cloud Identity, Secret Manager'
+  ]
+},
+{
+  title: 'Module 11: Storage',
+  submodules: [
+    'AWS: Amazon S3, Amazon EBS, Amazon EFS, AWS Backup', 
+    'AZURE: Azure Blob Storage, Azure Files, Azure Disk Storage, Azure Backup', 
+    'GCP: Cloud Storage, Persistent Disk, Filestore, Backup and DR'
+
+
+
+  ]
+},
+{
+  title: 'Job Opportunities',
+  submodules: [
+'1. Cloud Solutions Architect',
+'2. Cloud Infrastructure Engineer',
+'3. Cloud Security Engineer',
+'4. Cloud Network Engineer',
+'5. Cloud Automation Engineer',
+'6. Cloud Support Engineer',
+'7. Cloud Data Engineer',
+'8. Cloud Migration Engineer',
+'9. FinOps Engineer'
+
+
+
+  ]
+},
 {
   title: 'Certifications & Cost Details',
   submodules: [
-    'FinOps Certified Practitioner - Exam Cost: 300 USD', 
-    'FinOps Certified Engineer - Exam Cost: 699 USD', 
-    'FinOps Certified Professional - Exam Cost: 1,999 USD',
-    'FinOps Certified FOCUS Analyst - Exam Cost: 400 USD'
-
-
-
+    'AWS Certified Cloud Practitioner - Exam Cost: 100 USD', 
+    'GCP Cloud Digital Leader - Exam Cost: 99 USD', 
+    'Microsoft Azure AZ-900 - Exam Cost: 99 USD'
   ]
 },
 //            {
@@ -312,10 +300,10 @@ export class DevOpsCourseContentMob {
           // },
           // Module 9
           {
-            title: 'Project Work ',
-            submodules: ['Project-1 : AWS ',
-                                      'Project-2 : AZURE ',
-                                      'Project-3 : GCP ']
+            title: 'Project Works',
+            submodules: ['AWS ',
+                                      'AZURE ',
+                                      'GCP ']
                                               },
 
        ]

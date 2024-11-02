@@ -251,11 +251,13 @@
                   margin-right: inherit;
               ">
           
-              <!-- <ul>
-                  <li>Overview of FinOps and its importance in cloud cost management.</li>
-                  <li>Understanding the FinOps framework and lifecycle</li>
-                  <li>Key concepts: <br> 1. Cloud financial management, <br>2. Cost visibility, and  <br> 3. Optimization strategies.</li>
-              </ul> -->
+              <ul>
+                  <li>AWS: Amazon EMR, AWS Glue, Amazon Kinesis, Amazon QuickSight, AWS Lake Formation</li>
+                  <br>
+                  <li>AZURE: Azure Synapse Analytics, Azure HDInsight, Azure Databricks, Power BI</li>
+                  <br>
+                  <li>GCP: BigQuery, Cloud Dataflow, Cloud Dataproc, Cloud Datalab</li>
+              </ul>
             </ng-container>            
 
             <ng-container *ngIf="selectedModule === 'M02'">
@@ -269,15 +271,13 @@
                   margin-right: inherit;
               ">
           
-              <!-- <ul>
-                  <li>Detailed exploration of cloud platforms</li>
+              <ul>
+                  <li>AWS: Amazon SQS, Amazon SNS, Amazon MQ, AWS Step Functions, Amazon EventBridge</li>
                   <br>
-                  <li>AWS: Core services, cost management tools, and best practices </li>
+                  <li>AZURE: Azure Service Bus, Event Grid, Logic Apps, API Management </li>
                   <br>
-                  <li>Azure: Key services, cost control features, and optimization techniques</li>
-                  <br>
-                  <li>GCP: Service overview, pricing models, and cost-saving strategies</li>
-              </ul> -->
+                  <li>GCP: Pub/Sub, Cloud Tasks, Cloud Endpoints, Cloud Scheduler</li>
+              </ul>
             </ng-container>     
 
             <ng-container *ngIf="selectedModule === 'M03'">
@@ -291,16 +291,11 @@
                   margin-right: inherit;">
           
               <ul>
-                <!-- <li> Cloud Cost Management Tools:
-	<br> •	Flexera
-	<br> •	CloudHealth
-	<br> •	IBM Apptio
-	<br> •	ParkMyCloud
-	<br> •	Turbonomic</li> <br> 
-  <li> Business Intelligence Tools:
-    <br> •	Power BI
-    <br> •	Tableau</li>
-    <br>  -->
+                <li> AWS: EC2, Lambda, Elastic Beanstalk, AWS Fargate</li> 
+                <br> 
+                <li>AZURE: Azure Kubernetes Service (AKS), Azure Container Instances, Azure Red Hat OpenShift </li>
+                <br> 
+                <li>GCP: Google Kubernetes Engine (GKE), Cloud Run, Artifact Registry </li>
   
   </ul>
             </ng-container>     
@@ -318,69 +313,12 @@
                   margin-right: inherit;">
           
               <ul>
-                <!-- <h3>AWS</h3>
-                <ul>
-                  <li>Cost Management Dashboard
-                    <ul>
-                      <li>1.1 AWS Cost Explorer</li>
-                    </ul>
-                  </li>
-                  <li>Budgeting
-                    <ul>
-                      <li>2.1 AWS Budgets</li>
-                    </ul>
-                  </li>
-                  <li>Resource Optimization
-                    <ul>
-                      <li>3.1 AWS Compute Optimizer</li>
-                    </ul>
-                  </li>
-                  <li>Storage Management
-                    <ul>
-                      <li>4.1 AWS Storage Lens, S3 Lifecycle Management, AWS Storage Gateway</li>
-                    </ul>
-                  </li>
-                  <li>Spot Instance/Preemptible VMs
-                    <ul>
-                      <li>5.1 AWS Spot Instance Advisor</li>
-                    </ul>
-                  </li>
-                  <li>Instance Auto Scaling
-                    <ul>
-                      <li>6.1 EC2 Auto Scaling Groups with Spot Instances</li>
-                    </ul>
-                  </li>
-                  <li>Network Optimization
-                    <ul>
-                      <li>7.1 AWS Global Accelerator</li>
-                    </ul>
-                  </li>
-                  <li>Cost Tracking
-                    <ul>
-                      <li>8.1 AWS Cost and Usage Report</li>
-                    </ul>
-                  </li>
-                  <li>Alerts for Cost
-                    <ul>
-                      <li>9.1 AWS Budgets</li>
-                    </ul>
-                  </li>
-                  <li>Resource Monitoring and Metrics
-                    <ul>
-                      <li>10.1 CloudWatch Metrics</li>
-                    </ul>
-                  </li>
-                  <li>Advisor for Best Practices
-                    <ul>
-                      <li>11.1 AWS Trusted Advisor</li>
-                    </ul>
-                  </li>
-                  <li>Storage Gateway
-                    <ul>
-                      <li>12.1 AWS Storage Gateway</li>
-                    </ul>
-                  </li>
-                </ul>   -->
+                <li> AWS: Amazon EKS, Amazon ECS, AWS Fargate</li> 
+                <br> 
+                <li>AZURE: Azure Kubernetes Service (AKS), Azure Container Instances, Azure Red Hat OpenShift</li>
+                <br> 
+                <li>GCP: Google Kubernetes Engine (GKE), Cloud Run, Artifact Registry</li>
+
   </ul>
             </ng-container>   
 
@@ -396,70 +334,12 @@
                   margin-right: inherit;">
           
               <ul>
-                <!-- <h3>Azure</h3>
-                <ul>
-                  <li>Cost Management Dashboard
-                    <ul>
-                      <li>1.1 Azure Cost Management + Billing</li>
-                    </ul>
-                  </li>
-                  <li>Budgeting
-                    <ul>
-                      <li>2.1 Azure Budgets</li>
-                    </ul>
-                  </li>
-                  <li>Resource Optimization
-                    <ul>
-                      <li>3.1 Azure Advisor</li>
-                    </ul>
-                  </li>
-                  <li>Storage Management
-                    <ul>
-                      <li>4.1 Azure Blob Storage Lifecycle Management, Azure Files Lifecycle Policies, Azure Storage Account</li>
-                    </ul>
-                  </li>
-                  <li>Spot Instance/Preemptible VMs
-                    <ul>
-                      <li>5.1 Azure Spot VMs</li>
-                    </ul>
-                  </li>
-                  <li>Instance Auto Scaling
-                    <ul>
-                      <li>6.1 Azure Virtual Machine Scale Sets</li>
-                    </ul>
-                  </li>
-                  <li>Network Optimization
-                    <ul>
-                      <li>7.1 Azure Traffic Manager, Azure Front Door</li>
-                    </ul>
-                  </li>
-                  <li>Cost Tracking
-                    <ul>
-                      <li>8.1 Azure Cost Analysis, Azure Usage Report</li>
-                    </ul>
-                  </li>
-                  <li>Alerts for Cost
-                    <ul>
-                      <li>9.1 Azure Cost Alerts</li>
-                    </ul>
-                  </li>
-                  <li>Resource Monitoring and Metrics
-                    <ul>
-                      <li>10.1 Azure Monitor</li>
-                    </ul>
-                  </li>
-                  <li>Advisor for Best Practices
-                    <ul>
-                      <li>11.1 Azure Advisor</li>
-                    </ul>
-                  </li>
-                  <li>Storage Gateway
-                    <ul>
-                      <li>12.1 Azure File Sync, Azure Blob Fuse</li>
-                    </ul>
-                  </li>
-                </ul> -->
-  
+                <li> AWS: Amazon RDS, Amazon DynamoDB, Amazon Aurora, Amazon Redshift</li> 
+                <br> 
+                <li>AZURE: Azure SQL Database, Cosmos DB, Azure Database for MySQL/PostgreSQL</li>
+                <br> 
+                <li>GCP: Cloud SQL, Firestore, Cloud Spanner, Bigtable</li>
+              
   </ul>
             </ng-container>   
 
@@ -475,70 +355,13 @@
                   margin-right: inherit;">
           
               <ul>
-  <!-- <h3>GCP</h3>
-  <ul>
-    <li>Cost Management Dashboard
-      <ul>
-        <li>1.1 Google Cloud Billing Reports</li>
-      </ul>
-    </li>
-    <li>Budgeting
-      <ul>
-        <li>2.1 Google Cloud Budgets</li>
-      </ul>
-    </li>
-    <li>Resource Optimization
-      <ul>
-        <li>3.1 Google Cloud Recommender</li>
-      </ul>
-    </li>
-    <li>Storage Management
-      <ul>
-        <li>4.1 Google Cloud Storage Lifecycle Management</li>
-      </ul>
-    </li>
-    <li>Spot Instance/Preemptible VMs
-      <ul>
-        <li>5.1 Google Preemptible VMs</li>
-      </ul>
-    </li>
-    <li>Instance Auto Scaling
-      <ul>
-        <li>6.1 Google Cloud Instance Groups with Autoscaling</li>
-      </ul>
-    </li>
-    <li>Network Optimization
-      <ul>
-        <li>7.1 Google Cloud Global Load Balancing</li>
-      </ul>
-    </li>
-    <li>Cost Tracking
-      <ul>
-        <li>8.1 Google Cloud Billing Export, Cost Tables in BigQuery</li>
-      </ul>
-    </li>
-    <li>Alerts for Cost
-      <ul>
-        <li>9.1 Google Cloud Billing Alerts</li>
-      </ul>
-    </li>
-    <li>Resource Monitoring and Metrics
-      <ul>
-        <li>10.1 Google Cloud Monitoring (formerly Stackdriver)</li>
-      </ul>
-    </li>
-    <li>Advisor for Best Practices
-      <ul>
-        <li>11.1 Google Cloud Operations Suite</li>
-      </ul>
-    </li>
-    <li>Storage Gateway
-      <ul>
-        <li>12.1 Google Cloud Filestore, Google Transfer Appliance</li>
-      </ul>
-    </li>
-  </ul> -->
-  
+                
+                <li> AWS: AWS CodeCommit, CodeBuild, CodeDeploy, CodePipeline, Cloud9</li> 
+                <br> 
+                <li>AZURE: Azure DevOps, Visual Studio App Center, GitHub Actions</li>
+                <br> 
+                <li>GCP: Cloud Build, Cloud Source Repositories, Artifact Registry</li>
+              
   </ul>
             </ng-container>   
             <ng-container *ngIf="selectedModule === 'M04'">
@@ -553,21 +376,13 @@
               ">
           
               <ul>
-                  <!-- <li>Roles in FinOps:
-                    <br>•	FinOps Certified Practitioner
-                    <br>•	FinOps Certified Engineer
-                    <br>•	FinOps Certified Professional
-                    <br>•	FinOps Certified FOCUS Analyst
-                  </li><br>
-                  <li>Key Responsibilities:
-                    <br>•	Cloud Cost Management and Optimization
-                    <br>•	Budgeting and Forecasting
-                    <br>•	Financial Reporting and Analysis
-                    <br>•	Collaboration with Cross-Functional Teams
-                    <br>•	Governance and Compliance
-                    <br>•	Tooling and Automation
-                    <br>•	Strategic Advisory
-                  </li> -->
+                                
+                <li> AWS: CloudWatch, CloudTrail, AWS Config, AWS Systems Manager, AWS Trusted Advisor</li> 
+                <br> 
+                <li>AZURE: Azure Monitor, Azure Policy, Azure Automation, Azure Cost Management</li>
+                <br> 
+                <li>GCP: Cloud Monitoring, Cloud Logging, Resource Manager, Cloud Console</li>
+              
               </ul>
             </ng-container>     
 <!-- 
@@ -597,12 +412,12 @@
           margin-bottom: 20px;
           margin-right: inherit;
       ">
-  
-      <!-- <ul>
-          <li>Hands-on labs using AWS, Azure, and GCP</li>
-          <li>Case studies on cost optimization</li>
-          <li>Implementing tagging strategies and cost allocation</li>
-      </ul> -->
+                            <ul>  <li>AWS: AWS DMS, AWS Snowball, AWS Transfer Family</li> 
+                <br> 
+                <li>AZURE: Azure Migrate, Azure Site Recovery, Data Box</li>
+                <br> 
+                <li>GCP: Transfer Appliance, Migrate for Compute Engine, BigQuery Data Transfer Service</li>
+              </ul>
     </ng-container>
 
   <ng-container *ngIf="selectedModule === 'M0'">
@@ -664,13 +479,13 @@
         margin-bottom: 20px;
         margin-right: inherit;
     ">
-
-    <!-- <ul>
-        <li>Engaging with key stakeholders:
-          <br>•	CIO, CFO, Product Owners
-          <br>•	Solution Architects, Cloud Engineers
-          <br>•	Effective communication of FinOps insights and recommendations.</li> 
-    </ul> -->
+<ul>
+<li>AWS: Amazon VPC, Amazon CloudFront, Elastic Load Balancing (ELB), Route 53</li> 
+<br> 
+<li>AZURE: Azure Virtual Network, Azure Front Door, Azure Load Balancer, Traffic Manager</li>
+<br> 
+<li>Virtual Private Cloud (VPC), Cloud CDN, Cloud Load Balancing, Cloud DNS</li>
+</ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
@@ -683,11 +498,13 @@
       margin-bottom: 20px;
       margin-right: inherit;
   ">
-  <!-- <ul>
-    <li>Defining KPIs and success criteria for cloud cost optimization.</li>
-    <li>Continuous improvement in cloud cost management.</li>
-    <li>Advanced budgeting techniques and variance analysis.</li>
-  </ul> -->
+  <ul>
+<li>AWS: AWS IAM, AWS KMS, AWS Shield, AWS WAF, AWS Secrets Manager</li> 
+<br> 
+<li>AZURE: Azure Active Directory, Azure Security Center, Azure Key Vault, Azure DDoS Protection</li>
+<br> 
+<li>GCP: Cloud IAM, Cloud KMS, Cloud Armor, Cloud Identity, Secret Manager</li>
+</ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
@@ -700,12 +517,13 @@
       margin-bottom: 20px;
       margin-right: inherit;
   ">
-<!-- 
   <ul>
-      <li>Exam preparation for FinOps certifications</li>
-      <li>Practice tests and mock exams</li>
-      <li>Tips and strategies for passing FinOps certification exams</li>
-  </ul> -->
+<li>AWS: Amazon S3, Amazon EBS, Amazon EFS, AWS Backup</li> 
+<br> 
+<li>AZURE: Azure Blob Storage, Azure Files, Azure Disk Storage, Azure Backup</li>
+<br> 
+<li>GCP: Cloud Storage, Persistent Disk, Filestore, Backup and DR</li>
+</ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M5'">
@@ -1350,17 +1168,17 @@
 <div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
 <div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div>
 <!-- <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">- Analytics</div> -->
-<div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Application Integration</div>
-<div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Compute</div>
+<!-- <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Application Integration</div> -->
+<!-- <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Compute</div> -->
 <!-- <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">-Containers
 </div> -->
-<div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Database</div>
-<div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Storage</div>
-<div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">Developer Tools</div>
-<div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">Management and Governance</div>
-<div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">Networking and Content Delivery</div>
-<div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">Security, Identity, and Compliance</div>
-<div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">Serverless</div>
+<!-- <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Database</div> -->
+<!-- <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Storage</div> -->
+<!-- <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">Developer Tools</div> -->
+<!-- <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">Management and Governance</div> -->
+<!-- <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">Networking and Content Delivery</div> -->
+<!-- <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">Security, Identity, and Compliance</div> -->
+<!-- <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">Serverless</div> -->
 <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Software Development Life Cycle: Agile - Scrum</div>
 <div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">Version Control System / Source Code Management: Git</div>
 <div class="module" (click)="selectModule('M15')" [class.active-module]="selectedModule === 'M15'">Continuous Integration using Jenkins</div>
