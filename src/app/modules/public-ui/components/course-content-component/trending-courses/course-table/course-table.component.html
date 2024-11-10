@@ -219,6 +219,7 @@
           <div class="left-column">
             <h2>AWS Content - Modules</h2>
             <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with OS </div>
+            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M100'">Multi Cloud </div>
             <!-- <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS, Azure & GCP - Analytics  </div> -->
             <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Application Integration</div>
             <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Compute </div>
@@ -279,6 +280,37 @@
           <li>WebServer - Windows IIS, Apache2, Nginx & Httpd</li>
       </ul>
   </ng-container>
+
+         
+  <ng-container *ngIf="selectedModule === 'M100'">
+    <h2> Multi Cloud</h2>
+    <hr style="
+        position: unset;
+        border: none;
+        height: 2px;
+        background: black;
+        margin-bottom: 20px;
+        margin-right: inherit;
+    ">
+
+    <ul>
+        <li>Unix & Linux History & Distributions</li>
+        <li>Basic & Advanced Commands</li>
+        <li>Run Levels</li>
+        <li>Boot Process</li>
+        <li>File System</li>
+        <li>File & Directory Management</li>
+        <li>Text Editors</li>
+        <li>Permissions</li>
+        <li>User & Group Management</li>
+        <li>Package Management</li>
+        <li>Controlling Services & Daemons</li>
+        <li>Process Management</li>
+        <li>Log Management</li>
+        <li>WebServer - Windows IIS, Apache2, Nginx & Httpd</li>
+    </ul>
+</ng-container>
+
   <ng-container *ngIf="selectedModule === 'M0'">
     <h2> Introduction to Shell Scripting</h2>
     <hr style="
@@ -326,10 +358,9 @@
     </ul>
 </ng-container>
 
-  
 
   <ng-container *ngIf="selectedModule === 'M2'">
-    <h2>Analytics Services</h2>
+    <h2>Multi Cloud Modules</h2>
     <hr style="
         position: unset;
         border: none;
@@ -340,12 +371,17 @@
     ">
 
     <ul>
-        <li>Amazon Athena</li>
-        <li>Amazon OpenSearch Service</li>
-        <li>Amazon QuickSight</li>
-        <br>
-        <li>Azure</li>
-        <li>GCP</li>
+      <li>Analytics</li>
+      <li>Application Integration</li>
+      <li>Compute</li>
+      <li>Containers</li>
+      <li>Database</li>
+      <li>Storage</li>
+      <li>Developer Tools</li>
+      <li>Management and Governance</li>
+      <li>Networking and Content Delivery</li>
+      <li>Security, Identity, and Compliance</li>
+      <li>Serverless</li>
     </ul>
 </ng-container>
 
@@ -1008,11 +1044,11 @@
       <ng-container *ngIf="selectedTab === 'devops'">
         <div class="content-columns">
           <div class="left-column">
-            <h2 style="padding-bottom: 10px;">DevOps Content - Modules</h2>
+            <h2 style="padding-bottom: 10px;">DevOps On Multi-Cloud Content</h2>
 <!-- <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started with OS </div>
-<div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Analytics</div>
-<div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Application Integration</div>
-<div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Compute</div>
+<div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Analytics</div> -->
+<div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Multi Cloud - AWS, Azure & GCP</div>
+<!-- <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Compute</div>
 <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Containers</div> 
 <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Database</div>
 <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Storage</div>
@@ -1022,10 +1058,8 @@
 <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">Security, Identity, and Compliance</div>
 <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">Serverless</div> -->
 <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">Software Development Life Cycle: Agile - Scrum</div>
-<div class="module" (click)="selectModule('M33')" [class.active-module]="selectedModule === 'M33'">Build Tool: Apache Maven &
-  Python Pip</div>
-<div class="module" (click)="selectModule('M34')" [class.active-module]="selectedModule === 'M34'">Application Servers - Apache
-  Tomcat</div>
+<div class="module" (click)="selectModule('M33')" [class.active-module]="selectedModule === 'M33'">Build Tool: Apache Maven & Python Pip</div>
+<div class="module" (click)="selectModule('M34')" [class.active-module]="selectedModule === 'M34'">Application Servers - Apache Tomcat</div>
 <div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">Version Control System / Source Code Management: Git</div>
 <div class="module" (click)="selectModule('M15')" [class.active-module]="selectedModule === 'M15'">Continuous Integration using Jenkins</div>
 <div class="module" (click)="selectModule('M16')" [class.active-module]="selectedModule === 'M16'">Continuous Static Code Analysis: SonarQube</div>
@@ -1136,7 +1170,7 @@
   
 
   <ng-container *ngIf="selectedModule === 'M2'">
-    <h2>Analytics Services</h2>
+    <h2>Multi Cloud</h2>
     <hr style="
         position: unset;
         border: none;
@@ -1147,20 +1181,22 @@
     ">
 
     <ul>
-        <li>Amazon Athena</li>
-        <li>Amazon OpenSearch Service</li>
-        <li>Amazon QuickSight</li>
-        <li>Amazon EMR</li>
-        <li>Amazon Kinesis Data Firehose</li>
-        <li>Amazon Kinesis Data Streams</li>
-        <br>
-        <li>Azure</li>
-        <li>GCP</li>
+      <li>Analytics</li>
+      <li>Application Integration</li>
+      <li>Compute</li>
+      <li>Containers</li>
+      <li>Database</li>
+      <li>Storage</li>
+      <li>Developer Tools</li>
+      <li>Management and Governance</li>
+      <li>Networking and Content Delivery</li>
+      <li>Security, Identity, and Compliance</li>
+      <li>Serverless</li>
     </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
-  <h2>Application Integration</h2>
+  <h2>Multi Cloud Modules</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1171,12 +1207,17 @@
   ">
 
   <ul>
-      <!-- <li>Amazon AppFlow</li> -->
-      <li>Amazon EventBridge (Amazon CloudWatch Events)</li>
-      <li>Amazon AppFlow</li>
-      <br>
-      <li>Azure</li>
-      <li>GCP</li>
+    <li>Analytics</li>
+    <li>Application Integration</li>
+    <li>Compute</li>
+    <li>Containers</li>
+    <li>Database</li>
+    <li>Storage</li>
+    <li>Developer Tools</li>
+    <li>Management and Governance</li>
+    <li>Networking and Content Delivery</li>
+    <li>Security, Identity, and Compliance</li>
+    <li>Serverless</li>
   </ul>
 </ng-container>
 
@@ -1449,7 +1490,7 @@
 
   </ul>
 </ng-container>
-        
+
 <ng-container *ngIf="selectedModule === 'M13'">
   <h2>Getting Started with SDLC and Agile</h2>
   <hr style="
@@ -2167,7 +2208,7 @@
       
       <ng-template #defaultContent>
         <!-- Display default image when no module is selected -->
-        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1'" src="assets/hybrid-learning/aws-azure-google-1.png" alt=" DevOps Course Default Image" />
+        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1'" src="assets/hybrid-learning/DevOps_Image.png" alt=" DevOps Course Default Image" />
       </ng-template>
   
   

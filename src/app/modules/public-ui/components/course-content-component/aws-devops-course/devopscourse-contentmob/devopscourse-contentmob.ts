@@ -11,104 +11,121 @@ export class DevOpsCourseContentMob {
 
   courses = [
     {
-      title: 'Cloud Engineer on Multi-Cloud',
+      title: 'Python Full Stack on AWS',
       modules: [
         // Course 2 modules and submodules
         // Module 1
         {
-          title: 'Module 1 : Analytics',
+          title: 'Module 1 : Introduction to Full Stack Development',
           submodules: [ 
-            'AWS: Amazon EMR, AWS Glue, Amazon Kinesis, Amazon QuickSight, AWS Lake Formation',
-'AZURE: Azure Synapse Analytics, Azure HDInsight, Azure Databricks, Power BI',
-'GCP: BigQuery, Cloud Dataflow, Cloud Dataproc, Cloud Datalab'
+            'Overview of Full Stack Developmen',
+'Frontend vs Backend vs Full Stack',
+'Key technologies in Full Stack Development'
 ]
 },
                                 
 {
-  title: 'Module 2 : Application Integration',
+  title: 'Module 2 : Core Python Programming',
   submodules: [
-    'AWS: Amazon SQS, Amazon SNS, Amazon MQ, AWS Step Functions, Amazon EventBridge',
-    'AZURE: Azure Service Bus, Event Grid, Logic Apps, API Management',
-    'GCP: Pub/Sub, Cloud Tasks, Cloud Endpoints, Cloud Scheduler'
+    'Python Basics: Data Types, Variables, and Operators',
+    'Control Structures: Loops, Conditional Statements',
+    'Functions and Modules in Python',
+    'Object-Oriented Programming (OOP) in Python',
+    'Exception Handling and File Operations'
   ]
 },
 {
-  title: 'Module 3 : Compute',
+  title: 'Module 3 : Frontend Development',
   submodules: [
-    'AWS: EC2, Lambda, Elastic Beanstalk, AWS Fargate',
-'AZURE: Azure Virtual Machines, Azure Functions, Azure App Service, Azure Batch',
-'GCP: Compute Engine, Cloud Functions, App Engine, GKE Autopilot'
-  ]
-},
-
-{
-  title: 'Module 4 : Containers',
-  submodules: [
-    'AWS: Amazon EKS, Amazon ECS, AWS Fargate',
-'AZURE: Azure Kubernetes Service (AKS), Azure Container Instances, Azure Red Hat OpenShift',
-'GCP: Google Kubernetes Engine (GKE), Cloud Run, Artifact Registry',
+    'HTML, CSS, and JavaScript Essentials',
+'Responsive Web Design with Bootstrap',
+'Advanced JavaScript: ES6+ Features, DOM Manipulation',
+'Frontend Framework: ReactJS or Vue.js',
+'Integrating Frontend with Backend APIs'
   ]
 },
 
 {
-  title: 'Module 5 : Database',
+  title: 'Module 4 : Backend Development with Python',
   submodules: [
-    'AWS: Amazon RDS, Amazon DynamoDB, Amazon Aurora, Amazon Redshift',
-'AZURE: Azure SQL Database, Cosmos DB, Azure Database for MySQL/PostgreSQL',
-'GCP: Cloud SQL, Firestore, Cloud Spanner, Bigtable',
+    'Introduction to Web Frameworks: Django or Flask',
+'Building RESTful APIs',
+'Database Integration with Python (PostgreSQL/MySQL)',
+'Authentication and Authorization',
+'Error Handling and Logging in Backend'
   ]
 },
 
 {
-  title: 'Module 6 : Developer Tools',
+  title: 'Module 5 : Database Management',
   submodules: [
-    'AWS: AWS CodeCommit, CodeBuild, CodeDeploy, CodePipeline, Cloud9',
-    'AZURE: Azure DevOps, Visual Studio App Center, GitHub Actions',
-    'GCP: Cloud Build, Cloud Source Repositories, Artifact Registry'
+    'Introduction to SQL Databases',
+'Database Design and Relationships',
+'Working with ORM (Django ORM/SQLAlchemy)',
+'Data Querying and Manipulation',
+'Database Migration and Versioning'
+
+  ]
+},
+
+{
+  title: 'Module 6 : Deploying Web Applications on AWS',
+  submodules: [
+    'Introduction to AWS Cloud Services',
+    'Setting Up AWS EC2 Instances',
+    'Hosting Web Applications on AWS',
+    'Using AWS RDS for Database Management',
+    'AWS S3 for Static File Hosting'
   ]
 },
 
           {
-            title: 'Module 7 : Management & Governance',
+            title: 'Module 7 : Serverless Architectures with AWS',
             submodules: [
-'AWS: CloudWatch, CloudTrail, AWS Config, AWS Systems Manager, AWS Trusted Advisor',
-'AZURE: Azure Monitor, Azure Policy, Azure Automation, Azure Cost Management',
-'GCP: Cloud Monitoring, Cloud Logging, Resource Manager, Cloud Console'
+'Introduction to AWS Lambda and Serverless Concepts',
+'API Gateway for Serverless APIs',
+'AWS DynamoDB for Serverless Database Solutions',
+'Deploying and Managing Serverless Applications'
 ]
           },
 
           {
-  title: 'Module 8: Migration & Transfer',
+  title: 'Module 8: Infrastructure as Code with AWS',
   submodules: [
-    'AWS: AWS DMS, AWS Snowball, AWS Transfer Family',
-    'AZURE: Azure Migrate, Azure Site Recovery, Data Box',
-    'GCP: Transfer Appliance, Migrate for Compute Engine, BigQuery Data Transfer Service' 
+    'Introduction to Infrastructure as Code (IaC)',
+    'Boto3 Basics and Configuration',
+    'Automating AWS Infrastructure with Boto3',
+    'Best Practices for Infrastructure Management' 
   ]
 },
 
 {
-  title: 'Module 9: Networking & Content Delivery',
+  title: 'Module 9: CI/CD Pipelines on AWS',
   submodules: [
-'AWS: Amazon VPC, Amazon CloudFront, Elastic Load Balancing (ELB), Route 53',
-'AZURE: Azure Virtual Network, Azure Front Door, Azure Load Balancer, Traffic Manager',
-'Virtual Private Cloud (VPC), Cloud CDN, Cloud Load Balancing, Cloud DNS'
+'Introduction to CI/CD Concepts',
+'Setting Up GitHub/GitLab CI/CD Pipelines for AWS',
+'Continuous Deployment on AWS using CodePipeline',
+'Automated Testing and Quality Checks'
   ]
 },
 
 {
-  title: 'Module 10: Security, Identity, & Compliance',
+  title: 'Module 10: Security and Performance Optimization',
   submodules: [
-    'AWS: AWS IAM, AWS KMS, AWS Shield, AWS WAF, AWS Secrets Manager', 
-    'AZURE: Azure Active Directory, Azure Security Center, Azure Key Vault, Azure DDoS Protection', 
-    'GCP: Cloud IAM, Cloud KMS, Cloud Armor, Cloud Identity, Secret Manager'
+    'Security Best Practices on AWS', 
+    'Identity and Access Management (IAM)', 
+    'Performance Optimization Techniques for Python Apps',
+    'Monitoring with AWS CloudWatch',
+    'Scaling Applications with AWS Elastic Load Balancing (ELB) and Auto Scaling'
   ]
 },
 {
-  title: 'Module 11: Storage',
+  title: 'Module 11: Capstone Project',
   submodules: [
-    'AWS: Amazon S3, Amazon EBS, Amazon EFS, AWS Backup', 
-    'AZURE: Azure Blob Storage, Azure Files, Azure Disk Storage, Azure Backup', 
-    'GCP: Cloud Storage, Persistent Disk, Filestore, Backup and DR'
+    'Building a Full Stack Web Application', 
+    'Deploying and Managing the App on AWS Cloud', 
+    'Using CI/CD for Automated Deployment',
+    'Implementing Security and Monitoring Solutions'
 
 
 

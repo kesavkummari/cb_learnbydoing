@@ -164,15 +164,22 @@ export class RegularAWSCourseContent {
 //      'Amazon QuickSight'
 //    ]
 //  },
-// {
-//   title: 'Application Integration',
-//   submodules: [
-//     'Amazon AppFlow',
-//     'Amazon EventBridge (Amazon CloudWatch Events)',
-    
-    
-//   ]
-// },
+{
+  title: 'Multi Cloud - AWS, Azure & GCP',
+  submodules: [
+'Analytics',
+'Application Integration',
+'Compute',
+'Containers',
+'Database',
+'Storage',
+'Developer Tools',
+'Management and Governance',
+'Networking and Content Delivery',
+'Security, Identity, and Compliance',
+'Serverless'
+  ]
+},
 // {
 //   title: 'Compute',
 //   submodules: [

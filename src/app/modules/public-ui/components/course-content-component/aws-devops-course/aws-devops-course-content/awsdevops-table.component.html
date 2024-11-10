@@ -2,7 +2,7 @@
   <div class="main-tab">
     <div class="sub-tabs">
     <!--   <div  class="sub-tab" (click)="selectTab('os')" [class.active]="selectedTab === 'os'">   OS [Windows & Linux]</div> -->
-     <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">Cloud Engineer on Multi-Cloud</div>   
+     <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">Python Full Stack on AWS</div>   
       <!-- <div class="sub-tab" style="color: #421740;" (click)="selectTab('devops')" [class.active]="selectedTab === 'devops'">AWS DevOps - Shell & Python Scripting </div>
      <div class="sub-tab" (click)="selectTab('mlops')" [class.active]="selectedTab === 'mlops'" >MLOps </div> 
     <div class="sub-tab" (click)="selectTab('python')" [class.active]="selectedTab === 'python'" style="margin-right: 0;">Python </div> -->
@@ -216,21 +216,21 @@
       <ng-container *ngIf="selectedTab === 'aws'">
         <div class="content-columns">
           <div class="left-column">
-            <h2>Cloud Content - Modules</h2>
-            <div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">Module 1 : Analytics</div>
-            <div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">Module 2 : Application Integration </div>
-            <div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">Module 3 : Compute </div>
-            <div class="module" (click)="selectModule('M330')" [class.active-module]="selectedModule === 'M330'">Module 4 : Containers </div>
-            <div class="module" (click)="selectModule('M331')" [class.active-module]="selectedModule === 'M331'">Module 5 : Database </div>
-            <div class="module" (click)="selectModule('M332')" [class.active-module]="selectedModule === 'M332'">Module 6 : Developer Tools </div>
-            <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Module 7 : Management & Governance</div>
+            <h2>Modules</h2>
+            <div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">Module 1 : Introduction to Full Stack Development</div>
+            <div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">Module 2 : Core Python Programming </div>
+            <div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">Module 3 : Frontend Development </div>
+            <div class="module" (click)="selectModule('M330')" [class.active-module]="selectedModule === 'M330'">Module 4 : Backend Development with Python </div>
+            <div class="module" (click)="selectModule('M331')" [class.active-module]="selectedModule === 'M331'">Module 5 : Database Management </div>
+            <div class="module" (click)="selectModule('M332')" [class.active-module]="selectedModule === 'M332'">Module 6 : Deploying Web Applications on AWS </div>
+            <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Module 7 : Serverless Architectures with AWS</div>
             <!-- <div class="module" (click)="selectModule('M05')" [class.active-module]="selectedModule === 'M05'">Docker & Kubernetes</div> -->
-            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Module 8: Migration & Transfer</div>
-            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Module 9: Networking & Content Delivery</div>
-            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Module 10: Security, Identity, & Compliance</div>
-            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Module 11: Storage</div>
-            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Job Opportunities</div>
-            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Certifications & Cost Details </div>
+            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Module 8: Infrastructure as Code with AWS</div>
+            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Module 9: CI/CD Pipelines on AWS</div>
+            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Module 10: Security and Performance Optimization</div>
+            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Module 11: 3 Capstone Projects</div>
+            <!-- <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Job Opportunities</div>
+            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Certifications & Cost Details </div> -->
    
     
           </div>
@@ -241,7 +241,7 @@
             </ng-container>
 
             <ng-container *ngIf="selectedModule === 'M01'">
-              <h2>  Module 1: Analytics</h2>
+              <h2>  Module 1: Introduction to Full Stack Development</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -252,16 +252,16 @@
               ">
           
               <ul>
-                  <li>AWS: Amazon EMR, AWS Glue, Amazon Kinesis, Amazon QuickSight, AWS Lake Formation</li>
+                  <li>Overview of Full Stack Development</li>
                   <br>
-                  <li>AZURE: Azure Synapse Analytics, Azure HDInsight, Azure Databricks, Power BI</li>
+                  <li>Frontend vs Backend vs Full Stack</li>
                   <br>
-                  <li>GCP: BigQuery, Cloud Dataflow, Cloud Dataproc, Cloud Datalab</li>
+                  <li>Key technologies in Full Stack Development</li>
               </ul>
             </ng-container>            
 
             <ng-container *ngIf="selectedModule === 'M02'">
-              <h2>  Module 2: Application Integration</h2>
+              <h2>  Module 2: Core Python Programming</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -272,16 +272,21 @@
               ">
           
               <ul>
-                  <li>AWS: Amazon SQS, Amazon SNS, Amazon MQ, AWS Step Functions, Amazon EventBridge</li>
+                  <li>Python Basics: Data Types, Variables, and Operators</li>
                   <br>
-                  <li>AZURE: Azure Service Bus, Event Grid, Logic Apps, API Management </li>
+                  <li>Control Structures: Loops, Conditional Statements</li>
                   <br>
-                  <li>GCP: Pub/Sub, Cloud Tasks, Cloud Endpoints, Cloud Scheduler</li>
+                  <li>Functions and Modules in Python</li>
+                  <br>
+                  <li>Object-Oriented Programming (OOP) in Python</li>
+                  <br>
+                  <li>Exception Handling and File Operations</li>
+                  <br>
               </ul>
             </ng-container>     
 
             <ng-container *ngIf="selectedModule === 'M03'">
-              <h2>  Module 3: Compute</h2>
+              <h2>  Module 3: Frontend Development</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -291,11 +296,15 @@
                   margin-right: inherit;">
           
               <ul>
-                <li> AWS: EC2, Lambda, Elastic Beanstalk, AWS Fargate</li> 
+                <li> HTML, CSS, and JavaScript Essentials</li> 
                 <br> 
-                <li>AZURE: Azure Kubernetes Service (AKS), Azure Container Instances, Azure Red Hat OpenShift </li>
+                <li>Responsive Web Design with Bootstrap</li>
                 <br> 
-                <li>GCP: Google Kubernetes Engine (GKE), Cloud Run, Artifact Registry </li>
+                <li>Advanced JavaScript: ES6+ Features, DOM Manipulation </li>
+                <br> 
+                <li>Frontend Framework: ReactJS or Vue.js </li>
+                <br> 
+                <li>Integrating Frontend with Backend APIs </li>
   
   </ul>
             </ng-container>     
@@ -303,7 +312,7 @@
           
 
             <ng-container *ngIf="selectedModule === 'M330'">
-              <h2>  Module 4: Containers</h2>
+              <h2>  Module 4: Backend Development with Python</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -313,18 +322,22 @@
                   margin-right: inherit;">
           
               <ul>
-                <li> AWS: Amazon EKS, Amazon ECS, AWS Fargate</li> 
+                <li>Introduction to Web Frameworks: Django or Flask</li> 
                 <br> 
-                <li>AZURE: Azure Kubernetes Service (AKS), Azure Container Instances, Azure Red Hat OpenShift</li>
+                <li>Building RESTful APIs</li>
                 <br> 
-                <li>GCP: Google Kubernetes Engine (GKE), Cloud Run, Artifact Registry</li>
+                <li>Database Integration with Python (PostgreSQL/MySQL)</li>
+                <br> 
+                <li>Authentication and Authorization</li>
+                <br> 
+                <li>Error Handling and Logging in Backend</li>
 
   </ul>
             </ng-container>   
 
 
             <ng-container *ngIf="selectedModule === 'M331'">
-              <h2>  Module 5: Database</h2>
+              <h2>  Module 5: Database Management</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -334,18 +347,22 @@
                   margin-right: inherit;">
           
               <ul>
-                <li> AWS: Amazon RDS, Amazon DynamoDB, Amazon Aurora, Amazon Redshift</li> 
+                <li>Introduction to SQL Databases</li> 
                 <br> 
-                <li>AZURE: Azure SQL Database, Cosmos DB, Azure Database for MySQL/PostgreSQL</li>
+                <li>Database Design and Relationships</li>
                 <br> 
-                <li>GCP: Cloud SQL, Firestore, Cloud Spanner, Bigtable</li>
+                <li>Working with ORM (Django ORM/SQLAlchemy)</li>
+                <br> 
+                <li>Data Querying and Manipulation</li>
+                <br> 
+                <li>Database Migration and Versioning</li>
               
   </ul>
             </ng-container>   
 
 
             <ng-container *ngIf="selectedModule === 'M332'">
-              <h2>  Module 6: Developer Tools</h2>
+              <h2>  Module 6: Deploying Web Applications on AWS</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -356,16 +373,20 @@
           
               <ul>
                 
-                <li> AWS: AWS CodeCommit, CodeBuild, CodeDeploy, CodePipeline, Cloud9</li> 
+                <li>Introduction to AWS Cloud Services</li> 
                 <br> 
-                <li>AZURE: Azure DevOps, Visual Studio App Center, GitHub Actions</li>
+                <li>Setting Up AWS EC2 Instances</li>
                 <br> 
-                <li>GCP: Cloud Build, Cloud Source Repositories, Artifact Registry</li>
+                <li>Hosting Web Applications on AWS</li>
+                <br> 
+                <li>Using AWS RDS for Database Management</li>
+                <br> 
+                <li>AWS S3 for Static File Hosting</li>
               
   </ul>
             </ng-container>   
             <ng-container *ngIf="selectedModule === 'M04'">
-              <h2>  Module 7: Management & Governance</h2>
+              <h2>  Module 7: Serverless Architectures with AWS</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -377,11 +398,13 @@
           
               <ul>
                                 
-                <li> AWS: CloudWatch, CloudTrail, AWS Config, AWS Systems Manager, AWS Trusted Advisor</li> 
+                <li> Introduction to AWS Lambda and Serverless Concepts</li> 
                 <br> 
-                <li>AZURE: Azure Monitor, Azure Policy, Azure Automation, Azure Cost Management</li>
+                <li>API Gateway for Serverless APIs</li>
                 <br> 
-                <li>GCP: Cloud Monitoring, Cloud Logging, Resource Manager, Cloud Console</li>
+                <li>AWS DynamoDB for Serverless Database Solutions</li>
+                <br> 
+                <li>Deploying and Managing Serverless Applications</li>
               
               </ul>
             </ng-container>     
@@ -403,7 +426,7 @@
               </ul>
             </ng-container>      -->
     <ng-container *ngIf="selectedModule === 'M1'">
-      <h2>  Module 8: Migration & Transfer</h2>
+      <h2>  Module 8: Infrastructure as Code with AWS</h2>
       <hr style="
           position: unset;
           border: none;
@@ -412,11 +435,13 @@
           margin-bottom: 20px;
           margin-right: inherit;
       ">
-                            <ul>  <li>AWS: AWS DMS, AWS Snowball, AWS Transfer Family</li> 
+                            <ul>  <li>Introduction to Infrastructure as Code (IaC)</li> 
                 <br> 
-                <li>AZURE: Azure Migrate, Azure Site Recovery, Data Box</li>
+                <li>Boto3 Basics and Configuration</li>
                 <br> 
-                <li>GCP: Transfer Appliance, Migrate for Compute Engine, BigQuery Data Transfer Service</li>
+                <li>Automating AWS Infrastructure with Boto3</li>
+                <br>
+                <li>Best Practices for Infrastructure Management</li>
               </ul>
     </ng-container>
 
@@ -470,7 +495,7 @@
   
 
   <ng-container *ngIf="selectedModule === 'M2'">
-    <h2>Module 9: Networking & Content Delivery</h2>
+    <h2>Module 9: CI/CD Pipelines on AWS</h2>
     <hr style="
         position: unset;
         border: none;
@@ -480,16 +505,18 @@
         margin-right: inherit;
     ">
 <ul>
-<li>AWS: Amazon VPC, Amazon CloudFront, Elastic Load Balancing (ELB), Route 53</li> 
+<li>Introduction to CI/CD Concepts</li> 
 <br> 
-<li>AZURE: Azure Virtual Network, Azure Front Door, Azure Load Balancer, Traffic Manager</li>
+<li>Setting Up GitHub/GitLab CI/CD Pipelines for AWS</li>
 <br> 
-<li>Virtual Private Cloud (VPC), Cloud CDN, Cloud Load Balancing, Cloud DNS</li>
+<li>Continuous Deployment on AWS using CodePipeline</li>
+<br>
+<li>Automated Testing and Quality Checks</li>
 </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
-  <h2>Module 10: Security, Identity, & Compliance</h2>
+  <h2>Module 10: Security and Performance Optimization</h2>
   <hr style="
       position: unset;
       border: none;
@@ -499,16 +526,20 @@
       margin-right: inherit;
   ">
   <ul>
-<li>AWS: AWS IAM, AWS KMS, AWS Shield, AWS WAF, AWS Secrets Manager</li> 
+<li>Security Best Practices on AWS</li> 
 <br> 
-<li>AZURE: Azure Active Directory, Azure Security Center, Azure Key Vault, Azure DDoS Protection</li>
+<li>Identity and Access Management (IAM)</li>
 <br> 
-<li>GCP: Cloud IAM, Cloud KMS, Cloud Armor, Cloud Identity, Secret Manager</li>
+<li>Performance Optimization Techniques for Python Apps</li>
+<br>
+<li>Monitoring with AWS CloudWatch</li>
+<br>
+<li>Scaling Applications with AWS Elastic Load Balancing (ELB) and Auto Scaling</li>
 </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
-  <h2>Module 11: Storage</h2>
+  <h2>Module 11: Capstone Projects</h2>
   <hr style="
       position: unset;
       border: none;
@@ -518,15 +549,17 @@
       margin-right: inherit;
   ">
   <ul>
-<li>AWS: Amazon S3, Amazon EBS, Amazon EFS, AWS Backup</li> 
+<li>Building a Full Stack Web Application</li> 
 <br> 
-<li>AZURE: Azure Blob Storage, Azure Files, Azure Disk Storage, Azure Backup</li>
+<li>Deploying and Managing the App on AWS Cloud</li>
 <br> 
-<li>GCP: Cloud Storage, Persistent Disk, Filestore, Backup and DR</li>
+<li>Using CI/CD for Automated Deployment</li>
+<br>
+<li>Implementing Security and Monitoring Solutions</li>
 </ul>
 </ng-container>
 
-<ng-container *ngIf="selectedModule === 'M5'">
+<!-- <ng-container *ngIf="selectedModule === 'M5'">
   <h2>Job Opportunities</h2>
   <hr style="
       position: unset;
@@ -551,8 +584,8 @@
       </li><br>
 
   </ul>
-</ng-container>
-
+</ng-container> -->
+<!-- 
 <ng-container *ngIf="selectedModule === 'M6'">
   <h2>Certifications & Cost Details:</h2>
   <hr style="
@@ -564,7 +597,7 @@
       margin-right: inherit;
   ">
 
-  <ul>
+  <ul> -->
     <!-- <li>3rd Party Cloud FinOps Tools: 1. Flexera 2. CloudHealth 3. IBM Apptio 4. ParkMyCloud 5. Turbonomic </li><br>
     <li>Business Intelligence Tools: 1. Power BI & 2. Tableau</li><br>
     <li>Cloud Native Cost Optimisation Tools : AWS, AZURE & GCP</li><br>
@@ -572,7 +605,7 @@
     <li>Microsoft Certified: Azure Fundamentals</li><br>
     <li>GCP Certified: Cloud Digital Leader</li><br> -->
 
-    <li>AWS Certified Cloud Practitioner - Exam Cost: 100 USD</li><br>
+    <!-- <li>AWS Certified Cloud Practitioner - Exam Cost: 100 USD</li><br>
     <li>GCP Cloud Digital Leader - Exam Cost: 99 USD</li><br>
     <li>Microsoft Azure AZ-900 - Exam Cost: 99 USD</li><br>
 <br>
@@ -580,7 +613,7 @@
   </ul>
   
 </ng-container>
-        
+         -->
             
 <ng-container *ngIf="selectedModule === 'M7'">
   <h2>Reliable MLOps: Scaling and Testing (continued)</h2>
@@ -1168,7 +1201,7 @@
 <div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
 <div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div>
 <!-- <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">- Analytics</div> -->
-<!-- <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Application Integration</div> -->
+<div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Application Integration</div>
 <!-- <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Compute</div> -->
 <!-- <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">-Containers
 </div> -->
@@ -1290,17 +1323,16 @@
     ">
 
     <ul>
-        <li>Amazon Athena</li>
-        <li>Amazon OpenSearch Service</li>
-        <li>Amazon QuickSight</li>
-        <br>
-        <li>Azure</li>
-        <li>GCP</li>
+<li>AWS: Amazon EMR, AWS Glue, Amazon Kinesis, Amazon QuickSight, AWS Lake Formation
+
+  AZURE: Azure Synapse Analytics, Azure HDInsight, Azure Databricks, Power BI
+  
+  GCP: BigQuery, Cloud Dataflow, Cloud Dataproc, Cloud Datalab</li>
     </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
-  <h2>Application Integration</h2>
+  <h2>Multi Cloud Modules</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1311,11 +1343,17 @@
   ">
 
   <ul>
-      <!-- <li>Amazon AppFlow</li> -->
-      <li>Amazon EventBridge (Amazon CloudWatch Events)</li>
-      <br>
-      <li>Azure</li>
-      <li>GCP</li>
+    <li>Analytics</li>
+    <li>Application Integration</li>
+    <li>Compute</li>
+    <li>Containers</li>
+    <li>Database</li>
+    <li>Storage</li>
+    <li>Developer Tools</li>
+    <li>Management and Governance</li>
+    <li>Networking and Content Delivery</li>
+    <li>Security, Identity, and Compliance</li>
+    <li>Serverless</li>
   </ul>
 </ng-container>
 
