@@ -165,7 +165,7 @@ export class RegularAWSCourseContent {
 //    ]
 //  },
 {
-  title: 'Multi Cloud - AWS, Azure & GCP',
+  title: 'Cloud Computing on AWS',
   submodules: [
 'Analytics',
 'Application Integration',
