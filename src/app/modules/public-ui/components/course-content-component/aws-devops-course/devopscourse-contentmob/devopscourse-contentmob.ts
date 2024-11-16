@@ -16,131 +16,128 @@ export class DevOpsCourseContentMob {
         // Course 2 modules and submodules
         // Module 1
         {
-          title: 'Getting Started with Windows & Linux',
-          submodules: [ 'Windows',
-   'Linux & Unix Distributions',]
+          title: 'Module 1: Introduction to FinOps',
+          submodules: [ 
+            'Overview of FinOps and its importance in cloud cost management.',
+            'Understanding the FinOps framework and lifecycle',
+            'Key concepts:',
+            '1. Cloud financial management',
+            '2. Cost visibility, and',
+            '3. Optimization strategies.', 
+          ]
                               },
                                 
 {
-  title: 'Cloud Computing with AWS',
+  title: 'Module 2: Cloud Computing Platforms',
   submodules: [
-    'Machine Learning Services : 1. SageMaker Studio, 2. SageMaker Pipelines, 3. SageMaker Ground Truth, 4. SageMaker Model Monitor, 5. SageMaker Feature Store & 6. SageMaker Debugger',
-    'Data Processing and Storage : 1. S3, 2. Redshift, 3. RDS, 4. Glue & 5. Athena',
-    'Compute Services : 1. EC2, 2. Lambda, 3. ECS, 4. EKS',
-    'Analytics and Monitoring : 1. CloudWatch, 2. CloudTrail, 3. Kinesis, 4. Glue DataBrew',
-    'Security and Identity : 1. IAM, 2. KMS, 3. Secrets Manager',
-    'Machine Learning Specific Services: 1. Comprehend, 2. Rekognition, 3. Lex, 4. Polly, 5. Translate & 6. Transcribe', 
-  ]
-},
-{
-  title: 'DevOps & CD/CD Pipelines',
-  submodules: [
-    'CodeCommit',
-    'CodeDeploy',
-    'CodePipeline',
-    'CloudFormation',
-  ]
-},
+'Detailed exploration of cloud platforms',
+'AWS: Core services, cost management tools, and best practices',
+'Azure: Key services, cost control features, and optimization techniques',
+'GCP: Service overview, pricing models, and cost-saving strategies'
 
+  ]
+},
 {
-  title: 'Python For Data Science & MLOps',
+  title: 'Module 3: FinOps Tools and Platforms',
   submodules: [
-    'Python For Data Science',
-    'Python For MLOps'
+    'Cloud Cost Management Tools: Flexera, CloudHealth, IBM Apptio, ParkMyCloud, Turbonomic',
+    'Business Intelligence Tools: Power BI & Tableau',
+    'Cost Management Tools: AWS, AZURE & GCP',
   ]
 },
 
 {
-  title: 'Docker & Kubernetes',
+  title: 'Module 4: FinOps Roles and Responsibilities',
   submodules: [
-
-    'Docker',
-    'Kubernetes'
+    'Roles in FinOps: FinOps Certified Practitioner, FinOps Certified Engineer, FinOps Certified Professional, FinOps Certified FOCUS Analyst',
+    'Key Responsibilities: Cloud Cost Management and Optimization, Budgeting and Forecasting, Financial Reporting and Analysis, Collaboration with Cross-Functional Teams, Governance and Compliance, Tooling and Automation, Strategic Advisory'
   ]
 },
 
 {
-  title: 'Introduction to MLOps',
+  title: 'Module 5: Practical FinOps',
   submodules: [
-    'Processes',
-    'People',
-    'Technology',
-    'Security and governance',
-    'MLOps maturity model'
+
+    'Hands-on labs using AWS, Azure, and GCP',
+    'Case studies on cost optimization',
+    'Implementing tagging strategies and cost allocation'
+  ]
+},
+
+{
+  title: 'Module 6: Collaboration and Communication',
+  submodules: [
+    'Engaging with key stakeholders:',
+    'CIO, CFO, Product Owners',
+    'Solution Architects, Cloud Engineers',
+    'Effective communication of FinOps insights and recommendations.'
   ]
 },
 
           {
-            title: 'Initial MLOps: Experimentation Environments in SageMaker Studio',
+            title: 'Module 7: Advanced FinOps Strategies',
             submodules: [
-'Bringing MLOps to experimentation',
-'Setting up the ML experimentation environment',
-'Demonstration: Creating and Updating a Lifecycle Configuration for SageMaker Studio',
-'Hands-On Lab: Provisioning a SageMaker Studio Environment with the AWS Service Catalog',
-'Workbook: Initial MLOps'
+'Defining KPIs and success criteria for cloud cost optimization.',
+'Continuous improvement in cloud cost management.',
+'Advanced budgeting techniques and variance analysis.'
 ]
           },
 
           {
-  title: 'Repeatable MLOps: Repositories',
+  title: 'Module 8: Certification Preparation',
   submodules: [
-    'Managing data for MLOps',
-    'Version control of ML models',
-    'Code repositories in ML' 
+    'Exam preparation for FinOps certifications',
+    'Practice tests and mock exams',
+    'Tips and strategies for passing FinOps certification exams' 
   ]
 },
 
 {
-  title: 'Repeatable MLOps: Orchestration',
+  title: 'Job Opportunities in FinOps',
   submodules: [
-    'ML pipelines',
-    'Demonstration: Using SageMaker Pipelines to Orchestrate Model Building Pipelines'
+    'Job Roles: 1. FinOps Certified Practitioner, 2. FinOps Certified Engineer, 3. FinOps Certified Professional, 4. FinOps Certified FOCUS Analyst',
+    'Job Description:  • Analyze and interpret cloud cost data to provide insights and recommendations. • Collaborate with cross-functional teams to enforce cost allocation and tagging standards.• Monitor budgets, spend, and adherence, and report regularly to stakeholders. • Define and track cloud cost optimization KPIs and success criteria. • Work closely with finance teams on chargeback and optimization data. • Evaluate and propose strategies for continuous cost optimization. • Conduct variance analysis to identify further cost-saving opportunities. • Provide training on cost optimization best practices. • Collaborate with vendors and use third-party tools for enhanced optimization.'
   ]
 },
 
 {
-  title: 'Repeatable MLOps: Orchestration (continued)',
+  title: 'Certifications & Cost Details',
   submodules: [
-    'End-to-end orchestration with AWS Step Functions', 
-    'Hands-On Lab: Automating a Workflow with Step Functions', 
-    'End-to-end orchestration with SageMaker Projects',
-    'Demonstration: Standardizing an End-to-End ML Pipeline with SageMaker Projects',
-    'Using third-party tools for repeatability',
-    'Governance and security',
-    'Demonstration: Exploring Security Best Practices for SageMaker',
-    'Workbook: Repeatable MLOps',
-    'Demonstration: Exploring Human-in-the-Loop During Inference'
+    'FinOps Certified Practitioner - Exam Cost: 300 USD', 
+    'FinOps Certified Engineer - Exam Cost: 699 USD', 
+    'FinOps Certified Professional - Exam Cost: 1,999 USD',
+    'FinOps Certified FOCUS Analyst - Exam Cost: 400 USD'
 
   ]
 },
-           {
-            title: 'Reliable MLOps: Scaling and Testing',
-            submodules: ['Scaling and multi-account strategies',
-'Testing and traffic-shifting',
-'Demonstration: Using SageMaker Inference Recommender',
-'Hands-On Lab: Testing Model Variants',
-'Summary']
-          },
+//            {
+//             title: 'Reliable MLOps: Scaling and Testing',
+//             submodules: ['Scaling and multi-account strategies',
+// 'Testing and traffic-shifting',
+// 'Demonstration: Using SageMaker Inference Recommender',
+// 'Hands-On Lab: Testing Model Variants',
+// 'Summary']
+//           },
 
-          {
-  title: 'Reliable MLOps: Scaling and Testing (continued)',
-  submodules: [
-'Hands-On Lab: Shifting Traffic',
-'Workbook: Multi-account strategies'
-]
-},
+//           {
+//   title: 'Reliable MLOps: Scaling and Testing (continued)',
+//   submodules: [
+// 'Hands-On Lab: Shifting Traffic',
+// 'Workbook: Multi-account strategies'
+// ]
+// },
 
-          {
-  title: 'Reliable MLOps: Monitoring',
-  submodules: [
-'The importance of monitoring in ML',
-'Hands-On Lab: Monitoring a Model for Data Drift',
-'Operations considerations for model monitoring',
-'Remediating problems identified by monitoring ML solutions',
-'Workbook: Reliable MLOps',
-'Hands-On Lab: Building and Troubleshooting an ML Pipeline'
-]
-},
+//           {
+//   title: 'Reliable MLOps: Monitoring',
+//   submodules: [
+// 'The importance of monitoring in ML',
+// 'Hands-On Lab: Monitoring a Model for Data Drift',
+// 'Operations considerations for model monitoring',
+// 'Remediating problems identified by monitoring ML solutions',
+// 'Workbook: Reliable MLOps',
+// 'Hands-On Lab: Building and Troubleshooting an ML Pipeline'
+// ]
+// },
 
           // Module 2
   //         {
@@ -273,12 +270,12 @@ export class DevOpsCourseContentMob {
           //             'Summary']
           // },
           // Module 9
-          {
-            title: 'Project Work ',
-            submodules: ['Project-1 : ',
-                                      'Project-2 : ',
-                                      'Project-3 : ']
-                                              },
+          // {
+          //   title: 'Project Work ',
+          //   submodules: ['Project-1 : ',
+          //                             'Project-2 : ',
+          //                             'Project-3 : ']
+          //                                     },
 
        ]
        }
