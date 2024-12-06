@@ -12,7 +12,7 @@ export class RegularAWSCourseContent {
 
   courses = [
     {
-      title: 'DevOps On Multi-Cloud',
+      title: 'AWS DevOps',
       modules: [
         // Course 2 modules and submodules
         // Module 1
