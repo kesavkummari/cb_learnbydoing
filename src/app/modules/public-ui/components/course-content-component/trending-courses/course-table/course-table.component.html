@@ -1008,14 +1008,15 @@
       <ng-container *ngIf="selectedTab === 'devops'">
         <div class="content-columns">
           <div class="left-column">
-            <h2 style="padding-bottom: 10px;">AWS DevOps Content - Modules</h2>
+            <h2 style="padding-bottom: 10px;">DevOps Content - Modules</h2>
 <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">OS - Windows & Unix/Linux </div>
-<div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS - Analytics</div>
-<div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS - Application Integration</div>
-<div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS - Compute</div>
-<div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS - Containers</div> 
-<div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS - Database</div>
-<div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS - Storage</div>
+<div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">DevOps </div>
+<div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Shell Scripting</div> 
+<div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Python Scripting</div>
+<div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Use Cases</div>
+<div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">3+ Projects</div>
+
+<!-- <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS - Storage</div>
 <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS - Developer Tools</div>
 <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS - Management and Governance</div>
 <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS - Networking and Content Delivery</div>
@@ -1045,7 +1046,7 @@
 <div class="module" (click)="selectModule('M30')" [class.active-module]="selectedModule === 'M30'">Python: Flow Control</div>
 <div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
 <div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div>
-<div class="module" (click)="selectModule('M0')" [class.active-module]="selectedModule === 'M0'">Shell Scripting </div>
+<div class="module" (click)="selectModule('M0')" [class.active-module]="selectedModule === 'M0'">Shell Scripting </div> -->
 
 </div>
 
@@ -1136,7 +1137,7 @@
   
 
   <ng-container *ngIf="selectedModule === 'M2'">
-    <h2>AWS - Analytics Services</h2>
+    <h2>DevOps - Module</h2>
     <hr style="
         position: unset;
         border: none;
@@ -1147,17 +1148,24 @@
     ">
 
     <ul>
-        <li>Amazon Athena</li>
-        <li>Amazon OpenSearch Service</li>
-        <li>Amazon QuickSight</li>
-        <li>Amazon EMR</li>
-        <li>Amazon Kinesis Data Firehose</li>
-        <li>Amazon Kinesis Data Streams</li>
+<li>Git</li>
+<li>GitHub/GitLab/Bitbucket</li>
+<li>Jenkins</li>
+<li>SonarQube</li>
+<li>JFrog</li>
+<li>Tomcat</li>
+<li>Ansible</li>
+<li>Terraform</li>
+<li>Packer</li>
+<li>Docker</li>
+<li>Kubernates</li>
+<li>NewRelic</li>
+
     </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
-  <h2>AWS - Application Integration</h2>
+  <h2>Use Cases</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1169,8 +1177,14 @@
 
   <ul>
       <!-- <li>Amazon AppFlow</li> -->
-      <li>Amazon EventBridge (Amazon CloudWatch Events)</li>
-      <li>Amazon AppFlow</li>
+      <li>Java WebApplication CI/CD Pipeline</li>
+      <li>Angular WebApplication CI/CD Pipeline</li>
+      <li>React WebApplication CI/CD Pipeline</li>
+      <li>Cloud Infrastructure using CI/CD Pipeline</li>
+      <li>Security Integration in CI/CD Pipeline</li>
+      <li>Upgrades</li>
+      <li>Deployment Strategies</li>
+      <li>Migration Strategies</li>
       <br>
       
       
@@ -1202,7 +1216,7 @@
 </ng-container>
 
  <ng-container *ngIf="selectedModule === 'M5'">
-  <h2>AWS - Container Services</h2>
+  <h2>Shell Scripting</h2>
   <hr style="
       position: unset;
       border: none;
@@ -1213,22 +1227,19 @@
   ">
 
   <ul>
-      <li>AWS App2Container</li>
-      <li>AWS Copilot</li>
-      <li>Amazon EKS Distro</li>
-      <li>Amazon Elastic Container Registry (Amazon ECR)</li>
-      <li>Amazon Elastic Container Service (Amazon ECS)</li>
-      <li>Amazon Elastic Kubernetes Service (Amazon EKS)</li>
-      <li>AWS Fargate</li>
-      <li>Red Hat OpenShift Service on AWS (ROSA)</li>
-      <br>
+<li>Introduction</li>
+<li>Variables</li>
+<li>Control Structures and Loops</li>
+<li>Advanced Concepts</li>
+<li>Real-world Applications and Best Practices</li>
+<br>
       
       
   </ul>
 </ng-container> 
 
 <ng-container *ngIf="selectedModule === 'M6'">
-  <h2>AWS - Database Services</h2>
+  <h2>Python Scripting </h2>
   <hr style="
       position: unset;
       border: none;
@@ -1239,13 +1250,13 @@
   ">
 
 <ul>
-  <li>Amazon Aurora</li>
-  <li>Amazon Aurora Serverless v2</li>
-  <li>AWS Database Migration Service (AWS DMS)</li>
-  <li>Amazon DocumentDB (with MongoDB compatibility)</li>
-  <li>Amazon DynamoDB</li>
-  <li>Amazon ElastiCache</li>
-  <li>Amazon MemoryDB for Redis</li>
+  <li>Introduction</li>
+  <li>Functions</li>
+  <li>Object & Class</li>
+  <li>Data Types</li>
+  <li>Flow Control</li>
+  <li>File Handling</li>
+  <li>Modules</li>
   <li>Amazon RDS</li>
   <li>Amazon Redshift</li>
   <br>

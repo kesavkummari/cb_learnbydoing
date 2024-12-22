@@ -2,7 +2,7 @@
   <div class="main-tab">
     <div class="sub-tabs">
     <!--   <div  class="sub-tab" (click)="selectTab('os')" [class.active]="selectedTab === 'os'">   OS [Windows & Linux]</div> -->
-     <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">FinOps</div>   
+     <div class="sub-tab" (click)="selectTab('aws')" [class.active]="selectedTab === 'aws'">AWS</div>   
       <!-- <div class="sub-tab" style="color: #421740;" (click)="selectTab('devops')" [class.active]="selectedTab === 'devops'">AWS DevOps - Shell & Python Scripting </div>
      <div class="sub-tab" (click)="selectTab('mlops')" [class.active]="selectedTab === 'mlops'" >MLOps </div> 
     <div class="sub-tab" (click)="selectTab('python')" [class.active]="selectedTab === 'python'" style="margin-right: 0;">Python </div> -->
@@ -216,21 +216,21 @@
       <ng-container *ngIf="selectedTab === 'aws'">
         <div class="content-columns">
           <div class="left-column">
-            <h2>FinOps Content - Modules</h2>
-            <div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">Module 1 : Introduction to FinOps</div>
-            <div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">Module 2 : Cloud Computing Platforms </div>
-            <div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">Module 3 : FinOps Tools and Platforms </div>
-            <div class="module" (click)="selectModule('M330')" [class.active-module]="selectedModule === 'M330'">Module 4 : AWS-Specific Cost Management Tools </div>
-            <div class="module" (click)="selectModule('M331')" [class.active-module]="selectedModule === 'M331'">Module 5 : AZURE-Specific Cost Management Tools </div>
+            <h2>AWS Course Content</h2>
+            <div class="module" (click)="selectModule('M01')" [class.active-module]="selectedModule === 'M01'">OS</div>
+            <div class="module" (click)="selectModule('M02')" [class.active-module]="selectedModule === 'M02'">Cloud Computing Concepts </div>
+            <div class="module" (click)="selectModule('M03')" [class.active-module]="selectedModule === 'M03'">Use Cases </div>
+            <div class="module" (click)="selectModule('M330')" [class.active-module]="selectedModule === 'M330'">3+ Projects </div>
+            <!-- <div class="module" (click)="selectModule('M331')" [class.active-module]="selectedModule === 'M331'">Module 5 : AZURE-Specific Cost Management Tools </div>
             <div class="module" (click)="selectModule('M332')" [class.active-module]="selectedModule === 'M332'">Module 6 : GCP-Specific Cost Management Tools </div>
-            <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Module 7 : FinOps Roles and Responsibilities</div>
+            <div class="module" (click)="selectModule('M04')" [class.active-module]="selectedModule === 'M04'">Module 7 : FinOps Roles and Responsibilities</div> -->
             <!-- <div class="module" (click)="selectModule('M05')" [class.active-module]="selectedModule === 'M05'">Docker & Kubernetes</div> -->
-            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Module 8: Practical FinOps</div>
+            <!-- <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Module 8: Practical FinOps</div>
             <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Module 9: Collaboration and Communication</div>
             <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Module 10: Advanced FinOps Strategies</div>
             <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Module 11: Certification Preparation</div>
             <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Job Opportunities in FinOps</div>
-            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Certifications & Cost Details </div>
+            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Certifications & Cost Details </div> -->
    
     
           </div>
@@ -241,7 +241,7 @@
             </ng-container>
 
             <ng-container *ngIf="selectedModule === 'M01'">
-              <h2>  Module 1: Introduction to FinOps</h2>
+              <h2>Windows, Unix/Linux Fundamentals</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -252,14 +252,26 @@
               ">
           
               <ul>
-                  <li>Overview of FinOps and its importance in cloud cost management.</li>
-                  <li>Understanding the FinOps framework and lifecycle</li>
-                  <li>Key concepts: <br> 1. Cloud financial management, <br>2. Cost visibility, and  <br> 3. Optimization strategies.</li>
+                <li>Unix & Linux History & Distributions</li>
+                <li>Basic & Advanced Commands</li>
+                <li>Run Levels</li>
+                <li>Boot Process</li>
+                <li>File System</li>
+                <li>File & Directory Management</li>
+                <li>Text Editors</li>
+                <li>Permissions</li>
+                <li>User & Group Management</li>
+                <li>Package Management</li>
+                <li>Controlling Services & Daemons</li>
+                <li>Process Management</li>
+                <li>Log Management</li>
+                <li>WebServer - Windows IIS, Apache2, Nginx & Httpd</li>
+                <li>Database Servers - MySQL, Mariadb & PostgreSQL</li>
               </ul>
             </ng-container>            
 
             <ng-container *ngIf="selectedModule === 'M02'">
-              <h2>  Module 2: Cloud Computing Platforms</h2>
+              <h2>Cloud Computing Topics</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -270,18 +282,30 @@
               ">
           
               <ul>
-                  <li>Detailed exploration of cloud platforms</li>
-                  <br>
-                  <li>AWS: Core services, cost management tools, and best practices </li>
-                  <br>
-                  <li>Azure: Key services, cost control features, and optimization techniques</li>
-                  <br>
-                  <li>GCP: Service overview, pricing models, and cost-saving strategies</li>
+                <li>Analytics</li>
+                <li>Application Integration</li>
+                <li>Artificial Intelligence</li>
+                <li>Business Applications</li>
+                <li>Cloud Financial Management</li>
+                <li>Compute</li>
+                <li>Contact Center</li>
+                <li>Containers</li>
+                <li>Database</li>
+                <li>Developer Tools</li>
+                <li>End User Computing</li>
+                <li>Front-End Web & Mobile</li>
+                <li>Management & Governance</li>
+                <li>Media Services</li>
+                <li>Migration & Modernization</li>
+                <li>Networking & Content Delivery</li>
+                <li>Security, Identity, & Compliance</li>
+                <li>Serverless</li>
+                <li>Storage</li>
               </ul>
             </ng-container>     
 
             <ng-container *ngIf="selectedModule === 'M03'">
-              <h2>  Module 3: FinOps Tools and Platforms</h2>
+              <h2>  Use Cases</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -291,16 +315,13 @@
                   margin-right: inherit;">
           
               <ul>
-                <li> Cloud Cost Management Tools:
-	<br> •	Flexera
-	<br> •	CloudHealth
-	<br> •	IBM Apptio
-	<br> •	ParkMyCloud
-	<br> •	Turbonomic</li> <br> 
-  <li> Business Intelligence Tools:
-    <br> •	Power BI
-    <br> •	Tableau</li>
-    <br> 
+                <li> 
+	<br> •	Monitoring
+	<br> •	Infrastructure
+	<br> •	Security
+  <br> •	Disaster Recovery
+  <br> •	Backup and Recovery
+  <br> •	Cost Optimisation
   
   </ul>
             </ng-container>     
@@ -308,7 +329,7 @@
           
 
             <ng-container *ngIf="selectedModule === 'M330'">
-              <h2>  Module 4: AWS-Specific Cost Management Tools</h2>
+              <h2>  3 Projects</h2>
               <hr style="
                   position: unset;
                   border: none;
@@ -318,68 +339,17 @@
                   margin-right: inherit;">
           
               <ul>
-                <h3>AWS</h3>
                 <ul>
-                  <li>Cost Management Dashboard
-                    <ul>
-                      <li>1.1 AWS Cost Explorer</li>
-                    </ul>
-                  </li>
-                  <li>Budgeting
-                    <ul>
-                      <li>2.1 AWS Budgets</li>
-                    </ul>
-                  </li>
-                  <li>Resource Optimization
-                    <ul>
-                      <li>3.1 AWS Compute Optimizer</li>
-                    </ul>
-                  </li>
-                  <li>Storage Management
-                    <ul>
-                      <li>4.1 AWS Storage Lens, S3 Lifecycle Management, AWS Storage Gateway</li>
-                    </ul>
-                  </li>
-                  <li>Spot Instance/Preemptible VMs
-                    <ul>
-                      <li>5.1 AWS Spot Instance Advisor</li>
-                    </ul>
-                  </li>
-                  <li>Instance Auto Scaling
-                    <ul>
-                      <li>6.1 EC2 Auto Scaling Groups with Spot Instances</li>
-                    </ul>
-                  </li>
-                  <li>Network Optimization
-                    <ul>
-                      <li>7.1 AWS Global Accelerator</li>
-                    </ul>
-                  </li>
-                  <li>Cost Tracking
-                    <ul>
-                      <li>8.1 AWS Cost and Usage Report</li>
-                    </ul>
-                  </li>
-                  <li>Alerts for Cost
-                    <ul>
-                      <li>9.1 AWS Budgets</li>
-                    </ul>
-                  </li>
-                  <li>Resource Monitoring and Metrics
-                    <ul>
-                      <li>10.1 CloudWatch Metrics</li>
-                    </ul>
-                  </li>
-                  <li>Advisor for Best Practices
-                    <ul>
-                      <li>11.1 AWS Trusted Advisor</li>
-                    </ul>
-                  </li>
-                  <li>Storage Gateway
-                    <ul>
-                      <li>12.1 AWS Storage Gateway</li>
-                    </ul>
-                  </li>
+                  <li>Monitoring
+                  <li>ITSM
+                  <li>Java WebApplication
+                  <li>Angular WebApplication
+                  <li>React WebApplication
+                  <li>Infrastructure using Terraform 
+                  <li>Security 
+                  <li>Migration
+                  <li>Upgrades
+                  <li>Cost Optimisation
                 </ul>  
   </ul>
             </ng-container>   
