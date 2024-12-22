@@ -16,141 +16,147 @@ export class DevOpsCourseContentMob {
         // Course 2 modules and submodules
         // Module 1
         {
-          title: 'Module 1: Introduction to FinOps',
-          submodules: [ 'Overview of FinOps and its importance in cloud cost management',
-'Understanding the FinOps framework and lifecycle',
-'Key concepts:',
-'1. Cloud financial management',
-'2. Cost visibility, and',
-'3. Optimization strategies.',
-   'Linux & Unix Distributions',]
+          title: 'OS Module',
+          submodules: [ 
+            'Unix & Linux History & Distributions',
+            'Basic & Advanced Commands',
+            'Run Levels',
+            'Boot Process',
+            'File System',
+            'File & Directory Management',
+            'Text Editors',
+            'Permissions',
+            'User & Group Management',
+            'Package Management',
+            'Controlling Services & Daemons',
+            'Process Management',
+            'Log Management',
+            'WebServer - Windows IIS, Apache2, Nginx & Httpd',
+            'Database Servers - MySQL, Mariadb & PostgreSQL',
+          ]
                               },
                                 
 {
-  title: 'Module 2: Cloud Computing Platforms',
+  title: 'Cloud Computing Topics',
   submodules: [
-    'Detailed exploration of cloud platforms',
-    'AWS: Core services, cost management tools, and best practices',
-    'Azure: Key services, cost control features, and optimization techniques',
-    'GCP: Service overview, pricing models, and cost-saving strategies',
+'Analytics',
+'Application Integration',
+'Artificial Intelligence',
+'Business Applications',
+'Cloud Financial Management',
+'Compute',
+'Contact Center',
+'Containers',
+'Database',
+'Developer Tools',
+'End User Computing',
+'Front-End Web & Mobile',
+'Management & Governance',
+'Media Services',
+'Migration & Modernization',
+'Networking & Content Delivery',
+'Security, Identity, & Compliance',
+'Serverless',
+'Storage',
   ]
 },
 {
-  title: 'Module 3: FinOps Tools and Platforms',
+  title: 'Use Cases',
   submodules: [
-    'Cloud Cost Management Tools:',
-'Flexera',
-'CloudHealth',
-'IBM Apptio',
-'ParkMyCloud',
-'Turbonomic',
-    'Business Intelligence Tools:',
-    'Power BI',
-    'Tableau',
-    'AWS-Specific Cost Management Tools:',
-'AWS Trusted Advisor',
-'AWS Compute Optimizer',
-'AWS Storage Lens',
-'S3 Lifecycle Management',
-'AWS Storage Gateway',
-'CloudWatch Metrics',
-'AWS Spot Instance Advisor',
-'EC2 Auto Scaling Groups with Spot Instances',
-'AWS Global Accelerator',
-'AWS Cost Explorer',
-'AWS Cost and Usage Report',
-'AWS Budgets',
-  ]
-},
-
-{
-  title: 'Module 4: FinOps Roles and Responsibilities',
-  submodules: [
-    'Roles in FinOps:',
-'FinOps Certified Practitioner',
-'FinOps Certified Engineer',
-'FinOps Certified Professional',
-'FinOps Certified FOCUS Analyst',
-    'Key Responsibilities:',
-'Cloud Cost Management and Optimization',
-'Budgeting and Forecasting',
-'Financial Reporting and Analysis',
-'Collaboration with Cross-Functional Teams',
-'Governance and Compliance',
-'Tooling and Automation',
-'Strategic Advisory',
+'Monitoring',
+'Infrastructure',
+'Security',
+'Disaster Recovery',
+'Backup and Recovery',
+'Cost Optimisation',
   ]
 },
 
 {
-  title: 'Module 5: Practical FinOps',
+  title: '3 Live Projects',
   submodules: [
-    'Hands-on labs using AWS, Azure, and GCP',
-'Case studies on cost optimization',
-'Implementing tagging strategies and cost allocation',
+'Monitoring',
+'ITSM',
+'Java WebApplication',
+'Angular WebApplication',
+'React WebApplication',
+'Infrastructure using Terraform',
+'Security',
+'Migration',
+'Upgrades',
+'Cost Optimisation',
   ]
 },
 
-{
-  title: 'Module 6: Collaboration and Communication',
-  submodules: [
-    'Engaging with key stakeholders:',
-    'CIO, CFO, Product Owners',
-    'Effective communication of FinOps insights and recommendations.'
-  ]
-},
+// {
+//   title: 'Module 5: Practical FinOps',
+//   submodules: [
+//     'Hands-on labs using AWS, Azure, and GCP',
+// 'Case studies on cost optimization',
+// 'Implementing tagging strategies and cost allocation',
+//   ]
+// },
 
-          {
-            title: 'Module 7: Advanced FinOps Strategies',
-            submodules: [
-'Defining KPIs and success criteria for cloud cost optimization.',
-'Continuous improvement in cloud cost management.',
-'Advanced budgeting techniques and variance analysis.'
-]
-          },
+// {
+//   title: 'Module 6: Collaboration and Communication',
+//   submodules: [
+//     'Engaging with key stakeholders:',
+//     'CIO, CFO, Product Owners',
+//     'Effective communication of FinOps insights and recommendations.'
+//   ]
+// },
 
-          {
-  title: 'Module 8: Certification Preparation',
-  submodules: [
-    'Exam preparation for FinOps certifications',
-    'Practice tests and mock exams',
-    'Tips and strategies for passing FinOps certification exams' 
-  ]
-},
+//           {
+//             title: 'Module 7: Advanced FinOps Strategies',
+//             submodules: [
+// 'Defining KPIs and success criteria for cloud cost optimization.',
+// 'Continuous improvement in cloud cost management.',
+// 'Advanced budgeting techniques and variance analysis.'
+// ]
+//           },
 
-{
-  title: 'Job Opportunities in FinOps',
-  submodules: [
-    'Job Roles:',
-'FinOps Certified Practitioner',
-'FinOps Certified Engineer',
-'FinOps Certified Professional',
-'FinOps Certified FOCUS Analyst',
-    'Job Description:',
-'Analyze and interpret cloud cost data to provide insights and recommendations.',
-'Collaborate with cross-functional teams to enforce cost allocation and tagging standards.',
-'Monitor budgets, spend, and adherence, and report regularly to stakeholders.',
-'Define and track cloud cost optimization KPIs and success criteria.',
-'Work closely with finance teams on chargeback and optimization data.',
-'Evaluate and propose strategies for continuous cost optimization.',
-'Conduct variance analysis to identify further cost-saving opportunities.',
-'Provide training on cost optimization best practices.',
-'Collaborate with vendors and use third-party tools for enhanced optimization.',
-  ]
-},
+//           {
+//   title: 'Module 8: Certification Preparation',
+//   submodules: [
+//     'Exam preparation for FinOps certifications',
+//     'Practice tests and mock exams',
+//     'Tips and strategies for passing FinOps certification exams' 
+//   ]
+// },
 
-{
-  title: 'Certifications & Cost Details',
-  submodules: [
-    'FinOps Certified Practitioner - Exam Cost: 300 USD', 
-    'FinOps Certified Engineer - Exam Cost: 699 USD', 
-    'FinOps Certified Professional - Exam Cost: 1,999 USD',
-    'FinOps Certified FOCUS Analyst - Exam Cost: 400 USD'
+// {
+//   title: 'Job Opportunities in FinOps',
+//   submodules: [
+//     'Job Roles:',
+// 'FinOps Certified Practitioner',
+// 'FinOps Certified Engineer',
+// 'FinOps Certified Professional',
+// 'FinOps Certified FOCUS Analyst',
+//     'Job Description:',
+// 'Analyze and interpret cloud cost data to provide insights and recommendations.',
+// 'Collaborate with cross-functional teams to enforce cost allocation and tagging standards.',
+// 'Monitor budgets, spend, and adherence, and report regularly to stakeholders.',
+// 'Define and track cloud cost optimization KPIs and success criteria.',
+// 'Work closely with finance teams on chargeback and optimization data.',
+// 'Evaluate and propose strategies for continuous cost optimization.',
+// 'Conduct variance analysis to identify further cost-saving opportunities.',
+// 'Provide training on cost optimization best practices.',
+// 'Collaborate with vendors and use third-party tools for enhanced optimization.',
+//   ]
+// },
+
+// {
+//   title: 'Certifications & Cost Details',
+//   submodules: [
+//     'FinOps Certified Practitioner - Exam Cost: 300 USD', 
+//     'FinOps Certified Engineer - Exam Cost: 699 USD', 
+//     'FinOps Certified Professional - Exam Cost: 1,999 USD',
+//     'FinOps Certified FOCUS Analyst - Exam Cost: 400 USD'
 
 
 
-  ]
-},
+//   ]
+// },
 //            {
 //             title: 'Reliable MLOps: Scaling and Testing',
 //             submodules: ['Scaling and multi-account strategies',
@@ -311,12 +317,12 @@ export class DevOpsCourseContentMob {
           //             'Summary']
           // },
           // Module 9
-          {
-            title: 'Project Work ',
-            submodules: ['Project-1 : AWS ',
-                                      'Project-2 : AZURE ',
-                                      'Project-3 : GCP ']
-                                              },
+          // {
+          //   title: 'Project Work ',
+          //   submodules: ['Project-1 : AWS ',
+          //                             'Project-2 : AZURE ',
+          //                             'Project-3 : GCP ']
+          //                                     },
 
        ]
        }

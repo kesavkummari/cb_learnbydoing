@@ -12,7 +12,7 @@ export class RegularAWSCourseContent {
 
   courses = [
     {
-      title: 'AWS DevOps',
+      title: 'DevOps',
       modules: [
         // Course 2 modules and submodules
         // Module 1
@@ -153,176 +153,176 @@ export class RegularAWSCourseContent {
                         ]
                     },
                                 
-           {
-   title: 'Analytics',
-   submodules: [
-     'Amazon Athena',
-     'Amazon EMR (Elastic MapReduce)',
-     'Amazon Kinesis Data Firehose',
-     'Amazon Kinesis Data Streams',
-     'Amazon OpenSearch Service',
-     'Amazon QuickSight'
-   ]
- },
-{
-  title: 'Application Integration',
-  submodules: [
-    'Amazon AppFlow',
-    'Amazon EventBridge (Amazon CloudWatch Events)',
+//            {
+//    title: 'Analytics',
+//    submodules: [
+//      'Amazon Athena',
+//      'Amazon EMR (Elastic MapReduce)',
+//      'Amazon Kinesis Data Firehose',
+//      'Amazon Kinesis Data Streams',
+//      'Amazon OpenSearch Service',
+//      'Amazon QuickSight'
+//    ]
+//  },
+// {
+//   title: 'Application Integration',
+//   submodules: [
+//     'Amazon AppFlow',
+//     'Amazon EventBridge (Amazon CloudWatch Events)',
     
     
-  ]
-},
-{
-  title: 'Compute',
-  submodules: [
-     'AWS App Runner',
-    'Amazon EC2',
-    'Amazon EC2 Auto Scaling',
-    'EC2 Image Builder',
-    'AWS Elastic Beanstalk',
-    'AWS Serverless Application Repository'
-  ]
-},
-  {
-   title: 'Containers',
-   submodules: [
-     'AWS App2Containe',
-     'AWS Copilot',
-     'Amazon Elastic Container Registry (Amazon ECR)',
-     'Amazon Elastic Container Service (Amazon ECS)',
-     'Amazon Elastic Kubernetes Service (Amazon EKS)',
-     'Amazon EKS Distro',
-     'AWS Fargate',
-     'Red Hat OpenShift Service on AWS (ROSA)'
-   ]
- },
-{
-  title: 'Database',
-  submodules: [
-    'Amazon Aurora',
-    'Amazon Aurora Serverless v2',
-    'AWS Database Migration Service (AWS DMS)',
-    'Amazon DocumentDB (with MongoDB compatibility)',
-    'Amazon DynamoDB',
-    'Amazon ElastiCache',
-    'Amazon MemoryDB for Redis',
-    'Amazon RDS',
-    'Amazon Redshift'
-  ]
-},
-{
-  title: 'Storage',
-  submodules: [
-    'AWS Backup',
-    'Amazon Elastic Block Store (Amazon EBS)',
-    'AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)',
-    'Amazon Elastic File System (Amazon EFS)',
-    'Amazon FSx for Lustre',
-    'Amazon FSx for NetApp ONTAP',
-    'Amazon FSx for OpenZFS',
-    'Amazon S3',
-    'Amazon FSx for Windows File Server',
-    'Amazon S3 Glacier',
-    'AWS Storage Gateway'
-  ]
-},
-{
-  title: 'Developer Tools',
-  submodules: [
-    'AWS Cloud Development Kit (AWS CDK)',
-    'AWS CloudShell',
-    'AWS CodeArtifact',
-    'AWS CodeBuild',
-    'AWS CodeCommit',
-    'AWS CodeDeploy',
-    'Amazon CodeGuru',
-    'AWS CodePipeline',
-    'AWS CodeStar',
-    'AWS Command Line Interface (AWS CLI)',
-    'AWS Fault Injection Simulator',
-    'AWS SDKs and Tools',
-    'AWS X-Ray'
+//   ]
+// },
+// {
+//   title: 'Compute',
+//   submodules: [
+//      'AWS App Runner',
+//     'Amazon EC2',
+//     'Amazon EC2 Auto Scaling',
+//     'EC2 Image Builder',
+//     'AWS Elastic Beanstalk',
+//     'AWS Serverless Application Repository'
+//   ]
+// },
+//   {
+//    title: 'Containers',
+//    submodules: [
+//      'AWS App2Containe',
+//      'AWS Copilot',
+//      'Amazon Elastic Container Registry (Amazon ECR)',
+//      'Amazon Elastic Container Service (Amazon ECS)',
+//      'Amazon Elastic Kubernetes Service (Amazon EKS)',
+//      'Amazon EKS Distro',
+//      'AWS Fargate',
+//      'Red Hat OpenShift Service on AWS (ROSA)'
+//    ]
+//  },
+// {
+//   title: 'Database',
+//   submodules: [
+//     'Amazon Aurora',
+//     'Amazon Aurora Serverless v2',
+//     'AWS Database Migration Service (AWS DMS)',
+//     'Amazon DocumentDB (with MongoDB compatibility)',
+//     'Amazon DynamoDB',
+//     'Amazon ElastiCache',
+//     'Amazon MemoryDB for Redis',
+//     'Amazon RDS',
+//     'Amazon Redshift'
+//   ]
+// },
+// {
+//   title: 'Storage',
+//   submodules: [
+//     'AWS Backup',
+//     'Amazon Elastic Block Store (Amazon EBS)',
+//     'AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)',
+//     'Amazon Elastic File System (Amazon EFS)',
+//     'Amazon FSx for Lustre',
+//     'Amazon FSx for NetApp ONTAP',
+//     'Amazon FSx for OpenZFS',
+//     'Amazon S3',
+//     'Amazon FSx for Windows File Server',
+//     'Amazon S3 Glacier',
+//     'AWS Storage Gateway'
+//   ]
+// },
+// {
+//   title: 'Developer Tools',
+//   submodules: [
+//     'AWS Cloud Development Kit (AWS CDK)',
+//     'AWS CloudShell',
+//     'AWS CodeArtifact',
+//     'AWS CodeBuild',
+//     'AWS CodeCommit',
+//     'AWS CodeDeploy',
+//     'Amazon CodeGuru',
+//     'AWS CodePipeline',
+//     'AWS CodeStar',
+//     'AWS Command Line Interface (AWS CLI)',
+//     'AWS Fault Injection Simulator',
+//     'AWS SDKs and Tools',
+//     'AWS X-Ray'
     
 
-  ]
-},
+//   ]
+// },
 
-{
-  title: 'Management & Governance',
-  submodules: [
-    'AWS Auto Scaling',
-    'AWS CloudFormation',
-    'AWS CloudTrail',
-    'Amazon CloudWatch',
-    'Amazon CloudWatch Logs',
-    'AWS Compute Optimizer',
-    'AWS Config',
-    'AWS Control Tower',
-    'AWS Health',
-    'AWS License Manager',
-    'Amazon Managed Grafana',
-    'Amazon Managed Service for Prometheus',
-    'AWS OpsWorks',
-    'AWS Organizations',
-    'AWS Personal Health Dashboard',
-    'AWS Proton',
-    'AWS Resilience Hub',
-    'AWS Service Catalog',
-    'AWS Systems Manager',
-    'AWS Trusted Advisor'
+// {
+//   title: 'Management & Governance',
+//   submodules: [
+//     'AWS Auto Scaling',
+//     'AWS CloudFormation',
+//     'AWS CloudTrail',
+//     'Amazon CloudWatch',
+//     'Amazon CloudWatch Logs',
+//     'AWS Compute Optimizer',
+//     'AWS Config',
+//     'AWS Control Tower',
+//     'AWS Health',
+//     'AWS License Manager',
+//     'Amazon Managed Grafana',
+//     'Amazon Managed Service for Prometheus',
+//     'AWS OpsWorks',
+//     'AWS Organizations',
+//     'AWS Personal Health Dashboard',
+//     'AWS Proton',
+//     'AWS Resilience Hub',
+//     'AWS Service Catalog',
+//     'AWS Systems Manager',
+//     'AWS Trusted Advisor'
     
     
-  ]
-},
+//   ]
+// },
 
 
-{
-  title: 'Networking and Content Delivery',
-  submodules: [
-    'Amazon API Gateway',
-    'AWS Client VPN',
-    'Amazon CloudFront',
-    'Elastic Load Balancing (ELB)',
-    'AWS PrivateLink',
-    'Amazon Route 53',
-    'AWS Site-to-Site VPN',
-    'AWS Transit Gateway',
-    'Amazon VPC'
-  ]
-},
-{
-  title: 'Security, Identity, and Compliance ',
-  submodules: [
-    'AWS Certificate Manager (ACM)',
-    'AWS CloudHSM',
-    'Amazon Cognito',
-    'Amazon Detective',
-    'AWS Directory Service',
-    'Amazon GuardDuty', 
-    'AWS Identity and Access Management (IAM)',
-    'Amazon Inspector',
-    'AWS Key Management Service (AWS KMS)',  
-    'Amazon Macie', 
-    'AWS Network Firewall',
-    'AWS Resource Access Manager (AWS RAM)',
-    'AWS Secrets Manager', 
-    'AWS Security Hub', 
-    'AWS Security Token Service (AWS STS)',
-    'AWS Shield', 
-    'AWS Single Sign-On',
-    'AWS WAF'
-  ]
-},
-          {
-            title: 'Serverless',
-            submodules: ['AWS Lambda',
-'AWS Serverless Application Model (AWS SAM)',
-'Amazon Simple Email Service (SES)',
-'Amazon Simple Notification Service (Amazon SNS)',
-'Amazon Simple Queue Service (Amazon SQS)',
-'AWS Step Functions']
-          },
+// {
+//   title: 'Networking and Content Delivery',
+//   submodules: [
+//     'Amazon API Gateway',
+//     'AWS Client VPN',
+//     'Amazon CloudFront',
+//     'Elastic Load Balancing (ELB)',
+//     'AWS PrivateLink',
+//     'Amazon Route 53',
+//     'AWS Site-to-Site VPN',
+//     'AWS Transit Gateway',
+//     'Amazon VPC'
+//   ]
+// },
+// {
+//   title: 'Security, Identity, and Compliance ',
+//   submodules: [
+//     'AWS Certificate Manager (ACM)',
+//     'AWS CloudHSM',
+//     'Amazon Cognito',
+//     'Amazon Detective',
+//     'AWS Directory Service',
+//     'Amazon GuardDuty', 
+//     'AWS Identity and Access Management (IAM)',
+//     'Amazon Inspector',
+//     'AWS Key Management Service (AWS KMS)',  
+//     'Amazon Macie', 
+//     'AWS Network Firewall',
+//     'AWS Resource Access Manager (AWS RAM)',
+//     'AWS Secrets Manager', 
+//     'AWS Security Hub', 
+//     'AWS Security Token Service (AWS STS)',
+//     'AWS Shield', 
+//     'AWS Single Sign-On',
+//     'AWS WAF'
+//   ]
+// },
+//           {
+//             title: 'Serverless',
+//             submodules: ['AWS Lambda',
+// 'AWS Serverless Application Model (AWS SAM)',
+// 'Amazon Simple Email Service (SES)',
+// 'Amazon Simple Notification Service (Amazon SNS)',
+// 'Amazon Simple Queue Service (Amazon SQS)',
+// 'AWS Step Functions']
+//           },
            {
             title: 'Software Development Life Cycle : Agile - Scrum',
             submodules: ['Getting Started with SDLC',
