@@ -51,10 +51,12 @@ import { LandingPageComponent } from './Pages/webinar/aws-webinar/landingpage';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.policy';
 import { TNCComponent } from './components/terms_and_conditions/t_n_c';
 import { CancellationRefundComponent } from './components/cancellation_and_refundpolicy/cancellation_and_refundpolicy';
-  
+import { DataAnalystComponent } from './Pages/data-analyst/data-analyst.component';
+
 const routes: Routes = [
  
   {path:'finops', component: AwsDevopsComponent},
+  {path:'data-analyst', component: DataAnalystComponent},
   {path:'awsdevops', component: JobReadyComponent},
   {path:'blogs', component: BlogsComponent},
   {path:'home', component: IntroPageComponent},
