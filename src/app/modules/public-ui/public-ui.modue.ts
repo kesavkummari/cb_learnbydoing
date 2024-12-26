@@ -16,7 +16,7 @@ import { KeyFeaturesComponent } from './components/key-features/key-features.com
 import { CorporateTrainingComponent } from './components/corporate-training/corporate-training.component';
 import { DigitalLyncComponent } from './components/digital-lync/digital-lync.component';
 import { QuestionsColComponent } from './components/questions-col/questions-col.component';
-import { CourseTableComponent } from './components/course-content-component/trending-courses/course-table/course-table.component';
+import { CourseTableComponent } from './components/course-content-component/course-table/course-table.component';
 import { CourseIntenseTableComponent } from './components/course-content-component/trending-courses/course-table-intense/course-table.component';
 import { AwsDevopsComponent } from './Pages/aws-devops/awsdevops.component'
 import { MlOpsCoursesComponent } from './components/course-content-component/aws-devops-course/mlops-courses.component'
@@ -56,7 +56,7 @@ import { MatCardModule } from '@angular/material/card'; // Import MatCardModule
 import { ReviewsColComponent } from './components/reviews/reviews.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { GoogleReviewsColComponent } from './components/reviews/google-reviews/google-reviews';
-import { RegularAWSCourseContent } from './components/course-content-component/aws-devops-course/regularawsmobilecc/regularaws';
+import { RegularAWSCourseContent } from './components/course-content-component/trending-courses/regularawsmobilecc/regularaws';
 import { RegulardownloadformComponent } from './components/course-content-component/aws-devops-course/regularCCdownload/regularcontent';
 import { DevopsDownloadComponent } from './components/course-content-component/aws-devops-course/devopsdownload-form/devops.download.component';
 import { JobReadyComponent } from './Pages/job-ready/jobready.component';
@@ -83,13 +83,13 @@ import { FeeEMIFinOpsComponent } from './components/fee-emi-popup-finOps/fee.emi
 import { FeeEMIfinOpsMain } from './components/fee-emi-popup-finOps/fee-emi-main-finOps/fee-emi-main';
 import { FeeEMIAWSComponent } from './components/fee-emi-popup-aws/fee.emi.component';
 import { FeeEMIAWSMain } from './components/fee-emi-popup-aws/fee-emi-main-aws/fee-emi-main';
-
+import { DataAnalystCourseComponent } from './components/course-content-component/data-analyst/data-analyst-course.component'
 
 @NgModule({
   declarations: [CloudIntroComponent,
     JobReadyComponent, IntroCardsComponent, ProgramsComponent, RegularFeeStructureComponent,
     JobReadyFeeComponent, TNCComponent, CancellationRefundComponent,
-    DataAnalystComponent,
+    DataAnalystComponent,DataAnalystCourseComponent,
     TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent,
     CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent,
     CourseTableComponent, IntroPageComponent, CourseIntenseTableComponent,

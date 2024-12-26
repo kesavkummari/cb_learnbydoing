@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'course-table',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./course-table.component.css']
 })
 export class CourseTableComponent {
- selectedTab: string = 'devops'; // Default selected tab
+  @Input() selectedTab: string = 'devops'; // Default selected tab
   selectedModule: string | null = null; // Default selected module is null
   showRightColumn: boolean = true; // Initialize to true to show the right column by default
   isModuleSelected: boolean = false; // Initialize to false since module content should be hidden by default

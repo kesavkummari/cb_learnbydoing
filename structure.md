@@ -1,0 +1,81 @@
+# cloudbinary
+- app-root
+    - head
+        - title
+            - Cloud Binary
+        - description
+            - Get certified with our comprehensive online training on AWS DevOps & MLOps: real-time sessions, 6-month internship, quizzes, interview prep, projects, and more!
+        - keywords
+            - edtech, AWS, DevOps, online learning, hybrid training ,certification, hands-on training, technology, mentorship
+        - author
+            - Cloud Binary
+        - og:title
+            - Learn AWS DevOps | Cloud Binary
+        - og:description    
+            - Hands-on, certification-oriented training in AWS & DevOps. Gain practical experience with real-world projects. Talk to our mentors for more information.
+        - og:image  
+            - https://www.cloudbinary.io/home
+        - og:url    
+            - https://www.cloudbinary.io
+        - icon
+            - assets/intro/newlogo.png
+    - content
+        - header ?isScreenSmall
+            - logo
+                - assets/intro/newlogo.png
+            - header-right
+                - Home
+                - Data Analyst
+                    - /data-analyst
+                - DevOps 
+                    - /awsdevops
+                -  FinOps
+                    - /finops
+                - Blogs 
+                    - /blogs
+                - Contact Us
+                    - /contactus
+        - data-analyst
+            - container
+                - left-column
+                    - title...
+                - right-column
+                    - form...
+            - 
+        - job-ready
+            - container
+                - left column
+                - right column
+
+                - trending-courses
+                    - course-table
+                - landingbanner3
+                - regularawsmobilecc
+                - job-ready-fee
+                - upcoming
+                - fee-emi-main-aws
+                - video-demo
+                - tools
+                    - "Tools and Platforms"
+                - certificate
+                - companies
+                - intro-cards
+                - faqs
+        - footer-col
+    - header__backdrop
+    - sidenav
+        - Home
+            - /home
+        - Data Analyst
+            - /data-analyst
+        - DevOps
+            - /awsdevops
+        - FinOps
+            - /finops
+        - Blogs
+            - /blogs
+        - Contact Us
+            - /contactus
+    - whatsapp
+        - https://wa.me/919100073006
+        - assets/icon-images/web.webp

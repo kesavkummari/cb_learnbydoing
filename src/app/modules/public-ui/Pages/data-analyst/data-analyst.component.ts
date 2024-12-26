@@ -4,7 +4,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'job-ready',
+  selector: 'data-analyst',
   templateUrl: './data-analyst.component.html',
   styleUrls: ['./data-analyst.component.css']
 })

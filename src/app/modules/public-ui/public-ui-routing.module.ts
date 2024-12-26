@@ -55,12 +55,13 @@ import { DataAnalystComponent } from './Pages/data-analyst/data-analyst.componen
 
 const routes: Routes = [
  
-  {path:'finops', component: AwsDevopsComponent},
+  {path:'home', component: IntroPageComponent},
   {path:'data-analyst', component: DataAnalystComponent},
   {path:'awsdevops', component: JobReadyComponent},
+  {path:'finops', component: AwsDevopsComponent},
   {path:'blogs', component: BlogsComponent},
-  {path:'home', component: IntroPageComponent},
   { path:'contactus', component: ContactUsComponent },
+
   { path: 'blog1' , component : Blog1Component },
   { path: 'frugalarchitect' , component : Blog2Component },
   { path: 'Amazon-EC2' , component : Blog3Component },
@@ -105,13 +106,6 @@ const routes: Routes = [
   { path: 'privacy-policy' , component : PrivacyPolicyComponent },
   { path: 'terms-and-conditions' , component : TNCComponent },
   { path: 'cancellation-refund-policy' , component : CancellationRefundComponent },
-  
-  
-  
-
-
-  
-  
   {
     path: '',
     component: IntroPageComponent,
