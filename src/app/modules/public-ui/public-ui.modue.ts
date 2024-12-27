@@ -84,12 +84,13 @@ import { FeeEMIfinOpsMain } from './components/fee-emi-popup-finOps/fee-emi-main
 import { FeeEMIAWSComponent } from './components/fee-emi-popup-aws/fee.emi.component';
 import { FeeEMIAWSMain } from './components/fee-emi-popup-aws/fee-emi-main-aws/fee-emi-main';
 import { DataAnalystCourseComponent } from './components/course-content-component/data-analyst/data-analyst-course.component'
+import { DataAnalystCCMBComponent } from './components/course-content-component/data-analyst/data-analyst-ccmb/data-analyst-ccmb';
 
 @NgModule({
   declarations: [CloudIntroComponent,
     JobReadyComponent, IntroCardsComponent, ProgramsComponent, RegularFeeStructureComponent,
     JobReadyFeeComponent, TNCComponent, CancellationRefundComponent,
-    DataAnalystComponent,DataAnalystCourseComponent,
+    DataAnalystComponent,DataAnalystCourseComponent,DataAnalystCCMBComponent,
     TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent,
     CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent,
     CourseTableComponent, IntroPageComponent, CourseIntenseTableComponent,

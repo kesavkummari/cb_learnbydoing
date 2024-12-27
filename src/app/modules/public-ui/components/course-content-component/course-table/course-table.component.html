@@ -3380,16 +3380,7 @@
           </div>
         </div>
       </ng-container>
-      
-      <ng-template #defaultContent>
-        <!-- Display default image when no module is selected -->
-        <!-- <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1'" src="assets/hybrid-learning/DevopsT.svg" alt=" DevOps Course Default Image" /> -->
-        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'devops'" src="assets/hybrid-learning/DevopsT.svg" alt=" DevOps Course Default Image" />
-        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'data-analyst'" src="assets/hybrid-learning/classroom.svg" alt=" DevOps Course Default Image" />
-        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'finops'" src="assets/hybrid-learning/finnnops.webp" alt=" DevOps Course Default Image" />
-      </ng-template>
-  
-  
+
       <ng-container *ngIf="selectedTab === 'python'">
         <div class="content-columns">
           <div class="left-column">
@@ -3513,9 +3504,14 @@
           </div>
         </div>
       </ng-container>
-  
-  
-  
+      
+      <ng-template #defaultContent>
+        <!-- Display default image when no module is selected -->
+        <!-- <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1'" src="assets/hybrid-learning/DevopsT.svg" alt=" DevOps Course Default Image" /> -->
+        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'devops'" src="assets/hybrid-learning/DevopsT.svg" alt=" DevOps Course Default Image" />
+        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'data-analyst'" src="assets/hybrid-learning/classroom.svg" alt=" DevOps Course Default Image" />
+        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'finops'" src="assets/hybrid-learning/finnnops.webp" alt=" DevOps Course Default Image" />
+      </ng-template>
   
     </div>
   </div>
