@@ -1,4 +1,4 @@
-import { Component, ElementRef, AfterViewInit, Renderer2 } from '@angular/core';
+import { Component, ElementRef, AfterViewInit, Renderer2, Input } from '@angular/core';
 
 
 @Component({
@@ -7,7 +7,7 @@ import { Component, ElementRef, AfterViewInit, Renderer2 } from '@angular/core';
   styleUrls: ['./faq.component.css']
 })
 export class FAQComponent {
-  
+    @Input() selectedTab: string ='';
     constructor(private renderer: Renderer2, private el: ElementRef) {}
 
     ngAfterViewInit() {

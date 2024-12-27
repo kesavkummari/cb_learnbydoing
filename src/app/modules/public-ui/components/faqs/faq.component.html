@@ -1,7 +1,13 @@
-<h2 style="display: flex; justify-content: space-around; text-align: center; font-weight: bolder; font-size: 45px; color: #172342;">FAQs</h2>
-
-<div class="faq-section">
-  <div class="faq-item">
+<div *ngIf="selectedTab === 'finops'">
+  <h2>FinOps FAQ</h2>
+</div>
+<div *ngIf="selectedTab === 'data-analyst'">
+  <h2>Data Analyst FAQ</h2>
+</div>
+<div *ngIf="selectedTab === 'devops'">
+  <h2 style="display: flex; justify-content: space-around; text-align: center; font-weight: bolder; font-size: 45px; color: #172342;">FAQs</h2>
+  <div class="faq-section">
+    <div class="faq-item">
     <div class="faq-question">
       <span class="question-text">Why Cloud Binary?</span>
       <span class="toggle-icon"></span>
@@ -45,7 +51,7 @@
       <p>You must be a graduate with a passion for learning new technologies. We welcome individuals from various educational backgrounds who share a keen interest in exploring and mastering the world of DevOps.</p>
     </div>
   </div>
-
+  
   <div class="faq-item">
     <div class="faq-question">
       <span class="question-text">Is the internship a mandatory part of the course?</span>
@@ -218,6 +224,5 @@
       <p>For the latest updates and announcements on GCP certifications, visit the <a href="https://cloud.google.com/learn/certification" target="_blank" style="font-weight: 900;">GCP Certification page</a>.</p>
     </div>
   </div>
-  
-
+</div>
 
