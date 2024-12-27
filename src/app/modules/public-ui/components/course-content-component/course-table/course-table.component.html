@@ -1011,12 +1011,12 @@
           <div class="left-column">
             <h2 style="padding-bottom: 10px;">Data Analytics Course Content</h2>
             <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started With Data Analytics </div>
-            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Data Analysis Concepts using Ai Tools</div>
-            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS - Application Integration</div>
-            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Business Statistics</div>
-            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">RDBMS - SQL & NoSQL</div> 
-            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Data Visualisation: Tableau & Power BI</div>
-            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Programming : Basic & Advanced Python</div>
+            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Data Visualisation: Tableau & Power BI</div>
+            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">SQL for Data Analysis</div>
+            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Basic & Advanced Python for DA</div>
+            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Statistical Analysis</div> 
+            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Machine Learning Basics</div>
+            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">End-to-End Data Analysis Project</div>
             <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">What Next? - Data Engineer, Data Science & MLOps</div>
           </div>
           <div class="right-column" style="font-size: smaller;">
@@ -1025,27 +1025,82 @@
             </ng-container>
                      
             <ng-container *ngIf="selectedModule === 'M1'">
-              <h2>Windows, Unix/Linux Fundamentals</h2>
+              <h2>Getting Started With Data Analytics</h2>
               <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
               <ul>
-                  <li>Unix & Linux History & Distributions</li>
-                  <li>Basic & Advanced Commands</li>
+                  <li>Introduction to Data Analysis
+                    <ul>
+                      <li>Overview, Importance, Roles</li>
+                    </ul>
+                  </li>
+                  <li>Understanding Data Types and Data Structures</li>
+                  <li>Data Collection Methods</li>
+                  <li>Basic Statistics for Data Analysis
+                    <ul>
+                      <li>Descriptive Statistics</li>
+                    </ul>
+                  </li>
+                  <li>Data Cleaning and Preparation
+                    <ul>
+                      <li>Introduction to Excel</li>
+                    </ul>
+                  </li>
+                  <li><b>Capstone Project 1:</b>
+                    <br>Data Cleaning and Preparation Project
+                  </li>
               </ul>
             </ng-container>
             <ng-container *ngIf="selectedModule === 'M2'">
-              <h2>Windows, Unix/Linux Fundamentals</h2>
+              <h2>Data Visualisation: Tableau & Power BI</h2>
               <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
               <ul>
-                  <li>Unix & Linux History & Distributions</li>
-                  <li>Basic & Advanced Commands</li>
+                  <li>Data Visualization Basics
+                    <ul>
+                      <li>Introduction, Importance</li>
+                    </ul>
+                  </li>
+                  <li>Excel for Data Visualization
+                    <ul>
+                      <li>Charts, Graphs</li>
+                    </ul>
+                  </li>
+                  <li>Tableau
+                    <ul>
+                      <li>Tableau Introduction</li>
+                      <li>Creating Visualizations</li>
+                      <li>Advanced Techniques</li>
+                    </ul>
+                  </li>
+                  <li>Power BI
+                    <ul>
+                      <li>Power BI Introduction</li>
+                      <li>Creating Visualizations</li>
+                      <li>Advanced Techniques</li>
+                    </ul>
+                  </li>
+                  <li><b>Capstone Project 2:</b>
+                    <br>Data Visualization Project with Excel, Tableau, and Power BI
+                  </li>
               </ul>
             </ng-container>
             <ng-container *ngIf="selectedModule === 'M3'">
-              <h2>Windows, Unix/Linux Fundamentals</h2>
+              <h2>SQL for Data Analysis</h2>
               <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
               <ul>
-                  <li>Unix & Linux History & Distributions</li>
-                  <li>Basic & Advanced Commands</li>
+                  <li>Introduction to SQL
+                    <ul>
+                      <li>Basics, Queries</li>
+                    </ul>
+                  </li>
+                  <li>SQL for Data Analysis
+                    <ul>
+                      <li>Joining Tables, Aggregations</li>
+                    </ul>
+                  </li>
+                  <li>Advanced SQL Techniques</li>
+                  <li><b>Capstone Project 3:</b>
+                    <br>SQL Data Analysis Project
+                  </li>
               </ul>
             </ng-container>
             <ng-container *ngIf="selectedModule === 'M4'">
