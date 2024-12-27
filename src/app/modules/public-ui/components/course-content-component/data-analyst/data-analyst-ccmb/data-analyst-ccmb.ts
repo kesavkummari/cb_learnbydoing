@@ -19,65 +19,73 @@ export class DataAnalystCCMBComponent {
         {
           title: 'Getting Started With Data Analytics',
           'submodules': [
-            'Python OOP',
-            'Python Class',
-            'Summary'
-          ]
-        },
-        {
-          'title': 'Data Analysis Concepts using Ai Tools',
-          'submodules': [
-            'Python OOP',
-            'Python Class',
-            'Summary'
-          ]
-        },
-        {
-          'title': 'AWS - Application Integration',
-          'submodules': [
-            'Python OOP',
-            'Python Class',
-            'Summary'
-          ]
-        },
-        {
-          'title': 'Business Statistics',
-          'submodules': [
-            'Python OOP',
-            'Python Class',
-            'Summary'
-          ]
-        },
-        {
-          'title': 'RDBMS - SQL & NoSQL',
-          'submodules': [
-            'Python OOP',
-            'Python Class',
-            'Summary'
+            'Introduction to Data Analysis',
+            'Understanding Data Types and Data Structures',
+            'Data Collection Methods',
+            'Basic Statistics for Data Analysis',
+            'Data Cleaning and Preparation',
+            'Capstone Project 1: Data Cleaning and Preparation Project'
           ]
         },
         {
           'title': 'Data Visualisation: Tableau & Power BI',
           'submodules': [
-            'Python OOP',
-            'Python Class',
-            'Summary'
+            'Data Visualization Basics',
+            'Excel for Data Visualization',
+            'Tableau',
+            'Power BI',
+            'Capstone Project 2: Data Visualization Project with Excel, Tableau, and Power BI'
           ]
         },
         {
-          'title': 'Programming : Basic & Advanced Python',
+          'title': 'SQL for Data Analysis',
           'submodules': [
-            'Python OOP',
-            'Python Class',
-            'Summary'
+            'Introduction to SQL',
+            'SQL for Data Analysis',
+            'Advanced SQL Techniques',
+            'Capstone Project 3: SQL Data Analysis Project'
+          ]
+        },
+        {
+          'title': 'Basic & Advanced Python for DA',
+          'submodules': [
+            'Python Basics',
+            'Python for Data Analysis',
+            'Data Wrangling with Python',
+            'Advanced Python Techniques',
+            'Capstone Project 4: Python Data Analysis Project'
+          ]
+        },
+        {
+          'title': 'Statistical Analysis',
+          'submodules': [
+            'Inferential Statistics',
+            'Hypothesis Testing',
+            'Applying Statistical Methods with Python',
+            'Capstone Project 5: Statistical Analysis Project'
+          ]
+        },
+        {
+          'title': 'Machine Learning Basics',
+          'submodules': [
+            'Introduction to Machine Learning',
+            'Supervised Learning',
+            'Unsupervised Learning',
+            'Capstone Project 6: Machine Learning Project'
+          ]
+        },
+        {
+          'title': 'End-to-End Data Analysis Project',
+          'submodules': [
+            'Capstone Project 7: End-to-End Data Analysis Project',
+            'Real-world Data Analysis Challenge',
+            'Final Project Presentation and Course Summary'
           ]
         },
         {
           'title': 'What Next? - Data Engineer, Data Science & MLOps',
           'submodules': [
-            'Python OOP',
-            'Python Class',
-            'Summary'
+            'Data Engineer?, Data Science? & MLOps?'
           ]
         },
       ]
