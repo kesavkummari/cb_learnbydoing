@@ -12,13 +12,11 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
+    
     
   ],
   imports: [

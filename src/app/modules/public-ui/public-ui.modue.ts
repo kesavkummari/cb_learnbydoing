@@ -85,6 +85,9 @@ import { FeeEMIAWSComponent } from './components/fee-emi-popup-aws/fee.emi.compo
 import { FeeEMIAWSMain } from './components/fee-emi-popup-aws/fee-emi-main-aws/fee-emi-main';
 import { DataAnalystCourseComponent } from './components/course-content-component/data-analyst/data-analyst-course.component'
 import { DataAnalystCCMBComponent } from './components/course-content-component/data-analyst/data-analyst-ccmb/data-analyst-ccmb';
+import { DevopsFaqComponent } from './components/faqs/devops-faq/devops-faq.component';
+import { FinopsFaqComponent } from './components/faqs/finops-faq/finops-faq.component';
+import { DataAnalystFaqComponent } from './components/faqs/data-analyst-faq/data-analyst-faq.component';
 
 @NgModule({
   declarations: [CloudIntroComponent,
@@ -103,7 +106,11 @@ import { DataAnalystCCMBComponent } from './components/course-content-component/
     CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
     DeveopsdownloadformComponent, ReviewsColComponent, GoogleReviewsColComponent,
     FeeEMIAWSComponent,FeeEMIAWSMain ,FeeEMIfinOpsMain, FeeEMIFinOpsComponent,
-    RegularAWSCourseContent, RegulardownloadformComponent, HomePageNewComponent],
+    RegularAWSCourseContent, RegulardownloadformComponent, HomePageNewComponent,
+    DevopsFaqComponent,
+    FinopsFaqComponent,
+    DataAnalystFaqComponent,
+  ],
   imports: [RouterModule, PublicUiRoutingModule, MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTooltipModule, MatIconModule, MatSnackBarModule, HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
 })

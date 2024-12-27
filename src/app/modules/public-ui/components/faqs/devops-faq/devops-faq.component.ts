@@ -1,12 +1,11 @@
 import { Component, ElementRef, AfterViewInit, Renderer2, Input } from '@angular/core';
 
-
 @Component({
-  selector: 'faqs',
-  templateUrl: './faq.component.html',
-  styleUrls: ['./faq.component.css']
+  selector: 'app-devops-faq',
+  templateUrl: './devops-faq.component.html',
+  styleUrls: ['../faq.component.css']
 })
-export class FAQComponent {
+export class DevopsFaqComponent {
     constructor(private renderer: Renderer2, private el: ElementRef) {}
 
     ngAfterViewInit() {
@@ -20,4 +19,3 @@ export class FAQComponent {
       });
     }
 }
-
