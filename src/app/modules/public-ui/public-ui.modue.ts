@@ -91,6 +91,7 @@ import { DataAnalystFaqComponent } from './components/faqs/data-analyst-faq/data
 import { DAEligibilityComponent } from './components/course-content-component/data-analyst/da-eligibility/da-eligibility.component';
 import { DevopsEligibilityComponent } from './components/course-content-component/trending-courses/devops-eligibility/devops-eligibility.component';
 import { FinopsEligibilityComponent } from './components/course-content-component/aws-devops-course/finops-eligibility/finops-eligibility.component';
+import { BlogTemplateComponent } from './components/blogs-component/blogs-pages/all-blogs/blog-template.component';
 
 @NgModule({
   declarations: [CloudIntroComponent,
@@ -112,7 +113,7 @@ import { FinopsEligibilityComponent } from './components/course-content-componen
     RegularAWSCourseContent, RegulardownloadformComponent, HomePageNewComponent,
     DevopsFaqComponent,
     FinopsFaqComponent,
-    DataAnalystFaqComponent, DAEligibilityComponent, DevopsEligibilityComponent, FinopsEligibilityComponent
+    DataAnalystFaqComponent, DAEligibilityComponent, DevopsEligibilityComponent, FinopsEligibilityComponent, BlogTemplateComponent
   ],
   imports: [RouterModule, PublicUiRoutingModule, MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTooltipModule, MatIconModule, MatSnackBarModule, HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],

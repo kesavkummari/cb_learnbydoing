@@ -1,6 +1,7 @@
 // feature-module1-routing.module.ts
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 import { IntroPageComponent } from './Pages/intro-page/intro-page.component';
 import { AwsDevopsComponent } from './Pages/aws-devops/awsdevops.component';
@@ -52,6 +53,9 @@ import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.poli
 import { TNCComponent } from './components/terms_and_conditions/t_n_c';
 import { CancellationRefundComponent } from './components/cancellation_and_refundpolicy/cancellation_and_refundpolicy';
 import { DataAnalystComponent } from './Pages/data-analyst/data-analyst.component';
+import { DaPythonBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-python-basics/da-python-basics.component'
+import { BlogTemplateComponent } from './components/blogs-component/blogs-pages/all-blogs/blog-template.component';
+import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
  
@@ -60,6 +64,9 @@ const routes: Routes = [
   {path:'awsdevops', component: JobReadyComponent},
   {path:'finops', component: AwsDevopsComponent},
   {path:'blogs', component: BlogsComponent},
+  {path:'blogs', component:BlogTemplateComponent, children:[
+    { path: 'da-python-basics-intro', component:DaPythonBasicsComponent},
+  ]},
   { path:'contactus', component: ContactUsComponent },
 
   { path: 'blog1' , component : Blog1Component },
@@ -111,10 +118,13 @@ const routes: Routes = [
     component: IntroPageComponent,
     // Add guards and resolve as needed
   },
+  { path:'**',
+    component:PageNotFoundComponent
+  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [CommonModule, RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
 export class PublicUiRoutingModule { }
