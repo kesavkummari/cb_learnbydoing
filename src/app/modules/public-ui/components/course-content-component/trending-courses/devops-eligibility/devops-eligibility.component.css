@@ -8,6 +8,12 @@
     display: flex;
 }
 
+.h3font{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
 .eligibilty-main-container{
     grid-column-gap: 24px;
     grid-row-gap: 24px;

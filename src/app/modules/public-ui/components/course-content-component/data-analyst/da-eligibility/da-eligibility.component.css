@@ -8,6 +8,12 @@
     display: flex;
 }
 
+.h3font{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
 .eligibilty-main-container{
     grid-column-gap: 24px;
     grid-row-gap: 24px;
@@ -16,7 +22,7 @@
     width: 100%;
     max-width: 1200px;
     display: flex;
-    margin: 20px 5px;
+    margin: 50px 5px;
 }
 
 .eligibility-child-sub-p1{
