@@ -22,7 +22,17 @@
     width: 100%;
     max-width: 1200px;
     display: flex;
-    margin: 50px 5px;
+    /* margin: 50px 5px; */
+    padding:50px
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .eligibilty-main-container{
+        padding:5px
+    }
+    .eligibility-grid{
+        grid-column-gap: 10px !important;
+    }
 }
 
 .eligibility-child-sub-p1{
@@ -34,7 +44,7 @@
 }
 
 .eligibility-grid{
-    grid-column-gap: 24px;
+    grid-column-gap: 50px;
     grid-row-gap: 24px;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
