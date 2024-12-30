@@ -18,10 +18,12 @@ export class DaPythonBasicsComponent {
   // }
 
   async copyCode(event: any): Promise<void> { 
-    const codeContent = document.getElementById('code-content')!.innerText; 
+    // const codeContent = document.getElementById('code-content')!.innerText; 
     try { 
-      await navigator.clipboard.writeText(codeContent); 
       const button = event.target; 
+      const preElement = button.closest('.code-container')!.querySelector('pre')!; 
+      const codeContent = preElement.innerText
+      await navigator.clipboard.writeText(codeContent); 
       button.innerText = 'Copied!'; 
       setTimeout(() => { 
               button.innerText = 'Copy'; 
