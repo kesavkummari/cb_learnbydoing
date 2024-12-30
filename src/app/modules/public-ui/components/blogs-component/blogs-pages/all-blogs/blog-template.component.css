@@ -101,6 +101,9 @@ code {
 .ikeyword{
     color: #67abf1;
 }
+.pkeyword{
+    color:#1a73e8
+}
 
 /* .copy-button {
     position: absolute;
