@@ -94,6 +94,12 @@ import { FinopsEligibilityComponent } from './components/course-content-componen
 import { BlogTemplateComponent } from './components/blogs-component/blogs-pages/all-blogs/blog-template.component';
 import { DaToolsComponent } from './components/course-content-component/data-analyst/da-tools/da-tools.component';
 import { DaCertifcatesComponent } from './components/course-content-component/data-analyst/da-certifcates/da-certifcates.component';
+import { AzureDevOpsContentComponent } from './components/course-content-component/azure-devops/azure-devops-content.component';
+import { AzureDevOpsComponent } from './Pages/azure-devops/azure-devops.component';
+import { AzureDevopsEligibilityComponent } from './components/course-content-component/azure-devops/azure-devops-eligibility/azure-devops-eligibility.component';
+import { AzureAWSCourseContentMobileView } from './components/course-content-component/azure-devops/azure-devops-ccmb/azure-devops-ccmb';
+import { LandingBanner4AzureDevOpsComponent } from './components/we-offer/landing-banner4-azuredevops/landing-banner4-azuredevops';
+import { AzureDevopsFaqComponent } from './components/faqs/azure-devops-faq/azure-devops-faq.component';
 
 @NgModule({
   declarations: [CloudIntroComponent,
@@ -115,7 +121,7 @@ import { DaCertifcatesComponent } from './components/course-content-component/da
     RegularAWSCourseContent, RegulardownloadformComponent, HomePageNewComponent,
     DevopsFaqComponent,
     FinopsFaqComponent,
-    DataAnalystFaqComponent, DAEligibilityComponent, DevopsEligibilityComponent, FinopsEligibilityComponent, BlogTemplateComponent, DaToolsComponent, DaCertifcatesComponent
+    DataAnalystFaqComponent, DAEligibilityComponent, DevopsEligibilityComponent, FinopsEligibilityComponent, BlogTemplateComponent, DaToolsComponent, DaCertifcatesComponent, AzureDevOpsContentComponent, AzureDevOpsComponent, AzureDevopsEligibilityComponent, AzureAWSCourseContentMobileView, LandingBanner4AzureDevOpsComponent, AzureDevopsFaqComponent
   ],
   imports: [RouterModule, PublicUiRoutingModule, MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTooltipModule, MatIconModule, MatSnackBarModule, HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],

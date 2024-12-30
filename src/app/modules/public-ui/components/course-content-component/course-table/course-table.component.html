@@ -1006,6 +1006,7 @@
           </div>
         </div>
       </ng-container>
+
       <ng-container *ngIf="selectedTab === 'data-analyst'">
         <div class="content-columns">
           <div class="left-column">
@@ -2220,7 +2221,1043 @@
           </div>
         </div>
       </ng-container>
+
+  <ng-container *ngIf="selectedTab === 'azure-devops'">
+        <div class="content-columns">
+          <div class="left-column">
+            <h2 style="padding-bottom: 10px;">Azure DevOps Content - Modules</h2>
+<div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">OS - Windows & Unix/Linux </div>
+<div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS - Analytics</div>
+<div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS - Application Integration</div>
+<div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS - Compute</div>
+<div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS - Containers</div> 
+<div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS - Database</div>
+<div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS - Storage</div>
+<div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS - Developer Tools</div>
+
+<div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS - Management and Governance</div>
+<div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS - Networking and Content Delivery</div>
+<div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS - Security, Identity, and Compliance</div>
+<div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS - Serverless</div>
+<div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">DevOps - Software Development Life Cycle: Agile - Scrum</div>
+<div class="module" (click)="selectModule('M33')" [class.active-module]="selectedModule === 'M33'">DevOps - Build Tool: Apache Maven &
+  Python Pip</div>
+<div class="module" (click)="selectModule('M34')" [class.active-module]="selectedModule === 'M34'">DevOps - Application Servers - Apache
+  Tomcat</div>
+<div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">DevOps - Version Control System / Source Code Management: Git</div>
+<div class="module" (click)="selectModule('M15')" [class.active-module]="selectedModule === 'M15'">DevOps - Continuous Integration using Jenkins</div>
+<div class="module" (click)="selectModule('M16')" [class.active-module]="selectedModule === 'M16'">DevOps - Continuous Static Code Analysis: SonarQube</div>
+<div class="module" (click)="selectModule('M17')" [class.active-module]="selectedModule === 'M17'">DevOps - Continuous Binary Code Repository using JFrog</div>
+<div class="module" (click)="selectModule('M18')" [class.active-module]="selectedModule === 'M18'">DevOps - Continuous Infrastructure As A Code: Terraform</div>
+<div class="module" (click)="selectModule('M19')" [class.active-module]="selectedModule === 'M19'">DevOps - Creating Machine Images: Packer</div>
+<div class="module" (click)="selectModule('M20')" [class.active-module]="selectedModule === 'M20'">DevOps - Continuous Configuration Management: Ansible</div>
+<div class="module" (click)="selectModule('M21')" [class.active-module]="selectedModule === 'M21'">DevOps - Containerisation: Docker</div>
+<div class="module" (click)="selectModule('M22')" [class.active-module]="selectedModule === 'M22'">DevOps - Container Orchestration: Kubernetes</div>
+<div class="module" (click)="selectModule('M23')" [class.active-module]="selectedModule === 'M23'">DevOps - Continuous Monitoring: New Relic</div>
+<div class="module" (click)="selectModule('M24')" [class.active-module]="selectedModule === 'M24'">DevOps - Migration Strategies</div>
+<div class="module" (click)="selectModule('M25')" [class.active-module]="selectedModule === 'M25'">DevOps - Deployment Strategies</div> 
+<div class="module" (click)="selectModule('M26')" [class.active-module]="selectedModule === 'M26'">Python Basics: Introduction</div>
+<div class="module" (click)="selectModule('M27')" [class.active-module]="selectedModule === 'M27'">Python: Functions</div>
+<div class="module" (click)="selectModule('M28')" [class.active-module]="selectedModule === 'M28'">Python: Object & Class</div>
+<div class="module" (click)="selectModule('M29')" [class.active-module]="selectedModule === 'M29'">Python: Data Types</div>
+<div class="module" (click)="selectModule('M30')" [class.active-module]="selectedModule === 'M30'">Python: Flow Control</div>
+<div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
+<div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div>
+<div class="module" (click)="selectModule('M0')" [class.active-module]="selectedModule === 'M0'">Shell Scripting </div>
+
+</div>
+
+         
+<div class="right-column" style="font-size: smaller;">
+  <ng-container *ngIf="isModuleSelected; else defaultContent">
+      <!-- Display image by default -->     
+    </ng-container>
+           
+    <ng-container *ngIf="selectedModule === 'M1'">
+      <h2>Windows, Unix/Linux Fundamentals</h2>
+      <hr style="
+          position: unset;
+          border: none;
+          height: 2px;
+          background: black;
+          margin-bottom: 20px;
+          margin-right: inherit;
+      ">
   
+      <ul>
+          <li>Unix & Linux History & Distributions</li>
+          <li>Basic & Advanced Commands</li>
+          <li>Run Levels</li>
+          <li>Boot Process</li>
+          <li>File System</li>
+          <li>File & Directory Management</li>
+          <li>Text Editors</li>
+          <li>Permissions</li>
+          <li>User & Group Management</li>
+          <li>Package Management</li>
+          <li>Controlling Services & Daemons</li>
+          <li>Process Management</li>
+          <li>Log Management</li>
+          <li>WebServer - Windows IIS, Apache2, Nginx & Httpd</li>
+          <li>Database Servers - MySQL, Mariadb & PostgreSQL</li>
+          
+      </ul>
+  </ng-container>
+
+  <ng-container *ngIf="selectedModule === 'M0'">
+    <h2> Introduction to Shell Scripting</h2>
+    <hr style="
+        position: unset;
+        border: none;
+        height: 2px;
+        background: black;
+        margin-bottom: 20px;
+        margin-right: inherit;
+    ">
+
+    <ul>
+        <li>What is a Shell Script?</li>
+        <li>Importance and applications of Shell Scripts.</li>
+        <li>Basic Shell commands (ls, cd, mkdir, rm, etc.).</li>
+        <li>Introduction to the Bash shell.</li>
+    </ul>
+
+    <h2>Shell Script Basics:</h2>
+    <ul>
+        <li>Variables in Shell Scripts.</li>
+        <li>Reading user input.</li>
+        <li>Basic Shell operations (arithmetic, string concatenation).</li>
+    </ul>
+
+    <h2>Control Structures and Loops:</h2>
+    <ul>
+        <li>If-else statements.</li>
+        <li>Case statements.</li>
+        <li>For and while loops.</li>
+    </ul>
+
+    <h2>Advanced Concepts:</h2>
+    <ul>
+        <li>Functions in Shell Scripts.</li>
+        <li>Introduction to Shell Script debugging.</li>
+        <li>Basic File I/O in Shell Scripts.</li>
+    </ul>
+
+    <h2>Real-world Applications and Best Practices:</h2>
+    <ul>
+        <li>Overview of real-world applications of Shell Scripts.</li>
+        <li>Best practices in Shell Scripting (commenting, naming conventions).</li>
+        <li>Introduction to script scheduling (cron jobs).</li>
+    </ul>
+</ng-container>
+
+  
+
+  <ng-container *ngIf="selectedModule === 'M2'">
+    <h2>AWS - Analytics Services</h2>
+    <hr style="
+        position: unset;
+        border: none;
+        height: 2px;
+        background: black;
+        margin-bottom: 20px;
+        margin-right: inherit;
+    ">
+
+    <ul>
+        <li>Amazon Athena</li>
+        <li>Amazon OpenSearch Service</li>
+        <li>Amazon QuickSight</li>
+        <li>Amazon EMR</li>
+        <li>Amazon Kinesis Data Firehose</li>
+        <li>Amazon Kinesis Data Streams</li>
+    </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M3'">
+  <h2>AWS - Application Integration</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <!-- <li>Amazon AppFlow</li> -->
+      <li>Amazon EventBridge (Amazon CloudWatch Events)</li>
+      <li>Amazon AppFlow</li>
+      <br>
+      
+      
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M4'">
+  <h2>AWS - Compute</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>AWS App Runner</li>
+      <li>Amazon EC2</li>
+      <li>Amazon EC2 Auto Scaling</li>
+      <li>EC2 Image Builder</li> 
+      <li>AWS Elastic Beanstalk</li>
+      <li>AWS Serverless Application Repository</li>
+      <br>
+      
+      
+  </ul>
+</ng-container>
+
+ <ng-container *ngIf="selectedModule === 'M5'">
+  <h2>AWS - Container Services</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>AWS App2Container</li>
+      <li>AWS Copilot</li>
+      <li>Amazon EKS Distro</li>
+      <li>Amazon Elastic Container Registry (Amazon ECR)</li>
+      <li>Amazon Elastic Container Service (Amazon ECS)</li>
+      <li>Amazon Elastic Kubernetes Service (Amazon EKS)</li>
+      <li>AWS Fargate</li>
+      <li>Red Hat OpenShift Service on AWS (ROSA)</li>
+      <br>
+      
+      
+  </ul>
+</ng-container> 
+
+<ng-container *ngIf="selectedModule === 'M6'">
+  <h2>AWS - Database Services</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+<ul>
+  <li>Amazon Aurora</li>
+  <li>Amazon Aurora Serverless v2</li>
+  <li>AWS Database Migration Service (AWS DMS)</li>
+  <li>Amazon DocumentDB (with MongoDB compatibility)</li>
+  <li>Amazon DynamoDB</li>
+  <li>Amazon ElastiCache</li>
+  <li>Amazon MemoryDB for Redis</li>
+  <li>Amazon RDS</li>
+  <li>Amazon Redshift</li>
+  <br>
+  
+  
+</ul>
+
+</ng-container>
+        
+            
+<ng-container *ngIf="selectedModule === 'M7'">
+  <h2>AWS - Storage Services</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+<ul>
+  <li>AWS Backup</li>
+  <li>Amazon Elastic Block Store (Amazon EBS)</li>
+  <li>AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)</li>
+  <li>Amazon Elastic File System (Amazon EFS)</li>
+  <li>Amazon FSx for Lustre</li>
+  <li>Amazon FSx for NetApp ONTAP</li>
+  <li>Amazon FSx for OpenZFS</li>
+  <li>Amazon FSx for Windows File Server</li>
+  <li>Amazon S3</li>
+  <li>Amazon S3 Glacier</li>
+  <li>AWS Storage Gateway</li>
+  <br>
+  
+  
+</ul>
+
+</ng-container>
+       
+<ng-container *ngIf="selectedModule === 'M8'">
+  <h2>AWS - Developer Tools</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+<ul>
+  <li>AWS Cloud Development Kit (AWS CDK)</li>
+  <li>AWS CloudShell</li>
+  <li>AWS CodeArtifact</li>
+  <li>AWS CodeBuild</li>
+  <li>AWS CodeCommit</li>
+  <li>AWS CodeDeploy</li>
+  <li>Amazon CodeGuru</li> 
+  <li>AWS CodePipeline</li>
+  <li>AWS CodeStar</li>
+  <li>AWS Command Line Interface (AWS CLI)</li>
+  <li>AWS SDKs and Tools</li>
+  <li>AWS X-Ray</li>
+  <br>
+  
+  
+</ul>
+</ng-container>
+        
+            
+<ng-container *ngIf="selectedModule === 'M9'">
+  <h2>AWS - Management and Governance</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+<ul>
+  <li>AWS Auto Scaling</li>
+  <li>AWS CloudFormation</li>
+  <li>AWS CloudTrail</li>
+  <li>Amazon CloudWatch</li>
+  <li>Amazon CloudWatch Logs</li>
+  <li>AWS Compute Optimizer</li>
+  <li>AWS Config</li>
+  <li>AWS Control Tower</li>
+  <li>AWS Health</li>
+  <li>AWS License Manager</li>
+  <li>Amazon Managed Grafana</li>
+  <li>Amazon Managed Service for Prometheus</li>
+  <li>AWS OpsWorks</li>
+  <li>AWS Organizations</li>
+  <li>AWS Personal Health Dashboard</li>
+  <li>AWS Proton</li>
+  <li>AWS Resilience Hub</li>
+  <li>AWS Service Catalog</li>
+  <li>AWS Systems Manager</li>
+  <li>AWS Trusted Advisor</li>
+  <br>
+  
+  
+</ul>
+
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M10'">
+  <h2>AWS - Networking and Content Delivery</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+<ul>
+  <li>Amazon API Gateway</li>
+  <li>AWS Client VPN</li>
+  <li>Amazon CloudFront</li>
+  <li>Elastic Load Balancing (ELB)</li>
+  <li>AWS PrivateLink</li>
+  <li>Amazon Route 53</li>
+  <li>AWS Site-to-Site VPN</li>
+  <li>AWS Transit Gateway</li>
+  <li>Amazon VPC</li>
+  <br>
+  
+  
+</ul>
+
+</ng-container>
+          
+<ng-container *ngIf="selectedModule === 'M11'">
+  <h2>AWS - Security, Identity, and Compliance</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+<ul>
+  <li>AWS Certificate Manager (ACM)</li>
+  <li>AWS CloudHSM</li>
+  <li>Amazon Cognito</li>
+  <li>Amazon Detective</li>
+  <li>AWS Directory Service</li>
+  <li>Amazon GuardDuty</li>
+  <li>AWS Identity and Access Management (IAM)</li>
+  <li>Amazon Inspector</li>
+  <li>AWS Key Management Service (AWS KMS)</li>
+  <li>Amazon Macie</li>
+  <li>AWS Network Firewall</li>
+  <li>AWS Resource Access Manager (AWS RAM)</li>
+  <li>AWS Secrets Manager</li>
+  <li>AWS Security Hub</li>
+  <li>AWS Security Token Service (AWS STS)</li>
+  <li>AWS Shield</li>
+  <li>AWS Single Sign-On</li>
+  <li>AWS WAF</li>
+  <br>
+  
+  
+</ul>
+
+</ng-container>
+       
+<ng-container *ngIf="selectedModule === 'M12'">
+  <h2>AWS - Serverless</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>AWS Lambda</li>
+      <li>Amazon API Gateway</li>
+      <li>AWS Step Functions</li>
+      <li>Amazon Simple Email Service (SES)</li>
+      <li>Amazon Simple Notification Service (Amazon SNS)</li>
+      <li>Amazon Simple Queue Service (Amazon SQS)</li>
+
+      <br>
+      
+      
+
+  </ul>
+</ng-container>
+        
+<ng-container *ngIf="selectedModule === 'M13'">
+  <h2>DevOps - Getting Started with SDLC and Agile</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Getting Started with SDLC</li>
+      <li>What is Agile?</li>
+      <li>Agile Manifesto (4 Values & 12 Principles)</li>
+      <li>What is Scrum?</li>
+      <li>Agile Scrum Roles</li>
+      <li>Agile Scrum Ceremonies:</li>
+      <ul style="padding-left: 40px;">
+          <li>Sprint Planning</li>
+          <li>Daily Standup</li>
+          <li>Sprint Backlog Refinement</li>
+          <li>Sprint Review</li>
+          <li>Sprint Retrospective</li>
+      </ul>
+      <li>Product Backlog Grooming</li>
+      <li>Agile Scrum Artefacts</li>
+      <li>Agile Scrum Board</li>
+      <li>Create a Sprint using Jira/Azure Boards:</li>
+      <ul style="padding-left: 40px;">
+          <li>Create Epic</li>
+          <li>Create Story</li>
+          <li>Create a Task</li>
+      </ul>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+       
+<ng-container *ngIf="selectedModule === 'M33'">
+  <h2> DevOps - Build Tool: Apache Maven &
+    Python Pip</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+<ul>
+  <li>Overview of Build Tools:
+    <ul style=" margin-left: 20px;">
+      <li>Maven</li>
+      <li>Gradle</li>
+      <li>Ant</li>
+      <li>Pip</li>
+    </ul>
+  </li>
+  <li>Getting Started with Build Tools i.e. Maven</li>
+  <li>Maven Lifecycles & Phases</li>
+  <li>Maven Plugins & Repository</li>
+  <li>Understanding the pom.xml & Settings.xml files</li>
+  <li>Build Java Code using Maven Lifecycles</li>
+  <li>Jfrog Integration with pom.xml</li>
+  <li>SonarQube Integration with pom.xml</li>
+  <li>Summary</li> 
+</ul>
+
+
+</ng-container>
+<ng-container *ngIf="selectedModule === 'M34'">
+  <h2> DevOps - Application Servers - Apache
+    Tomcat</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+<ul>
+  <li>Overview of Application Servers</li>
+
+  <li>Getting Started with Apache Tomcat
+    <ul style=" margin-left: 20px;">
+      <li>Download, Installing and Configuring Apache Tomcat</li>
+      <li>Enable Tomcat Pages Globally</li>
+      <li>Configure Roles, Users, & Password in Apache Tomcat</li>
+      <li>Deploy Code in Apache Tomcat using GUI</li>
+      <li>Deploy Code in Apache Tomcat using Jenkins Pipeline</li>
+    </ul>
+  </li>
+
+  <li>Summary</li>
+</ul>
+
+</ng-container>
+
+
+<ng-container *ngIf="selectedModule === 'M14'">
+  <h2>DevOps - Getting Started with VCS/SCM</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Getting Started with VCS/SCM</li>
+      <li>What is Git, AWS CodeCommit, and GitHub?</li>
+      <li>About Version Control Systems and Types</li>
+      <li>Git Workflow</li>
+      <li>Installing Git on Windows & Linux</li>
+      <li>Getting Started with Git Commands</li>
+      <li>Working with Branches</li>
+      <li>Merging Branches</li>
+      <li>Creating and Committing a Pull Request</li>
+      <li>Working with Stash</li>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+       
+<ng-container *ngIf="selectedModule === 'M15'">
+  <h2>DevOps - Overview of Continuous Integration with Jenkins</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Overview of Continuous Integration</li>
+      <li>Getting Started with Jenkins</li>
+      <li>Jenkins Architecture</li>
+      <li>Download, Installing, and Configuring Jenkins</li>
+      <li>Jenkins Management</li>
+      <li>Installing Jenkins Plugins</li>
+      <li>Creating Jenkins Jobs</li>
+      <li>Creating Jenkins Pipeline Jobs</li>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+         
+<ng-container *ngIf="selectedModule === 'M16'">
+  <h2>DevOps - Getting Started with SonarQube</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Getting Started with SonarQube</li>
+      <li>Integrate SonarQube with Pipeline Jenkins & CodeBuild/CodePipeline</li>
+      <li>Integrate SonarQube with GitHub</li>
+      <li>Execute Code Quality using SonarQube:</li>
+      <ul style="padding-left: 40px;">
+          <li>Reliability</li>
+          <li>Security</li>
+          <li>Maintainability</li>
+          <li>Security Review</li>
+          <li>Coverage & Duplications</li>
+      </ul>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+         
+<ng-container *ngIf="selectedModule === 'M17'">
+  <h2>DevOps - Getting Started with Continuous Binary Code Repository (JFrog)</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Getting Started with Continuous Binary Code Repository i.e. JFrog</li>
+      <li>JFrog Architecture</li>
+      <li>Download, Installing, and Configuring JFrog</li>
+      <li>Integrate JFrog with VCS/SCM i.e. POM.xml</li>
+      <li>Integrate JFrog with Maven</li>
+      <li>Creating Jenkins Jobs & Publish artifact to JFrog repository</li>
+      <li>Creating Jenkins Pipeline Jobs & Publish artifact to JFrog repository</li>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+       
+<ng-container *ngIf="selectedModule === 'M18'">
+  <h2>DevOps - Getting Started with Infrastructure as Code (IaC) using Terraform</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Getting Started with Infrastructure as Code (IaC)</li>
+      <li>Different Vendors Of IaC tools?</li>
+      <li>What is Terraform?</li>
+      <li>Core Concepts of Terraform</li>
+      <ul style="padding-left: 20px;">
+          <li>Variables</li>
+          <li>Modules</li>
+          <li>State Files</li>
+      </ul>
+      <li>Create Virtual Machines using Terraform</li>
+      <li>Create 3 Tier Architecture using Terraform</li>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+       
+<ng-container *ngIf="selectedModule === 'M19'">
+  <h2>DevOps - Getting Started with Packer</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Getting Started with Packer</li>
+      <li>Install Packer on Windows & Linux</li>
+      <li>Build an Image</li>
+      <li>Variables</li>
+      <li>Builders</li>
+      <li>Provisioners</li>
+      <li>Post Provisioners</li>
+      <li>Executing Shell Scripts</li>
+      <li>Shell Script</li>
+      <li>PowerShell Script</li>
+      <li>Executing Ansible PlayBooks</li>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+<ng-container *ngIf="selectedModule === 'M20'">
+  <h2>DevOps - Configuration Management with Ansible</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>What is Configuration Management?</li>
+      <li>Different Types Of Configuration Management Tools?</li>
+      <li>What is Ansible?</li>
+      <li>History of Ansible</li>
+      <li>Important terms used in Ansible</li>
+      <li>Ansible Installation in Linux</li>
+      <li>Ansible ad-hoc commands</li>
+      <li>Ansible Playbooks</li>
+      <li>Ansible Roles</li>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+<ng-container *ngIf="selectedModule === 'M21'">
+  <h2>DevOps - Getting Started with Containers and Docker</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>What is a Container?</li>
+      <li>List of Container Vendors</li>
+      <li>Getting Started with Docker</li>
+      <li>Docker Product</li>
+      <li>Docker Architecture</li>
+      <li>Docker Installation</li>
+      <li>Docker Hub</li>
+      <li>Docker Images</li>
+      <li>Docker Networking</li>
+      <li>Docker Compose</li>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M22'">
+  <h2>DevOps - Getting Started with Cluster Orchestration and Kubernetes</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>What is Cluster Orchestration or Container Orchestration?</li>
+      <li>Different Types of Container Orchestration Vendors</li>
+      <li>What is Kubernetes?</li>
+      <li>Kubernetes Cluster Orchestration Architecture</li>
+      <li>Kubernetes Components</li>
+      <ul style="padding-left: 20px;">
+          <li>Pods</li>
+          <li>Nodes</li>
+          <li>Service</li>
+          <li>Volume</li>
+          <li>Namespace</li>
+      </ul>
+      <li>Create 3 Node Cluster & Deploy a Simple WebServer (Nginx):</li>
+      <ul style="padding-left: 20px;">
+          <li>Creating Cluster</li>
+          <li>Adding Nodes to Cluster</li>
+          <li>Create Nginx Deployment</li>
+          <li>Create Nginx Service</li>
+          <li>Describe Nginx Deployment</li>
+          <li>Validate Nginx Deployment</li>
+          <li>Access Website using Cluster IP and Node IP</li>
+      </ul>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M23'">
+  <h2>DevOps - Getting Started with Observability</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>What is Observability/Monitoring?</li>
+      <li>Types of Continuous Monitoring:</li>
+      <ul style="padding-left: 20px;">
+          <li>Application Monitoring</li>
+          <li>Infrastructure Monitoring</li>
+          <li>Kubernetes Monitoring</li>
+          <li>Log Management</li>
+          <li>Errors Inbox</li>
+          <li>Browser Monitoring</li>
+          <li>Mobile Monitoring</li>
+          <li>Synthetics Monitoring</li>
+          <li>Network Monitoring</li>
+      </ul>
+      <li>List of Continuous Monitoring Tools</li>
+      <li>Configure Jobs:</li>
+      <ul style="padding-left: 20px;">
+          <li>Ping Monitoring in NewRelic</li>
+          <li>Simple Browser Monitoring in NewRelic</li>
+          <li>Scripted Monitoring in NewRelic</li>
+          <li>Getting Started with APM in NewRelic</li>
+          <li>Configure APM in NewRelic</li>
+          <li>Configure Infrastructure in NewRelic</li>
+          <li>Creating Dashboard in NewRelic</li>
+      </ul>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M24'">
+  <h2> DevOps - Migration Strategies?</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>What is Migration?</li>
+      <li>Different Types Of Migration Strategies:</li>
+      <ul style="padding-left: 20px;">
+          <li>Rehosting</li>
+          <li>Replatforming</li>
+          <li>Repurchasing</li>
+          <li>Refactoring</li>
+          <li>Retiring</li>
+          <li>Retaining</li>
+      </ul>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M25'">
+  <h2>DevOps - Deployment Strategies</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>What is Deployment?</li>
+      <li>Different Types of Deployment Strategies:</li>
+      <ul style="padding-left: 20px;">
+          <li>Recreate</li>
+          <li>Ramped</li>
+          <li>Blue/Green</li>
+          <li>Canary</li>
+          <li>A/B testing</li>
+          <li>Shadow</li>
+      </ul>
+      <li>Summary</li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M26'">
+  <h2>Getting Started with Python</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Keywords and Identifiers</li>
+      <li>Statements & Comments</li>
+      <li>Python Variables</li>
+      <li>Python Datatypes</li>
+      <li>Python Type Conversion</li>
+      <li>Python I/O and import</li>
+      <li>Python Operators</li>
+      <li>Python Namespace</li>
+  </ul>
+</ng-container>
+       
+<ng-container *ngIf="selectedModule === 'M27'">
+  <h2>Python Functions and Modules</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Python Functions</li>
+      <li>Function Argument</li>
+      <li>Python Recursion</li>
+      <li>Anonymous Function</li>
+      <li>Global, Local, and Nonlocal</li>
+      <li>Python Global Keyword</li>
+      <li>Python Modules</li>
+      <li>Python Package</li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M28'">
+  <h2>Object & Class in Python OOP</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Object & Class in Python OOP</li>
+      <li>Python Class</li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M29'">
+  <h2>Python Data Types</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Python Numbers</li>
+      <li>Python List</li>
+      <li>Python Tuple</li>
+      <li>Python String</li>
+      <li>Python Set</li>
+      <li>Python Dictionary</li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="selectedModule === 'M30'">
+  <h2>Python Control Flow</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Python if...else</li>
+      <li>Python for Loop</li>
+      <li>Python while Loop</li>
+      <li>Python break and continue</li>
+      <li>Python Pass</li>
+  </ul>
+</ng-container>
+<ng-container *ngIf="selectedModule === 'M31'">
+  <h2>Python File Handling and Exceptions</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Python File Operation</li>
+      <li>Python Directory</li>
+      <li>Python Exception</li>
+      <li>Python Exception Handling</li>
+      <li>Python User-defined Exception</li>
+  </ul>
+</ng-container>
+<ng-container *ngIf="selectedModule === 'M32'">
+  <h2>Python Modules and Examples</h2>
+  <hr style="
+      position: unset;
+      border: none;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+      margin-right: inherit;
+  ">
+
+  <ul>
+      <li>Python Modules:</li>
+      <ul style="padding-left: 20px;">
+          <li>os</li>
+          <li>sys</li>
+          <li>re</li>
+          <li>datetime</li>
+          <li>aws boto3</li>
+          <li>mysql & mysql-connector</li>
+      </ul>
+      <li>Examples:</li>
+      <ul style="padding-left: 20px;">
+          <li>Creating EC2, S3, RDS resource using Boto3 with Python</li>
+          
+      </ul>
+  </ul>
+</ng-container>
+
+
+    
+           
+          </div>
+        </div>
+      </ng-container>
+
       <ng-container *ngIf="selectedTab === 'mlops'">
         <div class="content-columns">
           <div class="left-column">
