@@ -56,6 +56,7 @@ import { DataAnalystComponent } from './Pages/data-analyst/data-analyst.componen
 import { DaPythonBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-python-basics/da-python-basics.component'
 import { BlogTemplateComponent } from './components/blogs-component/blogs-pages/all-blogs/blog-template.component';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
+import { DaNumpyBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-numpy-basics/da-numpy-basics.component';
 
 const routes: Routes = [
  
@@ -66,6 +67,7 @@ const routes: Routes = [
   {path:'blogs', component: BlogsComponent},
   {path:'blogs', component:BlogTemplateComponent, children:[
     { path: 'da-python-basics-intro', component:DaPythonBasicsComponent},
+    { path: 'da-numpy-basics', component:DaNumpyBasicsComponent},
   ]},
   { path:'contactus', component: ContactUsComponent },
 

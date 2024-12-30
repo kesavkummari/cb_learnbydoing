@@ -59,7 +59,7 @@
                 <h3>Python</h3> 
                 <button class="copy-button" (click)="copyCode($event)">Copy</button> 
             </div> 
-            <pre id="code-content"> <code>
+            <pre> <code>
 <span class="keyword">import</span> pandas <span class="keyword">as</span> pd<br>
 <span class="comment"># Load data into a DataFrame</span>
 data = pd.read_csv(<span class="string">'your_data.csv'</span>)<br>
@@ -78,7 +78,7 @@ print(data.head())
                 <h3>Python</h3> 
                 <button class="copy-button" (click)="copyCode($event)">Copy</button> 
             </div> 
-            <pre id="code-content"> <code>
+            <pre> <code>
 <span class="comment"># Drop rows with missing values</span>
 clean_data = data.dropna()<br>
 <span class="comment"># Filter data based on a condition</span>
@@ -96,7 +96,7 @@ filtered_data = clean_data[clean_data[<span class="string">'column_name'</span>]
                 <h3>Python</h3> 
                 <button class="copy-button" (click)="copyCode($event)">Copy</button> 
             </div> 
-            <pre id="code-content"> <code>
+            <pre> <code>
 <span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt<br>
 <span class="comment"># Create a simple plot</span>
 plt.plot(filtered_data[<span class="string">'column_name'</span>])
