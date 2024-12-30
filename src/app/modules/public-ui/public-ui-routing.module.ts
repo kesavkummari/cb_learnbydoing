@@ -58,6 +58,7 @@ import { BlogTemplateComponent } from './components/blogs-component/blogs-pages/
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
 import { DaNumpyBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-numpy-basics/da-numpy-basics.component';
 import { AzureDevOpsComponent } from './Pages/azure-devops/azure-devops.component';
+import { DaPandasBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-pandas-basics/da-numpy-basics.component';
 
 const routes: Routes = [
  
@@ -70,6 +71,7 @@ const routes: Routes = [
   {path:'blogs', component:BlogTemplateComponent, children:[
     { path: 'da-python-basics-intro', component:DaPythonBasicsComponent},
     { path: 'da-numpy-basics', component:DaNumpyBasicsComponent},
+    { path: 'da-pandas-basics', component:DaPandasBasicsComponent}
   ]},
   { path:'contactus', component: ContactUsComponent },
 
