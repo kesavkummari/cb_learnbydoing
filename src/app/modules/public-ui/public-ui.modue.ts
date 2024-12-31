@@ -101,6 +101,8 @@ import { AzureAWSCourseContentMobileView } from './components/course-content-com
 import { LandingBanner4AzureDevOpsComponent } from './components/we-offer/landing-banner4-azuredevops/landing-banner4-azuredevops';
 import { AzureDevopsFaqComponent } from './components/faqs/azure-devops-faq/azure-devops-faq.component';
 import { DaPandasBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-pandas-basics/da-numpy-basics.component';
+import { AzureToolsComponent } from './components/course-content-component/azure-devops/azure-tools/azure-tools.component';
+import { AzureCertifcatesComponent } from './components/course-content-component/azure-devops/azure-certifcates/azure-certifcates.component';
 
 @NgModule({
   declarations: [CloudIntroComponent,
@@ -123,7 +125,7 @@ import { DaPandasBasicsComponent } from './components/blogs-component/blogs-page
     DevopsFaqComponent,
     FinopsFaqComponent,
     DataAnalystFaqComponent, DAEligibilityComponent, DevopsEligibilityComponent, FinopsEligibilityComponent, BlogTemplateComponent, DaToolsComponent, DaCertifcatesComponent, AzureDevOpsContentComponent, AzureDevOpsComponent, AzureDevopsEligibilityComponent, AzureAWSCourseContentMobileView, LandingBanner4AzureDevOpsComponent, AzureDevopsFaqComponent,
-    DaPandasBasicsComponent
+    DaPandasBasicsComponent, AzureToolsComponent, AzureCertifcatesComponent
   ],
   imports: [RouterModule, PublicUiRoutingModule, MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTooltipModule, MatIconModule, MatSnackBarModule, HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
