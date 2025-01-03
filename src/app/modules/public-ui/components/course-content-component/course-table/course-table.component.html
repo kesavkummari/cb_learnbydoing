@@ -1012,13 +1012,14 @@
           <div class="left-column">
             <h2 style="padding-bottom: 10px;">Data Analytics Course Content</h2>
             <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Getting Started With Data Analytics </div>
-            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Data Visualisation: Tableau & Power BI</div>
-            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">SQL for Data Analysis</div>
-            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Basic & Advanced Python for DA</div>
-            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Statistical Analysis</div> 
-            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Machine Learning Basics</div>
-            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">End-to-End Data Analysis Project</div>
-            <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">What Next? - Data Engineer, Data Science & MLOps</div>
+            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Data Analytics & Visualization with Excel</div>
+            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">SQL for Data Analytics</div>
+            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Python for Data Analytics & Visualization</div>
+            <div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Power BI: Interactive Data Insights</div> 
+            <div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Tableau: Data Visualization Techniques</div>
+            <div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Machine Learning for Data Analytics</div>
+            <div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">End-to-End Data Analysis Project</div>
+            <div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">What Next? - Data Engineer, Data Science & MLOps</div>
           </div>
           <div class="right-column" style="font-size: smaller;">
             <ng-container *ngIf="isModuleSelected; else defaultContent">
@@ -1029,58 +1030,47 @@
               <h2>Getting Started With Data Analytics</h2>
               <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
               <ul>
-                  <li>Introduction to Data Analysis
-                    <ul>
-                      <li>Overview, Importance, Roles</li>
-                    </ul>
-                  </li>
-                  <li>Understanding Data Types and Data Structures</li>
-                  <li>Data Collection Methods</li>
-                  <li>Basic Statistics for Data Analysis
-                    <ul>
-                      <li>Descriptive Statistics</li>
-                    </ul>
-                  </li>
-                  <li>Data Cleaning and Preparation
-                    <ul>
-                      <li>Introduction to Excel</li>
-                    </ul>
-                  </li>
-                  <li><b>Capstone Project 1:</b>
-                    <br>Data Cleaning and Preparation Project
-                  </li>
+                  <li>Introduction to Data Analytics</li>
+                  <li>Data Collection and Preparation</li>
+                  <li>Exploratory Data Analysis</li>
+                  <li>Tools and Technologies</li>
+                  <li>Basic Data Analysis Techniques</li>
+                  <li>Reporting and Communication</li>
+                  <li>Introduction to Machine Learning</li>
               </ul>
             </ng-container>
             <ng-container *ngIf="selectedModule === 'M2'">
-              <h2>Data Visualisation: Tableau & Power BI</h2>
+              <h2>Data Analytics & Visualization with Excel</h2>
               <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
               <ul>
-                  <li>Data Visualization Basics
+                  <li>Introduction to Excel for Data Analysis
                     <ul>
-                      <li>Introduction, Importance</li>
+                      <li>Overview of Excel interface</li>
+                      <li>Basics of navigating and working with sheets</li>
+                      <li>Introduction to cells, rows, columns, and ranges</li>
+                      <li>Understanding basic functions (SUM, AVERAGE, COUNT)</li>
+                      <li>Working with mathematical and statistical functions</li>
+                      <li>Introduction to text functions for data manipulation</li>
                     </ul>
                   </li>
-                  <li>Excel for Data Visualization
+                  <li>Advanced Formulas and Functions
                     <ul>
-                      <li>Charts, Graphs</li>
+                      <li>Working with logical functions (IF, AND, OR)</li>
+                      <li>Exploring lookup functions (VLOOKUP, HLOOKUP, INDEX,
+                        MATCH)</li>
+                      <li>Introduction to array formulas</li>
+                      <li>Identifying and handling missing data</li>
+                      <li>Removing duplicates and dealing with errors</li>
+                      <li>Text-to-columns and data-splitting techniques</li>
+                      <li>Formatting data for analysis</li>
+                      <li>Creating basic charts and graphs</li>
+                      <li>Tips for effective data presentation</li>
+                      <li>Introduction to PivotTables for dynamic data analysis</li>
+                      <li>Creating PivotCharts for visual insights</li>
+                      <li>Customizing and formatting PivotTables and PivotCharts</li>
+                      <li>Time-saving shortcuts and productivity hacks</li>
+                      <li>Excel with AI</li>
                     </ul>
-                  </li>
-                  <li>Tableau
-                    <ul>
-                      <li>Tableau Introduction</li>
-                      <li>Creating Visualizations</li>
-                      <li>Advanced Techniques</li>
-                    </ul>
-                  </li>
-                  <li>Power BI
-                    <ul>
-                      <li>Power BI Introduction</li>
-                      <li>Creating Visualizations</li>
-                      <li>Advanced Techniques</li>
-                    </ul>
-                  </li>
-                  <li><b>Capstone Project 2:</b>
-                    <br>Data Visualization Project with Excel, Tableau, and Power BI
                   </li>
               </ul>
             </ng-container>
@@ -1088,85 +1078,73 @@
               <h2>SQL for Data Analysis</h2>
               <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
               <ul>
-                  <li>Introduction to SQL
-                    <ul>
-                      <li>Basics, Queries</li>
-                    </ul>
-                  </li>
-                  <li>SQL for Data Analysis
-                    <ul>
-                      <li>Joining Tables, Aggregations</li>
-                    </ul>
-                  </li>
-                  <li>Advanced SQL Techniques</li>
-                  <li><b>Capstone Project 3:</b>
-                    <br>SQL Data Analysis Project
-                  </li>
+                  <li>Introduction to SQL and Database Fundamentals</li>
+                  <li>Retrieving Data with SELECT Statements</li>
+                  <li>Aggregation and Grouping</li>
+                  <li>Window Functions and Analytic Queries</li>
+                  <li>Joins and Subqueries</li>
+                  <li>Case Statements and CTE Queries</li>
+                  <li>Time-saving shortcuts and productivity hack</li>
+                  <li>Working on live project</li>
               </ul>
             </ng-container>
             <ng-container *ngIf="selectedModule === 'M4'">
-              <h2>Python for Data Analysis</h2>
+              <h2>Python for Data Analytics & Visualization</h2>
               <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
               <ul>
-                  <li>Python Basics
-                    <ul>
-                      <li>Variables, Data Types, Basic Operations</li>
-                    </ul>
-                  </li>
-                  <li>Python for Data Analysis
-                    <ul>
-                      <li>Pandas, Numpy</li>
-                    </ul>
-                  </li>
-                  <li>Data Wrangling with Python</li>
-                  <li>Advanced Python Techniques</li>
-                  <li><b>Capstone Project 4:</b>
-                    <br>Python Data Analysis Project
-                  </li>
+                  <li>Introduction to Python and Jupyter Notebooks</li>
+                  <li>Data Manipulation with Python</li>
+                  <li>Data Manipulation with Pandas</li>
+                  <li>Data Cleaning and Preprocessing with Pandas</li>
+                  <li>Exploratory Data Analysis (EDA) with Pandas</li>
+                  <li>Data Visualization with Matplotlib</li>
+                  <li>Advanced Data Analysis with NumPy</li>
+                  <li>Advanced Data Visualization with Seaborn</li>
+                  <li>Statistical Analysis with Scipy</li>
+                  <li>Case Studies and Discussion</li>
               </ul>
             </ng-container>
             <ng-container *ngIf="selectedModule === 'M5'">
-              <h2>Statistical Analysis</h2>
+              <h2>Power BI: Interactive Data Insights</h2>
               <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
               <ul>
-                  <li>Inferential Statistics</li>
-                  <li>Hypothesis Testing</li>
-                  <li>Applying Statistical Methods with Python</li>
-                  <li><b>Capstone Project 5:</b>
-                  <br>Statistical Analysis Project
-                  </li>
+                  <li>Introduction to Power BI</li>
+                  <li>Visualizations and Interactivity</li>
+                  <li>Real-Time Dashboards</li>
+                  <li>Advanced Features and Custom Visuals</li>
               </ul>
             </ng-container>
             <ng-container *ngIf="selectedModule === 'M6'">
-              <h2>Machine Learning Basics</h2>
-              <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
+              <h2>Tableau: Data Visualization Techniques</h2>
               <ul>
-                  <li>Introduction to Machine Learning
-                    <ul>
-                      <li>Concepts, Types, Applications</li>
-                    </ul>
-                  </li>
-                  <li>Supervised Learning
-                    <ul>
-                      <li>Linear Regression, Classification</li>
-                    </ul>
-                  </li>
-                  <li>Unsupervised Learning
-                    <ul>
-                      <li>Clustering, Dimensionality Reduction</li>
-                    </ul>
-                  </li>
-                  <li><b>Capstone Project 6:</b>
-                    <br>Machine Learning Project
-                  </li>
+                <li>Introduction to Tableau</li>
+                <li>Connecting to Data Sources</li>
+                <li>Creating Visualizations</li>
+                <li>Interactivity and Dashboards</li>
+                <li>Data Analytics Techniques</li>
+                <li>Storytelling with Data</li>
+                <li>Advanced Features and Custom Visuals</li>
+                <li>Best Practices</li>
               </ul>
             </ng-container>
             <ng-container *ngIf="selectedModule === 'M7'">
+              <h2>Machine Learning Basics</h2>
+              <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
+              <ul>
+                  <li>Introduction to Machine Learning</li>
+                  <li>Data Preparation for Machine Learning</li>
+                  <li>Supervised Learning</li>
+                  <li>Unsupervised Learning</li>
+                  <li>Advanced Machine Learning Techniques</li>
+                  <li>Machine Learning Tools and Libraries</li>
+                  <li>Case Studies and Real-World Applications</li>
+              </ul>
+            </ng-container>
+            <ng-container *ngIf="selectedModule === 'M8'">
               <h2>End-to-End Data Analysis Project</h2>
               <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
               <ul>
-                <li><b>Capstone Project 7:</b>
-                  <br>End-to-End Data Analysis Project
+                <li><b>End-to-End Data Analysis Project</b>
                   <ul>
                     <li>From Data Collection to Visualization using Excel, Tableau, Power BI</li>
                   </ul>
@@ -1175,7 +1153,7 @@
                 <li>Final Project Presentation and Course Summary</li>
               </ul>
             </ng-container>
-            <ng-container *ngIf="selectedModule === 'M8'">
+            <ng-container *ngIf="selectedModule === 'M9'">
               <h2>What Next? - Data Engineer, Data Science & MLOps</h2>
               <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
               <ul>
