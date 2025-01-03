@@ -24,6 +24,7 @@
     "file-saver": "^2.0.5",
     "font-awesome": "^4.7.0",
     "install": "^0.13.0",
+    "markmap-cli": "^0.18.4",
     "npm": "^10.2.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
