@@ -2205,18 +2205,18 @@
           <div class="left-column">
             <h2 style="padding-bottom: 10px;">Azure DevOps Content - Modules</h2>
 <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">OS - Windows & Unix/Linux </div>
-<div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS - Analytics</div>
-<div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS - Application Integration</div>
-<div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS - Compute</div>
-<div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">AWS - Containers</div> 
-<div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">AWS - Database</div>
-<div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">AWS - Storage</div>
-<div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">AWS - Developer Tools</div>
+<div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Azure - Analytics</div>
+<div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Azure - Application Integration</div>
+<div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Azure - Compute</div>
+<div class="module" (click)="selectModule('M5')" [class.active-module]="selectedModule === 'M5'">Azure - Containers</div> 
+<div class="module" (click)="selectModule('M6')" [class.active-module]="selectedModule === 'M6'">Azure - Database</div>
+<div class="module" (click)="selectModule('M7')" [class.active-module]="selectedModule === 'M7'">Azure - Storage</div>
+<div class="module" (click)="selectModule('M8')" [class.active-module]="selectedModule === 'M8'">Azure - Developer Tools</div>
 
-<div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">AWS - Management and Governance</div>
-<div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS - Networking and Content Delivery</div>
-<div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS - Security, Identity, and Compliance</div>
-<div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS - Serverless</div>
+<div class="module" (click)="selectModule('M9')" [class.active-module]="selectedModule === 'M9'">Azure - Management and Governance</div>
+<div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">Azure - Networking and Content Delivery</div>
+<div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">Azure - Security, Identity, and Compliance</div>
+<div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">Azure - Serverless</div>
 <div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">DevOps - Software Development Life Cycle: Agile - Scrum</div>
 <div class="module" (click)="selectModule('M33')" [class.active-module]="selectedModule === 'M33'">DevOps - Build Tool: Apache Maven &
   Python Pip</div>
@@ -2332,7 +2332,7 @@
   
 
   <ng-container *ngIf="selectedModule === 'M2'">
-    <h2>AWS - Analytics Services</h2>
+    <h2>Azure - Analytics Services</h2>
     <hr style="
         position: unset;
         border: none;
@@ -2343,17 +2343,17 @@
     ">
 
     <ul>
-        <li>Amazon Athena</li>
+        <!-- <li>Amazon Athena</li>
         <li>Amazon OpenSearch Service</li>
         <li>Amazon QuickSight</li>
         <li>Amazon EMR</li>
         <li>Amazon Kinesis Data Firehose</li>
-        <li>Amazon Kinesis Data Streams</li>
+        <li>Amazon Kinesis Data Streams</li> -->
     </ul>
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M3'">
-  <h2>AWS - Application Integration</h2>
+  <h2>Azure - Application Integration</h2>
   <hr style="
       position: unset;
       border: none;
@@ -2365,8 +2365,8 @@
 
   <ul>
       <!-- <li>Amazon AppFlow</li> -->
-      <li>Amazon EventBridge (Amazon CloudWatch Events)</li>
-      <li>Amazon AppFlow</li>
+      <!-- <li>Amazon EventBridge (Amazon CloudWatch Events)</li>
+      <li>Amazon AppFlow</li> -->
       <br>
       
       
@@ -2374,7 +2374,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M4'">
-  <h2>AWS - Compute</h2>
+  <h2>Azure - Compute</h2>
   <hr style="
       position: unset;
       border: none;
@@ -2385,12 +2385,12 @@
   ">
 
   <ul>
-      <li>AWS App Runner</li>
+      <!-- <li>AWS App Runner</li>
       <li>Amazon EC2</li>
       <li>Amazon EC2 Auto Scaling</li>
       <li>EC2 Image Builder</li> 
       <li>AWS Elastic Beanstalk</li>
-      <li>AWS Serverless Application Repository</li>
+      <li>AWS Serverless Application Repository</li> -->
       <br>
       
       
@@ -2398,7 +2398,7 @@
 </ng-container>
 
  <ng-container *ngIf="selectedModule === 'M5'">
-  <h2>AWS - Container Services</h2>
+  <h2>Azure - Container Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -2409,14 +2409,14 @@
   ">
 
   <ul>
-      <li>AWS App2Container</li>
+      <!-- <li>AWS App2Container</li>
       <li>AWS Copilot</li>
       <li>Amazon EKS Distro</li>
       <li>Amazon Elastic Container Registry (Amazon ECR)</li>
       <li>Amazon Elastic Container Service (Amazon ECS)</li>
       <li>Amazon Elastic Kubernetes Service (Amazon EKS)</li>
       <li>AWS Fargate</li>
-      <li>Red Hat OpenShift Service on AWS (ROSA)</li>
+      <li>Red Hat OpenShift Service on AWS (ROSA)</li> -->
       <br>
       
       
@@ -2424,7 +2424,7 @@
 </ng-container> 
 
 <ng-container *ngIf="selectedModule === 'M6'">
-  <h2>AWS - Database Services</h2>
+  <h2>Azure - Database Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -2435,7 +2435,7 @@
   ">
 
 <ul>
-  <li>Amazon Aurora</li>
+  <!-- <li>Amazon Aurora</li>
   <li>Amazon Aurora Serverless v2</li>
   <li>AWS Database Migration Service (AWS DMS)</li>
   <li>Amazon DocumentDB (with MongoDB compatibility)</li>
@@ -2443,7 +2443,7 @@
   <li>Amazon ElastiCache</li>
   <li>Amazon MemoryDB for Redis</li>
   <li>Amazon RDS</li>
-  <li>Amazon Redshift</li>
+  <li>Amazon Redshift</li> -->
   <br>
   
   
@@ -2453,7 +2453,7 @@
         
             
 <ng-container *ngIf="selectedModule === 'M7'">
-  <h2>AWS - Storage Services</h2>
+  <h2>Azure - Storage Services</h2>
   <hr style="
       position: unset;
       border: none;
@@ -2464,7 +2464,7 @@
   ">
 
 <ul>
-  <li>AWS Backup</li>
+  <!-- <li>AWS Backup</li>
   <li>Amazon Elastic Block Store (Amazon EBS)</li>
   <li>AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)</li>
   <li>Amazon Elastic File System (Amazon EFS)</li>
@@ -2474,7 +2474,7 @@
   <li>Amazon FSx for Windows File Server</li>
   <li>Amazon S3</li>
   <li>Amazon S3 Glacier</li>
-  <li>AWS Storage Gateway</li>
+  <li>AWS Storage Gateway</li> -->
   <br>
   
   
@@ -2483,7 +2483,7 @@
 </ng-container>
        
 <ng-container *ngIf="selectedModule === 'M8'">
-  <h2>AWS - Developer Tools</h2>
+  <h2>Azure - Developer Tools</h2>
   <hr style="
       position: unset;
       border: none;
@@ -2494,7 +2494,7 @@
   ">
 
 <ul>
-  <li>AWS Cloud Development Kit (AWS CDK)</li>
+  <!-- <li>AWS Cloud Development Kit (AWS CDK)</li>
   <li>AWS CloudShell</li>
   <li>AWS CodeArtifact</li>
   <li>AWS CodeBuild</li>
@@ -2505,7 +2505,7 @@
   <li>AWS CodeStar</li>
   <li>AWS Command Line Interface (AWS CLI)</li>
   <li>AWS SDKs and Tools</li>
-  <li>AWS X-Ray</li>
+  <li>AWS X-Ray</li> -->
   <br>
   
   
@@ -2514,7 +2514,7 @@
         
             
 <ng-container *ngIf="selectedModule === 'M9'">
-  <h2>AWS - Management and Governance</h2>
+  <h2>Azure - Management and Governance</h2>
   <hr style="
       position: unset;
       border: none;
@@ -2525,7 +2525,7 @@
   ">
 
 <ul>
-  <li>AWS Auto Scaling</li>
+  <!-- <li>AWS Auto Scaling</li>
   <li>AWS CloudFormation</li>
   <li>AWS CloudTrail</li>
   <li>Amazon CloudWatch</li>
@@ -2544,7 +2544,7 @@
   <li>AWS Resilience Hub</li>
   <li>AWS Service Catalog</li>
   <li>AWS Systems Manager</li>
-  <li>AWS Trusted Advisor</li>
+  <li>AWS Trusted Advisor</li> -->
   <br>
   
   
@@ -2553,7 +2553,7 @@
 </ng-container>
 
 <ng-container *ngIf="selectedModule === 'M10'">
-  <h2>AWS - Networking and Content Delivery</h2>
+  <h2>Azure - Networking and Content Delivery</h2>
   <hr style="
       position: unset;
       border: none;
@@ -2564,7 +2564,7 @@
   ">
 
 <ul>
-  <li>Amazon API Gateway</li>
+  <!-- <li>Amazon API Gateway</li>
   <li>AWS Client VPN</li>
   <li>Amazon CloudFront</li>
   <li>Elastic Load Balancing (ELB)</li>
@@ -2572,7 +2572,7 @@
   <li>Amazon Route 53</li>
   <li>AWS Site-to-Site VPN</li>
   <li>AWS Transit Gateway</li>
-  <li>Amazon VPC</li>
+  <li>Amazon VPC</li> -->
   <br>
   
   
@@ -2581,7 +2581,7 @@
 </ng-container>
           
 <ng-container *ngIf="selectedModule === 'M11'">
-  <h2>AWS - Security, Identity, and Compliance</h2>
+  <h2>Azure - Security, Identity, and Compliance</h2>
   <hr style="
       position: unset;
       border: none;
@@ -2592,7 +2592,7 @@
   ">
 
 <ul>
-  <li>AWS Certificate Manager (ACM)</li>
+  <!-- <li>AWS Certificate Manager (ACM)</li>
   <li>AWS CloudHSM</li>
   <li>Amazon Cognito</li>
   <li>Amazon Detective</li>
@@ -2609,7 +2609,7 @@
   <li>AWS Security Token Service (AWS STS)</li>
   <li>AWS Shield</li>
   <li>AWS Single Sign-On</li>
-  <li>AWS WAF</li>
+  <li>AWS WAF</li> -->
   <br>
   
   
@@ -2618,7 +2618,7 @@
 </ng-container>
        
 <ng-container *ngIf="selectedModule === 'M12'">
-  <h2>AWS - Serverless</h2>
+  <h2>Azure - Serverless</h2>
   <hr style="
       position: unset;
       border: none;
@@ -2629,12 +2629,12 @@
   ">
 
   <ul>
-      <li>AWS Lambda</li>
+      <!-- <li>AWS Lambda</li>
       <li>Amazon API Gateway</li>
       <li>AWS Step Functions</li>
       <li>Amazon Simple Email Service (SES)</li>
       <li>Amazon Simple Notification Service (Amazon SNS)</li>
-      <li>Amazon Simple Queue Service (Amazon SQS)</li>
+      <li>Amazon Simple Queue Service (Amazon SQS)</li> -->
 
       <br>
       
@@ -4618,6 +4618,7 @@
         <!-- <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1'" src="assets/hybrid-learning/DevopsT.svg" alt=" DevOps Course Default Image" /> -->
         <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'devops'" src="assets/hybrid-learning/DevopsT.svg" alt=" DevOps Course Default Image" />
         <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'data-analyst'" src="assets/hybrid-learning/classroom.svg" alt=" DevOps Course Default Image" />
+        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'azure-devops'" src="assets/hybrid-learning/classroom.svg" alt=" DevOps Course Default Image" />
         <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'finops'" src="assets/hybrid-learning/finnnops.webp" alt=" DevOps Course Default Image" />
       </ng-template>
   
