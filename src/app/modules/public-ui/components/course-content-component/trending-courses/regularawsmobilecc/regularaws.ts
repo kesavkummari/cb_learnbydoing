@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { DeveopsdownloadformComponent } from '../../aws-devops-course/deveopsdownloadform/deveopsdownloadform.component';
+import { DeveopsdownloadformComponent } from '../../finops/deveopsdownloadform/deveopsdownloadform.component';
 import { MatDialog } from '@angular/material/dialog';
-import { RegulardownloadformComponent } from '../../aws-devops-course/regularCCdownload/regularcontent';
+// import { RegulardownloadformComponent } from '../../finops/regularCCdownload/regularcontent';
 
 @Component({
   selector: 'regularawsmobilecc',

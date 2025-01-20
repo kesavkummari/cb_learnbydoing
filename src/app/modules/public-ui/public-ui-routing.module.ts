@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { IntroPageComponent } from './Pages/intro-page/intro-page.component';
-import { FinOpsComponent } from './Pages/finops/finops.component';
+// import { FinOpsComponent } from './Pages/finops/finops.component';
 import { ContactUsComponent } from './components/contactus/contact.component';
 import { BlogsComponent } from './components/blogs-component/blogs/blog.component'
 import { Blog1Component } from './components/blogs-component/blogs-pages/blog1/blog1';
@@ -66,7 +66,7 @@ const routes: Routes = [
   {path:'data-analyst', component: DataAnalystComponent},
   {path:'awsdevops', component: JobReadyComponent},
   {path:'azure-devops', component: AzureDevOpsComponent},
-  {path:'finops', component: FinOpsComponent},
+  // {path:'finops', component: FinOpsComponent},
   {path:'blogs', component: BlogsComponent},
   {path:'blogs', component:BlogTemplateComponent, children:[
     { path: 'da-python-basics-intro', component:DaPythonBasicsComponent},

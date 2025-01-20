@@ -18,8 +18,6 @@ import { DigitalLyncComponent } from './components/digital-lync/digital-lync.com
 import { QuestionsColComponent } from './components/questions-col/questions-col.component';
 import { CourseTableComponent } from './components/course-content-component/course-table/course-table.component';
 import { CourseIntenseTableComponent } from './components/course-content-component/trending-courses/course-table-intense/course-table.component';
-import { FinOpsComponent } from './Pages/finops/finops.component'
-import { FinOpsCoursesComponent } from './components/course-content-component/finops/finops-courses.component'
 import { ImagePopupComponent } from './components/app-image-popup/image-popup.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -47,18 +45,14 @@ import { CompanyComponent } from './components/companies/company.component';
 import { BlogStartingComponent } from './components/blogs-component/blogstarting/blogstart';
 import { BlogsComponent } from './components/blogs-component/blogs/blog.component';
 import { AutoScalingComponent } from './components/blogs-component/blogs-pages/all-blogs/Amazon_Auto-Scalling/auto-scaling';
-import { DeveopsdownloadformComponent } from './components/course-content-component/aws-devops-course/deveopsdownloadform/deveopsdownloadform.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card'; // Import MatCardModule
 import { ReviewsColComponent } from './components/reviews/reviews.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { GoogleReviewsColComponent } from './components/reviews/google-reviews/google-reviews';
 import { RegularAWSCourseContent } from './components/course-content-component/trending-courses/regularawsmobilecc/regularaws';
-import { RegulardownloadformComponent } from './components/course-content-component/aws-devops-course/regularCCdownload/regularcontent';
-import { DevopsDownloadComponent } from './components/course-content-component/aws-devops-course/devopsdownload-form/devops.download.component';
 import { JobReadyComponent } from './Pages/job-ready/jobready.component';
 import { DataAnalystComponent } from './Pages/data-analyst/data-analyst.component';
-import { FinOpsToolsComponent } from './components/course-content-component/finops/finops-tools/finops-tools.component';
 import { JobReadyFeeComponent } from './components/fee-structure/job-ready-fee/job.ready.component';
 import { HomePageNewComponent } from './components/home-page-new/page1';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -73,21 +67,16 @@ import { PrivacyPolicyComponent } from './components/privacy-policy/privacy.poli
 import { TNCComponent } from './components/terms_and_conditions/t_n_c';
 import { CancellationRefundComponent } from './components/cancellation_and_refundpolicy/cancellation_and_refundpolicy';
 import { UpcomingComponent } from './components/upcoming/upcoming';
-import { LandingBanner2Component } from './components/we-offer/landing-banner2-finops/landing-banner2';
 import { LandingBanner3Component } from './components/we-offer/landing-banner3-awsdevops/landing-banner3';
 
-import { FeeEMIFinOpsComponent } from './components/fee-emi-popup-finOps/fee.emi.component';
-import { FeeEMIfinOpsMain } from './components/fee-emi-popup-finOps/fee-emi-main-finOps/fee-emi-main';
 import { FeeEMIAWSComponent } from './components/fee-emi-popup-aws/fee.emi.component';
 import { FeeEMIAWSMain } from './components/fee-emi-popup-aws/fee-emi-main-aws/fee-emi-main';
 import { DataAnalystCourseComponent } from './components/course-content-component/data-analyst/data-analyst-course.component'
 import { DataAnalystCCMBComponent } from './components/course-content-component/data-analyst/data-analyst-ccmb/data-analyst-ccmb';
 import { DevopsFaqComponent } from './components/faqs/devops-faq/devops-faq.component';
-import { FinopsFaqComponent } from './components/faqs/finops-faq/finops-faq.component';
 import { DataAnalystFaqComponent } from './components/faqs/data-analyst-faq/data-analyst-faq.component';
 import { DAEligibilityComponent } from './components/course-content-component/data-analyst/da-eligibility/da-eligibility.component';
 import { DevopsEligibilityComponent } from './components/course-content-component/trending-courses/devops-eligibility/devops-eligibility.component';
-import { FinopsEligibilityComponent } from './components/course-content-component/finops/finops-eligibility/finops-eligibility.component';
 import { BlogTemplateComponent } from './components/blogs-component/blogs-pages/all-blogs/blog-template.component';
 import { DaToolsComponent } from './components/course-content-component/data-analyst/da-tools/da-tools.component';
 import { DaCertifcatesComponent } from './components/course-content-component/data-analyst/da-certifcates/da-certifcates.component';
@@ -100,30 +89,56 @@ import { AzureDevopsFaqComponent } from './components/faqs/azure-devops-faq/azur
 import { DaPandasBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-pandas-basics/da-numpy-basics.component';
 import { AzureToolsComponent } from './components/course-content-component/azure-devops/azure-tools/azure-tools.component';
 import { AzureCertifcatesComponent } from './components/course-content-component/azure-devops/azure-certifcates/azure-certifcates.component';
-import { FinOpsCourseContentMob } from './components/course-content-component/finops/finopscourse-contentmob/finopscourse-contentmob';
+
+// FinOps Imports
+// import { FinOpsComponent } from './Pages/finops/finops.component'
+// import { FinOpsCourseContentMob } from './components/course-content-component/finops/finopscourse-contentmob/finopscourse-contentmob';
+// import { FinOpsCoursesComponent } from './components/course-content-component/finops/finops-courses.component'
+// import { FinopsEligibilityComponent } from './components/course-content-component/finops/finops-eligibility/finops-eligibility.component';
+import { DeveopsdownloadformComponent } from './components/course-content-component/finops/deveopsdownloadform/deveopsdownloadform.component';
+// import { RegulardownloadformComponent } from './components/course-content-component/finops/regularCCdownload/regularcontent';
+// import { FinOpsToolsComponent } from './components/course-content-component/finops/finops-tools/finops-tools.component';
+// import { DevopsDownloadComponent } from './components/course-content-component/finops/devopsdownload-form/devops.download.component';
+
+// import { FinopsFaqComponent } from './components/faqs/finops-faq/finops-faq.component';
+import { LandingBanner2Component } from './components/we-offer/landing-banner2-finops/landing-banner2';
+import { FeeEMIfinOpsMain } from './components/fee-emi-popup-finOps/fee-emi-main-finOps/fee-emi-main';
+import { FeeEMIFinOpsComponent } from './components/fee-emi-popup-finOps/fee.emi.component';
+
 
 @NgModule({
   declarations: [CloudIntroComponent,
-    JobReadyComponent, IntroCardsComponent, ProgramsComponent, FinOpsToolsComponent,
+    JobReadyComponent, IntroCardsComponent, ProgramsComponent, 
     JobReadyFeeComponent, TNCComponent, CancellationRefundComponent,
-    DataAnalystComponent,DataAnalystCourseComponent,DataAnalystCCMBComponent,
+    DataAnalystComponent, DataAnalystCourseComponent, DataAnalystCCMBComponent,
     TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent,
     CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent,
     CourseTableComponent, IntroPageComponent, CourseIntenseTableComponent,
-    FinOpsComponent, FinOpsCoursesComponent,
+    
     ImagePopupComponent, CourseContentMob,
-    RegisterFormComponent, DevopsDownloadComponent, FinOpsCourseContentMob, UpcomingComponent,
-    Blog1Component, FAQComponent, Blog2Component, ContactUsComponent, 
+    RegisterFormComponent,   UpcomingComponent,
+    Blog1Component, FAQComponent, Blog2Component, ContactUsComponent,
     CertificateComponent, SubHeaderComponent, FeeStructureComponent, PrivacyPolicyComponent, LandingBanner2Component, LandingBanner3Component,
     ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent, LandingPageComponent, WeOfferComponent, LandingBannerComponent, LandingReviewsComponent, LandingVideosComponent, LandingPriceComponent, RolesComponent,
     CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
-    DeveopsdownloadformComponent, ReviewsColComponent, GoogleReviewsColComponent,
-    FeeEMIAWSComponent,FeeEMIAWSMain ,FeeEMIfinOpsMain, FeeEMIFinOpsComponent,
-    RegularAWSCourseContent, RegulardownloadformComponent, HomePageNewComponent,
+     ReviewsColComponent, GoogleReviewsColComponent,
+    FeeEMIAWSComponent, FeeEMIAWSMain, 
+    RegularAWSCourseContent,  HomePageNewComponent,
     DevopsFaqComponent,
-    FinopsFaqComponent,
-    DataAnalystFaqComponent, DAEligibilityComponent, DevopsEligibilityComponent, FinopsEligibilityComponent, BlogTemplateComponent, DaToolsComponent, DaCertifcatesComponent, AzureDevOpsContentComponent, AzureDevOpsComponent, AzureDevopsEligibilityComponent, AzureAWSCourseContentMobileView, LandingBanner4AzureDevOpsComponent, AzureDevopsFaqComponent,
-    DaPandasBasicsComponent, AzureToolsComponent, AzureCertifcatesComponent
+    
+    DataAnalystFaqComponent, DAEligibilityComponent, DevopsEligibilityComponent,  BlogTemplateComponent, DaToolsComponent, DaCertifcatesComponent, AzureDevOpsContentComponent, AzureDevOpsComponent, AzureDevopsEligibilityComponent, AzureAWSCourseContentMobileView, LandingBanner4AzureDevOpsComponent, AzureDevopsFaqComponent,
+    DaPandasBasicsComponent, AzureToolsComponent, AzureCertifcatesComponent,
+
+    // // FinOps
+    // FinOpsComponent, FinOpsCoursesComponent,
+    // FinOpsCourseContentMob,
+    // FinOpsToolsComponent,
+    // FeeEMIfinOpsMain, FeeEMIFinOpsComponent,
+    // FinopsFaqComponent,
+    // FinopsEligibilityComponent,
+    DeveopsdownloadformComponent,
+    // RegulardownloadformComponent,
+    // DevopsDownloadComponent,
   ],
   imports: [RouterModule, PublicUiRoutingModule, MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTooltipModule, MatIconModule, MatSnackBarModule, HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],

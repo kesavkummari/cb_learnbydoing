@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DeveopsdownloadformComponent } from '../aws-devops-course/deveopsdownloadform/deveopsdownloadform.component';
+import { DeveopsdownloadformComponent } from './deveopsdownloadform/deveopsdownloadform.component';
 
 @Component({
   selector: 'finops_courses',
