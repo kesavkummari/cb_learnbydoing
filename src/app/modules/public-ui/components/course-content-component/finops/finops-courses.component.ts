@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DeveopsdownloadformComponent } from './deveopsdownloadform/deveopsdownloadform.component';
+import { DeveopsdownloadformComponent } from '../aws-devops-course/deveopsdownloadform/deveopsdownloadform.component';
 
 @Component({
-  selector: 'mlops_courses',
-  templateUrl: './mlops-courses.component.html',
-  styleUrls: ['./mlops-courses.component.css']
+  selector: 'finops_courses',
+  templateUrl: './finops-courses.component.html',
+  styleUrls: ['./finops-courses.component.css']
 })
-export class MlOpsCoursesComponent {
+export class FinOpsCoursesComponent {
   constructor(public dialog: MatDialog) {}
 
   openDialog(): void {

@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { DeveopsdownloadformComponent } from '../deveopsdownloadform/deveopsdownloadform.component';
+import { DeveopsdownloadformComponent } from '../../aws-devops-course/deveopsdownloadform/deveopsdownloadform.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
-  selector: 'devopscourse-contentmob',
-  templateUrl: './devopscourse-contentmob.html',
-  styleUrls: ['./devopscourse-contentmob.css']
+  selector: 'finopscourse-contentmob',
+  templateUrl: './finopscourse-contentmob.html',
+  styleUrls: ['./finopscourse-contentmob.css']
 })
-export class DevOpsCourseContentMob {
+export class FinOpsCourseContentMob {
 
   courses = [
     {

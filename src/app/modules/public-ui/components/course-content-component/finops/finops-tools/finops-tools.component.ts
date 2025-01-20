@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { DeveopsdownloadformComponent } from '../../course-content-component/aws-devops-course/deveopsdownloadform/deveopsdownloadform.component';
+import { DeveopsdownloadformComponent } from '../../aws-devops-course/deveopsdownloadform/deveopsdownloadform.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
-  selector: 'regular-fee',
-  templateUrl: './regular.fee.component.html',
-  styleUrls:['./regular.fee.component.css']
+  selector: 'finops-tools',
+  templateUrl: './finops-tools.component.html',
+  styleUrls:['./finops-tools.component.css']
 })
-export class RegularFeeStructureComponent {
+export class FinOpsToolsComponent {
  
   constructor(public dialog: MatDialog) { }
   openDialog(): void {

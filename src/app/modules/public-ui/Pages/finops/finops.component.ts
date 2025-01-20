@@ -5,10 +5,10 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'finops',
-  templateUrl: './awsdevops.component.html',
-  styleUrls: ['./awsdevops.component.css']
+  templateUrl: './finops.component.html',
+  styleUrls: ['./finops.component.css']
 })
-export class AwsDevopsComponent implements OnInit {
+export class FinOpsComponent implements OnInit {
   isLoading = false;
 
   name = new FormControl('', [Validators.required]);

@@ -18,9 +18,8 @@ import { DigitalLyncComponent } from './components/digital-lync/digital-lync.com
 import { QuestionsColComponent } from './components/questions-col/questions-col.component';
 import { CourseTableComponent } from './components/course-content-component/course-table/course-table.component';
 import { CourseIntenseTableComponent } from './components/course-content-component/trending-courses/course-table-intense/course-table.component';
-import { AwsDevopsComponent } from './Pages/aws-devops/awsdevops.component'
-import { MlOpsCoursesComponent } from './components/course-content-component/aws-devops-course/mlops-courses.component'
-import { AwsDevOpsCourseTableComponent } from './components/course-content-component/aws-devops-course/aws-devops-course-content/awsdevops-table.component'
+import { FinOpsComponent } from './Pages/finops/finops.component'
+import { FinOpsCoursesComponent } from './components/course-content-component/finops/finops-courses.component'
 import { ImagePopupComponent } from './components/app-image-popup/image-popup.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -33,8 +32,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { CourseContentMob } from './components/course-content-component/trending-courses/course-contentmob/course-contentmob'
 import { RegisterFormComponent } from './components/course-content-component/trending-courses/registration-form/register.component'
 import { FormsModule } from '@angular/forms';
-
-import { DevOpsCourseContentMob } from './components/course-content-component/aws-devops-course/devopscourse-contentmob/devopscourse-contentmob'
 import { Blog1Component } from './components/blogs-component/blogs-pages/blog1/blog1';
 import { FAQComponent } from './components/faqs/faq.component';
 import { Blog2Component } from './components/blogs-component/blogs-pages/blog2/frugalarchitect';
@@ -61,7 +58,7 @@ import { RegulardownloadformComponent } from './components/course-content-compon
 import { DevopsDownloadComponent } from './components/course-content-component/aws-devops-course/devopsdownload-form/devops.download.component';
 import { JobReadyComponent } from './Pages/job-ready/jobready.component';
 import { DataAnalystComponent } from './Pages/data-analyst/data-analyst.component';
-import { RegularFeeStructureComponent } from './components/fee-structure/regular-fee/fee.structure.component';
+import { FinOpsToolsComponent } from './components/course-content-component/finops/finops-tools/finops-tools.component';
 import { JobReadyFeeComponent } from './components/fee-structure/job-ready-fee/job.ready.component';
 import { HomePageNewComponent } from './components/home-page-new/page1';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -90,7 +87,7 @@ import { FinopsFaqComponent } from './components/faqs/finops-faq/finops-faq.comp
 import { DataAnalystFaqComponent } from './components/faqs/data-analyst-faq/data-analyst-faq.component';
 import { DAEligibilityComponent } from './components/course-content-component/data-analyst/da-eligibility/da-eligibility.component';
 import { DevopsEligibilityComponent } from './components/course-content-component/trending-courses/devops-eligibility/devops-eligibility.component';
-import { FinopsEligibilityComponent } from './components/course-content-component/aws-devops-course/finops-eligibility/finops-eligibility.component';
+import { FinopsEligibilityComponent } from './components/course-content-component/finops/finops-eligibility/finops-eligibility.component';
 import { BlogTemplateComponent } from './components/blogs-component/blogs-pages/all-blogs/blog-template.component';
 import { DaToolsComponent } from './components/course-content-component/data-analyst/da-tools/da-tools.component';
 import { DaCertifcatesComponent } from './components/course-content-component/data-analyst/da-certifcates/da-certifcates.component';
@@ -103,18 +100,19 @@ import { AzureDevopsFaqComponent } from './components/faqs/azure-devops-faq/azur
 import { DaPandasBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-pandas-basics/da-numpy-basics.component';
 import { AzureToolsComponent } from './components/course-content-component/azure-devops/azure-tools/azure-tools.component';
 import { AzureCertifcatesComponent } from './components/course-content-component/azure-devops/azure-certifcates/azure-certifcates.component';
+import { FinOpsCourseContentMob } from './components/course-content-component/finops/finopscourse-contentmob/finopscourse-contentmob';
 
 @NgModule({
   declarations: [CloudIntroComponent,
-    JobReadyComponent, IntroCardsComponent, ProgramsComponent, RegularFeeStructureComponent,
+    JobReadyComponent, IntroCardsComponent, ProgramsComponent, FinOpsToolsComponent,
     JobReadyFeeComponent, TNCComponent, CancellationRefundComponent,
     DataAnalystComponent,DataAnalystCourseComponent,DataAnalystCCMBComponent,
     TrendingCoursesComponent, HybridLearningComponent, KeyFeaturesComponent,
     CorporateTrainingComponent, DigitalLyncComponent, QuestionsColComponent,
     CourseTableComponent, IntroPageComponent, CourseIntenseTableComponent,
-    AwsDevopsComponent, MlOpsCoursesComponent,
-    AwsDevOpsCourseTableComponent, ImagePopupComponent, CourseContentMob,
-    RegisterFormComponent, DevopsDownloadComponent, DevOpsCourseContentMob, UpcomingComponent,
+    FinOpsComponent, FinOpsCoursesComponent,
+    ImagePopupComponent, CourseContentMob,
+    RegisterFormComponent, DevopsDownloadComponent, FinOpsCourseContentMob, UpcomingComponent,
     Blog1Component, FAQComponent, Blog2Component, ContactUsComponent, 
     CertificateComponent, SubHeaderComponent, FeeStructureComponent, PrivacyPolicyComponent, LandingBanner2Component, LandingBanner3Component,
     ToolsComponent, TestimonialsComponent, BlogComponent, VideoComponent, LandingPageComponent, WeOfferComponent, LandingBannerComponent, LandingReviewsComponent, LandingVideosComponent, LandingPriceComponent, RolesComponent,
