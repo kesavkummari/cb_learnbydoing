@@ -3,11 +3,11 @@ import { DeveopsdownloadformComponent } from '../finops/deveopsdownloadform/deve
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
-  selector: 'trending-courses',
-  templateUrl: './trending-courses.component.html',
-  styleUrls: ['./trending-courses.component.css']
+  selector: 'aws-course-content',
+  templateUrl: './aws-course-content.component.html',
+  styleUrls: ['./aws-course-content.component.css']
 })
-export class TrendingCoursesComponent {
+export class AWSCourseContentComponent {
   constructor(public dialog: MatDialog) {}
   openDialog(): void {
     const dialogRef = this.dialog.open(DeveopsdownloadformComponent, {

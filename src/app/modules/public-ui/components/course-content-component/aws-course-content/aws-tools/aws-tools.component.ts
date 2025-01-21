@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { DeveopsdownloadformComponent } from '../../course-content-component/finops/deveopsdownloadform/deveopsdownloadform.component';
+import { DeveopsdownloadformComponent } from '../../finops/deveopsdownloadform/deveopsdownloadform.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
-  selector: 'job-ready-fee',
-  templateUrl: './job.ready.component.html',
-  styleUrls:['./job.ready.component.css']
+  selector: 'aws-tools',
+  templateUrl: './aws-tools.component.html',
+  styleUrls:['./aws-tools.component.css']
 })
-export class JobReadyFeeComponent {
+export class AWSToolsComponent {
  
   constructor(public dialog: MatDialog) { }
   openDialog(): void {

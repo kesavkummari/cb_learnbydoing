@@ -41,7 +41,7 @@ import { SageMakerComponent } from './components/blogs-component/blogs-pages/all
 import { RDSMYSQLComponent } from './components/blogs-component/blogs-pages/all-blogs/RDS_MYSQL/rdsmysql';
 import { RoutingComponent } from './components/blogs-component/blogs-pages/all-blogs/Routing_polices/routing';
 import { ServerlessComponent } from './components/blogs-component/blogs-pages/all-blogs/serverless_website/serverless';
-import { JobReadyComponent } from './Pages/job-ready/jobready.component';
+import { AWSCourseComponent } from './Pages/aws-course/aws-course.component';
 import { SETTINGNLBCompoent } from './components/blogs-component/blogs-pages/use-cases/Setting-Up-Network-Load-Balancer/setting.nlb';
 import { SETTINGALBCompoent } from './components/blogs-component/blogs-pages/use-cases/Setting-Up-Application-Load-Balancer/setting.alb';
 import { DISASTERRECOVERYCompoent } from './components/blogs-component/blogs-pages/use-cases/Implementing-a-disaster-recovery-strategy-with-Amazon-RDS/disaster.recovery';
@@ -64,7 +64,7 @@ const routes: Routes = [
  
   {path:'home', component: IntroPageComponent},
   {path:'data-analyst', component: DataAnalystComponent},
-  {path:'awsdevops', component: JobReadyComponent},
+  {path:'aws', component: AWSCourseComponent},
   {path:'azure-devops', component: AzureDevOpsComponent},
   // {path:'finops', component: FinOpsComponent},
   {path:'blogs', component: BlogsComponent},

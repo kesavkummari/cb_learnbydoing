@@ -4,11 +4,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'job-ready',
-  templateUrl: './jobready.component.html',
-  styleUrls: ['./jobready.component.css']
+  selector: 'aws-course',
+  templateUrl: './aws-course.component.html',
+  styleUrls: ['./aws-course.component.css']
 })
-export class JobReadyComponent implements OnInit {
+export class AWSCourseComponent implements OnInit {
   isLoading = false;
 
   name = new FormControl('', [Validators.required]);

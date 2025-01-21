@@ -4,11 +4,11 @@ import { MatDialog } from '@angular/material/dialog';
 // import { RegulardownloadformComponent } from '../../finops/regularCCdownload/regularcontent';
 
 @Component({
-  selector: 'regularawsmobilecc',
-  templateUrl: './regularaws.html',
-  styleUrls: ['./regularaws.css']
+  selector: 'awsmobilecc',
+  templateUrl: './awsmobilecc.html',
+  styleUrls: ['./awsmobilecc.css']
 })
-export class RegularAWSCourseContent {
+export class AWSMobileCourseContent {
 
   courses = [
     {

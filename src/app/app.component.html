@@ -37,9 +37,9 @@
 
     <div class="header-right">
       <a routerLink="/home">Home </a>
-      <a [routerLink]="['/data-analyst']" routerLinkActive="router-link-active">Data Analyst </a>
-      <a [routerLink]="['/awsdevops']" routerLinkActive="router-link-active">AWS DevOps </a>
+      <a [routerLink]="['/aws']" routerLinkActive="router-link-active">AWS</a>
       <a [routerLink]="['/azure-devops']" routerLinkActive="router-link-active">Azure DevOps</a>
+      <a [routerLink]="['/data-analyst']" routerLinkActive="router-link-active">Data Analyst </a>
       <!-- <a [routerLink]="['/finops']" routerLinkActive="router-link-active"> FinOps
         <span style="color: orange; font-size: 12px;"></span>
       </a> -->
@@ -60,7 +60,7 @@
   <router-outlet></router-outlet>
 
   <footer-col></footer-col>
-</div>
+</div>  
 
 <!-- Sidenav -->
 <div class="header__backdrop" [class.open]="sidenavOpen" (click)="closeSidenav()"></div>
@@ -68,9 +68,9 @@
   <!-- Your sidenav content goes here -->
   <a routerLink="/home" (click)="closeSidenav()">Home</a>
   <!-- <a [routerLink]="['/aws']" routerLinkActive="router-link-active" (click)="closeSidenav()">AWS</a> -->
-  <a routerLink="/data-analyst" (click)="closeSidenav()">Data Analyst </a>
-  <a routerLink="/awsdevops" (click)="closeSidenav()">AWS DevOps </a>
+  <a routerLink="/aws" (click)="closeSidenav()">AWS</a>
   <a routerLink="/azure-devops" (click)="closeSidenav()">Azure DevOps</a>
+  <a routerLink="/data-analyst" (click)="closeSidenav()">Data Analyst </a>
   <!-- <a routerLink="/finops" (click)="closeSidenav()">FinOps </a> -->
   <a routerLink="/blogs" (click)="closeSidenav()">Blogs</a>
   <a [routerLink]="['/contactus']" routerLinkActive="router-link-active" (click)="closeSidenav()">Contact Us</a>

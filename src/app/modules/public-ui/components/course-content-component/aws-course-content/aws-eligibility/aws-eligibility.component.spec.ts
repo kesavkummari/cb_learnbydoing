@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DevopsEligibilityComponent } from './devops-eligibility.component';
+import { DevopsEligibilityComponent } from './aws-eligibility.component';
 
 describe('DevopsEligibilityComponent', () => {
   let component: DevopsEligibilityComponent;
