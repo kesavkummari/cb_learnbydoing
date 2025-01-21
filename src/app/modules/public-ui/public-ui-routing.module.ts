@@ -57,7 +57,7 @@ import { DaPythonBasicsComponent } from './components/blogs-component/blogs-page
 import { BlogTemplateComponent } from './components/blogs-component/blogs-pages/all-blogs/blog-template.component';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
 import { DaNumpyBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-numpy-basics/da-numpy-basics.component';
-import { AzureDevOpsComponent } from './Pages/azure-devops/azure-devops.component';
+// import { AzureDevOpsComponent } from './Pages/azure-devops/azure-devops.component';
 import { DaPandasBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-pandas-basics/da-numpy-basics.component';
 
 const routes: Routes = [
@@ -65,7 +65,7 @@ const routes: Routes = [
   {path:'home', component: IntroPageComponent},
   {path:'data-analyst', component: DataAnalystComponent},
   {path:'aws', component: AWSCourseComponent},
-  {path:'azure-devops', component: AzureDevOpsComponent},
+  // {path:'azure-devops', component: AzureDevOpsComponent},
   // {path:'finops', component: FinOpsComponent},
   {path:'blogs', component: BlogsComponent},
   {path:'blogs', component:BlogTemplateComponent, children:[

@@ -80,15 +80,17 @@ import { AWSEligibilityComponent } from './components/course-content-component/a
 import { BlogTemplateComponent } from './components/blogs-component/blogs-pages/all-blogs/blog-template.component';
 import { DaToolsComponent } from './components/course-content-component/data-analyst/da-tools/da-tools.component';
 import { DaCertifcatesComponent } from './components/course-content-component/data-analyst/da-certifcates/da-certifcates.component';
-import { AzureDevOpsContentComponent } from './components/course-content-component/azure-devops/azure-devops-content.component';
-import { AzureDevOpsComponent } from './Pages/azure-devops/azure-devops.component';
-import { AzureDevopsEligibilityComponent } from './components/course-content-component/azure-devops/azure-devops-eligibility/azure-devops-eligibility.component';
-import { AzureAWSCourseContentMobileView } from './components/course-content-component/azure-devops/azure-devops-ccmb/azure-devops-ccmb';
-import { LandingBanner4AzureDevOpsComponent } from './components/we-offer/landing-banner4-azuredevops/landing-banner4-azuredevops';
-import { AzureDevopsFaqComponent } from './components/faqs/azure-devops-faq/azure-devops-faq.component';
 import { DaPandasBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-pandas-basics/da-numpy-basics.component';
-import { AzureToolsComponent } from './components/course-content-component/azure-devops/azure-tools/azure-tools.component';
-import { AzureCertifcatesComponent } from './components/course-content-component/azure-devops/azure-certifcates/azure-certifcates.component';
+
+// Azure Imports
+// import { AzureDevOpsContentComponent } from './components/course-content-component/azure-devops/azure-devops-content.component';
+// import { AzureDevOpsComponent } from './Pages/azure-devops/azure-devops.component';
+// import { AzureDevopsEligibilityComponent } from './components/course-content-component/azure-devops/azure-devops-eligibility/azure-devops-eligibility.component';
+// import { AzureAWSCourseContentMobileView } from './components/course-content-component/azure-devops/azure-devops-ccmb/azure-devops-ccmb';
+// import { LandingBanner4AzureDevOpsComponent } from './components/we-offer/landing-banner4-azuredevops/landing-banner4-azuredevops';
+// import { AzureDevopsFaqComponent } from './components/faqs/azure-devops-faq/azure-devops-faq.component';
+// import { AzureToolsComponent } from './components/course-content-component/azure-devops/azure-tools/azure-tools.component';
+// import { AzureCertifcatesComponent } from './components/course-content-component/azure-devops/azure-certifcates/azure-certifcates.component';
 
 // FinOps Imports
 // import { FinOpsComponent } from './Pages/finops/finops.component'
@@ -129,8 +131,10 @@ import { AWSToolsAndPlatformsComponent } from './components/course-content-compo
     AWSMobileCourseContent,  HomePageNewComponent,
     DevopsFaqComponent,
     
-    DataAnalystFaqComponent, DAEligibilityComponent, AWSEligibilityComponent,  BlogTemplateComponent, DaToolsComponent, DaCertifcatesComponent, AzureDevOpsContentComponent, AzureDevOpsComponent, AzureDevopsEligibilityComponent, AzureAWSCourseContentMobileView, LandingBanner4AzureDevOpsComponent, AzureDevopsFaqComponent,
-    DaPandasBasicsComponent, AzureToolsComponent, AzureCertifcatesComponent,
+    DataAnalystFaqComponent, DAEligibilityComponent, AWSEligibilityComponent,  BlogTemplateComponent, DaToolsComponent, DaCertifcatesComponent, 
+    // AzureDevOpsContentComponent, AzureDevOpsComponent, AzureDevopsEligibilityComponent, AzureAWSCourseContentMobileView, LandingBanner4AzureDevOpsComponent, AzureDevopsFaqComponent,
+    DaPandasBasicsComponent, 
+    // AzureToolsComponent, AzureCertifcatesComponent,
 
     AWSToolsAndPlatformsComponent,
 
