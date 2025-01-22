@@ -16,7 +16,6 @@ import { MatTabsModule } from '@angular/material/tabs';
   declarations: [
     AppComponent,
     FooterComponent,
-    
   ],
   imports: [
     BrowserModule,

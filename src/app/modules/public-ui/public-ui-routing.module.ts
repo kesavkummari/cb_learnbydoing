@@ -59,12 +59,14 @@ import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.com
 import { DaNumpyBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-numpy-basics/da-numpy-basics.component';
 // import { AzureDevOpsComponent } from './Pages/azure-devops/azure-devops.component';
 import { DaPandasBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-pandas-basics/da-numpy-basics.component';
+import { DevopsComponent } from './Pages/devops/devops.component';
 
 const routes: Routes = [
  
   {path:'home', component: IntroPageComponent},
   {path:'data-analyst', component: DataAnalystComponent},
   {path:'aws', component: AWSCourseComponent},
+  {path:'devops', component:DevopsComponent},
   // {path:'azure-devops', component: AzureDevOpsComponent},
   // {path:'finops', component: FinOpsComponent},
   {path:'blogs', component: BlogsComponent},

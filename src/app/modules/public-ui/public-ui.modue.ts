@@ -107,6 +107,13 @@ import { LandingBanner2Component } from './components/we-offer/landing-banner2-f
 import { FeeEMIfinOpsMain } from './components/fee-emi-popup-finOps/fee-emi-main-finOps/fee-emi-main';
 import { FeeEMIFinOpsComponent } from './components/fee-emi-popup-finOps/fee.emi.component';
 import { AWSToolsAndPlatformsComponent } from './components/course-content-component/aws-course-content/aws-tools-and-platforms/aws-tools-and-platforms.component';
+import { DevopsComponent } from './Pages/devops/devops.component';
+import { DevopsCourseContentComponent } from './components/course-content-component/devops-course-content/devops-course-content.component';
+import { DevopsEligibilityComponent } from './components/course-content-component/devops-course-content/devops-eligibility/devops-eligibility.component';
+import { DevopsmobileccComponent } from './components/course-content-component/devops-course-content/devopsmobilecc/devopsmobilecc.component';
+import { DevopsToolsComponent } from './components/course-content-component/devops-course-content/devops-tools/devops-tools.component';
+import { DevopsToolsAndPlatformsComponent } from './components/course-content-component/devops-course-content/devops-tools-and-platforms/devops-tools-and-platforms.component';
+import { AwsFaqComponent } from './components/faqs/aws-faq/aws-faq.component';
 
 
 @NgModule({
@@ -129,15 +136,15 @@ import { AWSToolsAndPlatformsComponent } from './components/course-content-compo
      ReviewsColComponent, GoogleReviewsColComponent,
     FeeEMIAWSComponent, FeeEMIAWSMain, 
     AWSMobileCourseContent,  HomePageNewComponent,
-    DevopsFaqComponent,
     
     DataAnalystFaqComponent, DAEligibilityComponent, AWSEligibilityComponent,  BlogTemplateComponent, DaToolsComponent, DaCertifcatesComponent, 
     // AzureDevOpsContentComponent, AzureDevOpsComponent, AzureDevopsEligibilityComponent, AzureAWSCourseContentMobileView, LandingBanner4AzureDevOpsComponent, AzureDevopsFaqComponent,
     DaPandasBasicsComponent, 
     // AzureToolsComponent, AzureCertifcatesComponent,
-
+    
     AWSToolsAndPlatformsComponent,
-
+    AwsFaqComponent,
+    
     // // FinOps
     // FinOpsComponent, FinOpsCoursesComponent,
     // FinOpsCourseContentMob,
@@ -148,6 +155,15 @@ import { AWSToolsAndPlatformsComponent } from './components/course-content-compo
     DeveopsdownloadformComponent,
     // RegulardownloadformComponent,
     // DevopsDownloadComponent,
+    
+    // DevOps;;;
+    DevopsComponent,
+    DevopsCourseContentComponent,
+    DevopsEligibilityComponent,
+    DevopsmobileccComponent,
+    DevopsToolsComponent,
+    DevopsToolsAndPlatformsComponent,
+    DevopsFaqComponent,
   ],
   imports: [RouterModule, PublicUiRoutingModule, MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTooltipModule, MatIconModule, MatSnackBarModule, HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
