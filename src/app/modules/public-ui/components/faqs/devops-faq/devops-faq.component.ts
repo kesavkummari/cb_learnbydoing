@@ -1,7 +1,7 @@
 import { Component, ElementRef, AfterViewInit, Renderer2, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-devops-faq',
+  selector: 'devops-faq',
   templateUrl: './devops-faq.component.html',
   styleUrls: ['../faq.component.css']
 })
