@@ -2,8 +2,8 @@
   <div class="main-tab">
     <div class="sub-tabs">
       <div  class="sub-tab" (click)="selectTab('os')" *ngIf="selectedTab === 'os'" [class.active]="selectedTab === 'os'">   OS [Windows & Linux]</div>
-      <div class="sub-tab" (click)="selectTab('aws')" *ngIf="selectedTab === 'aws'" [class.active]="selectedTab === 'aws'">AWS DevOps</div>    
-      <div class="sub-tab" style="color: #421740;" (click)="selectTab('devops')" *ngIf="selectedTab === 'devops'" [class.active]="selectedTab === 'devops'"> AWS DevOps</div>
+      <div class="sub-tab" (click)="selectTab('aws')" *ngIf="selectedTab === 'aws'" [class.active]="selectedTab === 'aws'">AWS</div>    
+      <div class="sub-tab" style="color: #421740;" (click)="selectTab('devops')" *ngIf="selectedTab === 'devops'" [class.active]="selectedTab === 'devops'"> DevOps</div>
       <div class="sub-tab" style="color: #421740;" (click)="selectTab('data-analyst')" *ngIf="selectedTab === 'data-analyst'" [class.active]="selectedTab === 'data-analyst'"> Data Analyst</div>
       <div class="sub-tab" style="color: #421740;" (click)="selectTab('finops')" *ngIf="selectedTab === 'finops'" [class.active]="selectedTab === 'finops'"> FinOps</div>
      <div class="sub-tab" (click)="selectTab('mlops')" *ngIf="selectedTab === 'mlops'" [class.active]="selectedTab === 'mlops'" >MLOps </div> 
@@ -1167,7 +1167,7 @@
       <ng-container *ngIf="selectedTab === 'devops'">
         <div class="content-columns">
           <div class="left-column">
-            <h2 style="padding-bottom: 10px;">AWS DevOps Content - Modules</h2>
+            <h2 style="padding-bottom: 10px;">AWS Content - Modules</h2>
 <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">OS - Windows & Unix/Linux </div>
 <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS - Analytics</div>
 <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS - Application Integration</div>
@@ -2203,7 +2203,7 @@
   <ng-container *ngIf="selectedTab === 'azure-devops'">
         <div class="content-columns">
           <div class="left-column">
-            <h2 style="padding-bottom: 10px;">Azure DevOps Content - Modules</h2>
+            <h2 style="padding-bottom: 10px;">AWS Content - Modules</h2>
 <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">OS - Windows & Unix/Linux </div>
 <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Azure - Analytics</div>
 <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">Azure - Application Integration</div>
