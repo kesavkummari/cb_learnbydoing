@@ -114,6 +114,7 @@ import { DevopsmobileccComponent } from './components/course-content-component/d
 import { DevopsToolsComponent } from './components/course-content-component/devops-course-content/devops-tools/devops-tools.component';
 import { DevopsToolsAndPlatformsComponent } from './components/course-content-component/devops-course-content/devops-tools-and-platforms/devops-tools-and-platforms.component';
 import { AwsFaqComponent } from './components/faqs/aws-faq/aws-faq.component';
+import { LandingBanner5AWSComponent } from './components/we-offer/landing-banner5-aws/landing-banner5-aws';
 
 
 @NgModule({
@@ -144,6 +145,7 @@ import { AwsFaqComponent } from './components/faqs/aws-faq/aws-faq.component';
     
     AWSToolsAndPlatformsComponent,
     AwsFaqComponent,
+    LandingBanner5AWSComponent,
     
     // // FinOps
     // FinOpsComponent, FinOpsCoursesComponent,
