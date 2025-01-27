@@ -62,20 +62,24 @@ artifacts:
 
 # www.www.cloudbinary.io	Asia Pacific (Hyderabad) ap-south-2
 
+# Bucket Names:
 
-      # - aws s3 ls s3://www.cloudbinary.in --recursive --human-readable --summarize --region ap-south-2
-      # # List the contents of the bucket
-      # - aws s3 ls s3://www.cloudbinary.in
-      # # Remove Bucket Content
-      # - aws s3 rm s3://www.cloudbinaryin/ --recursive --region ap-south-2
-      # # Upload the code to s3 bucket
-      # - aws s3 sync . s3://www.cloudbinary.in/ --region ap-south-2
+# IT's for Redirection:
+  #  www.cloudbinary.in
 
-      # - aws s3 ls s3://www.cloudbinary.in --recursive --human-readable --summarize --region ap-south-2
-      # # List the contents of the bucket
-      # - aws s3 ls s3://www.cloudbinary.in
-      # # Remove Bucket Content
-      # - aws s3 rm s3://www.cloudbinary.in/ --recursive --region ap-south-2
-      # # Upload the code to s3 bucket
-      # - aws s3 sync . s3://www.cloudbinary.in/ --region ap-south-2
-      # - aws cloudfront create-invalidation --distribution-id E10VDFTX9VWP82 --paths "/*"
+# Code & Primary Domain:
+  #  www.cloudbinaryin
+
+# To Deploy the Code:
+    # - aws s3 ls s3://www.cloudbinary.in  --recursive --human-readable --summarize --region ap-south-2
+    # - aws s3 rm s3://www.cloudbinary.in/ --recursive --region ap-south-2
+    # - aws s3 sync . s3://www.cloudbinary.in/ --region ap-south-2
+    # - aws cloudfront create-invalidation --distribution-id E10VDFTX9VWP82 --paths "/*"
+
+  
+
+# To Deploy the Code:
+    # - aws s3 ls s3://cloudbinaryindomain  --recursive --human-readable --summarize --region ap-south-2
+    # - aws s3 rm s3://cloudbinaryindomain/ --recursive --region ap-south-2
+    # - aws s3 sync . s3://cloudbinaryindomain/ --region ap-south-2
+    # - aws cloudfront create-invalidation --distribution-id E1DYQAFD9V1TDD --paths "/*"
