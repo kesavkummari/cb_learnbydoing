@@ -12,7 +12,7 @@ export class DevopsmobileccComponent {
 
   courses = [
     {
-      title: 'AWS DevOps',
+      title: 'DevOps',
       modules: [
         // Course 2 modules and submodules
         // Module 1
@@ -39,16 +39,9 @@ export class DevopsmobileccComponent {
         {
           title:'AWS Cloud Basics',
           submodules:[
-            'Analytic Services',
-            'Compute Services',
-            'Container Services',
-            'Database Services',
-            'Storage Services',
-            'Developer Tools',
-            'Management and Governance',
-            'Networking and Content Delivery',
-            'Security, Identity, and Compliance',
-            'Serverless'
+            'AWS Basics',
+            'IAM Basics',
+            'Compute Services'
           ]
         },
         {
