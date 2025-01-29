@@ -57,9 +57,7 @@ What is Generative AI?<br>
         <div class="footer-menu">
           <h2 class="footer-menu-name"> About Us</h2>
           <ul id="menu-company" class="footer-menu-list">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-              <a [routerLink]="['/contactus']" routerLinkActive="router-link-active">Contact</a>
-            </li>
+
             <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
               <a  [routerLink]="['/aws']" routerLinkActive="router-link-active">AWS</a>
             </li>
@@ -69,6 +67,10 @@ What is Generative AI?<br>
             
             <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
               <a  [routerLink]="['/data-analyst']" routerLinkActive="router-link-active">Data Analyst</a>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+              <!-- <a [routerLink]="['/contactus']" routerLinkActive="router-link-active">Contact</a> -->
+              <a [routerLink]="['/data-science']" routerLinkActive="router-link-active" style="color: #38b6ff;">Data Science</a>
             </li>
             <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page">
               <a href="#">Careers</a>
