@@ -4,7 +4,6 @@ phases:
   install:
     runtime-versions:
       nodejs: 18
-      #java: corretto11
     commands:
       - echo install phase
   pre_build:
@@ -16,59 +15,35 @@ phases:
       - npm install --legacy-peer-deps
       # - npm update --force
       - npm install popper.js --save
-      
   build:
     commands:
       - echo Build Started
       - pwd
       - ls -lrta
       - npm run build
-      - ls -ltra dist
       - cd dist/cloudbinary
       - ls -lrta
       - echo Files were uploaded unto s3 bucket
       # Get the size of the bucket
-      - aws s3 ls s3://www.cloudbinary --recursive --human-readable --summarize --region ap-south-2
-      # List the contents of the bucket
-      - aws s3 ls s3://www.cloudbinary
+      #- aws s3 ls s3://cloudbinaryindomain  --recursive --human-readable --summarize --region ap-south-2
       # Remove Bucket Content
+      - aws s3 rm s3://cloudbinaryindomain/ --recursive --region ap-south-2
+      - aws s3 rm s3://www.cloudbinary.in/ --recursive --region ap-south-2
       - aws s3 rm s3://www.cloudbinary/ --recursive --region ap-south-2
       # Upload the code to s3 bucket
+      - aws s3 sync . s3://cloudbinaryindomain/ --region ap-south-2
+      - aws s3 sync . s3://www.cloudbinary.in/ --region ap-south-2
       - aws s3 sync . s3://www.cloudbinary/ --region ap-south-2
+      
   post_build:
     commands:
       - echo "post build started `date`"
-      - pwd
-      - ls -lrta
+      # Deploy the code using cloudfront Distribution
+      - aws cloudfront create-invalidation --distribution-id E1DYQAFD9V1TDD --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E10VDFTX9VWP82 --paths "/*"
       - aws cloudfront create-invalidation --distribution-id E1IMUS5PXLF5F9 --paths "/*"
-      #- aws cloudfront create-invalidation --distribution-id E34B5O9UHCRA5E --paths "/*"
-      #- aws cloudfront create-invalidation --distribution-id EXWROS3M9YOMU --paths "/*"
-      #- aws cloudfront create-invalidation --distribution-id E19R550E8221FP --paths "/*"
-      
-      # www.cloudbinary.io
-      - for CF(www.cloudbinary.io) --> S3(www.cloudbinary.io) --> OAI(E25SWVUTIAGHJH) --> CFD(E34B5O9UHCRA5E)
-      # www.www.cloudbinary.io
-      - for CF(www.www.cloudbinary.io) --> S3(www.cloudbinary.io) --> OAI(E25SWVUTIAGHJH) --> CFD(EZFFVXQRLMS84)
-      # www.cloudbinary.io
-      #- for CF(www.cloudbinary.io) --> S3(www.cloudbinary.io) --> OAI() --> OAI(E25SWVUTIAGHJH) --> CFD(EXWROS3M9YOMU)
       - echo "Code has been deployed unto CloudFront `date`"
 artifacts:
   files:
     - '**/*'
   discard-paths: yes
-
-
-# www.cloudbinary.io	Asia Pacific (Hyderabad) ap-south-2
-
-# www.www.cloudbinary.io	Asia Pacific (Hyderabad) ap-south-2
-
-
-      # - aws s3 ls s3://cloudbinaryindomain --recursive --human-readable --summarize --region ap-south-2
-      # - aws s3 rm s3://cloudbinaryindomain/ --recursive --region ap-south-2
-      # - aws s3 sync . s3://cloudbinaryindomain/ --region ap-south-2
-      # - aws cloudfront create-invalidation --distribution-id E1DYQAFD9V1TDD --paths "/*"
-
-      # - aws s3 ls s3://www.cloudbinary.in --recursive --human-readable --summarize --region ap-south-2
-      # - aws s3 rm s3://www.cloudbinary.in/ --recursive --region ap-south-2
-      # - aws s3 sync . s3://www.cloudbinary.in/ --region ap-south-2  
-      # - aws cloudfront create-invalidation --distribution-id E10VDFTX9VWP82 --paths "/*"
