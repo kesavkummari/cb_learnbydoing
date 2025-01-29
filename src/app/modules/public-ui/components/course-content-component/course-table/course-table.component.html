@@ -1410,6 +1410,80 @@
         </div>
       </ng-container>
 
+      <ng-container *ngIf="selectedTab === 'data-science'">
+        <div class="content-columns">
+          <div class="left-column">
+            <h2 style="padding-bottom: 10px;">Data Science Course Content</h2>
+            <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">Data Engineering (Foundation for All Roles) </div>
+            <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">Data Analytics (Turning Raw Data into Insights) </div>
+            <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">MLOps Engineer (Bridging ML & Production) </div>
+            <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">Data Science (Advanced AI & Predictive Modeling) </div>
+          </div>
+          <div class="right-column" style="font-size: smaller;">
+            <ng-container *ngIf="isModuleSelected; else defaultContent">
+                <!-- Display image by default -->     
+            </ng-container>
+                     
+            <ng-container *ngIf="selectedModule === 'M1'">
+              <h2>Data Engineering (Foundation for All Roles)</h2>
+              <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
+              <ul>
+                  <li>Data Architecture (Batch vs. Streaming Processing)</li>
+                  <li>SQL Fundamentals & Query Optimization (MySQL/PostgreSQL)</li>
+                  <li>Data Modeling & Normalization</li>
+                  <li>ETL & Data Pipelines (Building from Scratch)</li>
+                  <li>Handling Big Data with Apache Spark (PySpark Basics)</li>
+                  <li>Introduction to Cloud Data Storage (S3, Delta Lake)</li>
+              </ul>
+            </ng-container>
+            <ng-container *ngIf="selectedModule === 'M2'">
+              <h2>Data Analytics (Turning Raw Data into Insights)</h2>
+              <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
+              <ul>
+                  <li>Data Cleaning & Preprocessing</li>
+                  <li>Exploratory Data Analysis (EDA) Techniques</li>
+                  <li>Statistics for Data Analysis (Hypothesis Testing, A/B Testing)</li>
+                  <li>Data Visualization & Storytelling</li>
+                  <li>Dashboarding with Tableau, Power BI & Excel</li>
+                  <li>Writing SQL Queries for Business Analytics</li>
+              </ul>
+            </ng-container>
+            <ng-container *ngIf="selectedModule === 'M3'">
+              <h2>MLOps Engineer (Bridging ML & Production)</h2>
+              <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
+              <ul>
+                  <li>ML Lifecycle & Model Deployment Strategies</li>
+                  <li>Model Versioning & Experiment Tracking with MLflow</li>
+                  <li>Data Pipeline Automation with Apache Airflow</li>
+                  <li>Continuous Training & Retraining (Data Drift Handling)</li>
+                  <li>Docker & Kubernetes for ML Deployment</li>
+                  <li>CI/CD for ML Pipelines</li>
+                  <li>Introduction to Vector Databases & Feature Stores</li>
+              </ul>
+            </ng-container>
+            <ng-container *ngIf="selectedModule === 'M4'">
+              <h2>Data Science (Advanced AI & Predictive Modeling)</h2>
+              <hr style="position: unset; border: none; height: 2px; background: black; margin-bottom: 20px; margin-right: inherit;">
+              <ul>Concepts Covered:
+                  <li>Supervised & Unsupervised Learning</li>
+                  <li>Feature Engineering & Selection</li>
+                  <li>Hyperparameter Tuning & Model Optimization</li>
+                  <li>Ensemble Learning (Boosting, Bagging)</li>
+                  <li>Time Series Forecasting</li>
+                  <li>NLP & Computer Vision Basics</li>
+                  <li>Explainability in ML Models</li>
+              </ul>
+              <ul>Hands-on Projects:
+                <li>Predict customer churn using real-world datasets</li>
+                <li>Build a recommendation system</li>
+                <li>Time series forecasting with real business data</li>
+              </ul>
+            </ng-container>
+            
+          </div>
+        </div>
+      </ng-container>
+
       <ng-container *ngIf="selectedTab === 'devops'">
         <div class="content-columns">
           <div class="left-column">
@@ -4890,9 +4964,10 @@
         <!-- <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1'" src="assets/hybrid-learning/DevopsT.svg" alt=" DevOps Course Default Image" /> -->
         <img class="img-fluid default-image" style="margin-left: -26px;" *ngIf="selectedModule !== 'M1' && selectedTab === 'aws'" src="assets/hybrid-learning/aws.png" alt=" AWS Course Default Image" />
         <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'devops'" src="assets/hybrid-learning/DevopsT.svg" alt=" DevOps Course Default Image" />
-        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'data-analyst'" src="assets/hybrid-learning/classroom.svg" alt=" DevOps Course Default Image" />
-        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'azure-devops'" src="assets/hybrid-learning/classroom.svg" alt=" DevOps Course Default Image" />
-        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'finops'" src="assets/hybrid-learning/finnnops.webp" alt=" DevOps Course Default Image" />
+        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'data-analyst'" src="assets/hybrid-learning/classroom.svg" alt=" Data Analyst Course Default Image" />
+        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'azure-devops'" src="assets/hybrid-learning/classroom.svg" alt="Azure DevOps Course Default Image" />
+        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'finops'" src="assets/hybrid-learning/finnnops.webp" alt=" FinOps Course Default Image" />
+        <img class="img-fluid default-image" *ngIf="selectedModule !== 'M1' && selectedTab === 'data-science'" src="assets/hybrid-learning/Data_Science_Graphics.png" alt=" Data Science Course Default Image" />
       </ng-template>
   
     </div>

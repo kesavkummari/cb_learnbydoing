@@ -115,6 +115,12 @@ import { DevopsToolsComponent } from './components/course-content-component/devo
 import { DevopsToolsAndPlatformsComponent } from './components/course-content-component/devops-course-content/devops-tools-and-platforms/devops-tools-and-platforms.component';
 import { AwsFaqComponent } from './components/faqs/aws-faq/aws-faq.component';
 import { LandingBanner5AWSComponent } from './components/we-offer/landing-banner5-aws/landing-banner5-aws';
+import { DataScienceComponent } from './Pages/data-science/data-science.component';
+import { LandingBannerDatascienceComponent } from './components/we-offer/landing-banner-datascience/landing-banner-datascience.component';
+import { DataScienceCCComponent } from './components/course-content-component/data-science/data-science.component';
+import { DSEligibilityComponent } from './components/course-content-component/data-science/ds-eligibility/ds-eligibility.component';
+import { DataScienceFaqComponent } from './components/faqs/data-science-faq/data-science-faq.component';
+import { DataScienceCCMBComponent } from './components/course-content-component/data-analyst/data-science-ccmb/data-science-ccmb';
 
 
 @NgModule({
@@ -166,6 +172,13 @@ import { LandingBanner5AWSComponent } from './components/we-offer/landing-banner
     DevopsToolsComponent,
     DevopsToolsAndPlatformsComponent,
     DevopsFaqComponent,
+
+    DataScienceComponent,
+    LandingBannerDatascienceComponent,
+    DSEligibilityComponent,
+    DataScienceCCComponent,
+    DataScienceFaqComponent,
+    DataScienceCCMBComponent,
   ],
   imports: [RouterModule, PublicUiRoutingModule, MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTooltipModule, MatIconModule, MatSnackBarModule, HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
