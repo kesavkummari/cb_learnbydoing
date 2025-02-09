@@ -17,7 +17,13 @@
 </url>
 
 <url>
-  <loc>https://www.cloudbinary.in/awsdevops</loc>
+  <loc>https://www.cloudbinary.in/devops</loc>
+  <lastmod>2025-01-07T09:30:00+00:00</lastmod>
+</url>
+
+
+<url>
+  <loc>https://www.cloudbinary.in/aws</loc>
   <lastmod>2025-01-07T09:30:00+00:00</lastmod>
 </url>
 
@@ -43,6 +49,11 @@
 
 <url>
   <loc>https://www.cloudbinary.in/data-analyst</loc>
+  <lastmod>2024-12-28T12:00:00+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://www.cloudbinary.in/data-science</loc>
   <lastmod>2024-12-28T12:00:00+00:00</lastmod>
 </url>
 

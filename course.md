@@ -46,7 +46,7 @@ AWS DevOps CI/CD Pipeline Demo Video:
 https://drive.google.com/file/d/11BQriAM6QnPzwUOjhtCmW-gUtL8EVgfb/view?usp=sharing
 
 Cloud Binary Website:
-https://www.cloudbinary.io/
+https://www.cloudbinary.in/
 
 Trainer Website:
 https://kesavkummari.com/
@@ -108,7 +108,7 @@ DAY-2 Session Zoom Link: When: Mar 7th & 8th, 2024 10:30 AM IST
 https://us02web.zoom.us/meeting/register/tZwvdO6opjsoG9WBOuT5BSFlfgsVmuuJI7hP/tZ0pdOiopjwqE9MpQD-hcmdPNXj-L5Ph2Qxp
 
 Cloud Binary Website:
-https://www.cloudbinary.io/
+https://www.cloudbinary.in/
 
 Trainer Website:
 https://kesavkummari.com/

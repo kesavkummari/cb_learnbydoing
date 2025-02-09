@@ -14,9 +14,9 @@
         - og:description    
             - Hands-on, certification-oriented training in AWS & DevOps. Gain practical experience with real-world projects. Talk to our mentors for more information.
         - og:image  
-            - https://www.cloudbinary.io/home
+            - https://www.cloudbinary.in/home
         - og:url    
-            - https://www.cloudbinary.io
+            - https://www.cloudbinary.in
         - icon
             - assets/intro/newlogo.png
     - content
