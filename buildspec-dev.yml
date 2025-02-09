@@ -29,11 +29,11 @@ phases:
       # Remove Bucket Content
       - aws s3 rm s3://cloudbinaryindomain/ --recursive --region ap-south-2
       - aws s3 rm s3://www.cloudbinary.in/ --recursive --region ap-south-2
-      - aws s3 rm s3://www.cloudbinary/ --recursive --region ap-south-2
+
       # Upload the code to s3 bucket
       - aws s3 sync . s3://cloudbinaryindomain/ --region ap-south-2
       - aws s3 sync . s3://www.cloudbinary.in/ --region ap-south-2
-      - aws s3 sync . s3://www.cloudbinary/ --region ap-south-2
+
       
   post_build:
     commands:
@@ -41,7 +41,6 @@ phases:
       # Deploy the code using cloudfront Distribution
       - aws cloudfront create-invalidation --distribution-id E1DYQAFD9V1TDD --paths "/*"
       - aws cloudfront create-invalidation --distribution-id E10VDFTX9VWP82 --paths "/*"
-      - aws cloudfront create-invalidation --distribution-id E1IMUS5PXLF5F9 --paths "/*"
       - echo "Code has been deployed unto CloudFront `date`"
 artifacts:
   files:
