@@ -3,11 +3,11 @@ import { DeveopsdownloadformComponent } from '../../finops/deveopsdownloadform/d
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
-  selector: 'devops-tools',
-  templateUrl: './devops-tools.component.html',
-  styleUrls: ['./devops-tools.component.css']
+  selector: 'devsecops-tools',
+  templateUrl: './devsecops-tools.component.html',
+  styleUrls: ['./devsecops-tools.component.css']
 })
-export class DevopsToolsComponent {
+export class DevSecopsToolsComponent {
  
   constructor(public dialog: MatDialog) { }
   openDialog(): void {

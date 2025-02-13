@@ -4,15 +4,15 @@ import { MatDialog } from '@angular/material/dialog';
 // import { RegulardownloadformComponent } from '../../finops/regularCCdownload/regularcontent';
 
 @Component({
-  selector: 'devopsmobilecc',
-  templateUrl: './devopsmobilecc.component.html',
-  styleUrls: ['./devopsmobilecc.component.css']
+  selector: 'devsecopsmobilecc',
+  templateUrl: './devsecopsmobilecc.component.html',
+  styleUrls: ['./devsecopsmobilecc.component.css']
 })
-export class DevopsmobileccComponent {
+export class DevSecopsmobileccComponent {
 
   courses = [
     {
-      title: 'DevOps',
+      title: 'DevSecOps',
       modules: [
         // Course 2 modules and submodules
         // Module 1
@@ -45,7 +45,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Software Development Life Cycle: Agile - Scrum',
+          title:'DevSecOps - Software Development Life Cycle: Agile - Scrum',
           submodules:[
             'Getting Started with SDLC',
             'What is Agile?',
@@ -69,7 +69,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Build Tool: Apache Maven & Python Pip',
+          title:'DevSecOps - Build Tool: Apache Maven & Python Pip',
           submodules:[
             'Overview of Build Tools:',
             '  - Maven',
@@ -87,7 +87,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Application Servers - Apache Tomcat',
+          title:'DevSecOps - Application Servers - Apache Tomcat',
           submodules:[
             'Overview of Application Servers',
             'Getting Started with Apache Tomcat:',
@@ -100,7 +100,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Version Control System / Source Code Management: Git',
+          title:'DevSecOps - Version Control System / Source Code Management: Git',
           submodules:[
             'Getting Started with VCS/SCM',
             'What is Git, AWS CodeCommit, and GitHub?',
@@ -116,7 +116,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Overview of Continuous Integration with Jenkins',
+          title:'DevSecOps - Overview of Continuous Integration with Jenkins',
           submodules:[
             'Overview of Continuous Integration',
             'Getting Started with Jenkins',
@@ -130,7 +130,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Continuous Static Code Analysis: SonarQube',
+          title:'DevSecOps - Continuous Static Code Analysis: SonarQube',
           submodules:[
             'Getting Started with SonarQube',
             'Integrate SonarQube with Pipeline Jenkins & CodeBuild/CodePipeline',
@@ -145,7 +145,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Continuous Binary Code Repository using JFrog',
+          title:'DevSecOps - Continuous Binary Code Repository using JFrog',
           submodules:[
             'Getting Started with Continuous Binary Code Repository i.e. JFrog',
             'JFrog Architecture',
@@ -158,7 +158,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Continuous Infrastructure As A Code: Terraform',
+          title:'DevSecOps - Continuous Infrastructure As A Code: Terraform',
           submodules:[
             'Getting Started with Infrastructure as Code (IaC)',
             'Different Vendors Of IaC tools?',
@@ -173,7 +173,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Creating Machine Images: Packer',
+          title:'DevSecOps - Creating Machine Images: Packer',
           submodules:[
             'Getting Started with Packer',
             'Install Packer on Windows & Linux',
@@ -190,7 +190,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Continuous Configuration Management: Ansible',
+          title:'DevSecOps - Continuous Configuration Management: Ansible',
           submodules:[
             'What is Configuration Management?',
             'Different Types Of Configuration Management Tools?',
@@ -205,7 +205,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Containerisation: Docker',
+          title:'DevSecOps - Containerisation: Docker',
           submodules:[
             'What is a Container?',
             'List of Container Vendors',
@@ -221,7 +221,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Container Orchestration: Kubernetes',
+          title:'DevSecOps - Container Orchestration: Kubernetes',
           submodules:[
             'What is Cluster Orchestration or Container Orchestration?',
             'Different Types of Container Orchestration Vendors',
@@ -245,7 +245,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Continuous Monitoring: New Relic',
+          title:'DevSecOps - Continuous Monitoring: New Relic',
           submodules:[
             'What is Observability/Monitoring?',
             'Types of Continuous Monitoring:',
@@ -271,7 +271,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Migration Strategies',
+          title:'DevSecOps - Migration Strategies',
           submodules:[
             'What is Migration?',
             'Different Types Of Migration Strategies:',
@@ -285,7 +285,7 @@ export class DevopsmobileccComponent {
           ]
         },
         {
-          title:'DevOps - Deployment Strategies',
+          title:'DevSecOps - Deployment Strategies',
           submodules:[
             'What is Deployment?',
             'Different Types of Deployment Strategies:',

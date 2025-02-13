@@ -73,7 +73,7 @@ import { FeeEMIAWSComponent } from './components/fee-emi-popup-aws/fee.emi.compo
 import { FeeEMIAWSMain } from './components/fee-emi-popup-aws/fee-emi-main-aws/fee-emi-main';
 import { DataAnalystCourseComponent } from './components/course-content-component/data-analyst/data-analyst-course.component'
 import { DataAnalystCCMBComponent } from './components/course-content-component/data-analyst/data-analyst-ccmb/data-analyst-ccmb';
-import { DevopsFaqComponent } from './components/faqs/devops-faq/devops-faq.component';
+import { DevSecOpsFaqComponent } from './components/faqs/devops-faq/devsecops-faq.component';
 import { DataAnalystFaqComponent } from './components/faqs/data-analyst-faq/data-analyst-faq.component';
 import { DAEligibilityComponent } from './components/course-content-component/data-analyst/da-eligibility/da-eligibility.component';
 import { AWSEligibilityComponent } from './components/course-content-component/aws-course-content/aws-eligibility/aws-eligibility.component';
@@ -107,12 +107,11 @@ import { LandingBanner2Component } from './components/we-offer/landing-banner2-f
 import { FeeEMIfinOpsMain } from './components/fee-emi-popup-finOps/fee-emi-main-finOps/fee-emi-main';
 import { FeeEMIFinOpsComponent } from './components/fee-emi-popup-finOps/fee.emi.component';
 import { AWSToolsAndPlatformsComponent } from './components/course-content-component/aws-course-content/aws-tools-and-platforms/aws-tools-and-platforms.component';
-import { DevopsComponent } from './Pages/devops/devops.component';
-import { DevopsCourseContentComponent } from './components/course-content-component/devops-course-content/devops-course-content.component';
-import { DevopsEligibilityComponent } from './components/course-content-component/devops-course-content/devops-eligibility/devops-eligibility.component';
-import { DevopsmobileccComponent } from './components/course-content-component/devops-course-content/devopsmobilecc/devopsmobilecc.component';
-import { DevopsToolsComponent } from './components/course-content-component/devops-course-content/devops-tools/devops-tools.component';
-import { DevopsToolsAndPlatformsComponent } from './components/course-content-component/devops-course-content/devops-tools-and-platforms/devops-tools-and-platforms.component';
+import { DevSecopsComponent } from './Pages/devsecops/devsecops.component';
+import { DevSecopsCourseContentComponent } from './components/course-content-component/devops-course-content/devsecops-course-content.component';
+import { DevSecOpsEligibilityComponent } from './components/course-content-component/devops-course-content/devsecops-eligibility/devsecops-eligibility.component';
+import { DevSecopsToolsComponent } from './components/course-content-component/devops-course-content/desecvops-tools/devsecops-tools.component';
+import { DevSecOpsToolsAndPlatformsComponent } from './components/course-content-component/devops-course-content/devops-tools-and-platforms/devsecops-tools-and-platforms.component';
 import { AwsFaqComponent } from './components/faqs/aws-faq/aws-faq.component';
 import { LandingBanner5AWSComponent } from './components/we-offer/landing-banner5-aws/landing-banner5-aws';
 import { DataScienceComponent } from './Pages/data-science/data-science.component';
@@ -121,6 +120,7 @@ import { DataScienceCCComponent } from './components/course-content-component/da
 import { DSEligibilityComponent } from './components/course-content-component/data-science/ds-eligibility/ds-eligibility.component';
 import { DataScienceFaqComponent } from './components/faqs/data-science-faq/data-science-faq.component';
 import { DataScienceCCMBComponent } from './components/course-content-component/data-analyst/data-science-ccmb/data-science-ccmb';
+import { DevSecopsmobileccComponent } from './components/course-content-component/devops-course-content/devsecopsmobilecc/devsecopsmobilecc.component';
 
 
 @NgModule({
@@ -165,13 +165,13 @@ import { DataScienceCCMBComponent } from './components/course-content-component/
     // DevopsDownloadComponent,
     
     // DevOps;;;
-    DevopsComponent,
-    DevopsCourseContentComponent,
-    DevopsEligibilityComponent,
-    DevopsmobileccComponent,
-    DevopsToolsComponent,
-    DevopsToolsAndPlatformsComponent,
-    DevopsFaqComponent,
+    DevSecopsComponent,
+    DevSecopsCourseContentComponent,
+    DevSecOpsEligibilityComponent,
+    DevSecopsmobileccComponent,
+    DevSecopsToolsComponent,
+    DevSecOpsToolsAndPlatformsComponent,
+    DevSecOpsFaqComponent,
 
     DataScienceComponent,
     LandingBannerDatascienceComponent,

@@ -1,11 +1,11 @@
 import { Component, ElementRef, AfterViewInit, Renderer2, Input } from '@angular/core';
 
 @Component({
-  selector: 'devops-faq',
-  templateUrl: './devops-faq.component.html',
+  selector: 'devsecops-faq',
+  templateUrl: './devsecops-faq.component.html',
   styleUrls: ['../faq.component.css']
 })
-export class DevopsFaqComponent {
+export class DevSecOpsFaqComponent {
     constructor(private renderer: Renderer2, private el: ElementRef) {}
 
     ngAfterViewInit() {

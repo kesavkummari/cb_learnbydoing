@@ -5,10 +5,10 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'devops-course',
-  templateUrl: './devops.component.html',
-  styleUrls: ['./devops.component.css']
+  templateUrl: './devsecops.component.html',
+  styleUrls: ['./devsecops.component.css']
 })
-export class DevopsComponent implements OnInit {
+export class DevSecopsComponent implements OnInit {
   isLoading = false;
 
   name = new FormControl('', [Validators.required]);
