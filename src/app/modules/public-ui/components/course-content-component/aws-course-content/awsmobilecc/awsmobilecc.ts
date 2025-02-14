@@ -12,29 +12,29 @@ export class AWSMobileCourseContent {
 
   courses = [
     {
-      title: 'AWS DevOps',
+      title: 'AWS',
       modules: [
         // Course 2 modules and submodules
         // Module 1
-        {
-          title:'OS - Windows & Unix/Linux',
-          submodules:['Unix & Linux History & Distributions',
-            'Basic & Advanced Commands',
-            'Run Levels',
-            'Boot Process',
-            'File System',
-            'File & Directory Management',
-            'Text Editors',
-            'Permissions',
-            'User & Group Management',
-            'Package Management',
-            'Controlling Services & Daemons',
-            'Process Management',
-            'Log Management',
-            'WebServer - Windows IIS, Apache2, Nginx & Httpd',
-            'Database Servers - MySQL, Mariadb & PostgreSQL'
-          ]
-        },
+        // {
+        //   title:'OS - Windows & Unix/Linux',
+        //   submodules:['Unix & Linux History & Distributions',
+        //     'Basic & Advanced Commands',
+        //     'Run Levels',
+        //     'Boot Process',
+        //     'File System',
+        //     'File & Directory Management',
+        //     'Text Editors',
+        //     'Permissions',
+        //     'User & Group Management',
+        //     'Package Management',
+        //     'Controlling Services & Daemons',
+        //     'Process Management',
+        //     'Log Management',
+        //     'WebServer - Windows IIS, Apache2, Nginx & Httpd',
+        //     'Database Servers - MySQL, Mariadb & PostgreSQL'
+        //   ]
+        // },
         {
           title:'AWS - Analytics Services',
           submodules:['Amazon Athena',
@@ -93,10 +93,7 @@ export class AWSMobileCourseContent {
             'Amazon Elastic Block Store (Amazon EBS)',
             'AWS Elastic Disaster Recovery (CloudEndure Disaster Recovery)',
             'Amazon Elastic File System (Amazon EFS)',
-            'Amazon FSx for Lustre',
-            'Amazon FSx for NetApp ONTAP',
-            'Amazon FSx for OpenZFS',
-            'Amazon FSx for Windows File Server',
+            'Amazon FSx',
             'Amazon S3',
             'Amazon S3 Glacier',
             'AWS Storage Gateway'
@@ -132,14 +129,10 @@ export class AWSMobileCourseContent {
             'AWS Control Tower',
             'AWS Health',
             'AWS License Manager',
-            'Amazon Managed Grafana',
-            'Amazon Managed Service for Prometheus',
             'AWS OpsWorks',
             'AWS Organizations',
             'AWS Personal Health Dashboard',
-            'AWS Proton',
             'AWS Resilience Hub',
-            'AWS Service Catalog',
             'AWS Systems Manager',
             'AWS Trusted Advisor'
           ]

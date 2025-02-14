@@ -298,84 +298,84 @@ export class DevSecopsmobileccComponent {
             'Summary'
           ]
         },
-        {
-          title:'Python Basics: Introduction',
-          submodules:[
-            'Keywords and Identifiers',
-            'Statements & Comments',
-            'Python Variables',
-            'Python Datatypes',
-            'Python Type Conversion',
-            'Python I/O and import',
-            'Python Operators',
-            'Python Namespace'
-          ]
-        },
-        {
-          title:'Python: Functions',
-          submodules:[
-            'Python Functions',
-            'Function Argument',
-            'Python Recursion',
-            'Anonymous Function',
-            'Global, Local, and Nonlocal',
-            'Python Global Keyword',
-            'Python Modules',
-            'Python Package'
-          ]
-        },
-        {
-          title:'Python: Object & Class',
-          submodules:[
-            'Object & Class in Python OOP',
-            'Python Class'
-          ]
-        },
-        {
-          title:'Python: Data Types',
-          submodules:[
-            'Python Numbers',
-            'Python List',
-            'Python Tuple',
-            'Python String',
-            'Python Set',
-            'Python Dictionary'
-          ]
-        },
-        {
-          title:'Python: Flow Control',
-          submodules:[
-            'Python if...else',
-            'Python for Loop',
-            'Python while Loop',
-            'Python break and continue',
-            'Python Pass'
-          ]
-        },
-        {
-          title:'Python: File Handling',
-          submodules:[
-            'Python File Operation',
-            'Python Directory',
-            'Python Exception',
-            'Python Exception Handling',
-            'Python User-defined Exception'
-          ]
-        },
-        {
-          title:'Python: Modules',
-          submodules:[
-            'Python: Modules:',
-            '  - os',
-            '  - sys',
-            '  - re',
-            '  - datetime',
-            '  - aws boto3',
-            '  - mysql & mysql-connector',
-            'Examples:',
-            '  - Creating EC2, S3, RDS resource using Boto3 with Python'
-          ]
-        },
+        // {
+        //   title:'Python Basics: Introduction',
+        //   submodules:[
+        //     'Keywords and Identifiers',
+        //     'Statements & Comments',
+        //     'Python Variables',
+        //     'Python Datatypes',
+        //     'Python Type Conversion',
+        //     'Python I/O and import',
+        //     'Python Operators',
+        //     'Python Namespace'
+        //   ]
+        // },
+        // {
+        //   title:'Python: Functions',
+        //   submodules:[
+        //     'Python Functions',
+        //     'Function Argument',
+        //     'Python Recursion',
+        //     'Anonymous Function',
+        //     'Global, Local, and Nonlocal',
+        //     'Python Global Keyword',
+        //     'Python Modules',
+        //     'Python Package'
+        //   ]
+        // },
+        // {
+        //   title:'Python: Object & Class',
+        //   submodules:[
+        //     'Object & Class in Python OOP',
+        //     'Python Class'
+        //   ]
+        // },
+        // {
+        //   title:'Python: Data Types',
+        //   submodules:[
+        //     'Python Numbers',
+        //     'Python List',
+        //     'Python Tuple',
+        //     'Python String',
+        //     'Python Set',
+        //     'Python Dictionary'
+        //   ]
+        // },
+        // {
+        //   title:'Python: Flow Control',
+        //   submodules:[
+        //     'Python if...else',
+        //     'Python for Loop',
+        //     'Python while Loop',
+        //     'Python break and continue',
+        //     'Python Pass'
+        //   ]
+        // },
+        // {
+        //   title:'Python: File Handling',
+        //   submodules:[
+        //     'Python File Operation',
+        //     'Python Directory',
+        //     'Python Exception',
+        //     'Python Exception Handling',
+        //     'Python User-defined Exception'
+        //   ]
+        // },
+        // {
+        //   title:'Python: Modules',
+        //   submodules:[
+        //     'Python: Modules:',
+        //     '  - os',
+        //     '  - sys',
+        //     '  - re',
+        //     '  - datetime',
+        //     '  - aws boto3',
+        //     '  - mysql & mysql-connector',
+        //     'Examples:',
+        //     '  - Creating EC2, S3, RDS resource using Boto3 with Python'
+        //   ]
+        // },
         {
           title:'Shell Scripting',
           submodules:[
