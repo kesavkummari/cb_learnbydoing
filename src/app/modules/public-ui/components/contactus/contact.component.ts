@@ -20,7 +20,7 @@ export class ContactUsComponent {
     const message = `Hi, I have visited your website and I am excited to know about AWS & DevOps Course Details. Could you please help me?\nName: ${this.formData.first_name} ${this.formData.last_name}\nPhone: ${this.formData.phone}\nMessage: ${this.formData.user_message}`;
     
     // WhatsApp URL for web and app compatibility
-    const whatsappURL = `https://wa.me/919100073006?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/919392743006?text=${encodeURIComponent(message)}`;
 
     // Show success message
     this.snackBar.open('Redirecting to WhatsApp...', 'Close', {

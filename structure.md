@@ -77,5 +77,5 @@
         - Contact Us
             - /contactus
     - whatsapp
-        - https://wa.me/919100073006
+        - https://wa.me/919392743006
         - assets/icon-images/web.webp

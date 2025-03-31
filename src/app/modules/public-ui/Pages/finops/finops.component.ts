@@ -45,7 +45,7 @@ export class FinOpsComponent implements OnInit {
       this.router.navigate(['/thank-you']);
       
       const message = `Hi, I'm interested in your course. Can you provide me with more details?\n`;
-      const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
+      const whatsappURL = `https://api.whatsapp.com/send/?phone=919392743006&text=${encodeURIComponent(message)}`;
   
       // Redirect directly to WhatsApp API endpoint
       window.location.href = whatsappURL;

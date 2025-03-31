@@ -45,7 +45,7 @@ export class AzureDevOpsComponent implements OnInit {
       this.router.navigate(['/thank-you']);
       
       const message = `Hi, I'm interested in your AWS & DevOps course. Can you provide me with more details?\n`;
-      const whatsappURL = `https://api.whatsapp.com/send/?phone=919100073006&text=${encodeURIComponent(message)}`;
+      const whatsappURL = `https://api.whatsapp.com/send/?phone=919392743006&text=${encodeURIComponent(message)}`;
   
       // Redirect directly to WhatsApp API endpoint
       window.location.href = whatsappURL;

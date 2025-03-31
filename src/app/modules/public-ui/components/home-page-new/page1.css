@@ -153,3 +153,9 @@ box-shadow: none; /* Remove box shadow on hover */
 #phone {
     padding: 10px !important; /* Set padding to none */
 }
+
+.highlight {
+    font-weight: bold;
+    font-size: 1.2em; /* Adjust as needed */
+  }
+  
