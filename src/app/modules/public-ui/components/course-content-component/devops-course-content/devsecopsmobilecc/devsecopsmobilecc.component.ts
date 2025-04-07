@@ -12,7 +12,7 @@ export class DevSecopsmobileccComponent {
 
   courses = [
     {
-      title: 'DevSecOps',
+      title: 'DevOps',
       modules: [
         // Course 2 modules and submodules
         // Module 1
@@ -37,15 +37,46 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'AWS Cloud Basics',
+          title:'AWS Cloud Module',
           submodules:[
-            'AWS Basics',
-            'IAM Basics',
-            'Compute Services'
+
+'Container',
+'Database',
+'Storage',
+'Developer Tools',
+'Management and Governance',
+'Networking and Content Delivery',
+'Security, Identity, and Compliance',
+'Serverless'
           ]
         },
         {
-          title:'DevSecOps - Software Development Life Cycle: Agile - Scrum',
+          title:'Azure Cloud Module',
+          submodules:[
+'Compute',
+'Container',
+'Database',
+'Storage',
+'Azure DevOps',
+'Networking',
+'Identity and Security',
+'Serverless'
+          ]
+        },
+        {
+          title:'GCP Cloud Module',
+          submodules:[
+'Infrastructure', 
+'Container',
+'Database',
+'Storage',
+'Developer Tools',
+'Management Tools',
+'Identity & Security Services'
+          ]
+        },
+        {
+          title:'DevOps - Software Development Life Cycle: Agile - Scrum',
           submodules:[
             'Getting Started with SDLC',
             'What is Agile?',
@@ -69,7 +100,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Build Tool: Apache Maven & Python Pip',
+          title:'DevOps - Build Tool: Apache Maven & Python Pip',
           submodules:[
             'Overview of Build Tools:',
             '  - Maven',
@@ -87,7 +118,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Application Servers - Apache Tomcat',
+          title:'DevOps - Application Servers - Apache Tomcat',
           submodules:[
             'Overview of Application Servers',
             'Getting Started with Apache Tomcat:',
@@ -100,7 +131,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Version Control System / Source Code Management: Git',
+          title:'DevOps - Version Control System / Source Code Management: Git',
           submodules:[
             'Getting Started with VCS/SCM',
             'What is Git, AWS CodeCommit, and GitHub?',
@@ -116,7 +147,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Overview of Continuous Integration with Jenkins',
+          title:'DevOps - Overview of Continuous Integration with Jenkins',
           submodules:[
             'Overview of Continuous Integration',
             'Getting Started with Jenkins',
@@ -130,7 +161,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Continuous Static Code Analysis: SonarQube',
+          title:'DevOps - Continuous Static Code Analysis: SonarQube',
           submodules:[
             'Getting Started with SonarQube',
             'Integrate SonarQube with Pipeline Jenkins & CodeBuild/CodePipeline',
@@ -145,7 +176,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Continuous Binary Code Repository using JFrog',
+          title:'DevOps - Continuous Binary Code Repository using JFrog',
           submodules:[
             'Getting Started with Continuous Binary Code Repository i.e. JFrog',
             'JFrog Architecture',
@@ -158,7 +189,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Continuous Infrastructure As A Code: Terraform',
+          title:'DevOps - Continuous Infrastructure As A Code: Terraform',
           submodules:[
             'Getting Started with Infrastructure as Code (IaC)',
             'Different Vendors Of IaC tools?',
@@ -173,7 +204,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Creating Machine Images: Packer',
+          title:'DevOps - Creating Machine Images: Packer',
           submodules:[
             'Getting Started with Packer',
             'Install Packer on Windows & Linux',
@@ -190,7 +221,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Continuous Configuration Management: Ansible',
+          title:'DevOps - Continuous Configuration Management: Ansible',
           submodules:[
             'What is Configuration Management?',
             'Different Types Of Configuration Management Tools?',
@@ -205,7 +236,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Containerisation: Docker',
+          title:'DevOps - Containerisation: Docker',
           submodules:[
             'What is a Container?',
             'List of Container Vendors',
@@ -221,7 +252,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Container Orchestration: Kubernetes',
+          title:'DevOps - Container Orchestration: Kubernetes',
           submodules:[
             'What is Cluster Orchestration or Container Orchestration?',
             'Different Types of Container Orchestration Vendors',
@@ -245,7 +276,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Continuous Monitoring: New Relic',
+          title:'DevOps - Continuous Monitoring: New Relic',
           submodules:[
             'What is Observability/Monitoring?',
             'Types of Continuous Monitoring:',
@@ -271,7 +302,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Migration Strategies',
+          title:'DevOps - Migration Strategies',
           submodules:[
             'What is Migration?',
             'Different Types Of Migration Strategies:',
@@ -285,7 +316,7 @@ export class DevSecopsmobileccComponent {
           ]
         },
         {
-          title:'DevSecOps - Deployment Strategies',
+          title:'DevOps - Deployment Strategies',
           submodules:[
             'What is Deployment?',
             'Different Types of Deployment Strategies:',
@@ -298,84 +329,84 @@ export class DevSecopsmobileccComponent {
             'Summary'
           ]
         },
-        // {
-        //   title:'Python Basics: Introduction',
-        //   submodules:[
-        //     'Keywords and Identifiers',
-        //     'Statements & Comments',
-        //     'Python Variables',
-        //     'Python Datatypes',
-        //     'Python Type Conversion',
-        //     'Python I/O and import',
-        //     'Python Operators',
-        //     'Python Namespace'
-        //   ]
-        // },
-        // {
-        //   title:'Python: Functions',
-        //   submodules:[
-        //     'Python Functions',
-        //     'Function Argument',
-        //     'Python Recursion',
-        //     'Anonymous Function',
-        //     'Global, Local, and Nonlocal',
-        //     'Python Global Keyword',
-        //     'Python Modules',
-        //     'Python Package'
-        //   ]
-        // },
-        // {
-        //   title:'Python: Object & Class',
-        //   submodules:[
-        //     'Object & Class in Python OOP',
-        //     'Python Class'
-        //   ]
-        // },
-        // {
-        //   title:'Python: Data Types',
-        //   submodules:[
-        //     'Python Numbers',
-        //     'Python List',
-        //     'Python Tuple',
-        //     'Python String',
-        //     'Python Set',
-        //     'Python Dictionary'
-        //   ]
-        // },
-        // {
-        //   title:'Python: Flow Control',
-        //   submodules:[
-        //     'Python if...else',
-        //     'Python for Loop',
-        //     'Python while Loop',
-        //     'Python break and continue',
-        //     'Python Pass'
-        //   ]
-        // },
-        // {
-        //   title:'Python: File Handling',
-        //   submodules:[
-        //     'Python File Operation',
-        //     'Python Directory',
-        //     'Python Exception',
-        //     'Python Exception Handling',
-        //     'Python User-defined Exception'
-        //   ]
-        // },
-        // {
-        //   title:'Python: Modules',
-        //   submodules:[
-        //     'Python: Modules:',
-        //     '  - os',
-        //     '  - sys',
-        //     '  - re',
-        //     '  - datetime',
-        //     '  - aws boto3',
-        //     '  - mysql & mysql-connector',
-        //     'Examples:',
-        //     '  - Creating EC2, S3, RDS resource using Boto3 with Python'
-        //   ]
-        // },
+        {
+          title:'Python Basics: Introduction',
+          submodules:[
+            'Keywords and Identifiers',
+            'Statements & Comments',
+            'Python Variables',
+            'Python Datatypes',
+            'Python Type Conversion',
+            'Python I/O and import',
+            'Python Operators',
+            'Python Namespace'
+          ]
+        },
+        {
+          title:'Python: Functions',
+          submodules:[
+            'Python Functions',
+            'Function Argument',
+            'Python Recursion',
+            'Anonymous Function',
+            'Global, Local, and Nonlocal',
+            'Python Global Keyword',
+            'Python Modules',
+            'Python Package'
+          ]
+        },
+        {
+          title:'Python: Object & Class',
+          submodules:[
+            'Object & Class in Python OOP',
+            'Python Class'
+          ]
+        },
+        {
+          title:'Python: Data Types',
+          submodules:[
+            'Python Numbers',
+            'Python List',
+            'Python Tuple',
+            'Python String',
+            'Python Set',
+            'Python Dictionary'
+          ]
+        },
+        {
+          title:'Python: Flow Control',
+          submodules:[
+            'Python if...else',
+            'Python for Loop',
+            'Python while Loop',
+            'Python break and continue',
+            'Python Pass'
+          ]
+        },
+        {
+          title:'Python: File Handling',
+          submodules:[
+            'Python File Operation',
+            'Python Directory',
+            'Python Exception',
+            'Python Exception Handling',
+            'Python User-defined Exception'
+          ]
+        },
+        {
+          title:'Python: Modules',
+          submodules:[
+            'Python: Modules:',
+            '  - os',
+            '  - sys',
+            '  - re',
+            '  - datetime',
+            '  - aws boto3',
+            '  - mysql & mysql-connector',
+            'Examples:',
+            '  - Creating EC2, S3, RDS resource using Boto3 with Python'
+          ]
+        },
         {
           title:'Shell Scripting',
           submodules:[

@@ -1488,9 +1488,11 @@
       <ng-container *ngIf="selectedTab === 'devsecops'">
         <div class="content-columns">
           <div class="left-column">
-            <h2 style="padding-bottom: 10px;">DevSecOps Content - Modules</h2>
+            <h2 style="padding-bottom: 10px;">DevOps Content - Modules</h2>
 <div class="module" (click)="selectModule('M1')" [class.active-module]="selectedModule === 'M1'">OS - Windows & Unix/Linux </div>
-<div class="module" (click)="selectModule('M2_1')" [class.active-module]="selectedModule === 'M2_1'">AWS Cloud Basics</div>
+<div class="module" (click)="selectModule('M2_1')" [class.active-module]="selectedModule === 'M2_1'">AWS Cloud Module</div>
+<div class="module" (click)="selectModule('M2_2')" [class.active-module]="selectedModule === 'M2_2'">Azure Cloud Module</div>
+<div class="module" (click)="selectModule('M2_3')" [class.active-module]="selectedModule === 'M2_3'">GCP Cloud Module</div>
 <!-- <div class="module" (click)="selectModule('M2')" [class.active-module]="selectedModule === 'M2'">AWS - Analytics</div>
 <div class="module" (click)="selectModule('M3')" [class.active-module]="selectedModule === 'M3'">AWS - Application Integration</div>
 <div class="module" (click)="selectModule('M4')" [class.active-module]="selectedModule === 'M4'">AWS - Compute</div>
@@ -1503,30 +1505,30 @@
 <div class="module" (click)="selectModule('M10')" [class.active-module]="selectedModule === 'M10'">AWS - Networking and Content Delivery</div>
 <div class="module" (click)="selectModule('M11')" [class.active-module]="selectedModule === 'M11'">AWS - Security, Identity, and Compliance</div>
 <div class="module" (click)="selectModule('M12')" [class.active-module]="selectedModule === 'M12'">AWS - Serverless</div> -->
-<div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">DevSecOps - Software Development Life Cycle: Agile - Scrum</div>
-<div class="module" (click)="selectModule('M33')" [class.active-module]="selectedModule === 'M33'">DevSecOps - Build Tool: Apache Maven &
+<div class="module" (click)="selectModule('M13')" [class.active-module]="selectedModule === 'M13'">DevOps - Software Development Life Cycle: Agile - Scrum</div>
+<div class="module" (click)="selectModule('M33')" [class.active-module]="selectedModule === 'M33'">DevOps - Build Tool: Apache Maven &
   Python Pip</div>
-<div class="module" (click)="selectModule('M34')" [class.active-module]="selectedModule === 'M34'">DevSecOps - Application Servers - Apache
+<div class="module" (click)="selectModule('M34')" [class.active-module]="selectedModule === 'M34'">DevOps - Application Servers - Apache
   Tomcat</div>
-<div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">DevSecOps - Version Control System / Source Code Management: Git</div>
-<div class="module" (click)="selectModule('M15')" [class.active-module]="selectedModule === 'M15'">DevSecOps - Continuous Integration using Jenkins</div>
-<div class="module" (click)="selectModule('M16')" [class.active-module]="selectedModule === 'M16'">DevSecOps - Continuous Static Code Analysis: SonarQube</div>
-<div class="module" (click)="selectModule('M17')" [class.active-module]="selectedModule === 'M17'">DevSecOps - Continuous Binary Code Repository using JFrog</div>
-<div class="module" (click)="selectModule('M18')" [class.active-module]="selectedModule === 'M18'">DevSecOps - Continuous Infrastructure As A Code: Terraform</div>
-<div class="module" (click)="selectModule('M19')" [class.active-module]="selectedModule === 'M19'">DevSecOps - Creating Machine Images: Packer</div>
-<div class="module" (click)="selectModule('M20')" [class.active-module]="selectedModule === 'M20'">DevSecOps - Continuous Configuration Management: Ansible</div>
-<div class="module" (click)="selectModule('M21')" [class.active-module]="selectedModule === 'M21'">DevSecOps - Containerisation: Docker</div>
-<div class="module" (click)="selectModule('M22')" [class.active-module]="selectedModule === 'M22'">DevSecOps - Container Orchestration: Kubernetes</div>
-<div class="module" (click)="selectModule('M23')" [class.active-module]="selectedModule === 'M23'">DevSecOps - Continuous Monitoring: New Relic</div>
-<div class="module" (click)="selectModule('M24')" [class.active-module]="selectedModule === 'M24'">DevSecOps - Migration Strategies</div>
-<div class="module" (click)="selectModule('M25')" [class.active-module]="selectedModule === 'M25'">DevSecOps - Deployment Strategies</div> 
-<!-- <div class="module" (click)="selectModule('M26')" [class.active-module]="selectedModule === 'M26'">Python Basics: Introduction</div>
+<div class="module" (click)="selectModule('M14')" [class.active-module]="selectedModule === 'M14'">DevOps - Version Control System / Source Code Management: Git</div>
+<div class="module" (click)="selectModule('M15')" [class.active-module]="selectedModule === 'M15'">DevOps - Continuous Integration using Jenkins</div>
+<div class="module" (click)="selectModule('M16')" [class.active-module]="selectedModule === 'M16'">DevOps - Continuous Static Code Analysis: SonarQube</div>
+<div class="module" (click)="selectModule('M17')" [class.active-module]="selectedModule === 'M17'">DevOps - Continuous Binary Code Repository using JFrog</div>
+<div class="module" (click)="selectModule('M18')" [class.active-module]="selectedModule === 'M18'">DevOps - Continuous Infrastructure As A Code: Terraform</div>
+<div class="module" (click)="selectModule('M19')" [class.active-module]="selectedModule === 'M19'">DevOps - Creating Machine Images: Packer</div>
+<div class="module" (click)="selectModule('M20')" [class.active-module]="selectedModule === 'M20'">DevOps - Continuous Configuration Management: Ansible</div>
+<div class="module" (click)="selectModule('M21')" [class.active-module]="selectedModule === 'M21'">DevOps - Containerisation: Docker</div>
+<div class="module" (click)="selectModule('M22')" [class.active-module]="selectedModule === 'M22'">DevOps - Container Orchestration: Kubernetes</div>
+<div class="module" (click)="selectModule('M23')" [class.active-module]="selectedModule === 'M23'">DevOps - Continuous Monitoring: New Relic</div>
+<div class="module" (click)="selectModule('M24')" [class.active-module]="selectedModule === 'M24'">DevOps - Migration Strategies</div>
+<div class="module" (click)="selectModule('M25')" [class.active-module]="selectedModule === 'M25'">DevOps - Deployment Strategies</div> 
+<div class="module" (click)="selectModule('M26')" [class.active-module]="selectedModule === 'M26'">Python Basics: Introduction</div>
 <div class="module" (click)="selectModule('M27')" [class.active-module]="selectedModule === 'M27'">Python: Functions</div>
 <div class="module" (click)="selectModule('M28')" [class.active-module]="selectedModule === 'M28'">Python: Object & Class</div>
 <div class="module" (click)="selectModule('M29')" [class.active-module]="selectedModule === 'M29'">Python: Data Types</div>
 <div class="module" (click)="selectModule('M30')" [class.active-module]="selectedModule === 'M30'">Python: Flow Control</div>
 <div class="module" (click)="selectModule('M31')" [class.active-module]="selectedModule === 'M31'">Python: File Handling</div>
-<div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div> -->
+<div class="module" (click)="selectModule('M32')" [class.active-module]="selectedModule === 'M32'">Python: Modules</div>
 <div class="module" (click)="selectModule('M0')" [class.active-module]="selectedModule === 'M0'">Shell Scripting </div>
 
 </div>
@@ -1579,17 +1581,60 @@
         margin-right: inherit;
     ">
     <ul>
-      <li>AWS Basics</li>
-      <li>IAM Basics</li>
-      <li>Compute Services</li>
-      <!-- <li>Container Services</li>
-      <li>Database Services</li>
-      <li>Storage Services</li>
+      <li>Compute </li>
+      <li>Container </li>
+      <li>Database </li>
+      <li>Storage </li>
       <li>Developer Tools</li>
       <li>Management and Governance</li>
       <li>Networking and Content Delivery</li>
       <li>Security, Identity, and Compliance</li>
-      <li>Serverless</li> -->
+      <li>Serverless</li>
+    </ul>
+  </ng-container>
+
+
+  <ng-container *ngIf="selectedModule === 'M2_2'">
+    <h2> Azure Cloud Module</h2>
+    <hr style="
+        position: unset;
+        border: none;
+        height: 2px;
+        background: black;
+        margin-bottom: 20px;
+        margin-right: inherit;
+    ">
+    <ul>
+      <li>Compute </li>
+      <li>Container </li>
+      <li>Database </li>
+      <li>Storage </li>
+      <li>Azure DevOps</li>
+      <li>Networking</li>
+      <li>Identity and Security</li>
+      <li>Serverless</li>  
+    </ul>
+  </ng-container>
+
+
+  <ng-container *ngIf="selectedModule === 'M2_3'">
+    <h2> GCP Cloud Module</h2>
+    <hr style="
+        position: unset;
+        border: none;
+        height: 2px;
+        background: black;
+        margin-bottom: 20px;
+        margin-right: inherit;
+    ">
+    <ul>
+      <li>Infrastructure </li>
+      <li>Container </li>
+      <li>Database </li>
+      <li>Storage </li>
+      <li>Developer Tools</li>
+      <li>Management Tools</li>
+      <li>Identity & Security Services</li>
     </ul>
   </ng-container>
 
