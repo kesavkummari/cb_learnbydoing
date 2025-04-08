@@ -27,8 +27,7 @@
 
     <section class="hero-section">
         <div class="container-row">
-            <!-- Content Container -->
-            <div class="container content-container">
+            <div class="content-container">
                 <h1 class="main-heading">Master <span class="highlight">DevOps On Multi-Cloud</span></h1>
                 
                 <p class="sub-heading">Learn in-demand cloud skills, security automation, and CI/CD practices from industry experts. Get certified and build a career in cloud computing.</p>
@@ -104,7 +103,9 @@
                     <h2 class="role-title">Choose Your Path</h2>
                     
                     <div class="role-card">
-                        <div class="role-icon cloud-engineer"></div>
+                        <div class="role-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
                         <div class="role-content">
                             <h4>Cloud Engineer</h4>
                             <p>Design and implement cloud infrastructure solutions. Master AWS, Azure, and GCP services to build scalable, secure applications.</p>
@@ -112,7 +113,9 @@
                     </div>
                     
                     <div class="role-card">
-                        <div class="role-icon devops"></div>
+                        <div class="role-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
                         <div class="role-content">
                             <h4>DevOps Engineer</h4>
                             <p>Bridge development and operations with CI/CD pipelines, automation, and infrastructure as code. Streamline software delivery.</p>
@@ -120,7 +123,9 @@
                     </div>
                     
                     <div class="role-card">
-                        <div class="role-icon sre"></div>
+                        <div class="role-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
                         <div class="role-content">
                             <h4>Site Reliability Engineer (SRE)</h4>
                             <p>Ensure system reliability and performance. Implement monitoring, logging, and incident response strategies for production systems.</p>
@@ -128,7 +133,9 @@
                     </div>
                     
                     <div class="role-card">
-                        <div class="role-icon finops"></div>
+                        <div class="role-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
                         <div class="role-content">
                             <h4>FinOps Engineer</h4>
                             <p>Optimize cloud costs and financial operations. Master budgeting, forecasting, and cost allocation strategies to maximize cloud ROI.</p>
@@ -140,21 +147,23 @@
     </section>
 
     <!-- Additional Components -->
-    <landing-banner3></landing-banner3>
-    <div style="display: flex; justify-content: center;">
-        <devsecops-eligibility></devsecops-eligibility>
+    <div class="components-container">
+        <landing-banner3></landing-banner3>
+        <div class="eligibility-container">
+            <devsecops-eligibility></devsecops-eligibility>
+        </div>
+        <devsecops-course-content class="desktop"></devsecops-course-content>
+        <devsecopsmobilecc class="mobile"></devsecopsmobilecc>
+        <devsecops-tools></devsecops-tools>
+        <upcoming></upcoming>
+        <fee-emi-main-aws></fee-emi-main-aws>
+        <video-demo></video-demo>
+        <devsecops-tools-and-platforms></devsecops-tools-and-platforms>
+        <certificate></certificate>
+        <companies></companies>
+        <intro-cards></intro-cards>
+        <devsecops-faq></devsecops-faq>
     </div>
-    <devsecops-course-content class="desktop"></devsecops-course-content>
-    <devsecopsmobilecc class="mobile"></devsecopsmobilecc>
-    <devsecops-tools></devsecops-tools>
-    <upcoming></upcoming>
-    <fee-emi-main-aws></fee-emi-main-aws>
-    <video-demo></video-demo>
-    <devsecops-tools-and-platforms></devsecops-tools-and-platforms>
-    <certificate></certificate>
-    <companies></companies>
-    <intro-cards></intro-cards>
-    <devsecops-faq></devsecops-faq>
 </body>
 </html>
   
