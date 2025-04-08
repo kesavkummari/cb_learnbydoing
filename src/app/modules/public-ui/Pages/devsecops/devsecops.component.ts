@@ -6,7 +6,10 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'devops-course',
   templateUrl: './devsecops.component.html',
-  styleUrls: ['./devsecops.component.css']
+  styleUrls: [
+    './devsecops.component.css',
+    '../../components/home-page-new/page1.css'
+  ]
 })
 export class DevSecopsComponent implements OnInit {
   isLoading = false;

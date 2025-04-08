@@ -3,103 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-  body{
-    visibility: visible;
-background: url('assets/hybrid-learning/bg3.png') center center / cover no-repeat;
-}
-    </style>
-    <title>Container Example</title>
+    <title>Cloud Binary - Master DevOps on Cloud Platforms</title>
+    <link rel="stylesheet" href="page1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <!-- All Containers in the Same Row -->
-    <div class="container-row">
-
-        <!-- Container 1 with Image and Sample Text -->
-        <div class="container">
-            <img style="    width: fit-content;
-            height: -webkit-fill-available;" 
-            src="https://www.cloudbinary.in/assets/intro/homepage.svg" alt="Sample Image" width="300">
-        </div>
-
-        <!-- Container 2 with Message -->
-        <div class="container">
-            <h1>Accelerate Your Career in <br> Cloud, DevOps & SRE</h1><br>
-            <!-- <h1>Skills. Connections. Success.</h1> -->
-            <!-- <h2>Welcome to the Data Age! 🚀</h2> -->
-            <!-- <h3><strong style="color: orangered">30th March 2024, 10am IST</strong></h3> -->
-            <!-- <h1><strong style="color: orangered">Enroll Now For Just ₹11,999/-</strong></h1> -->
-            <ul>
-                <!-- <p>Become an AWS Certified DevOps Engineer - Professional <strong style="color: orangered"> <b>in just 6 months!</b></strong> Earn certifications: Cloud Practitioner, AI Practitioner, SysOps Admin, Developer, Solutions Architect, Data Engineer, ML, Advanced Networking, and Security.</p> -->
-               <br>
-               <!-- <p> It’s time to seize the opportunity to become a Data Analyst, master the art of speaking to data, and drive organizational growth through powerful data analysis. 
-                <br>
-                <br>
-                Let’s turn insights into impact—your journey starts here!</p> -->
-                <!-- <p>Become a Cloud Administrator, Developer, Architect, DevOps, MLOps, AI, Security, or Network Engineer in just 3 months.</p> -->
-
-                <!-- <li>Enroll in our AWS DevOps Online Training Course today for a streamlined pathway to success!</li> -->
-                <p>Master in-demand skills for roles like Cloud Engineer, DevOps & Site Reliability Engineer (SRE) Engineer. 
-                    <br>
-                    <br>Learn from industry experts with real-time projects, hands-on labs & career-ready training.                </p>
-            <!-- <li>Our virtual cloud-skills training program will help you launch your career as a Cloud, DevOps, MLOps Engineer in as little as six months, regardless of your technical background.</li> -->
-              </ul>
-            <div class="button-container">
-                <div class="wrapper" style="padding-top: 4px; display: flex; justify-content: center; margin: -5px;"></div>
-           <!--     <a href="https://us02web.zoom.us/meeting/register/tZwvdO6opjsoG9WBOuT5BSFlfgsVmuuJI7hP/tZAucu6spz8pHdBp2m3xpNOgUogH_rXhtDsC" class="button">Register for Demo</a> -->
-                <!-- <a href="https://aws.amazon.com/certification/?nc2=sb_ce_co" class="button">AWS Training and Certifications</a> -->
-              </div>
-        </div>
-
-        <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_NtNWzPDKohrAgS/view" data-text="Pay Now" data-color="#528FF0" data-size="medium">
-            <script>
-              (function(){
-                var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
-                if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
-                s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
-                rzp && rzp.init && rzp.init()}})();
-            </script>
-          </div>
-          
-
-        <div class="container">
-            <div>
-                <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-                    <div>
-                        <h2>Just One Step Away!</h2>
-                        <h6>Register Us!</h6>
+    <section class="hero-section">
+        <div class="container-row">
+            <!-- Content Container -->
+            <div class="container content-container">
+                <h1 class="main-heading">Master <span class="highlight">DevOps</span> on Cloud Platforms</h1>
+                
+                <p class="sub-heading">Learn in-demand cloud skills from industry experts and get certified on AWS, Azure, and Google Cloud Platform.</p>
+                
+                <div class="cloud-logos">
+                    <div class="cloud-logo aws-logo">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
                     </div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" formControlName="name" required>
-
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" formControlName="phone" required>
-
-                    <label for="option">Looking for</label>
-                    <select id="option" formControlName="option">
-                        <!-- <option value="Ai">Ai</option> -->
-                        <option value="AWS">AWS</option>
-                        <option value="Azure">Azure</option>
-                        <option value="GCP">GCP</option>
-                        <option value="DevOps">DevOps</option>
-                        <!-- <option value="DevSecOps">DevSecOps</option> -->
-                        <!-- <option value="DataAnalyst">Data Analyst</option>
-                        <option value="DataScience">Data Science</option> -->
-                        <!-- <option value="MLOps">MLOps</option>
-                        <option value="FinOps">FinOps</option> -->
-                        <option value="Other">Other</option>
-                    </select>
-
-                    <div>
-                        <button style="align-items: center;" type="submit">Submit</button>
+                    <div class="cloud-logo azure-logo">
+                        <i class="fab fa-microsoft"></i>
+                        <span>Azure</span>
                     </div>
-                </form>
+                    <div class="cloud-logo gcp-logo">
+                        <i class="fab fa-google"></i>
+                        <span>GCP</span>
+                    </div>
+                </div>
+                
+                <div class="expert-section">
+                    <h3 class="expert-title">Industry Experts</h3>
+                    <p class="expert-subtitle">Learn from the Best in the Industry</p>
+                    <div class="expert-logos">
+                        <div class="expert-logo">
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Architects</span>
+                            <p class="expert-detail">15+ years</p>
+                        </div>
+                        <div class="expert-logo">
+                            <i class="fas fa-cogs"></i>
+                            <span>DevOps Leaders</span>
+                            <p class="expert-detail">Ex-Microsoft & AWS</p>
+                        </div>
+                        <div class="expert-logo">
+                            <i class="fas fa-chart-line"></i>
+                            <span>FinOps</span>
+                            <p class="expert-detail">Cloud Cost Optimization</p>
+                        </div>
+                    </div>
+                    <div class="expert-credentials">
+                        <div class="credential">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Certified Solutions Architects</span>
+                        </div>
+                        <div class="credential">
+                            <i class="fas fa-check-circle"></i>
+                            <span>DevOps Engineers</span>
+                        </div>
+                        <div class="credential">
+                            <i class="fas fa-check-circle"></i>
+                            <span>FinOps Certified Engineers</span>
+                        </div>
+                    </div>
+                    <p class="expert-description">Learn directly from industry veterans who have led cloud transformations at Fortune 500 companies. Our experts bring real-world experience in cloud architecture, DevOps practices, and security implementations.</p>
+                </div>
+                
+                <div class="role-storytelling">
+                    <h2 class="role-title">Choose Your Path</h2>
+                    
+                    <div class="role-card">
+                        <div class="role-icon cloud-engineer"></div>
+                        <div class="role-content">
+                            <h4>Cloud Engineer</h4>
+                            <p>Design and implement cloud infrastructure solutions. Master AWS, Azure, and GCP services to build scalable, secure applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="role-card">
+                        <div class="role-icon devops"></div>
+                        <div class="role-content">
+                            <h4>DevOps Engineer</h4>
+                            <p>Bridge development and operations with CI/CD pipelines, automation, and infrastructure as code. Streamline software delivery.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="role-card">
+                        <div class="role-icon sre"></div>
+                        <div class="role-content">
+                            <h4>Site Reliability Engineer (SRE)</h4>
+                            <p>Ensure system reliability and performance. Implement monitoring, logging, and incident response strategies for production systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="role-card">
+                        <div class="role-icon finops"></div>
+                        <div class="role-content">
+                            <h4>FinOps Engineer</h4>
+                            <p>Optimize cloud costs and financial operations. Master budgeting, forecasting, and cost allocation strategies to maximize cloud ROI.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="https://wa.me/+916309872424" class="button primary-button">Get Started Today</a>
+                    <a href="/devsecops" class="button secondary-button">View Course Details</a>
+                </div>
+                
+                <div class="trusted-by">
+                    <p class="trusted-by-text">Trusted by industry leaders</p>
+                    <div class="partner-logos">
+                        <div class="partner-logo">AWS Partner</div>
+                        <div class="partner-logo">Microsoft Partner</div>
+                        <div class="partner-logo">Google Cloud Partner</div>
+                        <div class="partner-logo">FinOps Foundation Partner</div>
+                    </div>
+                </div>
             </div>
         </div>
-
-    </div>
-
-    
+    </section>
 </body>
 </html>
