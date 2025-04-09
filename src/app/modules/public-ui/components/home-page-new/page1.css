@@ -52,6 +52,7 @@ body {
     line-height: 1.2;
     margin-bottom: 1rem;
     color: #1c1d1f;
+    text-align: center;
 }
 
 .highlight {
@@ -83,6 +84,7 @@ body {
     color: #4a5568;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    text-align: center;
 }
 
 /* Cloud Logos */
@@ -90,9 +92,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     margin: 1.5rem 0;
     padding: 1rem 0;
+    flex-direction: row;
 }
 
 .cloud-logo {
@@ -446,6 +449,7 @@ body {
 }
 
 @media (max-width: 992px) {
+    /* Container Styles */
     .container-row {
         padding: 1.5rem;
     }
@@ -454,12 +458,103 @@ body {
         font-size: 2rem;
     }
     
-    .cloud-logos {
-        gap: 1.5rem;
+    /* Course Content */
+    .module-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Expert Section */
+    .expert-logos {
+        gap: 2rem;
+    }
+
+    .expert-logo {
+        min-width: 180px;
+        padding: 1.2rem;
+    }
+    
+    /* Why Choose Us */
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Tools Section */
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Certification */
+    .certification-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Alumni */
+    .companies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .alumni-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Learning */
+    .learning-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .learning-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonial-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .happy-students .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* FAQ */
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Webinar */
+    .webinar-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .webinar-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .webinar-details {
+        align-items: center;
+    }
+
+    .webinar-cta {
+        justify-content: center;
+    }
+
+    .webinar-image {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 768px) {
+    /* Hero Section */
     .hero-section {
         padding: 1rem;
     }
@@ -474,14 +569,15 @@ body {
 
     .cta-buttons {
         flex-direction: column;
-    align-items: center;
-}
+        align-items: center;
+    }
 
     .button {
         width: 100%;
         max-width: 100%;
     }
     
+    /* Role Storytelling */
     .role-card {
         flex-direction: column;
         align-items: center;
@@ -492,10 +588,6 @@ body {
         margin-bottom: 1rem;
     }
     
-    .cloud-logos {
-        gap: 1rem;
-    }
-    
     .cloud-logo i {
         font-size: 2rem;
     }
@@ -504,16 +596,588 @@ body {
         flex-direction: column;
         align-items: center;
     }
-}
-
-@media (max-width: 480px) {
-    .main-heading {
+    
+    /* Course Content */
+    .course-content-section {
+        padding: 1.5rem;
+    }
+    
+    .section-title {
         font-size: 1.5rem;
     }
     
-    .cloud-logos {
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .module-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .module-header {
+        padding: 1.25rem;
+    }
+    
+    .module-content {
+        padding: 1.25rem;
+    }
+    
+    /* Expert Section */
+    .expert-section {
+        padding: 1.5rem;
+    }
+
+    .expert-title {
+        font-size: 1.8rem;
+    }
+
+    .expert-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .expert-logos {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .expert-logo {
+        min-width: 100%;
+    }
+
+    .expert-credentials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .credential {
+        justify-content: center;
+    }
+
+    .expert-description {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    /* Why Choose Us */
+    .why-choose-us {
+        padding: 1.5rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .benefit-card {
+        padding: 1.5rem;
+    }
+    
+    /* Tools Section */
+    .tools-platforms {
+        padding: 1.5rem;
+    }
+    
+    .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .tools-list {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+    
+    /* Certification */
+    .certification-career {
+        padding: 1.5rem;
+    }
+    
+    .certification-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .stories-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .certification-card {
+        padding: 1.5rem;
+    }
+    
+    .story-card {
+        padding: 1.5rem;
+    }
+    
+    /* Alumni */
+    .alumni-workplaces {
+        padding: 1.5rem;
+    }
+    
+    .companies-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .companies-list {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    
+    .alumni-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .stat-card {
+        padding: 1.25rem;
+    }
+    
+    /* Learning */
+    .learning-comfort {
+        padding: 2rem 1.5rem;
+    }
+    
+    .learning-options {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .learning-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .learning-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .feature-item {
+        padding: 1.2rem;
+    }
+    
+    .cta-button {
+        padding: 0.9rem 1.8rem;
+        font-size: 1rem;
+    }
+    
+    /* Testimonials */
+    .testimonials-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+    
+    .testimonial-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .stat-item {
+        padding: 1.2rem;
+    }
+    
+    /* Happy Students */
+    .happy-students .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .happy-students .section-title {
+        font-size: 2rem;
+    }
+    
+    /* FAQ */
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-section {
+        padding: 3rem 1rem;
+    }
+    
+    /* Webinar */
+    .webinar-title {
+        font-size: 1.5rem;
+    }
+
+    .webinar-info {
+        font-size: 0.9rem;
+    }
+
+    .webinar-cta {
         flex-direction: column;
         gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Hero Section */
+    .hero-section {
+        padding: 1rem 0;
+    }
+    
+    .container-row {
+        padding: 1rem 0;
+    }
+    
+    .container {
+        padding: 1.5rem 8px;
+    }
+    
+    .main-heading {
+        font-size: 1.3rem;
+    }
+    
+    .sub-heading {
+        padding: 1rem;
+    }
+    
+    /* Course Content */
+    .course-content-section {
+        padding: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .module-header {
+        padding: 1rem;
+    }
+    
+    .module-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .module-title h3 {
+        font-size: 1.1rem;
+    }
+    
+    .module-content {
+        padding: 1rem;
+    }
+    
+    /* Expert Section */
+    .expert-section {
+        padding: 1rem 8px;
+    }
+
+    .expert-title {
+        font-size: 1.5rem;
+    }
+
+    .expert-subtitle {
+        font-size: 1rem;
+    }
+
+    .expert-logo i {
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+    }
+    
+    /* Why Choose Us */
+    .why-choose-us {
+        padding: 1rem;
+    }
+    
+    .benefit-icon {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .benefit-icon i {
+        font-size: 1.2rem;
+    }
+    
+    .benefit-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .benefit-card p {
+        font-size: 0.9rem;
+    }
+    
+    /* Tools Section */
+    .tools-platforms {
+        padding: 1rem;
+    }
+    
+    .category-title {
+        font-size: 1.1rem;
+    }
+    
+    .tool-item {
+        padding: 0.8rem;
+    }
+    
+    .tool-item i {
+        font-size: 1.5rem;
+    }
+    
+    .tool-item span {
+        font-size: 0.8rem;
+    }
+    
+    /* Certification */
+    .certification-career {
+        padding: 1rem;
+    }
+    
+    .certification-card {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .certification-stats {
+        gap: 3rem;
+    }
+    
+    .certification-icon {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .certification-icon i {
+        font-size: 1.2rem;
+    }
+    
+    .certification-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .certification-list li {
+        font-size: 0.9rem;
+    }
+    
+    .stat-number {
+        font-size: 1.3rem;
+    }
+    
+    .stories-title {
+        font-size: 1.3rem;
+    }
+    
+    .story-content p {
+        font-size: 0.9rem;
+    }
+    
+    /* Alumni */
+    .alumni-workplaces {
+        padding: 1rem;
+    }
+    
+    .category-title {
+        font-size: 1.1rem;
+    }
+    
+    .company-item {
+        padding: 0.8rem;
+    }
+    
+    .company-item i {
+        font-size: 1.5rem;
+    }
+    
+    .company-item span {
+        font-size: 0.8rem;
+    }
+    
+    .alumni-stats {
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .stat-number {
+        font-size: 1.3rem;
+    }
+    
+    .stat-label {
+        font-size: 0.85rem;
+    }
+    
+    /* Learning */
+    .learning-comfort {
+        padding: 1.5rem 1rem;
+    }
+    
+    .learning-header {
+        margin-bottom: 2rem;
+    }
+    
+    .learning-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .learning-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .learning-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card-description {
+        font-size: 0.9rem;
+    }
+    
+    .features-list li {
+        font-size: 0.9rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .feature-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .feature-icon i {
+        font-size: 1.1rem;
+    }
+    
+    .feature-content h4 {
+        font-size: 1rem;
+    }
+    
+    .feature-content p {
+        font-size: 0.85rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    /* Testimonials */
+    .testimonials-section {
+        padding: 1.5rem 1rem;
+    }
+    
+    .testimonial-avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .testimonial-info h4 {
+        font-size: 1rem;
+    }
+    
+    .testimonial-info p {
+        font-size: 0.85rem;
+    }
+    
+    .testimonial-content p {
+        font-size: 0.9rem;
+    }
+    
+    .certification-badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .testimonial-header {
+        flex-direction: column;
+    }
+    
+    .testimonial-stats, .happy-students .stat-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0rem;
+        gap: 0 0.5rem;
+    }
+    
+    .happy-students .testimonial-stats {
+        display: flex;
+    }
+    
+    .stat-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .stat-icon i {
+        font-size: 1.1rem;
+    }
+    
+    /* Happy Students */
+    .happy-students {
+        padding: 1.5rem;
+    }
+    
+    /* FAQ */
+    .faq-section {
+        padding: 2rem 1rem;
+    }
+    
+    .faq-question h4 {
+        font-size: 0.9rem;
+    }
+    
+    .faq-answer p {
+        font-size: 0.9rem;
+    }
+    
+    .happy-students {
+        padding: 1.5rem;
+    }
+    
+    .happy-students .testimonial-stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0rem;
+        gap: 0 0.5rem;
+    }
+    
+    .happy-students {
+        padding: 1.5rem 8px;
+    }
+}
+
+@media (max-width: 320px){
+    .expert-credentials {
+        padding: 1rem 0;
+    }
+    
+    .role-storytelling {
+        padding: 1.5rem 8px;
+    }
+    
+    .main-heading {
+        padding: 0 2rem;
+    }
+    
+    .course-content-section {
+        padding: 1.5rem 4px;
+    }
+    
+    .learning-comfort {
+        padding: 1.5rem 8px;
+    }
+    
+    .certification-career {
+        padding: 8px;
+    }
+    
+    .happy-students {
+        padding: 1.5rem 8px;
     }
 }
 
@@ -633,6 +1297,8 @@ body {
     background: white;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: unset;
+    justify-content: center;
 }
 
 .credential i {
@@ -698,7 +1364,6 @@ body {
     }
 
     .credential {
-    width: 100%;
         justify-content: center;
     }
 
@@ -710,7 +1375,7 @@ body {
 
 @media (max-width: 480px) {
     .expert-section {
-        padding: 1rem;
+        padding: 1rem 8px;
     }
 
     .expert-title {
@@ -1631,6 +2296,16 @@ font-weight: bold;
     }
 }
 
+@media (max-width: 320px) {
+    .alumni-stats {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
 /* Learning at your comfort Section - Modernized */
 .learning-comfort {
     margin: 4rem 0;
@@ -2062,6 +2737,36 @@ color: white;
     }
 }
 
+@media (max-width: 320px){
+    .expert-credentials {
+        padding: 1rem 0;
+    }
+    
+    .role-storytelling {
+        padding: 1.5rem 8px;
+    }
+    
+    .main-heading {
+        padding: 0 2rem;
+    }
+    
+    .course-content-section {
+        padding: 1.5rem 4px;
+    }
+    
+    .learning-comfort {
+        padding: 1.5rem 8px;
+    }
+    
+    .certification-career {
+        padding: 8px;
+    }
+    
+    .happy-students {
+        padding: 1.5rem 8px;
+    }
+}
+
 /* Testimonials Section */
 .testimonials-section {
     margin: 4rem 0;
@@ -2239,7 +2944,7 @@ color: white;
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* Responsive Design for Testimonials */
 @media (max-width: 992px) {
     .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -2301,6 +3006,10 @@ color: white;
         padding: 0.4rem 0.8rem;
     }
     
+    .testimonial-header {
+        flex-direction: column;
+    }
+    
     .stat-icon {
         width: 45px;
         height: 45px;
@@ -2310,12 +3019,26 @@ color: white;
         font-size: 1.1rem;
     }
     
+    .testimonial-stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        gap: 0 0.5rem;
+    }
+    
     .stat-number {
         font-size: 1.5rem;
     }
     
     .stat-label {
         font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .testimonials-section {
+        padding: 1.5rem 4px;
     }
 }
 
@@ -2503,7 +3226,15 @@ color: white;
     }
     
     .happy-students .testimonial-stats {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0rem;
+        gap: 0 0.5rem;
+    }
+    
+    .happy-students {
+        padding: 1.5rem 8px;
     }
 }
 
@@ -2669,7 +3400,7 @@ color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #ffffff;  /* Changed from gradient to white */
+    background: #ffffff;
     margin: 2rem auto;
     padding: 2rem;
     border-radius: 16px;
@@ -2683,18 +3414,18 @@ color: white;
 .webinar-content {
     flex: 1;
     padding-right: 2rem;
-    color: #172342;  /* Changed from white to dark blue */
+    color: #172342;
 }
 
 .webinar-badge {
     display: inline-block;
-    background: rgba(66, 153, 225, 0.1);  /* Changed to light blue */
+    background: rgba(66, 153, 225, 0.1);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
     margin-bottom: 1rem;
     backdrop-filter: blur(10px);
-    color: #3182ce;  /* Changed to blue */
+    color: #3182ce;
     font-weight: 600;
 }
 
@@ -2703,8 +3434,8 @@ color: white;
     font-weight: 700;
     margin-bottom: 1.5rem;
     line-height: 1.2;
-    color: #172342;  /* Changed to dark blue */
-    text-shadow: none;  /* Removed text shadow */
+    color: #172342;
+    text-shadow: none;
 }
 
 .webinar-details {
@@ -2718,11 +3449,11 @@ color: white;
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: #4a5568;  /* Changed to medium gray */
+    color: #4a5568;
 }
 
 .webinar-info i {
-    color: #3182ce;  /* Changed to blue */
+    color: #3182ce;
     font-size: 1.2rem;
 }
 
@@ -2733,7 +3464,7 @@ color: white;
 }
 
 .register-btn {
-    background: #3182ce;  /* Changed to blue */
+    background: #3182ce;
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -2746,14 +3477,14 @@ color: white;
 }
 
 .register-btn:hover {
-    background: #2c5282;  /* Darker blue on hover */
+    background: #2c5282;
     transform: translateY(-2px);
     text-decoration: none;
     color: white;
 }
 
 .seats-left {
-    color: #e53e3e;  /* Changed from yellow (#ecc94b) to red */
+    color: #e53e3e;
     font-size: 0.9rem;
     font-weight: 500;
 }
