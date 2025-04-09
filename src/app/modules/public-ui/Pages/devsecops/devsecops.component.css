@@ -16,13 +16,14 @@ body {
 .hero-section {
     background: linear-gradient(135deg, #172342 0%, #2a3a6a 100%);
     color: #fff;
-    padding-top: 80px;  /* Added space between header and hero content */
+    padding-top: 120px;  /* Increased padding to account for fixed header */
     padding-bottom: 4rem;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
     display: flex;
     align-items: center;
+    z-index: 1;  /* Ensure hero section is below the header */
 }
 
 .hero-section::before {
@@ -75,6 +76,8 @@ body {
     text-align: center;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;  /* Ensure heading is above the background pattern */
 }
 
 .highlight {
@@ -136,7 +139,7 @@ body {
 
 .highlights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1.5rem;
     margin: 0 auto;
     max-width: 1200px;
@@ -145,8 +148,7 @@ body {
 .highlight-card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    padding: 1.5rem;
-    text-align: center;
+    padding: 2rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -159,31 +161,30 @@ body {
     background: rgba(255, 255, 255, 0.15);
 }
 
-.highlight-card i {
-    font-size: 2rem;
+.highlight-card h4 {
     color: #4299e1;
     margin-bottom: 1rem;
-    background: rgba(66, 153, 225, 0.1);
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 0 auto 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
 }
 
-.highlight-card h4 {
-    color: white;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: 600;
+.highlight-card h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, #4299e1, #667eea);
+    border-radius: 1px;
 }
 
 .highlight-card p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
-    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    line-height: 1.6;
     margin: 0;
 }
 
