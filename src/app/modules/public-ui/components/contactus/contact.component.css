@@ -3,7 +3,7 @@
     display: block;
     font-family: 'Inter', sans-serif;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 /* Text Colors */
@@ -41,7 +41,6 @@
 
 .hero-content {
     position: relative;
-    z-index: 1;
     max-width: 800px;
     margin: 0 auto;
     padding: 0 1rem;
@@ -341,6 +340,9 @@ textarea.form-control {
     
     .info-card {
         padding: 0.75rem;
+    }
+    .contact-hero {
+        height: 20vh;
     }
 }
 
