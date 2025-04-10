@@ -68,6 +68,7 @@ import { TNCComponent } from './components/terms_and_conditions/t_n_c';
 import { CancellationRefundComponent } from './components/cancellation_and_refundpolicy/cancellation_and_refundpolicy';
 import { UpcomingComponent } from './components/upcoming/upcoming';
 import { LandingBanner3Component } from './components/we-offer/landing-banner3-awsdevops/landing-banner3';
+import { HomeFaqComponent } from './components/home-faq/home-faq.component';
 
 import { FeeEMIAWSComponent } from './components/fee-emi-popup-aws/fee.emi.component';
 import { FeeEMIAWSMain } from './components/fee-emi-popup-aws/fee-emi-main-aws/fee-emi-main';
@@ -142,7 +143,7 @@ import { CourseContentComponent } from './components/we-offer/course-content/cou
     CompanyComponent, BlogStartingComponent, BlogsComponent, AutoScalingComponent,
      ReviewsColComponent, GoogleReviewsColComponent,
     FeeEMIAWSComponent, FeeEMIAWSMain, 
-    AWSMobileCourseContent,  HomePageNewComponent,
+    AWSMobileCourseContent,  HomePageNewComponent, HomeFaqComponent,
     
     DataAnalystFaqComponent, DAEligibilityComponent, AWSEligibilityComponent,  BlogTemplateComponent, DaToolsComponent, DaCertifcatesComponent, 
     // AzureDevOpsContentComponent, AzureDevOpsComponent, AzureDevopsEligibilityComponent, AzureAWSCourseContentMobileView, LandingBanner4AzureDevOpsComponent, AzureDevopsFaqComponent,
