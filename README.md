@@ -141,3 +141,53 @@ Linux Certifications:
     1. Red Hat Certified System Administrator (RHCSA)
     2. Red Hat Certified System Engineer (RHCE)
     
+
+
+Topics:
+- Prompt Engineering with ChatGPT
+- OS Modules: Windows & Linux
+- Shell Scripting & Python 
+- SQL & NoSQL
+- DevOps CI/CD Pipeline
+- DevOps CI/CD Pipeline using Java / Angular / React / Python
+- Git / GitHub / GitLab / GitOps 
+- Jenkins / CodePipeline / Azure Pipeline / ArgoCD
+- SonarQube
+- JFrog
+- Tomcat
+- Docker
+- Kubernetes
+- Ansible
+- Terraform / Azure Bicep / AWS CloudFormation
+- Packer
+- NewRelic / Azure Monitor / AWS CloudWatch
+
+Cloud Computing Modules:
+- Analytics
+- Application Integration
+- Compute
+- Storage
+- Database
+- DevOps Tools
+- Containers
+- Management & Governance
+- Networking & Content Delivery
+- Security, Identity, & Compliance
+
+Key Features:
+- 6 Projects
+- Topic-wise Quiz
+- Mock Interviews
+- Mentor Support
+- Resume Grooming Session
+- 100% Placement Guidance
+
+
+Cloud Engineer:
+
+DevOps Engineer:
+
+Site Reliability Engineer:
+
+Platform Engineer:
+ - GitHub Copilot 
