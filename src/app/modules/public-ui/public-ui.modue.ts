@@ -123,6 +123,7 @@ import { DataScienceFaqComponent } from './components/faqs/data-science-faq/data
 import { DataScienceCCMBComponent } from './components/course-content-component/data-analyst/data-science-ccmb/data-science-ccmb';
 import { DevSecopsmobileccComponent } from './components/course-content-component/devops-course-content/devsecopsmobilecc/devsecopsmobilecc.component';
 import { CourseContentComponent } from './components/we-offer/course-content/course-content';
+import { UpcomingBatchesComponent } from './components/upcoming-batches/upcoming-batches.component';
 
 @NgModule({
   declarations: [CloudIntroComponent,
@@ -181,6 +182,7 @@ import { CourseContentComponent } from './components/we-offer/course-content/cou
     DataScienceFaqComponent,
     DataScienceCCMBComponent,
     CourseContentComponent,
+    UpcomingBatchesComponent,
   ],
   imports: [RouterModule, PublicUiRoutingModule, MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTooltipModule, MatIconModule, MatSnackBarModule, HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
