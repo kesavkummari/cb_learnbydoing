@@ -57,22 +57,13 @@
     </a>
 
     <div class="header-right">
-      <a routerLink="/home">DevOps</a>
-      <!-- <a [routerLink]="['/aws']" routerLinkActive="router-link-active">AWS</a> -->
-      <!-- <a [routerLink]="['/devsecops']" routerLinkActive="router-link-active">DevOps</a> -->
-      <!-- <a [routerLink]="['/azure-devops']" routerLinkActive="router-link-active">Azure DevOps</a> -->
-      <!-- <a [routerLink]="['/data-analyst']" routerLinkActive="router-link-active">Data Analyst </a>
-      <a [routerLink]="['/data-science']" routerLinkActive="router-link-active">Data Science </a> -->
-      <!-- <a [routerLink]="['/finops']" routerLinkActive="router-link-active"> FinOps
-        <span style="color: orange; font-size: 12px;"></span>
-      </a> -->
-      <a [routerLink]="['/blogs']" routerLinkActive="router-link-active">Blogs </a>
-      <a [routerLink]="['/contactus']" routerLinkActive="router-link-active">Contact Us </a>
-      <!-- <a class="active special-hover" [routerLink]="['/contactus']" routerLinkActive="router-link-active" style="padding: 9px;">Contact Us</a> -->
-      <a href="https://wa.me/919392743006" target="_blank" style="color: rgb(43, 9, 9); background-color: #e1f2f2; padding: 8px 15px; border-radius: 5px;">
-        <i class="fab fa-whatsapp" style="margin-right: 5px;"></i>+91 9392743006
+      <a routerLink="/home"><i class="fas fa-home"></i> DevOps</a>
+      <a [routerLink]="['/blogs']" routerLinkActive="router-link-active"><i class="fas fa-blog"></i> Blogs</a>
+      <a [routerLink]="['/contactus']" routerLinkActive="router-link-active"><i class="fas fa-envelope"></i> Contact Us</a>
+      <a [routerLink]="['/payment']" routerLinkActive="router-link-active"><i class="fas fa-credit-card"></i> Payment</a>
+      <a href="https://wa.me/919392743006" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>+91 9392743006
       </a>
-      
     </div>
   </div>
 
@@ -93,19 +84,12 @@
 <!-- Sidenav -->
 <div class="header__backdrop" [class.open]="sidenavOpen" (click)="closeSidenav()"></div>
 <div class="sidenav" [class.open]="sidenavOpen">
-  <!-- Your sidenav content goes here -->
-  <a routerLink="/home" (click)="closeSidenav()">DevOps</a>
-  <!-- <a [routerLink]="['/aws']" routerLinkActive="router-link-active" (click)="closeSidenav()">AWS</a> -->
-  <!-- <a routerLink="/aws" (click)="closeSidenav()">AWS</a> -->
-  <!-- <a routerLink="/devsecops" (click)="closeSidenav()">DevOps</a> -->
-  <!-- <a routerLink="/azure-devops" (click)="closeSidenav()">Azure DevOps</a> -->
-  <!-- <a routerLink="/data-analyst" (click)="closeSidenav()">Data Analyst </a>
-  <a routerLink="/data-science" (click)="closeSidenav()">Data Science </a> -->
-  <!-- <a routerLink="/finops" (click)="closeSidenav()">FinOps </a> -->
-  <a routerLink="/blogs" (click)="closeSidenav()">Blogs</a>
-  <a [routerLink]="['/contactus']" routerLinkActive="router-link-active" (click)="closeSidenav()">Contact Us</a>
-  <a href="https://wa.me/919392743006" target="_blank" style="color: rgb(43, 9, 9); background-color: #e1f2f2; padding: 8px 15px; border-radius: 5px; margin: 10px 0;">
-    <i class="fab fa-whatsapp" style="margin-right: 5px;"></i>+91 9392743006
+  <a routerLink="/home" (click)="closeSidenav()"><i class="fas fa-home"></i> DevOps</a>
+  <a routerLink="/blogs" (click)="closeSidenav()"><i class="fas fa-blog"></i> Blogs</a>
+  <a [routerLink]="['/contactus']" routerLinkActive="router-link-active" (click)="closeSidenav()"><i class="fas fa-envelope"></i> Contact Us</a>
+  <a [routerLink]="['/payment']" routerLinkActive="router-link-active" (click)="closeSidenav()"><i class="fas fa-credit-card"></i> Payment</a>
+  <a href="https://wa.me/919392743006" target="_blank" class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>+91 9392743006
   </a>
 </div>
 <a href="https://wa.me/919100073006" class="floating" target="_blank">

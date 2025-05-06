@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
 import { NavigationEnd, Router, RouterModule, Routes } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { PaymentComponent } from './components/payment/payment.component';
 
-const routes: Routes = [{
-  path: '', loadChildren: () => import('./modules/public-ui/public-ui.modue').then(m => m.PublicUiModule)
-}];
+const routes: Routes = [
+  {
+    path: '', loadChildren: () => import('./modules/public-ui/public-ui.modue').then(m => m.PublicUiModule)
+  },
+  {
+    path: 'payment',
+    component: PaymentComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -22,5 +29,4 @@ export class AppRoutingModule {
   ngOnInit() {
     // Your component initialization code
   }
-
 }

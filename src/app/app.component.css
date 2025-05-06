@@ -2,88 +2,202 @@
     overflow: hidden;
     background-color: #ffffff;
     padding: 0 100px 0 100px;
-    display: flex; /* Add this to use flexbox */
-    justify-content: space-between; /* Add this to space items evenly horizontally */
-    align-items: center; /* Add this to vertically center items */
-  }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
-  .header .title{
+.header .title {
     font-weight: 600;
-      font-size: 23px;margin-bottom: -5px;
-  }
-  .header .sub-title{
-    font-size: 18px;
-  }
+    font-size: 23px;
+    margin-bottom: -5px;
+}
 
-  /* .header a {
-    color: black;
-    text-align: center;
-    text-decoration: none;
+.header .sub-title {
     font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-  } */
-  a{
-    font-weight: 700;
-    color: #010b13;
-  }
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-    margin-right: 20px; /* Adjust this margin to move the logo right */
-    margin-top: 0px;
-  }
+}
 
-  .header a:hover {
-   /* background-color: #ddd; */
+.header a {
+    font-weight: 500;
     color: #172342;
-  }
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+}
 
-  .header a.active {
-    background-color: #172342;
-    color: white;
-  }
+.header a:hover {
+    color: #38b6ff;
+    background-color: rgba(56, 182, 255, 0.1);
+}
 
-  .header .header-right {
-    display: flex; /* Add this to use flexbox for navigation links */
-    /* margin-left: -10px; Adjust this margin to move "Home" and "About" left */
-    margin:0;
-  }
-  .header .header-right i{
-    font-size: 24px; color: #172342; cursor: pointer;
-  }
+.header a.router-link-active {
+    color: #38b6ff;
+}
 
-  .header a:not(.logo) {
-    padding: 8px 20px;
+.header a.router-link-active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background-color: #38b6ff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.header .header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .header-right i {
+    font-size: 24px;
+    color: #172342;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header .header-right i:hover {
+    color: #38b6ff;
+}
+
+/* Mobile Header Styles */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 60px !important;
+        padding: 0 20px;
+    }
+    
+    .header .title {
+        font-weight: 600;
+        font-size: 17px;
+        margin-bottom: -5px;
+    }
+    
+    .header .sub-title {
+        font-size: 12px;
+    }
+}
+
+/* Sidenav Styles */
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background-color: #ffffff;
+    color: #172342;
+    transition: all 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 80px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidenav.open {
+    left: 0;
+}
+
+.sidenav a {
+    color: #172342;
+    text-decoration: none;
+    padding: 12px 20px;
     border-radius: 8px;
-  }
-  @media screen and (max-width: 768px) {
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-  .header{
-    height: 60px !important;
-    padding: 0 27px 0 20px;
-  }
-    .header .title{
-      font-weight: 600;
-        font-size: 17px;margin-bottom: -5px;
-    }
-    .header .sub-title{
-      font-size: 12px;
-    }
-  }
-  @media screen and (max-width: 500px) {
-    .header a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
+.sidenav a:hover {
+    background-color: rgba(56, 182, 255, 0.1);
+    color: #38b6ff;
+}
 
-      .header-right {
-        float: none;
-        margin-left: 0; /* Reset the margin for smaller screens */
-        margin-top: 10px; /* Add margin to separate links on smaller screens */
-      }
-  }
+.sidenav a.router-link-active {
+    background-color: #38b6ff;
+    color: white;
+}
+
+.header__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.header__backdrop.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* WhatsApp Button Styles */
+.whatsapp-button {
+    background-color: #e1f2f2;
+    color: #172342;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+    background-color: #38b6ff;
+    color: white;
+}
+
+.whatsapp-button i {
+    font-size: 20px;
+}
+
+/* Floating WhatsApp Button */
+.floating {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25D366;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+}
+
+.floating img {
+    width: 80%;
+    height: auto;
+}
+
 .logo_link{
     display: flex;
     flex-direction: row;
@@ -91,60 +205,6 @@
     color: #172342;
 
   }
-
-  .sidenav {
-    position: fixed;
-    top: 20px;
-    left: -250px; /* Off-screen by default */
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    color: #fff;
-    transition: left 0.3s;
-
-    display: flex;
-    flex-direction: column;
-    padding: 57px 10px 50px 18px;
-    gap: 20px;
-
-}
-.sidenav a{
-    color:white;
-}
-
-  .sidenav.open {
-    left: 0; /* Display the sidenav when it's open */
-  }
-
-
-  .header__backdrop {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    background-color: rgba(17,17,17,0.7);
-    display: none;
-    opacity: 0;
-    -webkit-transition-delay: 360ms;
-    transition-delay: 360ms;
-    -webkit-transition-duration: 180ms;
-    transition-duration: 180ms;
-}
-.floating{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-
-	border-radius:50px;
-	text-align:center;
-       font-size:30px;
-	box-shadow: px 2px 3px #999;
-  z-index:100;
-}
 
 .float-button{
 	margin-top:16px;

@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { PaymentComponent } from '../../components/payment/payment.component';
 
 import { IntroPageComponent } from './Pages/intro-page/intro-page.component';
 // import { FinOpsComponent } from './Pages/finops/finops.component';
@@ -69,6 +70,7 @@ const routes: Routes = [
   {path:'data-science', component: DataScienceComponent},
   {path:'aws', component: AWSCourseComponent},
   {path:'devsecops', component:DevSecopsComponent},
+  {path:'payment', component: PaymentComponent},
   // {path:'azure-devops', component: AzureDevOpsComponent},
   // {path:'finops', component: FinOpsComponent},
   {path:'blogs', component: BlogsComponent},
