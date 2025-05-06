@@ -10,7 +10,7 @@ export class PaymentComponent {
     accountNumber: '41352788357',
     accountName: 'Cloudbinary',
     bankName: 'SBI',
-    ifscCode: 'SBIN001301220308',
+    ifscCode: 'SBIN0020308',
     branch: 'Umesh Chandra Statue, Sanjeeva Reddy Nagar',
     address: '254, 255 / 3Rt, Sanjeeva Reddy Nagar Mai, Road, Hyderabad, Umesh Chandra Statue, Telangana (TEL), 500038'
   };

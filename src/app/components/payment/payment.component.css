@@ -94,6 +94,109 @@
   font-weight: 500;
 }
 
+.value.highlight {
+  color: #38b6ff;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Course Details Specific Styles */
+.course-details .card-header {
+  background: linear-gradient(135deg, #38b6ff 0%, #2a9de8 100%);
+}
+
+.course-details .card-header i,
+.course-details .card-header h2 {
+  color: white;
+}
+
+/* Scanner Section Styles */
+.scanner-section {
+  margin: 40px 0;
+}
+
+.scanner-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.scanner-header {
+  padding: 20px;
+  background: linear-gradient(135deg, #38b6ff 0%, #2a9de8 100%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scanner-header i,
+.scanner-header h2 {
+  color: white;
+  margin: 0;
+}
+
+.scanner-content {
+  padding: 30px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.scanner-image {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.scanner-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scanner-info {
+  flex: 1;
+}
+
+.scanner-info p {
+  font-size: 1.1rem;
+  color: #172342;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.scanner-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tip-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.tip-item:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.tip-item i {
+  color: #38b6ff;
+  font-size: 18px;
+}
+
+.tip-item span {
+  color: #444;
+  font-size: 0.95rem;
+}
+
 .notice-item {
   display: flex;
   align-items: flex-start;
@@ -180,6 +283,55 @@
   color: white;
 }
 
+/* Trainer Availability Card Styles */
+.availability-card .card-header {
+  background: linear-gradient(135deg, #38b6ff 0%, #2a9de8 100%);
+}
+
+.availability-card .card-header i,
+.availability-card .card-header h2 {
+  color: white;
+}
+
+.availability-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.availability-item:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.availability-item i {
+  font-size: 24px;
+  color: #38b6ff;
+}
+
+.availability-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.availability-info p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #172342;
+  font-weight: 500;
+}
+
+.availability-info .time-slot {
+  font-size: 1.2rem;
+  color: #38b6ff;
+  font-weight: 600;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .payment-container {
@@ -192,6 +344,26 @@
 
   .payment-grid {
     grid-template-columns: 1fr;
+  }
+
+  .scanner-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .scanner-image {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .scanner-info {
+    text-align: center;
+  }
+
+  .tip-item {
+    justify-content: center;
   }
 
   .download-card {
