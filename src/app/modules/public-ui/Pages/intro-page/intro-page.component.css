@@ -360,3 +360,148 @@ body {
 body {
   font-family: 'Quicksand', sans-serif;
 }
+
+/* Demo Section Styles */
+.demo-section {
+  padding: 40px 0;
+  background: linear-gradient(135deg, #172342 0%, #2c3e50 100%);
+  margin-bottom: 0;
+}
+
+.demo-content {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.demo-content h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.demo-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.demo-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.demo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.demo-date {
+  background: #ff725e;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(255, 114, 94, 0.3);
+}
+
+.demo-date .date {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.demo-date .time {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.demo-card h3 {
+  color: #172342;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.demo-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+  text-align: left;
+}
+
+.demo-card ul li {
+  padding: 10px 0;
+  color: #2c3e50;
+  position: relative;
+  padding-left: 30px;
+  font-size: 1.1rem;
+}
+
+.demo-card ul li:before {
+  content: "✓";
+  color: #ff725e;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.demo-button {
+  display: inline-block;
+  background: #172342;
+  color: white;
+  padding: 14px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(23, 35, 66, 0.3);
+}
+
+.demo-button:hover {
+  background: #ff725e;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 114, 94, 0.4);
+}
+
+@media (max-width: 768px) {
+  .demo-section {
+    padding: 30px 0;
+  }
+  
+  .demo-content h2 {
+    font-size: 2rem;
+    padding: 0 15px;
+  }
+  
+  .demo-card {
+    min-width: 100%;
+    margin: 0 15px;
+  }
+  
+  .demo-cards {
+    gap: 20px;
+  }
+  
+  .demo-button {
+    width: 100%;
+    text-align: center;
+  }
+}
