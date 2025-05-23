@@ -62,6 +62,7 @@ import { DaNumpyBasicsComponent } from './components/blogs-component/blogs-pages
 import { DaPandasBasicsComponent } from './components/blogs-component/blogs-pages/all-blogs/da-pandas-basics/da-numpy-basics.component';
 import { DevSecopsComponent } from './Pages/devsecops/devsecops.component';
 import { DataScienceComponent } from './Pages/data-science/data-science.component';
+import { DevOpsCourseComponent } from './Pages/devops-course/devops-course.component';
 
 const routes: Routes = [
  
@@ -70,6 +71,7 @@ const routes: Routes = [
   {path:'data-science', component: DataScienceComponent},
   {path:'aws', component: AWSCourseComponent},
   {path:'devsecops', component:DevSecopsComponent},
+  {path:'devops', component: DevOpsCourseComponent},
   {path:'payment', component: PaymentComponent},
   // {path:'azure-devops', component: AzureDevOpsComponent},
   // {path:'finops', component: FinOpsComponent},

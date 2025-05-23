@@ -125,6 +125,7 @@ import { DataScienceCCMBComponent } from './components/course-content-component/
 import { DevSecopsmobileccComponent } from './components/course-content-component/devops-course-content/devsecopsmobilecc/devsecopsmobilecc.component';
 import { CourseContentComponent } from './components/we-offer/course-content/course-content';
 import { UpcomingBatchesComponent } from './components/upcoming-batches/upcoming-batches.component';
+import { DevOpsCourseComponent } from './Pages/devops-course/devops-course.component';
 
 @NgModule({
   declarations: [CloudIntroComponent,
@@ -184,7 +185,8 @@ import { UpcomingBatchesComponent } from './components/upcoming-batches/upcoming
     DataScienceCCMBComponent,
     CourseContentComponent,
     UpcomingBatchesComponent,
-    PaymentComponent
+    PaymentComponent,
+    DevOpsCourseComponent
   ],
   imports: [RouterModule, PublicUiRoutingModule, MatTabsModule, SharedModule, CommonModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTooltipModule, MatIconModule, MatSnackBarModule, HttpClientModule, MatDialogModule, MatCardModule, MatProgressSpinnerModule],
   providers: [],
