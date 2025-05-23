@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>Best DevOps Training with Multi-Cloud in Telugu</title>
+  <title>Be A DevOps Engineer</title>
   <base href="/">
   <link rel="canonical" href="https://www.cloudbinary.in">
 
@@ -32,7 +32,8 @@
   <meta name="robots" content="index, follow">
   
   <!-- OpenGraph meta tags for social media -->
-  <meta property="og:title" content="AWS, DevOps, Data Analyst & Data Science Training | Classroom & Online">
+  <meta property="og:title" content="Be A DevOps Engineer
+🚀 Build the Future. Automate Everything. Deliver Faster.">
   <meta property="og:description" content="Advance your career with expert-led AWS, DevOps, Data Analyst, and Data Science courses. Learn online or in the classroom with hands-on labs, real-world projects, and industry-recognized certifications.">
   <meta property="og:image" content="https://www.cloudbinary.in/home">
   <meta property="og:url" content="https://www.cloudbinary.in">
@@ -51,31 +52,29 @@
 <!-- End Google Tag Manager (noscript) -->
 
 <div class="content">
-  <div class="header" style=" height: 100px; position: fixed;" *ngIf="!isScreenSmall">
+  <div class="header" *ngIf="!isScreenSmall">
     <a href="" class="logo_link logo">
-      <img src="assets/intro/newlogo.png" alt="Cloud Binary Logo" class="flogo" style="width: 100px; padding-top: 6px; " />
+      <img src="assets/intro/newlogo.png" alt="Cloud Binary Logo" class="flogo" />
     </a>
 
     <div class="header-right">
-      <!-- <a routerLink="/home"><i class="fas fa-home"></i> DevOps</a> -->
       <a routerLink="/devops"><i class="fas fa-code-branch"></i> DevOps Course</a>
       <a [routerLink]="['/blogs']" routerLinkActive="router-link-active"><i class="fas fa-blog"></i> Blogs</a>
       <a [routerLink]="['/contactus']" routerLinkActive="router-link-active"><i class="fas fa-envelope"></i> Contact Us</a>
-      <!-- <a [routerLink]="['/payment']" routerLinkActive="router-link-active"><i class="fas fa-credit-card"></i> Payment</a> -->
       <a href="https://wa.me/919392743006" target="_blank" class="whatsapp-button">
         <i class="fab fa-whatsapp"></i>+91 9392743006
       </a>
     </div>
   </div>
-<!-- 
-  <div class="header" style=" height: 40px; position: fixed; display:flex; justify-content: space-between;" *ngIf="isScreenSmall">
-    <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="logo_link logo" style="display: flex;flex-direction: row;">
-      <img src="assets/intro/CBMV.png" alt="Cloud Binary Logo for Mobile View" class="flogo" style="width: 185px; height: 50px;" />
+
+  <div class="header mobile-header" *ngIf="isScreenSmall">
+    <a href="" class="logo_link logo">
+      <img src="assets/intro/CBMV.png" alt="Cloud Binary Logo for Mobile View" class="flogo" />
     </a>
     <div class="header-right">
       <i class="fa fa-bars" (click)="toggleSidenav()"></i>
     </div>
-  </div> -->
+  </div>
 
   <router-outlet></router-outlet>
 
@@ -85,11 +84,9 @@
 <!-- Sidenav -->
 <div class="header__backdrop" [class.open]="sidenavOpen" (click)="closeSidenav()"></div>
 <div class="sidenav" [class.open]="sidenavOpen">
-  <!-- <a routerLink="/home" (click)="closeSidenav()"><i class="fas fa-home"></i> DevOps</a> -->
   <a routerLink="/devops" (click)="closeSidenav()"><i class="fas fa-code-branch"></i> DevOps Course</a>
   <a routerLink="/blogs" (click)="closeSidenav()"><i class="fas fa-blog"></i> Blogs</a>
   <a [routerLink]="['/contactus']" routerLinkActive="router-link-active" (click)="closeSidenav()"><i class="fas fa-envelope"></i> Contact Us</a>
-  <!-- <a [routerLink]="['/payment']" routerLinkActive="router-link-active" (click)="closeSidenav()"><i class="fas fa-credit-card"></i> Payment</a> -->
   <a href="https://wa.me/919392743006" target="_blank" class="whatsapp-button">
     <i class="fab fa-whatsapp"></i>+91 9392743006
   </a>
