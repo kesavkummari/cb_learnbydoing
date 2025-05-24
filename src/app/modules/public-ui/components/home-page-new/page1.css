@@ -3000,28 +3000,33 @@ color: white;
 
 .happy-students .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
+    padding: 0 1rem;
 }
 
 .happy-students .testimonial-card {
     background: white;
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .happy-students .testimonial-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .happy-students .testimonial-header {
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
+    gap: 1rem;
 }
 
 .happy-students .testimonial-avatar {
@@ -3029,7 +3034,7 @@ color: white;
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 1rem;
+    flex-shrink: 0;
 }
 
 .happy-students .testimonial-avatar img {
@@ -3058,10 +3063,13 @@ color: white;
 .happy-students .testimonial-rating {
     color: #f6ad55;
     font-size: 0.9rem;
+    display: flex;
+    gap: 0.25rem;
 }
 
 .happy-students .testimonial-content {
     margin-bottom: 1.5rem;
+    flex: 1;
 }
 
 .happy-students .testimonial-content p {
@@ -3074,6 +3082,7 @@ color: white;
 .happy-students .testimonial-footer {
     border-top: 1px solid #e2e8f0;
     padding-top: 1rem;
+    margin-top: auto;
 }
 
 .happy-students .certification-badge {
@@ -3096,12 +3105,17 @@ color: white;
     gap: 2rem;
     margin-top: 3rem;
     text-align: center;
+    padding: 0 1rem;
 }
 
 .happy-students .stat-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .happy-students .stat-icon {
@@ -3136,37 +3150,78 @@ color: white;
 }
 
 /* Responsive Design */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .happy-students .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    .happy-students .testimonials-grid {
-        grid-template-columns: 1fr;
+    .happy-students {
+        padding: 1.5rem;
     }
     
     .happy-students .section-title {
         font-size: 2rem;
     }
-}
-
-@media (max-width: 480px) {
-    .happy-students {
+    
+    .happy-students .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .happy-students .testimonial-card {
         padding: 1.5rem;
     }
     
     .happy-students .testimonial-stats {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0rem;
-        gap: 0 0.5rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
+    .happy-students .stat-item {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
     .happy-students {
-        padding: 1.5rem 8px;
+        padding: 1rem;
+    }
+    
+    .happy-students .testimonial-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .happy-students .testimonial-avatar {
+        margin: 0 auto 1rem;
+    }
+    
+    .happy-students .testimonial-rating {
+        justify-content: center;
+    }
+    
+    .happy-students .testimonial-stats {
+        padding: 0;
+    }
+    
+    .happy-students .stat-item {
+        padding: 0.75rem;
+    }
+    
+    .happy-students .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .happy-students .stat-number {
+        font-size: 1.3rem;
+    }
+    
+    .happy-students .stat-label {
+        font-size: 0.85rem;
     }
 }
 
