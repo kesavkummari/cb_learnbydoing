@@ -12,9 +12,13 @@
     <section class="hero-section">
         <div class="container-row">
             <div class="container content-container">
-                <h1 class="main-heading">Master <span class="highlight">DevOps</span> with Multi-Cloud</h1>
-                <p class="sub-heading">Transform Your Career in 90 Days — Step Into High-Demand Roles as a Cloud, DevOps, or SRE Engineer!</p>
-                <p class="sub-heading">Learn in-demand cloud skills from industry experts and get certified on AWS, Azure, and Google Cloud Platform.</p>
+                <h1 class="main-heading">Master DevOps with Hands-on Projects</h1>
+                <p class="sub-heading">
+                Transform Your Career in 90 Days — Step Into High-Demand Roles as a Cloud, DevOps, or SRE Engineer!</p>
+
+                <p class="sub-heading">
+                    Learn in-demand cloud skills from industry experts and get certified on AWS, Azure, and Google Cloud Platform.</p>
+    
                 
                 <div class="cloud-logos">
                     <div class="cloud-logo aws-logo">
@@ -30,6 +34,101 @@
                         <span>GCP</span>
                     </div>
                 </div>
+                
+                <!-- Upcoming Demo Banner -->
+                <div class="demo-banner">
+                    <div class="demo-content">
+                        <div class="demo-badge">
+                            <i class="fas fa-calendar-alt"></i>
+                            Upcoming Demo
+                        </div>
+                        <h3 class="demo-title">Free Webinar On - Cloud, DevOps & Site Reliability Engineer</h3>
+                        <div class="demo-details">
+                            <div class="demo-info">
+                                <i class="far fa-calendar"></i>
+                                <span>Date: June 4, 2025</span>
+                            </div>
+                            <div class="demo-info">
+                                <i class="far fa-clock"></i>
+                                <span>Time: 8 PM IST</span>
+                            </div>
+                            <div class="demo-info">
+                                <i class="fas fa-video"></i>
+                                <span>Platform: Zoom</span>
+                            </div>
+                            <div class="demo-info">
+                                <a href="https://us02web.zoom.us/meeting/register/GK4XPbw4RsapWILQFi7C2g" class="join-button" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Join Demo Session
+                                </a>
+                            </div>
+                            <!-- <div class="demo-info">
+                                <i class="fas fa-users"></i>
+                                <span>Registrations: <span class="registration-count">12/25 per batch</span></span>
+                            </div> -->
+                        </div>
+                        <!-- <div class="countdown-timer">
+                            <div class="timer-item">
+                                <div class="timer-number" id="days">3</div>
+                                <div class="timer-label">Days</div>
+                            </div>
+                            <div class="timer-item">
+                                <div class="timer-number" id="hours">92</div>
+                                <div class="timer-label">Hours</div>
+                            </div>
+                            <div class="timer-item">
+                                <div class="timer-number" id="minutes">5520</div>
+                                <div class="timer-label">Minutes</div>
+                            </div>
+                            <div class="timer-item">
+                                <div class="timer-number" id="seconds">331,200</div>
+                                <div class="timer-label">Seconds</div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+                
+                <script>
+                    // Set the date for June 4th, 2025 at 8 PM IST
+                    const demoDate = new Date('June 4, 2025 20:00:00 GMT+0530');
+                    
+                    function updateCountdown() {
+                        const now = new Date();
+                        const diff = demoDate - now;
+                        
+                        console.log('Time difference:', diff); // Debug log
+                        
+                        if (diff <= 0) {
+                            // If the demo date has passed
+                            document.getElementById('days').textContent = '00';
+                            document.getElementById('hours').textContent = '00';
+                            document.getElementById('minutes').textContent = '00';
+                            document.getElementById('seconds').textContent = '00';
+                            return;
+                        }
+                        
+                        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                        
+                        console.log('Time remaining:', { days, hours, minutes, seconds }); // Debug log
+                        
+                        // Update the timer elements with formatted numbers
+                        document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+                    }
+                    
+                    // Make sure the script runs after the DOM is fully loaded
+                    document.addEventListener('DOMContentLoaded', function() {
+                        // Update countdown every second
+                        setInterval(updateCountdown, 1000);
+                        updateCountdown(); // Initial call
+                    });
+                </script>
                 
                 <upcoming-batches></upcoming-batches>
                 
@@ -640,3 +739,4 @@
     </script>
 </body>
 </html>
+
