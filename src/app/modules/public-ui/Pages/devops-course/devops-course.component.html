@@ -1,5 +1,33 @@
 <div class="container mt-5">
-  <h1 class="text-center mb-5 mt-5 pt-5">DevOps Engineer Course Content</h1>
+  <h1 class="text-center mb-5 mt-5 pt-5">DevOps With Multi-Cloud AWS & Azure Course Content</h1>
+
+  <div class="course-highlights">
+    <div class="highlight-section">
+      <h3 class="section-title">Course Overview</h3>
+      <div class="highlight-items">
+        <div class="highlight-item">
+          <i class="fas fa-clock"></i>
+          <span>Total Duration: 90 Days</span>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-rupee-sign"></i>
+          <span>DevOps with Multi-Cloud AWS & Azure Fee: 19,999 INR</span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="highlight-section">
+      <h3 class="section-title">Live Sessions</h3>
+      <div class="highlight-items">
+        <div class="highlight-item">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Total Live Sessions: 60 Days</span>
+        </div>
+      </div>
+    </div> -->
+  </div>
 
   <section class="mb-5">
     <h2 class="mb-4">Cloud Computing Concepts: DevOps Engineer Services to Learn</h2>
@@ -10,7 +38,6 @@
             <th>Category</th>
             <th>AWS</th>
             <th>Azure</th>
-            <th>GCP</th>
           </tr>
         </thead>
         <tbody>
@@ -18,13 +45,22 @@
             <td><strong>{{service.category}}</strong></td>
             <td>{{service.aws}}</td>
             <td>{{service.azure}}</td>
-            <td>{{service.gcp}}</td>
           </tr>
         </tbody>
       </table>
     </div>
   </section>
 
+  <!-- 
+    DevOps Engineer Topics to Learn Section
+    This section provides a comprehensive overview of essential DevOps topics that engineers should master.
+    The table is structured to show:
+    - Category: Numbered categories of DevOps practices and tools
+    - Tools/Services: Specific technologies and tools used in each category
+    - Purpose: The main objective and use case for each category
+    Data is dynamically populated from the devOpsTopics array in the component.
+  -->
+    
   <section class="mb-5">
     <h2 class="mb-4">DevOps Engineer Topics to Learn</h2>
     <div class="table-responsive">
@@ -32,15 +68,36 @@
         <thead class="table-dark">
           <tr>
             <th>Category</th>
-            <th>Tools / Services to Learn</th>
-            <th>Purpose</th>
+            <th>Live / Recorded</th>
+            <th>Schedule</th>
+            <th>Duration</th>
+            <th>Time</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let topic of devOpsTopics">
             <td><strong>{{topic.category}}</strong></td>
-            <td>{{topic.tools}}</td>
-            <td>{{topic.purpose}}</td>
+            <td>
+              <ng-container *ngIf="topic.tools === 'Recorded Videos'">
+                <span class="recorded-videos">
+                  <i class="fas fa-video"></i>
+                  {{topic.tools}}
+                </span>
+              </ng-container>
+              <ng-container *ngIf="topic.tools === 'Live Sessions'">
+                <span class="live-sessions">
+                  <span class="live-indicator"></span>
+                  <i class="fas fa-video"></i>
+                  {{topic.tools}}
+                </span>
+              </ng-container>
+              <ng-container *ngIf="topic.tools !== 'Recorded Videos' && topic.tools !== 'Live Sessions'">
+                {{topic.tools}}
+              </ng-container>
+            </td>
+            <td>{{topic.status}}</td>
+            <td>{{topic.duration}}</td>
+            <td>{{topic.time}}</td>
           </tr>
         </tbody>
       </table>

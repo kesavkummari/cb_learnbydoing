@@ -10,191 +10,155 @@ export class DevOpsCourseComponent {
     {
       category: '1. Compute',
       aws: 'EC2, ECS, EKS, Lambda',
-      azure: 'VM Scale Sets, AKS, Azure Functions',
-      gcp: 'GCE, GKE, Cloud Functions'
+      azure: 'VM Scale Sets, AKS, Azure Functions'
     },
     {
       category: '2. Storage',
       aws: 'S3, EBS, EFS',
-      azure: 'Blob Storage, Disk Storage, File Share',
-      gcp: 'Cloud Storage, Persistent Disk'
+      azure: 'Blob Storage, Disk Storage, File Share'
     },
     {
       category: '3. Networking',
       aws: 'VPC, ELB, Route 53',
-      azure: 'VNet, Load Balancer, DNS Zone',
-      gcp: 'VPC, Cloud Load Balancing, Cloud DNS'
+      azure: 'VNet, Load Balancer, DNS Zone'
     },
     {
       category: '4. CI/CD',
-      aws: 'CodeCommit, CodeBuild, CodeDeploy, CodePipeline',
-      azure: 'Azure Repos, Pipelines, Artifacts',
-      gcp: 'Cloud Source Repos, Cloud Build, Cloud Deploy'
+      aws: 'CodeBuild, CodeDeploy, CodePipeline, Jenkins',
+      azure: 'Azure Repos, Pipelines, Artifacts, Jenkins'
     },
     {
       category: '5. Infrastructure as Code (IaC)',
-      aws: 'CloudFormation, CDK, Terraform',
-      azure: 'ARM Templates, Bicep, Terraform',
-      gcp: 'Deployment Manager, Terraform'
+      aws: 'Terraform',
+      azure: 'Terraform'
     },
     {
       category: '6. Container Services',
       aws: 'ECS, EKS, Fargate',
-      azure: 'AKS, ACI',
-      gcp: 'GKE, Cloud Run'
+      azure: 'AKS, ACI'
     },
     {
       category: '7. Monitoring & Logging',
-      aws: 'CloudWatch, CloudTrail, X-Ray',
-      azure: 'Azure Monitor, Log Analytics, App Insights',
-      gcp: 'Stackdriver (Cloud Monitoring, Logging)'
+      aws: 'CloudWatch, CloudTrail, X-Ray, Prometheus, Grafana, NewRelic',
+      azure: 'Azure Monitor, Log Analytics, App Insights, Prometheus, Grafana, NewRelic'
     },
     {
       category: '8. Secrets Management',
-      aws: 'AWS Secrets Manager, SSM Parameter Store',
-      azure: 'Azure Key Vault',
-      gcp: 'Secret Manager'
+      aws: 'AWS Secrets Manager, SSM Parameter Store, HashiCorp Vault',
+      azure: 'Azure Key Vault, HashiCorp Vault'
     },
     {
       category: '9. Identity & Access',
       aws: 'IAM',
-      azure: 'Azure AD, RBAC',
-      gcp: 'IAM'
+      azure: 'Azure AD, RBAC'
     },
     {
       category: '10. Artifact Repositories',
-      aws: 'CodeArtifact, ECR',
-      azure: 'Azure Artifacts, ACR',
-      gcp: 'Artifact Registry, Container Registry'
+      aws: 'CodeArtifact, ECR, Nexus, JFrog Artifactory',
+      azure: 'Azure Artifacts, ACR, Nexus, JFrog Artifactory'
     },
     {
       category: '11. Security & Compliance',
-      aws: 'AWS Config, GuardDuty, Inspector',
-      azure: 'Defender for Cloud, Azure Policy',
-      gcp: 'Security Command Center, Forseti'
+      aws: 'AWS Config, GuardDuty, Inspector, SonarQube',
+      azure: 'Defender for Cloud, Azure Policy, SonarQube'
     },
     {
-      category: '12. Dev/Test Automation',
-      aws: 'AWS CodePipeline, AWS Device Farm',
-      azure: 'Azure DevTest Labs',
-      gcp: 'Cloud Build Triggers, Test Lab'
+      category: '12. Golden Images',
+      aws: 'Hashicorp Packer',
+      azure: 'Hashicorp Packer'
     },
     {
       category: '13. Messaging & Queues',
       aws: 'SQS, SNS, EventBridge',
-      azure: 'Azure Service Bus, Event Grid, Queue Storage',
-      gcp: 'Pub/Sub, Eventarc'
+      azure: 'Azure Service Bus, Event Grid, Queue Storage'
     },
     {
-      category: '14. Database (DevOps focus)',
+      category: '14. Database',
       aws: 'RDS, DynamoDB',
-      azure: 'Azure SQL, Cosmos DB',
-      gcp: 'Cloud SQL, Firestore'
+      azure: 'Azure SQL, Cosmos DB'
     },
     {
       category: '15. Observability',
       aws: 'CloudWatch Dashboards',
-      azure: 'Azure Monitor Dashboards',
-      gcp: 'Cloud Monitoring Dashboards'
+      azure: 'Azure Monitor Dashboards'
     },
     {
       category: '16. Cost Management',
       aws: 'AWS Budgets, Cost Explorer',
-      azure: 'Azure Cost Management',
-      gcp: 'Billing Reports, Cost Table'
+      azure: 'Azure Cost Management'
+    },
+    {
+      category: '17. Source Code Management',
+      aws: 'Git, GitHub, GitLab, Bitbucket, Azure Repos',
+      azure: 'Git, GitHub, GitLab, Bitbucket, Azure Repos'
+    },
+    {
+      category: '18. Configuration Management',
+      aws: 'Ansible',
+      azure: 'Ansible'
+    },
+    {
+      category: '19. GitOps',
+      aws: 'Argo CD, Flux',
+      azure: 'Argo CD, Flux'
+    },
+    {
+      category: '20. Collaboration Tools',
+      aws: 'Jira, Confluence, Boards, MS Teams, Google Meet',
+      azure: 'Jira, Confluence, Boards, MS Teams, Google Meet'
     }
   ];
 
+  /**
+   * Array of DevOps topics and tools used in modern software development and operations.
+   * Each topic contains:
+   * - category: The numbered category of the DevOps topic
+   * - tools: Common tools and technologies used in this category
+   * - purpose: Brief description of the category's main purpose
+   */
   devOpsTopics = [
     {
-      category: '1. Source Code Management',
-      tools: 'Git, GitHub, GitLab, Bitbucket',
-      purpose: 'Version control, code collaboration'
+      category: '1. OS Module',
+      tools: 'Recorded Videos',
+      status: '',
+      duration: '2 Weeks',
+      time: 'Self-paced'
     },
     {
-      category: '2. CI/CD',
-      tools: 'Jenkins, GitHub Actions, GitLab CI/CD, Azure Pipelines, AWS CodePipeline, CircleCI',
-      purpose: 'Continuous Integration & Deployment automation'
+      category: '2. Shell Scripting',
+      tools: 'Recorded Videos',
+      status: '',
+      duration: '2 Weeks',
+      time: 'Self-paced'
     },
     {
-      category: '3. Build Tools',
-      tools: 'Maven, Gradle, NPM, Yarn',
-      purpose: 'Compile and build software projects'
+      category: '3. Python Scripting',
+      tools: 'Recorded Videos',
+      status: '',
+      duration: '2 Weeks',
+      time: 'Self-paced'
     },
     {
-      category: '4. Artifact Repository',
-      tools: 'Nexus, JFrog Artifactory, AWS CodeArtifact, Azure Artifacts',
-      purpose: 'Store and manage build artifacts and dependencies'
+      category: '4. Live Projects',
+      tools: 'Live Sessions',
+      status: 'Every Sat & Sun',
+      duration: '10 Hrs',
+      time: '8 PM - 9 PM IST'
     },
     {
-      category: '5. Containerization',
-      tools: 'Docker, Podman',
-      purpose: 'Create and manage containers'
+      category: '5. Resume Grooming',
+      tools: 'Live Sessions',
+      status: 'Every Saturday',
+      duration: '5 Hrs',
+      time: '7 PM - 8 PM IST'
     },
     {
-      category: '6. Container Orchestration',
-      tools: 'Kubernetes (K8s), Helm, Kustomize, OpenShift',
-      purpose: 'Deploy and manage containerized applications'
+      category: '6. DevOps With Multi-Cloud AWS & Azure)',
+      tools: 'Live Sessions',
+      status: '9th June 2025',
+      duration: '8 Weeks',
+      time: '8 PM - 9 PM IST'
     },
-    {
-      category: '7. Infrastructure as Code',
-      tools: 'Terraform, Pulumi, AWS CloudFormation, Azure Bicep, Ansible',
-      purpose: 'Automate infrastructure provisioning'
-    },
-    {
-      category: '8. Configuration Management',
-      tools: 'Ansible, Chef, Puppet',
-      purpose: 'Automate software configuration and system setup'
-    },
-    {
-      category: '9. Monitoring & Logging',
-      tools: 'Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), Splunk, Datadog',
-      purpose: 'Monitor performance, collect and analyze logs'
-    },
-    {
-      category: '10. Cloud Platforms',
-      tools: 'AWS, Azure, GCP',
-      purpose: 'Host applications and infrastructure'
-    },
-    {
-      category: '11. Security & Secrets Mgmt',
-      tools: 'HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, SOPS',
-      purpose: 'Secure credentials, secrets, and access policies'
-    },
-    {
-      category: '12. Testing',
-      tools: 'Selenium, JUnit, TestNG, Postman',
-      purpose: 'Automate unit, integration, and API testing'
-    },
-    {
-      category: '13. GitOps',
-      tools: 'Argo CD, Flux',
-      purpose: 'Continuous delivery using Git as the single source of truth'
-    },
-    {
-      category: '14. Observability & APM',
-      tools: 'New Relic, AppDynamics, Dynatrace, OpenTelemetry',
-      purpose: 'Application performance monitoring and tracing'
-    },
-    {
-      category: '15. Message Queues & Events',
-      tools: 'RabbitMQ, Kafka, AWS SQS/SNS, Azure Service Bus',
-      purpose: 'Messaging systems for decoupled architecture'
-    },
-    {
-      category: '16. Dev/Test Environments',
-      tools: 'Vagrant, Docker Compose, Minikube',
-      purpose: 'Local development and testing environments'
-    },
-    {
-      category: '17. Collaboration Tools',
-      tools: 'Jira, Confluence, Slack, MS Teams',
-      purpose: 'Agile planning, documentation, and team communication'
-    },
-    {
-      category: '18. Cost & Usage Mgmt',
-      tools: 'CloudHealth, AWS Cost Explorer, Azure Cost Management',
-      purpose: 'Monitor and optimize cloud spending'
-    }
+
   ];
 } 
