@@ -9,8 +9,8 @@ export class DevOpsCourseComponent {
   cloudServices = [
     {
       category: '1. Compute',
-      aws: 'EC2, ECS, EKS, Lambda',
-      azure: 'VM Scale Sets, AKS, Azure Functions'
+      aws: 'EC2, Elastic Beanstalk, Lambda, API Gateway',
+      azure: 'VM, VM Scale Sets, Azure Functions, API gateway'
     },
     {
       category: '2. Storage',
@@ -19,8 +19,8 @@ export class DevOpsCourseComponent {
     },
     {
       category: '3. Networking',
-      aws: 'VPC, ELB, Route 53',
-      azure: 'VNet, Load Balancer, DNS Zone'
+      aws: 'VPC, ELB, Route 53, CloudFront',
+      azure: 'VNet, Load Balancer, DNS Zone, Azure Front Door'
     },
     {
       category: '4. CI/CD',
@@ -158,6 +158,13 @@ export class DevOpsCourseComponent {
       status: '9th June 2025',
       duration: '8 Weeks',
       time: '8 PM - 9 PM IST'
+    },
+    {
+      category: '7. Cloud Computing - AWS',
+      tools: 'Live Sessions',
+      status: '16th June 2025',
+      duration: '3 Weeks',
+      time: '7 PM - 8 PM IST'
     },
 
   ];
