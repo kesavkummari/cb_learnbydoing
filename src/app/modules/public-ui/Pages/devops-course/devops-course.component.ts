@@ -34,8 +34,8 @@ export class DevOpsCourseComponent {
     },
     {
       category: '6. Container Services',
-      aws: 'ECS, EKS, Fargate',
-      azure: 'AKS, ACI'
+      aws: 'ECS, EKS, Fargate, Docker, Kubernetes',
+      azure: 'AKS, ACI, Docker, Kubernetes'
     },
     {
       category: '7. Monitoring & Logging',
@@ -119,52 +119,59 @@ export class DevOpsCourseComponent {
   devOpsTopics = [
     {
       category: '1. OS Module',
-      tools: 'Recorded Videos',
-      status: '',
-      duration: '2 Weeks',
-      time: 'Self-paced'
+      tools: 'Live Sessions',
+      status: 'Mon To Fri',
+      duration: '1 Week',
+      time: '7pm To 8pm'
     },
     {
       category: '2. Shell Scripting',
-      tools: 'Recorded Videos',
-      status: '',
-      duration: '2 Weeks',
-      time: 'Self-paced'
+      tools: 'Live Sessions',
+      status: 'Mon To Fri',
+      duration: '1 Week',
+      time: '8pm To 9pm'
     },
     {
       category: '3. Python Scripting',
-      tools: 'Recorded Videos',
-      status: '',
+      tools: 'Live Sessions',
+      status: 'Mon To Fri',
       duration: '2 Weeks',
-      time: 'Self-paced'
+      time: '7pm To 8pm'
     },
     {
       category: '4. Live Projects',
       tools: 'Live Sessions',
-      status: 'Every Sat & Sun',
+      status: 'Every Saturday',
       duration: '10 Hrs',
-      time: '8 PM - 9 PM IST'
+      time: '7pm To 9pm'
     },
     {
       category: '5. Resume Grooming',
       tools: 'Live Sessions',
       status: 'Every Saturday',
       duration: '5 Hrs',
-      time: '7 PM - 8 PM IST'
+      time: '7pm To 8pm'
     },
     {
-      category: '6. DevOps With Multi-Cloud AWS & Azure)',
+      category: '6. Cloud Computing - AWS',
       tools: 'Live Sessions',
-      status: '9th June 2025',
-      duration: '8 Weeks',
-      time: '8 PM - 9 PM IST'
-    },
-    {
-      category: '7. Cloud Computing - AWS',
-      tools: 'Live Sessions',
-      status: '16th June 2025',
+      status: 'Mon To Fri',
       duration: '3 Weeks',
-      time: '7 PM - 8 PM IST'
+      time: '7pm To 8pm'
+    },
+    {
+      category: '7. Cloud Computing - Azure',
+      tools: 'Live Sessions',
+      status: 'Mon To Fri',
+      duration: '3 Weeks',
+      time: '8pm To 9pm'
+    },
+    {
+      category: '8. DevOps',
+      tools: 'Live Sessions',
+      status: 'Mon To Fri',
+      duration: '3 Weeks',
+      time: '8pm To 9pm'
     },
 
   ];
